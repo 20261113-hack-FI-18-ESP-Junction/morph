@@ -1,0 +1,2726 @@
+{
+  "schemaVersion": 1,
+  "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+  "preparedAt": "2026-11-15T03:41:00.777377+00:00",
+  "basePackage": "handoff/three-host-20261115/klemen-dashboard",
+  "sourceCandidate": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common",
+  "status": "sealed",
+  "imports": [
+    {
+      "path": "analytics/morph_station/__init__.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/morph_station/__init__.py",
+      "sourceBytes": 114,
+      "sourceSha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "packagedBytes": 114,
+      "packagedSha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "originalPath": "HachingJunction/station/morph_station/__init__.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-intel-received.json",
+        "baseline-station-active.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "analytics/morph_station/export_audit.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/morph_station/export_audit.py",
+      "sourceBytes": 32263,
+      "sourceSha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee",
+      "packagedBytes": 32263,
+      "packagedSha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee",
+      "originalPath": "HachingJunction/station/morph_station/export_audit.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-station-active.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "analytics/morph_station/models.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/morph_station/models.py",
+      "sourceBytes": 11096,
+      "sourceSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "packagedBytes": 11096,
+      "packagedSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "originalPath": "HachingJunction/station/morph_station/models.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-intel-received.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "analytics/morph_station/schema.sql",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/morph_station/schema.sql",
+      "sourceBytes": 1589,
+      "sourceSha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "packagedBytes": 1589,
+      "packagedSha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "originalPath": "HachingJunction/station/morph_station/schema.sql",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-intel-received.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "analytics/morph_station/store.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/morph_station/store.py",
+      "sourceBytes": 44486,
+      "sourceSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+      "packagedBytes": 44486,
+      "packagedSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+      "originalPath": "HachingJunction/station/morph_station/store.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-intel-received.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "analytics/tests/test_export_audit.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/tests/test_export_audit.py",
+      "sourceBytes": 22007,
+      "sourceSha256": "ed0df7caf389801f9a45cb4755cf5df20f184cd11fe30026343dd62fce4db9ce",
+      "packagedBytes": 21962,
+      "packagedSha256": "18d879a2e03639639c5a69441f517b8bcb20127e7c324b6c1c6b8ebbc3fe934f",
+      "originalPath": "HachingJunction/station/tests/test_export_audit.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-station-active.json"
+      ],
+      "adaptation": "Resolve package analytics source and existing verification fixtures without canonical workspace dependencies."
+    },
+    {
+      "path": "dashboard/.gitignore",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/.gitignore",
+      "sourceBytes": 73,
+      "sourceSha256": "db691f14fcf678985362a42c6aedb581e42cd6bb99962ce1b44aea460fb2a4df",
+      "packagedBytes": 73,
+      "packagedSha256": "db691f14fcf678985362a42c6aedb581e42cd6bb99962ce1b44aea460fb2a4df",
+      "originalPath": "morph-station/.gitignore",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/IMPLEMENTATION_STATUS.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/IMPLEMENTATION_STATUS.md",
+      "sourceBytes": 4451,
+      "sourceSha256": "af95e693e59b625e724e649bcd01f57b2c80392d22abe94be6aa5efb27782c13",
+      "packagedBytes": 2454,
+      "packagedSha256": "9fd0b8a60e98dabce8e18a88885bd590c874990d6373e6f7b1a0ff333d9b2d38",
+      "originalPath": "morph-station/IMPLEMENTATION_STATUS.md",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Update portable package documentation and distinguish historical source claims from current verification."
+    },
+    {
+      "path": "dashboard/README.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/README.md",
+      "sourceBytes": 6662,
+      "sourceSha256": "39bf52b561efa4111e16118ceb0cbc1974e3025c9e08e6fd3d800c8e2d9cb662",
+      "packagedBytes": 3415,
+      "packagedSha256": "aed084052c8082d9822b3e3f0412da24315588f1b8f1ae077514ddf313b6b6d4",
+      "originalPath": "morph-station/README.md",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Update portable package documentation and distinguish historical source claims from current verification."
+    },
+    {
+      "path": "dashboard/bun.lock",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/bun.lock",
+      "sourceBytes": 69433,
+      "sourceSha256": "2c52083c40d40e1d2b721a265c5d8afe120a5d3b4a2e02736b1830eff200cb64",
+      "packagedBytes": 69433,
+      "packagedSha256": "2c52083c40d40e1d2b721a265c5d8afe120a5d3b4a2e02736b1830eff200cb64",
+      "originalPath": "morph-station/bun.lock",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/index.html",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/index.html",
+      "sourceBytes": 1079,
+      "sourceSha256": "54c25618eb97cacf79eb20ccb5ebeb195379427621f97590d52f707cc337c4dc",
+      "packagedBytes": 1079,
+      "packagedSha256": "54c25618eb97cacf79eb20ccb5ebeb195379427621f97590d52f707cc337c4dc",
+      "originalPath": "morph-station/index.html",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/metadata.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/metadata.json",
+      "sourceBytes": 274,
+      "sourceSha256": "27a198ee82ba6557ba0423f772516f0011cbeeeb09f55835ba5091cc5d4ab0dc",
+      "packagedBytes": 274,
+      "packagedSha256": "27a198ee82ba6557ba0423f772516f0011cbeeeb09f55835ba5091cc5d4ab0dc",
+      "originalPath": "morph-station/metadata.json",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/package-lock.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/package-lock.json",
+      "sourceBytes": 133081,
+      "sourceSha256": "157a8912cd3edf13dcbb952b3ef60c1c1f98cdc3cfe876553968802dfcebf3b5",
+      "packagedBytes": 133021,
+      "packagedSha256": "a19f1e02c80c79a307127f9d29f4e635ad6378cd007e308c15d4f8a3903802ba",
+      "originalPath": "morph-station/package-lock.json",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": "Point local dependency to portable ../station-client."
+    },
+    {
+      "path": "dashboard/package.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/package.json",
+      "sourceBytes": 1254,
+      "sourceSha256": "21090c4e662af1477f74e66f65dce2022aa564c7295ad3f1c7f1de446d151fa8",
+      "packagedBytes": 1314,
+      "packagedSha256": "30a8904780c075f147d802411ddd6f5e9369ed7bc62cd33ca1df2642c2735144",
+      "originalPath": "morph-station/package.json",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Use portable ../station-client dependency and explicitly named Mac proxy baseline plus new MCP regression suites."
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/00-overview_11b35994.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/00-overview_11b35994.png",
+      "sourceBytes": 703269,
+      "sourceSha256": "11b35994f27f31bb2c5578cd4bbe9eab6871dcb8bb1d35e4734b36f0d96773d4",
+      "packagedBytes": 703269,
+      "packagedSha256": "11b35994f27f31bb2c5578cd4bbe9eab6871dcb8bb1d35e4734b36f0d96773d4",
+      "originalPath": "morph-station/public/assets/aistudio/00-overview_11b35994.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/01-live-preview_72d56139.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/01-live-preview_72d56139.png",
+      "sourceBytes": 485952,
+      "sourceSha256": "72d561399a0fe2f2288ff900cea485f4634134ee26c891887d6512237599b34e",
+      "packagedBytes": 485952,
+      "packagedSha256": "72d561399a0fe2f2288ff900cea485f4634134ee26c891887d6512237599b34e",
+      "originalPath": "morph-station/public/assets/aistudio/01-live-preview_72d56139.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/01-live_f0b2b88b.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/01-live_f0b2b88b.png",
+      "sourceBytes": 900517,
+      "sourceSha256": "f0b2b88b2ae4bde44efbbca6318a6e188698cd51aa13e010d9e59395b0f4dcfd",
+      "packagedBytes": 900517,
+      "packagedSha256": "f0b2b88b2ae4bde44efbbca6318a6e188698cd51aa13e010d9e59395b0f4dcfd",
+      "originalPath": "morph-station/public/assets/aistudio/01-live_f0b2b88b.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/02-system_eec39f6e.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/02-system_eec39f6e.png",
+      "sourceBytes": 491727,
+      "sourceSha256": "eec39f6ece982e294189ac515976df813ec73029e80ea7bf7615251113fd1b9b",
+      "packagedBytes": 491727,
+      "packagedSha256": "eec39f6ece982e294189ac515976df813ec73029e80ea7bf7615251113fd1b9b",
+      "originalPath": "morph-station/public/assets/aistudio/02-system_eec39f6e.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/03-quality_0dcf6b4e.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/03-quality_0dcf6b4e.png",
+      "sourceBytes": 486725,
+      "sourceSha256": "0dcf6b4ed5c92f6c272b37996a6692910657f66d73eb67c828c5a87a190aa1a1",
+      "packagedBytes": 486725,
+      "packagedSha256": "0dcf6b4ed5c92f6c272b37996a6692910657f66d73eb67c828c5a87a190aa1a1",
+      "originalPath": "morph-station/public/assets/aistudio/03-quality_0dcf6b4e.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/04-cycle-detail_ac6c0b2a.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/04-cycle-detail_ac6c0b2a.png",
+      "sourceBytes": 594925,
+      "sourceSha256": "ac6c0b2a374726a235b7395fa2fabdfabde2fa55b71bea7b919cf84a87462e99",
+      "packagedBytes": 594925,
+      "packagedSha256": "ac6c0b2a374726a235b7395fa2fabdfabde2fa55b71bea7b919cf84a87462e99",
+      "originalPath": "morph-station/public/assets/aistudio/04-cycle-detail_ac6c0b2a.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/05-stop_a70d599d.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/05-stop_a70d599d.png",
+      "sourceBytes": 596526,
+      "sourceSha256": "a70d599d43abb0bf28ff3e72a0e23bd00eebc0e435019b05efde6cf3292f20d7",
+      "packagedBytes": 596526,
+      "packagedSha256": "a70d599d43abb0bf28ff3e72a0e23bd00eebc0e435019b05efde6cf3292f20d7",
+      "originalPath": "morph-station/public/assets/aistudio/05-stop_a70d599d.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/06-design-system-preview_ed8827e0.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/06-design-system-preview_ed8827e0.png",
+      "sourceBytes": 313951,
+      "sourceSha256": "ed8827e08b178aeb35fbd809ad46d81ee03906b9e421f2ee00ff1f5bd4d838fc",
+      "packagedBytes": 313951,
+      "packagedSha256": "ed8827e08b178aeb35fbd809ad46d81ee03906b9e421f2ee00ff1f5bd4d838fc",
+      "originalPath": "morph-station/public/assets/aistudio/06-design-system-preview_ed8827e0.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/06-design-system_f46dc3f7.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/06-design-system_f46dc3f7.png",
+      "sourceBytes": 476042,
+      "sourceSha256": "f46dc3f77f02278db604606701995af9554b2bb87be644078adc8056672de428",
+      "packagedBytes": 476042,
+      "packagedSha256": "f46dc3f77f02278db604606701995af9554b2bb87be644078adc8056672de428",
+      "originalPath": "morph-station/public/assets/aistudio/06-design-system_f46dc3f7.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/07-disconnected_61b26055.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/07-disconnected_61b26055.png",
+      "sourceBytes": 312304,
+      "sourceSha256": "61b260553101120ea5dc39305755ff200ce0381e68b15e63de153a444ce70e32",
+      "packagedBytes": 312304,
+      "packagedSha256": "61b260553101120ea5dc39305755ff200ce0381e68b15e63de153a444ce70e32",
+      "originalPath": "morph-station/public/assets/aistudio/07-disconnected_61b26055.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/08-mobile-preview_1d7968b7.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/08-mobile-preview_1d7968b7.png",
+      "sourceBytes": 328255,
+      "sourceSha256": "1d7968b71bb978567ab12d802ee81098bc50aaa04e514cefddf2105d615b1d70",
+      "packagedBytes": 328255,
+      "packagedSha256": "1d7968b71bb978567ab12d802ee81098bc50aaa04e514cefddf2105d615b1d70",
+      "originalPath": "morph-station/public/assets/aistudio/08-mobile-preview_1d7968b7.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/08-mobile_4ec9cace.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/08-mobile_4ec9cace.png",
+      "sourceBytes": 537117,
+      "sourceSha256": "4ec9cacead2bb829b3eb9c4afd61e4f50bb574c9035b391730e92a30c9346c9b",
+      "packagedBytes": 537117,
+      "packagedSha256": "4ec9cacead2bb829b3eb9c4afd61e4f50bb574c9035b391730e92a30c9346c9b",
+      "originalPath": "morph-station/public/assets/aistudio/08-mobile_4ec9cace.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/09-state-review_4f9d216c.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/09-state-review_4f9d216c.png",
+      "sourceBytes": 289586,
+      "sourceSha256": "4f9d216cc602b98be830d273a8a99ad36f36eb04f57bee8a1b7e6adae74d0365",
+      "packagedBytes": 289586,
+      "packagedSha256": "4f9d216cc602b98be830d273a8a99ad36f36eb04f57bee8a1b7e6adae74d0365",
+      "originalPath": "morph-station/public/assets/aistudio/09-state-review_4f9d216c.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/AI_STUDIO_MASTER_PROMPT_1c33d799.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/AI_STUDIO_MASTER_PROMPT_1c33d799.txt",
+      "sourceBytes": 14215,
+      "sourceSha256": "1c33d799810aff908765ebbcf906d6eeaae3b94994285d765cd3c57aa6ec36b8",
+      "packagedBytes": 14215,
+      "packagedSha256": "1c33d799810aff908765ebbcf906d6eeaae3b94994285d765cd3c57aa6ec36b8",
+      "originalPath": "morph-station/public/assets/aistudio/AI_STUDIO_MASTER_PROMPT_1c33d799.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/AI_STUDIO_PROMPT_92773d09.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/AI_STUDIO_PROMPT_92773d09.md",
+      "sourceBytes": 17564,
+      "sourceSha256": "92773d09b670cc6551601fac374b8f87b7c6403bc87337b9ea7965553b1abdc7",
+      "packagedBytes": 17564,
+      "packagedSha256": "92773d09b670cc6551601fac374b8f87b7c6403bc87337b9ea7965553b1abdc7",
+      "originalPath": "morph-station/public/assets/aistudio/AI_STUDIO_PROMPT_92773d09.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/ASSETS_2fe46ab7.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/ASSETS_2fe46ab7.md",
+      "sourceBytes": 3577,
+      "sourceSha256": "2fe46ab7649c22afc883fbe3b057f13eff55cc6b495ef7471d38bd8cc560aea7",
+      "packagedBytes": 3577,
+      "packagedSha256": "2fe46ab7649c22afc883fbe3b057f13eff55cc6b495ef7471d38bd8cc560aea7",
+      "originalPath": "morph-station/public/assets/aistudio/ASSETS_2fe46ab7.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/DESIGN_SPEC_94029209.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/DESIGN_SPEC_94029209.md",
+      "sourceBytes": 16659,
+      "sourceSha256": "9402920977808c86d34d75424efa02aabe324d98e8da1929ca4becf76f89ec8d",
+      "packagedBytes": 16659,
+      "packagedSha256": "9402920977808c86d34d75424efa02aabe324d98e8da1929ca4becf76f89ec8d",
+      "originalPath": "morph-station/public/assets/aistudio/DESIGN_SPEC_94029209.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/HANDOVER_GUIDE_a395cccd.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/HANDOVER_GUIDE_a395cccd.md",
+      "sourceBytes": 20003,
+      "sourceSha256": "a395cccdd8b9318126c4969e328c34e19dfb76613d3b2e2ae68caf17f38ede8d",
+      "packagedBytes": 20003,
+      "packagedSha256": "a395cccdd8b9318126c4969e328c34e19dfb76613d3b2e2ae68caf17f38ede8d",
+      "originalPath": "morph-station/public/assets/aistudio/HANDOVER_GUIDE_a395cccd.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/INTEGRATION_CONTRACT_fc2d0a53.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/INTEGRATION_CONTRACT_fc2d0a53.md",
+      "sourceBytes": 30595,
+      "sourceSha256": "fc2d0a537d7d48f25d4b71161a2d1afe6cd68b0a114660d7a0c11db21b0231c4",
+      "packagedBytes": 30595,
+      "packagedSha256": "fc2d0a537d7d48f25d4b71161a2d1afe6cd68b0a114660d7a0c11db21b0231c4",
+      "originalPath": "morph-station/public/assets/aistudio/INTEGRATION_CONTRACT_fc2d0a53.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/MESSAGE_TO_BUILDER_4af8a10d.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/MESSAGE_TO_BUILDER_4af8a10d.md",
+      "sourceBytes": 3121,
+      "sourceSha256": "4af8a10d1e698a88eef01fd2e037853fdd8b58670b74c40797c8e4cd81edf8ab",
+      "packagedBytes": 3121,
+      "packagedSha256": "4af8a10d1e698a88eef01fd2e037853fdd8b58670b74c40797c8e4cd81edf8ab",
+      "originalPath": "morph-station/public/assets/aistudio/MESSAGE_TO_BUILDER_4af8a10d.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/PACKAGE_FILES_0a8a81aa.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/PACKAGE_FILES_0a8a81aa.txt",
+      "sourceBytes": 3077,
+      "sourceSha256": "0a8a81aa7b0567ee00dc8d50962dd015eb8dc28506e5a5a5776f0d0c57b9d8a7",
+      "packagedBytes": 3077,
+      "packagedSha256": "0a8a81aa7b0567ee00dc8d50962dd015eb8dc28506e5a5a5776f0d0c57b9d8a7",
+      "originalPath": "morph-station/public/assets/aistudio/PACKAGE_FILES_0a8a81aa.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/PROJECT_AUDIT_37eec744.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/PROJECT_AUDIT_37eec744.md",
+      "sourceBytes": 22253,
+      "sourceSha256": "37eec744b14e0f8ec00c5443011e1acf0c3d26daa145d580ee092b8260347160",
+      "packagedBytes": 22253,
+      "packagedSha256": "37eec744b14e0f8ec00c5443011e1acf0c3d26daa145d580ee092b8260347160",
+      "originalPath": "morph-station/public/assets/aistudio/PROJECT_AUDIT_37eec744.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/README_fba65d5a.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/README_fba65d5a.md",
+      "sourceBytes": 7432,
+      "sourceSha256": "fba65d5a957554cccafa617198b4358ac4a2e0855c6d0a3058027a4afa433053",
+      "packagedBytes": 7432,
+      "packagedSha256": "fba65d5a957554cccafa617198b4358ac4a2e0855c6d0a3058027a4afa433053",
+      "originalPath": "morph-station/public/assets/aistudio/README_fba65d5a.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/REFERENCES_276e1b48.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/REFERENCES_276e1b48.md",
+      "sourceBytes": 11757,
+      "sourceSha256": "276e1b4857e6b871f601286fd588f47d97d3b6b6286ec05c13f4b633a8133a28",
+      "packagedBytes": 11757,
+      "packagedSha256": "276e1b4857e6b871f601286fd588f47d97d3b6b6286ec05c13f4b633a8133a28",
+      "originalPath": "morph-station/public/assets/aistudio/REFERENCES_276e1b48.md",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/app_75c07165.js",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/app_75c07165.js",
+      "sourceBytes": 26787,
+      "sourceSha256": "75c07165064d9a36cba9e509488c9f2afa902a1b1f7844f91428e384a5177082",
+      "packagedBytes": 26787,
+      "packagedSha256": "75c07165064d9a36cba9e509488c9f2afa902a1b1f7844f91428e384a5177082",
+      "originalPath": "morph-station/public/assets/aistudio/app_75c07165.js",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/copernicus-scriven_f284bf85.jpg",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/copernicus-scriven_f284bf85.jpg",
+      "sourceBytes": 190329,
+      "sourceSha256": "f284bf854bd1507c89f33b67c5bbf0455e833ad0b7d78aacd103d0b64a3acdf3",
+      "packagedBytes": 190329,
+      "packagedSha256": "f284bf854bd1507c89f33b67c5bbf0455e833ad0b7d78aacd103d0b64a3acdf3",
+      "originalPath": "morph-station/public/assets/aistudio/copernicus-scriven_f284bf85.jpg",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/cormorantgaramond-OFL_60700d35.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/cormorantgaramond-OFL_60700d35.txt",
+      "sourceBytes": 4387,
+      "sourceSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "packagedBytes": 4387,
+      "packagedSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "originalPath": "morph-station/public/assets/aistudio/cormorantgaramond-OFL_60700d35.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/index_2e971940.html",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/index_2e971940.html",
+      "sourceBytes": 3558,
+      "sourceSha256": "2e971940679c7b8ed3dd88352192cdf48049c440c034908a64a73d15c3c781f2",
+      "packagedBytes": 3558,
+      "packagedSha256": "2e971940679c7b8ed3dd88352192cdf48049c440c034908a64a73d15c3c781f2",
+      "originalPath": "morph-station/public/assets/aistudio/index_2e971940.html",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/inspection-scene_9217b058.svg",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/inspection-scene_9217b058.svg",
+      "sourceBytes": 4235,
+      "sourceSha256": "51a1ca494808fae097f4f33522d42cdb7dfbf286f7006184ba93af09e776c0dd",
+      "packagedBytes": 4235,
+      "packagedSha256": "51a1ca494808fae097f4f33522d42cdb7dfbf286f7006184ba93af09e776c0dd",
+      "originalPath": "morph-station/public/assets/aistudio/inspection-scene_9217b058.svg",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/inter-OFL_5b9321a4.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/inter-OFL_5b9321a4.txt",
+      "sourceBytes": 4377,
+      "sourceSha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "packagedBytes": 4377,
+      "packagedSha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "originalPath": "morph-station/public/assets/aistudio/inter-OFL_5b9321a4.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/morph-mark_854b67cd.svg",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/morph-mark_854b67cd.svg",
+      "sourceBytes": 480,
+      "sourceSha256": "854b67cdcb60ee04af80e4c531d70fdaf5dd314e411452160e6b70fea0f8baf4",
+      "packagedBytes": 480,
+      "packagedSha256": "854b67cdcb60ee04af80e4c531d70fdaf5dd314e411452160e6b70fea0f8baf4",
+      "originalPath": "morph-station/public/assets/aistudio/morph-mark_854b67cd.svg",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/morph-wordmark_3f19c927.png",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/morph-wordmark_3f19c927.png",
+      "sourceBytes": 14729,
+      "sourceSha256": "3f19c9274293820896fdc6312d35b0e6fa0a35b99eac215401d532cf28409413",
+      "packagedBytes": 14729,
+      "packagedSha256": "3f19c9274293820896fdc6312d35b0e6fa0a35b99eac215401d532cf28409413",
+      "originalPath": "morph-station/public/assets/aistudio/morph-wordmark_3f19c927.png",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/orbital_7a3f6055.svg",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/orbital_7a3f6055.svg",
+      "sourceBytes": 805,
+      "sourceSha256": "7a3f6055540cbf307bb78e580171e84dfc91bef3242c829af1cbf454631a47d5",
+      "packagedBytes": 805,
+      "packagedSha256": "7a3f6055540cbf307bb78e580171e84dfc91bef3242c829af1cbf454631a47d5",
+      "originalPath": "morph-station/public/assets/aistudio/orbital_7a3f6055.svg",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/spacemono-OFL_8e4ee42b.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/spacemono-OFL_8e4ee42b.txt",
+      "sourceBytes": 4392,
+      "sourceSha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+      "packagedBytes": 4392,
+      "packagedSha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+      "originalPath": "morph-station/public/assets/aistudio/spacemono-OFL_8e4ee42b.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/styles_181bfa69.css",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/styles_181bfa69.css",
+      "sourceBytes": 24089,
+      "sourceSha256": "181bfa691b1822471ea515c2d599bcbcfb37af621d531c1543be0979ab293895",
+      "packagedBytes": 24089,
+      "packagedSha256": "181bfa691b1822471ea515c2d599bcbcfb37af621d531c1543be0979ab293895",
+      "originalPath": "morph-station/public/assets/aistudio/styles_181bfa69.css",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/verification_37e7c8b9.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/aistudio/verification_37e7c8b9.json",
+      "sourceBytes": 519,
+      "sourceSha256": "37e7c8b9e3ddcdf3c78df5a39ea5d5ca4ba67726f378235524562192fd624f03",
+      "packagedBytes": 519,
+      "packagedSha256": "37e7c8b9e3ddcdf3c78df5a39ea5d5ca4ba67726f378235524562192fd624f03",
+      "originalPath": "morph-station/public/assets/aistudio/verification_37e7c8b9.json",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/fonts/cormorant-italic.ttf",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/fonts/cormorant-italic.ttf",
+      "sourceBytes": 715644,
+      "sourceSha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+      "packagedBytes": 715644,
+      "packagedSha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+      "originalPath": "morph-station/public/assets/fonts/cormorant-italic.ttf",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/fonts/cormorantgaramond-OFL.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/fonts/cormorantgaramond-OFL.txt",
+      "sourceBytes": 4387,
+      "sourceSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "packagedBytes": 4387,
+      "packagedSha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+      "originalPath": "morph-station/public/assets/fonts/cormorantgaramond-OFL.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/fonts/inter-OFL.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/fonts/inter-OFL.txt",
+      "sourceBytes": 4377,
+      "sourceSha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "packagedBytes": 4377,
+      "packagedSha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "originalPath": "morph-station/public/assets/fonts/inter-OFL.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/fonts/inter.ttf",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/fonts/inter.ttf",
+      "sourceBytes": 876576,
+      "sourceSha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "packagedBytes": 876576,
+      "packagedSha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "originalPath": "morph-station/public/assets/fonts/inter.ttf",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/fonts/space-mono.ttf",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/fonts/space-mono.ttf",
+      "sourceBytes": 99356,
+      "sourceSha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+      "packagedBytes": 99356,
+      "packagedSha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+      "originalPath": "morph-station/public/assets/fonts/space-mono.ttf",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/public/assets/fonts/spacemono-OFL.txt",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/public/assets/fonts/spacemono-OFL.txt",
+      "sourceBytes": 4392,
+      "sourceSha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+      "packagedBytes": 4392,
+      "packagedSha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+      "originalPath": "morph-station/public/assets/fonts/spacemono-OFL.txt",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-assets.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/server.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/server.ts",
+      "sourceBytes": 1955,
+      "sourceSha256": "e46857fa6192a20795204e984cbb287bd6884cbd6c91c63f496411f8b8f2372c",
+      "packagedBytes": 2235,
+      "packagedSha256": "319111e4e432c2b7344ab546d858f36c69def92df8907ad581c83d9cc4eb9ffe",
+      "originalPath": "morph-station/server.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Preserve Mac loopback MCP startup instead of received direct station HTTP startup; bind matching transport deadlines."
+    },
+    {
+      "path": "dashboard/server/stationProxy.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/server/stationProxy.ts",
+      "sourceBytes": 14024,
+      "sourceSha256": "afe66f0fad9c261eaffda80964ba4b65c076cfe307d120e350886fe01a8ae3af",
+      "packagedBytes": 14504,
+      "packagedSha256": "bb06ee0d874d99256a8bde46d1d5b03608f3a6782df849b8674d1167232abec8",
+      "originalPath": "morph-station/server/stationProxy.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Inject Mac MCP transport; preserve exact explicit review/analysis intent and JSON errors; reject invalid UTF-8; allow report limit query."
+    },
+    {
+      "path": "dashboard/src/App.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/App.tsx",
+      "sourceBytes": 22809,
+      "sourceSha256": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+      "packagedBytes": 22809,
+      "packagedSha256": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+      "originalPath": "morph-station/src/App.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/analysis/EvidenceAnalystPanel.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/EvidenceAnalystPanel.tsx",
+      "sourceBytes": 33164,
+      "sourceSha256": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733",
+      "packagedBytes": 33164,
+      "packagedSha256": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733",
+      "originalPath": "morph-station/src/analysis/EvidenceAnalystPanel.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/analysis/README.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/README.md",
+      "sourceBytes": 8691,
+      "sourceSha256": "9d058af83927e34bdcfeda7b8cde661c97efd80ae17d158a673cf27d13a39b6b",
+      "packagedBytes": 9192,
+      "packagedSha256": "03f43abffbefca12444d2544c454eb77d88d97205d6d410fd728c006e2acb001",
+      "originalPath": "morph-station/src/analysis/README.md",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Update portable package documentation and distinguish historical source claims from current verification."
+    },
+    {
+      "path": "dashboard/src/analysis/analysis.test.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/analysis.test.tsx",
+      "sourceBytes": 33612,
+      "sourceSha256": "4fd463f2cfe6e263ff5e317353054f53951f3a73ee07acc4a25e06581957fe2c",
+      "packagedBytes": 33612,
+      "packagedSha256": "4fd463f2cfe6e263ff5e317353054f53951f3a73ee07acc4a25e06581957fe2c",
+      "originalPath": "morph-station/src/analysis/analysis.test.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/analysis/client.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/client.ts",
+      "sourceBytes": 7026,
+      "sourceSha256": "f6667fc652669183a74509dce9853889eb97f02e547fcb71bf5d7c5365223f84",
+      "packagedBytes": 7026,
+      "packagedSha256": "bd133a0dfd254aa1c6bd3a9a8746d8fb1e77ed29a9f24e024332c32bbd449c4a",
+      "originalPath": "morph-station/src/analysis/client.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Extend browser request deadline to 40 seconds for the bounded MCP relay."
+    },
+    {
+      "path": "dashboard/src/analysis/controller.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/controller.ts",
+      "sourceBytes": 14694,
+      "sourceSha256": "3653323a061002542bcc08edabc916c519e356b0acc15307f66703709ae59afa",
+      "packagedBytes": 14694,
+      "packagedSha256": "3653323a061002542bcc08edabc916c519e356b0acc15307f66703709ae59afa",
+      "originalPath": "morph-station/src/analysis/controller.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/analysis/drafts.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/drafts.ts",
+      "sourceBytes": 1002,
+      "sourceSha256": "85ac32b13e49fd731700b1744f8ccf3e6bf06d15a03ee5b3e6537e454b56e1d8",
+      "packagedBytes": 1002,
+      "packagedSha256": "85ac32b13e49fd731700b1744f8ccf3e6bf06d15a03ee5b3e6537e454b56e1d8",
+      "originalPath": "morph-station/src/analysis/drafts.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/analysis/types.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/types.ts",
+      "sourceBytes": 3860,
+      "sourceSha256": "45e15f8577a70d241d8486c28d5238fb416c5630ff2941c64ed81b6c8246a513",
+      "packagedBytes": 3860,
+      "packagedSha256": "45e15f8577a70d241d8486c28d5238fb416c5630ff2941c64ed81b6c8246a513",
+      "originalPath": "morph-station/src/analysis/types.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/analysis/validation.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/analysis/validation.ts",
+      "sourceBytes": 5465,
+      "sourceSha256": "ceb2db15eb1077ccda2a444945d0728e646983ca9ae24443db38449ff8e3d074",
+      "packagedBytes": 5465,
+      "packagedSha256": "ceb2db15eb1077ccda2a444945d0728e646983ca9ae24443db38449ff8e3d074",
+      "originalPath": "morph-station/src/analysis/validation.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/CycleDetailDrawer.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/CycleDetailDrawer.tsx",
+      "sourceBytes": 21398,
+      "sourceSha256": "3a1656742079c644f2a2784daf2a7995eac6e5de94aceb0a6747a7a0a86e994d",
+      "packagedBytes": 21398,
+      "packagedSha256": "3a1656742079c644f2a2784daf2a7995eac6e5de94aceb0a6747a7a0a86e994d",
+      "originalPath": "morph-station/src/components/CycleDetailDrawer.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/CycleReviewForm.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/CycleReviewForm.tsx",
+      "sourceBytes": 12669,
+      "sourceSha256": "647afc57702f50bf5a1487c6dd70ba6be18cbc5bc5e244bfbcf4fcae010898de",
+      "packagedBytes": 12669,
+      "packagedSha256": "647afc57702f50bf5a1487c6dd70ba6be18cbc5bc5e244bfbcf4fcae010898de",
+      "originalPath": "morph-station/src/components/CycleReviewForm.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/DesignLanguageView.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/DesignLanguageView.tsx",
+      "sourceBytes": 7875,
+      "sourceSha256": "78f03c6e9f7bfdda38b844f645189b1b4ac3506ec8ff045bd2b2c3ac0235281d",
+      "packagedBytes": 7875,
+      "packagedSha256": "78f03c6e9f7bfdda38b844f645189b1b4ac3506ec8ff045bd2b2c3ac0235281d",
+      "originalPath": "morph-station/src/components/DesignLanguageView.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/EvidenceImage.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/EvidenceImage.tsx",
+      "sourceBytes": 1405,
+      "sourceSha256": "4328b286e4e2d01491d309784db2513477f804276c6ca6663c4ac68f88385a25",
+      "packagedBytes": 1405,
+      "packagedSha256": "4328b286e4e2d01491d309784db2513477f804276c6ca6663c4ac68f88385a25",
+      "originalPath": "morph-station/src/components/EvidenceImage.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/InspectionSceneSvg.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/InspectionSceneSvg.tsx",
+      "sourceBytes": 5661,
+      "sourceSha256": "83674ad1cb84060082b61c2383d74c70440a8cd096247f60f0d2397749eb0ca1",
+      "packagedBytes": 5661,
+      "packagedSha256": "83674ad1cb84060082b61c2383d74c70440a8cd096247f60f0d2397749eb0ca1",
+      "originalPath": "morph-station/src/components/InspectionSceneSvg.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/LiveInspectionView.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/LiveInspectionView.tsx",
+      "sourceBytes": 33136,
+      "sourceSha256": "a30f407f28f84857e68f76420ebe1423f0a3bdfcbd665b3b953ce1c14d1a9ae6",
+      "packagedBytes": 33136,
+      "packagedSha256": "a30f407f28f84857e68f76420ebe1423f0a3bdfcbd665b3b953ce1c14d1a9ae6",
+      "originalPath": "morph-station/src/components/LiveInspectionView.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/QualityHistoryView.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/QualityHistoryView.tsx",
+      "sourceBytes": 23797,
+      "sourceSha256": "494cc44abef0fd6fa18b496a4d1ca7e8aa520d63a1d4f5343ecf20d4a6ef8432",
+      "packagedBytes": 23797,
+      "packagedSha256": "494cc44abef0fd6fa18b496a4d1ca7e8aa520d63a1d4f5343ecf20d4a6ef8432",
+      "originalPath": "morph-station/src/components/QualityHistoryView.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/ReplayPanel.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/ReplayPanel.tsx",
+      "sourceBytes": 2899,
+      "sourceSha256": "e37af9f9f1cae88e157612592482a53075eb50eb0c9530201329ebb57ab85611",
+      "packagedBytes": 2899,
+      "packagedSha256": "e37af9f9f1cae88e157612592482a53075eb50eb0c9530201329ebb57ab85611",
+      "originalPath": "morph-station/src/components/ReplayPanel.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/RobotSystemView.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/RobotSystemView.tsx",
+      "sourceBytes": 12694,
+      "sourceSha256": "3864fb0b41971f6f670a41961bf9c038c309f81ad05230046d6d47b5a43f31a3",
+      "packagedBytes": 12694,
+      "packagedSha256": "3864fb0b41971f6f670a41961bf9c038c309f81ad05230046d6d47b5a43f31a3",
+      "originalPath": "morph-station/src/components/RobotSystemView.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/components/SoftwareStopDialog.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/components/SoftwareStopDialog.tsx",
+      "sourceBytes": 5206,
+      "sourceSha256": "576a9053ef34118428b6d00e659f7eec6b71623fb519d491335dd79458bbb2a9",
+      "packagedBytes": 5206,
+      "packagedSha256": "576a9053ef34118428b6d00e659f7eec6b71623fb519d491335dd79458bbb2a9",
+      "originalPath": "morph-station/src/components/SoftwareStopDialog.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/domain/fixtures.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/domain/fixtures.ts",
+      "sourceBytes": 35947,
+      "sourceSha256": "f4a4d3f5d2363e3fb2715fb7ac1074152ae03b366f12047a992bad3fdb01c83b",
+      "packagedBytes": 35947,
+      "packagedSha256": "f4a4d3f5d2363e3fb2715fb7ac1074152ae03b366f12047a992bad3fdb01c83b",
+      "originalPath": "morph-station/src/domain/fixtures.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/domain/prototypeTypes.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/domain/prototypeTypes.ts",
+      "sourceBytes": 11475,
+      "sourceSha256": "b8528e453699a705e62c1986692e9c8d9a73d7e0c067496699ee4bec30b61416",
+      "packagedBytes": 11475,
+      "packagedSha256": "b8528e453699a705e62c1986692e9c8d9a73d7e0c067496699ee4bec30b61416",
+      "originalPath": "morph-station/src/domain/prototypeTypes.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/domain/stationLogic.test.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/domain/stationLogic.test.ts",
+      "sourceBytes": 13607,
+      "sourceSha256": "a1ae53015d3bee105db56586dd04c659d15cf94db532d1098579d973474c817e",
+      "packagedBytes": 13607,
+      "packagedSha256": "a1ae53015d3bee105db56586dd04c659d15cf94db532d1098579d973474c817e",
+      "originalPath": "morph-station/src/domain/stationLogic.test.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/domain/stationLogic.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/domain/stationLogic.ts",
+      "sourceBytes": 22438,
+      "sourceSha256": "d29bce44702f67b2be450fecb6d968acbb66cbd9ff0fca5c0aa2581b80d0e4c1",
+      "packagedBytes": 22438,
+      "packagedSha256": "d29bce44702f67b2be450fecb6d968acbb66cbd9ff0fca5c0aa2581b80d0e4c1",
+      "originalPath": "morph-station/src/domain/stationLogic.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/domain/stationStore.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/domain/stationStore.ts",
+      "sourceBytes": 45241,
+      "sourceSha256": "2abaeb2d141080ca7a93e073e6534f48ab411e5c501c4e966a2a8c123a7360b8",
+      "packagedBytes": 45241,
+      "packagedSha256": "2abaeb2d141080ca7a93e073e6534f48ab411e5c501c4e966a2a8c123a7360b8",
+      "originalPath": "morph-station/src/domain/stationStore.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/index.css",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/index.css",
+      "sourceBytes": 1996,
+      "sourceSha256": "b5733685871b38142e9329d3358ee6358fb4621a3fbf35535eee990d5758a7c8",
+      "packagedBytes": 1996,
+      "packagedSha256": "b5733685871b38142e9329d3358ee6358fb4621a3fbf35535eee990d5758a7c8",
+      "originalPath": "morph-station/src/index.css",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/main.tsx",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/main.tsx",
+      "sourceBytes": 159,
+      "sourceSha256": "30d02ee59cb6576973dea4368093b2dcae692a40668f288fdbc66a114873fcd3",
+      "packagedBytes": 159,
+      "packagedSha256": "30d02ee59cb6576973dea4368093b2dcae692a40668f288fdbc66a114873fcd3",
+      "originalPath": "morph-station/src/main.tsx",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/services/history.test.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/services/history.test.ts",
+      "sourceBytes": 4480,
+      "sourceSha256": "89e774273b7a21edc1b3eb604fbaa18ccfcad44b86daf4f5c78012807d8cf214",
+      "packagedBytes": 4465,
+      "packagedSha256": "9b18292911a7698b8f259a5aab6b5a99db2354511a884fdca7cd37c522cdf963",
+      "originalPath": "morph-station/src/services/history.test.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Resolve existing synthetic fixtures from the portable verification/fixtures directory."
+    },
+    {
+      "path": "dashboard/src/services/history.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/services/history.ts",
+      "sourceBytes": 2647,
+      "sourceSha256": "fb8f4ea6b469a6d3849d67734c101719579d85dc1e778400b92b741ec43f907e",
+      "packagedBytes": 2647,
+      "packagedSha256": "fb8f4ea6b469a6d3849d67734c101719579d85dc1e778400b92b741ec43f907e",
+      "originalPath": "morph-station/src/services/history.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/services/m06Projection.test.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/services/m06Projection.test.ts",
+      "sourceBytes": 5961,
+      "sourceSha256": "4080aa512baa6a73c083c25ff03a2b94a574c6454ece314584432995ed4ed7ae",
+      "packagedBytes": 5946,
+      "packagedSha256": "371a15582e82da64d92c2077441ec0ebc618f3fe2a75c4b0d72c905359782a9b",
+      "originalPath": "morph-station/src/services/m06Projection.test.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": "Resolve existing synthetic fixtures from the portable verification/fixtures directory."
+    },
+    {
+      "path": "dashboard/src/services/m06Projection.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/services/m06Projection.ts",
+      "sourceBytes": 13746,
+      "sourceSha256": "446afde7956e065009b6c2a4416946233ae8ed676f1540280fa623d0ffb8ee95",
+      "packagedBytes": 13746,
+      "packagedSha256": "446afde7956e065009b6c2a4416946233ae8ed676f1540280fa623d0ffb8ee95",
+      "originalPath": "morph-station/src/services/m06Projection.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/services/pendingReview.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/services/pendingReview.ts",
+      "sourceBytes": 2918,
+      "sourceSha256": "13b997257c5daecb3ea98859708918bbb0722d0b42859765b3591c252b234f45",
+      "packagedBytes": 2918,
+      "packagedSha256": "13b997257c5daecb3ea98859708918bbb0722d0b42859765b3591c252b234f45",
+      "originalPath": "morph-station/src/services/pendingReview.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/services/stationClient.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/services/stationClient.ts",
+      "sourceBytes": 5154,
+      "sourceSha256": "4cdbfecc99f65e11492f00c83262789611baa4d3d5767fec081b0a32cd16981d",
+      "packagedBytes": 5154,
+      "packagedSha256": "4cdbfecc99f65e11492f00c83262789611baa4d3d5767fec081b0a32cd16981d",
+      "originalPath": "morph-station/src/services/stationClient.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/src/types/morph.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/src/types/morph.ts",
+      "sourceBytes": 12133,
+      "sourceSha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1",
+      "packagedBytes": 12133,
+      "packagedSha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1",
+      "originalPath": "morph-station/src/types/morph.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/tsconfig.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/tsconfig.json",
+      "sourceBytes": 561,
+      "sourceSha256": "cbc914147cc208c35cb5f6d405f0f0bc3c1c76ae76bf45bbc4f588b924492d2a",
+      "packagedBytes": 561,
+      "packagedSha256": "cbc914147cc208c35cb5f6d405f0f0bc3c1c76ae76bf45bbc4f588b924492d2a",
+      "originalPath": "morph-station/tsconfig.json",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/vite.config.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/morph-station/vite.config.ts",
+      "sourceBytes": 705,
+      "sourceSha256": "a7aa711292e5ad7eb10f7a17f5f34fbbf75c7b7c24d59cb0212c60bc493c3208",
+      "packagedBytes": 705,
+      "packagedSha256": "a7aa711292e5ad7eb10f7a17f5f34fbbf75c7b7c24d59cb0212c60bc493c3208",
+      "originalPath": "morph-station/vite.config.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-dashboard-source.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/.gitignore",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/.gitignore",
+      "sourceBytes": 26,
+      "sourceSha256": "de0d886cb546d2333194161c3df3400341a992a486301243e01e491993b2796c",
+      "packagedBytes": 26,
+      "packagedSha256": "de0d886cb546d2333194161c3df3400341a992a486301243e01e491993b2796c",
+      "originalPath": "HachingJunction/station/web-client/.gitignore",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/README.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/README.md",
+      "sourceBytes": 10637,
+      "sourceSha256": "89395e78296d89db94a08237da71c4f47e2b2f4de91d9ff452eb1888901769b9",
+      "packagedBytes": 6629,
+      "packagedSha256": "2dfb8b7d7e61a28ece9c81fd44f380b21d177d1f6d92c44f8385d397558a6612",
+      "originalPath": "HachingJunction/station/web-client/README.md",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Update portable package documentation and distinguish historical source claims from current verification."
+    },
+    {
+      "path": "station-client/VERIFICATION.md",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/VERIFICATION.md",
+      "sourceBytes": 11282,
+      "sourceSha256": "f6c4331f4f4275afa2b2fc69a345934263ef7de06b913ad99e07bdfc6d76b71f",
+      "packagedBytes": 2387,
+      "packagedSha256": "f1cf90a480db9334a69a723a37dc3e7fc7b51231026d58bf401ec187fd12d787",
+      "originalPath": "HachingJunction/station/web-client/VERIFICATION.md",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Update portable package documentation and distinguish historical source claims from current verification."
+    },
+    {
+      "path": "station-client/package.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/package.json",
+      "sourceBytes": 366,
+      "sourceSha256": "49ff28db4e32ae7a76bd833581e9dbc92b7266c26580502f3f2fee5055e83946",
+      "packagedBytes": 366,
+      "packagedSha256": "49ff28db4e32ae7a76bd833581e9dbc92b7266c26580502f3f2fee5055e83946",
+      "originalPath": "HachingJunction/station/web-client/package.json",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/src/client.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/src/client.ts",
+      "sourceBytes": 34636,
+      "sourceSha256": "b7a755f78402973aee15c1601687781090a1105bf904a2fa61c0778ab324403f",
+      "packagedBytes": 34636,
+      "packagedSha256": "e38b852fc62324c58eaf779d1c3640e33b976e424c14e76d4b5227e2aa3de08a",
+      "originalPath": "HachingJunction/station/web-client/src/client.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Extend browser request deadline to 40 seconds for the bounded MCP relay."
+    },
+    {
+      "path": "station-client/src/index.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/src/index.ts",
+      "sourceBytes": 113,
+      "sourceSha256": "f3dddb026717426814854cb0710dc28861e2a516e33ba839a30b4dce5cb7e23f",
+      "packagedBytes": 113,
+      "packagedSha256": "f3dddb026717426814854cb0710dc28861e2a516e33ba839a30b4dce5cb7e23f",
+      "originalPath": "HachingJunction/station/web-client/src/index.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/src/store.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/src/store.ts",
+      "sourceBytes": 13846,
+      "sourceSha256": "4c4f195b9ac146265e3ffbdcecf045111e27c78c2ac51dfb34c7f8025b9f531c",
+      "packagedBytes": 13846,
+      "packagedSha256": "4c4f195b9ac146265e3ffbdcecf045111e27c78c2ac51dfb34c7f8025b9f531c",
+      "originalPath": "HachingJunction/station/web-client/src/store.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/src/types.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/src/types.ts",
+      "sourceBytes": 9976,
+      "sourceSha256": "e0249f9c004d00535a8feafd6566a39b08970e92b50e8a27b49967283a6fa483",
+      "packagedBytes": 9976,
+      "packagedSha256": "e0249f9c004d00535a8feafd6566a39b08970e92b50e8a27b49967283a6fa483",
+      "originalPath": "HachingJunction/station/web-client/src/types.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/src/views.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/src/views.ts",
+      "sourceBytes": 3671,
+      "sourceSha256": "d2b627d892009edf674a9e3d2138bafeb4cd9c0bc12fc9fce7cc392a53652996",
+      "packagedBytes": 3671,
+      "packagedSha256": "d2b627d892009edf674a9e3d2138bafeb4cd9c0bc12fc9fce7cc392a53652996",
+      "originalPath": "HachingJunction/station/web-client/src/views.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/tests/client.test.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/tests/client.test.ts",
+      "sourceBytes": 28101,
+      "sourceSha256": "71796e609e16d0b2f634b3a1fa6c2b66ed2ba8e2e5f59bebaf3465fc548b2fbe",
+      "packagedBytes": 28119,
+      "packagedSha256": "11b52d774f9d70cb0578b42cdb4d7d1f1ee36cdb92a6c91e47d9ed1f0483b347",
+      "originalPath": "HachingJunction/station/web-client/tests/client.test.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": "Use packaged fixture paths and matching 40-second fake-timer assertions."
+    },
+    {
+      "path": "station-client/tests/smoke.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/tests/smoke.ts",
+      "sourceBytes": 16784,
+      "sourceSha256": "1d341e48fb45e82211b52e10c37aecdb04813afd7c6efcbf0439961b4df62f99",
+      "packagedBytes": 16784,
+      "packagedSha256": "1d341e48fb45e82211b52e10c37aecdb04813afd7c6efcbf0439961b4df62f99",
+      "originalPath": "HachingJunction/station/web-client/tests/smoke.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/tests/smoke_dashboard.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/tests/smoke_dashboard.py",
+      "sourceBytes": 5721,
+      "sourceSha256": "850a17ea2b288e65b25e9cff433bd3ffad3063a89da38a987f6aca94b5189b96",
+      "packagedBytes": 5721,
+      "packagedSha256": "850a17ea2b288e65b25e9cff433bd3ffad3063a89da38a987f6aca94b5189b96",
+      "originalPath": "HachingJunction/station/web-client/tests/smoke_dashboard.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/tests/smoke_http.py",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/tests/smoke_http.py",
+      "sourceBytes": 7966,
+      "sourceSha256": "2bc096afc94b342ed2b5474303c6600d134563fede5a965ddd4e9829b477edf4",
+      "packagedBytes": 7966,
+      "packagedSha256": "2bc096afc94b342ed2b5474303c6600d134563fede5a965ddd4e9829b477edf4",
+      "originalPath": "HachingJunction/station/web-client/tests/smoke_http.py",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "station-client/tests/store.test.ts",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/tests/store.test.ts",
+      "sourceBytes": 11645,
+      "sourceSha256": "bcf368222d0971a3a3edc688a30f2fc78e6847ae336e056ca3e935e25cfef530",
+      "packagedBytes": 11654,
+      "packagedSha256": "9b708f31bbda2fdfbac2e9aaa7b54cb94ec8c3dcf24f06da602c78f52e331e2f",
+      "originalPath": "HachingJunction/station/web-client/tests/store.test.ts",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": "Resolve existing synthetic fixtures from the portable verification/fixtures directory."
+    },
+    {
+      "path": "station-client/tsconfig.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/web-client/tsconfig.json",
+      "sourceBytes": 410,
+      "sourceSha256": "5483df9253949a67b8903325df2c3c9f6bf43006d9fbbeac3da0f47351c8e6cb",
+      "packagedBytes": 410,
+      "packagedSha256": "5483df9253949a67b8903325df2c3c9f6bf43006d9fbbeac3da0f47351c8e6cb",
+      "originalPath": "HachingJunction/station/web-client/tsconfig.json",
+      "rootAlias": "common",
+      "receiptDisposition": "reuse",
+      "baselineMatches": [
+        "baseline-shared-client.json"
+      ],
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/sample-cycle-retry.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/verification/sample-cycle-retry.json",
+      "sourceBytes": 30499,
+      "sourceSha256": "48f29d2f15292a74d428214fb1c0b04497b8cb12c84ed8588b95288a5c7fcc53",
+      "packagedBytes": 30499,
+      "packagedSha256": "48f29d2f15292a74d428214fb1c0b04497b8cb12c84ed8588b95288a5c7fcc53",
+      "originalPath": "HachingJunction/station/verification/sample-cycle-retry.json",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/sample-events.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/verification/sample-events.json",
+      "sourceBytes": 41172,
+      "sourceSha256": "24ed45d6c774fbd25db6db80532c74ab9e7f0ac0b5e3667ce4660b6e61c0d319",
+      "packagedBytes": 41172,
+      "packagedSha256": "24ed45d6c774fbd25db6db80532c74ab9e7f0ac0b5e3667ce4660b6e61c0d319",
+      "originalPath": "HachingJunction/station/verification/sample-events.json",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/sample-export.csv",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/verification/sample-export.csv",
+      "sourceBytes": 83993,
+      "sourceSha256": "dcb024cb4e95b21600666cdf32cf760b88bc2d65ff0b15b3569d5866328da14f",
+      "packagedBytes": 83993,
+      "packagedSha256": "dcb024cb4e95b21600666cdf32cf760b88bc2d65ff0b15b3569d5866328da14f",
+      "originalPath": "HachingJunction/station/verification/sample-export.csv",
+      "rootAlias": "common",
+      "receiptDisposition": "unsupported",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/sample-export.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/verification/sample-export.json",
+      "sourceBytes": 97061,
+      "sourceSha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d",
+      "packagedBytes": 97061,
+      "packagedSha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d",
+      "originalPath": "HachingJunction/station/verification/sample-export.json",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/sample-snapshot.json",
+      "sourcePath": "handoff/three-host-20261115/incoming/remaining-90672035/reconciled/common/HachingJunction/station/verification/sample-snapshot.json",
+      "sourceBytes": 4065,
+      "sourceSha256": "c4aa57162b2f64d9248b17c6b6107edb6d581451debd6ecd946ab1e79db93929",
+      "packagedBytes": 4065,
+      "packagedSha256": "c4aa57162b2f64d9248b17c6b6107edb6d581451debd6ecd946ab1e79db93929",
+      "originalPath": "HachingJunction/station/verification/sample-snapshot.json",
+      "rootAlias": "common",
+      "receiptDisposition": "transfer",
+      "baselineMatches": [],
+      "adaptation": null
+    }
+  ],
+  "sealedAt": "2026-11-15T03:56:14.621045+00:00",
+  "sourceReceiptNote": "2e753690-9953-4eaa-9bd0-6f9897c1db44",
+  "sourceReceiptAt": "2026-11-15T03:27:48.552178Z",
+  "sourceReconstructionSha256": "fc8d0769cecf4dbb5079b4ff2a3ff64c66cca72e49abefd528dfebe8e7426ff9",
+  "globalOriginalCoverage": {
+    "exactOriginalFiles": 237,
+    "inventoryFiles": 240,
+    "missingOriginalTests": 3,
+    "redactedCopies": "Separate root source-review material; not part of the executable test suite."
+  },
+  "retained": [
+    {
+      "path": ".gitignore",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/.gitignore",
+      "sourceBytes": 120,
+      "sourceSha256": "3c814ce94d01892e39cd30dc24a7ca41c4c37bec63c09c4e2ce4fc945e6d2c13",
+      "packagedSha256": "3c814ce94d01892e39cd30dc24a7ca41c4c37bec63c09c4e2ce4fc945e6d2c13",
+      "adaptation": null
+    },
+    {
+      "path": "AGENTS.md",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/AGENTS.md",
+      "sourceBytes": 1663,
+      "sourceSha256": "6f44ba3affe8e7dd2af585b02fefce1ad528d7754a1fa89c388faf4743cee5f1",
+      "packagedSha256": "4a2295d64c08c11306b1a4e49a225e9593649a7df38fe82d82f6e619fd7e36a9",
+      "adaptation": "Local package documentation/transport adaptation; dated original package retained separately."
+    },
+    {
+      "path": "README.md",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/README.md",
+      "sourceBytes": 8814,
+      "sourceSha256": "fb60dcbb1fce4efbf4330e04553f3b5fd622bc65dc92f6f4a93a604f5c633334",
+      "packagedSha256": "0929941dc3007ebcd700db17a6004710530ac19621d767b1c1733f2f6e713e2a",
+      "adaptation": "Local package documentation/transport adaptation; dated original package retained separately."
+    },
+    {
+      "path": "SOURCE_GAPS.md",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/SOURCE_GAPS.md",
+      "sourceBytes": 3244,
+      "sourceSha256": "7ef7f36e1dfdec1a8a32d9fde546fce018af0feb08e7f5d70a4afd930099630a",
+      "packagedSha256": "fff151cc458b7f192900e83dd1a213170aa2ea4c39e33747bbd960c644f60d49",
+      "adaptation": "Local package documentation/transport adaptation; dated original package retained separately."
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/SOURCE_PROVENANCE.json",
+      "sourceBytes": 38160,
+      "sourceSha256": "8a9db5da8632fefde8c46ed41ffdb19eb0d6bfb23c46acac36f590eae6496d4c",
+      "packagedSha256": "8a9db5da8632fefde8c46ed41ffdb19eb0d6bfb23c46acac36f590eae6496d4c",
+      "adaptation": null
+    },
+    {
+      "path": "THREE_HOST_ARCHITECTURE.md",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/THREE_HOST_ARCHITECTURE.md",
+      "sourceBytes": 5429,
+      "sourceSha256": "56e88cdc6cb811da5a83cd7b62e9e3e47dd7f2c3244673ac9ac0eb8f108714b9",
+      "packagedSha256": "b11c2303662dd7267c66c1c313246c99f1d31e76cf87456d2dee4da731df46cc",
+      "adaptation": "Local package documentation/transport adaptation; dated original package retained separately."
+    },
+    {
+      "path": "VERIFICATION.md",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/VERIFICATION.md",
+      "sourceBytes": 4239,
+      "sourceSha256": "1b1e3f4a00b8898eb1ef7fcb8892e4aed3497d43c31245bf08289188c8e8ec55",
+      "packagedSha256": "f8374fa8ee026071b96b5d678023281283cd30dedac677f188f9cda0bd113f95",
+      "adaptation": "Local package documentation/transport adaptation; dated original package retained separately."
+    },
+    {
+      "path": "analytics/requirements-dev.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/analytics/requirements-dev.txt",
+      "sourceBytes": 34,
+      "sourceSha256": "11b0006f4e3d389726c8528c5b6797083f14aeaf1ea854cb961f975ad0ae3b39",
+      "packagedSha256": "11b0006f4e3d389726c8528c5b6797083f14aeaf1ea854cb961f975ad0ae3b39",
+      "adaptation": null
+    },
+    {
+      "path": "analytics/requirements.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/analytics/requirements.txt",
+      "sourceBytes": 102,
+      "sourceSha256": "7131b5658d718e80991fb649ecee30fe8f0b596f75424623d52e31aac36103e1",
+      "packagedSha256": "7131b5658d718e80991fb649ecee30fe8f0b596f75424623d52e31aac36103e1",
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/.env.example",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/dashboard/.env.example",
+      "sourceBytes": 417,
+      "sourceSha256": "797036758a9ccef03b10469d1428aef49b298ea01e1a162bbe5387ef4831dfc2",
+      "packagedSha256": "797036758a9ccef03b10469d1428aef49b298ea01e1a162bbe5387ef4831dfc2",
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/server/mcpStationTransport.test.ts",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/dashboard/server/mcpStationTransport.test.ts",
+      "sourceBytes": 7180,
+      "sourceSha256": "e73d9b181b5f6c0e351ef11f4fe2110866e77b3e67adacc0f2f36e8bc59ac8b5",
+      "packagedSha256": "e73d9b181b5f6c0e351ef11f4fe2110866e77b3e67adacc0f2f36e8bc59ac8b5",
+      "adaptation": null
+    },
+    {
+      "path": "dashboard/server/mcpStationTransport.ts",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/dashboard/server/mcpStationTransport.ts",
+      "sourceBytes": 12335,
+      "sourceSha256": "e32d64121111d79b0c9d15870ae010e5047035dff21161cab2553707b86d1c9a",
+      "packagedSha256": "50df2a95b0edae59686fb98ec3af08b76b65e0694dde78e910d9621f6718ea97",
+      "adaptation": "Local package documentation/transport adaptation; dated original package retained separately."
+    },
+    {
+      "path": "dashboard/server/stationProxy.mac-baseline.test.ts",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/dashboard/server/stationProxy.test.ts",
+      "sourceBytes": 10204,
+      "sourceSha256": "db28947e8a4579c49e147595148062c0ccd9d0ac9cd44b9fad0bde55f01ff802",
+      "packagedSha256": "db28947e8a4579c49e147595148062c0ccd9d0ac9cd44b9fad0bde55f01ff802",
+      "adaptation": null
+    },
+    {
+      "path": "verification/analytics-pytest-initial.xml",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/analytics-pytest-initial.xml",
+      "sourceBytes": 10994,
+      "sourceSha256": "c4d1b4f723c9d36e6b81a81002614bd59ad2ba378feef982144248a03dcdff30",
+      "packagedSha256": "c4d1b4f723c9d36e6b81a81002614bd59ad2ba378feef982144248a03dcdff30",
+      "adaptation": null
+    },
+    {
+      "path": "verification/analytics-pytest.xml",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/analytics-pytest.xml",
+      "sourceBytes": 8619,
+      "sourceSha256": "011ebbc61aed32d7813679cb2f376c454cfcbd7b47d5759adbff81afc79de2df",
+      "packagedSha256": "011ebbc61aed32d7813679cb2f376c454cfcbd7b47d5759adbff81afc79de2df",
+      "adaptation": null
+    },
+    {
+      "path": "verification/analytics-tests.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/analytics-tests.txt",
+      "sourceBytes": 99,
+      "sourceSha256": "b70acca4a91277ceef9010c9c50ed1d229577616ff1050a207aa88bbfc3102e6",
+      "packagedSha256": "b70acca4a91277ceef9010c9c50ed1d229577616ff1050a207aa88bbfc3102e6",
+      "adaptation": null
+    },
+    {
+      "path": "verification/check-results.json",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/check-results.json",
+      "sourceBytes": 808,
+      "sourceSha256": "6ab9107b40dfc923671caac5faa08178cb1e359eb4f8d23fe726e05a2f9ac311",
+      "packagedSha256": "6ab9107b40dfc923671caac5faa08178cb1e359eb4f8d23fe726e05a2f9ac311",
+      "adaptation": null
+    },
+    {
+      "path": "verification/check_mcp_https.py",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/check_mcp_https.py",
+      "sourceBytes": 5890,
+      "sourceSha256": "c929ac696acfc3efd69cdf77e2064f51acb35518b5a34309b07abb7e5645013a",
+      "packagedSha256": "c929ac696acfc3efd69cdf77e2064f51acb35518b5a34309b07abb7e5645013a",
+      "adaptation": null
+    },
+    {
+      "path": "verification/dashboard-build-mcp-final.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/dashboard-build-mcp-final.txt",
+      "sourceBytes": 705,
+      "sourceSha256": "81de2655781aa5175a88024f7fcbf3f9028404c96aeed73014253e9008a6a15c",
+      "packagedSha256": "81de2655781aa5175a88024f7fcbf3f9028404c96aeed73014253e9008a6a15c",
+      "adaptation": null
+    },
+    {
+      "path": "verification/dashboard-build.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/dashboard-build.txt",
+      "sourceBytes": 914,
+      "sourceSha256": "7a65a05b33fff0799276a29da16406b5cad44c3af023c0dbf325148904ca2904",
+      "packagedSha256": "7a65a05b33fff0799276a29da16406b5cad44c3af023c0dbf325148904ca2904",
+      "adaptation": null
+    },
+    {
+      "path": "verification/dashboard-tests-mcp-final.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/dashboard-tests-mcp-final.txt",
+      "sourceBytes": 2787,
+      "sourceSha256": "0414684ac2e6bd551623e7542f6ed205ee96c9e801510833346ba5d313639328",
+      "packagedSha256": "0414684ac2e6bd551623e7542f6ed205ee96c9e801510833346ba5d313639328",
+      "adaptation": null
+    },
+    {
+      "path": "verification/dashboard-tests.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/dashboard-tests.txt",
+      "sourceBytes": 2131,
+      "sourceSha256": "a3b7c16a90e0b4b05086b5657443b736812a76dbd9d8603c6c0d292d66345807",
+      "packagedSha256": "a3b7c16a90e0b4b05086b5657443b736812a76dbd9d8603c6c0d292d66345807",
+      "adaptation": null
+    },
+    {
+      "path": "verification/dashboard-typecheck-mcp-final.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/dashboard-typecheck-mcp-final.txt",
+      "sourceBytes": 59,
+      "sourceSha256": "c308dafacfcb6605d4c054182c3f16552684c348a619d966075ae0668ccbc959",
+      "packagedSha256": "c308dafacfcb6605d4c054182c3f16552684c348a619d966075ae0668ccbc959",
+      "adaptation": null
+    },
+    {
+      "path": "verification/dashboard-typecheck.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/dashboard-typecheck.txt",
+      "sourceBytes": 58,
+      "sourceSha256": "8427d0b3f2e9dbff207d42dd1a6053506ec47236df1e65cf0f6325dcda4f90c1",
+      "packagedSha256": "8427d0b3f2e9dbff207d42dd1a6053506ec47236df1e65cf0f6325dcda4f90c1",
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/browser-replay-export.json",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/fixtures/browser-replay-export.json",
+      "sourceBytes": 42490,
+      "sourceSha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175",
+      "packagedSha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175",
+      "adaptation": null
+    },
+    {
+      "path": "verification/fixtures/recovered-session-export.json",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/fixtures/recovered-session-export.json",
+      "sourceBytes": 42490,
+      "sourceSha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8",
+      "packagedSha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8",
+      "adaptation": null
+    },
+    {
+      "path": "verification/local-startup.json",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/local-startup.json",
+      "sourceBytes": 270,
+      "sourceSha256": "a9ec77dfb8624f71cf2111e32053b41cac67a2d58f51063936810bd58df17b5d",
+      "packagedSha256": "a9ec77dfb8624f71cf2111e32053b41cac67a2d58f51063936810bd58df17b5d",
+      "adaptation": null
+    },
+    {
+      "path": "verification/mcp-https-roundtrip.json",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/mcp-https-roundtrip.json",
+      "sourceBytes": 1253,
+      "sourceSha256": "ffc7d599dda0571a685a84569c898ead4a29749dafe322133e2dad4452e9ba7a",
+      "packagedSha256": "ffc7d599dda0571a685a84569c898ead4a29749dafe322133e2dad4452e9ba7a",
+      "adaptation": null
+    },
+    {
+      "path": "verification/station-client-build-mcp-final.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/station-client-build-mcp-final.txt",
+      "sourceBytes": 209,
+      "sourceSha256": "1e90e037ffcba4704e27fdd05e56ec6f23f74e81ee110c354d51040ddf34d597",
+      "packagedSha256": "1e90e037ffcba4704e27fdd05e56ec6f23f74e81ee110c354d51040ddf34d597",
+      "adaptation": null
+    },
+    {
+      "path": "verification/station-client-tests-mcp-final.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/station-client-tests-mcp-final.txt",
+      "sourceBytes": 4293,
+      "sourceSha256": "59aa43734286a10351c0a5985dfbc11550b7020d1b8ece9fc9b8a5f2df3d006b",
+      "packagedSha256": "59aa43734286a10351c0a5985dfbc11550b7020d1b8ece9fc9b8a5f2df3d006b",
+      "adaptation": null
+    },
+    {
+      "path": "verification/station-client-tests.txt",
+      "sourcePath": "handoff/three-host-20261115/klemen-dashboard/verification/station-client-tests.txt",
+      "sourceBytes": 4295,
+      "sourceSha256": "f423ef010d46e4322cc01c8789a6ed8279a80aad95aa6dcd1146419e69a772b6",
+      "packagedSha256": "f423ef010d46e4322cc01c8789a6ed8279a80aad95aa6dcd1146419e69a772b6",
+      "adaptation": null
+    }
+  ],
+  "created": [
+    {
+      "path": "dashboard/server/stationProxy.mcp.test.ts",
+      "bytes": 7650,
+      "sha256": "7f161c4c881a3a3ce71c6f3ecde2f21e20cd58927396991f41a41b546100752e",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "tools/verify_package.py",
+      "bytes": 2309,
+      "sha256": "883e05be91cf1ac6b58b9ebb9c692b87f3ba8c536c9953ef00f7051fc43d7411",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "verification/check_reconciled_mcp.py",
+      "bytes": 13643,
+      "sha256": "01e1b281d7c680298d25ee764889ce088145ed100423c79d48f1fb6b3ef08ea4",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "verification/reconciled-analytics-tests.xml",
+      "bytes": 8619,
+      "sha256": "b92e1d1b0ea30c4917e6c383500951331c371c8bf20c53e34561139fd9cd8a6d",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "verification/reconciled-check-results.json",
+      "bytes": 1609,
+      "sha256": "9cec28fdff5c35a04a73e3af22caea66b327cced755468ec17129d22224123d5",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "verification/reconciled-client-tests.xml",
+      "bytes": 14815,
+      "sha256": "7e1077de10b0c4c6da2c8d491f9570ddf8e4e62e3c68e4ad4d7646b104369fd0",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "verification/reconciled-dashboard-tests.xml",
+      "bytes": 22380,
+      "sha256": "d8ccb9f5d55a0d92a302c064685b154a596e5c95919d6fdca289d5ea584e14fc",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    },
+    {
+      "path": "verification/reconciled-mcp-roundtrip.json",
+      "bytes": 5575,
+      "sha256": "f6c11ff0fd83ed1d499858d92a086076018a9ac853693af56960b499eab1ecf4",
+      "role": "Current local verification evidence/harness or package inventory verifier."
+    }
+  ],
+  "inventory": [
+    {
+      "path": ".gitignore",
+      "bytes": 120,
+      "sha256": "3c814ce94d01892e39cd30dc24a7ca41c4c37bec63c09c4e2ce4fc945e6d2c13"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 2029,
+      "sha256": "4a2295d64c08c11306b1a4e49a225e9593649a7df38fe82d82f6e619fd7e36a9"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8102,
+      "sha256": "0929941dc3007ebcd700db17a6004710530ac19621d767b1c1733f2f6e713e2a"
+    },
+    {
+      "path": "SOURCE_GAPS.md",
+      "bytes": 4062,
+      "sha256": "fff151cc458b7f192900e83dd1a213170aa2ea4c39e33747bbd960c644f60d49"
+    },
+    {
+      "path": "SOURCE_PROVENANCE.json",
+      "bytes": 38160,
+      "sha256": "8a9db5da8632fefde8c46ed41ffdb19eb0d6bfb23c46acac36f590eae6496d4c"
+    },
+    {
+      "path": "THREE_HOST_ARCHITECTURE.md",
+      "bytes": 3392,
+      "sha256": "b11c2303662dd7267c66c1c313246c99f1d31e76cf87456d2dee4da731df46cc"
+    },
+    {
+      "path": "VERIFICATION.md",
+      "bytes": 5360,
+      "sha256": "f8374fa8ee026071b96b5d678023281283cd30dedac677f188f9cda0bd113f95"
+    },
+    {
+      "path": "analytics/morph_station/__init__.py",
+      "bytes": 114,
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399"
+    },
+    {
+      "path": "analytics/morph_station/export_audit.py",
+      "bytes": 32263,
+      "sha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee"
+    },
+    {
+      "path": "analytics/morph_station/models.py",
+      "bytes": 11096,
+      "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3"
+    },
+    {
+      "path": "analytics/morph_station/schema.sql",
+      "bytes": 1589,
+      "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45"
+    },
+    {
+      "path": "analytics/morph_station/store.py",
+      "bytes": 44486,
+      "sha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c"
+    },
+    {
+      "path": "analytics/requirements-dev.txt",
+      "bytes": 34,
+      "sha256": "11b0006f4e3d389726c8528c5b6797083f14aeaf1ea854cb961f975ad0ae3b39"
+    },
+    {
+      "path": "analytics/requirements.txt",
+      "bytes": 102,
+      "sha256": "7131b5658d718e80991fb649ecee30fe8f0b596f75424623d52e31aac36103e1"
+    },
+    {
+      "path": "analytics/tests/test_export_audit.py",
+      "bytes": 21962,
+      "sha256": "18d879a2e03639639c5a69441f517b8bcb20127e7c324b6c1c6b8ebbc3fe934f"
+    },
+    {
+      "path": "dashboard/.env.example",
+      "bytes": 417,
+      "sha256": "797036758a9ccef03b10469d1428aef49b298ea01e1a162bbe5387ef4831dfc2"
+    },
+    {
+      "path": "dashboard/.gitignore",
+      "bytes": 73,
+      "sha256": "db691f14fcf678985362a42c6aedb581e42cd6bb99962ce1b44aea460fb2a4df"
+    },
+    {
+      "path": "dashboard/IMPLEMENTATION_STATUS.md",
+      "bytes": 2454,
+      "sha256": "9fd0b8a60e98dabce8e18a88885bd590c874990d6373e6f7b1a0ff333d9b2d38"
+    },
+    {
+      "path": "dashboard/README.md",
+      "bytes": 3415,
+      "sha256": "aed084052c8082d9822b3e3f0412da24315588f1b8f1ae077514ddf313b6b6d4"
+    },
+    {
+      "path": "dashboard/bun.lock",
+      "bytes": 69433,
+      "sha256": "2c52083c40d40e1d2b721a265c5d8afe120a5d3b4a2e02736b1830eff200cb64"
+    },
+    {
+      "path": "dashboard/index.html",
+      "bytes": 1079,
+      "sha256": "54c25618eb97cacf79eb20ccb5ebeb195379427621f97590d52f707cc337c4dc"
+    },
+    {
+      "path": "dashboard/metadata.json",
+      "bytes": 274,
+      "sha256": "27a198ee82ba6557ba0423f772516f0011cbeeeb09f55835ba5091cc5d4ab0dc"
+    },
+    {
+      "path": "dashboard/package-lock.json",
+      "bytes": 133021,
+      "sha256": "a19f1e02c80c79a307127f9d29f4e635ad6378cd007e308c15d4f8a3903802ba"
+    },
+    {
+      "path": "dashboard/package.json",
+      "bytes": 1314,
+      "sha256": "30a8904780c075f147d802411ddd6f5e9369ed7bc62cd33ca1df2642c2735144"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/00-overview_11b35994.png",
+      "bytes": 703269,
+      "sha256": "11b35994f27f31bb2c5578cd4bbe9eab6871dcb8bb1d35e4734b36f0d96773d4"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/01-live-preview_72d56139.png",
+      "bytes": 485952,
+      "sha256": "72d561399a0fe2f2288ff900cea485f4634134ee26c891887d6512237599b34e"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/01-live_f0b2b88b.png",
+      "bytes": 900517,
+      "sha256": "f0b2b88b2ae4bde44efbbca6318a6e188698cd51aa13e010d9e59395b0f4dcfd"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/02-system_eec39f6e.png",
+      "bytes": 491727,
+      "sha256": "eec39f6ece982e294189ac515976df813ec73029e80ea7bf7615251113fd1b9b"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/03-quality_0dcf6b4e.png",
+      "bytes": 486725,
+      "sha256": "0dcf6b4ed5c92f6c272b37996a6692910657f66d73eb67c828c5a87a190aa1a1"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/04-cycle-detail_ac6c0b2a.png",
+      "bytes": 594925,
+      "sha256": "ac6c0b2a374726a235b7395fa2fabdfabde2fa55b71bea7b919cf84a87462e99"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/05-stop_a70d599d.png",
+      "bytes": 596526,
+      "sha256": "a70d599d43abb0bf28ff3e72a0e23bd00eebc0e435019b05efde6cf3292f20d7"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/06-design-system-preview_ed8827e0.png",
+      "bytes": 313951,
+      "sha256": "ed8827e08b178aeb35fbd809ad46d81ee03906b9e421f2ee00ff1f5bd4d838fc"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/06-design-system_f46dc3f7.png",
+      "bytes": 476042,
+      "sha256": "f46dc3f77f02278db604606701995af9554b2bb87be644078adc8056672de428"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/07-disconnected_61b26055.png",
+      "bytes": 312304,
+      "sha256": "61b260553101120ea5dc39305755ff200ce0381e68b15e63de153a444ce70e32"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/08-mobile-preview_1d7968b7.png",
+      "bytes": 328255,
+      "sha256": "1d7968b71bb978567ab12d802ee81098bc50aaa04e514cefddf2105d615b1d70"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/08-mobile_4ec9cace.png",
+      "bytes": 537117,
+      "sha256": "4ec9cacead2bb829b3eb9c4afd61e4f50bb574c9035b391730e92a30c9346c9b"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/09-state-review_4f9d216c.png",
+      "bytes": 289586,
+      "sha256": "4f9d216cc602b98be830d273a8a99ad36f36eb04f57bee8a1b7e6adae74d0365"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/AI_STUDIO_MASTER_PROMPT_1c33d799.txt",
+      "bytes": 14215,
+      "sha256": "1c33d799810aff908765ebbcf906d6eeaae3b94994285d765cd3c57aa6ec36b8"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/AI_STUDIO_PROMPT_92773d09.md",
+      "bytes": 17564,
+      "sha256": "92773d09b670cc6551601fac374b8f87b7c6403bc87337b9ea7965553b1abdc7"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/ASSETS_2fe46ab7.md",
+      "bytes": 3577,
+      "sha256": "2fe46ab7649c22afc883fbe3b057f13eff55cc6b495ef7471d38bd8cc560aea7"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/DESIGN_SPEC_94029209.md",
+      "bytes": 16659,
+      "sha256": "9402920977808c86d34d75424efa02aabe324d98e8da1929ca4becf76f89ec8d"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/HANDOVER_GUIDE_a395cccd.md",
+      "bytes": 20003,
+      "sha256": "a395cccdd8b9318126c4969e328c34e19dfb76613d3b2e2ae68caf17f38ede8d"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/INTEGRATION_CONTRACT_fc2d0a53.md",
+      "bytes": 30595,
+      "sha256": "fc2d0a537d7d48f25d4b71161a2d1afe6cd68b0a114660d7a0c11db21b0231c4"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/MESSAGE_TO_BUILDER_4af8a10d.md",
+      "bytes": 3121,
+      "sha256": "4af8a10d1e698a88eef01fd2e037853fdd8b58670b74c40797c8e4cd81edf8ab"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/PACKAGE_FILES_0a8a81aa.txt",
+      "bytes": 3077,
+      "sha256": "0a8a81aa7b0567ee00dc8d50962dd015eb8dc28506e5a5a5776f0d0c57b9d8a7"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/PROJECT_AUDIT_37eec744.md",
+      "bytes": 22253,
+      "sha256": "37eec744b14e0f8ec00c5443011e1acf0c3d26daa145d580ee092b8260347160"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/README_fba65d5a.md",
+      "bytes": 7432,
+      "sha256": "fba65d5a957554cccafa617198b4358ac4a2e0855c6d0a3058027a4afa433053"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/REFERENCES_276e1b48.md",
+      "bytes": 11757,
+      "sha256": "276e1b4857e6b871f601286fd588f47d97d3b6b6286ec05c13f4b633a8133a28"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/app_75c07165.js",
+      "bytes": 26787,
+      "sha256": "75c07165064d9a36cba9e509488c9f2afa902a1b1f7844f91428e384a5177082"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/copernicus-scriven_f284bf85.jpg",
+      "bytes": 190329,
+      "sha256": "f284bf854bd1507c89f33b67c5bbf0455e833ad0b7d78aacd103d0b64a3acdf3"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/cormorantgaramond-OFL_60700d35.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/index_2e971940.html",
+      "bytes": 3558,
+      "sha256": "2e971940679c7b8ed3dd88352192cdf48049c440c034908a64a73d15c3c781f2"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/inspection-scene_9217b058.svg",
+      "bytes": 4235,
+      "sha256": "51a1ca494808fae097f4f33522d42cdb7dfbf286f7006184ba93af09e776c0dd"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/inter-OFL_5b9321a4.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/morph-mark_854b67cd.svg",
+      "bytes": 480,
+      "sha256": "854b67cdcb60ee04af80e4c531d70fdaf5dd314e411452160e6b70fea0f8baf4"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/morph-wordmark_3f19c927.png",
+      "bytes": 14729,
+      "sha256": "3f19c9274293820896fdc6312d35b0e6fa0a35b99eac215401d532cf28409413"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/orbital_7a3f6055.svg",
+      "bytes": 805,
+      "sha256": "7a3f6055540cbf307bb78e580171e84dfc91bef3242c829af1cbf454631a47d5"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/spacemono-OFL_8e4ee42b.txt",
+      "bytes": 4392,
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/styles_181bfa69.css",
+      "bytes": 24089,
+      "sha256": "181bfa691b1822471ea515c2d599bcbcfb37af621d531c1543be0979ab293895"
+    },
+    {
+      "path": "dashboard/public/assets/aistudio/verification_37e7c8b9.json",
+      "bytes": 519,
+      "sha256": "37e7c8b9e3ddcdf3c78df5a39ea5d5ca4ba67726f378235524562192fd624f03"
+    },
+    {
+      "path": "dashboard/public/assets/fonts/cormorant-italic.ttf",
+      "bytes": 715644,
+      "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d"
+    },
+    {
+      "path": "dashboard/public/assets/fonts/cormorantgaramond-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "path": "dashboard/public/assets/fonts/inter-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "dashboard/public/assets/fonts/inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "dashboard/public/assets/fonts/space-mono.ttf",
+      "bytes": 99356,
+      "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18"
+    },
+    {
+      "path": "dashboard/public/assets/fonts/spacemono-OFL.txt",
+      "bytes": 4392,
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f"
+    },
+    {
+      "path": "dashboard/server.ts",
+      "bytes": 2235,
+      "sha256": "319111e4e432c2b7344ab546d858f36c69def92df8907ad581c83d9cc4eb9ffe"
+    },
+    {
+      "path": "dashboard/server/mcpStationTransport.test.ts",
+      "bytes": 7180,
+      "sha256": "e73d9b181b5f6c0e351ef11f4fe2110866e77b3e67adacc0f2f36e8bc59ac8b5"
+    },
+    {
+      "path": "dashboard/server/mcpStationTransport.ts",
+      "bytes": 14839,
+      "sha256": "50df2a95b0edae59686fb98ec3af08b76b65e0694dde78e910d9621f6718ea97"
+    },
+    {
+      "path": "dashboard/server/stationProxy.mac-baseline.test.ts",
+      "bytes": 10204,
+      "sha256": "db28947e8a4579c49e147595148062c0ccd9d0ac9cd44b9fad0bde55f01ff802"
+    },
+    {
+      "path": "dashboard/server/stationProxy.mcp.test.ts",
+      "bytes": 7650,
+      "sha256": "7f161c4c881a3a3ce71c6f3ecde2f21e20cd58927396991f41a41b546100752e"
+    },
+    {
+      "path": "dashboard/server/stationProxy.ts",
+      "bytes": 14504,
+      "sha256": "bb06ee0d874d99256a8bde46d1d5b03608f3a6782df849b8674d1167232abec8"
+    },
+    {
+      "path": "dashboard/src/App.tsx",
+      "bytes": 22809,
+      "sha256": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f"
+    },
+    {
+      "path": "dashboard/src/analysis/EvidenceAnalystPanel.tsx",
+      "bytes": 33164,
+      "sha256": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733"
+    },
+    {
+      "path": "dashboard/src/analysis/README.md",
+      "bytes": 9192,
+      "sha256": "03f43abffbefca12444d2544c454eb77d88d97205d6d410fd728c006e2acb001"
+    },
+    {
+      "path": "dashboard/src/analysis/analysis.test.tsx",
+      "bytes": 33612,
+      "sha256": "4fd463f2cfe6e263ff5e317353054f53951f3a73ee07acc4a25e06581957fe2c"
+    },
+    {
+      "path": "dashboard/src/analysis/client.ts",
+      "bytes": 7026,
+      "sha256": "bd133a0dfd254aa1c6bd3a9a8746d8fb1e77ed29a9f24e024332c32bbd449c4a"
+    },
+    {
+      "path": "dashboard/src/analysis/controller.ts",
+      "bytes": 14694,
+      "sha256": "3653323a061002542bcc08edabc916c519e356b0acc15307f66703709ae59afa"
+    },
+    {
+      "path": "dashboard/src/analysis/drafts.ts",
+      "bytes": 1002,
+      "sha256": "85ac32b13e49fd731700b1744f8ccf3e6bf06d15a03ee5b3e6537e454b56e1d8"
+    },
+    {
+      "path": "dashboard/src/analysis/types.ts",
+      "bytes": 3860,
+      "sha256": "45e15f8577a70d241d8486c28d5238fb416c5630ff2941c64ed81b6c8246a513"
+    },
+    {
+      "path": "dashboard/src/analysis/validation.ts",
+      "bytes": 5465,
+      "sha256": "ceb2db15eb1077ccda2a444945d0728e646983ca9ae24443db38449ff8e3d074"
+    },
+    {
+      "path": "dashboard/src/components/CycleDetailDrawer.tsx",
+      "bytes": 21398,
+      "sha256": "3a1656742079c644f2a2784daf2a7995eac6e5de94aceb0a6747a7a0a86e994d"
+    },
+    {
+      "path": "dashboard/src/components/CycleReviewForm.tsx",
+      "bytes": 12669,
+      "sha256": "647afc57702f50bf5a1487c6dd70ba6be18cbc5bc5e244bfbcf4fcae010898de"
+    },
+    {
+      "path": "dashboard/src/components/DesignLanguageView.tsx",
+      "bytes": 7875,
+      "sha256": "78f03c6e9f7bfdda38b844f645189b1b4ac3506ec8ff045bd2b2c3ac0235281d"
+    },
+    {
+      "path": "dashboard/src/components/EvidenceImage.tsx",
+      "bytes": 1405,
+      "sha256": "4328b286e4e2d01491d309784db2513477f804276c6ca6663c4ac68f88385a25"
+    },
+    {
+      "path": "dashboard/src/components/InspectionSceneSvg.tsx",
+      "bytes": 5661,
+      "sha256": "83674ad1cb84060082b61c2383d74c70440a8cd096247f60f0d2397749eb0ca1"
+    },
+    {
+      "path": "dashboard/src/components/LiveInspectionView.tsx",
+      "bytes": 33136,
+      "sha256": "a30f407f28f84857e68f76420ebe1423f0a3bdfcbd665b3b953ce1c14d1a9ae6"
+    },
+    {
+      "path": "dashboard/src/components/QualityHistoryView.tsx",
+      "bytes": 23797,
+      "sha256": "494cc44abef0fd6fa18b496a4d1ca7e8aa520d63a1d4f5343ecf20d4a6ef8432"
+    },
+    {
+      "path": "dashboard/src/components/ReplayPanel.tsx",
+      "bytes": 2899,
+      "sha256": "e37af9f9f1cae88e157612592482a53075eb50eb0c9530201329ebb57ab85611"
+    },
+    {
+      "path": "dashboard/src/components/RobotSystemView.tsx",
+      "bytes": 12694,
+      "sha256": "3864fb0b41971f6f670a41961bf9c038c309f81ad05230046d6d47b5a43f31a3"
+    },
+    {
+      "path": "dashboard/src/components/SoftwareStopDialog.tsx",
+      "bytes": 5206,
+      "sha256": "576a9053ef34118428b6d00e659f7eec6b71623fb519d491335dd79458bbb2a9"
+    },
+    {
+      "path": "dashboard/src/domain/fixtures.ts",
+      "bytes": 35947,
+      "sha256": "f4a4d3f5d2363e3fb2715fb7ac1074152ae03b366f12047a992bad3fdb01c83b"
+    },
+    {
+      "path": "dashboard/src/domain/prototypeTypes.ts",
+      "bytes": 11475,
+      "sha256": "b8528e453699a705e62c1986692e9c8d9a73d7e0c067496699ee4bec30b61416"
+    },
+    {
+      "path": "dashboard/src/domain/stationLogic.test.ts",
+      "bytes": 13607,
+      "sha256": "a1ae53015d3bee105db56586dd04c659d15cf94db532d1098579d973474c817e"
+    },
+    {
+      "path": "dashboard/src/domain/stationLogic.ts",
+      "bytes": 22438,
+      "sha256": "d29bce44702f67b2be450fecb6d968acbb66cbd9ff0fca5c0aa2581b80d0e4c1"
+    },
+    {
+      "path": "dashboard/src/domain/stationStore.ts",
+      "bytes": 45241,
+      "sha256": "2abaeb2d141080ca7a93e073e6534f48ab411e5c501c4e966a2a8c123a7360b8"
+    },
+    {
+      "path": "dashboard/src/index.css",
+      "bytes": 1996,
+      "sha256": "b5733685871b38142e9329d3358ee6358fb4621a3fbf35535eee990d5758a7c8"
+    },
+    {
+      "path": "dashboard/src/main.tsx",
+      "bytes": 159,
+      "sha256": "30d02ee59cb6576973dea4368093b2dcae692a40668f288fdbc66a114873fcd3"
+    },
+    {
+      "path": "dashboard/src/services/history.test.ts",
+      "bytes": 4465,
+      "sha256": "9b18292911a7698b8f259a5aab6b5a99db2354511a884fdca7cd37c522cdf963"
+    },
+    {
+      "path": "dashboard/src/services/history.ts",
+      "bytes": 2647,
+      "sha256": "fb8f4ea6b469a6d3849d67734c101719579d85dc1e778400b92b741ec43f907e"
+    },
+    {
+      "path": "dashboard/src/services/m06Projection.test.ts",
+      "bytes": 5946,
+      "sha256": "371a15582e82da64d92c2077441ec0ebc618f3fe2a75c4b0d72c905359782a9b"
+    },
+    {
+      "path": "dashboard/src/services/m06Projection.ts",
+      "bytes": 13746,
+      "sha256": "446afde7956e065009b6c2a4416946233ae8ed676f1540280fa623d0ffb8ee95"
+    },
+    {
+      "path": "dashboard/src/services/pendingReview.ts",
+      "bytes": 2918,
+      "sha256": "13b997257c5daecb3ea98859708918bbb0722d0b42859765b3591c252b234f45"
+    },
+    {
+      "path": "dashboard/src/services/stationClient.ts",
+      "bytes": 5154,
+      "sha256": "4cdbfecc99f65e11492f00c83262789611baa4d3d5767fec081b0a32cd16981d"
+    },
+    {
+      "path": "dashboard/src/types/morph.ts",
+      "bytes": 12133,
+      "sha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1"
+    },
+    {
+      "path": "dashboard/tsconfig.json",
+      "bytes": 561,
+      "sha256": "cbc914147cc208c35cb5f6d405f0f0bc3c1c76ae76bf45bbc4f588b924492d2a"
+    },
+    {
+      "path": "dashboard/vite.config.ts",
+      "bytes": 705,
+      "sha256": "a7aa711292e5ad7eb10f7a17f5f34fbbf75c7b7c24d59cb0212c60bc493c3208"
+    },
+    {
+      "path": "station-client/.gitignore",
+      "bytes": 26,
+      "sha256": "de0d886cb546d2333194161c3df3400341a992a486301243e01e491993b2796c"
+    },
+    {
+      "path": "station-client/README.md",
+      "bytes": 6629,
+      "sha256": "2dfb8b7d7e61a28ece9c81fd44f380b21d177d1f6d92c44f8385d397558a6612"
+    },
+    {
+      "path": "station-client/VERIFICATION.md",
+      "bytes": 2387,
+      "sha256": "f1cf90a480db9334a69a723a37dc3e7fc7b51231026d58bf401ec187fd12d787"
+    },
+    {
+      "path": "station-client/package.json",
+      "bytes": 366,
+      "sha256": "49ff28db4e32ae7a76bd833581e9dbc92b7266c26580502f3f2fee5055e83946"
+    },
+    {
+      "path": "station-client/src/client.ts",
+      "bytes": 34636,
+      "sha256": "e38b852fc62324c58eaf779d1c3640e33b976e424c14e76d4b5227e2aa3de08a"
+    },
+    {
+      "path": "station-client/src/index.ts",
+      "bytes": 113,
+      "sha256": "f3dddb026717426814854cb0710dc28861e2a516e33ba839a30b4dce5cb7e23f"
+    },
+    {
+      "path": "station-client/src/store.ts",
+      "bytes": 13846,
+      "sha256": "4c4f195b9ac146265e3ffbdcecf045111e27c78c2ac51dfb34c7f8025b9f531c"
+    },
+    {
+      "path": "station-client/src/types.ts",
+      "bytes": 9976,
+      "sha256": "e0249f9c004d00535a8feafd6566a39b08970e92b50e8a27b49967283a6fa483"
+    },
+    {
+      "path": "station-client/src/views.ts",
+      "bytes": 3671,
+      "sha256": "d2b627d892009edf674a9e3d2138bafeb4cd9c0bc12fc9fce7cc392a53652996"
+    },
+    {
+      "path": "station-client/tests/client.test.ts",
+      "bytes": 28119,
+      "sha256": "11b52d774f9d70cb0578b42cdb4d7d1f1ee36cdb92a6c91e47d9ed1f0483b347"
+    },
+    {
+      "path": "station-client/tests/smoke.ts",
+      "bytes": 16784,
+      "sha256": "1d341e48fb45e82211b52e10c37aecdb04813afd7c6efcbf0439961b4df62f99"
+    },
+    {
+      "path": "station-client/tests/smoke_dashboard.py",
+      "bytes": 5721,
+      "sha256": "850a17ea2b288e65b25e9cff433bd3ffad3063a89da38a987f6aca94b5189b96"
+    },
+    {
+      "path": "station-client/tests/smoke_http.py",
+      "bytes": 7966,
+      "sha256": "2bc096afc94b342ed2b5474303c6600d134563fede5a965ddd4e9829b477edf4"
+    },
+    {
+      "path": "station-client/tests/store.test.ts",
+      "bytes": 11654,
+      "sha256": "9b708f31bbda2fdfbac2e9aaa7b54cb94ec8c3dcf24f06da602c78f52e331e2f"
+    },
+    {
+      "path": "station-client/tsconfig.json",
+      "bytes": 410,
+      "sha256": "5483df9253949a67b8903325df2c3c9f6bf43006d9fbbeac3da0f47351c8e6cb"
+    },
+    {
+      "path": "tools/verify_package.py",
+      "bytes": 2309,
+      "sha256": "883e05be91cf1ac6b58b9ebb9c692b87f3ba8c536c9953ef00f7051fc43d7411"
+    },
+    {
+      "path": "verification/analytics-pytest-initial.xml",
+      "bytes": 10994,
+      "sha256": "c4d1b4f723c9d36e6b81a81002614bd59ad2ba378feef982144248a03dcdff30"
+    },
+    {
+      "path": "verification/analytics-pytest.xml",
+      "bytes": 8619,
+      "sha256": "011ebbc61aed32d7813679cb2f376c454cfcbd7b47d5759adbff81afc79de2df"
+    },
+    {
+      "path": "verification/analytics-tests.txt",
+      "bytes": 99,
+      "sha256": "b70acca4a91277ceef9010c9c50ed1d229577616ff1050a207aa88bbfc3102e6"
+    },
+    {
+      "path": "verification/check-results.json",
+      "bytes": 808,
+      "sha256": "6ab9107b40dfc923671caac5faa08178cb1e359eb4f8d23fe726e05a2f9ac311"
+    },
+    {
+      "path": "verification/check_mcp_https.py",
+      "bytes": 5890,
+      "sha256": "c929ac696acfc3efd69cdf77e2064f51acb35518b5a34309b07abb7e5645013a"
+    },
+    {
+      "path": "verification/check_reconciled_mcp.py",
+      "bytes": 13643,
+      "sha256": "01e1b281d7c680298d25ee764889ce088145ed100423c79d48f1fb6b3ef08ea4"
+    },
+    {
+      "path": "verification/dashboard-build-mcp-final.txt",
+      "bytes": 705,
+      "sha256": "81de2655781aa5175a88024f7fcbf3f9028404c96aeed73014253e9008a6a15c"
+    },
+    {
+      "path": "verification/dashboard-build.txt",
+      "bytes": 914,
+      "sha256": "7a65a05b33fff0799276a29da16406b5cad44c3af023c0dbf325148904ca2904"
+    },
+    {
+      "path": "verification/dashboard-tests-mcp-final.txt",
+      "bytes": 2787,
+      "sha256": "0414684ac2e6bd551623e7542f6ed205ee96c9e801510833346ba5d313639328"
+    },
+    {
+      "path": "verification/dashboard-tests.txt",
+      "bytes": 2131,
+      "sha256": "a3b7c16a90e0b4b05086b5657443b736812a76dbd9d8603c6c0d292d66345807"
+    },
+    {
+      "path": "verification/dashboard-typecheck-mcp-final.txt",
+      "bytes": 59,
+      "sha256": "c308dafacfcb6605d4c054182c3f16552684c348a619d966075ae0668ccbc959"
+    },
+    {
+      "path": "verification/dashboard-typecheck.txt",
+      "bytes": 58,
+      "sha256": "8427d0b3f2e9dbff207d42dd1a6053506ec47236df1e65cf0f6325dcda4f90c1"
+    },
+    {
+      "path": "verification/fixtures/browser-replay-export.json",
+      "bytes": 42490,
+      "sha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175"
+    },
+    {
+      "path": "verification/fixtures/recovered-session-export.json",
+      "bytes": 42490,
+      "sha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8"
+    },
+    {
+      "path": "verification/fixtures/sample-cycle-retry.json",
+      "bytes": 30499,
+      "sha256": "48f29d2f15292a74d428214fb1c0b04497b8cb12c84ed8588b95288a5c7fcc53"
+    },
+    {
+      "path": "verification/fixtures/sample-events.json",
+      "bytes": 41172,
+      "sha256": "24ed45d6c774fbd25db6db80532c74ab9e7f0ac0b5e3667ce4660b6e61c0d319"
+    },
+    {
+      "path": "verification/fixtures/sample-export.csv",
+      "bytes": 83993,
+      "sha256": "dcb024cb4e95b21600666cdf32cf760b88bc2d65ff0b15b3569d5866328da14f"
+    },
+    {
+      "path": "verification/fixtures/sample-export.json",
+      "bytes": 97061,
+      "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d"
+    },
+    {
+      "path": "verification/fixtures/sample-snapshot.json",
+      "bytes": 4065,
+      "sha256": "c4aa57162b2f64d9248b17c6b6107edb6d581451debd6ecd946ab1e79db93929"
+    },
+    {
+      "path": "verification/local-startup.json",
+      "bytes": 270,
+      "sha256": "a9ec77dfb8624f71cf2111e32053b41cac67a2d58f51063936810bd58df17b5d"
+    },
+    {
+      "path": "verification/mcp-https-roundtrip.json",
+      "bytes": 1253,
+      "sha256": "ffc7d599dda0571a685a84569c898ead4a29749dafe322133e2dad4452e9ba7a"
+    },
+    {
+      "path": "verification/reconciled-analytics-tests.xml",
+      "bytes": 8619,
+      "sha256": "b92e1d1b0ea30c4917e6c383500951331c371c8bf20c53e34561139fd9cd8a6d"
+    },
+    {
+      "path": "verification/reconciled-check-results.json",
+      "bytes": 1609,
+      "sha256": "9cec28fdff5c35a04a73e3af22caea66b327cced755468ec17129d22224123d5"
+    },
+    {
+      "path": "verification/reconciled-client-tests.xml",
+      "bytes": 14815,
+      "sha256": "7e1077de10b0c4c6da2c8d491f9570ddf8e4e62e3c68e4ad4d7646b104369fd0"
+    },
+    {
+      "path": "verification/reconciled-dashboard-tests.xml",
+      "bytes": 22380,
+      "sha256": "d8ccb9f5d55a0d92a302c064685b154a596e5c95919d6fdca289d5ea584e14fc"
+    },
+    {
+      "path": "verification/reconciled-mcp-roundtrip.json",
+      "bytes": 5575,
+      "sha256": "f6c11ff0fd83ed1d499858d92a086076018a9ac853693af56960b499eab1ecf4"
+    },
+    {
+      "path": "verification/station-client-build-mcp-final.txt",
+      "bytes": 209,
+      "sha256": "1e90e037ffcba4704e27fdd05e56ec6f23f74e81ee110c354d51040ddf34d597"
+    },
+    {
+      "path": "verification/station-client-tests-mcp-final.txt",
+      "bytes": 4293,
+      "sha256": "59aa43734286a10351c0a5985dfbc11550b7020d1b8ece9fc9b8a5f2df3d006b"
+    },
+    {
+      "path": "verification/station-client-tests.txt",
+      "bytes": 4295,
+      "sha256": "f423ef010d46e4322cc01c8789a6ed8279a80aad95aa6dcd1146419e69a772b6"
+    }
+  ],
+  "inventorySha256": "c0de47614faec50591e8114a96cd960e2d4de1cbd1676a798364668e45668ffb",
+  "exclusions": [
+    "SOURCE_RECONCILIATION.json itself to avoid a recursive checksum",
+    "Generated node_modules, dist, .npm-cache, .venv, __pycache__, .pytest_cache",
+    "Private environment files, credentials, pairing, databases and raw runtime evidence"
+  ],
+  "verification": {
+    "unitTestsPassed": 174,
+    "unitFailures": 0,
+    "unitSkipped": 0,
+    "results": "verification/reconciled-check-results.json",
+    "tlsIntegration": "verification/reconciled-mcp-roundtrip.json",
+    "scope": "Local software and synthetic transport only; no Intel deployment, provider or physical verification."
+  }
+}
