@@ -1,0 +1,234 @@
+{
+  "checkedAt": "2026-11-15T03:34:56.775389+01:00",
+  "method": "Static UTF-8/AST/hash comparison only; incoming modules not imported or executed",
+  "transferId": "8dfe841b-f157-469d-84fe-7586cdcd583f",
+  "manifestNoteId": "b5c45c9c-58ca-521e-a26e-8bd8e2cc0179",
+  "bundleSha256": "f79c9426e361721aa63aa61038a93cbe1799d63e4a93501858a68112ea553e1b",
+  "fileCount": 17,
+  "fileBytes": 230799,
+  "allTransferredFileHashesVerified": true,
+  "runtimePythonFiles": 11,
+  "relativeImportStatements": [
+    {
+      "file": "__main__.py",
+      "module": "api",
+      "symbols": [
+        "create_app",
+        "data_directory",
+        "load_token",
+        "token_file"
+      ]
+    },
+    {
+      "file": "__main__.py",
+      "module": "store",
+      "symbols": [
+        "StationStore",
+        "StoreError"
+      ]
+    },
+    {
+      "file": "__main__.py",
+      "module": "simulation",
+      "symbols": [
+        "seed_demo"
+      ]
+    },
+    {
+      "file": "__main__.py",
+      "module": "client",
+      "symbols": [
+        "request"
+      ]
+    },
+    {
+      "file": "analysis.py",
+      "module": "analysis_context",
+      "symbols": [
+        "ContextBuilder"
+      ]
+    },
+    {
+      "file": "analysis.py",
+      "module": "analysis_models",
+      "symbols": [
+        "CONTRACT_VERSION",
+        "MODEL",
+        "PROMPT_VERSION",
+        "AnalysisRequest",
+        "EvidenceBriefResponse",
+        "Selection"
+      ]
+    },
+    {
+      "file": "analysis.py",
+      "module": "analysis_provider",
+      "symbols": [
+        "GemmaProvider",
+        "ProviderError",
+        "sanitize",
+        "strict_json_loads",
+        "validate_reply"
+      ]
+    },
+    {
+      "file": "analysis.py",
+      "module": "store",
+      "symbols": [
+        "StoreError",
+        "canonical",
+        "fingerprint",
+        "now"
+      ]
+    },
+    {
+      "file": "analysis_context.py",
+      "module": "analysis_models",
+      "symbols": [
+        "CONTEXT_VERSION",
+        "Selection"
+      ]
+    },
+    {
+      "file": "analysis_context.py",
+      "module": "store",
+      "symbols": [
+        "ALL_KINDS",
+        "StationStore",
+        "StoreError",
+        "canonical",
+        "fingerprint",
+        "now"
+      ]
+    },
+    {
+      "file": "analysis_context.py",
+      "module": "analysis_provider",
+      "symbols": [
+        "sanitize"
+      ]
+    },
+    {
+      "file": "analysis_models.py",
+      "module": "models",
+      "symbols": [
+        "ID"
+      ]
+    },
+    {
+      "file": "analysis_provider.py",
+      "module": "analysis_models",
+      "symbols": [
+        "CONTRACT_VERSION",
+        "MODEL",
+        "EvidenceBriefResponse"
+      ]
+    },
+    {
+      "file": "analysis_provider.py",
+      "module": "analysis_context",
+      "symbols": [
+        "cycle_citation_requirements"
+      ]
+    },
+    {
+      "file": "analysis_provider.py",
+      "module": "store",
+      "symbols": [
+        "canonical"
+      ]
+    },
+    {
+      "file": "api.py",
+      "module": "models",
+      "symbols": [
+        "MODELS",
+        "ID",
+        "CorrectionRequest",
+        "Cycle",
+        "CycleReview",
+        "EvidenceUpload",
+        "RecordWrite",
+        "Session",
+        "Time"
+      ]
+    },
+    {
+      "file": "api.py",
+      "module": "store",
+      "symbols": [
+        "StationStore",
+        "StoreError"
+      ]
+    },
+    {
+      "file": "api.py",
+      "module": "analysis",
+      "symbols": [
+        "register_analysis_routes"
+      ]
+    },
+    {
+      "file": "client.py",
+      "module": "api",
+      "symbols": [
+        "load_token"
+      ]
+    },
+    {
+      "file": "simulation.py",
+      "module": "models",
+      "symbols": [
+        "EvidenceUpload",
+        "RecordWrite"
+      ]
+    },
+    {
+      "file": "simulation.py",
+      "module": "store",
+      "symbols": [
+        "StationStore"
+      ]
+    },
+    {
+      "file": "store.py",
+      "module": "models",
+      "symbols": [
+        "MODELS",
+        "CorrectionRequest",
+        "CycleReview",
+        "EvidenceUpload",
+        "RecordWrite"
+      ]
+    }
+  ],
+  "missingRelativeImports": [],
+  "modelsAddedClasses": [
+    "CycleReview",
+    "ReviewChanges",
+    "ReviewConfirmation",
+    "ReviewLabel"
+  ],
+  "modelsRemovedClasses": [],
+  "modelsChangedExistingClasses": [],
+  "apiSnapshotAstIdentical": true,
+  "storeSnapshotAstIdentical": true,
+  "storeAddedMethods": [
+    "review_cycle"
+  ],
+  "storeChangedMethods": [
+    "_metrics"
+  ],
+  "requirementsByteIdentical": true,
+  "schemaOldContentPreservedAsPrefix": true,
+  "missingMissionModules": [
+    "dispatcher.py",
+    "control_api.py",
+    "providers.py",
+    "provider_api.py",
+    "voice.py",
+    "voice_api.py",
+    "lab.py",
+    "lab.html"
+  ]
+}
