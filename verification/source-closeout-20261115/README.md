@@ -32,6 +32,8 @@ The following delivery groups remain incomplete:
 
 The three historical originals remain separate archive gaps. The optional 1,111-byte watcher JSONL exists on Intel but remains unsupported; it is not an application dependency. After reviewing this blocker, the owner explicitly authorized shutdown with the recorded gaps and requested a manual ZIP for attachment in this chat. That human-mediated transfer will preserve original bytes, hashes and all earlier receipts. It does not change the shared sender or turn this metadata response into a complete source delivery. No automatic continuation was requested by Intel's final response.
 
+The [complete Intel ZIP prompt](../../INTEL_SOURCE_ZIP_PROMPT.md) specifies the nine originals, three incomplete groups, transitive source/test dependencies, original companions and the separate station-guide mapping exception. It requests local packaging with a verified manifest and archive hash for human attachment. It requires no running Mac MCP or hardware action. No ZIP has been received at this checkpoint.
+
 ## Operating state
 
 The [operating guide](../../WORKING_SYSTEM.md) records the current application boundary and the M08 owner STOP. Physical experiments and replay remain held after the reported collision. Offline tests, source receipt and a successful build do not establish physical clearance. The automatic Intel receiver remains revoked and the Mac review automation remains paused.
