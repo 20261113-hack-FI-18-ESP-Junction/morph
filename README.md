@@ -1,6 +1,15 @@
 # Morph
 
-Morph combines an operator interface, model-assisted task selection and recorded quality evidence for a physical robot workflow. This repository contains **Jose's control, chat and voice partition**: a runnable Mac simulation lab and a separately preserved snapshot of the current Intel records API.
+Morph combines an operator interface, model-assisted task selection and recorded quality evidence for a physical robot workflow. This repository contains the three agreed host partitions and their shared communication code. Jose's existing runnable control lab remains at the root; the other packages have their own setup and verification guides.
+
+| Owner | Start here | Included behavior |
+| --- | --- | --- |
+| Jose Mac | Root instructions below | Operator/control simulation lab, Nemotron and Gemini adapters, optional voice |
+| Klemen Mac | [klemen-dashboard](klemen-dashboard/README.md) | Current dashboard, audited history/replay, Gemma evidence UI, shared client and offline analytics |
+| Intel PC | [intel-runtime](intel-runtime/README.md) | Current records/analyst backend, setup, diagnostics and reproduction source |
+| Klemen ↔ Intel | [communication](communication/README.md) | Existing Mac MCP, worker, restricted review/analysis requests and source-transfer helpers |
+
+The [remaining-source handoff](REMAINING_SOURCE_HANDOFF.md) records source freshness, package checks and the three original test files still represented by redacted review copies. [source-review](source-review/README.md) preserves those copies separately from executable test suites.
 
 The lab includes bounded Nemotron observations, Gemini Decision 1 goal/task selection, version-checked simulated dispatch, persisted provider receipts and an optional ElevenLabs microphone path. It can start without provider credentials. **Physical robot dispatch is not implemented here**, and the received Intel source has no mission service or learned-skill dispatcher yet. Jose can build the operator/chat interface and reconcile record schemas immediately while that service is agreed with the Intel team.
 
@@ -54,13 +63,13 @@ bash run.sh --port 8013 --data-dir /absolute/path/to/private/jose-lab
 
 The root launcher imports only `station/`. The **17 received Intel files, 230,799 source bytes**, remain under `intel-contract/source/`; all transfer and per-file hashes were checked before import. Their records API adds review/analyst behavior beyond the Mac foundation. Keep the two snapshots separate while designing the production integration. The immutable provenance is in [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json), [Intel manifest](intel-contract/manifest.json) and [Intel receipt](intel-contract/report.json).
 
-The original shared workspace also contains Klemen's dashboard and the Intel runtime/communication packages. Those sibling packages are **not included in this repository**. References to canonical task IDs, context notes and workspace paths identify historical evidence, not additional files in this checkout.
+The later `klemen-dashboard/`, `intel-runtime/` and `communication/` packages preserve newer received source and intentional MCP adaptations separately from this original Jose lab. Use `intel-runtime/` for the broader current Intel snapshot; `intel-contract/` remains the immutable focused reference received earlier. References to canonical task IDs, context notes and workspace paths identify historical evidence, not additional private files in this checkout.
 
 ## Integration responsibilities
 
 Jose owns the operator/chat interface, high-level coordination, Nemotron and Gemini orchestration, likely voice hosting, and the future mission client. **Jose ↔ Intel uses the NVIDIA tunnel supplied by the other team.** That team provides the URL and transport; Jose and Intel must agree the application authentication and mission contract. This repository does not create or configure the tunnel. `MORPH_INTEL_BASE_URL` is reserved for the future client and is not read by the current simulator.
 
-Intel owns authoritative records and the eventual locally validated learned-skill execution, physical adapters and outcome confirmation. Klemen's dashboard/analytics reads Intel through the existing Mac MCP server, maintained in the separate communication workstream. A tunnel or a records endpoint does not implement physical mission dispatch.
+Intel owns authoritative records and the eventual locally validated learned-skill execution, physical adapters and outcome confirmation. Klemen's dashboard/analytics uses the existing Mac MCP server supplied in `communication/`. Its worker defaults to reads; explicit write opt-in permits audited record review and saved-evidence analysis. A tunnel or a records endpoint does not implement physical mission dispatch.
 
 The owner's November 15 decision makes **ElevenLabs optional** and places voice provisionally on Jose's Mac. Its experimental implementation is retained for reuse if selected. OpenClaw and the diagram's Argon component still need interface/access verification and implementation. Decision 1 remains a fixed-choice selector; application code owns task parameters and must never turn model output into joint commands.
 
