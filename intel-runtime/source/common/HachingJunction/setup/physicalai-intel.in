@@ -1,0 +1,16 @@
+# Intel Linux profile, verified against app/v0.3.0 metadata on 2026-11-14.
+# Resolve/install with uv --torch-backend xpu; never use the default CUDA wheel.
+physicalai-studio[xpu]==0.3.0
+physicalai==0.3.0
+physicalai-train==0.3.0
+torch==2.11.0
+torchvision==0.26.0
+# uv's XPU backend also routes torchcodec to PyTorch's XPU index, where 0.11.1
+# is unavailable. This is the official PyPI CPython 3.12 Linux wheel and digest.
+torchcodec @ https://files.pythonhosted.org/packages/ca/a9/a2b6ee3e84c55bdd0c45fd991dde71c95a99115ec9e26938b212b4545dcf/torchcodec-0.11.1-cp312-cp312-manylinux_2_28_x86_64.whl#sha256=6c26e90e7aa982302644d0af8cb706318682bb390f48a80ecbfeab03499acd04
+openvino==2026.4.1
+openvino-tokenizers==2026.4.1.0
+# Both are upstream requirements and share cv2; keep the binary version aligned.
+opencv-python==4.13.0.92
+opencv-python-headless==4.13.0.92
+

@@ -1,0 +1,10 @@
+# Physical AI Studio development environment for macOS Apple Silicon.
+# Verified against the app/v0.3.0 release on 2026-11-14.
+# Keep Runtime, Studio, and training library on the coordinated release.
+physicalai-studio[cpu]==0.3.0
+physicalai==0.3.0
+physicalai-train==0.3.0
+# Both packages are upstream dependencies and share the cv2 namespace.
+# Match their versions so the installed OpenCV binaries remain consistent.
+opencv-python==4.13.0.92
+opencv-python-headless==4.13.0.92
