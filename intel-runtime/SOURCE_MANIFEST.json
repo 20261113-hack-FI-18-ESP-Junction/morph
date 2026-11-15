@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "package": "intel-runtime",
-  "sealedAt": "2026-11-15T09:28:08.489842+00:00",
+  "sealedAt": "2026-11-15T09:32:57.653612+00:00",
   "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
   "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
-  "contentBytes": 5395154,
-  "fileCountExcludingThisManifest": 329,
+  "contentBytes": 5504924,
+  "fileCountExcludingThisManifest": 333,
   "originCounts": {
     "derived-existing-synthetic-fixture": 1,
-    "intel-current-source": 247,
+    "intel-current-source": 251,
     "intel-source-with-documented-adaptation": 5,
     "mac-authored-source": 20,
     "package-scaffolding": 12,
@@ -40,8 +40,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 26917,
-      "sha256": "3a951ca25d702562952a35734d57996eb12a2ad67512c0e6ba98487371a75606",
+      "bytes": 27926,
+      "sha256": "072293388d29cea35a80a37262eba12205be51808aa4f05b57df8bc80b693d9e",
       "origin": "package-scaffolding"
     },
     {
@@ -52,8 +52,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 338006,
-      "sha256": "2dc8284fc3aa57980919c269fa485456d3e72f569a8130e2ee63a647bb00dd66",
+      "bytes": 345413,
+      "sha256": "0fc77b7f212285efdb3146e597c41ff379628535a7a8268836c75b92a45848a6",
       "origin": "package-scaffolding"
     },
     {
@@ -1863,6 +1863,30 @@
       "origin": "intel-current-source"
     },
     {
+      "path": "verification/intel-policy-20261115-1015a558/SOURCE_DELIVERY.json",
+      "bytes": 11193,
+      "sha256": "d6002cb7699ac08b36089145802c95313a93d3572a9a5d74088a890869ac71b6",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-policy-20261115-1015a558/source/Junction/AGENTS.md",
+      "bytes": 18707,
+      "sha256": "f95d366b63118157d8bf833ed7ec81a93bacf0d54092fb2983e227b4049ca003",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-policy-20261115-1015a558/source/Junction/PROJECT_STATUS.md",
+      "bytes": 55171,
+      "sha256": "9e812da387ed4f6122933a95f817b9f11d98be0a369bb32297f2c78b7332e2a9",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-policy-20261115-1015a558/source/Junction/morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "bytes": 16283,
+      "sha256": "81549287801b39fad9312701d2f7cd6acd71f62586000db25910ec805f0fe31e",
+      "origin": "intel-current-source"
+    },
+    {
       "path": "verification/offline-01/guard-78798.json",
       "bytes": 31,
       "sha256": "a4a2372d99bcba3f163dd1f87ef42ebbd388eee46ac29532af83ac8c5d04a4c2",
@@ -2002,81 +2026,89 @@
     }
   ],
   "previousSeal": {
-    "gitCommit": "7521ef32275d8e5f44889ffbf7dc2f58648692eb",
-    "gitTree": "bd5fa02f1b074cdead951190089df94538bc8362",
-    "sealedAt": "2026-11-15T09:22:36.388180+00:00",
-    "sha256": "c1cd1331cac34adf4e475a2abed64a37cea5f7d590dc0940d2f6402b37aced15",
-    "fileCountExcludingThisManifest": 286,
-    "contentBytes": 4841894,
+    "gitCommit": "6ec4ca5fc6828e0e12c6232bd3017f3af4908458",
+    "gitTree": "56565a6da58dc484d78c9c727634c37643b7edd2",
+    "sealedAt": "2026-11-15T09:28:08.489842+00:00",
+    "sha256": "d5128746551c8c8e23455ad9dd3d55ee82e26c4a14d81466dc42a7996ff17dff",
+    "fileCountExcludingThisManifest": 329,
+    "contentBytes": 5395154,
     "previousSeal": {
-      "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
-      "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
-      "sealedAt": "2026-11-15T08:23:55.436622+00:00",
-      "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
-      "fileCountExcludingThisManifest": 254,
-      "contentBytes": 4203796,
+      "gitCommit": "7521ef32275d8e5f44889ffbf7dc2f58648692eb",
+      "gitTree": "bd5fa02f1b074cdead951190089df94538bc8362",
+      "sealedAt": "2026-11-15T09:22:36.388180+00:00",
+      "sha256": "c1cd1331cac34adf4e475a2abed64a37cea5f7d590dc0940d2f6402b37aced15",
+      "fileCountExcludingThisManifest": 286,
+      "contentBytes": 4841894,
       "previousSeal": {
-        "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
-        "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
-        "sealedAt": "2026-11-15T08:20:09.931452+00:00",
-        "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
-        "fileCountExcludingThisManifest": 242,
-        "contentBytes": 3872471,
+        "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+        "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
+        "sealedAt": "2026-11-15T08:23:55.436622+00:00",
+        "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
+        "fileCountExcludingThisManifest": 254,
+        "contentBytes": 4203796,
         "previousSeal": {
-          "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
-          "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
-          "sealedAt": "2026-11-15T08:18:02.075721+00:00",
-          "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
-          "fileCountExcludingThisManifest": 221,
-          "contentBytes": 3565277,
+          "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
+          "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
+          "sealedAt": "2026-11-15T08:20:09.931452+00:00",
+          "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
+          "fileCountExcludingThisManifest": 242,
+          "contentBytes": 3872471,
           "previousSeal": {
-            "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
-            "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
-            "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
-            "sealedAt": "2026-11-15T07:42:20.384410+00:00",
-            "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
-            "fileCountExcludingThisManifest": 186,
-            "contentBytes": 2963049,
+            "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
+            "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
+            "sealedAt": "2026-11-15T08:18:02.075721+00:00",
+            "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
+            "fileCountExcludingThisManifest": 221,
+            "contentBytes": 3565277,
             "previousSeal": {
-              "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
-              "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
-              "sealedAt": "2026-11-15T07:17:33.712630+00:00",
-              "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
-              "fileCountExcludingThisManifest": 174,
-              "contentBytes": 2708838,
+              "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
+              "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
+              "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
+              "sealedAt": "2026-11-15T07:42:20.384410+00:00",
+              "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
+              "fileCountExcludingThisManifest": 186,
+              "contentBytes": 2963049,
               "previousSeal": {
-                "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
-                "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
-                "sealedAt": "2026-11-15T06:54:29.835819+00:00",
-                "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
-                "fileCountExcludingThisManifest": 167,
-                "contentBytes": 2652462,
+                "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
+                "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
+                "sealedAt": "2026-11-15T07:17:33.712630+00:00",
+                "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
+                "fileCountExcludingThisManifest": 174,
+                "contentBytes": 2708838,
                 "previousSeal": {
-                  "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
-                  "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
-                  "sealedAt": "2026-11-15T06:40:02.262971+00:00",
-                  "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
-                  "fileCountExcludingThisManifest": 165,
-                  "contentBytes": 2616880,
+                  "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
+                  "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
+                  "sealedAt": "2026-11-15T06:54:29.835819+00:00",
+                  "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
+                  "fileCountExcludingThisManifest": 167,
+                  "contentBytes": 2652462,
                   "previousSeal": {
-                    "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
-                    "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
-                    "sealedAt": "2026-11-15T03:55:06.975648+00:00",
-                    "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
-                    "fileCountExcludingThisManifest": 159,
-                    "contentBytes": 2409735
+                    "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
+                    "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
+                    "sealedAt": "2026-11-15T06:40:02.262971+00:00",
+                    "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
+                    "fileCountExcludingThisManifest": 165,
+                    "contentBytes": 2616880,
+                    "previousSeal": {
+                      "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
+                      "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
+                      "sealedAt": "2026-11-15T03:55:06.975648+00:00",
+                      "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+                      "fileCountExcludingThisManifest": 159,
+                      "contentBytes": 2409735
+                    }
                   }
                 }
-              }
-            },
-            "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+              },
+              "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+            }
           }
         }
       }
     }
   },
-  "sourceDeliveryRequestId": "aa097b06-d3e9-4ea3-9964-dfc20c89adcb",
-  "sourceDeliveryId": "c8898652-f488-4bd3-8f9f-8793047edf52",
+  "sourceDeliveryRequestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+  "sourceDeliveryId": "1015a558-f417-5353-bb1b-d08011eff819",
   "previousSnapshotUpdated": true,
   "originalFilesModifiedDefinition": "Exact newer received CLI replaces its proven baseline; three historical received documents have separately recorded Mac annotations. Original and earlier hashes remain in provenance. Two imported backend files additionally contain documented Mac compact-dashboard development; their original hashes and provenance rows are retained in SOURCE_UPDATES.json and SOURCE_ORIGINS.json.",
   "updatedSourcePaths": [
@@ -2130,7 +2162,7 @@
     "source/common/verification/intel-reliability-20261114/DEMO.md",
     "source/common/verification/intel-reliability-20261114/README.md"
   ],
-  "sealBasis": "Committed 7521ef32275d8e5f44889ffbf7dc2f58648692eb plus exact m08 archive and three package metadata updates; all prior source/evidence bytes preserved.",
+  "sealBasis": "Committed 6ec4ca5fc6828e0e12c6232bd3017f3af4908458 plus exact historical policy archive and three package metadata updates; prior source/evidence bytes preserved.",
   "archivedSourcePaths": [
     "verification/intel-dashboard-20261115-d5315791/README.md",
     "verification/intel-dashboard-20261115-d5315791/SOURCE_DELIVERY.json",
@@ -2251,8 +2283,15 @@
     "verification/intel-m08-20261115-c8898652/source/Junction/scripts/so101_three_point.py",
     "verification/intel-m08-20261115-c8898652/source/Junction/scripts/so101_three_point_core.py",
     "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_core.py",
-    "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_io.py"
+    "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_io.py",
+    "verification/intel-policy-20261115-1015a558/SOURCE_DELIVERY.json",
+    "verification/intel-policy-20261115-1015a558/source/Junction/AGENTS.md",
+    "verification/intel-policy-20261115-1015a558/source/Junction/PROJECT_STATUS.md",
+    "verification/intel-policy-20261115-1015a558/source/Junction/morph-intel-transfer/morph-context/context/SOURCE_SYNC.md"
   ],
   "developmentSourceCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
-  "developmentReconciliationPath": "SOURCE_UPDATES.json"
+  "developmentReconciliationPath": "SOURCE_UPDATES.json",
+  "sourceDeliveryIds": [
+    "1015a558-f417-5353-bb1b-d08011eff819"
+  ]
 }

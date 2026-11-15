@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "deliveryId": "1015a558-f417-5353-bb1b-d08011eff819",
+  "requestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+  "group": "intel-source-policy",
+  "sessionId": "d0642a94-aa03-4efd-b1ea-98a2ca3f82a2",
+  "taskIds": [
+    "M20",
+    "M21",
+    "M23",
+    "M24"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction",
+  "observedAt": "2026-11-15T06:08:13.093193+00:00",
+  "sourceRevision": "Junction is not a usable Git repository; exact per-file hashes and observation timestamps identify the source.",
+  "ownerScope": "Original analyst approval028a574e-76f4-4874-928f-b7f20bb02aa9 plus current owner dashboard/reliability request and narrow audit-field repair; source-policy group separately anchored to owner direction recorded in fb63f766. No d531 main-API ownership claimed.",
+  "baselineDescription": "Per-file Mac-confirmed received-source manifests, available active Mac dependency candidates and explicit Intel-only baseline where original test cannot be transferred. These are not a claim that every current Git target equals the baseline.",
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "targetMappingProvenance": "Mac context/verification/remaining-source-20261115/commit-plan.json mapped package directories. Proposed per-file paths require current Mac hash and partition review; preserve newer changes.",
+  "sourcePublicationReference": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed is dated Nov15 04:01 publication reference, not current branch-head claim.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "targetPath": "intel-runtime/source/junction/AGENTS.md",
+      "operation": "edit",
+      "baseSha256": "1420675b1262bd6cbba1b8ee98617400beb61c8907cdfbf2251084f43f76e457",
+      "sha256": "f95d366b63118157d8bf833ed7ec81a93bacf0d54092fb2983e227b4049ca003",
+      "bytes": 18707,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": {
+        "sha256": "1420675b1262bd6cbba1b8ee98617400beb61c8907cdfbf2251084f43f76e457",
+        "bytes": 17829,
+        "path": "AGENTS.md",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "b3e6d9a4-645c-4e69-8756-1e13409d7b88",
+        "bundleSha256": "a38f8e11c1679bf0aa10d9584b30705bf6e4aa49b8e6c6d20caf7fba6e70d554",
+        "manifestNotePath": "context/notes/18a8a736-e287-59bc-9924-317ca759f45d.json",
+        "manifestNoteSha256": "0e6c7ebb8b2554d9047c3c5e0a47029fe7c85243476701409ff99586d673f375",
+        "confirmedAt": "2026-11-15T03:25:39.222300+00:00"
+      },
+      "sourcePath": "/home/intel/Documents/Junction/AGENTS.md",
+      "eligible": true
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "targetPath": "intel-runtime/source/junction/PROJECT_STATUS.md",
+      "operation": "edit",
+      "baseSha256": "fe58160d4a81f89fd6d2bcea5211b42c4b9e5233f187f62fafff9ec7e584b5d2",
+      "sha256": "9e812da387ed4f6122933a95f817b9f11d98be0a369bb32297f2c78b7332e2a9",
+      "bytes": 55171,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": {
+        "sha256": "fe58160d4a81f89fd6d2bcea5211b42c4b9e5233f187f62fafff9ec7e584b5d2",
+        "bytes": 52886,
+        "path": "PROJECT_STATUS.md",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "b3e6d9a4-645c-4e69-8756-1e13409d7b88",
+        "bundleSha256": "a38f8e11c1679bf0aa10d9584b30705bf6e4aa49b8e6c6d20caf7fba6e70d554",
+        "manifestNotePath": "context/notes/18a8a736-e287-59bc-9924-317ca759f45d.json",
+        "manifestNoteSha256": "0e6c7ebb8b2554d9047c3c5e0a47029fe7c85243476701409ff99586d673f375",
+        "confirmedAt": "2026-11-15T03:25:39.222300+00:00"
+      },
+      "sourcePath": "/home/intel/Documents/Junction/PROJECT_STATUS.md",
+      "eligible": true
+    },
+    {
+      "path": "morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "targetPath": "intel-runtime/source/junction/morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "81549287801b39fad9312701d2f7cd6acd71f62586000db25910ec805f0fe31e",
+      "bytes": 16283,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": null,
+      "sourcePath": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "eligible": true
+    }
+  ],
+  "reusedDependencies": [
+    {
+      "path": "MAC_SYNC.md",
+      "targetPath": "intel-runtime/source/junction/MAC_SYNC.md",
+      "operation": "edit",
+      "baseSha256": "bd23a1cba5b4f9c1093df99cc018df6e87a3deaeeac0653589bb7b788c1d176a",
+      "sha256": "bd23a1cba5b4f9c1093df99cc018df6e87a3deaeeac0653589bb7b788c1d176a",
+      "bytes": 9273,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": {
+        "sha256": "bd23a1cba5b4f9c1093df99cc018df6e87a3deaeeac0653589bb7b788c1d176a",
+        "bytes": 9273,
+        "path": "MAC_SYNC.md",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "32977346-0239-4e7d-893c-77a96a509714",
+        "bundleSha256": "689c8630e01616b41a6cd7ae32cf56f382a309866d0bd291f74a60eaf1dbd129",
+        "manifestNotePath": "context/notes/032f8839-04f0-536b-b2dc-c9d0db488c82.json",
+        "manifestNoteSha256": "c1278469b9a3f707e87ba7490304d989f7d22b2609bfe36a7832b3b481265250",
+        "confirmedAt": "2026-11-15T03:25:39.810155+00:00"
+      },
+      "sourcePath": "/home/intel/Documents/Junction/MAC_SYNC.md",
+      "disposition": "reuse exact unchanged Mac-confirmed source; fresh Intel hash matches"
+    },
+    {
+      "path": "scripts/restart_mac_context_watch.py",
+      "targetPath": "intel-runtime/source/junction/scripts/restart_mac_context_watch.py",
+      "operation": "edit",
+      "baseSha256": "052b0bead712449f7f4c014c2ae88e180aca56b310660697826331e6dcaefe8b",
+      "sha256": "052b0bead712449f7f4c014c2ae88e180aca56b310660697826331e6dcaefe8b",
+      "bytes": 2240,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": {
+        "sha256": "052b0bead712449f7f4c014c2ae88e180aca56b310660697826331e6dcaefe8b",
+        "bytes": 2240,
+        "path": "scripts/restart_mac_context_watch.py",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "32977346-0239-4e7d-893c-77a96a509714",
+        "bundleSha256": "689c8630e01616b41a6cd7ae32cf56f382a309866d0bd291f74a60eaf1dbd129",
+        "manifestNotePath": "context/notes/032f8839-04f0-536b-b2dc-c9d0db488c82.json",
+        "manifestNoteSha256": "c1278469b9a3f707e87ba7490304d989f7d22b2609bfe36a7832b3b481265250",
+        "confirmedAt": "2026-11-15T03:25:39.810155+00:00"
+      },
+      "sourcePath": "/home/intel/Documents/Junction/scripts/restart_mac_context_watch.py",
+      "disposition": "reuse exact unchanged Mac-confirmed source; fresh Intel hash matches"
+    },
+    {
+      "path": "scripts/watch_mac_context.py",
+      "targetPath": "intel-runtime/source/junction/scripts/watch_mac_context.py",
+      "operation": "edit",
+      "baseSha256": "901491c5fd6a522c73591990bd4f7ee0d5c91f287d861c3b052cc2c4b1fb4dbd",
+      "sha256": "901491c5fd6a522c73591990bd4f7ee0d5c91f287d861c3b052cc2c4b1fb4dbd",
+      "bytes": 19829,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": {
+        "sha256": "901491c5fd6a522c73591990bd4f7ee0d5c91f287d861c3b052cc2c4b1fb4dbd",
+        "bytes": 19829,
+        "path": "scripts/watch_mac_context.py",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "32977346-0239-4e7d-893c-77a96a509714",
+        "bundleSha256": "689c8630e01616b41a6cd7ae32cf56f382a309866d0bd291f74a60eaf1dbd129",
+        "manifestNotePath": "context/notes/032f8839-04f0-536b-b2dc-c9d0db488c82.json",
+        "manifestNoteSha256": "c1278469b9a3f707e87ba7490304d989f7d22b2609bfe36a7832b3b481265250",
+        "confirmedAt": "2026-11-15T03:25:39.810155+00:00"
+      },
+      "sourcePath": "/home/intel/Documents/Junction/scripts/watch_mac_context.py",
+      "disposition": "reuse exact unchanged Mac-confirmed source; fresh Intel hash matches"
+    },
+    {
+      "path": "tests/test_mac_context_watch.py",
+      "targetPath": "intel-runtime/source/junction/tests/test_mac_context_watch.py",
+      "operation": "edit",
+      "baseSha256": "a70cd952f01e6608eac5f91e8d2684ea3639521a4fae2f4def5ff4024f057446",
+      "sha256": "a70cd952f01e6608eac5f91e8d2684ea3639521a4fae2f4def5ff4024f057446",
+      "bytes": 19707,
+      "mode": "0o664",
+      "reason": "Current authored source for scoped intel-source-policy change; canonical target proposal requires Mac partition/repository review.",
+      "baseline": {
+        "sha256": "a70cd952f01e6608eac5f91e8d2684ea3639521a4fae2f4def5ff4024f057446",
+        "bytes": 19707,
+        "path": "tests/test_mac_context_watch.py",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "32977346-0239-4e7d-893c-77a96a509714",
+        "bundleSha256": "689c8630e01616b41a6cd7ae32cf56f382a309866d0bd291f74a60eaf1dbd129",
+        "manifestNotePath": "context/notes/032f8839-04f0-536b-b2dc-c9d0db488c82.json",
+        "manifestNoteSha256": "c1278469b9a3f707e87ba7490304d989f7d22b2609bfe36a7832b3b481265250",
+        "confirmedAt": "2026-11-15T03:25:39.810155+00:00"
+      },
+      "sourcePath": "/home/intel/Documents/Junction/tests/test_mac_context_watch.py",
+      "disposition": "reuse exact unchanged Mac-confirmed source; fresh Intel hash matches"
+    }
+  ],
+  "deletions": [],
+  "renames": [],
+  "requiredCommandsAndResults": [
+    "Additive root AGENTS paragraph preserves all original content; linked policy copy hash matches complete shared SOURCE_SYNC.md81549287...; watcher files are exact unchanged Mac-confirmed dependencies."
+  ],
+  "evidenceClass": "Source/unit/software simulation; not physical acceptance.",
+  "missingSource": [],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "limitations": [
+    "No credentials/private pairing/env values, installed dependencies, caches/builds, databases/runtime logs, real media/weights included.",
+    "Authored synthetic fixtures remain exact; unsupported originals remain local and are not represented by redacted substitutes.",
+    "Descriptions and local result hashes do not establish Mac source reconstruction/test execution, merge, publication or deployment.",
+    "Documentation may reference immutable Intel-local run artifacts that are excluded from this source group; final shared handoffs provide attributed results."
+  ]
+}
