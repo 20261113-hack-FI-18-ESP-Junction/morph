@@ -2,6 +2,12 @@
 
 Checked November 15, 2026, at 05:22 UTC / 06:22 CET. This is a deployment checkpoint, not a standing health guarantee. Later shared MCP handoffs can supersede it.
 
+## Actual Intel-origin event processed at 05:29 UTC
+
+The later real Intel handoff `a945e833-76b1-48eb-baf2-dda17da173aa` published event `91faa914-8253-55ca-af2a-3ed08058efab`. Mac received it at **05:28:38.624078 UTC** and completed the actual read-only Codex review at **05:29:24.798885 UTC**, in one attempt. The result was durably saved and acknowledged; source-note, review-result and sanitized-export hashes were independently checked. Mac cursor is4, with no unfinished Mac event or saved failure receipt. [Exact event evidence](live-intel-event-result.json).
+
+This establishes actual Intel-to-Mac event processing in addition to the three actual Station reads below. The separate Mac-to-Intel reviewer still awaits Intel Codex authentication, with its two pending work events retained. Review output remains a proposal for task reconciliation and does not edit application code or establish physical acceptance. Intel also reported recent failures in its existing five-minute watcher; preserving that process is not proof that its later cycles succeeded.
+
 ## Actual Intel reads verified at 05:26 UTC
 
 This later result supersedes the worker-readiness and cross-host-read gaps in the 05:22 checkpoint below. Intel reported its GET-only worker started at 05:22:25 UTC, PID 417036, using the exact frozen worker hash against `intel-main` / main port 8000. Mac verified the shared readiness note and then received **HTTP 200 for schema, station snapshot and session list** through the existing TLS MCP. All three raw response SHA-256 values were independently recomputed and matched. [Exact request identities, timestamps and response hashes](live-intel-result.json).
