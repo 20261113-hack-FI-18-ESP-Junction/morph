@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "package": "intel-runtime",
-  "sealedAt": "2026-11-15T08:23:55.436622+00:00",
+  "sealedAt": "2026-11-15T09:22:36.388180+00:00",
   "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
   "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
-  "contentBytes": 4203796,
-  "fileCountExcludingThisManifest": 254,
+  "contentBytes": 4841894,
+  "fileCountExcludingThisManifest": 286,
   "originCounts": {
     "derived-existing-synthetic-fixture": 1,
-    "intel-current-source": 172,
+    "intel-current-source": 204,
     "intel-source-with-documented-adaptation": 5,
     "mac-authored-source": 20,
     "package-scaffolding": 12,
@@ -40,8 +40,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 22569,
-      "sha256": "4df9518a47ad930f8f99c6fa77db6278d0997a69ed582d5414f16874a8c0bc0f",
+      "bytes": 24217,
+      "sha256": "146f16398e9f4d1125e251f9ad2551c12b6f7654557d8e8274ee38572563dc2d",
       "origin": "package-scaffolding"
     },
     {
@@ -52,8 +52,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 195309,
-      "sha256": "1d66c0f2c2cf642e05529443513b32db051791aeb7b96e2fa9f62a0122ac98ac",
+      "bytes": 261965,
+      "sha256": "e6200e0b26f2081106727a62ebd1bd06b15ea48f2bef3b96ab67fadc5645df2f",
       "origin": "package-scaffolding"
     },
     {
@@ -1155,6 +1155,198 @@
       "origin": "intel-current-source"
     },
     {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/README.md",
+      "bytes": 4073,
+      "sha256": "fb891bae8c0fdadd2328cc05aa6746fdc3d54aa784763dfce2cbf4904901c5a3",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SHARED_READBACKS.json",
+      "bytes": 4228,
+      "sha256": "081439a3280989b494e846c85c6db05fb0313633ce33e3209e7319a8db9abddf",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SOURCE_DELIVERY.json",
+      "bytes": 36612,
+      "sha256": "000c7e6d97def1aed3c0441fa928e048aee8842aed4c105624a5c9fae3cf1493",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SOURCE_INVENTORY.json",
+      "bytes": 17668,
+      "sha256": "0e3f61de929ac37f4eafbbaf9d39c595c5fe7cd37d392552238bea203fe16430",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_FINAL.md",
+      "bytes": 22935,
+      "sha256": "64c859d66f8c0208b8d2765ed25bd370489dd482b52bfba2f1b045bfff1c4cf5",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_VERIFICATION.json",
+      "bytes": 6597,
+      "sha256": "286a7c92500f632e43dc30e0e7848cd45036f955781d0f6248fa8e57f54add49",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/TRANSFER_REPORT.md",
+      "bytes": 9487,
+      "sha256": "e243e2f275328091e893f6b97ed2714f1d12b057c981ef9c1c6bd947697483b3",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/all-group-receipt-index.json",
+      "bytes": 4459,
+      "sha256": "3a7fb20388792af2dbb5a52a55e8684c4a8a4c110620903b6253ce6f86ef2872",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/attributed-contribution.json",
+      "bytes": 3886,
+      "sha256": "a4093d040f4c5afb98a0eea8985830a88f3109cd844a4947b2941a07b7a9cc40",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/initial-tls-attempt.json",
+      "bytes": 338,
+      "sha256": "8125f9c355a3aade6f31f1c20318abe815275411e848411b49f16dd4a96c0fc2",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/rejection-locations.json",
+      "bytes": 1174,
+      "sha256": "0944543869fca90b9b1c435ccdefcedc334f306bc28ae7430edce7e5ffac7ccd",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readback-ledger.json",
+      "bytes": 80270,
+      "sha256": "16e40047a8d7295cd9c8f0f719f98471bc524bdaa8faa7d187686f56d6d69697",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+      "bytes": 27811,
+      "sha256": "f90e3912ed31eb712169bd4c4f25dda30efd7d5b528841826e3cc0a9214f827e",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/delivery-final-payload.json",
+      "bytes": 24295,
+      "sha256": "b6790f70b889f28c9d8ade3baeaca9cf9a66b98c91bded9907525dcbb3e69b6d",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/README.md",
+      "bytes": 2637,
+      "sha256": "73bf373627ef2f0ef1244b11cc405bcef2a112d63a3c44a41629be6f5809bed3",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/linked-paths.json",
+      "bytes": 373,
+      "sha256": "799422ca9174bcccc09916066d9825a71f464bc2c51c7c6f62c0c0d753b3e9ed",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/manifest.json",
+      "bytes": 6492,
+      "sha256": "9acdc5f5c7d500520386a615c00c16bc63135b3e115e98eb195b7185bee7cac6",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/catalog.json",
+      "bytes": 147362,
+      "sha256": "1a81dbc56a8607eb30950a5503c391614439e8f7ee05f651efe39a2fb7a703cd",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/read-ledger.json",
+      "bytes": 702,
+      "sha256": "28de3ea2ba195740a4fab84bd35907308481a35fc74a4d18e51d19cfad898616",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081054862993Z/read-ledger.json",
+      "bytes": 5699,
+      "sha256": "20e6e9c52fedbd2535f7cc00cff957f7d9f5809e626f1eac892f5d0c09cb1c8a",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/read-ledger.json",
+      "bytes": 4413,
+      "sha256": "74ee761eabf891a255842694dcfce827c5e2ccfea4ed0503b05900005144e701",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/result.json",
+      "bytes": 15550,
+      "sha256": "b00f30b6895a552619faa9419ea0e10df0449bb1f215e96c2eefd63d462c500a",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selected-paths.json",
+      "bytes": 369,
+      "sha256": "48acd6e66a2f30a8093e3c40351063bb0c78a24b20eb14309f787c31c569eb1f",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selection.json",
+      "bytes": 2887,
+      "sha256": "e7d6dc5113f7cc3c8f758fd04875e7d6f69fd45043204b2632af7512caf2f06f",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-ordinary-outbox-audit-20261115T0828.json",
+      "bytes": 7912,
+      "sha256": "1617625624c3d7ce2191b55ba3e050378945b0d797aa748c9ad57e465cd966ef",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/after-reviewed.json",
+      "bytes": 14429,
+      "sha256": "edbebf4942b4a206e715078bfe29560bcf5b5111424282b21ad9b3dc9577c293",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/result.json",
+      "bytes": 2786,
+      "sha256": "184a8a81d241480843c068d132aa560e0726a4f4f939a328077d3010c44cb49b",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/README.md",
+      "bytes": 3832,
+      "sha256": "d60f45dd0a24a00edc7b0518c6608c1fb0964a3d198c3ca605338c5c3af36904",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/closure-audit-result.json",
+      "bytes": 11554,
+      "sha256": "25a4fb3b2315dbd8c01d2927a8091b9f5c4807c240741f023e9ffafecd5aca55",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/read-ledger.json",
+      "bytes": 90902,
+      "sha256": "eccd45e3768040a5dd8ac3a1e86d285c553cbc0cf80f48b6c97ac4fb46f6fcff",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+      "bytes": 448,
+      "sha256": "6257c02a907b9b4e746cf26894caa9b0dc32b15587185efc1b66b27278834474",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-integrity-closure-20261115T083026Z.json",
+      "bytes": 7614,
+      "sha256": "f31adee0d6545b00078b189b6623f383f2145b9b91e365bfb590266a3265c442",
+      "origin": "intel-current-source"
+    },
+    {
       "path": "verification/intel-dashboard-20261115-d5315791/passive-video-review/README.md",
       "bytes": 3000,
       "sha256": "c11bab894560ad1771a0391ad0926356d3f3f267fd935d6de404c06a7fa7f9e4",
@@ -1552,65 +1744,73 @@
     }
   ],
   "previousSeal": {
-    "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
-    "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
-    "sealedAt": "2026-11-15T08:20:09.931452+00:00",
-    "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
-    "fileCountExcludingThisManifest": 242,
-    "contentBytes": 3872471,
+    "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+    "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
+    "sealedAt": "2026-11-15T08:23:55.436622+00:00",
+    "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
+    "fileCountExcludingThisManifest": 254,
+    "contentBytes": 4203796,
     "previousSeal": {
-      "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
-      "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
-      "sealedAt": "2026-11-15T08:18:02.075721+00:00",
-      "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
-      "fileCountExcludingThisManifest": 221,
-      "contentBytes": 3565277,
+      "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
+      "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
+      "sealedAt": "2026-11-15T08:20:09.931452+00:00",
+      "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
+      "fileCountExcludingThisManifest": 242,
+      "contentBytes": 3872471,
       "previousSeal": {
-        "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
-        "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
-        "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
-        "sealedAt": "2026-11-15T07:42:20.384410+00:00",
-        "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
-        "fileCountExcludingThisManifest": 186,
-        "contentBytes": 2963049,
+        "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
+        "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
+        "sealedAt": "2026-11-15T08:18:02.075721+00:00",
+        "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
+        "fileCountExcludingThisManifest": 221,
+        "contentBytes": 3565277,
         "previousSeal": {
-          "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
-          "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
-          "sealedAt": "2026-11-15T07:17:33.712630+00:00",
-          "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
-          "fileCountExcludingThisManifest": 174,
-          "contentBytes": 2708838,
+          "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
+          "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
+          "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
+          "sealedAt": "2026-11-15T07:42:20.384410+00:00",
+          "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
+          "fileCountExcludingThisManifest": 186,
+          "contentBytes": 2963049,
           "previousSeal": {
-            "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
-            "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
-            "sealedAt": "2026-11-15T06:54:29.835819+00:00",
-            "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
-            "fileCountExcludingThisManifest": 167,
-            "contentBytes": 2652462,
+            "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
+            "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
+            "sealedAt": "2026-11-15T07:17:33.712630+00:00",
+            "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
+            "fileCountExcludingThisManifest": 174,
+            "contentBytes": 2708838,
             "previousSeal": {
-              "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
-              "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
-              "sealedAt": "2026-11-15T06:40:02.262971+00:00",
-              "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
-              "fileCountExcludingThisManifest": 165,
-              "contentBytes": 2616880,
+              "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
+              "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
+              "sealedAt": "2026-11-15T06:54:29.835819+00:00",
+              "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
+              "fileCountExcludingThisManifest": 167,
+              "contentBytes": 2652462,
               "previousSeal": {
-                "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
-                "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
-                "sealedAt": "2026-11-15T03:55:06.975648+00:00",
-                "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
-                "fileCountExcludingThisManifest": 159,
-                "contentBytes": 2409735
+                "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
+                "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
+                "sealedAt": "2026-11-15T06:40:02.262971+00:00",
+                "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
+                "fileCountExcludingThisManifest": 165,
+                "contentBytes": 2616880,
+                "previousSeal": {
+                  "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
+                  "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
+                  "sealedAt": "2026-11-15T03:55:06.975648+00:00",
+                  "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+                  "fileCountExcludingThisManifest": 159,
+                  "contentBytes": 2409735
+                }
               }
             }
-          }
-        },
-        "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+          },
+          "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+        }
       }
     }
   },
   "sourceDeliveryRequestId": "d5315791-6749-4b01-97b5-1b9357306487",
-  "sourceDeliveryId": "29a6f301-d2dd-4bac-b59b-41269b48eead",
+  "sourceDeliveryId": "dd42f038-052e-4f0f-88fd-4b9162a4b894",
   "previousSnapshotUpdated": true,
   "originalFilesModifiedDefinition": "Exact newer received CLI replaces its proven baseline; three historical received documents have separately recorded Mac annotations. Original and earlier hashes remain in provenance. Two imported backend files additionally contain documented Mac compact-dashboard development; their original hashes and provenance rows are retained in SOURCE_UPDATES.json and SOURCE_ORIGINS.json.",
   "updatedSourcePaths": [
@@ -1664,10 +1864,42 @@
     "source/common/verification/intel-reliability-20261114/DEMO.md",
     "source/common/verification/intel-reliability-20261114/README.md"
   ],
-  "sealBasis": "Committed 94eb8b17a911d041d5c17e757433497565168997 package plus exact passive archive additions and package README/provenance/seal maintenance. All prior application/evidence bytes and unrelated work remain unchanged.",
+  "sealBasis": "Committed 2f7efc2a3badecefab278c76a515738ffc2a09e0 plus exact coordination archive and three package metadata updates; all prior source/evidence bytes preserved.",
   "archivedSourcePaths": [
     "verification/intel-dashboard-20261115-d5315791/README.md",
     "verification/intel-dashboard-20261115-d5315791/SOURCE_DELIVERY.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/README.md",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SHARED_READBACKS.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SOURCE_DELIVERY.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SOURCE_INVENTORY.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_FINAL.md",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_VERIFICATION.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/TRANSFER_REPORT.md",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/all-group-receipt-index.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/attributed-contribution.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/initial-tls-attempt.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/rejection-locations.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readback-ledger.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/delivery-final-payload.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/README.md",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/linked-paths.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/manifest.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/catalog.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/read-ledger.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081054862993Z/read-ledger.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/read-ledger.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/result.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selected-paths.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selection.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-ordinary-outbox-audit-20261115T0828.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/after-reviewed.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/result.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/README.md",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/closure-audit-result.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/read-ledger.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+    "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-integrity-closure-20261115T083026Z.json",
     "verification/intel-dashboard-20261115-d5315791/passive-video-review/README.md",
     "verification/intel-dashboard-20261115-d5315791/passive-video-review/SOURCE_DELIVERY.json",
     "verification/intel-dashboard-20261115-d5315791/passive-video-review/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/reporting.py",

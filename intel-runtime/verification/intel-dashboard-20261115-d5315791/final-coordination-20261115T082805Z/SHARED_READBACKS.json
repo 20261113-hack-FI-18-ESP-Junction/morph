@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "agent": "/root/adoption_codex",
+  "reporter": "/root",
+  "manifestExpectedSha256": "9f0c55c5511409948dc0ec5e46a0a411403edac4b7612ae17ea6153e29b145fd",
+  "downloadOnly": true,
+  "activeSourceChanged": false,
+  "files": [
+    {
+      "path": "context/SOURCE_SYNC.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/incoming/context/SOURCE_SYNC.md",
+      "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "bytes": 17956,
+      "characters": 17944,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/SOURCE_SYNC.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17944,
+          "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:28:27.925369+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": true,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/coordination/three-host-20261115/source_response.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/incoming/context/coordination/three-host-20261115/source_response.py",
+      "sha256": "f16f13ba75f1fb87b7decc12ee2ec8cc52d15cdc5d25bc8b7f8b3ef862dcac80",
+      "bytes": 17911,
+      "characters": 17911,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/three-host-20261115/source_response.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17911,
+          "sha256": "f16f13ba75f1fb87b7decc12ee2ec8cc52d15cdc5d25bc8b7f8b3ef862dcac80",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:28:27.961403+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": true,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/incoming/context/notes/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+      "sha256": "11dc7c61307081eba3d54c7d6d5eb0a1bc78ae3571cc4304beb52d49e86e500b",
+      "bytes": 24456,
+      "characters": 24448,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 24448,
+          "sha256": "11dc7c61307081eba3d54c7d6d5eb0a1bc78ae3571cc4304beb52d49e86e500b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:28:28.027308+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": true,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/incoming/context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "sha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+      "bytes": 957,
+      "characters": 957,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 957,
+          "sha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:28:28.075928+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": true,
+      "manifestBytesMatched": false
+    }
+  ],
+  "updatedAt": "2026-11-15T08:28:28.076238+00:00"
+}

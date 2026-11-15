@@ -1,0 +1,88 @@
+{
+  "cutoff": "2026-11-15T07:51:58.746097+00:00",
+  "catalog": "reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/catalog.json",
+  "catalogSha256": "1a81dbc56a8607eb30950a5503c391614439e8f7ee05f651efe39a2fb7a703cd",
+  "catalogTotal": 697,
+  "completedAt": "2026-11-15T08:10:29.870646+00:00",
+  "newOrChanged": [
+    {
+      "path": "context/notes/04ca7bba-b77c-46af-a6d8-aafe431aa75f.json",
+      "bytes": 21349,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:08:11.585163+00:00"
+    },
+    {
+      "path": "context/notes/145bd20a-7786-587e-a721-5770d9c2366e.json",
+      "bytes": 4026,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:09:50.599247+00:00"
+    },
+    {
+      "path": "context/notes/603bba73-fb5a-455f-908f-cfddaf014598.json",
+      "bytes": 4681,
+      "kind": "text",
+      "modified_at": "2026-11-15T07:58:43.591156+00:00"
+    },
+    {
+      "path": "context/notes/921c66b9-b650-43b8-aedc-60a4dad32168.json",
+      "bytes": 4324,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:07:32.867763+00:00"
+    },
+    {
+      "path": "context/notes/bc26bdec-2908-4c8a-bd3d-31e7aa72c871.json",
+      "bytes": 7478,
+      "kind": "text",
+      "modified_at": "2026-11-15T07:53:42.642629+00:00"
+    },
+    {
+      "path": "context/notes/dd2f6cdf-9bde-4467-b526-c9b583996e0b.json",
+      "bytes": 4463,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:09:27.107667+00:00"
+    }
+  ],
+  "selected": [
+    {
+      "path": "context/notes/04ca7bba-b77c-46af-a6d8-aafe431aa75f.json",
+      "bytes": 21349,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:08:11.585163+00:00"
+    },
+    {
+      "path": "context/notes/145bd20a-7786-587e-a721-5770d9c2366e.json",
+      "bytes": 4026,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:09:50.599247+00:00"
+    },
+    {
+      "path": "context/notes/603bba73-fb5a-455f-908f-cfddaf014598.json",
+      "bytes": 4681,
+      "kind": "text",
+      "modified_at": "2026-11-15T07:58:43.591156+00:00"
+    },
+    {
+      "path": "context/notes/921c66b9-b650-43b8-aedc-60a4dad32168.json",
+      "bytes": 4324,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:07:32.867763+00:00"
+    },
+    {
+      "path": "context/notes/bc26bdec-2908-4c8a-bd3d-31e7aa72c871.json",
+      "bytes": 7478,
+      "kind": "text",
+      "modified_at": "2026-11-15T07:53:42.642629+00:00"
+    },
+    {
+      "path": "context/notes/dd2f6cdf-9bde-4467-b526-c9b583996e0b.json",
+      "bytes": 4463,
+      "kind": "text",
+      "modified_at": "2026-11-15T08:09:27.107667+00:00"
+    }
+  ],
+  "excludedExactOwnSource": [],
+  "sourceIndex": {
+    "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/final-index-review-20261115T075034Z/seven-group-index.json",
+    "sha256": "f6b9f4d6d42afafc1f2d2430ca649de7c14af1078f909df8a3abc30bf2cb6bfb"
+  }
+}

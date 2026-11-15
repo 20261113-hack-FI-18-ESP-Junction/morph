@@ -1,0 +1,1876 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "agent": "/root/adoption_codex",
+  "reporter": "/root",
+  "manifestExpectedSha256": "9f0c55c5511409948dc0ec5e46a0a411403edac4b7612ae17ea6153e29b145fd",
+  "downloadOnly": true,
+  "activeSourceChanged": false,
+  "files": [
+    {
+      "path": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "sha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+      "bytes": 957,
+      "characters": 957,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 957,
+          "sha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:49.646860+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/73b2c741-4457-5d19-9da5-6b0a66401d0f.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/73b2c741-4457-5d19-9da5-6b0a66401d0f.json",
+      "sha256": "b4178e5fbf12fe407049dcd33d7a85f772f188c6dc1ead30366d37902e4fa4f0",
+      "bytes": 16750,
+      "characters": 16750,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/73b2c741-4457-5d19-9da5-6b0a66401d0f.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16750,
+          "sha256": "b4178e5fbf12fe407049dcd33d7a85f772f188c6dc1ead30366d37902e4fa4f0",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:49.699496+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/87f83be9-3d3d-5e90-a4ed-2330422cd62a.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/87f83be9-3d3d-5e90-a4ed-2330422cd62a.json",
+      "sha256": "ac37c1fc88960cd65de25dd82e928e72415127bd567f3eed8507afe0f25e6dd9",
+      "bytes": 16780,
+      "characters": 16780,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/87f83be9-3d3d-5e90-a4ed-2330422cd62a.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16780,
+          "sha256": "ac37c1fc88960cd65de25dd82e928e72415127bd567f3eed8507afe0f25e6dd9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:49.748681+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/d8fb68fd-368e-56f7-bd71-0ad8422ba2cd.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/d8fb68fd-368e-56f7-bd71-0ad8422ba2cd.json",
+      "sha256": "a3290e03a291d77498ff0a39c4194748c03d4a48fbd08096fd9488d35746d237",
+      "bytes": 16705,
+      "characters": 16705,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/d8fb68fd-368e-56f7-bd71-0ad8422ba2cd.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16705,
+          "sha256": "a3290e03a291d77498ff0a39c4194748c03d4a48fbd08096fd9488d35746d237",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:49.812202+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/f9ccd63b-b9eb-5564-b949-eef562bd6b68.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/f9ccd63b-b9eb-5564-b949-eef562bd6b68.json",
+      "sha256": "a8ad285a0cd12d38f8bbda3d42902780be949865cee148c9c4161210e10b9f16",
+      "bytes": 17032,
+      "characters": 17032,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/f9ccd63b-b9eb-5564-b949-eef562bd6b68.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17032,
+          "sha256": "a8ad285a0cd12d38f8bbda3d42902780be949865cee148c9c4161210e10b9f16",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:49.874063+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/bc422c3d-b67b-579f-a38c-008c7d272c0c.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/bc422c3d-b67b-579f-a38c-008c7d272c0c.json",
+      "sha256": "27eae18573185789b0f9c39c0388e5e259320b2d39fb8f4064bbccb926b26419",
+      "bytes": 16363,
+      "characters": 16363,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/bc422c3d-b67b-579f-a38c-008c7d272c0c.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16363,
+          "sha256": "27eae18573185789b0f9c39c0388e5e259320b2d39fb8f4064bbccb926b26419",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:49.966659+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/59dcac07-8b49-5a55-bca5-581a35026f0d.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/59dcac07-8b49-5a55-bca5-581a35026f0d.json",
+      "sha256": "da3938a76122e848c45765c56236c592d6dca6dd1896daa04e9ce87d0e4408bd",
+      "bytes": 12955,
+      "characters": 12955,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/59dcac07-8b49-5a55-bca5-581a35026f0d.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12955,
+          "sha256": "da3938a76122e848c45765c56236c592d6dca6dd1896daa04e9ce87d0e4408bd",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.114225+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/fc35f35d-e8c4-5df4-ad07-fabe24cb7a56.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/fc35f35d-e8c4-5df4-ad07-fabe24cb7a56.json",
+      "sha256": "af3dc91da03b90f80942a8f93716c449c60cfd20eb3e200cd9e2a27cdfa42953",
+      "bytes": 12925,
+      "characters": 12925,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/fc35f35d-e8c4-5df4-ad07-fabe24cb7a56.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12925,
+          "sha256": "af3dc91da03b90f80942a8f93716c449c60cfd20eb3e200cd9e2a27cdfa42953",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.156644+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/1f673edc-6e0b-59ae-865b-b311cadad80d.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/1f673edc-6e0b-59ae-865b-b311cadad80d.json",
+      "sha256": "5c2039bb44af912587926c5598a8d995cd12f6f37075e18ef34afb0871acd891",
+      "bytes": 13122,
+      "characters": 13114,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/1f673edc-6e0b-59ae-865b-b311cadad80d.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13114,
+          "sha256": "5c2039bb44af912587926c5598a8d995cd12f6f37075e18ef34afb0871acd891",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.209305+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/5032f2ed-d5fc-563a-a8e8-352d701f69a6.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/5032f2ed-d5fc-563a-a8e8-352d701f69a6.json",
+      "sha256": "6bf3be1bb93b8626b162b9862b869aa75f9a3d1a15c4b709605be448db9984d5",
+      "bytes": 13069,
+      "characters": 13063,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/5032f2ed-d5fc-563a-a8e8-352d701f69a6.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13063,
+          "sha256": "6bf3be1bb93b8626b162b9862b869aa75f9a3d1a15c4b709605be448db9984d5",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.282223+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/2963d22b-7ad3-57e7-a7f2-33e885e213b0.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/2963d22b-7ad3-57e7-a7f2-33e885e213b0.json",
+      "sha256": "e01f4ade7c1d237a9c10937ccdf9a289640bbfa04af9a3b95b083c35f02ea871",
+      "bytes": 12991,
+      "characters": 12978,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/2963d22b-7ad3-57e7-a7f2-33e885e213b0.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12978,
+          "sha256": "e01f4ade7c1d237a9c10937ccdf9a289640bbfa04af9a3b95b083c35f02ea871",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.369110+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/4ce5bdca-ec24-55c8-818d-4bc7c23c9719.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/4ce5bdca-ec24-55c8-818d-4bc7c23c9719.json",
+      "sha256": "376c7a9a85a1befd63cb6be542b925c4012ce9bfd4b968cd5270089cb990cb81",
+      "bytes": 13050,
+      "characters": 13041,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/4ce5bdca-ec24-55c8-818d-4bc7c23c9719.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13041,
+          "sha256": "376c7a9a85a1befd63cb6be542b925c4012ce9bfd4b968cd5270089cb990cb81",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.474766+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/baabbd9c-4bd6-50c0-9352-0d2cce9eeed9.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/baabbd9c-4bd6-50c0-9352-0d2cce9eeed9.json",
+      "sha256": "d3dcc07c72fbd55c4c155be99df34166aa92b0929f3e043cf3c447806040fa52",
+      "bytes": 12961,
+      "characters": 12960,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/baabbd9c-4bd6-50c0-9352-0d2cce9eeed9.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12960,
+          "sha256": "d3dcc07c72fbd55c4c155be99df34166aa92b0929f3e043cf3c447806040fa52",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.605263+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/10837e23-7684-5396-a497-9e7ef176ab37.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/10837e23-7684-5396-a497-9e7ef176ab37.json",
+      "sha256": "35d2003aa843763a452129c45c08a50c2b147851e211b6e0f5e5272c42626244",
+      "bytes": 13016,
+      "characters": 12960,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/10837e23-7684-5396-a497-9e7ef176ab37.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12960,
+          "sha256": "35d2003aa843763a452129c45c08a50c2b147851e211b6e0f5e5272c42626244",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.637150+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/b406c1d3-5dd8-5b0d-83e6-8b1c4cc01b35.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/b406c1d3-5dd8-5b0d-83e6-8b1c4cc01b35.json",
+      "sha256": "10e7064807c01b5037457c19f6d6d3c22b2a71fb9d9fc07756df962fa2f16a1d",
+      "bytes": 13061,
+      "characters": 13035,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/b406c1d3-5dd8-5b0d-83e6-8b1c4cc01b35.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13035,
+          "sha256": "10e7064807c01b5037457c19f6d6d3c22b2a71fb9d9fc07756df962fa2f16a1d",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.678258+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/d8ffdb67-1ac5-531f-afb6-5631dfa8ec75.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/d8ffdb67-1ac5-531f-afb6-5631dfa8ec75.json",
+      "sha256": "09897496f1a5568b086d4af28fe7e6eafda59994f0fdd6f856defe837dd8c768",
+      "bytes": 13183,
+      "characters": 13161,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/d8ffdb67-1ac5-531f-afb6-5631dfa8ec75.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13161,
+          "sha256": "09897496f1a5568b086d4af28fe7e6eafda59994f0fdd6f856defe837dd8c768",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.720280+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/b5cca120-fda1-5b97-acc1-d9c07679e0cd.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/b5cca120-fda1-5b97-acc1-d9c07679e0cd.json",
+      "sha256": "c289ed9c479b4bcc874bd02991edd76a09202e57a726dc275a1b5446f290f0c2",
+      "bytes": 13148,
+      "characters": 13116,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/b5cca120-fda1-5b97-acc1-d9c07679e0cd.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13116,
+          "sha256": "c289ed9c479b4bcc874bd02991edd76a09202e57a726dc275a1b5446f290f0c2",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.793175+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/54f2c2a0-f481-5c69-a2b8-0a74c4ddb547.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/54f2c2a0-f481-5c69-a2b8-0a74c4ddb547.json",
+      "sha256": "a8ca9b3f69dec788ff2437b5438cf2282543ad73d62ca3f605434e87cc0db0e5",
+      "bytes": 13042,
+      "characters": 13026,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/54f2c2a0-f481-5c69-a2b8-0a74c4ddb547.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13026,
+          "sha256": "a8ca9b3f69dec788ff2437b5438cf2282543ad73d62ca3f605434e87cc0db0e5",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.849621+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/de822f86-eae5-5bf4-a82a-64162a99bb54.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/de822f86-eae5-5bf4-a82a-64162a99bb54.json",
+      "sha256": "c041c029bd3290d7a834bbd669d4b4f90e670ac479a4cedcd400875546f2a5e9",
+      "bytes": 13010,
+      "characters": 12996,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/de822f86-eae5-5bf4-a82a-64162a99bb54.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12996,
+          "sha256": "c041c029bd3290d7a834bbd669d4b4f90e670ac479a4cedcd400875546f2a5e9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.914649+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/8b4580f0-abbb-54c5-bdd8-d9152a351940.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/8b4580f0-abbb-54c5-bdd8-d9152a351940.json",
+      "sha256": "977070cd298d1daee037bef7250ed5e303026125878e1e58421d685a45ba1f41",
+      "bytes": 13114,
+      "characters": 13104,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/8b4580f0-abbb-54c5-bdd8-d9152a351940.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13104,
+          "sha256": "977070cd298d1daee037bef7250ed5e303026125878e1e58421d685a45ba1f41",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:50.985462+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/51c65af2-f6df-5a4d-accc-3ef387470f31.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/51c65af2-f6df-5a4d-accc-3ef387470f31.json",
+      "sha256": "526d06c5ca5aaddf5e465ef8b15797e460be441940797a1349013ed72f28bba8",
+      "bytes": 13022,
+      "characters": 13020,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/51c65af2-f6df-5a4d-accc-3ef387470f31.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13020,
+          "sha256": "526d06c5ca5aaddf5e465ef8b15797e460be441940797a1349013ed72f28bba8",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:51.157955+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/76ab9919-529f-53ea-9bb5-c8fc9fa77ef1.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/76ab9919-529f-53ea-9bb5-c8fc9fa77ef1.json",
+      "sha256": "db59fd28131eaf10fe4efdbbd2f727161aaa1a7722474e6b64bea67f30ca4be3",
+      "bytes": 13269,
+      "characters": 13263,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/76ab9919-529f-53ea-9bb5-c8fc9fa77ef1.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13263,
+          "sha256": "db59fd28131eaf10fe4efdbbd2f727161aaa1a7722474e6b64bea67f30ca4be3",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:51.222140+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/d10c1503-6850-506c-aeb9-7041cf90104b.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/d10c1503-6850-506c-aeb9-7041cf90104b.json",
+      "sha256": "4fa44169b19b6dffda19d829123e3c6641444fd1ed2d5911966eeb08619f0c11",
+      "bytes": 13206,
+      "characters": 13206,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/d10c1503-6850-506c-aeb9-7041cf90104b.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13206,
+          "sha256": "4fa44169b19b6dffda19d829123e3c6641444fd1ed2d5911966eeb08619f0c11",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:51.370340+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/f7e18857-8f44-5c1f-b675-f8b28a0f5324.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/f7e18857-8f44-5c1f-b675-f8b28a0f5324.json",
+      "sha256": "d48000bacd9e7b105c6ac665c32b20c7f40fb3d89c29a6bd4a4347c1dbae18ad",
+      "bytes": 13209,
+      "characters": 13209,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/f7e18857-8f44-5c1f-b675-f8b28a0f5324.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13209,
+          "sha256": "d48000bacd9e7b105c6ac665c32b20c7f40fb3d89c29a6bd4a4347c1dbae18ad",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:51.417657+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/3c94c0a0-218d-592f-82b3-ef10bd4e93b2.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/3c94c0a0-218d-592f-82b3-ef10bd4e93b2.json",
+      "sha256": "9d0397180d77072d6623557acc59ae6c56b56cf6c93d32cbbea195560e30b0d7",
+      "bytes": 15042,
+      "characters": 15042,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/3c94c0a0-218d-592f-82b3-ef10bd4e93b2.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15042,
+          "sha256": "9d0397180d77072d6623557acc59ae6c56b56cf6c93d32cbbea195560e30b0d7",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.419451+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/c5e75d3b-2b38-5659-b581-78a24a4196a3.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/c5e75d3b-2b38-5659-b581-78a24a4196a3.json",
+      "sha256": "db63276f8ef241c45ae2dd5d912d4c78e550703c8d6210b09cb70835303c3163",
+      "bytes": 15357,
+      "characters": 15357,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/c5e75d3b-2b38-5659-b581-78a24a4196a3.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15357,
+          "sha256": "db63276f8ef241c45ae2dd5d912d4c78e550703c8d6210b09cb70835303c3163",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.460449+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/55d537c7-2643-5538-b7e0-322dc7331055.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/55d537c7-2643-5538-b7e0-322dc7331055.json",
+      "sha256": "a87794d8211a8273b0bc55bd5eb9cb3911e6d79e64e661fb94ef7ba57a5833c8",
+      "bytes": 14462,
+      "characters": 14460,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/55d537c7-2643-5538-b7e0-322dc7331055.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 14460,
+          "sha256": "a87794d8211a8273b0bc55bd5eb9cb3911e6d79e64e661fb94ef7ba57a5833c8",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.496010+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/c24e042c-9453-58cc-898e-46cc251c9d4d.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/c24e042c-9453-58cc-898e-46cc251c9d4d.json",
+      "sha256": "fcb6ad723ab8f28bd45f4c1b4a39368b1d69eaaf4afe6ffc96c0b63352131637",
+      "bytes": 15228,
+      "characters": 15228,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/c24e042c-9453-58cc-898e-46cc251c9d4d.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15228,
+          "sha256": "fcb6ad723ab8f28bd45f4c1b4a39368b1d69eaaf4afe6ffc96c0b63352131637",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.528392+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/aed885f3-23d9-5f0b-9ac8-6b35860827ee.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/aed885f3-23d9-5f0b-9ac8-6b35860827ee.json",
+      "sha256": "d8471f1ea5416e853a75a111ff002d2831b600bbc18108d92cbd4a227365f28b",
+      "bytes": 16746,
+      "characters": 16746,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/aed885f3-23d9-5f0b-9ac8-6b35860827ee.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16746,
+          "sha256": "d8471f1ea5416e853a75a111ff002d2831b600bbc18108d92cbd4a227365f28b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.566822+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/58bb97bf-e5a6-5463-8eef-ca43692a28ee.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/58bb97bf-e5a6-5463-8eef-ca43692a28ee.json",
+      "sha256": "326640f393fa515791ef09ca81f3f7de45189ec60ab1ce8d6c8c42b6d8afa122",
+      "bytes": 16572,
+      "characters": 16572,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/58bb97bf-e5a6-5463-8eef-ca43692a28ee.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16572,
+          "sha256": "326640f393fa515791ef09ca81f3f7de45189ec60ab1ce8d6c8c42b6d8afa122",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.692925+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/ca95b3c2-0b44-5e76-a59b-9797a4b419a0.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/ca95b3c2-0b44-5e76-a59b-9797a4b419a0.json",
+      "sha256": "f81bec7dc213a5af609db63a92ba58b5d94ea7d44965e5438bb3ef56a508dcdf",
+      "bytes": 17400,
+      "characters": 17400,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/ca95b3c2-0b44-5e76-a59b-9797a4b419a0.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17400,
+          "sha256": "f81bec7dc213a5af609db63a92ba58b5d94ea7d44965e5438bb3ef56a508dcdf",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.740359+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/7298136d-c906-57de-b487-d8df1fd6801b.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/7298136d-c906-57de-b487-d8df1fd6801b.json",
+      "sha256": "23590021b7f36ddc1cb6d75e56a075016d3470c3d7889ca04a168f43bc74bdee",
+      "bytes": 18147,
+      "characters": 18147,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/7298136d-c906-57de-b487-d8df1fd6801b.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 18147,
+          "sha256": "23590021b7f36ddc1cb6d75e56a075016d3470c3d7889ca04a168f43bc74bdee",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:52.806129+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/9c8f84c8-2e35-5c15-874c-dcd5083490af.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/9c8f84c8-2e35-5c15-874c-dcd5083490af.json",
+      "sha256": "1482da3ce76524c32146da46841533b67432e324d2dd5069ea3b53848a31143f",
+      "bytes": 18147,
+      "characters": 18147,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/9c8f84c8-2e35-5c15-874c-dcd5083490af.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 18147,
+          "sha256": "1482da3ce76524c32146da46841533b67432e324d2dd5069ea3b53848a31143f",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.483362+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/b5f8d410-b77a-52fc-9f76-aef750f0b18e.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/b5f8d410-b77a-52fc-9f76-aef750f0b18e.json",
+      "sha256": "aa887f01f2de9ccabcd1e5f28198ea186ebef894e8f48ab18a57f0bb4f6f4cd0",
+      "bytes": 16989,
+      "characters": 16989,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/b5f8d410-b77a-52fc-9f76-aef750f0b18e.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16989,
+          "sha256": "aa887f01f2de9ccabcd1e5f28198ea186ebef894e8f48ab18a57f0bb4f6f4cd0",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.537760+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/a005d380-d146-568b-b42b-fa6bc9b28eac.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/a005d380-d146-568b-b42b-fa6bc9b28eac.json",
+      "sha256": "89d3a2be4fb6218228d3a1c1ddb6e8c35e8e2f8617357784f6255d6ed13e211c",
+      "bytes": 17007,
+      "characters": 17007,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/a005d380-d146-568b-b42b-fa6bc9b28eac.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17007,
+          "sha256": "89d3a2be4fb6218228d3a1c1ddb6e8c35e8e2f8617357784f6255d6ed13e211c",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.613554+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/20a5bc8b-960f-576a-a276-7c2370960bde.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/20a5bc8b-960f-576a-a276-7c2370960bde.json",
+      "sha256": "048242eeb54cb746a6c6df3dd0ab5c9e1d4e5bdce93fc6c2055f5edd00eb4a81",
+      "bytes": 17202,
+      "characters": 17202,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/20a5bc8b-960f-576a-a276-7c2370960bde.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17202,
+          "sha256": "048242eeb54cb746a6c6df3dd0ab5c9e1d4e5bdce93fc6c2055f5edd00eb4a81",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.786548+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/6dba8c51-df06-57c2-b185-97f2b0374b1b.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/6dba8c51-df06-57c2-b185-97f2b0374b1b.json",
+      "sha256": "9364c234c2fa1d09dc0bfda7533588945702e97bf3fc852c48cee437674b4dbb",
+      "bytes": 17193,
+      "characters": 17193,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/6dba8c51-df06-57c2-b185-97f2b0374b1b.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17193,
+          "sha256": "9364c234c2fa1d09dc0bfda7533588945702e97bf3fc852c48cee437674b4dbb",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.847688+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/0b268d26-4894-5655-8337-abe33b9512a7.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/0b268d26-4894-5655-8337-abe33b9512a7.json",
+      "sha256": "e003568366677b732a98c7f4112b82c6d36e76671fde96fc437cd2981d84aa31",
+      "bytes": 17100,
+      "characters": 17100,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/0b268d26-4894-5655-8337-abe33b9512a7.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17100,
+          "sha256": "e003568366677b732a98c7f4112b82c6d36e76671fde96fc437cd2981d84aa31",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.904951+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/29efc24a-c446-5306-a9b8-beeef2016b24.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/29efc24a-c446-5306-a9b8-beeef2016b24.json",
+      "sha256": "b614ceffb5f61de2d28ab9bce5b34e1b872d41c05def431f8f945e340b180015",
+      "bytes": 17115,
+      "characters": 17115,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/29efc24a-c446-5306-a9b8-beeef2016b24.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17115,
+          "sha256": "b614ceffb5f61de2d28ab9bce5b34e1b872d41c05def431f8f945e340b180015",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:54.982539+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/f15e2cfc-a204-5b41-9237-286120323ec6.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/f15e2cfc-a204-5b41-9237-286120323ec6.json",
+      "sha256": "463d60f14980c49fe122dcde0de0bca7f70f8d96b0f1333f5ca2c5dab9901191",
+      "bytes": 16890,
+      "characters": 16890,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/f15e2cfc-a204-5b41-9237-286120323ec6.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16890,
+          "sha256": "463d60f14980c49fe122dcde0de0bca7f70f8d96b0f1333f5ca2c5dab9901191",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.036837+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/607054d4-26e2-55e7-bbae-58394c0b9e3f.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/607054d4-26e2-55e7-bbae-58394c0b9e3f.json",
+      "sha256": "ccf625398c25b717e1d817446dd5626a7f65c93c9f7cdf2cb53466ecd8195315",
+      "bytes": 17109,
+      "characters": 17109,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/607054d4-26e2-55e7-bbae-58394c0b9e3f.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17109,
+          "sha256": "ccf625398c25b717e1d817446dd5626a7f65c93c9f7cdf2cb53466ecd8195315",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.101586+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/1f8d4611-1b95-5abc-9460-b43b62f2ea87.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/1f8d4611-1b95-5abc-9460-b43b62f2ea87.json",
+      "sha256": "fe3de4ea54d7ab0acfa2728ecb20546eefaaa41359b4cc8b86b9313ed454d8f8",
+      "bytes": 13873,
+      "characters": 13872,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/1f8d4611-1b95-5abc-9460-b43b62f2ea87.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13872,
+          "sha256": "fe3de4ea54d7ab0acfa2728ecb20546eefaaa41359b4cc8b86b9313ed454d8f8",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.146321+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/6cd4df63-c9e4-5205-8a2d-f9b82865f306.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/6cd4df63-c9e4-5205-8a2d-f9b82865f306.json",
+      "sha256": "91d48e6b30bf0df05fabeb790ece28b08d898f96fdb7594500107bb774616142",
+      "bytes": 16881,
+      "characters": 16881,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/6cd4df63-c9e4-5205-8a2d-f9b82865f306.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16881,
+          "sha256": "91d48e6b30bf0df05fabeb790ece28b08d898f96fdb7594500107bb774616142",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.192164+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/4ddd823f-a717-57f0-9c12-7ed4bdba75e8.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/4ddd823f-a717-57f0-9c12-7ed4bdba75e8.json",
+      "sha256": "667abb163811c2e10737a2b334f35ce679e46110e1928b7a3547dbef89224a0f",
+      "bytes": 17487,
+      "characters": 17487,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/4ddd823f-a717-57f0-9c12-7ed4bdba75e8.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17487,
+          "sha256": "667abb163811c2e10737a2b334f35ce679e46110e1928b7a3547dbef89224a0f",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.341062+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/cd8e76ba-0b91-59eb-8f7b-048545665760.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/cd8e76ba-0b91-59eb-8f7b-048545665760.json",
+      "sha256": "38710176922e99f54bb00782406b45bb3d1607698a8d13e813810cda8e1ef9c1",
+      "bytes": 16551,
+      "characters": 16551,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/cd8e76ba-0b91-59eb-8f7b-048545665760.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16551,
+          "sha256": "38710176922e99f54bb00782406b45bb3d1607698a8d13e813810cda8e1ef9c1",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.384407+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/29e66914-a43c-5141-bd29-ff81eb18172a.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/29e66914-a43c-5141-bd29-ff81eb18172a.json",
+      "sha256": "ae5da577987a2078e186e53c9fd8c8c0b1b2ba2fd5670f304ec97019ed586f5b",
+      "bytes": 16659,
+      "characters": 16659,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/29e66914-a43c-5141-bd29-ff81eb18172a.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16659,
+          "sha256": "ae5da577987a2078e186e53c9fd8c8c0b1b2ba2fd5670f304ec97019ed586f5b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.439749+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/7e6538f4-8f9c-531d-8804-19bafbd1bdde.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/7e6538f4-8f9c-531d-8804-19bafbd1bdde.json",
+      "sha256": "0dc654e0d72096ba73478e04a0f316ae486468d898e4b35c40dc50bc16cab18e",
+      "bytes": 14671,
+      "characters": 14667,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/7e6538f4-8f9c-531d-8804-19bafbd1bdde.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 14667,
+          "sha256": "0dc654e0d72096ba73478e04a0f316ae486468d898e4b35c40dc50bc16cab18e",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.489291+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/a8c15638-2b8a-52e0-bed5-8e5cd83ebd70.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/a8c15638-2b8a-52e0-bed5-8e5cd83ebd70.json",
+      "sha256": "6902a35fc7ca016ffc53deb365be8b802c7ebcab8f4ed06b5e6d477ee96284f6",
+      "bytes": 13854,
+      "characters": 13854,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/a8c15638-2b8a-52e0-bed5-8e5cd83ebd70.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13854,
+          "sha256": "6902a35fc7ca016ffc53deb365be8b802c7ebcab8f4ed06b5e6d477ee96284f6",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.533155+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/069f4cc8-32a0-5537-9352-189a6ae492ef.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/069f4cc8-32a0-5537-9352-189a6ae492ef.json",
+      "sha256": "18f77309de7703da75fa458c257bf0ab34c2f7fb12345bf2fe5c501f94d31b33",
+      "bytes": 15576,
+      "characters": 15576,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/069f4cc8-32a0-5537-9352-189a6ae492ef.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15576,
+          "sha256": "18f77309de7703da75fa458c257bf0ab34c2f7fb12345bf2fe5c501f94d31b33",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.578381+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/3e6e336b-0699-543e-ab06-35587d5d1a07.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/3e6e336b-0699-543e-ab06-35587d5d1a07.json",
+      "sha256": "1f201d6180076b4c501db814d8408a9af268fc6a38a49571ef4c5366c2d4fa12",
+      "bytes": 16977,
+      "characters": 16977,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/3e6e336b-0699-543e-ab06-35587d5d1a07.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16977,
+          "sha256": "1f201d6180076b4c501db814d8408a9af268fc6a38a49571ef4c5366c2d4fa12",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.627383+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/00e7465b-4f48-5ba6-9ca2-6fe74e0ed461.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/00e7465b-4f48-5ba6-9ca2-6fe74e0ed461.json",
+      "sha256": "1592337ea46a5e07d44911faf0c34f9cd5356807f70906218ee953a6cfc73c52",
+      "bytes": 17481,
+      "characters": 17481,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/00e7465b-4f48-5ba6-9ca2-6fe74e0ed461.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17481,
+          "sha256": "1592337ea46a5e07d44911faf0c34f9cd5356807f70906218ee953a6cfc73c52",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.667802+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/393f6e13-43c4-54be-8d77-8a3891b57f65.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/393f6e13-43c4-54be-8d77-8a3891b57f65.json",
+      "sha256": "292e8a7de87c734132d9ce3aeecc766023292cfac348416fb1ecbc2df1a8099e",
+      "bytes": 16857,
+      "characters": 16857,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/393f6e13-43c4-54be-8d77-8a3891b57f65.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16857,
+          "sha256": "292e8a7de87c734132d9ce3aeecc766023292cfac348416fb1ecbc2df1a8099e",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.722244+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/7770c7c9-496d-5040-8143-f43950a5082f.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/7770c7c9-496d-5040-8143-f43950a5082f.json",
+      "sha256": "e9f2fb3c68c53e5de0a247666f21440e3bebc76292cb28b3ea75207d271aefed",
+      "bytes": 16827,
+      "characters": 16827,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/7770c7c9-496d-5040-8143-f43950a5082f.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16827,
+          "sha256": "e9f2fb3c68c53e5de0a247666f21440e3bebc76292cb28b3ea75207d271aefed",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.868787+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/a83300db-425b-586b-80ae-a6216469fce1.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/a83300db-425b-586b-80ae-a6216469fce1.json",
+      "sha256": "1f1451d124195f654b9578ca157748c4c32fc162a997d7eb6b0effd922155ef0",
+      "bytes": 16641,
+      "characters": 16641,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/a83300db-425b-586b-80ae-a6216469fce1.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16641,
+          "sha256": "1f1451d124195f654b9578ca157748c4c32fc162a997d7eb6b0effd922155ef0",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.933157+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/8617da4a-203d-59e0-a807-6340fa7c5164.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/8617da4a-203d-59e0-a807-6340fa7c5164.json",
+      "sha256": "570fee31edaafd03e5f3e48daefb90477ec5afa602f97f9ea889abcf3d8248b0",
+      "bytes": 17067,
+      "characters": 17067,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/8617da4a-203d-59e0-a807-6340fa7c5164.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 17067,
+          "sha256": "570fee31edaafd03e5f3e48daefb90477ec5afa602f97f9ea889abcf3d8248b0",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:55.982632+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/67fd2734-ab88-52d2-bb87-6c985039ed2d.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/67fd2734-ab88-52d2-bb87-6c985039ed2d.json",
+      "sha256": "4d65326fde835229415b0802cc07cd44573a225bfa56c359ab56fc924176939f",
+      "bytes": 16902,
+      "characters": 16902,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/67fd2734-ab88-52d2-bb87-6c985039ed2d.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16902,
+          "sha256": "4d65326fde835229415b0802cc07cd44573a225bfa56c359ab56fc924176939f",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.026191+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/af4b9063-2cd5-5046-9e4f-c53ded7b83b4.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/af4b9063-2cd5-5046-9e4f-c53ded7b83b4.json",
+      "sha256": "a29fb96f0ff79657c98f59bf4cb9d45c77e3b48531448932e2b4784f8d01733d",
+      "bytes": 16143,
+      "characters": 16143,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/af4b9063-2cd5-5046-9e4f-c53ded7b83b4.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16143,
+          "sha256": "a29fb96f0ff79657c98f59bf4cb9d45c77e3b48531448932e2b4784f8d01733d",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.077109+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/ab989d2d-bbfa-5099-803d-b1442f09db05.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/ab989d2d-bbfa-5099-803d-b1442f09db05.json",
+      "sha256": "b92da26d03a73ef9d155e0c8baf89a9198efb8610205c0b29f6351d5a6bce152",
+      "bytes": 15846,
+      "characters": 15846,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/ab989d2d-bbfa-5099-803d-b1442f09db05.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15846,
+          "sha256": "b92da26d03a73ef9d155e0c8baf89a9198efb8610205c0b29f6351d5a6bce152",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.116760+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/476294df-cef0-5171-befe-1de0016a4637.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/476294df-cef0-5171-befe-1de0016a4637.json",
+      "sha256": "a2e8e858aa1edaa5d7c00bfb459f225147a0039695d7f0d67d2829a7d2af5ff8",
+      "bytes": 15885,
+      "characters": 15885,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/476294df-cef0-5171-befe-1de0016a4637.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15885,
+          "sha256": "a2e8e858aa1edaa5d7c00bfb459f225147a0039695d7f0d67d2829a7d2af5ff8",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.163632+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/5ef3f87c-6bae-5044-8aa0-d9e043a29cba.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/5ef3f87c-6bae-5044-8aa0-d9e043a29cba.json",
+      "sha256": "79dc19d1ae3a210ec7c956ab9976d817232f36c95258faece65d48eb3871c4fe",
+      "bytes": 13021,
+      "characters": 13014,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/5ef3f87c-6bae-5044-8aa0-d9e043a29cba.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13014,
+          "sha256": "79dc19d1ae3a210ec7c956ab9976d817232f36c95258faece65d48eb3871c4fe",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.212960+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/994ad0d2-b5b6-5816-bcbb-49722688f9c9.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/994ad0d2-b5b6-5816-bcbb-49722688f9c9.json",
+      "sha256": "4a37513ce993377651e740d038f3a3d7a6fe79cb0fba961fa2c7c7403e54d3c9",
+      "bytes": 16662,
+      "characters": 16662,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/994ad0d2-b5b6-5816-bcbb-49722688f9c9.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16662,
+          "sha256": "4a37513ce993377651e740d038f3a3d7a6fe79cb0fba961fa2c7c7403e54d3c9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.373118+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/5c0ad28e-c6e1-5edc-a4b9-8608c63977cb.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/5c0ad28e-c6e1-5edc-a4b9-8608c63977cb.json",
+      "sha256": "508d2341498bf83e3aeedf2bbd29007c532bcda3b00c4682a90ad888151a78e9",
+      "bytes": 16938,
+      "characters": 16938,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/5c0ad28e-c6e1-5edc-a4b9-8608c63977cb.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16938,
+          "sha256": "508d2341498bf83e3aeedf2bbd29007c532bcda3b00c4682a90ad888151a78e9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:56.504018+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/c90de7ba-1ca4-52cd-b350-87249c911b6a.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/c90de7ba-1ca4-52cd-b350-87249c911b6a.json",
+      "sha256": "5af8acdb89c53c0f4d222f2881c5919f79178449769c95104bf971c4dfa9d3cf",
+      "bytes": 13590,
+      "characters": 13590,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/c90de7ba-1ca4-52cd-b350-87249c911b6a.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13590,
+          "sha256": "5af8acdb89c53c0f4d222f2881c5919f79178449769c95104bf971c4dfa9d3cf",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.539960+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/6e788b5b-a8f3-5e59-b6b8-b25a4eb4ad11.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/6e788b5b-a8f3-5e59-b6b8-b25a4eb4ad11.json",
+      "sha256": "3015d26ea5822027a24fdd7a0fa07983f355fd05864b5594accf44a124cbe18c",
+      "bytes": 15933,
+      "characters": 15933,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/6e788b5b-a8f3-5e59-b6b8-b25a4eb4ad11.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15933,
+          "sha256": "3015d26ea5822027a24fdd7a0fa07983f355fd05864b5594accf44a124cbe18c",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.589691+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/d84bba07-a7ce-55ef-b727-86be07fbd81c.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/d84bba07-a7ce-55ef-b727-86be07fbd81c.json",
+      "sha256": "e5855d2d9c06c3698fca3835c4daf0836ebfa477ad5e3e3e69bbfe020cff2cfd",
+      "bytes": 16863,
+      "characters": 16863,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/d84bba07-a7ce-55ef-b727-86be07fbd81c.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16863,
+          "sha256": "e5855d2d9c06c3698fca3835c4daf0836ebfa477ad5e3e3e69bbfe020cff2cfd",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.648751+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/b3b3aaa5-9a4c-5f3b-a9b8-7ff95898e692.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/b3b3aaa5-9a4c-5f3b-a9b8-7ff95898e692.json",
+      "sha256": "2ccc6e27dcdaf7f5a8095ab051038e49eb10e0a6a0c94fe8e9f47a07d75da523",
+      "bytes": 16632,
+      "characters": 16632,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/b3b3aaa5-9a4c-5f3b-a9b8-7ff95898e692.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16632,
+          "sha256": "2ccc6e27dcdaf7f5a8095ab051038e49eb10e0a6a0c94fe8e9f47a07d75da523",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.695180+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/631ce3fc-cf41-53fd-abfb-98073c9fd623.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/631ce3fc-cf41-53fd-abfb-98073c9fd623.json",
+      "sha256": "a87b3e8db20ed48ad70347321e61ce5b89b94e004497dfa4cc4a49a1f816a86d",
+      "bytes": 15969,
+      "characters": 15969,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/631ce3fc-cf41-53fd-abfb-98073c9fd623.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15969,
+          "sha256": "a87b3e8db20ed48ad70347321e61ce5b89b94e004497dfa4cc4a49a1f816a86d",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.741527+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/91d8f6c0-a9f6-5cab-83fc-d1406cabb4e6.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/91d8f6c0-a9f6-5cab-83fc-d1406cabb4e6.json",
+      "sha256": "e7adc52314902be3991a308f3d0f0defbd7dc8150ed73d589420776be61c5375",
+      "bytes": 15081,
+      "characters": 15081,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/91d8f6c0-a9f6-5cab-83fc-d1406cabb4e6.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15081,
+          "sha256": "e7adc52314902be3991a308f3d0f0defbd7dc8150ed73d589420776be61c5375",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.795872+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/97e4737c-7440-50c8-8a43-0b9aa8c93b81.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/97e4737c-7440-50c8-8a43-0b9aa8c93b81.json",
+      "sha256": "81aab4715975687926432ea4ea3f9edc683ee31741e09d2f05b691c79992ec98",
+      "bytes": 13328,
+      "characters": 13326,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/97e4737c-7440-50c8-8a43-0b9aa8c93b81.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 13326,
+          "sha256": "81aab4715975687926432ea4ea3f9edc683ee31741e09d2f05b691c79992ec98",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:57.969604+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/66eb520d-c1ab-50d9-bd1f-1e621142f638.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/66eb520d-c1ab-50d9-bd1f-1e621142f638.json",
+      "sha256": "aa744c9cfabd45067ff868d511652664e82a08f6745d8fc4f0a6806439cfa80c",
+      "bytes": 15102,
+      "characters": 15102,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/66eb520d-c1ab-50d9-bd1f-1e621142f638.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15102,
+          "sha256": "aa744c9cfabd45067ff868d511652664e82a08f6745d8fc4f0a6806439cfa80c",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.059504+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/91c85331-8dee-5576-86e1-cb99dc151096.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/91c85331-8dee-5576-86e1-cb99dc151096.json",
+      "sha256": "f4afac0b30ab1c60b5161d21e3bee781c229dc925ed7ccccf8093df778c090b9",
+      "bytes": 16092,
+      "characters": 16092,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/91c85331-8dee-5576-86e1-cb99dc151096.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16092,
+          "sha256": "f4afac0b30ab1c60b5161d21e3bee781c229dc925ed7ccccf8093df778c090b9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.120431+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/e8d21c1f-aba9-57a5-b9fa-c0a601512a2d.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/e8d21c1f-aba9-57a5-b9fa-c0a601512a2d.json",
+      "sha256": "d762f43d2c6652e66d163cc085831abec009757443ddd315abdfc6064785a712",
+      "bytes": 15513,
+      "characters": 15513,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/e8d21c1f-aba9-57a5-b9fa-c0a601512a2d.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15513,
+          "sha256": "d762f43d2c6652e66d163cc085831abec009757443ddd315abdfc6064785a712",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.176509+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/87dea46e-7568-5dc0-a9a5-9d268ba68a26.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/87dea46e-7568-5dc0-a9a5-9d268ba68a26.json",
+      "sha256": "6403dcc6569b1ecbe5137ec11552ee5b1df58901c7b21c6631dae59e5417c61e",
+      "bytes": 15459,
+      "characters": 15459,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/87dea46e-7568-5dc0-a9a5-9d268ba68a26.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15459,
+          "sha256": "6403dcc6569b1ecbe5137ec11552ee5b1df58901c7b21c6631dae59e5417c61e",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.233307+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/c4cb1a03-7a0a-5645-a8d5-af4cea83cf88.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/c4cb1a03-7a0a-5645-a8d5-af4cea83cf88.json",
+      "sha256": "a099dc045a4cd866346a148d5c2d8b5aa7da5a8c361f8b497ad6babec339c781",
+      "bytes": 16698,
+      "characters": 16698,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/c4cb1a03-7a0a-5645-a8d5-af4cea83cf88.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16698,
+          "sha256": "a099dc045a4cd866346a148d5c2d8b5aa7da5a8c361f8b497ad6babec339c781",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.279074+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/376da2f1-4400-547f-b047-3e969cea964f.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/376da2f1-4400-547f-b047-3e969cea964f.json",
+      "sha256": "f39d91ce9dd448efd5e0244b690fa2a6c94b24609bf51ed6ebc6c8793035608f",
+      "bytes": 16068,
+      "characters": 16068,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/376da2f1-4400-547f-b047-3e969cea964f.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16068,
+          "sha256": "f39d91ce9dd448efd5e0244b690fa2a6c94b24609bf51ed6ebc6c8793035608f",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.324864+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/5f8bce9a-15c8-5f69-ab0a-bc420d20914a.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/5f8bce9a-15c8-5f69-ab0a-bc420d20914a.json",
+      "sha256": "e2196b6c1ea7124be4b9b424173bff1c35a4abc63da1db6d46dcaab545b64137",
+      "bytes": 16068,
+      "characters": 16068,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/5f8bce9a-15c8-5f69-ab0a-bc420d20914a.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16068,
+          "sha256": "e2196b6c1ea7124be4b9b424173bff1c35a4abc63da1db6d46dcaab545b64137",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.467816+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/0574320e-acf1-5628-8c95-0fb71b8d16ec.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/0574320e-acf1-5628-8c95-0fb71b8d16ec.json",
+      "sha256": "7af52b28c3fb931532af322a02611fd3c3f1c409830e4e804d0d57eb8a75e2f9",
+      "bytes": 16347,
+      "characters": 16347,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/0574320e-acf1-5628-8c95-0fb71b8d16ec.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16347,
+          "sha256": "7af52b28c3fb931532af322a02611fd3c3f1c409830e4e804d0d57eb8a75e2f9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.513223+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/9c01de89-4b8b-5882-b7d3-620ee5dd4c4b.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/9c01de89-4b8b-5882-b7d3-620ee5dd4c4b.json",
+      "sha256": "16c208a0e96ee7881d65b35a76a2913c5a0be0efeb4ef0c061d3d620f337c7d9",
+      "bytes": 16401,
+      "characters": 16401,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/9c01de89-4b8b-5882-b7d3-620ee5dd4c4b.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16401,
+          "sha256": "16c208a0e96ee7881d65b35a76a2913c5a0be0efeb4ef0c061d3d620f337c7d9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.560229+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/f4e79a46-e197-59ca-9d3f-8a0943e28d0e.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/f4e79a46-e197-59ca-9d3f-8a0943e28d0e.json",
+      "sha256": "aa0ee53f2638887e5ec254357558f93d48e1c266a0b680482772c1e0d0f0e230",
+      "bytes": 16518,
+      "characters": 16518,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/f4e79a46-e197-59ca-9d3f-8a0943e28d0e.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16518,
+          "sha256": "aa0ee53f2638887e5ec254357558f93d48e1c266a0b680482772c1e0d0f0e230",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.599612+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/8ac0e99b-1648-55c3-bca1-edd86331d5b2.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/8ac0e99b-1648-55c3-bca1-edd86331d5b2.json",
+      "sha256": "24b5bcf18dc22c3a9f3eb188b489f8828f0deb27366ee4251982cc723230ebb7",
+      "bytes": 15207,
+      "characters": 15207,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/8ac0e99b-1648-55c3-bca1-edd86331d5b2.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15207,
+          "sha256": "24b5bcf18dc22c3a9f3eb188b489f8828f0deb27366ee4251982cc723230ebb7",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.643359+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    },
+    {
+      "path": "context/notes/bb16a58d-042d-5861-aaa3-77977c417cbd.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readbacks/context/notes/bb16a58d-042d-5861-aaa3-77977c417cbd.json",
+      "sha256": "e2873e09958a144976737460f734b47f85d5c6b6d065728ad6df97f040022a90",
+      "bytes": 4465,
+      "characters": 4465,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/bb16a58d-042d-5861-aaa3-77977c417cbd.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 4465,
+          "sha256": "e2873e09958a144976737460f734b47f85d5c6b6d065728ad6df97f040022a90",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:18:58.683185+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "manifestShaMatched": false,
+      "manifestBytesMatched": false
+    }
+  ],
+  "updatedAt": "2026-11-15T08:18:58.683553+00:00"
+}

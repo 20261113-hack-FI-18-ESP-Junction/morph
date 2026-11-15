@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-11-15T08:30:48.204463+00:00",
+  "agent": "/root/adoption_station",
+  "designatedReporter": "/root",
+  "reviewDirectory": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z",
+  "owner": {
+    "sessionId": "966c1caf-f8f1-4221-87e7-85c67748c871",
+    "sourceReporter": "/root/shared_sync within the separate M08 session",
+    "taskId": "M08",
+    "requestId": "aa097b06-d3e9-4ea3-9964-dfc20c89adcb",
+    "thisAuditMayDeliverOwnerSource": false
+  },
+  "incidentCheckpoint": {
+    "receipt": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/checkpoint-5-ordinary-receipt.json",
+      "bytes": 1105,
+      "sha256": "ba9c0f97d4190d867ec07d2d58c3ee14812fc2a8a3165be832e0d4bdbb5e78a8"
+    },
+    "cachedReadback": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/checkpoint-5-readback.json",
+      "bytes": 4435,
+      "sha256": "4fd71ac51513be41fe1d86f3b3b8755e5fb92af7b33eb0b44c4f8f0d01523aef"
+    },
+    "payload": {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/ec21a94c-793b-4b59-bbbf-102af8d624bc.json",
+      "bytes": 4274,
+      "sha256": "66f86a7e0a7567ed1997e0db8990b0279afbd99828a99361d581d457ab1faba4"
+    },
+    "allSixFieldsMatch": true,
+    "noteIdMatches": true,
+    "payloadHashMatches": true,
+    "cachedNoteHashMatches": true,
+    "notePath": "context/notes/ec21a94c-793b-4b59-bbbf-102af8d624bc.json",
+    "savedAt": "2026-11-15T08:10:55.830227+00:00",
+    "verifiedAt": "2026-11-15T08:10:55.932878+00:00",
+    "workEventPublished": false,
+    "freshRemoteReadPerformed": false
+  },
+  "sourceTransport": {
+    "stateObserved": "prepared_offline_verified",
+    "ownerLedger": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/delivery-state.json",
+      "bytes": 1995,
+      "sha256": "8c8a31ce9663d295ca734ecc235d5ca080cde1f131ae07dfa80a855120e7a214"
+    },
+    "deliveryId": "c8898652-f488-4bd3-8f9f-8793047edf52",
+    "transferId": "ecbcfc1c-3e6e-40fe-8b98-0d3eff7a16c8",
+    "completionNoteIdPreparedOnly": "cabcb290-299a-4850-931a-f731fecadbda",
+    "fileCount": 43,
+    "fileBytes": 474519,
+    "partCount": 42,
+    "preparedNotes": 43,
+    "bundle": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/bundle.json",
+      "bytes": 497494,
+      "sha256": "c3c8b09e7ddd0b408c690df7dd9aa5ba19c77b85221b1ace765fd9c5759f1b8d"
+    },
+    "standaloneManifest": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/manifest.json",
+      "bytes": 451,
+      "sha256": "cff3bfca3f5eddb1115521f56eb1ae550750f4212ef2ccded98b482b54d2aa1f"
+    },
+    "manifestNotePreparedOnly": {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "preparedSharedPath": "context/notes/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "payloadBytes": 770,
+      "payloadSha256": "f40692bb11c63c09b3c2e1b800fd755e4ca9b85b4dd8cfb4751a28f1b042dfa1",
+      "kind": "morph-source-manifest",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "manifestMatchesStandalone": true
+    },
+    "provenance": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/SOURCE_DELIVERY.json",
+      "bytes": 41619,
+      "sha256": "47660a3086d12264b8cd4734110df1797c77d1e5b28f12e399412380d5205cdf"
+    },
+    "freeze": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-freeze.json",
+      "bytes": 12699,
+      "sha256": "28f8f837843ad9f2c5511d14b6721c4e3b71b3e4a7463d28354876dac667eea9"
+    },
+    "preparedChunkAndBundleChecksPassed": true,
+    "all43FrozenSnapshotHashesMatch": true,
+    "currentSourceDrift": [],
+    "matchedExpectedOutgoingReceiptOrPayloadPaths": [],
+    "confirmedSourceManifestPath": null,
+    "confirmedSourceManifestHash": null,
+    "confirmedCompletionPath": null,
+    "conclusion": "Prepared offline and locally verified. No matching source save/readback or completion receipt was observed in the bounded local directories. This is not a claim that the remote Mac cannot possess the bytes.",
+    "ownerSourceLifecycleRecorded": {
+      "frozen": true,
+      "received": false,
+      "reconstructed": false,
+      "reviewed": false,
+      "reconciled": false,
+      "committed": false,
+      "published": false,
+      "note": "Later receipts establish each state independently. The owner paused recurring Mac review; manual continuation is needed."
+    },
+    "macBaselineKnown": false,
+    "missingChangedSourceDeclaredByOwner": [],
+    "excludedArtifactCount": 8,
+    "excludedArtifactMetadata": [
+      {
+        "path": "robot-connections.json",
+        "bytes": 7928,
+        "sha256": "ecb969f91121e4e5b59fbe3b37b1c080928e2bd735c6f463edd523fe11cf857c",
+        "reason": "Machine connection metadata excluded by reviewed sender policy",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/three-points-001.json",
+        "bytes": 1105,
+        "sha256": "4966e65cc3d512090acd2bb84256c58d357b33489283a29072237e4a7956fe45",
+        "reason": "Raw operator-captured poses",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-001.jsonl",
+        "bytes": 3776,
+        "sha256": "a30a470a7e80c495717f7db55b1ff73caca45e2ace1108366d0f22bc8d096430",
+        "reason": "Raw hardware journal",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-002.jsonl",
+        "bytes": 14233,
+        "sha256": "3c89a38254d9b1f92062a10a2fb5c31b7b2f32e02fbf10b8890cc5ba3eff87d4",
+        "reason": "Raw hardware journal",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/replay-001.jsonl",
+        "bytes": 148792,
+        "sha256": "cde6841eed9b69d90e4a1a56c4a5bd11755fb8f2943db77aee8c89c612330cbd",
+        "reason": "Raw hardware journal",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/plan-repeat-001.json",
+        "bytes": 681214,
+        "sha256": "5c88dca6307949f2782fcd6583f08191e524ab7f2690642f094e057ad281047e",
+        "reason": "Actual-pose runtime plan",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/physical-results/replay-evidence-summary.json",
+        "bytes": 21273,
+        "sha256": "65e62bfa2fb1127edbcb9ed7b1f1d8baa68605600630ef164ef826adbab93e90",
+        "reason": "Full derived audit embeds raw pose/goal/telemetry records",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/installed-environments.json",
+        "bytes": 11361,
+        "sha256": "e8020aa52ef7f0fa5d0f1b29d3e2e2a40c698025af45e1e6ba8ac3b4ddcc2af2",
+        "reason": "Metadata includes actual runtime robot configuration fields",
+        "disposition": "Intel-local; never inferred as deletion"
+      }
+    ]
+  },
+  "notion": {
+    "state": "pending_manual_Mac_reconciliation",
+    "pendingUpdateId": "f5574cb3-abee-45c8-9002-77cb1b6f93af",
+    "pendingRecord": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/notion-final-pending.json",
+      "bytes": 3749,
+      "sha256": "1133288c05c0783f85eb275dd94baff6bd015f777a6f637dffa5ebf21bb54c8e"
+    },
+    "pageId": "418d87e34458814b8320e6f7c3b21493",
+    "status": "In progress",
+    "priorConfirmedUpdateIds": {
+      "e52db211-47bd-4425-8f3c-9913f712a45a": 1,
+      "e3757555-c96a-46bc-98c5-9386aff50b56": 1
+    },
+    "priorMacReadCompletedAt": "2026-11-15T07:57:48.121Z",
+    "priorReadbackArtifactSha256": "d0de9380ed49c36a8cb9af99bf4f8825175043deaa6ca992f21b085a490c8831",
+    "incidentAndFinalHoldCoveredByPriorUpdates": false,
+    "completionReferenceInPendingTextIsProspective": true
+  },
+  "physicalState": {
+    "ownerExperimentsStopped": true,
+    "currentReplayHoldRequired": true,
+    "hardwareResumeAuthorized": false,
+    "incidentRecord": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+      "bytes": 2729,
+      "sha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01"
+    },
+    "finalOfflineTestRecord": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "bytes": 2696,
+      "sha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf"
+    },
+    "testsRerunByAuditor": false,
+    "acceptance": "M08 remains open; software hold tests do not establish physical acceptance"
+  },
+  "datedCorrection": {
+    "staleSessionState": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/session-state.json",
+      "bytes": 2439,
+      "sha256": "39835e896f3861547d7f963ec34ff34cce17987097018c1f4f8c7960a6b56f3d"
+    },
+    "supersededFields": [
+      "physical_operation_authorized",
+      "physical_operation_performed",
+      "current_scope",
+      "source_freeze"
+    ],
+    "resolution": "Interpret against the later incident record, current AGENTS owner stop and frozen delivery-state; leave original owner ledger untouched."
+  },
+  "requiredClosureWork": [
+    {
+      "owner": "Separate M08 source reporter",
+      "work": "Complete the existing prepared source transfer with the same request, delivery, transfer and completion IDs; verify every readback before a completion event. Do not create a duplicate group."
+    },
+    {
+      "owner": "Mac review/publication owner",
+      "work": "Manually reconstruct, inspect and reconcile the M08 package against a verified current Mac baseline; then separately record publication. Recurring Mac automation remains paused."
+    },
+    {
+      "owner": "Mac Notion owner",
+      "work": "Manually apply pending update f5574cb3-abee-45c8-9002-77cb1b6f93af while preserving M08 In progress, original criteria, M07 dependency and prior accepted updates; verify its readback."
+    },
+    {
+      "owner": "d531 closure reporter",
+      "work": "Include only this new audit metadata and references in the final coordination group. Do not retransmit M08 source, its raw exclusions or the eight previous d531 groups."
+    }
+  ],
+  "outgoingDeliveryForThisNewAudit": "Pending parent publication at freeze; earlier contribution delivery confirmed by parent in 4ba0533e-31c3-4c87-b449-8cba5e51b48b at 08:25:29 UTC, shared SHA 11dc7c61307081eba3d54c7d6d5eb0a1bc78ae3571cc4304beb52d49e86e500b.",
+  "operations": {
+    "remoteCalls": 0,
+    "hardwareCalls": 0,
+    "stationCalls": 0,
+    "providerCalls": 0,
+    "serviceChanges": 0,
+    "ownerSourceFilesCopiedOrModified": 0,
+    "newAuthoredMetadataFiles": 3
+  }
+}

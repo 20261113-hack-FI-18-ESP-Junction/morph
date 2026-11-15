@@ -1,0 +1,19 @@
+{
+  "agent": "/root/adoption_station",
+  "reporter": "/root",
+  "scope": [
+    "list_context",
+    "read_context"
+  ],
+  "sharedWrites": 0,
+  "stationRequests": 0,
+  "providerCalls": 0,
+  "hardwareCalls": 0,
+  "clientHashes": {
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/context/verification/intel-continuation/sync_shared_context.py": "78ef0ed4e9a49cdebafcd5a2c61968f65bb5edb213f0f0b3655ea3a5fc30d4e4"
+  },
+  "readerSha256": "c053d5ba2881bbd7ecce0779ecb69f3af0c13067add58185cf8fbbd02a6a630f",
+  "startedAt": "2026-11-15T08:10:25.770280+00:00",
+  "files": [],
+  "completedAt": "2026-11-15T08:10:29.876921+00:00"
+}

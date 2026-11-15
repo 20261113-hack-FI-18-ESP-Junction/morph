@@ -1,0 +1,564 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "deliveryId": "dd42f038-052e-4f0f-88fd-4b9162a4b894",
+  "transferId": "2943f735-dbab-43fe-8298-dc1fd52339c0",
+  "completionNoteId": "9f996c49-6591-47c0-9842-4f498e24b199",
+  "createdAt": "2026-11-15T08:28:05.255951+00:00",
+  "targetRoot": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z",
+  "group": "final-coordination-artifacts-for-manual-mac-continuation",
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction",
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "preparedBy": "/root/adoption_codex",
+  "completionReporter": "/root",
+  "authors": [
+    "/root",
+    "/root/adoption_codex",
+    "/root/adoption_receiver_review",
+    "/root/adoption_station"
+  ],
+  "taskIds": [
+    "M08",
+    "M20",
+    "M21"
+  ],
+  "intendedBehavior": "Provide the exact remaining post-freeze closing reports and coordination evidence for manual Mac takeover. No implementation, runtime or physical operation is performed.",
+  "sourceRevision": "Exact per-file hashes and existing confirmed source receipts; no new Git revision or clean checkout claim.",
+  "baseline": "Entirely new dated archival additions with null baselines. Null means proposed addition, not proof of absent remote paths; inspect destination conflicts. Do not overlay current guides or source.",
+  "files": [
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_FINAL.md",
+      "sha256": "64c859d66f8c0208b8d2765ed25bd370489dd482b52bfba2f1b045bfff1c4cf5",
+      "bytes": 22935,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_FINAL.md",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_FINAL.md",
+      "reason": "final handoff and ordinary receipt"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_VERIFICATION.json",
+      "sha256": "286a7c92500f632e43dc30e0e7848cd45036f955781d0f6248fa8e57f54add49",
+      "bytes": 6597,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_VERIFICATION.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_VERIFICATION.json",
+      "reason": "final handoff and ordinary receipt"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/delivery-final-payload.json",
+      "sha256": "b6790f70b889f28c9d8ade3baeaca9cf9a66b98c91bded9907525dcbb3e69b6d",
+      "bytes": 24295,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/delivery-final-payload.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/delivery-final-payload.json",
+      "reason": "final handoff and ordinary receipt"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+      "sha256": "6257c02a907b9b4e746cf26894caa9b0dc32b15587185efc1b66b27278834474",
+      "bytes": 448,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+      "reason": "final handoff and ordinary receipt"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/README.md",
+      "sha256": "73bf373627ef2f0ef1244b11cc405bcef2a112d63a3c44a41629be6f5809bed3",
+      "bytes": 2637,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/README.md",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/result.json",
+      "sha256": "b00f30b6895a552619faa9419ea0e10df0449bb1f215e96c2eefd63d462c500a",
+      "bytes": 15550,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/result.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/manifest.json",
+      "sha256": "9acdc5f5c7d500520386a615c00c16bc63135b3e115e98eb195b7185bee7cac6",
+      "bytes": 6492,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/manifest.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/manifest.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/linked-paths.json",
+      "sha256": "799422ca9174bcccc09916066d9825a71f464bc2c51c7c6f62c0c0d753b3e9ed",
+      "bytes": 373,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/linked-paths.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/linked-paths.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selected-paths.json",
+      "sha256": "48acd6e66a2f30a8093e3c40351063bb0c78a24b20eb14309f787c31c569eb1f",
+      "bytes": 369,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selected-paths.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selected-paths.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selection.json",
+      "sha256": "e7d6dc5113f7cc3c8f758fd04875e7d6f69fd45043204b2632af7512caf2f06f",
+      "bytes": 2887,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selection.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/selection.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/catalog.json",
+      "sha256": "1a81dbc56a8607eb30950a5503c391614439e8f7ee05f651efe39a2fb7a703cd",
+      "bytes": 147362,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/catalog.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/catalog.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/read-ledger.json",
+      "sha256": "28de3ea2ba195740a4fab84bd35907308481a35fc74a4d18e51d19cfad898616",
+      "bytes": 702,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/read-ledger.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081025769796Z/read-ledger.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081054862993Z/read-ledger.json",
+      "sha256": "20e6e9c52fedbd2535f7cc00cff957f7d9f5809e626f1eac892f5d0c09cb1c8a",
+      "bytes": 5699,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081054862993Z/read-ledger.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081054862993Z/read-ledger.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/read-ledger.json",
+      "sha256": "74ee761eabf891a255842694dcfce827c5e2ccfea4ed0503b05900005144e701",
+      "bytes": 4413,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/read-ledger.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/read-ledger.json",
+      "reason": "full final incoming review metadata; raw shared inputs reused"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/result.json",
+      "sha256": "184a8a81d241480843c068d132aa560e0726a4f4f939a328077d3010c44cb49b",
+      "bytes": 2786,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/result.json",
+      "reason": "narrow reviewed-path acknowledgment"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/after-reviewed.json",
+      "sha256": "edbebf4942b4a206e715078bfe29560bcf5b5111424282b21ad9b3dc9577c293",
+      "bytes": 14429,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/after-reviewed.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-review-acknowledgment-20261115T082103Z/after-reviewed.json",
+      "reason": "narrow reviewed-path acknowledgment"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/TRANSFER_REPORT.md",
+      "sha256": "e243e2f275328091e893f6b97ed2714f1d12b057c981ef9c1c6bd947697483b3",
+      "bytes": 9487,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/TRANSFER_REPORT.md",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/TRANSFER_REPORT.md",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+      "sha256": "f90e3912ed31eb712169bd4c4f25dda30efd7d5b528841826e3cc0a9214f827e",
+      "bytes": 27811,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readback-ledger.json",
+      "sha256": "16e40047a8d7295cd9c8f0f719f98471bc524bdaa8faa7d187686f56d6d69697",
+      "bytes": 80270,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readback-ledger.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readback-ledger.json",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/all-group-receipt-index.json",
+      "sha256": "3a7fb20388792af2dbb5a52a55e8684c4a8a4c110620903b6253ce6f86ef2872",
+      "bytes": 4459,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/all-group-receipt-index.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/all-group-receipt-index.json",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/attributed-contribution.json",
+      "sha256": "a4093d040f4c5afb98a0eea8985830a88f3109cd844a4947b2941a07b7a9cc40",
+      "bytes": 3886,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/attributed-contribution.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/attributed-contribution.json",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/initial-tls-attempt.json",
+      "sha256": "8125f9c355a3aade6f31f1c20318abe815275411e848411b49f16dd4a96c0fc2",
+      "bytes": 338,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/initial-tls-attempt.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/initial-tls-attempt.json",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/rejection-locations.json",
+      "sha256": "0944543869fca90b9b1c435ccdefcedc334f306bc28ae7430edce7e5ffac7ccd",
+      "bytes": 1174,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/rejection-locations.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/rejection-locations.json",
+      "reason": "eighth-group post-freeze transport verification"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-ordinary-outbox-audit-20261115T0828.json",
+      "sha256": "1617625624c3d7ce2191b55ba3e050378945b0d797aa748c9ad57e465cd966ef",
+      "bytes": 7912,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-ordinary-outbox-audit-20261115T0828.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-ordinary-outbox-audit-20261115T0828.json",
+      "reason": "final read-only closure metadata"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-integrity-closure-20261115T083026Z.json",
+      "sha256": "f31adee0d6545b00078b189b6623f383f2145b9b91e365bfb590266a3265c442",
+      "bytes": 7614,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-integrity-closure-20261115T083026Z.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-integrity-closure-20261115T083026Z.json",
+      "reason": "final read-only closure metadata"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/README.md",
+      "sha256": "d60f45dd0a24a00edc7b0518c6608c1fb0964a3d198c3ca605338c5c3af36904",
+      "bytes": 3832,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/README.md",
+      "reason": "local M08 closure receipt audit metadata; owner source excluded"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/closure-audit-result.json",
+      "sha256": "25a4fb3b2315dbd8c01d2927a8091b9f5c4807c240741f023e9ffafecd5aca55",
+      "bytes": 11554,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/closure-audit-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/closure-audit-result.json",
+      "reason": "local M08 closure receipt audit metadata; owner source excluded"
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/read-ledger.json",
+      "sha256": "eccd45e3768040a5dd8ac3a1e86d285c553cbc0cf80f48b6c97ac4fb46f6fcff",
+      "bytes": 90902,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/read-ledger.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/m08-closure-audit-20261115T083048Z/read-ledger.json",
+      "reason": "local M08 closure receipt audit metadata; owner source excluded"
+    },
+    {
+      "path": "README.md",
+      "sha256": "fb891bae8c0fdadd2328cc05aa6746fdc3d54aa784763dfce2cbf4904901c5a3",
+      "bytes": 4073,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/source/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/README.md",
+      "reason": "New bounded archive description, snapshot inventory or exact shared readback metadata."
+    },
+    {
+      "path": "SOURCE_INVENTORY.json",
+      "sha256": "0e3f61de929ac37f4eafbbaf9d39c595c5fe7cd37d392552238bea203fe16430",
+      "bytes": 17668,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/source/SOURCE_INVENTORY.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SOURCE_INVENTORY.json",
+      "reason": "New bounded archive description, snapshot inventory or exact shared readback metadata."
+    },
+    {
+      "path": "SHARED_READBACKS.json",
+      "sha256": "081439a3280989b494e846c85c6db05fb0313633ce33e3209e7319a8db9abddf",
+      "bytes": 4228,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-coordination-source-delivery-20261115T082805Z/source/SHARED_READBACKS.json",
+      "operation": "add",
+      "baseSha256": null,
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/SHARED_READBACKS.json",
+      "reason": "New bounded archive description, snapshot inventory or exact shared readback metadata."
+    }
+  ],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "missingSource": [],
+  "scopeOfCompleteness": "The explicitly requested final coordination-artifact scope: 28 original metadata/report/receipt files plus archive metadata and companion. Completeness is limited to this new group; prior required original-source gaps and separately owned M08 source transfer remain unresolved.",
+  "overallProjectComplete": false,
+  "priorIncompleteGroups": [
+    {
+      "deliveryId": "831bcaf3-d30f-45cf-a30e-03b8d810d32b",
+      "transferId": "803091e9-4b14-442e-b996-513e0f772405",
+      "manifestNotePath": "context/notes/f5ed8867-ef91-5f23-a383-1f972af4fdff.json",
+      "manifestNoteSha256": "9e74ea0e67590864d6a22d585f5082e4c90af59a9848fcd7d992f0d4045816db",
+      "gap": "Original station/tests/test_producers.py SHA60d804e02c367a4bd151c2e4c62383328f9f9efcad079595c774b34ac58b81e9 remains rejected."
+    },
+    {
+      "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "transferId": "f0cff213-9da1-40df-8615-44d6d91aff53",
+      "manifestNotePath": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "manifestNoteSha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+      "gap": "The exact four rejected closing originals remain missing; no completion event is permitted for that prior aggregate.",
+      "requiredRejectedOriginals": [
+        {
+          "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/closing-review-result.json",
+          "sha256": "7f5a32176ba0870dd06650438134c8503326f041d46df69fcec5e4257f32bbcb",
+          "bytes": 32123
+        },
+        {
+          "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/verify_closing_review.py",
+          "sha256": "4ca8ee9b247dae16042bf198a3e96383c4d1b244f9f8a1dccc3416f661ff0730",
+          "bytes": 12694
+        },
+        {
+          "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspect_worker_request_v1.py",
+          "sha256": "53102fe6cd4e287c12173bf262fd6e6935704567e839415e8e3db981ca444ab3",
+          "bytes": 14992
+        },
+        {
+          "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspection-20261115T080519285661Z.json",
+          "sha256": "1d35f9a42291ff5a553e311a38ca66f06bafbaac90720042915773aab003c9ab",
+          "bytes": 4089
+        }
+      ]
+    }
+  ],
+  "otherUnresolvedSource": "Separate analyst original test/baseline gaps and unsupported watcher-log-window.jsonl remain unchanged. No source-screen exceptions or substitute copies.",
+  "reusedRawMacInputs": [
+    {
+      "path": "context/notes/04ca7bba-b77c-46af-a6d8-aafe431aa75f.json",
+      "sha256": "bdd8a3f03c51b122a0a299d281644823bd2a5de2de222102f124bf942ca743cf",
+      "bytes": 21349,
+      "readAt": "2026-11-15T08:10:54.908023+00:00"
+    },
+    {
+      "path": "context/notes/145bd20a-7786-587e-a721-5770d9c2366e.json",
+      "sha256": "f171c24167cf6228328be686dcd345751066f11a092c3fe790602e641cb2ce58",
+      "bytes": 4026,
+      "readAt": "2026-11-15T08:10:55.031326+00:00"
+    },
+    {
+      "path": "context/notes/603bba73-fb5a-455f-908f-cfddaf014598.json",
+      "sha256": "a6994e51bc96293f30dc5266996de670986d4fdee2627e5dd6b43abe03d4e2ff",
+      "bytes": 4681,
+      "readAt": "2026-11-15T08:10:55.094675+00:00"
+    },
+    {
+      "path": "context/notes/921c66b9-b650-43b8-aedc-60a4dad32168.json",
+      "sha256": "69957a520d0fc84287a714f2c6a64020d6719373e4fec4f844e2f602716316a3",
+      "bytes": 4324,
+      "readAt": "2026-11-15T08:10:55.121955+00:00"
+    },
+    {
+      "path": "context/notes/bc26bdec-2908-4c8a-bd3d-31e7aa72c871.json",
+      "sha256": "8824956c95a0d7909a1c915296713e9b28d9b81c3c5389652faa9adb5b3c897e",
+      "bytes": 7478,
+      "readAt": "2026-11-15T08:10:55.168985+00:00"
+    },
+    {
+      "path": "context/notes/dd2f6cdf-9bde-4467-b526-c9b583996e0b.json",
+      "sha256": "06ba4708746c20984d75b2ca550bd0bdb05f433229739de3da6204de5f23c0de",
+      "bytes": 4463,
+      "readAt": "2026-11-15T08:10:55.253017+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/REVIEW.md",
+      "sha256": "84c5ea4a472bff81d3ed6eddfed64300cbf6889971ab9a4a34783fbd4fb0c6cc",
+      "bytes": 9320,
+      "readAt": "2026-11-15T08:11:45.457994+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/automation-pause-verification.json",
+      "sha256": "38bf7d55914435cc053c70a2ddd0e002cd432b9c6718f5ef3f54c6e0a9266350",
+      "bytes": 15948,
+      "readAt": "2026-11-15T08:11:45.501320+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/publication-pending-fallback.json",
+      "sha256": "486967a46612cfa97f49a00ed6ebb4bb08925cd8571aafb500a95c93bb56a379",
+      "bytes": 34242,
+      "readAt": "2026-11-15T08:11:45.564599+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/final-publication-disposition.json",
+      "sha256": "a647480ccb5eb5e9fa64d1a719b5374885e834ed70ad50b9306c7888fad62579",
+      "bytes": 569,
+      "readAt": "2026-11-15T08:11:45.593789+00:00"
+    }
+  ],
+  "reusedSourceAndBaseline": [
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-review-acknowledgment-20261115T0809/after-reviewed.json",
+      "sha256": "984b3c8f3e7db3b6dec90f994cd8c91c65721b732b31495040c1228e2b8dd195",
+      "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "manifestNotePath": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "reason": "Byte-for-byte identical to latest final-review acknowledgment before-reviewed.json; rechecked during preparation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-source-integrity-20261115T0759.json",
+      "sha256": "956d0a697298ae7f3941ac7ac6897c1b0f762c9332f36d3133f9af5e739d76c2",
+      "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "reason": "Existing exact 33-row Station baseline used by included final integrity metadata."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/stage_dashboard_package.py",
+      "sha256": "bdffb06de8ee4c6305d1691074752182a28999838f7d99b241f15cabbbd37122",
+      "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "reason": "Unchanged strict readback source, already transferred."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/fetch_shared_review.py",
+      "sha256": "c053d5ba2881bbd7ecce0779ecb69f3af0c13067add58185cf8fbbd02a6a630f",
+      "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "reason": "Unchanged source of included final incoming read audit; already transferred."
+    },
+    {
+      "sharedSourcePath": "context/SOURCE_SYNC.md",
+      "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "reason": "Fresh exact shared policy read; no duplicate source copy."
+    },
+    {
+      "sharedSourcePath": "context/coordination/three-host-20261115/source_response.py",
+      "sha256": "f16f13ba75f1fb87b7decc12ee2ec8cc52d15cdc5d25bc8b7f8b3ef862dcac80",
+      "reason": "Unchanged verified original sender used for this group."
+    }
+  ],
+  "ordinaryHandoff": {
+    "noteId": "4ba0533e-31c3-4c87-b449-8cba5e51b48b",
+    "sharedPath": "context/notes/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+    "sharedSha256": "11dc7c61307081eba3d54c7d6d5eb0a1bc78ae3571cc4304beb52d49e86e500b",
+    "allSixFieldsFreshlyMatched": true,
+    "ledger": "SHARED_READBACKS.json"
+  },
+  "separateM08Owner": {
+    "sessionId": "966c1caf-f8f1-4221-87e7-85c67748c871",
+    "reporter": "/root/shared_sync within the separate M08 session",
+    "deliveryId": "c8898652-f488-4bd3-8f9f-8793047edf52",
+    "transferId": "ecbcfc1c-3e6e-40fe-8b98-0d3eff7a16c8",
+    "statusFromBoundedLocalAudit": "prepared_offline_verified; no matching source/completion receipt observed locally",
+    "ownerSourceCopied": false,
+    "pendingNotionUpdateId": "f5574cb3-abee-45c8-9002-77cb1b6f93af",
+    "nextAction": "Its existing owner finishes the same stable source transfer and Mac independently reconciles source/Notion; this group transfers audit metadata only."
+  },
+  "tests": {
+    "newRuntimeTestsRun": 0,
+    "jsonParsing": "passed for all selected JSON",
+    "originalFileHashAndSizeChecks": "all28passed",
+    "unchangedSenderScreen": "all selected files pass",
+    "savedRawMacInputChecks": "10 files /106400 bytes rehashed with full page/length validation",
+    "acknowledgmentBeforeBaseline": "exact reuse verified",
+    "current33SourceIntegrity": "Attributed separate read-only metadata; all33 match, no frontend rows and no tests rerun"
+  },
+  "documentation": [
+    "README.md",
+    "SOURCE_INVENTORY.json"
+  ],
+  "readbackMetadataNote": "The unchanged generic reader retains its original incoming d531 manifest label. Actual per-path expected hashes and full byte/page checks are bound in SHARED_READBACKS; the final outgoing transfer gets independent checks against its own immutable notes, chunks and bundle. Original checks and historical evidence are not changed.",
+  "exclusions": [
+    "All previous source bytes and ten raw Mac inputs are reused, not redundantly copied.",
+    "Owner M08 source, prepared outbox, poses, calibration, journals and raw incident evidence are excluded; only the explicitly assigned metadata audit is included.",
+    "Private connection material, credentials, databases, process environments, raw runtime logs and sensor/media bytes are excluded.",
+    "Four original closing-source rejections, original producer/analyst tests and unsupported JSONL are not bypassed or claimed repaired.",
+    "The ninth group own post-freeze manifest/chunk readbacks and completion/ordinary receipts will be fully reported through the final verified ordinary note; no further recursive source batch is required."
+  ],
+  "reviewOnly": true,
+  "executionAuthorized": false,
+  "standaloneRunnableOnMac": false,
+  "applicationSourceChanged": false,
+  "physicalVerification": false,
+  "runtimeProviderHardwareCalls": 0,
+  "supersedes": null,
+  "deletions": [],
+  "renames": [],
+  "notion": "No task criteria/status mutation by this source transfer; retain pending M08 and existing M20/M21 states."
+}

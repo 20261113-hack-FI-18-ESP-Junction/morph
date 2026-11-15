@@ -1,0 +1,64 @@
+{
+  "observedAt": "2026-11-15T08:21:03.120162+00:00",
+  "reporter": "/root",
+  "reviewer": "/root/adoption_station",
+  "scope": "Only the 10 completely read final incoming files; no catalog-wide acknowledgment and no hardware-owner source alteration. Post-freeze coordination metadata.",
+  "entriesBefore": 99,
+  "entriesAfter": 109,
+  "changes": [
+    {
+      "path": "context/notes/04ca7bba-b77c-46af-a6d8-aafe431aa75f.json",
+      "previous": null,
+      "reviewedSha256": "bdd8a3f03c51b122a0a299d281644823bd2a5de2de222102f124bf942ca743cf"
+    },
+    {
+      "path": "context/notes/145bd20a-7786-587e-a721-5770d9c2366e.json",
+      "previous": null,
+      "reviewedSha256": "f171c24167cf6228328be686dcd345751066f11a092c3fe790602e641cb2ce58"
+    },
+    {
+      "path": "context/notes/603bba73-fb5a-455f-908f-cfddaf014598.json",
+      "previous": null,
+      "reviewedSha256": "a6994e51bc96293f30dc5266996de670986d4fdee2627e5dd6b43abe03d4e2ff"
+    },
+    {
+      "path": "context/notes/921c66b9-b650-43b8-aedc-60a4dad32168.json",
+      "previous": null,
+      "reviewedSha256": "69957a520d0fc84287a714f2c6a64020d6719373e4fec4f844e2f602716316a3"
+    },
+    {
+      "path": "context/notes/bc26bdec-2908-4c8a-bd3d-31e7aa72c871.json",
+      "previous": null,
+      "reviewedSha256": "8824956c95a0d7909a1c915296713e9b28d9b81c3c5389652faa9adb5b3c897e"
+    },
+    {
+      "path": "context/notes/dd2f6cdf-9bde-4467-b526-c9b583996e0b.json",
+      "previous": null,
+      "reviewedSha256": "06ba4708746c20984d75b2ca550bd0bdb05f433229739de3da6204de5f23c0de"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/REVIEW.md",
+      "previous": null,
+      "reviewedSha256": "84c5ea4a472bff81d3ed6eddfed64300cbf6889971ab9a4a34783fbd4fb0c6cc"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/automation-pause-verification.json",
+      "previous": null,
+      "reviewedSha256": "38bf7d55914435cc053c70a2ddd0e002cd432b9c6718f5ef3f54c6e0a9266350"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/publication-pending-fallback.json",
+      "previous": null,
+      "reviewedSha256": "486967a46612cfa97f49a00ed6ebb4bb08925cd8571aafb500a95c93bb56a379"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/final-publication-disposition.json",
+      "previous": null,
+      "reviewedSha256": "a647480ccb5eb5e9fa64d1a719b5374885e834ed70ad50b9306c7888fad62579"
+    }
+  ],
+  "beforeSha256": "984b3c8f3e7db3b6dec90f994cd8c91c65721b732b31495040c1228e2b8dd195",
+  "afterSha256": "edbebf4942b4a206e715078bfe29560bcf5b5111424282b21ad9b3dc9577c293",
+  "otherEntriesPreserved": true,
+  "reviewResultSha256": "b00f30b6895a552619faa9419ea0e10df0449bb1f215e96c2eefd63d462c500a"
+}

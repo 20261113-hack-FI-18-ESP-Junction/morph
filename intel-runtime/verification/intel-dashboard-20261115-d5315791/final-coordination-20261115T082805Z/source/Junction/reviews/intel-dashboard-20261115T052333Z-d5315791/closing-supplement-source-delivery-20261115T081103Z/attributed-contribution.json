@@ -1,0 +1,69 @@
+{
+  "agent": "/root/adoption_codex",
+  "reporter": "/root",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "reportedAt": "2026-11-15T08:20:19.609838+00:00",
+  "contribution": "Prepared and strictly delivered the authorized eligible closing source supplement; kept aggregate incomplete and preserved all required rejected originals and checks.",
+  "results": {
+    "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+    "transferId": "f0cff213-9da1-40df-8615-44d6d91aff53",
+    "manifestNotePath": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+    "manifestNoteSha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+    "bundleSha256": "d1c59cc9f1963b18af8d912c97cc211df97a74393188ad5c3922e86a2db2b75d",
+    "bundleBytes": 951592,
+    "fileCount": 75,
+    "fileBytes": 887118,
+    "companionSha256": "18e8b5ee1246dd064007dcb12dc67c968f1b7d815bf64f162788e5521811af7a",
+    "strictNoteCount": 81,
+    "allReadbacksVerified": true,
+    "groupComplete": false,
+    "completionEventEligible": false
+  },
+  "sourceNotesDelivery": "confirmed",
+  "ordinaryParentPublication": "pending parent final ordinary note",
+  "report": {
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/TRANSFER_REPORT.md",
+    "sha256": "e243e2f275328091e893f6b97ed2714f1d12b057c981ef9c1c6bd947697483b3"
+  },
+  "strictResult": {
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+    "sha256": "f90e3912ed31eb712169bd4c4f25dda30efd7d5b528841826e3cc0a9214f827e"
+  },
+  "allNoteLedger": {
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-readback-ledger.json",
+    "sha256": "16e40047a8d7295cd9c8f0f719f98471bc524bdaa8faa7d187686f56d6d69697"
+  },
+  "allGroupsIndex": {
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/all-group-receipt-index.json",
+    "sha256": "3a7fb20388792af2dbb5a52a55e8684c4a8a4c110620903b6253ce6f86ef2872"
+  },
+  "requiredRejections": [
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/closing-review-result.json",
+      "sha256": "7f5a32176ba0870dd06650438134c8503326f041d46df69fcec5e4257f32bbcb",
+      "bytes": 32123
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/verify_closing_review.py",
+      "sha256": "4ca8ee9b247dae16042bf198a3e96383c4d1b244f9f8a1dccc3416f661ff0730",
+      "bytes": 12694
+    },
+    {
+      "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspect_worker_request_v1.py",
+      "sha256": "53102fe6cd4e287c12173bf262fd6e6935704567e839415e8e3db981ca444ab3",
+      "bytes": 14992
+    },
+    {
+      "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspection-20261115T080519285661Z.json",
+      "sha256": "1d35f9a42291ff5a553e311a38ca66f06bafbaac90720042915773aab003c9ab",
+      "bytes": 4089
+    }
+  ],
+  "optionalUnsupported": "Original watcher-log-window.jsonl retained unchanged.",
+  "completionReservedUnsent": "a0a4e36d-d0e8-4cc2-89c7-ce2945a35191",
+  "runtimeActions": 0,
+  "hardwareProviderActions": 0,
+  "macPublication": "not established for this transfer; manual Mac continuation required",
+  "metadataClarification": "Inherited reader input-manifest label and optional expected-hash flags do not indicate integrity failures; actual path/page/hash/field/chunk/bundle/file bindings passed and original evidence remains unchanged."
+}

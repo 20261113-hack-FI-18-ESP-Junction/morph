@@ -1,0 +1,46 @@
+[
+  {
+    "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/closing-review-result.json",
+    "matches": [
+      {
+        "patternIndex": 2,
+        "startLine": 610,
+        "matchedTextOmitted": true
+      }
+    ],
+    "sourceChanged": false
+  },
+  {
+    "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/verify_closing_review.py",
+    "matches": [
+      {
+        "patternIndex": 2,
+        "startLine": 156,
+        "matchedTextOmitted": true
+      }
+    ],
+    "sourceChanged": false
+  },
+  {
+    "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspect_worker_request_v1.py",
+    "matches": [
+      {
+        "patternIndex": 2,
+        "startLine": 265,
+        "matchedTextOmitted": true
+      }
+    ],
+    "sourceChanged": false
+  },
+  {
+    "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspection-20261115T080519285661Z.json",
+    "matches": [
+      {
+        "patternIndex": 2,
+        "startLine": 76,
+        "matchedTextOmitted": true
+      }
+    ],
+    "sourceChanged": false
+  }
+]

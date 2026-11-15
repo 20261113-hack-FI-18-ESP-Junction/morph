@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-11-15T08:30:26.342912+00:00",
+  "agent": "/root/adoption_receiver_review",
+  "reporter": "/root",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "scope": "One bounded local inventory of the exact 33 Station source, test and fixture paths in the supplied baseline. The baseline contains the dashboard backend and test, but no frontend paths. Existing saved transfer metadata was read locally; no new remote verification or source delivery occurred.",
+  "baseline": {
+    "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/closing-source-integrity-20261115T0759.json",
+    "sha256": "956d0a697298ae7f3941ac7ac6897c1b0f762c9332f36d3133f9af5e739d76c2",
+    "observedAt": "2026-11-15T07:58:42.882064+00:00"
+  },
+  "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction",
+  "sourceFiles": 33,
+  "sourceBytes": 1510249,
+  "all33MatchBaseline": true,
+  "changed": [],
+  "absentLocalSource": [],
+  "unstableReads": [],
+  "currentPathHashSizeRowsSha256": "c354c95ca606bd5ec983811652fcec3c4c3c1681bb030ba8f52bc5825dbc79a3",
+  "exactHashInventory": "For every baseline row, the current SHA-256 equals its existing actual and expected values. Reuse the hash-addressed 33-row baseline rather than duplicating its source or inventory.",
+  "existingDeliveryComparison": {
+    "mappingDependencyFilesWithin33": 10,
+    "mappingDependencyHashesMatch": true,
+    "shutdownMainAndOriginalTestHashesMatch": true,
+    "producerModuleHashMatchesTransferredOriginal": true,
+    "producerOriginalTestStillMissingFromDelivery": true,
+    "eightSavedGroups": 8,
+    "savedCompleteGroups": 6,
+    "savedIncompleteGroups": 2,
+    "closingSupplementEligibleFiles": 75,
+    "closingSupplementVerifiedNotes": 81,
+    "closingSupplementRemainsIncomplete": true,
+    "newSourceDeltaIdentified": []
+  },
+  "remainingOriginalTestGaps": [
+    {
+      "path": "station/tests/test_producers.py",
+      "sha256": "60d804e02c367a4bd151c2e4c62383328f9f9efcad079595c774b34ac58b81e9",
+      "bytes": 19772,
+      "status": "Exact original remains rejected in the incomplete producer group; no edited, encoded, renamed or redacted replacement is claimed."
+    },
+    {
+      "path": "station/tests/test_analysis.py",
+      "sha256": "3bb5a23a91f8a89a00f220c126f18396fd100278b380adab6cd490ddd333d671",
+      "bytes": 59218,
+      "status": "Current bytes remain unchanged from the closing baseline. This bounded review does not establish delivery or close the separately owned analyst original-test/baseline gaps; earlier accepted review copies are not the current original."
+    }
+  ],
+  "fourClosingSupplementRejectionsUnchanged": [
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/closing-review-result.json",
+      "sha256": "7f5a32176ba0870dd06650438134c8503326f041d46df69fcec5e4257f32bbcb",
+      "bytes": 32123,
+      "status": "Original remains rejected and was not retransferred; local bytes still match the saved rejection inventory."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/closing-shared-review-20261115T075045Z/verify_closing_review.py",
+      "sha256": "4ca8ee9b247dae16042bf198a3e96383c4d1b244f9f8a1dccc3416f661ff0730",
+      "bytes": 12694,
+      "status": "Original remains rejected and was not retransferred; local bytes still match the saved rejection inventory."
+    },
+    {
+      "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspect_worker_request_v1.py",
+      "sha256": "53102fe6cd4e287c12173bf262fd6e6935704567e839415e8e3db981ca444ab3",
+      "bytes": 14992,
+      "status": "Original remains rejected and was not retransferred; local bytes still match the saved rejection inventory."
+    },
+    {
+      "path": "Junction/reviews/station-write-optin-review-20261115T075433Z-2e12edef/inspection-20261115T080519285661Z.json",
+      "sha256": "1d35f9a42291ff5a553e311a38ca66f06bafbaac90720042915773aab003c9ab",
+      "bytes": 4089,
+      "status": "Original remains rejected and was not retransferred; local bytes still match the saved rejection inventory."
+    }
+  ],
+  "preservedMapping": {
+    "targetPath": "klemen-dashboard/analytics/morph_station/store.py",
+    "sha256AtMacReview": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "operation": "none",
+    "reason": "Separate analytics ownership; this correction requests no edit or replacement."
+  },
+  "evidence": [
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/source/SOURCE_DELIVERY.json",
+      "sha256": "18e8b5ee1246dd064007dcb12dc67c968f1b7d815bf64f162788e5521811af7a"
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/closing-supplement-source-delivery-20261115T081103Z/strict-verification.json",
+      "sha256": "f90e3912ed31eb712169bd4c4f25dda30efd7d5b528841826e3cc0a9214f827e"
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/DELIVERY_VERIFICATION.json",
+      "sha256": "286a7c92500f632e43dc30e0e7848cd45036f955781d0f6248fa8e57f54add49"
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/dashboard-mapping-source-delivery-20261115T071810Z/source/SOURCE_DELIVERY.json",
+      "sha256": "b9c99605e9e1bf0541f04f8cbfc3face90760f0751f9fed7db93b7212b8436ab"
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/source-delivery-20261115T062819Z/groups/producer-ingestion/source/SOURCE_DELIVERY.json",
+      "sha256": "d309a2848ca1a1ca8039ac82a648dee1eeb8e94111ac23a7d1dbfea346a07de0"
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-source-delivery-20261115T064601Z/source/SOURCE_DELIVERY.json",
+      "sha256": "b04c62735a52e645e203444e6f30fa9170cd28a9bf0cca89e7265d38dbd5c7a9"
+    }
+  ],
+  "limitations": [
+    "Unchanged local hashes do not establish that every one of the 33 originals is present, reconciled, published or deployed on Mac. Preserve the existing rejection and unsupported-file ledger.",
+    "No files outside the requested baseline and the exact cited review/receipt originals were assessed for source differences; concurrent owner changes elsewhere are untouched.",
+    "The previous 309-test result was not rerun; this check only confirms the pinned source set remains unchanged."
+  ],
+  "operations": {
+    "activeSourceEdits": 0,
+    "runtimeCalls": 0,
+    "providerCalls": 0,
+    "hardwareCalls": 0,
+    "networkCalls": 0,
+    "testsRun": 0,
+    "sourceRetransmissions": 0,
+    "newReviewMetadataFiles": 1
+  },
+  "attributedHandoff": "/root/adoption_receiver_review completed a local read-only closure inventory: all 33 supplied Station paths match the 07:58:42 baseline, with no absent files, unstable reads or new differences. Ten dashboard mapping dependencies, the shutdown entry point/test and transferred producer module still match their saved group hashes. Preserve the exact producer and separate analyst test gaps and all four closing-supplement original rejections; the two worker/request originals in this lane remain unchanged but untransferred. No new application source needs retransmission based on this bounded delta check. Only this new metadata result is offered to the final coordination-artifact group. Root is the designated reporter; confirmation for this new contribution is pending until its verified shared round trip."
+}

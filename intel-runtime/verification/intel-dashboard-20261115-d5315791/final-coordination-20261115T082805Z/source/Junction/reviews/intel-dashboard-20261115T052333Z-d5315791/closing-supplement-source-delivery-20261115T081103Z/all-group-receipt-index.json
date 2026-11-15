@@ -1,0 +1,88 @@
+{
+  "observedAt": "2026-11-15T08:20:19.609838+00:00",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "agent": "/root/adoption_codex",
+  "reporter": "/root",
+  "groups": [
+    {
+      "group": "Dashboard API/store adoption",
+      "deliveryId": "44693c32-12a5-4426-9603-72d4e55736ab",
+      "transferId": "f1e4027a-adcf-48a8-b48e-bca63cba0d90",
+      "manifestNotePath": "context/notes/84ebe925-0e49-5476-9183-dda33cf79e1c.json",
+      "manifestNoteSha256": "84921a7ec9572e4d55672f0ba6739a573d7df0ba3e857972093ca57ddbedd078",
+      "bundleSha256": "d3e9b7182e8b817415f10b394ac681e92372872669885e8ac90d6e0e97b19353",
+      "groupComplete": true
+    },
+    {
+      "group": "Producer ingestion \u2014 incomplete",
+      "deliveryId": "831bcaf3-d30f-45cf-a30e-03b8d810d32b",
+      "transferId": "803091e9-4b14-442e-b996-513e0f772405",
+      "manifestNotePath": "context/notes/f5ed8867-ef91-5f23-a383-1f972af4fdff.json",
+      "manifestNoteSha256": "9e74ea0e67590864d6a22d585f5082e4c90af59a9848fcd7d992f0d4045816db",
+      "bundleSha256": "9abdac36074ba1c33b5ef1e991d20ed7d2c73d95f22fc809981d74fb624a99e5",
+      "groupComplete": false
+    },
+    {
+      "group": "Bounded CLI shutdown fix",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "manifestNotePath": "context/notes/26f5de83-62dd-54a8-851c-c0b6f5d83d0a.json",
+      "manifestNoteSha256": "ccb385334b1cafb79c77630421d35fc7bb175f1ff619beb94b8b0c3d1e9edcc6",
+      "bundleSha256": "b7bd37a0c7770c9e3105a5246b90a8a56b9b0330b0e1c810abcbc21c091c3f5a",
+      "groupComplete": true
+    },
+    {
+      "group": "Corrected dashboard mapping and dependencies",
+      "deliveryId": "77133e66-7c2b-45ce-8ab6-69549d784320",
+      "transferId": "7048d910-46ef-487e-b6bc-1e7081eaed6c",
+      "manifestNotePath": "context/notes/411aa9d3-defd-574b-97d2-8e46612e1010.json",
+      "manifestNoteSha256": "47917b4fe16a1d64653df62583e144fc3bb36b1da26f76751ef7517d64348c98",
+      "bundleSha256": "e6c0666ad03e683a7ccfbb29258483114c3763b79228161110d2874b888b8081",
+      "groupComplete": true
+    },
+    {
+      "group": "Frozen runtime documents and result summaries",
+      "deliveryId": "36126a56-504b-417f-b5d9-b0a376248b59",
+      "transferId": "089c2d01-8707-4083-955d-681a126f0143",
+      "manifestNotePath": "context/notes/d23e6880-eb02-582c-ba6b-9a15cb305291.json",
+      "manifestNoteSha256": "425d1b0967ba10207eae0af662e0cd8c95b641363e929539829b9e9d5c0ff52f",
+      "bundleSha256": "342e271b4ae274edcf957c314bb0ef50d9cd1bf36043da254e626325df90c7c4",
+      "groupComplete": true
+    },
+    {
+      "group": "Final runtime audit source",
+      "deliveryId": "b4525aac-4261-4706-9eec-3316fd6a2d07",
+      "transferId": "8e3d98fb-54bf-4585-880b-1cd8eee9f5c9",
+      "manifestNotePath": "context/notes/b83a1a25-21ba-54b1-926e-aad6da56651e.json",
+      "manifestNoteSha256": "6ef509da386a35f1f51dca356088a13105d194cbfb96984120c18a7890c20971",
+      "bundleSha256": "7fe9137754c38190f521a40d6636b1bf9c8f64886233b9d8cbbf2bd2a8fe1251",
+      "groupComplete": true
+    },
+    {
+      "group": "Passive-video review source and evidence",
+      "deliveryId": "29a6f301-d2dd-4bac-b59b-41269b48eead",
+      "transferId": "f363decf-97fe-45e6-9cc9-bc10b021a0cb",
+      "manifestNotePath": "context/notes/9eb4f199-a3c4-50a2-8bd8-0ad499ec6ab2.json",
+      "manifestNoteSha256": "2a5671a20bc45625881dbc48c38856104c9902afdde88bc8676238ee5e5e62d0",
+      "bundleSha256": "056c0a2b2ad97f5591b4c6e087ddb06cc08a5fdb35922cf3e1a0ffec77e52999",
+      "groupComplete": true
+    },
+    {
+      "group": "Closing review and dated-document aggregate",
+      "deliveryId": "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "transferId": "f0cff213-9da1-40df-8615-44d6d91aff53",
+      "manifestNotePath": "context/notes/6acb0d83-d83c-5df3-b870-4d0b08a3d137.json",
+      "manifestNoteSha256": "fe684d076c7af567d47504dc13ab4468019a984497e8bc69a8fbe9afba2c2ba1",
+      "bundleSha256": "d1c59cc9f1963b18af8d912c97cc211df97a74393188ad5c3922e86a2db2b75d",
+      "groupComplete": false
+    }
+  ],
+  "counts": {
+    "groups": 8,
+    "complete": 6,
+    "incomplete": 2,
+    "strictSourceNotesAcrossAllGroups": 176
+  },
+  "scope": "Post-freeze transport receipt metadata. No frozen source index or earlier group was amended. Complete means eligible source group transport closure, not publication/deployment/acceptance."
+}

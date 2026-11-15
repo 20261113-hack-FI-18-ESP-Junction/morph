@@ -1,0 +1,92 @@
+{
+  "agent": "/root/adoption_station",
+  "reporter": "/root",
+  "scope": [
+    "list_context",
+    "read_context"
+  ],
+  "sharedWrites": 0,
+  "stationRequests": 0,
+  "providerCalls": 0,
+  "hardwareCalls": 0,
+  "clientHashes": {
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/context/verification/intel-continuation/sync_shared_context.py": "78ef0ed4e9a49cdebafcd5a2c61968f65bb5edb213f0f0b3655ea3a5fc30d4e4"
+  },
+  "readerSha256": "c053d5ba2881bbd7ecce0779ecb69f3af0c13067add58185cf8fbbd02a6a630f",
+  "startedAt": "2026-11-15T08:11:45.284725+00:00",
+  "files": [
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/REVIEW.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/incoming/context/verification/source-sync-heartbeat-20261115-075043/REVIEW.md",
+      "sha256": "84c5ea4a472bff81d3ed6eddfed64300cbf6889971ab9a4a34783fbd4fb0c6cc",
+      "bytes": 9320,
+      "characters": 9316,
+      "pages": [
+        {
+          "path": "context/verification/source-sync-heartbeat-20261115-075043/REVIEW.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 9316,
+          "sha256": "84c5ea4a472bff81d3ed6eddfed64300cbf6889971ab9a4a34783fbd4fb0c6cc",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:11:45.457994+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/automation-pause-verification.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/incoming/context/verification/source-sync-heartbeat-20261115-075043/automation-pause-verification.json",
+      "sha256": "38bf7d55914435cc053c70a2ddd0e002cd432b9c6718f5ef3f54c6e0a9266350",
+      "bytes": 15948,
+      "characters": 15948,
+      "pages": [
+        {
+          "path": "context/verification/source-sync-heartbeat-20261115-075043/automation-pause-verification.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 15948,
+          "sha256": "38bf7d55914435cc053c70a2ddd0e002cd432b9c6718f5ef3f54c6e0a9266350",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:11:45.501320+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/publication-pending-fallback.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/incoming/context/verification/source-sync-heartbeat-20261115-075043/publication-pending-fallback.json",
+      "sha256": "486967a46612cfa97f49a00ed6ebb4bb08925cd8571aafb500a95c93bb56a379",
+      "bytes": 34242,
+      "characters": 34242,
+      "pages": [
+        {
+          "path": "context/verification/source-sync-heartbeat-20261115-075043/publication-pending-fallback.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 34242,
+          "sha256": "486967a46612cfa97f49a00ed6ebb4bb08925cd8571aafb500a95c93bb56a379",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:11:45.564599+00:00"
+    },
+    {
+      "path": "context/verification/source-sync-heartbeat-20261115-075043/final-publication-disposition.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-incoming-review-20261115T081025Z/read-20261115T081145284242Z/incoming/context/verification/source-sync-heartbeat-20261115-075043/final-publication-disposition.json",
+      "sha256": "a647480ccb5eb5e9fa64d1a719b5374885e834ed70ad50b9306c7888fad62579",
+      "bytes": 569,
+      "characters": 569,
+      "pages": [
+        {
+          "path": "context/verification/source-sync-heartbeat-20261115-075043/final-publication-disposition.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 569,
+          "sha256": "a647480ccb5eb5e9fa64d1a719b5374885e834ed70ad50b9306c7888fad62579",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T08:11:45.593789+00:00"
+    }
+  ],
+  "completedAt": "2026-11-15T08:11:45.594099+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "note_id": "4ba0533e-31c3-4c87-b449-8cba5e51b48b",
+  "shared_path": "context/notes/4ba0533e-31c3-4c87-b449-8cba5e51b48b.json",
+  "saved_at": "2026-11-15T08:25:29.136383+00:00",
+  "read_context_sha256": "11dc7c61307081eba3d54c7d6d5eb0a1bc78ae3571cc4304beb52d49e86e500b",
+  "confirmed_at": "2026-11-15T08:25:29.279438+00:00",
+  "created": true,
+  "six_payload_fields_match": true,
+  "shared_server": "morph-context",
+  "tls_verification": true
+}

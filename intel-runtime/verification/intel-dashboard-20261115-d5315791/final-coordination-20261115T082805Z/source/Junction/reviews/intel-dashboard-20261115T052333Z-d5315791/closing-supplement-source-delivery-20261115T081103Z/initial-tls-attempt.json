@@ -1,0 +1,9 @@
+{
+  "runtime": "default python3",
+  "status": "failed during initialize",
+  "errorClass": "RuntimeError",
+  "sanitizedReason": "TLS certificate verification: Missing Authority Key Identifier",
+  "callsAfterInitialize": 0,
+  "tlsRelaxed": false,
+  "resolution": "Use existing station Python 3.12, as instructed and previously verified."
+}

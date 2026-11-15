@@ -1,0 +1,1983 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-11-15T08:30:48.204463+00:00",
+  "agent": "/root/adoption_station",
+  "scope": "Bounded local metadata and content-hash audit only; no remote calls, source copies, source execution or other-owner writes",
+  "readFiles": [
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/delivery-state.json",
+      "bytes": 1995,
+      "sha256": "8c8a31ce9663d295ca734ecc235d5ca080cde1f131ae07dfa80a855120e7a214",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/SOURCE_DELIVERY.json",
+      "bytes": 41619,
+      "sha256": "47660a3086d12264b8cd4734110df1797c77d1e5b28f12e399412380d5205cdf",
+      "reviewScope": "Complete provenance metadata; no application source review"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-freeze.json",
+      "bytes": 12699,
+      "sha256": "28f8f837843ad9f2c5511d14b6721c4e3b71b3e4a7463d28354876dac667eea9",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/manifest.json",
+      "bytes": 451,
+      "sha256": "cff3bfca3f5eddb1115521f56eb1ae550750f4212ef2ccded98b482b54d2aa1f",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/notion-final-pending.json",
+      "bytes": 3749,
+      "sha256": "1133288c05c0783f85eb275dd94baff6bd015f777a6f637dffa5ebf21bb54c8e",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/notion-checkpoints-1-2-confirmed.json",
+      "bytes": 1225,
+      "sha256": "9503d5b5cac825b4d4690586c5ddd49822d770a41928f20cc3f00d1039762993",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/session-state.json",
+      "bytes": 2439,
+      "sha256": "39835e896f3861547d7f963ec34ff34cce17987097018c1f4f8c7960a6b56f3d",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+      "bytes": 2729,
+      "sha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "bytes": 2696,
+      "sha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/checkpoint-5-ordinary-receipt.json",
+      "bytes": 1105,
+      "sha256": "ba9c0f97d4190d867ec07d2d58c3ee14812fc2a8a3165be832e0d4bdbb5e78a8",
+      "reviewScope": "complete metadata document"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/checkpoint-5-readback.json",
+      "bytes": 4435,
+      "sha256": "4fd71ac51513be41fe1d86f3b3b8755e5fb92af7b33eb0b44c4f8f0d01523aef",
+      "reviewScope": "Complete cached note, not a fresh MCP read"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/ec21a94c-793b-4b59-bbbf-102af8d624bc.json",
+      "bytes": 4274,
+      "sha256": "66f86a7e0a7567ed1997e0db8990b0279afbd99828a99361d581d457ab1faba4",
+      "reviewScope": "Exact previously delivered six-field payload; not resent"
+    }
+  ],
+  "sourceHashChecksOnly": [
+    {
+      "path": "AGENTS.md",
+      "expectedSha256": "3a42e6bd13042c581b2b7fd65cc2979202fa23c2bc5b77e79573234385435b60",
+      "expectedBytes": 20935,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "3a42e6bd13042c581b2b7fd65cc2979202fa23c2bc5b77e79573234385435b60",
+      "currentBytes": 20935,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "3a42e6bd13042c581b2b7fd65cc2979202fa23c2bc5b77e79573234385435b60",
+      "snapshotBytes": 20935,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "expectedSha256": "69b2837f3c338df437f3657065542c8bac134f0d206bc5012da0f082bdab934c",
+      "expectedBytes": 68005,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "69b2837f3c338df437f3657065542c8bac134f0d206bc5012da0f082bdab934c",
+      "currentBytes": 68005,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "69b2837f3c338df437f3657065542c8bac134f0d206bc5012da0f082bdab934c",
+      "snapshotBytes": 68005,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "ROBOT_GAMEPLAN.md",
+      "expectedSha256": "ed3ff07e2b2a4add2ff9f2b36ad9ae057b1c58ac518dc9fde0e17776d5cea9bd",
+      "expectedBytes": 42103,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "ed3ff07e2b2a4add2ff9f2b36ad9ae057b1c58ac518dc9fde0e17776d5cea9bd",
+      "currentBytes": 42103,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "ed3ff07e2b2a4add2ff9f2b36ad9ae057b1c58ac518dc9fde0e17776d5cea9bd",
+      "snapshotBytes": 42103,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "SOURCE_DELIVERY.json",
+      "expectedSha256": "47660a3086d12264b8cd4734110df1797c77d1e5b28f12e399412380d5205cdf",
+      "expectedBytes": 41619,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "47660a3086d12264b8cd4734110df1797c77d1e5b28f12e399412380d5205cdf",
+      "currentBytes": 41619,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "47660a3086d12264b8cd4734110df1797c77d1e5b28f12e399412380d5205cdf",
+      "snapshotBytes": 41619,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "morph-intel-transfer/morph-context/AGENTS.md",
+      "expectedSha256": "043dc39ae7c53141b32bb18be06ca44472451809d125da6cabbe2bf2661176e4",
+      "expectedBytes": 21707,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "043dc39ae7c53141b32bb18be06ca44472451809d125da6cabbe2bf2661176e4",
+      "currentBytes": 21707,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "043dc39ae7c53141b32bb18be06ca44472451809d125da6cabbe2bf2661176e4",
+      "snapshotBytes": 21707,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "morph-intel-transfer/morph-context/context/INTEL_CODEX.md",
+      "expectedSha256": "9e0f7d8276454d8c81be714d0acca421abb9e90b9c74a9c91d5ae15bfe04979d",
+      "expectedBytes": 16131,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "9e0f7d8276454d8c81be714d0acca421abb9e90b9c74a9c91d5ae15bfe04979d",
+      "currentBytes": 16131,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "9e0f7d8276454d8c81be714d0acca421abb9e90b9c74a9c91d5ae15bfe04979d",
+      "snapshotBytes": 16131,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/README.md",
+      "expectedSha256": "595b9c43420640b15ec3465de240e25b6d83eaac4be8ac020b65dbb63ff9b3ec",
+      "expectedBytes": 19751,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "595b9c43420640b15ec3465de240e25b6d83eaac4be8ac020b65dbb63ff9b3ec",
+      "currentBytes": 19751,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "595b9c43420640b15ec3465de240e25b6d83eaac4be8ac020b65dbb63ff9b3ec",
+      "snapshotBytes": 19751,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/calibration/README.md",
+      "expectedSha256": "d527c45f9a877596d85dbcf5c5bbee76928e0b8a609686e9a6ebcdaceb740e6f",
+      "expectedBytes": 4608,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "d527c45f9a877596d85dbcf5c5bbee76928e0b8a609686e9a6ebcdaceb740e6f",
+      "currentBytes": 4608,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "d527c45f9a877596d85dbcf5c5bbee76928e0b8a609686e9a6ebcdaceb740e6f",
+      "snapshotBytes": 4608,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/README.md",
+      "expectedSha256": "a90a0f3ceb9af09296e58724eae75ef2ccbf466a26d7e11d02d985eb15ab0f2f",
+      "expectedBytes": 9320,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "a90a0f3ceb9af09296e58724eae75ef2ccbf466a26d7e11d02d985eb15ab0f2f",
+      "currentBytes": 9320,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "a90a0f3ceb9af09296e58724eae75ef2ccbf466a26d7e11d02d985eb15ab0f2f",
+      "snapshotBytes": 9320,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/collect_metadata.py",
+      "expectedSha256": "6d0e26e1d593be137c82b5fb89f2142e39c357e5d0510dcb558ac471de6fa2e7",
+      "expectedBytes": 4584,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "6d0e26e1d593be137c82b5fb89f2142e39c357e5d0510dcb558ac471de6fa2e7",
+      "currentBytes": 4584,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "6d0e26e1d593be137c82b5fb89f2142e39c357e5d0510dcb558ac471de6fa2e7",
+      "snapshotBytes": 4584,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/help-result.json",
+      "expectedSha256": "332bfa6a0b44a89da0448f67928b72da52e8f2710fd85fcfef31cc65b282fe01",
+      "expectedBytes": 1139,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "332bfa6a0b44a89da0448f67928b72da52e8f2710fd85fcfef31cc65b282fe01",
+      "currentBytes": 1139,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "332bfa6a0b44a89da0448f67928b72da52e8f2710fd85fcfef31cc65b282fe01",
+      "snapshotBytes": 1139,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/proposed-command.json",
+      "expectedSha256": "6c71b3eda6f09280b5cd87a0d79de526fbb6a0a1561d75f2093fbed30672a7db",
+      "expectedBytes": 1602,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "6c71b3eda6f09280b5cd87a0d79de526fbb6a0a1561d75f2093fbed30672a7db",
+      "currentBytes": 1602,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "6c71b3eda6f09280b5cd87a0d79de526fbb6a0a1561d75f2093fbed30672a7db",
+      "snapshotBytes": 1602,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/teleoperate-help.stdout.txt",
+      "expectedSha256": "44ff2dc28a47f631558903791a93d73703a213a44c81ca0abbe7c9faf28a6def",
+      "expectedBytes": 5210,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "44ff2dc28a47f631558903791a93d73703a213a44c81ca0abbe7c9faf28a6def",
+      "currentBytes": 5210,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "44ff2dc28a47f631558903791a93d73703a213a44c81ca0abbe7c9faf28a6def",
+      "snapshotBytes": 5210,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point.py",
+      "expectedSha256": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+      "expectedBytes": 25466,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+      "currentBytes": 25466,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+      "snapshotBytes": 25466,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point_core.py",
+      "expectedSha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "expectedBytes": 7072,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "currentBytes": 7072,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "snapshotBytes": 7072,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/executed-source/so101_three_point.py",
+      "expectedSha256": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+      "expectedBytes": 21936,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+      "currentBytes": 21936,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+      "snapshotBytes": 21936,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+      "expectedSha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01",
+      "expectedBytes": 2729,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01",
+      "currentBytes": 2729,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01",
+      "snapshotBytes": 2729,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/shared-sync/DELIVERY_REPORT.md",
+      "expectedSha256": "04c8c9f8455439f304b0f1cb7e61657dc3cb82f7e3fc026c348939f6f24d4b36",
+      "expectedBytes": 18928,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "04c8c9f8455439f304b0f1cb7e61657dc3cb82f7e3fc026c348939f6f24d4b36",
+      "currentBytes": 18928,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "04c8c9f8455439f304b0f1cb7e61657dc3cb82f7e3fc026c348939f6f24d4b36",
+      "snapshotBytes": 18928,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/shared-sync/capture-evidence-summary.json",
+      "expectedSha256": "eb4d16d94b6d807ff2790aad9b78c397bf6bb362e49cb2af1403444131da4a50",
+      "expectedBytes": 2333,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "eb4d16d94b6d807ff2790aad9b78c397bf6bb362e49cb2af1403444131da4a50",
+      "currentBytes": 2333,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "eb4d16d94b6d807ff2790aad9b78c397bf6bb362e49cb2af1403444131da4a50",
+      "snapshotBytes": 2333,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/README.md",
+      "expectedSha256": "f71e987f4a5c0eb7b5e59980e45b381d27d2e262e3dcec231d76b353c35093a7",
+      "expectedBytes": 3517,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "f71e987f4a5c0eb7b5e59980e45b381d27d2e262e3dcec231d76b353c35093a7",
+      "currentBytes": 3517,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "f71e987f4a5c0eb7b5e59980e45b381d27d2e262e3dcec231d76b353c35093a7",
+      "snapshotBytes": 3517,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/manifest.json",
+      "expectedSha256": "3899aa0ccb6df3815dd9ee514578a020a1f4a249151933127b682d2da27b8bc3",
+      "expectedBytes": 1649,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "3899aa0ccb6df3815dd9ee514578a020a1f4a249151933127b682d2da27b8bc3",
+      "currentBytes": 1649,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "3899aa0ccb6df3815dd9ee514578a020a1f4a249151933127b682d2da27b8bc3",
+      "snapshotBytes": 1649,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/test-results.json",
+      "expectedSha256": "911290298f261e4fab5e16395ae781e8632488c1f3ec16391500cb61a522473a",
+      "expectedBytes": 2132,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "911290298f261e4fab5e16395ae781e8632488c1f3ec16391500cb61a522473a",
+      "currentBytes": 2132,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "911290298f261e4fab5e16395ae781e8632488c1f3ec16391500cb61a522473a",
+      "snapshotBytes": 2132,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stderr.txt",
+      "expectedSha256": "935f8387a2885f28bef1f8abc37e2fde6397d6d64408c625b8431be1ce834486",
+      "expectedBytes": 5066,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "935f8387a2885f28bef1f8abc37e2fde6397d6d64408c625b8431be1ce834486",
+      "currentBytes": 5066,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "935f8387a2885f28bef1f8abc37e2fde6397d6d64408c625b8431be1ce834486",
+      "snapshotBytes": 5066,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stdout.txt",
+      "expectedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expectedBytes": 0,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "currentBytes": 0,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshotBytes": 0,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/README.md",
+      "expectedSha256": "4a4dee7067255c238662bdd957453621caf9458cb4d3e0ecee3e1862ca863f39",
+      "expectedBytes": 2141,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "4a4dee7067255c238662bdd957453621caf9458cb4d3e0ecee3e1862ca863f39",
+      "currentBytes": 2141,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "4a4dee7067255c238662bdd957453621caf9458cb4d3e0ecee3e1862ca863f39",
+      "snapshotBytes": 2141,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/manifest.json",
+      "expectedSha256": "3ac8fd4596bb2f4f4d13600d047e1fbc22ce9171887de0d00329b99d6ce95a26",
+      "expectedBytes": 984,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "3ac8fd4596bb2f4f4d13600d047e1fbc22ce9171887de0d00329b99d6ce95a26",
+      "currentBytes": 984,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "3ac8fd4596bb2f4f4d13600d047e1fbc22ce9171887de0d00329b99d6ce95a26",
+      "snapshotBytes": 984,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/review-results.json",
+      "expectedSha256": "6918e29e15ba3865b5f02c4e6301dcc8f3b13a35557276fac88f27e56b83c40a",
+      "expectedBytes": 6209,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "6918e29e15ba3865b5f02c4e6301dcc8f3b13a35557276fac88f27e56b83c40a",
+      "currentBytes": 6209,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "6918e29e15ba3865b5f02c4e6301dcc8f3b13a35557276fac88f27e56b83c40a",
+      "snapshotBytes": 6209,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/unittest-summary.txt",
+      "expectedSha256": "e1f1b29e0a2ee30dae013ee7760773a28d5d48d5c27c6f3555057f8410197271",
+      "expectedBytes": 309,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "e1f1b29e0a2ee30dae013ee7760773a28d5d48d5c27c6f3555057f8410197271",
+      "currentBytes": 309,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "e1f1b29e0a2ee30dae013ee7760773a28d5d48d5c27c6f3555057f8410197271",
+      "snapshotBytes": 309,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/README.md",
+      "expectedSha256": "b3e2cb3d35da9c11d4bc4f3cf723b236207a12d730cf668b223d9c56807878d7",
+      "expectedBytes": 2271,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "b3e2cb3d35da9c11d4bc4f3cf723b236207a12d730cf668b223d9c56807878d7",
+      "currentBytes": 2271,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "b3e2cb3d35da9c11d4bc4f3cf723b236207a12d730cf668b223d9c56807878d7",
+      "snapshotBytes": 2271,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/manifest.json",
+      "expectedSha256": "e1c3201ee0b3182933709bd340f9b2eb8573a732c1aec9c11d877338245f5760",
+      "expectedBytes": 1343,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "e1c3201ee0b3182933709bd340f9b2eb8573a732c1aec9c11d877338245f5760",
+      "currentBytes": 1343,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "e1c3201ee0b3182933709bd340f9b2eb8573a732c1aec9c11d877338245f5760",
+      "snapshotBytes": 1343,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/test-results.json",
+      "expectedSha256": "bd66d1a39a7161adb04e443c0f11728d915907d2537f8cbb1bce087dac7f1b43",
+      "expectedBytes": 1661,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "bd66d1a39a7161adb04e443c0f11728d915907d2537f8cbb1bce087dac7f1b43",
+      "currentBytes": 1661,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "bd66d1a39a7161adb04e443c0f11728d915907d2537f8cbb1bce087dac7f1b43",
+      "snapshotBytes": 1661,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stderr.txt",
+      "expectedSha256": "38507e7e1b2700e5b3894b51b7cd4d249405a21bd50de4dd13c48069bec02d7d",
+      "expectedBytes": 10085,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "38507e7e1b2700e5b3894b51b7cd4d249405a21bd50de4dd13c48069bec02d7d",
+      "currentBytes": 10085,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "38507e7e1b2700e5b3894b51b7cd4d249405a21bd50de4dd13c48069bec02d7d",
+      "snapshotBytes": 10085,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stdout.txt",
+      "expectedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expectedBytes": 0,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "currentBytes": 0,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshotBytes": 0,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/README.md",
+      "expectedSha256": "24fb73374012909beffdba740e7bfaa2c3f545f2ce088974fb3a7a53c9c5d484",
+      "expectedBytes": 2969,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "24fb73374012909beffdba740e7bfaa2c3f545f2ce088974fb3a7a53c9c5d484",
+      "currentBytes": 2969,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "24fb73374012909beffdba740e7bfaa2c3f545f2ce088974fb3a7a53c9c5d484",
+      "snapshotBytes": 2969,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/manifest.json",
+      "expectedSha256": "f78214ff2eadae706812fe2df2ec63a16ecdb2290f79fe0414ee8e470237a0f7",
+      "expectedBytes": 1396,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "f78214ff2eadae706812fe2df2ec63a16ecdb2290f79fe0414ee8e470237a0f7",
+      "currentBytes": 1396,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "f78214ff2eadae706812fe2df2ec63a16ecdb2290f79fe0414ee8e470237a0f7",
+      "snapshotBytes": 1396,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "expectedSha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf",
+      "expectedBytes": 2696,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf",
+      "currentBytes": 2696,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf",
+      "snapshotBytes": 2696,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stderr.txt",
+      "expectedSha256": "baa7734ead56d6a93553a5b3b2552cf47672972467d7b1124d2d42686cb3e4a4",
+      "expectedBytes": 11380,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "baa7734ead56d6a93553a5b3b2552cf47672972467d7b1124d2d42686cb3e4a4",
+      "currentBytes": 11380,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "baa7734ead56d6a93553a5b3b2552cf47672972467d7b1124d2d42686cb3e4a4",
+      "snapshotBytes": 11380,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stdout.txt",
+      "expectedSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expectedBytes": 0,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "currentBytes": 0,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "snapshotBytes": 0,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-source-audit/README.md",
+      "expectedSha256": "b720119b901175e5afd9080da6ca5d0876626c76c7b1c5f8a7baafa475f07265",
+      "expectedBytes": 4288,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "b720119b901175e5afd9080da6ca5d0876626c76c7b1c5f8a7baafa475f07265",
+      "currentBytes": 4288,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "b720119b901175e5afd9080da6ca5d0876626c76c7b1c5f8a7baafa475f07265",
+      "snapshotBytes": 4288,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "scripts/so101_three_point.py",
+      "expectedSha256": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+      "expectedBytes": 26301,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+      "currentBytes": 26301,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+      "snapshotBytes": 26301,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "scripts/so101_three_point_core.py",
+      "expectedSha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "expectedBytes": 7072,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "currentBytes": 7072,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "snapshotBytes": 7072,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "tests/test_so101_three_point_core.py",
+      "expectedSha256": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72",
+      "expectedBytes": 9310,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72",
+      "currentBytes": 9310,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72",
+      "snapshotBytes": 9310,
+      "snapshotMatchesFrozen": true
+    },
+    {
+      "path": "tests/test_so101_three_point_io.py",
+      "expectedSha256": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+      "expectedBytes": 36562,
+      "currentExists": true,
+      "snapshotExists": true,
+      "currentSha256": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+      "currentBytes": 36562,
+      "currentMatchesFrozen": true,
+      "snapshotSha256": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+      "snapshotBytes": 36562,
+      "snapshotMatchesFrozen": true
+    }
+  ],
+  "preparedNoteMetadataOnly": [
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/017abd08-d8c3-5fdc-ae78-2b78e75c81c2.json",
+      "preparedSharedPath": "context/notes/017abd08-d8c3-5fdc-ae78-2b78e75c81c2.json",
+      "payloadBytes": 12866,
+      "payloadSha256": "109bcd7c32233901a2c1e8f2fea419b27b14b94b7552ff94eb6a0fc7713c4b84",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 11,
+      "chunkSha256": "90e6690ce2fb1be2ca2d2b299dd4209d9d34caa950528a3b7211dfcdcee00d2b",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/11278d47-6489-5bd0-a749-880d728d84f9.json",
+      "preparedSharedPath": "context/notes/11278d47-6489-5bd0-a749-880d728d84f9.json",
+      "payloadBytes": 12768,
+      "payloadSha256": "03e138a41d9e9f3da3d57fefd0a5ca15bebf254b6f2d9864afc7faa8e65ef15a",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 3,
+      "chunkSha256": "ac1b959c9e62eee0317a49dd2391880a395e375027420460f231ebe3f2971b52",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/17261a4e-f9eb-5864-b229-6d1163bde7c4.json",
+      "preparedSharedPath": "context/notes/17261a4e-f9eb-5864-b229-6d1163bde7c4.json",
+      "payloadBytes": 14684,
+      "payloadSha256": "5ccb53a05d7556eb173cf1a47bb0ecba8cfa213f65229d25f5c4377f04a93818",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 38,
+      "chunkSha256": "c62b41aeb08e7edc341c3f61960c3aca2547e9ff9405d89f5ec6e924a181b279",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/22a60550-4459-5ded-ba3f-a62980873ef1.json",
+      "preparedSharedPath": "context/notes/22a60550-4459-5ded-ba3f-a62980873ef1.json",
+      "payloadBytes": 14897,
+      "payloadSha256": "66c66c89ee3582e4e02d7dc39503e647f63f9c54b6682a49cde746c464ed31e5",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 37,
+      "chunkSha256": "e53c8d03a87df945721b8567659d3bc802e58c01334a3298f48712f792a57e2f",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/2c7e3e92-4777-551e-9db3-979226599f41.json",
+      "preparedSharedPath": "context/notes/2c7e3e92-4777-551e-9db3-979226599f41.json",
+      "payloadBytes": 14734,
+      "payloadSha256": "b3deaf99f3e28392e5a9ee14c1f05391158f9aee6a093ae891d097764f4bd129",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 15,
+      "chunkSha256": "11afc42818ad59b344357dcd11be18058043c6fd51b3b55707c4c3d49bdec9b6",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/2dd6b39f-cf71-5e5f-aa3f-028199bc15c0.json",
+      "preparedSharedPath": "context/notes/2dd6b39f-cf71-5e5f-aa3f-028199bc15c0.json",
+      "payloadBytes": 12839,
+      "payloadSha256": "7d0288f330e531fa372d3d0c0f70c5cdeaa0e8152d7ef2e0d5e460a519e81d0a",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 8,
+      "chunkSha256": "4ccf2c49674ee7af8650cc4cf2d68867f97862590dfb3c27161c07f4cd3b504d",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/2e9ccb4f-62a6-5fd9-b492-23b1f4356b21.json",
+      "preparedSharedPath": "context/notes/2e9ccb4f-62a6-5fd9-b492-23b1f4356b21.json",
+      "payloadBytes": 12891,
+      "payloadSha256": "9f99ada81a378e5901c25fbc1ef285bfb902351d22446542f506376517812bd7",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 6,
+      "chunkSha256": "94cffb563c978fc15cbb30da12f6d0194955d83b13ea81fd85d9b06a5ddf8462",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/30fa978a-08c0-5fe5-bbcd-ab41573ae567.json",
+      "preparedSharedPath": "context/notes/30fa978a-08c0-5fe5-bbcd-ab41573ae567.json",
+      "payloadBytes": 16616,
+      "payloadSha256": "3835e12e662a82eb09c0acf03ba3de8b671126cf6175a7f72fe955f1d5e6f6ac",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 14,
+      "chunkSha256": "9983cc038fadf6a6f8725f6856f62645b52577dc76e73041fb3939d86419392a",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/3bc09d72-c1b3-5fb6-a9ca-8abcddaa5f75.json",
+      "preparedSharedPath": "context/notes/3bc09d72-c1b3-5fb6-a9ca-8abcddaa5f75.json",
+      "payloadBytes": 12912,
+      "payloadSha256": "f04831b9fa863b933b0feaf3e11d096632c771dc185bd76c71491b267060272c",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 19,
+      "chunkSha256": "545d6f6f57e6f5ce7afafb28fe9bf7a461922631762e94ad3c66adc534a6d897",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/5122e658-2b79-59dd-a7f9-3c6e3db88eec.json",
+      "preparedSharedPath": "context/notes/5122e658-2b79-59dd-a7f9-3c6e3db88eec.json",
+      "payloadBytes": 13219,
+      "payloadSha256": "788a0c55c7e2921155fa190f85217b1ff00539ea872986d33f3a3f111ca41118",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 21,
+      "chunkSha256": "e9451eacabed4bf3e6346d9c1a071079c40e197de421754183bdef97403a1728",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/5162f7d1-82df-59f8-8fbf-e4def3b0ce28.json",
+      "preparedSharedPath": "context/notes/5162f7d1-82df-59f8-8fbf-e4def3b0ce28.json",
+      "payloadBytes": 12937,
+      "payloadSha256": "86f9abe4ec3d491eaebc92d0be09d95ea5bd98ee0af7a502af10112fb6586b87",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 17,
+      "chunkSha256": "0b353bf453ea0c965bf9b3c0e9c6c280f9cd0d01c4ef45707cd21cd60af6bb9a",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/517e0475-a1c6-5a40-ad82-1f83b8f324c3.json",
+      "preparedSharedPath": "context/notes/517e0475-a1c6-5a40-ad82-1f83b8f324c3.json",
+      "payloadBytes": 16454,
+      "payloadSha256": "0b3cd86fb116c4fb1d59ebb99291f77e80667c51d07fe5b0768cb8dde64056da",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 13,
+      "chunkSha256": "31ff8b7d4a0c2479a8c2954253bbf6d39245193229e06663a8b38fdc6321adcb",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/5701a2dd-51e5-56b7-aaed-572d1a1d1b68.json",
+      "preparedSharedPath": "context/notes/5701a2dd-51e5-56b7-aaed-572d1a1d1b68.json",
+      "payloadBytes": 12825,
+      "payloadSha256": "5bfbc856e01673f91803c4def6f97aa86bce53ded239aeb10e24d1ea9619e4f0",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 28,
+      "chunkSha256": "45b91029ce04f64b49b09be51f7a1efe28c96a1740ed2b367a240b9aa72af7a3",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/574a784c-822d-586f-bb5b-d88fb3ba8533.json",
+      "preparedSharedPath": "context/notes/574a784c-822d-586f-bb5b-d88fb3ba8533.json",
+      "payloadBytes": 14561,
+      "payloadSha256": "46f63f13c7a663c3ebb81ff4f65239ef1784cceebbd9098f1c2ae051a78385b6",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 30,
+      "chunkSha256": "69dc200fbfe851a4effc5b49126509f0e5844aa03f6e23949f70de6ed5205dbb",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/576a51ec-9bb2-5bac-ab47-93b88c210389.json",
+      "preparedSharedPath": "context/notes/576a51ec-9bb2-5bac-ab47-93b88c210389.json",
+      "payloadBytes": 12908,
+      "payloadSha256": "c4fa1244cce9be7715e35660c3c1212b01de3040d4f1c274498f98f8291d200a",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 9,
+      "chunkSha256": "cf1bb6a2379c5d5de56a346ef84ed1514cf5cc8fd3a330c6e1686c48b624612b",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/5d0e6c97-e0e4-5d51-9fd6-871dcf98620c.json",
+      "preparedSharedPath": "context/notes/5d0e6c97-e0e4-5d51-9fd6-871dcf98620c.json",
+      "payloadBytes": 14659,
+      "payloadSha256": "65934b934243857817a3a370752563272135e8374fa451503fb3d514acb8b646",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 23,
+      "chunkSha256": "28e33f6ba5d18c2e8b9bce4331fadfafda2bd64dd24b6accc14b80499123e427",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/66433eb0-129b-53c7-8388-e95edd0cccb5.json",
+      "preparedSharedPath": "context/notes/66433eb0-129b-53c7-8388-e95edd0cccb5.json",
+      "payloadBytes": 12913,
+      "payloadSha256": "97cb437c1101921af92a1ee84710264736e3801a5c81d62d525b98e9ec8000a7",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 16,
+      "chunkSha256": "e4165e3ac6678b74da10cd4cea0a9671e2ce9dbf7d1e1de36db428228240c389",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/708156bd-8d6a-5ddd-9973-7871db5631f6.json",
+      "preparedSharedPath": "context/notes/708156bd-8d6a-5ddd-9973-7871db5631f6.json",
+      "payloadBytes": 14488,
+      "payloadSha256": "13746dbf5c717feea783e6fdbcf75ebddf301bc69627fea40edbd54139e9dcf3",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 24,
+      "chunkSha256": "8621e2950da9920c9ad5a85a7890499f438bfa823c40233e491e5cb88ee85cce",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/713874f2-86ef-5256-a938-06b55a852b7a.json",
+      "preparedSharedPath": "context/notes/713874f2-86ef-5256-a938-06b55a852b7a.json",
+      "payloadBytes": 12991,
+      "payloadSha256": "a6a6e8d96cb9f0a36cde09f09ce08d02b1e7563acc22766b610e0d54ae852de2",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 18,
+      "chunkSha256": "0a68d62fdf67dd21bf97317755be1686c48302a68bdf8b0fd180aec25a522083",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/77d318a9-41d5-54c1-8cee-72aba533b406.json",
+      "preparedSharedPath": "context/notes/77d318a9-41d5-54c1-8cee-72aba533b406.json",
+      "payloadBytes": 12962,
+      "payloadSha256": "e3ca3d281ee6369d26c07ac9fdf21fe2c79ced95b24fe09d4d5a4c9a276add06",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 34,
+      "chunkSha256": "d23f1a7aea17c605c131ca70827835318333b6963ccc5e5df0c34446a026a196",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/78b50bcb-916f-547b-810e-ca2948fda75b.json",
+      "preparedSharedPath": "context/notes/78b50bcb-916f-547b-810e-ca2948fda75b.json",
+      "payloadBytes": 14939,
+      "payloadSha256": "11391a1fed861836530253ff47fb561d7a7fb1931e38a679ff8ad226e83f85aa",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 40,
+      "chunkSha256": "91018156dd824097c643f2331f081124ba3221842cc516a397587c0bed37d37e",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/855f66ef-6d29-5c31-9dfc-0a493269bc4f.json",
+      "preparedSharedPath": "context/notes/855f66ef-6d29-5c31-9dfc-0a493269bc4f.json",
+      "payloadBytes": 12920,
+      "payloadSha256": "a60c31689713a966084d4607054ac1918b928a10f2c79ef75be7a65cc1d7ccb1",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 5,
+      "chunkSha256": "71fdd159bfde185f5ceb701bac4e6c2e6f835abe8a06f7f6a44038d04fd091a7",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/85de9b60-6a21-594b-b069-b2fb974687bf.json",
+      "preparedSharedPath": "context/notes/85de9b60-6a21-594b-b069-b2fb974687bf.json",
+      "payloadBytes": 14467,
+      "payloadSha256": "e9403a0c7d1a530ae0ee9c5fa4090e3bb53403206b4e244f97ea83e4feb6f871",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 36,
+      "chunkSha256": "6d34d75ca5acb80c51fd256553dc9d432029b57e21851121022d1e9ee2ba53cf",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "preparedSharedPath": "context/notes/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "payloadBytes": 770,
+      "payloadSha256": "f40692bb11c63c09b3c2e1b800fd755e4ca9b85b4dd8cfb4751a28f1b042dfa1",
+      "kind": "morph-source-manifest",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "manifestMatchesStandalone": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/90f42272-65de-5cfb-baaf-856bf750c2f3.json",
+      "preparedSharedPath": "context/notes/90f42272-65de-5cfb-baaf-856bf750c2f3.json",
+      "payloadBytes": 6630,
+      "payloadSha256": "472f6f9f076170319e92efa3635ba24944418be637de387d7ab8aae083b0a225",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 42,
+      "chunkSha256": "b3c553d4a3541056774447f7c4d5cdeb0353472a8b4bae5d0728d0e4cf144236",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/9997302c-9353-524a-9306-11a486180a68.json",
+      "preparedSharedPath": "context/notes/9997302c-9353-524a-9306-11a486180a68.json",
+      "payloadBytes": 14534,
+      "payloadSha256": "b1e4aa59e0ebc2993142c5bcc40a4047c1a1fb5e0d7e48bbfbfc4927df732f1b",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 41,
+      "chunkSha256": "a1b4985ee5bfc62ff53006a705dcaa50da5b3d202dc5f4440a3a76adb70428cb",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/9de23b74-488d-57d4-94c8-fe51ca369efa.json",
+      "preparedSharedPath": "context/notes/9de23b74-488d-57d4-94c8-fe51ca369efa.json",
+      "payloadBytes": 12882,
+      "payloadSha256": "74a4415948d053a9866b54a382cc2fc7f8d5ece2ceaa8a12637535e04152bf36",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 1,
+      "chunkSha256": "b112641ffc52a549360716c31f4604dcf082df533a5ebf5a0c029d165f2aa0a4",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/a8833b30-bee4-5ac0-8cf5-b1a0a6ed394a.json",
+      "preparedSharedPath": "context/notes/a8833b30-bee4-5ac0-8cf5-b1a0a6ed394a.json",
+      "payloadBytes": 16700,
+      "payloadSha256": "a037413d3384ef2edc67e3151eb4dfa5351dd0e41d70e56c6050e6ca12791af5",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 12,
+      "chunkSha256": "e05e29b47fe9e32a2c26c4c72a3ac3364de3428b49db8f5e552d516bb99f6263",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/b16d966f-243f-581c-86ca-de39fdf798e0.json",
+      "preparedSharedPath": "context/notes/b16d966f-243f-581c-86ca-de39fdf798e0.json",
+      "payloadBytes": 14470,
+      "payloadSha256": "524aacc18fd371c42d886066e4825f37c656cb4360c81c02b9ee481d10b3b8ee",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 33,
+      "chunkSha256": "512aab942584804d8f6cadd84b0917e3a9c031a79f9be5524224552a84d92c41",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/b43c7164-5488-586e-a25a-1ebad30978b5.json",
+      "preparedSharedPath": "context/notes/b43c7164-5488-586e-a25a-1ebad30978b5.json",
+      "payloadBytes": 14579,
+      "payloadSha256": "64a5f1371585e60428e751e936383b92125de73d18374c54c400572fc93a57b2",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 22,
+      "chunkSha256": "9c4e71f11229eb590910e09155e108badd2da833c5fd4d40c2e5aad9e85386cb",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/bba4038c-9513-53c4-971a-ceb0d851266a.json",
+      "preparedSharedPath": "context/notes/bba4038c-9513-53c4-971a-ceb0d851266a.json",
+      "payloadBytes": 12921,
+      "payloadSha256": "dce78fab2a2177a1d010eb410b37cd03a443eab7a522a5d2602637d0380369ab",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 10,
+      "chunkSha256": "023b2244426bb9bb7ed720e868f64a0aeff1cb6f5135cc4a778d8d15af33a97f",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/bcddc297-b3d3-5949-9967-edf222847934.json",
+      "preparedSharedPath": "context/notes/bcddc297-b3d3-5949-9967-edf222847934.json",
+      "payloadBytes": 15035,
+      "payloadSha256": "32e10b746782745b646debb3edd7828b35fbea6a1b6bb320ba770a56dd1d2ede",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 39,
+      "chunkSha256": "333ba0398e415ed639149027c7bdf314a61b06256b72c740f425a3232bc95081",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/bfaaa8b2-cef4-57b1-95e2-db9324958289.json",
+      "preparedSharedPath": "context/notes/bfaaa8b2-cef4-57b1-95e2-db9324958289.json",
+      "payloadBytes": 15083,
+      "payloadSha256": "d5f4dc02cdac5a918aa5a95dea8c62ff3d171fa85168cf6901fccd35b216f136",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 27,
+      "chunkSha256": "e76a4d01da9428e5bff7df37a9474755291db45a528790c73045ba9d7ae203f9",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/c05e93b0-ce3c-5995-8881-473a0a76090c.json",
+      "preparedSharedPath": "context/notes/c05e93b0-ce3c-5995-8881-473a0a76090c.json",
+      "payloadBytes": 14455,
+      "payloadSha256": "e16618337d1df4402a0bc794b5d340c9fbdb826925cfabf6f81f1af10b877032",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 26,
+      "chunkSha256": "c9e8033273516c5021645813ece0ccb9ce884e563cd59dc600b341283235f26c",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/cb32afe1-4670-5c6b-ad4e-a73643eb96d7.json",
+      "preparedSharedPath": "context/notes/cb32afe1-4670-5c6b-ad4e-a73643eb96d7.json",
+      "payloadBytes": 12898,
+      "payloadSha256": "54c31f5eddd315c4845b24811c453a3128a2d46476954d66ee1eff45c7117ef8",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 2,
+      "chunkSha256": "05694d1f870d477f1344f43faf22710299a63cb286aa283a817db851837ced78",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/d314e4a9-ab85-55b7-a202-5a3df834f0c0.json",
+      "preparedSharedPath": "context/notes/d314e4a9-ab85-55b7-a202-5a3df834f0c0.json",
+      "payloadBytes": 15102,
+      "payloadSha256": "ae5b9c6905a288db6516ad152f1a0c6f81161f3374110f4a9aec8ddd7cff9a8d",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 25,
+      "chunkSha256": "2268c2bf2bb96fd7f11260c34a7f888300a0cb3a4457217fc3fd19d287941df0",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/e355b766-c823-502a-b95e-79862f2f4159.json",
+      "preparedSharedPath": "context/notes/e355b766-c823-502a-b95e-79862f2f4159.json",
+      "payloadBytes": 12738,
+      "payloadSha256": "ec26eeb2d5ebdc48a36a048dda2161caf2b95cc7cdd3871568ae782d581440c0",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 4,
+      "chunkSha256": "61876f0277de7f49dbbbfeb59847c12abf9ad008f4f311458aa6fb36638fc2c6",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/e5076297-0a9c-5c4c-8fef-6f2619d00cc4.json",
+      "preparedSharedPath": "context/notes/e5076297-0a9c-5c4c-8fef-6f2619d00cc4.json",
+      "payloadBytes": 15038,
+      "payloadSha256": "7228fedef4ad42844cc3db8fb7dbf00009da5e409e6d9cf718a7608ad259b7a9",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 31,
+      "chunkSha256": "a39addfe29a4f5c122f99286a593339ff8f0c8261eb1660363e0fccbf65d0eb9",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/f2ef92ef-3d60-5694-bbfc-d688d02a8bf1.json",
+      "preparedSharedPath": "context/notes/f2ef92ef-3d60-5694-bbfc-d688d02a8bf1.json",
+      "payloadBytes": 13757,
+      "payloadSha256": "091ceac9a846646a4f9297a64f22e027e8aa62e113c2a01089ef101d3cf609c7",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 29,
+      "chunkSha256": "253f6cfd16a0b86b7bd97e47fe5586511d3469a8eeeac7a150bdbc74dd26a287",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/f6955d43-d5c9-5912-8003-3a99c185e056.json",
+      "preparedSharedPath": "context/notes/f6955d43-d5c9-5912-8003-3a99c185e056.json",
+      "payloadBytes": 14177,
+      "payloadSha256": "06297954cee8a80319410fc64966265f8e2ab7aed9ad4c5d01f0e70b56a7beaf",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 32,
+      "chunkSha256": "6e0cbc5da65f080b4ab3e3870778a0f01ae70f9a641bf007e65bb8b0f698ae98",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/f8b5b042-4992-53ae-aad6-cea20ee75d1f.json",
+      "preparedSharedPath": "context/notes/f8b5b042-4992-53ae-aad6-cea20ee75d1f.json",
+      "payloadBytes": 12924,
+      "payloadSha256": "12831e82386ca852f5a20d6093e9e38d2bc6460c9c7c67db0d055a80df6e9b66",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 20,
+      "chunkSha256": "8432ac5d509dd0ee97d7dfc8a6d41446287db06c14f67af87306099e4473f9b7",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/fe28f50f-be1f-5861-9c26-61a509ca3ed6.json",
+      "preparedSharedPath": "context/notes/fe28f50f-be1f-5861-9c26-61a509ca3ed6.json",
+      "payloadBytes": 14273,
+      "payloadSha256": "1752ec0492dbf06e84523f708595fb36811a665f19da05cdb9fea1d95801fef0",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 35,
+      "chunkSha256": "2540f4b8b455e0a15ae049d6be2cacf5511d1c88d89e8780d1a60adf160711ca",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    },
+    {
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-outbox/notes/fe53065b-b51d-5785-9b8a-74ac26197118.json",
+      "preparedSharedPath": "context/notes/fe53065b-b51d-5785-9b8a-74ac26197118.json",
+      "payloadBytes": 12802,
+      "payloadSha256": "196a5e6cfcffbfcf0b53a53b19f362c955cd2df5abcc5d173f092fd9421793f1",
+      "kind": "morph-source-chunk",
+      "noteIdMatchesFilename": true,
+      "requestIdMatches": true,
+      "transferIdMatches": true,
+      "remoteReadbackObserved": false,
+      "part": 7,
+      "chunkSha256": "c6ca97d3340487b1dfee3430d3e21d2fc9a8252adc59ef2efe7555b62beada83",
+      "chunkHashMatches": true,
+      "stablePartIdMatches": true
+    }
+  ],
+  "scopedExpectedOutgoingPathChecks": [
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/017abd08-d8c3-5fdc-ae78-2b78e75c81c2.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/017abd08-d8c3-5fdc-ae78-2b78e75c81c2.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/017abd08-d8c3-5fdc-ae78-2b78e75c81c2.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/11278d47-6489-5bd0-a749-880d728d84f9.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/11278d47-6489-5bd0-a749-880d728d84f9.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/11278d47-6489-5bd0-a749-880d728d84f9.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/17261a4e-f9eb-5864-b229-6d1163bde7c4.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/17261a4e-f9eb-5864-b229-6d1163bde7c4.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/17261a4e-f9eb-5864-b229-6d1163bde7c4.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/22a60550-4459-5ded-ba3f-a62980873ef1.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/22a60550-4459-5ded-ba3f-a62980873ef1.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/22a60550-4459-5ded-ba3f-a62980873ef1.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/2c7e3e92-4777-551e-9db3-979226599f41.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/2c7e3e92-4777-551e-9db3-979226599f41.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/2c7e3e92-4777-551e-9db3-979226599f41.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/2dd6b39f-cf71-5e5f-aa3f-028199bc15c0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/2dd6b39f-cf71-5e5f-aa3f-028199bc15c0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/2dd6b39f-cf71-5e5f-aa3f-028199bc15c0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/2e9ccb4f-62a6-5fd9-b492-23b1f4356b21.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/2e9ccb4f-62a6-5fd9-b492-23b1f4356b21.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/2e9ccb4f-62a6-5fd9-b492-23b1f4356b21.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/30fa978a-08c0-5fe5-bbcd-ab41573ae567.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/30fa978a-08c0-5fe5-bbcd-ab41573ae567.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/30fa978a-08c0-5fe5-bbcd-ab41573ae567.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/3bc09d72-c1b3-5fb6-a9ca-8abcddaa5f75.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/3bc09d72-c1b3-5fb6-a9ca-8abcddaa5f75.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/3bc09d72-c1b3-5fb6-a9ca-8abcddaa5f75.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/5122e658-2b79-59dd-a7f9-3c6e3db88eec.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/5122e658-2b79-59dd-a7f9-3c6e3db88eec.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/5122e658-2b79-59dd-a7f9-3c6e3db88eec.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/5162f7d1-82df-59f8-8fbf-e4def3b0ce28.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/5162f7d1-82df-59f8-8fbf-e4def3b0ce28.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/5162f7d1-82df-59f8-8fbf-e4def3b0ce28.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/517e0475-a1c6-5a40-ad82-1f83b8f324c3.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/517e0475-a1c6-5a40-ad82-1f83b8f324c3.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/517e0475-a1c6-5a40-ad82-1f83b8f324c3.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/5701a2dd-51e5-56b7-aaed-572d1a1d1b68.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/5701a2dd-51e5-56b7-aaed-572d1a1d1b68.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/5701a2dd-51e5-56b7-aaed-572d1a1d1b68.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/574a784c-822d-586f-bb5b-d88fb3ba8533.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/574a784c-822d-586f-bb5b-d88fb3ba8533.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/574a784c-822d-586f-bb5b-d88fb3ba8533.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/576a51ec-9bb2-5bac-ab47-93b88c210389.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/576a51ec-9bb2-5bac-ab47-93b88c210389.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/576a51ec-9bb2-5bac-ab47-93b88c210389.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/5d0e6c97-e0e4-5d51-9fd6-871dcf98620c.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/5d0e6c97-e0e4-5d51-9fd6-871dcf98620c.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/5d0e6c97-e0e4-5d51-9fd6-871dcf98620c.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/66433eb0-129b-53c7-8388-e95edd0cccb5.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/66433eb0-129b-53c7-8388-e95edd0cccb5.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/66433eb0-129b-53c7-8388-e95edd0cccb5.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/708156bd-8d6a-5ddd-9973-7871db5631f6.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/708156bd-8d6a-5ddd-9973-7871db5631f6.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/708156bd-8d6a-5ddd-9973-7871db5631f6.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/713874f2-86ef-5256-a938-06b55a852b7a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/713874f2-86ef-5256-a938-06b55a852b7a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/713874f2-86ef-5256-a938-06b55a852b7a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/77d318a9-41d5-54c1-8cee-72aba533b406.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/77d318a9-41d5-54c1-8cee-72aba533b406.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/77d318a9-41d5-54c1-8cee-72aba533b406.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/78b50bcb-916f-547b-810e-ca2948fda75b.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/78b50bcb-916f-547b-810e-ca2948fda75b.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/78b50bcb-916f-547b-810e-ca2948fda75b.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/855f66ef-6d29-5c31-9dfc-0a493269bc4f.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/855f66ef-6d29-5c31-9dfc-0a493269bc4f.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/855f66ef-6d29-5c31-9dfc-0a493269bc4f.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/85de9b60-6a21-594b-b069-b2fb974687bf.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/85de9b60-6a21-594b-b069-b2fb974687bf.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/85de9b60-6a21-594b-b069-b2fb974687bf.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/8732cba1-475c-53bb-aa57-079bb799910a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/90f42272-65de-5cfb-baaf-856bf750c2f3.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/90f42272-65de-5cfb-baaf-856bf750c2f3.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/90f42272-65de-5cfb-baaf-856bf750c2f3.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/9997302c-9353-524a-9306-11a486180a68.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/9997302c-9353-524a-9306-11a486180a68.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/9997302c-9353-524a-9306-11a486180a68.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/9de23b74-488d-57d4-94c8-fe51ca369efa.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/9de23b74-488d-57d4-94c8-fe51ca369efa.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/9de23b74-488d-57d4-94c8-fe51ca369efa.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/a8833b30-bee4-5ac0-8cf5-b1a0a6ed394a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/a8833b30-bee4-5ac0-8cf5-b1a0a6ed394a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/a8833b30-bee4-5ac0-8cf5-b1a0a6ed394a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/b16d966f-243f-581c-86ca-de39fdf798e0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/b16d966f-243f-581c-86ca-de39fdf798e0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/b16d966f-243f-581c-86ca-de39fdf798e0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/b43c7164-5488-586e-a25a-1ebad30978b5.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/b43c7164-5488-586e-a25a-1ebad30978b5.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/b43c7164-5488-586e-a25a-1ebad30978b5.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/bba4038c-9513-53c4-971a-ceb0d851266a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/bba4038c-9513-53c4-971a-ceb0d851266a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/bba4038c-9513-53c4-971a-ceb0d851266a.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/bcddc297-b3d3-5949-9967-edf222847934.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/bcddc297-b3d3-5949-9967-edf222847934.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/bcddc297-b3d3-5949-9967-edf222847934.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/bfaaa8b2-cef4-57b1-95e2-db9324958289.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/bfaaa8b2-cef4-57b1-95e2-db9324958289.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/bfaaa8b2-cef4-57b1-95e2-db9324958289.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/c05e93b0-ce3c-5995-8881-473a0a76090c.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/c05e93b0-ce3c-5995-8881-473a0a76090c.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/c05e93b0-ce3c-5995-8881-473a0a76090c.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/cb32afe1-4670-5c6b-ad4e-a73643eb96d7.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/cb32afe1-4670-5c6b-ad4e-a73643eb96d7.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/cb32afe1-4670-5c6b-ad4e-a73643eb96d7.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/d314e4a9-ab85-55b7-a202-5a3df834f0c0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/d314e4a9-ab85-55b7-a202-5a3df834f0c0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/d314e4a9-ab85-55b7-a202-5a3df834f0c0.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/e355b766-c823-502a-b95e-79862f2f4159.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/e355b766-c823-502a-b95e-79862f2f4159.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/e355b766-c823-502a-b95e-79862f2f4159.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/e5076297-0a9c-5c4c-8fef-6f2619d00cc4.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/e5076297-0a9c-5c4c-8fef-6f2619d00cc4.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/e5076297-0a9c-5c4c-8fef-6f2619d00cc4.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/f2ef92ef-3d60-5694-bbfc-d688d02a8bf1.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/f2ef92ef-3d60-5694-bbfc-d688d02a8bf1.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/f2ef92ef-3d60-5694-bbfc-d688d02a8bf1.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/f6955d43-d5c9-5912-8003-3a99c185e056.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/f6955d43-d5c9-5912-8003-3a99c185e056.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/f6955d43-d5c9-5912-8003-3a99c185e056.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/f8b5b042-4992-53ae-aad6-cea20ee75d1f.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/f8b5b042-4992-53ae-aad6-cea20ee75d1f.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/f8b5b042-4992-53ae-aad6-cea20ee75d1f.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/fe28f50f-be1f-5861-9c26-61a509ca3ed6.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/fe28f50f-be1f-5861-9c26-61a509ca3ed6.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/fe28f50f-be1f-5861-9c26-61a509ca3ed6.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/fe53065b-b51d-5785-9b8a-74ac26197118.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/fe53065b-b51d-5785-9b8a-74ac26197118.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/fe53065b-b51d-5785-9b8a-74ac26197118.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/outbox/cabcb290-299a-4850-931a-f731fecadbda.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/cabcb290-299a-4850-931a-f731fecadbda.json",
+      "exists": false
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/cabcb290-299a-4850-931a-f731fecadbda.json",
+      "exists": false
+    }
+  ],
+  "ownerSessionReceiptFiles": [
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/603bba73-fb5a-455f-908f-cfddaf014598.json",
+      "bytes": 1105,
+      "sha256": "4b5b60c1a090a124cd205db0b6925a06b476c257cb46edf1983676272ff38783"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/dd2f6cdf-9bde-4467-b526-c9b583996e0b.json",
+      "bytes": 1105,
+      "sha256": "0ad6473804ffc928096c8ac3145e633e13b77b603ac321ef1463dc90593c0e3a"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/7925a8c2-f435-42c2-bc9e-7f779e7ef78d.json",
+      "bytes": 1519,
+      "sha256": "e75d89470f748c2fb22e7ef2086d43ba1c6a515cfa7680144443d33a4f8af181"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/1838fab2-1a31-45d2-96ac-2ab5c0e5bde1.json",
+      "bytes": 1293,
+      "sha256": "4eb6aaff3d15ef41b42af999b88c74855564b92ee377c7198f42fa7f7b6e1360"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/sync-receipts/966c1caf-f8f1-4221-87e7-85c67748c871/ec21a94c-793b-4b59-bbbf-102af8d624bc.json",
+      "bytes": 1105,
+      "sha256": "ba9c0f97d4190d867ec07d2d58c3ee14812fc2a8a3165be832e0d4bdbb5e78a8"
+    }
+  ],
+  "ownerSharedSyncTopLevel": [
+    {
+      "name": "DELIVERY_REPORT.md",
+      "type": "file"
+    },
+    {
+      "name": "SOURCE_DELIVERY.json",
+      "type": "file"
+    },
+    {
+      "name": "capture-evidence-summary.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-2-ordinary-receipt.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-3-ordinary-receipt.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-3-payload.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-3-readback.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-4-ordinary-receipt.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-4-payload.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-4-readback.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-5-ordinary-receipt.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-5-payload.json",
+      "type": "file"
+    },
+    {
+      "name": "checkpoint-5-readback.json",
+      "type": "file"
+    },
+    {
+      "name": "delivery-state.json",
+      "type": "file"
+    },
+    {
+      "name": "fresh-read-report.json",
+      "type": "file"
+    },
+    {
+      "name": "incoming",
+      "type": "directory"
+    },
+    {
+      "name": "incoming-0800",
+      "type": "directory"
+    },
+    {
+      "name": "mac-intel-runtime-catalog.json",
+      "type": "file"
+    },
+    {
+      "name": "notion-checkpoint-2-pending.json",
+      "type": "file"
+    },
+    {
+      "name": "notion-checkpoints-1-2-confirmed.json",
+      "type": "file"
+    },
+    {
+      "name": "notion-final-pending.json",
+      "type": "file"
+    },
+    {
+      "name": "notion-source-read-report.json",
+      "type": "file"
+    },
+    {
+      "name": "notion-start-pending.json",
+      "type": "file"
+    },
+    {
+      "name": "session-start-receipt.json",
+      "type": "file"
+    },
+    {
+      "name": "session-state.json",
+      "type": "file"
+    },
+    {
+      "name": "source-eligibility-preliminary.json",
+      "type": "file"
+    },
+    {
+      "name": "source-freeze.json",
+      "type": "file"
+    },
+    {
+      "name": "source-outbox",
+      "type": "directory"
+    },
+    {
+      "name": "source-selection-draft.json",
+      "type": "file"
+    },
+    {
+      "name": "source-snapshot",
+      "type": "directory"
+    },
+    {
+      "name": "source-staging-check.json",
+      "type": "file"
+    }
+  ],
+  "ownerSourceOutboxTopLevel": [
+    {
+      "name": "bundle.json",
+      "type": "file"
+    },
+    {
+      "name": "manifest.json",
+      "type": "file"
+    },
+    {
+      "name": "notes",
+      "type": "directory"
+    }
+  ],
+  "metadataStableDuringRead": true
+}

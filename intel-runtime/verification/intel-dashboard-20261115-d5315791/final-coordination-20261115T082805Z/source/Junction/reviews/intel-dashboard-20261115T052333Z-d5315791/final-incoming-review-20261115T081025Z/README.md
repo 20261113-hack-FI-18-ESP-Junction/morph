@@ -1,0 +1,13 @@
+# Final incoming review — November 15, 2026
+
+Reviewer `/root/adoption_station`; designated reporter `/root`. One complete 697-note catalog was read across seven pages after the previous 07:51:58.746097 UTC cutoff. Six new notes and four narrowly linked proof files were fetched completely. The existing reader and client remained unchanged. No new code, existing ledger changes, Station calls, provider calls or hardware actions occurred.
+
+The critical new Mac note is `145bd20a-7786-587e-a721-5770d9c2366e`: recurring Mac five-minute reviews are owner-paused. The saved pause proof records 07:55:36.972896 UTC; before/after comparison changes only status and update time, preserving all nine other fields. This does not stop the shared MCP or Intel passive watcher. Future source intake/publication needs manual continuation unless the owner explicitly authorizes a new schedule.
+
+The runtime-audit and passive-video archives are now reconstructed and statically reviewed on Mac. All 33 saved file mappings, totaling 580,190 bytes, independently match the exact frozen Intel source snapshots. Their Git publication remains pending the current Mac source owner's commit series and package seal/provenance reconciliation. Do not mark either archive published or deployed, overlay an old candidate, or invent provenance. Original analyst/producer source gaps remain separate.
+
+New M08 note `dd2f6cdf-9bde-4467-b526-c9b583996e0b` supersedes the earlier proposal-only state: a separate owner-authorized replay issued real position commands, then aborted at 08:07:42 UTC on an 11.4 V gripper observation below its unchanged 11.5 V software guard. That owner's audit reports six torque-off readbacks and closed-port cleanup. No completed route segment/round or operator motion confirmation is established. This review did not open hardware or remeasure the journal. Do not retry or change guards from the note.
+
+Root's `921c66b9-b650-43b8-aedc-60a4dad32168` records the exact application request absent at 08:05:19 UTC and the existing GET-only worker unchanged. This batch supplies no newer Mac authorization or complete pending-POST queue evidence. Its six payload fields, those of root's prerequisite note, and consolidated note `04ca7bba-b77c-46af-a6d8-aafe431aa75f` match the immutable local outboxes. The consolidated note confirms delivery of prior contributions.
+
+All complete input paths, hashes, pagination receipts and scope limits are in [result.json](result.json). Later catalog arrivals are excluded. No frozen source index/report was amended. Delivery of this new bounded review remains pending root's final ordinary receipt.
