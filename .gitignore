@@ -13,3 +13,15 @@ __pycache__/
 .DS_Store
 .coverage
 htmlcov/
+node_modules/
+dist/
+.junction-setup/
+.runtime/
+*.pem
+*.key
+connection.json
+api-token
+!**/.env.example
+!klemen-dashboard/verification/*.log
+!intel-runtime/verification/**/*.log
+!communication/verification/**/*.log
