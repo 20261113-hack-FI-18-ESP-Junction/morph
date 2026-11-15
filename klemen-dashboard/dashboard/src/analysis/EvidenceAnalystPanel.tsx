@@ -4,6 +4,7 @@ import type { StationSnapshot } from "../types/morph.ts";
 import { analysisErrorMessage, createAnalysisApi } from "./client.ts";
 import { AnalystController, hasEligibleRecords, reportIsStale, selectionScope, type AnalystState } from "./controller.ts";
 import { readQuestionDraft, saveQuestionDraft } from "./drafts.ts";
+import { isApplicationAuditSummary, readSavedCorrection, type SavedCorrection } from "./audit.ts";
 import { isEvidenceBrief } from "./validation.ts";
 import type { AnalysisApi, AnalysisContext, AnalysisFact, AnalysisKind, AnalysisReport, AnalysisSelection, AnalysisSource } from "./types.ts";
 
@@ -99,6 +100,61 @@ function MetricValue({ value }: { value: unknown }) {
   return <>{valueText(value)}</>;
 }
 
+export function SavedCorrectionAudit({ context, onOpenSource }: { context: AnalysisContext; onOpenSource: (source: AnalysisSource) => void }) {
+  const corrections = context.facts.map(fact => readSavedCorrection(fact, context))
+    .filter((item): item is SavedCorrection => item !== null);
+  const [selected, setSelected] = useState<SavedCorrection | null>(null);
+  if (corrections.length === 0) return null;
+
+  return (
+    <section aria-label="Saved correction records" className="mt-4 rounded border border-[#514633] bg-[#15130f] p-3">
+      <h4 className="text-[13px] font-medium text-[#D6B775]">Saved correction records</h4>
+      <p className="mt-1 text-[11px] text-[#A7A39A]">
+        Exact values captured with this evidence snapshot. These are recorded field changes, separate from Gemma's explanation.
+      </p>
+      <ul className="mt-3 space-y-3">
+        {corrections.map(correction => (
+          <li key={correction.fact.factId} className="border-t border-[#353128] pt-3">
+            <p className="break-all text-[11px] text-[#D4D0C8]">
+              {correction.entityType} · {correction.entityId} · <strong>{correction.field}</strong>
+            </p>
+            <dl className="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+              <div className="min-w-0">
+                <dt className="text-[#A7A39A]">Before</dt>
+                <dd className="mt-1 whitespace-pre-wrap break-all font-mono-tech text-[#F2EEE6]">{correction.previousLiteral}</dd>
+              </div>
+              <div className="min-w-0">
+                <dt className="text-[#A7A39A]">After</dt>
+                <dd className="mt-1 whitespace-pre-wrap break-all font-mono-tech text-[#F2EEE6]">{correction.newLiteral}</dd>
+              </div>
+            </dl>
+            <p className="mt-2 break-all text-[10px] text-[#A7A39A]">
+              Session {correction.source.sessionId} · {correction.authorId} · {formatTimestamp(correction.createdAt)} ({DISPLAY_TIME_ZONE})
+            </p>
+            <button
+              type="button"
+              className={`${buttonClass} mt-2 max-w-full break-all text-left`}
+              onClick={() => setSelected(correction)}
+              aria-label={`Open saved correction ${correction.source.entityId}, revision ${correction.source.revision}`}
+            >
+              {correction.fact.factId} · Correction {correction.source.entityId} · revision {correction.source.revision}
+            </button>
+          </li>
+        ))}
+      </ul>
+      {selected && (
+        <SourceEvidenceDialog
+          fact={selected.fact}
+          context={context}
+          source={selected.source}
+          onClose={() => setSelected(null)}
+          onOpenSource={onOpenSource}
+        />
+      )}
+    </section>
+  );
+}
+
 export function RecordedFacts({ context, onOpenSource }: { context: AnalysisContext; onOpenSource: (source: AnalysisSource) => void }) {
   return <section aria-label="Recorded facts" className="mt-5">
     <h3 className="text-[15px] font-medium text-[#F2EEE6]">Recorded facts</h3>
@@ -128,6 +184,7 @@ export function RecordedFacts({ context, onOpenSource }: { context: AnalysisCont
       {context.compatibility?.state === "compatible" && context.descriptiveDeltas?.map(delta => <p key={delta.key} className="mt-1">{delta.key}: {delta.percentagePoints === null ? "Unavailable" : `${delta.percentagePoints} percentage points`}. {delta.definition}</p>)}
     </div>}
     <p className="mt-3 text-[11px] text-[#A7A39A]">Examples shown: {context.sampling.shownCycleIds.length} / {context.sampling.totalCycles} cycles. Omitted: {context.sampling.omittedCycleIds.length}. Population metrics are computed before example selection.</p>
+    <SavedCorrectionAudit key={context.contentDigest} context={context} onOpenSource={onOpenSource} />
     <details className="mt-3 text-[12px] text-[#A7A39A]">
       <summary className="cursor-pointer">Evidence ledger · {context.facts.length} facts</summary>
       <div className="mt-2 space-y-2">{context.facts.map(fact => <SourceLinks key={fact.factId} fact={fact} context={context} onOpenSource={onOpenSource} />)}</div>
@@ -175,6 +232,12 @@ export function AnalysisReportView({ report, stale, onOpenSource }: { report: An
       <p className="mt-2 break-words text-[14px] text-[#F2EEE6]">{answer.headline}</p>
       {answer.answerState === "insufficient_evidence" && <p role="status" className="mt-2 text-[12px] text-[#D6B775]">Insufficient evidence to answer the full question.</p>}
       {answer.interpretations.map((item, index) => <div key={index} className="mt-4">
+        {isApplicationAuditSummary(report, item) && (
+          <div className="mb-2">
+            <h4 className="text-[13px] font-medium text-[#D6B775]">Application audit summary</h4>
+            <p className="mt-1 text-[10px] text-[#A7A39A]">Fixed application wording. Exact field changes are shown in the saved correction records.</p>
+          </div>
+        )}
         <p className="break-words text-[12px] leading-relaxed text-[#D4D0C8]">{item.text}</p>
         <div className="mt-2 space-y-1">{item.factIds.map(id => <SourceLinks key={id} fact={factMap.get(id)!} context={report.context} onOpenSource={onOpenSource} />)}</div>
         {item.metricIds.length > 0 && <p className="mt-1 text-[10px] text-[#A7A39A]">Recorded metrics: {item.metricIds.map(id => `${metricMap.get(id)!.label} (${id})`).join(" · ")}</p>}

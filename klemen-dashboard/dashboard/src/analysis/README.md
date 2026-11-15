@@ -25,6 +25,8 @@ The same-origin proxy must allow `GET /api/v1/analysis/context`, `GET /api/v1/an
 
 - Reading facts, navigation, reconnecting, refreshing saved reports and replay never submit inference. Only the Generate button or an explicit retry submits an analysis request.
 - Facts and metric arithmetic come from the backend. Saved report facts remain immutable when a correction makes the report stale. Current facts are available separately for explicit regeneration.
+- Saved correction records show each captured target, field, typed previous/replacement value, author, time and source revision directly above the explanation. `null`, empty strings, zero and false retain their JSON meanings. Incomplete, malformed or inconsistently cited correction shapes remain available in the generic evidence ledger; the UI does not infer missing values or substitute the current cycle trace. The correction list remains available for stale and rejected reports.
+- For the reviewed v12 prompt contract only, the exact application-owned audit preservation sentence is labeled **Application audit summary** when its citations reference correction facts exclusively and contain no metrics. Other model wording and older saved replies retain their original attribution and content. This label does not establish that arbitrary model prose is semantically correct.
 - Pending request IDs are retained per selection scope in browser session storage. A confirmed report or explicit abandonment clears the pending entry. If browser storage is disabled, the current component retains the request in memory.
 - Question drafts are retained independently per source, cycle or ordered comparison selection in browser session storage. Selecting a mode does not clear a draft. A recovered unconfirmed request displays its original submitted question; the saved report separately displays the question it answered.
 - The context, report envelope and generated response are checked before rendering. An unreadable report is excluded with a visible warning while valid reports and deterministic facts remain available. Storage warnings or unsuccessful fact/report reads disable new submissions until a healthy refresh. Selecting another saved report does not clear a storage failure.
@@ -38,6 +40,8 @@ The same-origin proxy must allow `GET /api/v1/analysis/context`, `GET /api/v1/an
 ## Validation
 
 The current package uses the MCP adapter and a 40-second browser deadline. See [package verification](../../../VERIFICATION.md) for checks rerun on this source. The dated Intel browser reports below are preserved source-document claims; their original artifacts are not included in this package.
+
+The November 15 saved-correction adaptation passed 39 focused analyst tests, all 122 dashboard tests and TypeScript checking. Its [source and reconciliation record](../../../verification/analyst-ui-r2-20261115/README.md) preserves the received originals separately. The checks cover typed values, stale/rejected reports, escaped text, citation identity and timestamps with an explicit timezone; no browser, provider or physical action was performed for this adaptation.
 
 From the dashboard directory:
 

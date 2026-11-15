@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T09:25:48.566228+00:00",
+  "reviewBaseCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+  "observedHead": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+  "deliveryId": "2aebe862-3a13-52d9-b1cd-facac6670fc2",
+  "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+  "transferId": "8ccb5434-a3bf-5f5d-acd3-f8b50a1652aa",
+  "status": "reviewed and adapted locally; Git publication remains parent-owned",
+  "originalSourceIndex": "ORIGINAL_SOURCE_INDEX.json",
+  "activeFiles": [
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/audit.ts",
+      "bytes": 3717,
+      "sha256": "6994430d3985dc0d47336295046ea9e9de36e472ced6920415d949f005166156",
+      "receivedPath": "morph-station/src/analysis/audit.ts",
+      "receivedSha256": "e7dbbb73aef8bc3aa3736e303b7868c9f6a4924bd2415ff4f203a039c67f5e83",
+      "declaredIntelBaselineSha256": null,
+      "macBaselineSha256": null,
+      "disposition": "adapted"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/EvidenceAnalystPanel.tsx",
+      "bytes": 36620,
+      "sha256": "caece481b5cc4d618ccb851c858c5821fffd51dbd65c3c3dce40af102e484f43",
+      "receivedPath": "morph-station/src/analysis/EvidenceAnalystPanel.tsx",
+      "receivedSha256": "dfb39466e8346e960216e960584ee51fb23485946b262aa0fd8e44cae502dc43",
+      "declaredIntelBaselineSha256": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733",
+      "macBaselineSha256": "50b627ae7e3fb06926580f57f24ac89550b1c6f7d67c3bab6ff2093263e0e59c",
+      "disposition": "adapted"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/analysis.test.tsx",
+      "bytes": 42358,
+      "sha256": "a8ee5d311b9f0a3ae4853d1629e4f7e48c69254c1f3aef83c05950d6fcd4a868",
+      "receivedPath": "morph-station/src/analysis/analysis.test.tsx",
+      "receivedSha256": "c7190f029b7c418426e134605c04fb882dd117871aceb42b66029eb3777d7c1b",
+      "declaredIntelBaselineSha256": "4fd463f2cfe6e263ff5e317353054f53951f3a73ee07acc4a25e06581957fe2c",
+      "macBaselineSha256": "4fd463f2cfe6e263ff5e317353054f53951f3a73ee07acc4a25e06581957fe2c",
+      "disposition": "adapted"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/README.md",
+      "bytes": 10545,
+      "sha256": "59fc489628c029da6e028812a6511e64a329491f5440fc76a5ef629d7a0b52eb",
+      "receivedPath": "morph-station/src/analysis/README.md",
+      "receivedSha256": "e0b41229cd16615f098811cd74975899688fa50ffbc6c917a251c5ce3d10fb6a",
+      "declaredIntelBaselineSha256": "9d058af83927e34bdcfeda7b8cde661c97efd80ae17d158a673cf27d13a39b6b",
+      "macBaselineSha256": "03f43abffbefca12444d2544c454eb77d88d97205d6d410fd728c006e2acb001",
+      "disposition": "adapted"
+    }
+  ],
+  "preservedDependencies": [
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/validation.ts",
+      "bytes": 5465,
+      "sha256": "ceb2db15eb1077ccda2a444945d0728e646983ca9ae24443db38449ff8e3d074",
+      "declaredIntelSha256": "ceb2db15eb1077ccda2a444945d0728e646983ca9ae24443db38449ff8e3d074",
+      "disposition": "exact received dependency reused"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/types.ts",
+      "bytes": 3860,
+      "sha256": "45e15f8577a70d241d8486c28d5238fb416c5630ff2941c64ed81b6c8246a513",
+      "declaredIntelSha256": "45e15f8577a70d241d8486c28d5238fb416c5630ff2941c64ed81b6c8246a513",
+      "disposition": "exact received dependency reused"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/drafts.ts",
+      "bytes": 1002,
+      "sha256": "85ac32b13e49fd731700b1744f8ccf3e6bf06d15a03ee5b3e6537e454b56e1d8",
+      "declaredIntelSha256": "85ac32b13e49fd731700b1744f8ccf3e6bf06d15a03ee5b3e6537e454b56e1d8",
+      "disposition": "exact received dependency reused"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/client.ts",
+      "bytes": 7026,
+      "sha256": "bd133a0dfd254aa1c6bd3a9a8746d8fb1e77ed29a9f24e024332c32bbd449c4a",
+      "declaredIntelSha256": "f6667fc652669183a74509dce9853889eb97f02e547fcb71bf5d7c5365223f84",
+      "disposition": "accepted current Mac dependency preserved"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/analysis/controller.ts",
+      "bytes": 14694,
+      "sha256": "3653323a061002542bcc08edabc916c519e356b0acc15307f66703709ae59afa",
+      "declaredIntelSha256": "3653323a061002542bcc08edabc916c519e356b0acc15307f66703709ae59afa",
+      "disposition": "exact received dependency reused"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/types/morph.ts",
+      "bytes": 12702,
+      "sha256": "1b21c2df416dea8a24822048dfe5387d715fa2ca4fec9e6012cd5e39fd9d1da8",
+      "declaredIntelSha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1",
+      "disposition": "accepted current Mac dependency preserved"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/EvidenceImage.tsx",
+      "bytes": 1405,
+      "sha256": "4328b286e4e2d01491d309784db2513477f804276c6ca6663c4ac68f88385a25",
+      "declaredIntelSha256": "4328b286e4e2d01491d309784db2513477f804276c6ca6663c4ac68f88385a25",
+      "disposition": "exact received dependency reused"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/package.json",
+      "bytes": 1698,
+      "sha256": "638b0d096bad38bff7f505e76943edd5b753e89e1746a21dd1c6145a20d24e74",
+      "declaredIntelSha256": "21090c4e662af1477f74e66f65dce2022aa564c7295ad3f1c7f1de446d151fa8",
+      "disposition": "accepted current Mac dependency preserved"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/package-lock.json",
+      "bytes": 133021,
+      "sha256": "a19f1e02c80c79a307127f9d29f4e635ad6378cd007e308c15d4f8a3903802ba",
+      "declaredIntelSha256": "157a8912cd3edf13dcbb952b3ef60c1c1f98cdc3cfe876553968802dfcebf3b5",
+      "disposition": "accepted current Mac dependency preserved"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/tsconfig.json",
+      "bytes": 561,
+      "sha256": "cbc914147cc208c35cb5f6d405f0f0bc3c1c76ae76bf45bbc4f588b924492d2a",
+      "declaredIntelSha256": "cbc914147cc208c35cb5f6d405f0f0bc3c1c76ae76bf45bbc4f588b924492d2a",
+      "disposition": "exact received dependency reused"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/App.tsx",
+      "bytes": 25648,
+      "sha256": "35c10dba31a8e22fa06e5ecafa092c81dbb847abeca9cac3932547d3851b11fa",
+      "declaredIntelSha256": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+      "disposition": "accepted current Mac dependency preserved"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/server/stationProxy.ts",
+      "bytes": 14604,
+      "sha256": "47aba1a3e5a9221309702b67aa9c6dc7fdec67e991628d5be857cb988f1e7074",
+      "declaredIntelSha256": "afe66f0fad9c261eaffda80964ba4b65c076cfe307d120e350886fe01a8ae3af",
+      "disposition": "accepted current Mac dependency preserved"
+    }
+  ],
+  "adaptations": [
+    "Only the typed audit helper, saved correction display, exact v12 application-sentence label, focused regression additions and current English documentation were adopted.",
+    "All correction source references must identify one record revision/session/cycle; cycle targets and selected context must agree. Timestamp must have explicit Z or numeric offset. Invalid records remain visible in the generic evidence ledger.",
+    "Preserved Mac request-ID display, 40-second MCP deadline and fixed source-document references. No changes to record transport, compact reads, media, history, package manifests or provider submission control.",
+    "The escaping regression uses an untrusted author string while retaining a consistent cycle target.",
+    "All six original received files including the browser harness are archived without execution or active-path overlay."
+  ],
+  "verification": {
+    "focusedAnalyst": {
+      "passed": 39,
+      "failed": 0,
+      "exitCode": 0,
+      "command": "node node_modules/tsx/dist/cli.mjs --test src/analysis/analysis.test.tsx"
+    },
+    "dashboard": {
+      "passed": 122,
+      "failed": 0,
+      "exitCode": 0,
+      "command": "Existing package.json test file list via prepared Node/tsx runtime"
+    },
+    "typecheck": {
+      "exitCode": 0,
+      "command": "node node_modules/typescript/bin/tsc --noEmit",
+      "output": "No diagnostics"
+    },
+    "gitDiffCheck": {
+      "exitCode": 0
+    },
+    "evidenceClass": "Local software tests with existing fake APIs/transports and synthetic records; no browser/provider/hardware actions"
+  },
+  "logs": [
+    {
+      "path": "klemen-dashboard/verification/analyst-ui-r2-20261115/analyst-tests.txt",
+      "bytes": 3870,
+      "sha256": "ffabf92caaf377070761153d9c0d51b21c063c2830239cf6ce78b68acb45bc8c"
+    },
+    {
+      "path": "klemen-dashboard/verification/analyst-ui-r2-20261115/dashboard-tests.txt",
+      "bytes": 12067,
+      "sha256": "f2941b987b85c4d24f02ab89198600c4b66224b7165ecaa85fc51d5f4ce8daaa"
+    },
+    {
+      "path": "klemen-dashboard/verification/analyst-ui-r2-20261115/typecheck.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "historicalManifestsModified": false,
+  "intelPackageMetadataModified": false,
+  "gitMutatedByThisAgent": false,
+  "limitations": [
+    "Not a full analyst-backend source reconciliation: the exact current test_analysis.py original remains unavailable.",
+    "No new deployed Intel behavior or provider/physical acceptance established.",
+    "Archived reproduction scripts retain their excluded historical dependencies and are not default verification commands."
+  ]
+}

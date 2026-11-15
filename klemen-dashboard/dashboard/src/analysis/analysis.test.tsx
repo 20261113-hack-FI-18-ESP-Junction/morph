@@ -5,9 +5,10 @@ import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { AnalysisApiError, createAnalysisApi } from "./client.ts";
 import { AnalystController, reportIsStale, selectionScope } from "./controller.ts";
-import { AnalysisReportView, RecordedFacts, SourceEvidenceDialog, canRenderBrief, formatAnalysisLatency } from "./EvidenceAnalystPanel.tsx";
+import { AnalysisReportView, RecordedFacts, SavedCorrectionAudit, SourceEvidenceDialog, canRenderBrief, formatAnalysisLatency } from "./EvidenceAnalystPanel.tsx";
+import { AUDIT_PRESERVATION_TEXT, isApplicationAuditSummary, readSavedCorrection } from "./audit.ts";
 import { readQuestionDraft, saveQuestionDraft } from "./drafts.ts";
-import type { AnalysisApi, AnalysisContext, AnalysisReport, AnalysisRequest, AnalysisSelection } from "./types.ts";
+import type { AnalysisApi, AnalysisContext, AnalysisFact, AnalysisReport, AnalysisRequest, AnalysisSelection } from "./types.ts";
 
 const selection = (patch: Partial<AnalysisSelection> = {}): AnalysisSelection => ({ kind: "cycle_explanation", sessionIds: ["saved-simulation"], cycleId: "recovery", sourceMode: "simulation", recordKey: "immutable-revision-3", snapshotWatermark: 42, readOnly: false, connected: true, ...patch });
 const context = (selected = selection(), patch: Partial<AnalysisContext> = {}): AnalysisContext => ({
@@ -31,6 +32,11 @@ const report = (facts = context(), patch: Partial<AnalysisReport> = {}): Analysi
   output: { contractVersion: "gemma-brief-v1", answerState: "supported", headline: "A recovered cycle preserves the earlier failure", interpretations: [{ text: "The retry recovered the cycle while the earlier failed attempt remains in physical execution results.", factIds: ["failed-attempt", "recovered-cycle"], metricIds: ["cycles", "attempts"] }], hypotheses: [], evidenceGapKeys: ["unmeasured_cause"], suggestedReviewTargetIds: ["review-failure"] },
   validation: { accepted: true, reasons: [] }, provenance: { requestedModel: "gemma-4-26b-a4b-it", returnedModel: "gemma-4-26b-a4b-it", promptVersion: "gemma-prompt-v1", contractVersion: "gemma-brief-v1" },
   timestamps: { readyAt: "2026-11-14T21:00:02Z" }, timings: { providerLatencyMs: 1456, validationMs: 2, reportTotalMs: 1460 }, error: null, ...patch,
+});
+const correctionFact = (patch: Record<string, unknown> = {}, factId = "saved-destination-correction"): AnalysisFact => ({
+  factId, text: "Recorded correction evidence.",
+  value: { entityType: "cycle", entityId: "recovery", field: "observedDestination", previousValue: null, newValue: "good_bin", authorId: "saved-reviewer", createdAt: "2026-11-14T20:00:00Z", ...patch },
+  sourceRefs: ["entityType", "entityId", "field", "previousValue", "newValue", "authorId", "createdAt"].map(fieldPath => ({ recordType: "correction", entityId: factId, revision: 1, sessionId: "saved-simulation", cycleId: "recovery", fieldPath })),
 });
 function deferred<T>() { let resolve!: (value: T) => void; const promise = new Promise<T>(res => { resolve = res; }); return { promise, resolve }; }
 function fixture(overrides: Partial<AnalysisApi> = {}) {
@@ -350,6 +356,122 @@ test("citation detail shows saved revision and audit notes without treating text
   assert.match(markup, /Open current cycle trace/);
   assert.match(markup, /&lt;script&gt;/);
   assert.doesNotMatch(markup, /<script>/);
+});
+
+test("saved audit preserves null and typed before/after values without merging different field changes", () => {
+  const destination = correctionFact();
+  const outcome = correctionFact({ field: "outcome", previousValue: "unverified", newValue: "correct" }, "saved-outcome-correction");
+  assert.equal(readSavedCorrection(destination)?.previousLiteral, "null");
+  assert.equal(readSavedCorrection(destination)?.newLiteral, '"good_bin"');
+  assert.equal(readSavedCorrection(outcome)?.previousLiteral, '"unverified"');
+  assert.equal(readSavedCorrection(outcome)?.newLiteral, '"correct"');
+  for (const value of [0, false, "", "null", [null, false], { value: null }]) {
+    assert.equal(readSavedCorrection(correctionFact({ previousValue: value }))?.previousLiteral, JSON.stringify(value));
+  }
+  const markup = renderToStaticMarkup(<SavedCorrectionAudit context={context(selection(), { facts: [destination, outcome] })} onOpenSource={() => {}} />);
+  const rows = markup.match(/<li\b[\s\S]*?<\/li>/g)!;
+  assert.equal(rows.length, 2);
+  assert.match(rows[0], /observedDestination/);
+  assert.match(rows[0], />null<\/dd>/);
+  assert.match(rows[0], /&quot;good_bin&quot;/);
+  assert.doesNotMatch(rows[0], /unverified|&quot;correct&quot;/);
+  assert.match(rows[1], /&quot;unverified&quot;/);
+  assert.match(rows[1], /&quot;correct&quot;/);
+  assert.match(markup, /Open saved correction saved-destination-correction, revision 1/);
+});
+
+test("missing or malformed audit fields remain generic evidence instead of becoming a null transition", () => {
+  const absent = correctionFact({}, "missing-before");
+  delete (absent.value as Record<string, unknown>).previousValue;
+  const partialSource = correctionFact({}, "missing-source-field");
+  partialSource.sourceRefs = partialSource.sourceRefs.filter(source => source.fieldPath !== "newValue");
+  const wrongRevision = correctionFact({}, "conflicting-source-revision");
+  wrongRevision.sourceRefs[0].revision = 2;
+  for (const malformed of [absent, partialSource, wrongRevision, correctionFact({ previousValue: undefined }), correctionFact({ previousValue: Number.NaN }),
+    correctionFact({ createdAt: "unknown" }), correctionFact({ createdAt: "2026-11-15" }), correctionFact({ createdAt: "2026-11-15T10:00:00" })]) {
+    assert.equal(readSavedCorrection(malformed), null);
+  }
+  assert.equal(readSavedCorrection(correctionFact({ createdAt: "2026-11-15T10:00:00+02:00" }))?.createdAt, "2026-11-15T10:00:00+02:00");
+  const markup = renderToStaticMarkup(<RecordedFacts context={context(selection(), { facts: [absent, partialSource, wrongRevision] })} onOpenSource={() => {}} />);
+  assert.doesNotMatch(markup, /aria-label="Saved correction records"/);
+  assert.match(markup, /missing-before/);
+  assert.match(markup, /missing-source-field/);
+  assert.match(markup, /conflicting-source-revision/);
+  assert.match(markup, /Evidence ledger · 3 facts/);
+});
+
+test("stale rejected reports retain their captured audit values while current facts change", async () => {
+  const savedContext = context(); savedContext.facts.push(correctionFact());
+  const rejected = report(savedContext, { status: "rejected", output: null, validation: { accepted: false, reasons: ["Unsupported field mapping"] } });
+  const original = JSON.stringify(rejected);
+  const { controller, calls } = fixture({ context: async selected => {
+    const current = context(selected);
+    current.facts.push(correctionFact({ newValue: selected.recordKey === "newer-audit" ? "defective_bin" : "good_bin" }));
+    return current;
+  }, list: async () => [rejected] });
+  await controller.select(selection());
+  await controller.select(selection({ recordKey: "newer-audit" }));
+  const state = controller.getState();
+  assert(reportIsStale(state));
+  assert.equal(readSavedCorrection(state.context!.facts.at(-1)!)?.newLiteral, '"defective_bin"');
+  const markup = renderToStaticMarkup(<><RecordedFacts context={state.report!.context} onOpenSource={() => {}} /><AnalysisReportView report={state.report!} stale onOpenSource={() => {}} /></>);
+  assert.match(markup, /Saved correction records/);
+  assert.match(markup, /&quot;good_bin&quot;/);
+  assert.doesNotMatch(markup, /defective_bin/);
+  assert.match(markup, /Stale evidence snapshot/);
+  assert.match(markup, /Gemma explanation unavailable/);
+  assert.equal(JSON.stringify(rejected), original);
+  assert.equal(calls.create.length, 0);
+  controller.dispose();
+});
+
+test("correction citations cannot attach a transition to a different cycle or session", () => {
+  const mixedCycle = correctionFact({}, "mixed-cycle-citations");
+  mixedCycle.sourceRefs[0].cycleId = "other-cycle";
+  const wrongTarget = correctionFact({ entityId: "other-cycle" }, "wrong-cycle-target");
+  const otherCycle = correctionFact({ entityId: "other-cycle" }, "other-cycle-snapshot");
+  otherCycle.sourceRefs = otherCycle.sourceRefs.map(source => ({ ...source, cycleId: "other-cycle" }));
+  const otherSession = correctionFact({}, "other-session-snapshot");
+  otherSession.sourceRefs = otherSession.sourceRefs.map(source => ({ ...source, sessionId: "other-session" }));
+  const facts = [mixedCycle, wrongTarget, otherCycle, otherSession];
+  const saved = context(selection(), { facts });
+  for (const fact of facts) assert.equal(readSavedCorrection(fact, saved), null);
+  const markup = renderToStaticMarkup(<RecordedFacts context={saved} onOpenSource={() => {}} />);
+  assert.doesNotMatch(markup, /aria-label="Saved correction records"/);
+  for (const fact of facts) assert.match(markup, new RegExp(fact.factId));
+  assert.match(markup, /Evidence ledger · 4 facts/);
+
+  const attemptCorrection = correctionFact({ entityType: "attempt", entityId: "attempt-a" });
+  assert.equal(readSavedCorrection(attemptCorrection, context())?.entityId, "attempt-a");
+  const comparison = context(selection({ kind: "session_comparison", cycleId: undefined, sessionIds: ["saved-simulation", "other-session"] }));
+  assert.equal(readSavedCorrection(otherSession, comparison)?.source.sessionId, "other-session");
+});
+
+test("saved audit values render as literal text and never as executable markup", () => {
+  const fact = correctionFact({ newValue: '<img src=x onerror="moveRobot()">', authorId: "<script>untrusted</script>" });
+  const markup = renderToStaticMarkup(<SavedCorrectionAudit context={context(selection(), { facts: [fact] })} onOpenSource={() => {}} />);
+  assert.match(markup, /&lt;img/);
+  assert.match(markup, /&lt;script&gt;/);
+  assert.doesNotMatch(markup, /<img|<script/);
+});
+
+test("application audit attribution requires the exact v12 contract and correction-only citations", () => {
+  const fact = correctionFact();
+  const savedContext = context(); savedContext.facts.push(fact);
+  const saved = report(savedContext);
+  saved.provenance.promptVersion = "gemma-evidence-v12";
+  const summary = { text: AUDIT_PRESERVATION_TEXT, factIds: [fact.factId], metricIds: [] as string[] };
+  saved.output!.interpretations.push(summary);
+  assert.equal(isApplicationAuditSummary(saved, summary), true);
+  assert.match(renderToStaticMarkup(<AnalysisReportView report={saved} stale={false} onOpenSource={() => {}} />), /Application audit summary/);
+  assert.equal(isApplicationAuditSummary(saved, { ...summary, text: "The destination changed from unverified to correct." }), false);
+  assert.equal(isApplicationAuditSummary(saved, { ...summary, metricIds: ["cycles"] }), false);
+  assert.equal(isApplicationAuditSummary(saved, { ...summary, factIds: [fact.factId, "failed-attempt"] }), false);
+  assert.equal(isApplicationAuditSummary(saved, { ...summary, factIds: ["unknown-correction"] }), false);
+  saved.provenance.promptVersion = "gemma-evidence-v11";
+  assert.equal(isApplicationAuditSummary(saved, summary), false);
+  assert.doesNotMatch(renderToStaticMarkup(<AnalysisReportView report={saved} stale={false} onOpenSource={() => {}} />), /Application audit summary/);
+  assert.equal(saved.output!.interpretations.at(-1)!.text, AUDIT_PRESERVATION_TEXT);
 });
 
 test("nested backend metrics render checked population and bounded timing samples readably", () => {

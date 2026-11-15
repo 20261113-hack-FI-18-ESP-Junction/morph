@@ -1,0 +1,47 @@
+✔ selection, refresh, disconnect and reconnect only read saved evidence (1.081959ms)
+✔ no selected data produces no request (0.091417ms)
+✔ double action creates one request and polls only the persisted report (25.427667ms)
+✔ late context response cannot cross a source or session change (0.562708ms)
+✔ late inference response stays detached after navigation (0.164667ms)
+✔ transport retry after reconnect reuses the exact request and immutable digest (0.197333ms)
+✔ correction marks an old report stale while preserving its cited revision (0.13775ms)
+✔ replay reads only reports matching its previously captured context and never creates (0.111542ms)
+✔ provider failure preserves deterministic facts and needs a new explicit action (0.134625ms)
+✔ unexpected context scope is rejected before it can become the selection facts (0.092291ms)
+✔ comparison sends explicit ordered roles and keeps insufficient metadata visible (13.426042ms)
+✔ fact cards retain cycle and attempt denominators, recovery and first-pass counts (0.968ms)
+✔ model prose renders as text, source links come from supplied records, provenance is measured (0.807417ms)
+✔ rejected or unknown citations never render the model explanation (0.325166ms)
+✔ client uses same-origin exact routes, explicit intent header and no frontend credential (8.527417ms)
+✔ client preserves sanitized source-conflict and authorization error distinctions (0.394167ms)
+✔ a pending request survives unmount and reload without generating during recovery (0.2255ms)
+✔ explicit abandonment clears a pending request and malformed stored requests are ignored (0.136125ms)
+✔ comparison responses with reversed roles or a different specification are detached (0.093208ms)
+✔ empty finished denominators do not submit a provider job (0.069917ms)
+✔ citation detail shows saved revision and audit notes without treating text as instructions (0.724ms)
+✔ saved audit preserves null and typed before/after values without merging different field changes (0.628083ms)
+✔ missing or malformed audit fields remain generic evidence instead of becoming a null transition (0.675833ms)
+✔ stale rejected reports retain their captured audit values while current facts change (0.968083ms)
+✔ correction citations cannot attach a transition to a different cycle or session (0.777417ms)
+✔ saved audit values render as literal text and never as executable markup (0.569041ms)
+✔ application audit attribution requires the exact v12 contract and correction-only citations (1.114833ms)
+✔ nested backend metrics render checked population and bounded timing samples readably (0.478583ms)
+✔ a context captured after the frozen snapshot watermark is never reused as historical evidence (0.098291ms)
+✔ a correction marks the retained report stale before the refreshed facts arrive (0.096584ms)
+✔ a failed refresh keeps saved evidence readable but blocks new jobs until a healthy refresh (0.158167ms)
+✔ storage warnings retain healthy reports while blocking both fresh and unconfirmed submissions (0.092958ms)
+✔ a failed final report save blocks another job even when the HTTP response was successful (0.061625ms)
+✔ malformed saved replies cannot crash rendering or hide the healthy report list (0.403916ms)
+✔ malformed contexts and submitted reports fail before becoming renderable evidence (0.290208ms)
+✔ questions persist independently across kinds, role order, sessions and browser-store failures (0.129792ms)
+✔ measured latency is readable without changing saved numeric values (0.331708ms)
+✔ an API deadline covers both stalled headers and a stalled response body (11.579ms)
+✔ a timed-out submission retains its identity and never automatically retries (0.217834ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 331.93725
