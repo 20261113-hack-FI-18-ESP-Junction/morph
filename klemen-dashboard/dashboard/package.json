@@ -5,14 +5,19 @@
   "type": "module",
   "scripts": {
     "dev": "tsx server.ts",
+    "demo": "python3 ../tools/run_local_demo.py",
+    "demo:all": "python3 ../tools/run_station.py demo",
+    "demo:check": "tsx tools/checkLocalDemo.ts",
+    "station:check": "python3 ../tools/check_station.py",
     "start": "NODE_ENV=production tsx server.ts",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "tsx --test src/services/m06Projection.test.ts src/services/history.test.ts server/stationProxy.mac-baseline.test.ts server/stationProxy.mcp.test.ts server/mcpStationTransport.test.ts src/analysis/analysis.test.tsx",
+    "test": "tsx --test src/services/m06Projection.test.ts src/services/history.test.ts src/services/stationClient.test.ts server/stationProxy.mac-baseline.test.ts server/stationProxy.mcp.test.ts server/mcpStationTransport.test.ts src/analysis/analysis.test.tsx server/mediaGateway.test.ts src/media/media.test.ts",
     "clean": "rm -rf dist server.js",
     "lint": "tsc --noEmit",
     "typecheck": "tsc --noEmit",
-    "test:prototype": "tsx --test src/domain/stationLogic.test.ts"
+    "test:prototype": "tsx --test src/domain/stationLogic.test.ts",
+    "test:media": "tsx --test server/mediaGateway.test.ts src/media/media.test.ts"
   },
   "dependencies": {
     "@morph/station-client": "file:../station-client",
