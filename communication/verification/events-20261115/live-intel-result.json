@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-15T05:25:22.701718+00:00",
+  "finishedAt": "2026-11-15T05:26:00.366978+00:00",
+  "scope": "Actual Mac MCP to Intel GET-only worker to authoritative main8000; returned station data is simulation",
+  "stationId": "intel-main",
+  "readinessNoteId": "adc281c6-ce64-4230-ae91-a9a015cfa8d1",
+  "readinessNoteSha256": "dc2ad4cf9c2761347ce0bd28027b22ebff08181028d40c8e3cd142fdc8606084",
+  "reportedWorker": {
+    "pid": 417036,
+    "startedAt": "2026-11-15T05:22:25.040000+00:00",
+    "sha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+    "mode": "GET-only"
+  },
+  "checks": [
+    {
+      "label": "schema",
+      "path": "/api/v1/schema",
+      "query": {},
+      "requestId": "ff245cde-c17c-4134-95fe-8b6746c060f0",
+      "enqueuedAt": "2026-11-15T05:25:22.701746+00:00",
+      "queued": {
+        "request_id": "ff245cde-c17c-4134-95fe-8b6746c060f0",
+        "state": "queued",
+        "expires_at": "2026-11-15T05:25:52.709165+00:00"
+      },
+      "receivedAt": "2026-11-15T05:25:25.802600+00:00",
+      "state": "ready",
+      "metadata": {
+        "request_id": "ff245cde-c17c-4134-95fe-8b6746c060f0",
+        "state": "ready",
+        "expires_at": "2026-11-15T05:25:52.709165+00:00",
+        "captured_at": "2026-11-15T05:25:25.544515+00:00",
+        "content_type": "application/json",
+        "response_sha256": "7a8178404374f5e98631e875dcabe6e509220537d1b5fe604b6a0aef28a7b417",
+        "status_code": 200,
+        "completed_at": "2026-11-15T05:25:25.584309+00:00"
+      },
+      "bytes": 29062,
+      "pages": 1,
+      "exactHashVerified": true,
+      "responseKeys": [
+        "envelopes",
+        "records",
+        "responses",
+        "schemaVersion"
+      ],
+      "responseType": "dict"
+    },
+    {
+      "label": "snapshot",
+      "path": "/api/v1/station/snapshot",
+      "query": {},
+      "requestId": "8acb9061-8847-4343-818a-03da09e9c333",
+      "enqueuedAt": "2026-11-15T05:25:25.804205+00:00",
+      "queued": {
+        "request_id": "8acb9061-8847-4343-818a-03da09e9c333",
+        "state": "queued",
+        "expires_at": "2026-11-15T05:25:55.810764+00:00"
+      },
+      "receivedAt": "2026-11-15T05:25:27.883649+00:00",
+      "state": "ready",
+      "metadata": {
+        "request_id": "8acb9061-8847-4343-818a-03da09e9c333",
+        "state": "ready",
+        "expires_at": "2026-11-15T05:25:55.810764+00:00",
+        "captured_at": "2026-11-15T05:25:27.758238+00:00",
+        "content_type": "application/json",
+        "response_sha256": "e378f097297793dc98a43cc35b71fbd48c3019b404d41db057de02bc0368c632",
+        "status_code": 200,
+        "completed_at": "2026-11-15T05:25:27.752657+00:00"
+      },
+      "bytes": 2919,
+      "pages": 1,
+      "exactHashVerified": true,
+      "responseKeys": [
+        "activeCycleIds",
+        "availableActions",
+        "capabilities",
+        "cycle",
+        "generatedAt",
+        "goal",
+        "goalVersion",
+        "lastEventSequence",
+        "metrics",
+        "schemaVersion",
+        "session",
+        "sourceMode",
+        "stateVersion"
+      ],
+      "responseType": "dict",
+      "snapshotSummary": {
+        "schemaVersion": 1,
+        "sourceMode": "simulation",
+        "stateVersion": 50,
+        "goalVersion": null,
+        "goal": null,
+        "availableActions": [],
+        "capabilities": {
+          "robot": {
+            "status": "unavailable",
+            "verified": false
+          },
+          "cameras": {
+            "status": "unavailable",
+            "verified": false
+          },
+          "anomalib": {
+            "status": "unavailable",
+            "verified": false
+          },
+          "nemotron": {
+            "status": "unavailable",
+            "verified": false
+          },
+          "gemini": {
+            "status": "unavailable",
+            "verified": false
+          },
+          "elevenlabs": {
+            "status": "unavailable",
+            "verified": false
+          }
+        }
+      }
+    },
+    {
+      "label": "sessions",
+      "path": "/api/v1/sessions",
+      "query": {},
+      "requestId": "bd1c6338-ffd1-44a3-8aae-99380d39829d",
+      "enqueuedAt": "2026-11-15T05:25:58.819481+00:00",
+      "queued": {
+        "request_id": "bd1c6338-ffd1-44a3-8aae-99380d39829d",
+        "state": "queued",
+        "expires_at": "2026-11-15T05:26:28.825124+00:00"
+      },
+      "receivedAt": "2026-11-15T05:26:00.365998+00:00",
+      "state": "ready",
+      "metadata": {
+        "request_id": "bd1c6338-ffd1-44a3-8aae-99380d39829d",
+        "state": "ready",
+        "expires_at": "2026-11-15T05:26:28.825124+00:00",
+        "captured_at": "2026-11-15T05:25:59.930431+00:00",
+        "content_type": "application/json",
+        "response_sha256": "4e301104a266377b3fedf22a517caab9dff30cc52090ed5c6c5d45135c0c87d5",
+        "status_code": 200,
+        "completed_at": "2026-11-15T05:25:59.916533+00:00"
+      },
+      "bytes": 225,
+      "pages": 1,
+      "exactHashVerified": true,
+      "responseKeys": [],
+      "responseType": "list"
+    }
+  ],
+  "exactHashesIndependentlyRecomputed": true,
+  "allThreeReadsPassed": true,
+  "probeCorrection": {
+    "initialQuery": {
+      "path": "/api/v1/sessions",
+      "query": {
+        "limit": "1"
+      }
+    },
+    "result": "Rejected before enqueueing: unsupported query parameter; first harness invocation exited1 after two successful reads",
+    "correction": "Removed diagnostic-only limit; reran only the sessions read using the existing empty-query allowlist. Application checks and worker source unchanged."
+  },
+  "sourceMode": "simulation",
+  "sessionListCount": 1,
+  "intelEventReceiver": "not started; Intel reports Codex not logged in",
+  "dashboardApi": "Intel reports404 on main8000 at05:24UTC; separate implementation is in progress, not tested by these three reads",
+  "applicationWrites": false,
+  "providerCall": false,
+  "physicalTest": false,
+  "tunnelChanged": false
+}

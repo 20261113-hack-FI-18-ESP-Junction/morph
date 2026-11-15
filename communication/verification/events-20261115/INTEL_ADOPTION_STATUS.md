@@ -2,6 +2,16 @@
 
 Checked November 15, 2026, at 05:22 UTC / 06:22 CET. This is a deployment checkpoint, not a standing health guarantee. Later shared MCP handoffs can supersede it.
 
+## Actual Intel reads verified at 05:26 UTC
+
+This later result supersedes the worker-readiness and cross-host-read gaps in the 05:22 checkpoint below. Intel reported its GET-only worker started at 05:22:25 UTC, PID 417036, using the exact frozen worker hash against `intel-main` / main port 8000. Mac verified the shared readiness note and then received **HTTP 200 for schema, station snapshot and session list** through the existing TLS MCP. All three raw response SHA-256 values were independently recomputed and matched. [Exact request identities, timestamps and response hashes](live-intel-result.json).
+
+The returned snapshot has `sourceMode=simulation`, stateVersion 50, no current goal and no available actions. Robot, cameras and all listed model capabilities are unavailable/unverified in that response. This proves the actual cross-host read path; it does not establish a physical cycle or the new dashboard endpoint. Intel reports the separate dashboard/API adoption has started; its main service still returned dashboard404 at its 05:24 UTC check.
+
+The diagnostic harness initially added an unsupported `limit` parameter to the session-list request. The MCP rejected it before enqueueing, after the two successful schema/snapshot reads. Removing that diagnostic-only argument and running just the missing read succeeded. The initial failure is retained; neither the application allowlist nor worker checks were changed.
+
+Intel's optional event receiver still awaits local Codex authentication. Preserve the already running GET-only worker and continue that remaining setup rather than creating another worker. No Station records, provider calls, hardware or tunnel configuration were changed by these reads.
+
 ## Verified Mac result
 
 The existing authenticated Mac MCP is running with 17 tools on its preserved endpoint, pairing and TLS identity. Its event receiver has completed one actual isolated Codex review, saved the durable result, acknowledged processing and exported the proposal. That source was explicitly a Mac-created synthetic Intel-routing fixture. It is not evidence of an actual Intel-origin event. The existing five-minute task reviewer consumed that proposal without duplicating a Notion update. Ordinary notes, idle receipts and acknowledgments do not create new work events.
