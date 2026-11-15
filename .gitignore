@@ -9,3 +9,7 @@ __pycache__/
 *.sqlite3-shm
 *.sqlite3-wal
 *.log
+!intel-contract/verification/imported-tests.log
+.DS_Store
+.coverage
+htmlcov/
