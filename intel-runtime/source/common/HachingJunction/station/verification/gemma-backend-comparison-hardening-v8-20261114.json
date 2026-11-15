@@ -1,0 +1,49 @@
+{
+  "recordedAt": "2026-11-14T21:44:28.778561+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "f191d039-8f71-48ba-bb6a-91e15bd096c6",
+  "scope": "M20 isolated analyst backend/API, M21 actual semantic-error regression, M23 transparent historical evaluation, M24 saved demonstration review; original task dependencies and physical acceptance remain open.",
+  "promptVersion": "gemma-evidence-v8",
+  "contextVersion": "morph-evidence-v5",
+  "contractVersion": "gemma-brief-v1",
+  "testCommand": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python -B -m pytest station/tests -q",
+  "result": {
+    "passed": 131,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Existing Starlette TestClient httpx deprecation.",
+    "pytestSeconds": 2.0,
+    "analysisFocusedPassed": 59
+  },
+  "changesSince123TestEvidence": [
+    "Every projected fact preserves sourceSessionId alongside kind, entity identity and revision; immutable full context stays version v5.",
+    "Unknown or incompatible comparison requests ask only for one cited metadata-gap interpretation, empty metricIds, no cycle outcome or recovery narrative. Compatible requests retain descriptive comparison instructions.",
+    "Actual v6 missing-reference response is retained as a new fixture and now rejected as known_coverage_misstated: checked zero and known total establish coverage; accuracy remains undefined.",
+    "Narrow wording tests retain valid zero/incomplete coverage and unavailable accuracy. This guard does not claim general semantic entailment."
+  ],
+  "sourceHashes": {
+    "station/morph_station/analysis.py": "6b74837fc7c1c3132c9a2b28ee05c2b64d13b6976bdbfafdf0c743f943ac0d9a",
+    "station/morph_station/analysis_models.py": "ca37be19e892ed776811fb2e971900f11664d4b105c2163fdb709be42fca8956",
+    "station/morph_station/analysis_context.py": "70cee228151594d07ecc16b381b073f55d45d81a208a498838d6d6cfff8ad6b8",
+    "station/morph_station/analysis_provider.py": "00e7504e744d7a3a6d7ca21091f2b91b2286619609855bd5f9b0de6b3f153989",
+    "station/morph_station/api.py": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+    "station/morph_station/store.py": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "station/tests/test_analysis.py": "ee8bd16732259251d04db175fa19abc10316aaa2a242dfe078652ad4a94af57e",
+    "station/tests/fixtures/gemma-v5-semantic-regressions.json": "ca018563e387990520907b74210c5a725a2bfcf5c7ea51d614e91b388b96dc1b",
+    "station/tests/fixtures/gemma-v6-known-coverage-regression.json": "1c0a7ac8c5e5741a07b132e172ce0e41b8230864dddcbcf85c650e78c2b3c9b4",
+    "station/ANALYST.md": "2f04176b78a32ca9f9e0015f5f68adfdc96ef91b5ba9d95b57eefc6c57f89fb9"
+  },
+  "historicalEvaluation": {
+    "v6SevenCases": "Six ready and one rejected; accepted prose 43/49 supported, five ambiguous and one unsupported. Historical scores are not changed by the new guard.",
+    "v7BrowserG1": "9/10 supported, one ambiguous headline, four of five required metric IDs cited; useful with exact application-owned tables and recorded simulation caveats.",
+    "v7G2": "Rejected unsupported_recovery_claim; underlying descriptive values supported but required recovery citation absent and metadata-only question not answered."
+  },
+  "verificationBoundary": "All local regressions use isolated stores, fake transport or captured hosted replies. Parent session owns and records any new actual v8 hosted check.",
+  "physicalStatus": "No robot I/O, calibration change, credential access or service restart by this delegated agent.",
+  "reporting": {
+    "reporter": "/root/gemma_shared",
+    "priorHardeningReceipt": "adb3bf40-1237-4b2e-802b-0dda86919697",
+    "v7ReviewReceipt": "3eb23c10-22ff-4909-ae9f-f249776a9c2c",
+    "thisContributionDelivery": "Pending publication by designated reporter at file creation."
+  }
+}

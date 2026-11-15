@@ -1,0 +1,46 @@
+{
+  "recordedAt": "2026-11-14T21:22:27.596482+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "f191d039-8f71-48ba-bb6a-91e15bd096c6",
+  "scope": "Approved isolated M20 analyst backend/API plus M21 regressions; full task and physical acceptance remain open.",
+  "promptVersion": "gemma-evidence-v5",
+  "contextVersion": "morph-evidence-v4",
+  "contractVersion": "gemma-brief-v1",
+  "command": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python -B -m pytest station/tests -q",
+  "result": {
+    "passed": 116,
+    "failed": 0,
+    "warnings": 1,
+    "testTimeSeconds": 1.87,
+    "warning": "Pre-existing Starlette TestClient httpx deprecation; no dependency changes made."
+  },
+  "covered": [
+    "Recovered cycle/attempt denominators and immutable late-confirmation audit",
+    "Exact cited record fields at captured revisions",
+    "Correction freshness, same-ID idempotency and equivalent-success cache",
+    "Crash recovery and interrupted jobs without implicit retries",
+    "Single worker, bounded queue and cancellation on shutdown",
+    "Authenticated API, unknown fields and invalid source modes",
+    "No eligible finished records produce no report/provider call",
+    "Comparison role/source checks and reviewed metadata eligibility",
+    "Whole-population metric arithmetic before session/outcome/recovery sampling",
+    "Strict hostile reply/citation/numeric/markup/schema/transport rejections",
+    "Mocked HTTP redirects, response-size cap, total deadline and sanitized failure request evidence"
+  ],
+  "limitations": [
+    "Tests use isolated simulation and mocked providers; actual hosted reply evaluation belongs to the parent session and is recorded separately.",
+    "Citation/schema checks do not establish semantic entailment or usefulness.",
+    "Current saved comparison metadata remains unknown; no physical acceptance is claimed.",
+    "No hardware I/O, credential reads, live provider calls or service restarts were performed by this backend agent."
+  ],
+  "sourceHashes": {
+    "station/morph_station/analysis.py": "6b74837fc7c1c3132c9a2b28ee05c2b64d13b6976bdbfafdf0c743f943ac0d9a",
+    "station/morph_station/analysis_models.py": "9ee089c2c76bfdaa7db73fa67eb3aea6d0dc9c424a12237bc9d60296e3a33e69",
+    "station/morph_station/analysis_context.py": "d2054661ce1de5ec4d339f58d4db2bce29a8937770bbdcff7589bd5cfbcd35b1",
+    "station/morph_station/analysis_provider.py": "869b51ec480a7f0a0ef7eec129ee491aece03ab979576a3fed90785f43583915",
+    "station/morph_station/api.py": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+    "station/morph_station/store.py": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "station/tests/test_analysis.py": "bfbbafd8cbc3c5453b01668ad2a1e68bb401a5a5280f206cc0a9beecf810798f",
+    "station/ANALYST.md": "bea5422a88db147cfbbe3cf7dbe86d57056bf545265e4a63796950d4289742a8"
+  }
+}

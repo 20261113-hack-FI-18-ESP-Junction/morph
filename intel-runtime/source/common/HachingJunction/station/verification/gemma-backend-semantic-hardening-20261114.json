@@ -1,0 +1,40 @@
+{
+  "recordedAt": "2026-11-14T21:33:00.200258+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "f191d039-8f71-48ba-bb6a-91e15bd096c6",
+  "scope": "M20 isolated analyst backend/API and M21 semantic/transport/lifecycle regression hardening; original full task and physical acceptance remain open.",
+  "promptVersion": "gemma-evidence-v7",
+  "contextVersion": "morph-evidence-v5",
+  "contractVersion": "gemma-brief-v1",
+  "testCommand": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python -B -m pytest station/tests -q",
+  "result": {
+    "passed": 123,
+    "failed": 0,
+    "warnings": 1,
+    "warning": "Existing Starlette TestClient httpx deprecation."
+  },
+  "changesSinceInitial116TestEvidence": [
+    "Backend evidence flags distinguish actual corrections, late recorded confirmations, retained failed attempts and canonical recovery from ordinary lifecycle revisions.",
+    "Ratio/count units are explicit; event language requires supporting flags and citations, and the observed ratio-versus-count semantic error is rejected.",
+    "Five actual previously structurally accepted but semantically inadequate v5 replies are regression fixtures and now fail validation.",
+    "Compact cloud projection retains exact values, typed metrics, source kind/entity/revision, gaps and sampling; complete source maps remain in persisted context.",
+    "The v6 hosted recovery used 4141 actual input tokens compared with 11617 before projection; v7 adds sourceEntityId without changing policy or validation."
+  ],
+  "sourceHashes": {
+    "station/morph_station/analysis.py": "6b74837fc7c1c3132c9a2b28ee05c2b64d13b6976bdbfafdf0c743f943ac0d9a",
+    "station/morph_station/analysis_models.py": "125eff2537a2ae479ecb5095a850a627317bdc87b4ec6d5ad562fedf713834a5",
+    "station/morph_station/analysis_context.py": "70cee228151594d07ecc16b381b073f55d45d81a208a498838d6d6cfff8ad6b8",
+    "station/morph_station/analysis_provider.py": "de23d21675a374d7856611809cbcd7874b6418bcad1e046cff8d3f8321edebbd",
+    "station/morph_station/api.py": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+    "station/morph_station/store.py": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "station/tests/test_analysis.py": "01b3f720d793fd018c9526cf860a521d5ddd65e72c41acf07f4ccb93a7663e11",
+    "station/tests/fixtures/gemma-v5-semantic-regressions.json": "ca018563e387990520907b74210c5a725a2bfcf5c7ea51d614e91b388b96dc1b",
+    "station/ANALYST.md": "e7f8259436dd8deb335791798240e36d8dc06301491025f3ce6750d7938ffb8a"
+  },
+  "verificationBoundary": "Tests use isolated data or saved actual replies, with no new provider or hardware call. Parent session performs live hosted and browser evaluation.",
+  "semanticReviewEvidence": {
+    "v5Recovery": "../verification/intel-gemma-20261114/runs/hosted-02/semantic-review-recovery.json:6/8 supported,1ambiguous,1unsupported; needs revision",
+    "v6Recovery": "../verification/intel-gemma-20261114/runs/hosted-03/semantic-review-recovery.json:9/10 supported,1ambiguous,0unsupported; useful with documented wording caveat"
+  },
+  "physicalStatus": "No robot I/O, credentials read, service restart or physical acceptance by this agent."
+}
