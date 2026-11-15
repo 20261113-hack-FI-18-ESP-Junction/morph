@@ -1,0 +1,234 @@
+{
+  "completedAt": "2026-11-15T07:30:20.222078+00:00",
+  "agent": "/root/adoption_receiver_review",
+  "designatedReporter": "/root",
+  "requestId": "d7e7aa66-1470-4587-a2f9-5a37dadc7da6",
+  "relatedDashboardRequestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "status": "complete_source_review_and_isolated_tests_passed",
+  "receivedFiles": 60,
+  "payloadBytes": 679156,
+  "checkedReadPages": 77,
+  "activeSourceAdoption": "not_performed",
+  "mediaDeployment": "not_performed",
+  "physicalVerification": false,
+  "tests": {
+    "run": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "testInterpreter": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/test-env/bin/python",
+  "activeStationDependencies": {
+    "Pillow": null,
+    "websockets": null,
+    "recheckedAfterTests": true
+  },
+  "reviewEnvironmentDependencies": {
+    "Pillow": "13.0.0",
+    "websockets": "17.4"
+  },
+  "networkAudit": {
+    "loopbackBinds": 4,
+    "loopbackConnects": 10,
+    "inertChildStarts": 2
+  },
+  "testTemporaryFilesRemaining": [],
+  "allOriginalPayloadHashesUnchanged": true,
+  "macOffline07All18SourcePinsMatch": true,
+  "macDashboardSourceEvidenceComparison": [
+    {
+      "path": "LIVE_VIDEO.md",
+      "expected": "4bffe6c220468e9733ea33535f0f4f07dffbabb35fc2127d41032c998a771bd8",
+      "actual": "4bffe6c220468e9733ea33535f0f4f07dffbabb35fc2127d41032c998a771bd8",
+      "status": "matches"
+    },
+    {
+      "path": "LOCAL_DEMO.md",
+      "expected": "4a5c0836ea37d398f1a9025a986c1cad0e837a0ad16d3470cacc6efcfbf7fb6b",
+      "actual": "4a5c0836ea37d398f1a9025a986c1cad0e837a0ad16d3470cacc6efcfbf7fb6b",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/package.json",
+      "expected": "002e3de09e05f52728c407627f547c9b885ef0d5ec31745a79ff9eb1ac7b3065",
+      "actual": "002e3de09e05f52728c407627f547c9b885ef0d5ec31745a79ff9eb1ac7b3065",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/server.ts",
+      "expected": "5656d22122152e3faa37f9eededb861ac4dd79989607303a5a6ebd5f3c8d512e",
+      "actual": "5656d22122152e3faa37f9eededb861ac4dd79989607303a5a6ebd5f3c8d512e",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/server/mediaGateway.test.ts",
+      "expected": "5b769ac080bcd165121f6d29c3277fd619d9a8f0fe107af3ae64054801f535e0",
+      "actual": null,
+      "status": "absent_from_selected_manifest"
+    },
+    {
+      "path": "dashboard/server/mediaGateway.ts",
+      "expected": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef",
+      "actual": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/components/LiveInspectionView.tsx",
+      "expected": "1521562dd44c8be853143a5e99fdae1719659121c7f307469e55d4b94ed697c2",
+      "actual": "1521562dd44c8be853143a5e99fdae1719659121c7f307469e55d4b94ed697c2",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/components/LiveVideoPanel.css",
+      "expected": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940",
+      "actual": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/components/LiveVideoPanel.tsx",
+      "expected": "a89fced433bddfd24d69775737fa3b0817931778e68cf73f926f434b6cd69115",
+      "actual": "a89fced433bddfd24d69775737fa3b0817931778e68cf73f926f434b6cd69115",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/media/client.ts",
+      "expected": "c4e578eaab14f858fd34bf3c38c2d715d4b5138a01b47ab44679df6428381823",
+      "actual": "c4e578eaab14f858fd34bf3c38c2d715d4b5138a01b47ab44679df6428381823",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/media/frameObserver.ts",
+      "expected": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7",
+      "actual": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/media/media.test.ts",
+      "expected": "5208a8763018fa8b078af56856a11d26fe7ddcbcf4ed130d0b644011e69879a5",
+      "actual": null,
+      "status": "absent_from_selected_manifest"
+    },
+    {
+      "path": "dashboard/src/media/stats.ts",
+      "expected": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b",
+      "actual": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/src/media/types.ts",
+      "expected": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c",
+      "actual": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c",
+      "status": "matches"
+    },
+    {
+      "path": "dashboard/tools/demoServer.ts",
+      "expected": "0bd233afe2b553e6360a911f56d15f56dd50e4164a856b7ca1a8d33e471aa2f2",
+      "actual": "0bd233afe2b553e6360a911f56d15f56dd50e4164a856b7ca1a8d33e471aa2f2",
+      "status": "matches"
+    },
+    {
+      "path": "tools/prepare_demo_media.py",
+      "expected": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128",
+      "actual": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128",
+      "status": "matches"
+    },
+    {
+      "path": "tools/run_local_demo.py",
+      "expected": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc",
+      "actual": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc",
+      "status": "matches"
+    }
+  ],
+  "macBrowserEvidenceArithmetic": {
+    "classification": "recalculated_from_received_Mac_synthetic_endpoint_records",
+    "framesDelta": 4466,
+    "intervalSeconds": 148.846,
+    "averageFramesPerSecond": 30.004165378982304,
+    "droppedFramesDelta": 0,
+    "intelBrowserRun": false
+  },
+  "blockers": [
+    "Active target bridge environment/dependencies and Intel software encoder/MediaMTX have not been selected or verified. The isolated test environment does not deploy them.",
+    "Exact current Studio capture owner, camera configuration and profile must be supplied and verified before connection.",
+    "Jose and the current owner must coordinate source adoption, runtime ownership and authenticated HTTPS signaling plus reachable WebRTC media candidates.",
+    "Real source/receiver/resource/multiple-viewer/reconnect acceptance and ten-minute optical p50/p95 latency remain unmeasured.",
+    "Selected Mac reference files omit both original media test modules and broader project dependencies;111 Mac tests were not rerun here."
+  ],
+  "ownerConstraints": [
+    "No automatic Intel receiver restart or login;06:18UTC revocation remains in force.",
+    "Owner arm diagnostics remain ongoing;no hardware access by this task.",
+    "Existing applications and GET-only worker unchanged."
+  ],
+  "watcherReadObservation": {
+    "lastSuccess": "2026-11-15T07:20:21.057970+00:00",
+    "lastAttempt": "2026-11-15T07:24:03.877126+00:00",
+    "lastError": "CycleTimeout",
+    "scope": "Dated passive file read only;root owns current diagnosis."
+  },
+  "todoPreservedSHA256": "fb1cee5b2aca12691bc67b3a610938b8e020d923c7f0ce19216a3578cdc546fc",
+  "macDelivery": "pending_designated_parent_verified_publication",
+  "notionUpdatesByThisAgent": false,
+  "artifactManifest": [
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/READINESS.md",
+      "bytes": 12469,
+      "sha256": "80885c027be4915e60c68efeaf1dfb02916278e29dc63b465f4254c3af3c69f7"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/source-inventory.json",
+      "bytes": 79834,
+      "sha256": "e181e61acc9dd934285243937c0c9264f85de3b8de17836ed9b8270ef56feb82"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/package-verification.json",
+      "bytes": 98897,
+      "sha256": "55bb46ab152b30b302a790e404d8536485c40feae91d1c8894e2653067167f5b"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/bridge-test-result.json",
+      "bytes": 6073,
+      "sha256": "4b1387b00dea3bd3067f458a06d55dff13abefa61b23dd2e7d8025eac7249c2a"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/bridge-tests.xml",
+      "bytes": 3685,
+      "sha256": "e86d02db2588e737d75064a1473d6301d951d984dc0326ddd06fc8458aca8435"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/bridge-tests.log",
+      "bytes": 3365,
+      "sha256": "c9e81c0729750de4bad92a03b540f3a4b7eb5835899978979737724e36a4778a"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/fetch_package.py",
+      "bytes": 8957,
+      "sha256": "22e485e710f78615403001914229b4a2ede6abd1e494e8023cffd6748eee55c3"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/review_wheels.py",
+      "bytes": 4422,
+      "sha256": "17db641093e1368b6386b54362050d627c3ff831cf2220aea216e04089707aec"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/run_isolated_tests.py",
+      "bytes": 6633,
+      "sha256": "b43001548f345bb832dd6db28acec292c4d4fc7e384611a8111ca304f8916fee"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/wheel-review.json",
+      "bytes": 3906,
+      "sha256": "5023040863647aa6dc6eab4c1f8fe32aa132aaa42a3b02b11b6b878ee4f4a494"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/dependency-install.json",
+      "bytes": 18270,
+      "sha256": "9bc9be6dc6b9d2750b94bd17036f9366cbada2dcb5d901e41e536855a0a2b031"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/dependency-install.log",
+      "bytes": 3125,
+      "sha256": "dd91967565e5510ae7a19e6d8295c6f85f71a05b5bbb2454bded1d6d0eca1c62"
+    }
+  ]
+}

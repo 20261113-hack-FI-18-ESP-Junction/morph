@@ -1,0 +1,107 @@
+{
+  "status": "wheel_metadata_and_record_hashes_reviewed",
+  "observedAt": "2026-11-15T07:25:46.932890+00:00",
+  "downloadOnly": true,
+  "exactPinnedRequirements": {
+    "websockets": "17.4",
+    "pillow": "13.0.0"
+  },
+  "wheels": [
+    {
+      "file": "pillow-13.0.0-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+      "sha256": "42d63be3af4f9b951b199b0a9d23365d37ab14687e6d77b74940432c8515c4ca",
+      "bytes": 7144542,
+      "name": "pillow",
+      "version": "13.0.0",
+      "requiresPython": ">=3.11",
+      "requiresDist": [
+        "furo; extra == \"docs\"",
+        "olefile; extra == \"docs\"",
+        "sphinx>=8.2; extra == \"docs\"",
+        "sphinx-autobuild; extra == \"docs\"",
+        "sphinx-copybutton; extra == \"docs\"",
+        "sphinx-inline-tabs; extra == \"docs\"",
+        "sphinxext-opengraph; extra == \"docs\"",
+        "olefile; extra == \"fpx\"",
+        "olefile; extra == \"mic\"",
+        "arro3-compute; extra == \"test-arrow\"",
+        "arro3-core; extra == \"test-arrow\"",
+        "nanoarrow; extra == \"test-arrow\"",
+        "pyarrow; extra == \"test-arrow\"",
+        "coverage>=7.4.2; extra == \"tests\"",
+        "defusedxml; extra == \"tests\"",
+        "markdown2; extra == \"tests\"",
+        "olefile; extra == \"tests\"",
+        "packaging; extra == \"tests\"",
+        "psutil; (sys_platform == \"linux\" or sys_platform == \"darwin\") and extra == \"tests\"",
+        "pytest; extra == \"tests\"",
+        "pytest-cov; extra == \"tests\"",
+        "pytest-timeout; extra == \"tests\"",
+        "pytest-xdist; extra == \"tests\"",
+        "setuptools; extra == \"tests\"",
+        "trove-classifiers>=2024.10.12; extra == \"tests\"",
+        "defusedxml; extra == \"xmp\""
+      ],
+      "wheelTags": [
+        "cp312-cp312-manylinux_2_27_x86_64",
+        "cp312-cp312-manylinux_2_28_x86_64"
+      ],
+      "wheelVersion": "1.0",
+      "buildBackendExecuted": false,
+      "recordFileHashesVerified": true,
+      "memberCount": 144,
+      "hashedFileCount": 138,
+      "emptyDirectoryEntries": [
+        "PIL/",
+        "pillow.libs/",
+        "pillow-13.0.0.dist-info/",
+        "pillow-13.0.0.dist-info/licenses/",
+        "pillow-13.0.0.dist-info/sboms/"
+      ],
+      "entryPoints": [],
+      "entryPointContent": {},
+      "entryPointsExecuted": false
+    },
+    {
+      "file": "websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+      "sha256": "9ae1429ee9e52b139167ed0169757806a27ed7307e942e8c62037a9184e9843b",
+      "bytes": 226321,
+      "name": "websockets",
+      "version": "17.4",
+      "requiresPython": ">=3.11",
+      "requiresDist": [],
+      "wheelTags": [
+        "cp312-cp312-manylinux_2_5_x86_64",
+        "cp312-cp312-manylinux1_x86_64",
+        "cp312-cp312-manylinux_2_28_x86_64"
+      ],
+      "wheelVersion": "1.0",
+      "buildBackendExecuted": false,
+      "recordFileHashesVerified": true,
+      "memberCount": 70,
+      "hashedFileCount": 61,
+      "emptyDirectoryEntries": [
+        "websockets/",
+        "websockets/asyncio/",
+        "websockets/extensions/",
+        "websockets/legacy/",
+        "websockets/sync/",
+        "websockets/trio/",
+        "websockets-17.4.dist-info/",
+        "websockets-17.4.dist-info/licenses/"
+      ],
+      "entryPoints": [
+        "websockets-17.4.dist-info/entry_points.txt"
+      ],
+      "entryPointContent": {
+        "websockets-17.4.dist-info/entry_points.txt": "[console_scripts]\nwebsockets = websockets.cli:main\n"
+      },
+      "entryPointsExecuted": false
+    }
+  ],
+  "priorReviewAttempt": {
+    "outcome": "review_script_assertion_before_installation",
+    "reason": "The first read-only check counted empty ZIP directory entries as RECORD files. Wheel RECORD lists files; this review checks every non-directory member and separately validates empty directories.",
+    "packageOrTestChanges": false
+  }
+}

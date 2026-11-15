@@ -1,0 +1,1836 @@
+{
+  "status": "all_package_files_received_and_hash_verified",
+  "startedAt": "2026-11-15T07:22:48.773080+00:00",
+  "completedAt": "2026-11-15T07:22:56.430323+00:00",
+  "agent": "/root/adoption_receiver_review",
+  "designatedReporter": "/root",
+  "requestId": "d7e7aa66-1470-4587-a2f9-5a37dadc7da6",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "manifestPath": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/MANIFEST.json",
+  "manifestSHA256": "56d265d92dda855578ea94468b46481ea5e9213ed0b7349b5b2455f1f9b2dc72",
+  "payloadFiles": 60,
+  "payloadBytes": 679156,
+  "roles": {
+    "intel-new-package": 30,
+    "mac-reference": 30
+  },
+  "allReadPages": 77,
+  "reviewOnly": true,
+  "activeSourceFilesChanged": [],
+  "servicesStarted": false,
+  "hardwareAccessed": false,
+  "providerCalls": 0,
+  "coordinationEventsCreated": 0,
+  "files": [
+    {
+      "path": "context/notes/d7e7aa66-1470-4587-a2f9-5a37dadc7da6.json",
+      "targetPath": null,
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/notes/d7e7aa66-1470-4587-a2f9-5a37dadc7da6.json",
+      "sha256": "623b8c971f2d6edfecefd2ad964793118554fc0c6f7e0c845b41133892ea9c97",
+      "bytes": 6806,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/notes/d7e7aa66-1470-4587-a2f9-5a37dadc7da6.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 6806,
+          "sha256": "623b8c971f2d6edfecefd2ad964793118554fc0c6f7e0c845b41133892ea9c97",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:50.741529+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": false,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/README.md",
+      "targetPath": null,
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/README.md",
+      "sha256": "b42883a6fa825f44b967e761a2401985ceee9380e41d62b3fdccb2980b3f3263",
+      "bytes": 4602,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/README.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 4601,
+          "sha256": "b42883a6fa825f44b967e761a2401985ceee9380e41d62b3fdccb2980b3f3263",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:50.912890+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": false,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/MANIFEST.json",
+      "targetPath": null,
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/MANIFEST.json",
+      "sha256": "56d265d92dda855578ea94468b46481ea5e9213ed0b7349b5b2455f1f9b2dc72",
+      "bytes": 24097,
+      "pageCount": 2,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/MANIFEST.json",
+          "offset": 0,
+          "next_offset": 24000,
+          "total_characters": 24097,
+          "sha256": "56d265d92dda855578ea94468b46481ea5e9213ed0b7349b5b2455f1f9b2dc72",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/MANIFEST.json",
+          "offset": 24000,
+          "next_offset": null,
+          "total_characters": 24097,
+          "sha256": "56d265d92dda855578ea94468b46481ea5e9213ed0b7349b5b2455f1f9b2dc72",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.079605+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": false,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/gitignore.txt",
+      "targetPath": "intel-runtime/media-bridge/.gitignore",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/gitignore.txt",
+      "sha256": "316461e660d85aeb8a58758527acdfb9b402ac441b030dfe98a9cab6c60d49de",
+      "bytes": 84,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/gitignore.txt",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 84,
+          "sha256": "316461e660d85aeb8a58758527acdfb9b402ac441b030dfe98a9cab6c60d49de",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.162770+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/README.md",
+      "targetPath": "intel-runtime/media-bridge/README.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/README.md",
+      "sha256": "262f984ff3b306e5c7bd01ec046ba00b76f9026f8b72e3986c0bf4dcdf811ec2",
+      "bytes": 20882,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/README.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 20865,
+          "sha256": "262f984ff3b306e5c7bd01ec046ba00b76f9026f8b72e3986c0bf4dcdf811ec2",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.207890+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/mediamtx-local.yml",
+      "targetPath": "intel-runtime/media-bridge/examples/mediamtx-local.yml",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/mediamtx-local.yml",
+      "sha256": "cebfaee2dd9865f89bd5b83fb6b2eabb34d9602b49f7e67959d1679c7aadbbe3",
+      "bytes": 993,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/mediamtx-local.yml",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 993,
+          "sha256": "cebfaee2dd9865f89bd5b83fb6b2eabb34d9602b49f7e67959d1679c7aadbbe3",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.234930+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/studio.json",
+      "targetPath": "intel-runtime/media-bridge/examples/studio.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/studio.json",
+      "sha256": "1ddacb0f815eead6358a53f9127844b12cbf6e90d86c149ae164014bd577e17d",
+      "bytes": 797,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/studio.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 797,
+          "sha256": "1ddacb0f815eead6358a53f9127844b12cbf6e90d86c149ae164014bd577e17d",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.264993+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/synthetic.json",
+      "targetPath": "intel-runtime/media-bridge/examples/synthetic.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/synthetic.json",
+      "sha256": "2142f4267688d83439989e07e86a54f604bfa800b7a5e459ee0bd7898078ec6b",
+      "bytes": 611,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/examples/synthetic.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 611,
+          "sha256": "2142f4267688d83439989e07e86a54f604bfa800b7a5e459ee0bd7898078ec6b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.305239+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+      "sha256": "73e61505373677432bd4b07e86856eb6bb7ebc95353fef4b851d75d14633b2bc",
+      "bytes": 99,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 99,
+          "sha256": "73e61505373677432bd4b07e86856eb6bb7ebc95353fef4b851d75d14633b2bc",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.426534+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+      "sha256": "6125f687251fb67f147fe3bec3f8e5ec8b855c6198f3e356de0cbd20d8c279c1",
+      "bytes": 6245,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 6245,
+          "sha256": "6125f687251fb67f147fe3bec3f8e5ec8b855c6198f3e356de0cbd20d8c279c1",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.516741+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/config.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/config.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/config.py",
+      "sha256": "64da2b5419925014744bd2520cd1327048615cf308ec5f3a856257800e2abbc0",
+      "bytes": 9232,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/config.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 9232,
+          "sha256": "64da2b5419925014744bd2520cd1327048615cf308ec5f3a856257800e2abbc0",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.556237+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/frames.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/frames.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/frames.py",
+      "sha256": "9a9f8ee32ef1b2afcb7946ce858ad8360fb8e328620af9e87bbe1a77ac997c75",
+      "bytes": 6865,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/frames.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 6865,
+          "sha256": "9a9f8ee32ef1b2afcb7946ce858ad8360fb8e328620af9e87bbe1a77ac997c75",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.623271+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+      "sha256": "93e0af504ee7f6a37861f9754b60e4da175600f15979425ea5db751a06243c3b",
+      "bytes": 3402,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3402,
+          "sha256": "93e0af504ee7f6a37861f9754b60e4da175600f15979425ea5db751a06243c3b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.676127+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+      "sha256": "ba7e0a28f8b557a9bbad332ef25b478bf92ee18758dbe8d11ee76a8660dc12d7",
+      "bytes": 10003,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 10003,
+          "sha256": "ba7e0a28f8b557a9bbad332ef25b478bf92ee18758dbe8d11ee76a8660dc12d7",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.741127+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/source.py",
+      "targetPath": "intel-runtime/media-bridge/morph_media_bridge/source.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/source.py",
+      "sha256": "d07e701db45269ed397e8d37bc73fe51caaa24e075128b8e6e9c0172da102982",
+      "bytes": 4115,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/morph_media_bridge/source.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 4115,
+          "sha256": "d07e701db45269ed397e8d37bc73fe51caaa24e075128b8e6e9c0172da102982",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.799918+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/requirements.txt",
+      "targetPath": "intel-runtime/media-bridge/requirements.txt",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/requirements.txt",
+      "sha256": "878ac09be077c1635192c226b6de45a3bac015f90e5d4b84b85ee67e4e705a93",
+      "bytes": 32,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/requirements.txt",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 32,
+          "sha256": "878ac09be077c1635192c226b6de45a3bac015f90e5d4b84b85ee67e4e705a93",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:51.956982+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tests/test_bridge.py",
+      "targetPath": "intel-runtime/media-bridge/tests/test_bridge.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tests/test_bridge.py",
+      "sha256": "1a242920d07e845f07fa04f548e5706b8d0eb9a63560fe932799cac3efda6d42",
+      "bytes": 20810,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tests/test_bridge.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 20810,
+          "sha256": "1a242920d07e845f07fa04f548e5706b8d0eb9a63560fe932799cac3efda6d42",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.006386+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/prepare_synthetic.py",
+      "targetPath": "intel-runtime/media-bridge/tools/prepare_synthetic.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/prepare_synthetic.py",
+      "sha256": "7bc45c5256c20b9c336d15eae3d60bd0c0e2d8802ac50be124820557119e9dd5",
+      "bytes": 2160,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/prepare_synthetic.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 2160,
+          "sha256": "7bc45c5256c20b9c336d15eae3d60bd0c0e2d8802ac50be124820557119e9dd5",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.039182+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/read_status.py",
+      "targetPath": "intel-runtime/media-bridge/tools/read_status.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/read_status.py",
+      "sha256": "49d3f3b34f6be429ee265501a144641b1a97170aef7124bde5cc888edecad945",
+      "bytes": 871,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/read_status.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 871,
+          "sha256": "49d3f3b34f6be429ee265501a144641b1a97170aef7124bde5cc888edecad945",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.071535+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/verify_offline.py",
+      "targetPath": "intel-runtime/media-bridge/tools/verify_offline.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/verify_offline.py",
+      "sha256": "33b895e918d42ac92dcf90305f55872b9568c39840fb2573f1871bc5e5d63da3",
+      "bytes": 6576,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/verify_offline.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 6576,
+          "sha256": "33b895e918d42ac92dcf90305f55872b9568c39840fb2573f1871bc5e5d63da3",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.100735+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/verify_rtsp.py",
+      "targetPath": "intel-runtime/media-bridge/tools/verify_rtsp.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/verify_rtsp.py",
+      "sha256": "8e01137871b64a6d95a0cedbcc5b230f8cf2b6436a0725fded10277744031a78",
+      "bytes": 8841,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/tools/verify_rtsp.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 8841,
+          "sha256": "8e01137871b64a6d95a0cedbcc5b230f8cf2b6436a0725fded10277744031a78",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.133716+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-01/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-01/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-01/result.json",
+      "sha256": "85df470f3880056b4b14c50601f52b6cd3b537e22be3456950061f888d8ceba9",
+      "bytes": 2450,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-01/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 2450,
+          "sha256": "85df470f3880056b4b14c50601f52b6cd3b537e22be3456950061f888d8ceba9",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.163861+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-02/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-02/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-02/result.json",
+      "sha256": "17532361b505cf604e769afa6a4ff16bc6562cdd854ad90dc7f6d72fb7b5452b",
+      "bytes": 3181,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-02/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3181,
+          "sha256": "17532361b505cf604e769afa6a4ff16bc6562cdd854ad90dc7f6d72fb7b5452b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.196465+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-03/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-03/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-03/result.json",
+      "sha256": "a3309a6d432fb132eb4bde945fe23ba63ae3cb7c9c1840026d85cc2f5d474b23",
+      "bytes": 3180,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-03/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3180,
+          "sha256": "a3309a6d432fb132eb4bde945fe23ba63ae3cb7c9c1840026d85cc2f5d474b23",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.223315+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-04/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-04/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-04/result.json",
+      "sha256": "dccc6583e975c1bc52f810580b69e8f74846bbe47f6b73b2271b99e8124efda7",
+      "bytes": 3281,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-04/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3281,
+          "sha256": "dccc6583e975c1bc52f810580b69e8f74846bbe47f6b73b2271b99e8124efda7",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.253146+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-05/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-05/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-05/result.json",
+      "sha256": "667dbdbb6d8ba94ff1c2e1a789f86e9fc88cc67c8027669b372a9ea01dd17f1c",
+      "bytes": 3372,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-05/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3372,
+          "sha256": "667dbdbb6d8ba94ff1c2e1a789f86e9fc88cc67c8027669b372a9ea01dd17f1c",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.280042+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-06/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-06/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-06/result.json",
+      "sha256": "31169ac6bfe5f9ba00d19204ad45dfdf95dd82d24811a43224857dfda871ac9e",
+      "bytes": 3393,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-06/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3393,
+          "sha256": "31169ac6bfe5f9ba00d19204ad45dfdf95dd82d24811a43224857dfda871ac9e",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.310568+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-07/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/offline-07/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-07/result.json",
+      "sha256": "6c9b4bfed4dc564416f8d597f99683d5bb7377fce58ce70f625bc13c77103603",
+      "bytes": 3390,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/offline-07/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3390,
+          "sha256": "6c9b4bfed4dc564416f8d597f99683d5bb7377fce58ce70f625bc13c77103603",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.345878+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+      "sha256": "f7a717896552ef44b6c6c070cee67acf60fccbf1a947ac80aca43c612e253aa1",
+      "bytes": 45989,
+      "pageCount": 2,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+          "offset": 0,
+          "next_offset": 24000,
+          "total_characters": 45989,
+          "sha256": "f7a717896552ef44b6c6c070cee67acf60fccbf1a947ac80aca43c612e253aa1",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+          "offset": 24000,
+          "next_offset": null,
+          "total_characters": 45989,
+          "sha256": "f7a717896552ef44b6c6c070cee67acf60fccbf1a947ac80aca43c612e253aa1",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.575179+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-after-fix/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/rtsp-jitter-after-fix/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-after-fix/result.json",
+      "sha256": "c45972be8a102fca96c53923abff668d8b5cc56dbf35810580d88ff9b4d59013",
+      "bytes": 12109,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-after-fix/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12109,
+          "sha256": "c45972be8a102fca96c53923abff668d8b5cc56dbf35810580d88ff9b4d59013",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.608162+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-before-fix/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/rtsp-jitter-before-fix/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-before-fix/result.json",
+      "sha256": "b437d91e7fc45a6e93875b090aa765615d9666502c630ad23d455b6831d3bec8",
+      "bytes": 12751,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-before-fix/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 12751,
+          "sha256": "b437d91e7fc45a6e93875b090aa765615d9666502c630ad23d455b6831d3bec8",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.646494+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-filter-fix/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/rtsp-jitter-filter-fix/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-filter-fix/result.json",
+      "sha256": "7d799a8e4390c362860e1ec9ae2bf00acc0ae90bbc6b5c626796394563376f59",
+      "bytes": 10847,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-jitter-filter-fix/result.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 10847,
+          "sha256": "7d799a8e4390c362860e1ec9ae2bf00acc0ae90bbc6b5c626796394563376f59",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:52.697424+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+      "targetPath": "intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+      "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+      "bytes": 178874,
+      "pageCount": 8,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 0,
+          "next_offset": 24000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 24000,
+          "next_offset": 48000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 48000,
+          "next_offset": 72000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 72000,
+          "next_offset": 96000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 96000,
+          "next_offset": 120000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 120000,
+          "next_offset": 144000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 144000,
+          "next_offset": 168000,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "offset": 168000,
+          "next_offset": null,
+          "total_characters": 178874,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.359753+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "intel-new-package"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/INTEL_REQUIREMENTS.md",
+      "targetPath": "klemen-dashboard/INTEL_REQUIREMENTS.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/INTEL_REQUIREMENTS.md",
+      "sha256": "454d0d0d6607f1b47654f4351e4ec978e58cedddc090c45e8e990d6a1bc9bb36",
+      "bytes": 20563,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/INTEL_REQUIREMENTS.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 20553,
+          "sha256": "454d0d0d6607f1b47654f4351e4ec978e58cedddc090c45e8e990d6a1bc9bb36",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.413678+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/LIVE_VIDEO.md",
+      "targetPath": "klemen-dashboard/LIVE_VIDEO.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/LIVE_VIDEO.md",
+      "sha256": "4bffe6c220468e9733ea33535f0f4f07dffbabb35fc2127d41032c998a771bd8",
+      "bytes": 9495,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/LIVE_VIDEO.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 9494,
+          "sha256": "4bffe6c220468e9733ea33535f0f4f07dffbabb35fc2127d41032c998a771bd8",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.548000+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/LOCAL_DEMO.md",
+      "targetPath": "klemen-dashboard/LOCAL_DEMO.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/LOCAL_DEMO.md",
+      "sha256": "4a5c0836ea37d398f1a9025a986c1cad0e837a0ad16d3470cacc6efcfbf7fb6b",
+      "bytes": 4688,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/LOCAL_DEMO.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 4687,
+          "sha256": "4a5c0836ea37d398f1a9025a986c1cad0e837a0ad16d3470cacc6efcfbf7fb6b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.583030+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/package.json",
+      "targetPath": "klemen-dashboard/dashboard/package.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/package.json",
+      "sha256": "002e3de09e05f52728c407627f547c9b885ef0d5ec31745a79ff9eb1ac7b3065",
+      "bytes": 1584,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/package.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 1584,
+          "sha256": "002e3de09e05f52728c407627f547c9b885ef0d5ec31745a79ff9eb1ac7b3065",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.626964+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/server/mediaGateway.ts",
+      "targetPath": "klemen-dashboard/dashboard/server/mediaGateway.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/server/mediaGateway.ts",
+      "sha256": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef",
+      "bytes": 23559,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/server/mediaGateway.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 23559,
+          "sha256": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.673188+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/server.ts",
+      "targetPath": "klemen-dashboard/dashboard/server.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/server.ts",
+      "sha256": "5656d22122152e3faa37f9eededb861ac4dd79989607303a5a6ebd5f3c8d512e",
+      "bytes": 2744,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/server.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 2744,
+          "sha256": "5656d22122152e3faa37f9eededb861ac4dd79989607303a5a6ebd5f3c8d512e",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.706806+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+      "targetPath": "klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+      "sha256": "1521562dd44c8be853143a5e99fdae1719659121c7f307469e55d4b94ed697c2",
+      "bytes": 29988,
+      "pageCount": 2,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+          "offset": 0,
+          "next_offset": 24000,
+          "total_characters": 29960,
+          "sha256": "1521562dd44c8be853143a5e99fdae1719659121c7f307469e55d4b94ed697c2",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+          "offset": 24000,
+          "next_offset": null,
+          "total_characters": 29960,
+          "sha256": "1521562dd44c8be853143a5e99fdae1719659121c7f307469e55d4b94ed697c2",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.778981+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveVideoPanel.css",
+      "targetPath": "klemen-dashboard/dashboard/src/components/LiveVideoPanel.css",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveVideoPanel.css",
+      "sha256": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940",
+      "bytes": 4151,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveVideoPanel.css",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 4151,
+          "sha256": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:53.811448+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveVideoPanel.tsx",
+      "targetPath": "klemen-dashboard/dashboard/src/components/LiveVideoPanel.tsx",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveVideoPanel.tsx",
+      "sha256": "a89fced433bddfd24d69775737fa3b0817931778e68cf73f926f434b6cd69115",
+      "bytes": 9149,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/components/LiveVideoPanel.tsx",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 9143,
+          "sha256": "a89fced433bddfd24d69775737fa3b0817931778e68cf73f926f434b6cd69115",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.700400+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/client.ts",
+      "targetPath": "klemen-dashboard/dashboard/src/media/client.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/client.ts",
+      "sha256": "c4e578eaab14f858fd34bf3c38c2d715d4b5138a01b47ab44679df6428381823",
+      "bytes": 20887,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/client.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 20877,
+          "sha256": "c4e578eaab14f858fd34bf3c38c2d715d4b5138a01b47ab44679df6428381823",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.750279+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/frameObserver.ts",
+      "targetPath": "klemen-dashboard/dashboard/src/media/frameObserver.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/frameObserver.ts",
+      "sha256": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7",
+      "bytes": 2265,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/frameObserver.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 2265,
+          "sha256": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.804826+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/stats.ts",
+      "targetPath": "klemen-dashboard/dashboard/src/media/stats.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/stats.ts",
+      "sha256": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b",
+      "bytes": 3513,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/stats.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3513,
+          "sha256": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.844448+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/types.ts",
+      "targetPath": "klemen-dashboard/dashboard/src/media/types.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/types.ts",
+      "sha256": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c",
+      "bytes": 1612,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/src/media/types.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 1612,
+          "sha256": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.884377+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/tools/demoServer.ts",
+      "targetPath": "klemen-dashboard/dashboard/tools/demoServer.ts",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/tools/demoServer.ts",
+      "sha256": "0bd233afe2b553e6360a911f56d15f56dd50e4164a856b7ca1a8d33e471aa2f2",
+      "bytes": 2820,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/dashboard/tools/demoServer.ts",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 2820,
+          "sha256": "0bd233afe2b553e6360a911f56d15f56dd50e4164a856b7ca1a8d33e471aa2f2",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.922157+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/tools/prepare_demo_media.py",
+      "targetPath": "klemen-dashboard/tools/prepare_demo_media.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/tools/prepare_demo_media.py",
+      "sha256": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128",
+      "bytes": 3570,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/tools/prepare_demo_media.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3570,
+          "sha256": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:54.965364+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/tools/run_local_demo.py",
+      "targetPath": "klemen-dashboard/tools/run_local_demo.py",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/tools/run_local_demo.py",
+      "sha256": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc",
+      "bytes": 16318,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/tools/run_local_demo.py",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 16318,
+          "sha256": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.139818+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/README.md",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/README.md",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/README.md",
+      "sha256": "9ecbe89491082d1e259b5e8e659799047ae013c90a7b99eaf562f189667e466b",
+      "bytes": 5295,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/README.md",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 5290,
+          "sha256": "9ecbe89491082d1e259b5e8e659799047ae013c90a7b99eaf562f189667e466b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.171239+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/RESULT.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/RESULT.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/RESULT.json",
+      "sha256": "71a9de814966b2e091efd2e3214df6eec04e4101993ace659d2a9e26d3273c81",
+      "bytes": 1160,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/RESULT.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 1160,
+          "sha256": "71a9de814966b2e091efd2e3214df6eec04e4101993ace659d2a9e26d3273c81",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.198726+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/build.txt",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/build.txt",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/build.txt",
+      "sha256": "cb55ca707da4d2289a2529dcfde488b9ad59ec1d6f505ceddf56fdf7881b8834",
+      "bytes": 919,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/build.txt",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 909,
+          "sha256": "cb55ca707da4d2289a2529dcfde488b9ad59ec1d6f505ceddf56fdf7881b8834",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.226124+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/dashboard-tests.txt",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/dashboard-tests.txt",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/dashboard-tests.txt",
+      "sha256": "56b1d893699570497417271cd5542dcae14956798808a1637bef19b04fbcef9a",
+      "bytes": 11480,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/dashboard-tests.txt",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 11242,
+          "sha256": "56b1d893699570497417271cd5542dcae14956798808a1637bef19b04fbcef9a",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.258880+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/dashboard-verification.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/dashboard-verification.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/dashboard-verification.json",
+      "sha256": "68a2255d634bdb1416d8e2209aa53126deeceeb7a88b1518f071040903b3dbcf",
+      "bytes": 3135,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/dashboard-verification.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 3135,
+          "sha256": "68a2255d634bdb1416d8e2209aa53126deeceeb7a88b1518f071040903b3dbcf",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.287529+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/demo-check.txt",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/demo-check.txt",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/demo-check.txt",
+      "sha256": "f4c713c77bb6eb8736cd34abea8c2671954c09ca5bb6c84691f6ee998004a145",
+      "bytes": 494,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/demo-check.txt",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 494,
+          "sha256": "f4c713c77bb6eb8736cd34abea8c2671954c09ca5bb6c84691f6ee998004a145",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.323563+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-browser-end.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/final-browser-end.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-browser-end.json",
+      "sha256": "c3ee512c11b3500025b756ae147bfdf8a4f49e3e908fa1170e6c8fbd3bbed3d0",
+      "bytes": 914,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-browser-end.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 910,
+          "sha256": "c3ee512c11b3500025b756ae147bfdf8a4f49e3e908fa1170e6c8fbd3bbed3d0",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.366014+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-browser-start.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/final-browser-start.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-browser-start.json",
+      "sha256": "4757211d9adeac1f662897ff36405d4818bea516f7f1579d111c2526caa5b673",
+      "bytes": 915,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-browser-start.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 911,
+          "sha256": "4757211d9adeac1f662897ff36405d4818bea516f7f1579d111c2526caa5b673",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.405159+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-pause-resume.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/final-pause-resume.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-pause-resume.json",
+      "sha256": "ae7fc82e6fd1a5423eb0a310c9fe1888c1fc96ce11fbe5b583ddbfa196d0e2ee",
+      "bytes": 277,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-pause-resume.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 277,
+          "sha256": "ae7fc82e6fd1a5423eb0a310c9fe1888c1fc96ce11fbe5b583ddbfa196d0e2ee",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.446940+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+      "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+      "bytes": 110502,
+      "pageCount": 5,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+          "offset": 0,
+          "next_offset": 24000,
+          "total_characters": 110502,
+          "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+          "offset": 24000,
+          "next_offset": 48000,
+          "total_characters": 110502,
+          "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+          "offset": 48000,
+          "next_offset": 72000,
+          "total_characters": 110502,
+          "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+          "offset": 72000,
+          "next_offset": 96000,
+          "total_characters": 110502,
+          "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+          "redacted": false
+        },
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+          "offset": 96000,
+          "next_offset": null,
+          "total_characters": 110502,
+          "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:55.990162+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-status-after-pause.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/final-status-after-pause.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-status-after-pause.json",
+      "sha256": "e78616c40f57c7547fab2eaf2221865dd6b4fd262e55f7ba18271ce4aefb22d1",
+      "bytes": 1150,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/final-status-after-pause.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 1150,
+          "sha256": "e78616c40f57c7547fab2eaf2221865dd6b4fd262e55f7ba18271ce4aefb22d1",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:56.162455+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/replay-isolation.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/replay-isolation.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/replay-isolation.json",
+      "sha256": "16c43eff429ce3c450fa72bf81f97cc47dec18e3aae6be06f82892e0f51d641b",
+      "bytes": 70,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/replay-isolation.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 70,
+          "sha256": "16c43eff429ce3c450fa72bf81f97cc47dec18e3aae6be06f82892e0f51d641b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:56.330029+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/typecheck.txt",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/typecheck.txt",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/typecheck.txt",
+      "sha256": "782ca5106e0dcfd4f11315e24908bc788a0edf3f2297936946cf47365281168b",
+      "bytes": 268,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/typecheck.txt",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 268,
+          "sha256": "782ca5106e0dcfd4f11315e24908bc788a0edf3f2297936946cf47365281168b",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:56.385680+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/viewer-auth-negative.json",
+      "targetPath": "klemen-dashboard/verification/live-video-20261115/viewer-auth-negative.json",
+      "localPath": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/viewer-auth-negative.json",
+      "sha256": "5eeaafa22ec76c62ed1186b346f76af5f37f8b066cf7a5313ae1ceba96527a5d",
+      "bytes": 236,
+      "pageCount": 1,
+      "pages": [
+        {
+          "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/files/klemen-dashboard/verification/live-video-20261115/viewer-auth-negative.json",
+          "offset": 0,
+          "next_offset": null,
+          "total_characters": 236,
+          "sha256": "5eeaafa22ec76c62ed1186b346f76af5f37f8b066cf7a5313ae1ceba96527a5d",
+          "redacted": false
+        }
+      ],
+      "readAt": "2026-11-15T07:22:56.429941+00:00",
+      "server": "morph-context",
+      "tlsVerification": true,
+      "fullContentHashVerified": true,
+      "expectedHashCompared": true,
+      "manifestByteCountCompared": true,
+      "readOnlyTool": "read_context",
+      "interpreter": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "role": "mac-reference"
+    }
+  ]
+}

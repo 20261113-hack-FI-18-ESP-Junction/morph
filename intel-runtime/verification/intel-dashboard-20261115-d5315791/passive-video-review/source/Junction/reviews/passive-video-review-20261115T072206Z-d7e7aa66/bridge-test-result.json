@@ -1,0 +1,162 @@
+{
+  "status": "passed",
+  "startedAt": "2026-11-15T07:26:49.872965+00:00",
+  "completedAt": "2026-11-15T07:26:50.707671+00:00",
+  "durationSeconds": 0.8304664159950335,
+  "agent": "/root/adoption_receiver_review",
+  "designatedReporter": "/root",
+  "interpreter": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/test-env/bin/python",
+  "python": "3.12.16",
+  "command": [
+    "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/test-env/bin/python",
+    "-B",
+    "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/run_isolated_tests.py"
+  ],
+  "workingDirectory": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/payload/intel-runtime/media-bridge",
+  "temporaryDirectory": "/home/intel/Documents/Junction/reviews/passive-video-review-20261115T072206Z-d7e7aa66/test-temp",
+  "dependencies": {
+    "Pillow": "13.0.0",
+    "websockets": "17.4"
+  },
+  "tests": {
+    "run": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "records": [
+    {
+      "id": "test_bridge.AsyncTests.test_backoff_is_bounded_and_cancel_interrupts",
+      "seconds": 0.2048923610127531
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_cancel_during_encoder_creation_still_closes_child",
+      "seconds": 0.0449853079917375
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_http_auth_liveness_read_only_and_sanitized",
+      "seconds": 0.02147615799913183
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_owned_encoder_process_group_closes",
+      "seconds": 0.003025747006176971
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_real_local_websocket_reconnect_and_single_subscription",
+      "seconds": 0.08534617300028913
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_slow_writer_is_bounded_and_closes_on_cancel",
+      "seconds": 0.005382857998483814
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_source_stall_is_counted_and_subscription_is_closed",
+      "seconds": 0.10975667800812516
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_stale_frame_never_reaches_writer",
+      "seconds": 0.0654935440106783
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_synthetic_source_is_labeled_and_cancellable",
+      "seconds": 0.0941670169995632
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_websocket_oversize_closes_then_reconnects",
+      "seconds": 0.03184546800912358
+    },
+    {
+      "id": "test_bridge.AsyncTests.test_write_timeout_restarts_and_discards_partial",
+      "seconds": 0.12514189099601936
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_bitrate_is_configurable_and_default_is_explicit",
+      "seconds": 0.0012348289892543107
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_command_has_explicit_encoder_no_shell_or_fallback",
+      "seconds": 0.0006084820051910356
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_explicit_simulation_and_safe_urls",
+      "seconds": 0.0022254460054682568
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_private_file_permissions_and_symlink",
+      "seconds": 0.0016292820073431358
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_runtime_lock_prevents_second_owner",
+      "seconds": 0.001189955000882037
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_studio_camera_is_exact_and_required",
+      "seconds": 0.0015646929969079792
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_studio_example_cannot_open_a_default_camera",
+      "seconds": 0.0008407820132561028
+    },
+    {
+      "id": "test_bridge.ConfigTests.test_synthetic_generator_keeps_secrets_private_and_disables_other_protocols",
+      "seconds": 0.002113042995915748
+    },
+    {
+      "id": "test_bridge.FrameTests.test_cadence_does_not_add_work_time_or_queue_missed_ticks",
+      "seconds": 0.0005623329925583676
+    },
+    {
+      "id": "test_bridge.FrameTests.test_invalid_oversized_wrong_profile_and_truncated_rejected",
+      "seconds": 0.008417889999691397
+    },
+    {
+      "id": "test_bridge.FrameTests.test_jpeg_validation_does_not_decode_superseded_frames",
+      "seconds": 0.003183581997291185
+    },
+    {
+      "id": "test_bridge.FrameTests.test_latest_slot_replaces_without_queue",
+      "seconds": 0.001859637995949015
+    },
+    {
+      "id": "test_bridge.FrameTests.test_receipt_age_never_claims_capture_latency",
+      "seconds": 0.0008272240083897486
+    },
+    {
+      "id": "test_bridge.FrameTests.test_synthetic_changes_visible_pixels",
+      "seconds": 0.004923957996652462
+    }
+  ],
+  "networkAudit": {
+    "loopbackBinds": 4,
+    "loopbackConnects": 10,
+    "inertChildStarts": 2
+  },
+  "syntaxParsedFiles": [
+    "intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+    "intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+    "intel-runtime/media-bridge/morph_media_bridge/config.py",
+    "intel-runtime/media-bridge/morph_media_bridge/frames.py",
+    "intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+    "intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+    "intel-runtime/media-bridge/morph_media_bridge/source.py",
+    "intel-runtime/media-bridge/tests/test_bridge.py",
+    "intel-runtime/media-bridge/tools/prepare_synthetic.py",
+    "intel-runtime/media-bridge/tools/read_status.py",
+    "intel-runtime/media-bridge/tools/verify_offline.py",
+    "intel-runtime/media-bridge/tools/verify_rtsp.py",
+    "klemen-dashboard/tools/prepare_demo_media.py",
+    "klemen-dashboard/tools/run_local_demo.py"
+  ],
+  "all60PayloadHashesUnchanged": true,
+  "originalTestSHA256": "1a242920d07e845f07fa04f548e5706b8d0eb9a63560fe932799cac3efda6d42",
+  "temporaryFilesRemaining": [],
+  "activeStationEnvironmentModified": false,
+  "activeSourceModified": false,
+  "actualBridgeStarted": false,
+  "actualFFmpegStarted": false,
+  "mediaMtxStarted": false,
+  "studioAccessed": false,
+  "hardwareAccessed": false,
+  "providerCalls": 0,
+  "scope": "Original tests with synthetic JPEGs, ephemeral loopback fixture servers and two inert test-owned Python children only."
+}
