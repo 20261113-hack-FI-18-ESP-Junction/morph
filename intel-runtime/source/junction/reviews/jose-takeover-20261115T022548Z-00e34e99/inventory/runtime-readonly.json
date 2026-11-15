@@ -1,0 +1,163 @@
+{
+  "observedAt": "2026-11-15T02:25:35.868215+00:00",
+  "scope": "Read-only HTTP health and OpenAPI, no control calls",
+  "stations": [
+    {
+      "port": 8000,
+      "observedAt": "2026-11-15T02:25:35.770861+00:00",
+      "health": {
+        "status_code": 200,
+        "body": {
+          "status": "ok",
+          "service": "morph-station",
+          "schemaVersion": 1,
+          "hardwareIntegrated": false,
+          "providersIntegrated": false
+        }
+      },
+      "openapi": {
+        "status_code": 200,
+        "title": "Morph station records",
+        "mission_control_related_routes": [
+          {
+            "path": "/api/v1/station/snapshot",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions/{session_id}/end",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions/{session_id}/metrics",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/commands",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/voice/token",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/voice/utterances",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions/{session_id}/export",
+            "methods": [
+              "get"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "port": 52197,
+      "observedAt": "2026-11-15T02:25:35.771945+00:00",
+      "health": {
+        "status_code": 200,
+        "body": {
+          "status": "ok",
+          "service": "morph-station",
+          "schemaVersion": 1,
+          "hardwareIntegrated": false,
+          "providersIntegrated": false
+        }
+      },
+      "openapi": {
+        "status_code": 200,
+        "title": "Morph station records",
+        "mission_control_related_routes": [
+          {
+            "path": "/api/v1/analysis/context",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/analysis/reports",
+            "methods": [
+              "post",
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/analysis/reports/{report_id}",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/station/snapshot",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions",
+            "methods": [
+              "get",
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions/{session_id}/end",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions/{session_id}/metrics",
+            "methods": [
+              "get"
+            ]
+          },
+          {
+            "path": "/api/v1/commands",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/voice/token",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/voice/utterances",
+            "methods": [
+              "post"
+            ]
+          },
+          {
+            "path": "/api/v1/sessions/{session_id}/export",
+            "methods": [
+              "get"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
