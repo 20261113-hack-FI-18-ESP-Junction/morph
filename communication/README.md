@@ -2,7 +2,7 @@
 
 This package contains the current Mac context MCP, its station relay, Intel's standard-library worker, and the reviewed source-transfer helpers. It connects Klemen's dashboard to Intel's authoritative records using the existing MCP pairing.
 
-The November 15, 2026 publication adds bounded record review and saved-evidence analysis requests to the existing read transport. These changes are staged source with isolated verification. The live Mac server and Intel worker have not been updated by this publication.
+The earlier November 15, 2026 publication added bounded record review and saved-evidence analysis requests to the existing read transport. Its original staged verification remains unchanged in `verification/offline-01/`. This candidate adds explicit handoff events and isolated read-only Codex review. Publication itself does not restart or update either host; current deployment evidence is recorded separately in [event verification](verification/events-20261115/README.md).
 
 | Component | Runs on | Purpose |
 | --- | --- | --- |
@@ -28,3 +28,11 @@ Bootstrap installs the locked MCP environment and checks CLI help; it does not l
 
 The snapshot includes no credentials or live history. A successful local test does not establish Intel connectivity, current deployment, a provider result or physical execution.
 
+
+## Explicit handoff review
+
+The optional event tools reuse the existing Mac MCP URL, pairing and TLS trust. A publisher saves and verifies one substantive handoff before explicitly notifying the other host. The target receiver records a durable result from an isolated read-only Codex reviewer, renews its processing lease and acknowledges completion. Ordinary handoff notes and idle receipts create no events. Mac review exports remain pending independent reconciliation; they do not write Notion or wake an existing desktop chat.
+
+Read [the event operations guide](context_mcp/HANDOFF_EVENTS.md) and [the public reconciliation contract](context/EVENT_REVIEW.md). Intel needs its existing pairing, Python 3.12 and an explicitly configured authenticated Linux Codex executable. Source adoption and foreground service startup are deliberate steps. Event receipt does not fetch Git, change a dirty working tree, implement received code, start providers or move hardware.
+
+This package was reconstructed from Git commit `ca512b1a2941f5ea0d8e6a2757b138cc41944fed`, then overlaid only with reviewed Mac event source and its documentation/tests. The concurrent dashboard-related changes to the relay, worker and their tests are excluded; those four files still match the base commit. The canonical live environment may contain that separate work, so its test counts and hashes must be reported separately. [Source origins](SOURCE_ORIGINS.json) and [the base inventory](verification/events-20261115/git-base.json) preserve that distinction.
