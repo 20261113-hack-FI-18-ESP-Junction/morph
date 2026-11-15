@@ -1,44 +1,29 @@
-# Final three-host ownership and transport
+# Three-host ownership
 
-Owner direction recorded **November 15, 2026**, Europe/Ljubljana (UTC+01:00). The owner's architecture sketch (`IMG_3434.jpg`, retained in the original workspace) and subsequent transport clarification supersede earlier host placement and the mandatory ElevenLabs provider choice. Preserve historical implementation and evidence; this architecture does not establish working physical integration.
+Owner direction recorded November 15, 2026. This public handoff reflects the supplied architecture and subsequent transport clarification.
 
-## Target ownership
-
-| Host / owner | Code and responsibility | Boundary |
+| Host | Responsibility | Connection |
 | --- | --- | --- |
-| Klemen Mac | Morph dashboard, quality/history, reliability analytics, saved-export audit; approved evidence-analyst work belongs to this view | Reads Intel's authoritative data through the existing Mac MCP. No robot commands on load, refresh, reconnect or replay. |
-| Jose Mac | Interaction/chat UI, coordination/control, Nemotron observations, Gemini task/goal selection; voice is expected here | Will send permitted missions through the NVIDIA tunnel supplied by the other team. Intel must implement the locally validated mission dispatcher before this path can control the robot. |
-| Intel PC | Physical AI Studio, demonstrations/training, learned policies, cameras, Anomalib/OpenVINO, validated skill execution and authoritative session/cycle/attempt/outcome records | Owns authoritative data for both Macs and must implement the mission/physical execution interface behind the externally owned tunnel. |
+| Klemen Mac | Dashboard, quality/history, reliability analytics and saved-evidence analysis | Existing authenticated Mac MCP to Intel |
+| Jose Mac | Interaction/chat, coordination, Nemotron observations and Gemini task/goal selection; voice expected here | NVIDIA tunnel supplied by the other team |
+| Intel PC | Physical AI Studio, demonstrations/training, learned policies, Anomalib/OpenVINO, physical execution and authoritative records | MCP worker for Klemen; external tunnel for Jose |
 
-The sketch includes OpenClaw, Gemini Argon and Decision 1, VLA/VLM/world-model labels. These describe intended components and ownership. No local OpenClaw/Argon adapter or world-model implementation was found in the reviewed Mac source. Decision 1 remains a fixed-choice API; it must not be treated as a generative planner. Existing Gemma analyst work remains distinct from Gemini orchestration and cannot change records or dispatch motion.
+NVIDIA and Gemini remain in scope. Decision 1 selects fixed choices, while a local validated Intel dispatcher must enforce execution rules. Gemma evidence analysis has no dispatch or outcome-writing authority. ElevenLabs is an optional voice adapter; the final provider remains undecided. OpenClaw/Argon/world-model labels in the sketch are intended components, not verified implementations.
 
-**Voice is expected on Jose's Mac; ElevenLabs is undecided.** Preserve the existing optional Scribe adapter and its dated software/provider evidence. Do not require its credentials to start the UI. No alternative speech provider has been selected or implemented by this split.
+## Communication
 
-## Transport
+The [MCP relay](communication/context_mcp/STATION_RELAY.md) carries allowlisted reads plus explicitly intended audited reviews and saved-evidence analysis. An Intel worker must opt into those two POST routes. Robot commands, mission lifecycle and voice credentials are excluded. Keep pairing credentials on the servers and preserve response source-mode and freshness labels.
 
-```mermaid
-flowchart LR
-  K["Klemen Mac: dashboard and analytics"] <-->|"local server-side MCP client"| M["Existing authenticated Mac MCP"]
-  I["Intel: records, inspection, training and local execution"] <-->|"TLS MCP; Intel read worker"| M
-  J["Jose Mac: chat, voice and coordination"] <-->|"NVIDIA tunnel — other team"| I
-```
+The NVIDIA tunnel is outside this implementation scope. A tunnel does not implement a mission API or validate physical actions.
 
-The MCP connection uses the existing private pairing configuration and CA. No credentials belong in a handoff ZIP, browser bundle or source response. The NVIDIA tunnel is explicitly **outside this repository's implementation scope**; the other team supplies its URL, authentication and reachability. A tunnel alone does not implement the mission API or validate a physical action.
+## Current source and evidence
 
-The Station GET relay in the original workspace's separate communication package carries exact allowlisted GET responses from Intel to Klemen, including metadata, saved analyzed images, records, counters and finite event batches. It introduces no second source of reliability records. Requests have unique IDs, expire after 30 seconds, and multipart responses must pass SHA-256 verification. Loss of the Intel worker produces an unavailable response, not cached data labeled live. Continuous video, changes to reference labels/outcomes and robot control are outside this read relay.
+Jose's original control lab and separate 17-file Intel records-contract reference were published first. The later remaining-source inventory contains 240 root-qualified files: 110 transferred, 124 exact declared reuses and one additional exact CSV reuse. The reviewed supplement adds the exact ignore rules and synthetic PNG, bringing receipt to 237 of 240 originals. Three original test files remain pending; redacted copies are available for review only. The older Intel context server is a comparison reference; the newer Mac MCP is preserved.
 
-## Current source split
+Received Intel source still lacks an integrated mission lifecycle, dispatcher, learned-skill registry and Studio execution adapter. Command and voice endpoints are unavailable stubs. Session persistence and Decision/Execution records do not start robot missions.
 
-This repository contains the **Jose control partition**. It originated in the shared workspace at `handoff/three-host-20261115/jose-control/`. The sibling `klemen-dashboard/` and `intel-runtime/` packages belong to that original workspace and are not directories in this checkout. Copies of common records/models in development packages are explicitly dependencies or simulation fixtures; Intel owns canonical runtime data.
+The Intel service report dated November 15, 2026, 02:25:35 UTC distinguishes the main API on port 8000 from an isolated service on 52197: analyst routes exist in current source and the latter service, while the main loaded API lacks them. This is historical reported evidence, not a fresh deployment check.
 
-The original shared workspace retains the Mac station source and the sibling `morph-station/` dashboard. This repository also includes the verified **17-file current Intel records API/import closure**, kept separately in `intel-contract/`, with 56 guarded source tests passing. This is a focused current-source delivery, not the entire Intel project. **Do not replace Intel's working tree with the Mac baseline package.** The actual mission/control service and physical adapters remain absent from the received source and current Intel inventory; [Intel delivery status](INTEL_REQUIRED_FOR_JOSE.md) records the exact scope.
+## Remaining work
 
-Jose can start from the supplied control/voice lab and contracts while the current Intel source is reconciled. The lab is an explicit simulator, not a completed production chatbot or a working robot mission client. Models still select only allowed choices. The future Intel mission service must validate versions, freshness, preconditions, expiry and duplicate execution IDs at the execution boundary; the current records API does not implement that service.
-
-## Remaining integration acceptance
-
-- Reconcile the received current Intel records API/import closure. Obtain actual camera/skill interfaces if implemented separately, or implement the absent mission/physical integration with its owner.
-- Use the separate communication package to start its read worker on Intel against the actual records API and existing MCP pairing, then verify dashboard reads from that host.
-- The other team establishes the NVIDIA tunnel. Jose implements its application mission client against the actual validated Intel contract.
-- Confirm voice deployment/provider choice; implement remaining chat/Argon/OpenClaw components only with demonstrated distinct purpose.
-- Preserve M15/M16 accepted scope and complete the still-open live/physical M12–M24 criteria tracked in the original workspace task plan, with appropriate evidence. Packaging, local MCP tests and simulation are separate from physical verification.
+Adopt the reviewed packages deliberately and verify the actual Mac–Intel worker connection. Jose and Intel must implement the mission contract and validated physical execution adapter alongside the externally supplied tunnel. Complete actual voice, provider, calibration, training and physical-cycle acceptance with dated evidence. Local software tests and source publication do not close those criteria.

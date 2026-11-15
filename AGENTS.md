@@ -1,4 +1,6 @@
-# Jose control package instructions
+# Morph repository instructions
+
+The root application is Jose's original control lab. `klemen-dashboard/`, `intel-runtime/` and `communication/` are independently documented publication packages with their own source manifests. Respect each package's provenance and instructions. Intel owns authoritative records and physical execution; Klemen owns dashboard/analytics; Jose owns interaction and coordination. The shared MCP supports explicitly intended record review and evidence analysis, while motion and mission transport remain outside its allowlist.
 
 This is a portable snapshot of the current Mac simulation/provider/voice implementation. Preserve the supplied `SOURCE_MANIFEST.json` when recording later changes. Read `README.md` and the shared three-host handoff before changing interfaces.
 
