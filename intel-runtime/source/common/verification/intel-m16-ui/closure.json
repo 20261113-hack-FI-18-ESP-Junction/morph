@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-11-14T19:54:10.556266+00:00",
+  "author": "/root/reconcile",
+  "task": "M16",
+  "software_status": "verified",
+  "notion_status": "pending root shared reporter confirmation",
+  "checks": {
+    "client_tests": 47,
+    "frontend_tests": 24,
+    "browser_scenario_groups": 8,
+    "browser_requests": 144,
+    "browser_javascript_errors": 0
+  },
+  "proof": {
+    "session": "m16-recovery:session",
+    "cycles": 1,
+    "attempts": 2,
+    "retry": 1,
+    "recovered": 1,
+    "first_attempt_success": 0,
+    "cycle_rate": [
+      1,
+      1
+    ],
+    "attempt_rate": [
+      1,
+      2
+    ],
+    "audit_corrections": 5,
+    "saved_events": 19
+  },
+  "evidence": [
+    "verification/intel-m16-ui/client-tests.xml",
+    "verification/intel-m16-ui/frontend-tests.xml",
+    "verification/intel-m16-browser/runs/acceptance-05/browser-results.json",
+    "verification/intel-m16-browser/runs/acceptance-05/recovered-session-export.json",
+    "verification/intel-m16-browser/runs/acceptance-05/cleanup.json"
+  ],
+  "physical_or_provider_verification": false,
+  "main_service_upgrade": "Owned by root/dashboard agents; this record certifies isolated software acceptance only"
+}

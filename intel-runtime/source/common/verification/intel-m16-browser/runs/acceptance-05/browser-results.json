@@ -1,0 +1,21 @@
+{
+  "observedAt": "2026-11-14T19:52:29.884Z",
+  "status": "passed",
+  "evidenceType": "Actual Chromium and HTTP against a dedicated simulation-only M16 database.",
+  "checks": [
+    "Malformed retained draft is explicitly blocked and can be cleared without sending a request.",
+    "Late operator confirmation updates the original cycle and final attempt atomically; failed attempt preserved; exact recovered fixture yields 1/1 correct cycles, 1/2 successful attempts, one retry/recovered cycle and zero first-attempt successes.",
+    "Lost HTTP response after an actual commit retains an exact sessionStorage request; identical browser retry reports duplicate and adds no events or records.",
+    "Frozen replay browses original ordered events, plays/pauses/seeks and exports saved records; review form absent and event sequence unchanged.",
+    "Twelve-cycle history paginates 5/5/2, resets page on filters, combines independent label/error/model/UTC-date filters, and fits a 390px viewport.",
+    "Independent labeling form attributes and links a new reference label to the original in-progress cycle without creating an attempt or changing its outcome.",
+    "Concurrent update produces a visible 409 conflict with no partial mutation; one refresh loads current revisions and preserves the draft for successful resubmission.",
+    "Only explicit record-review POST is enabled; missing intent, foreign Origin, ingestion, voice and commands are rejected without event changes; no browser Authorization header."
+  ],
+  "browserVersion": "159.0.8154.6",
+  "requestCount": 144,
+  "pageErrors": [],
+  "initialEventSequence": 68,
+  "finalEventSequence": 83,
+  "physicalOrProviderVerification": false
+}

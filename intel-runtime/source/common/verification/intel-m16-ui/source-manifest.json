@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-11-14T19:54:10.556266+00:00",
+  "author": "/root/reconcile",
+  "verification_scope": "English reconciliation plus M16 client/UI/proxy implementation; backend authored by root and browser verification by dashboard agent",
+  "files": [
+    {
+      "path": "HachingJunction/context/CHAT_CONTEXT.md",
+      "sha256": "9d700de5172593027414c6843b111880a5c492a2a70db33fbd4d96bf6a962b56",
+      "bytes": 18196,
+      "original_bundle_sha256": "b116619a0d5dd6de80517ca623ed56e8211b551892a4da63e97f4a789921c0b6"
+    },
+    {
+      "path": "HachingJunction/context/CONTEXT_MANIFEST.json",
+      "sha256": "99a61fdd7f612a90edd0fb3f9ef9ff18ab97aaee07bb9b9b78834e0342a47ec8",
+      "bytes": 11831,
+      "original_bundle_sha256": "e874f33fb905fadc32904515d27502de231cb5fe6a707c988350d36ed294600e"
+    },
+    {
+      "path": "HachingJunction/station/web-client/src/client.ts",
+      "sha256": "b7a755f78402973aee15c1601687781090a1105bf904a2fa61c0778ab324403f",
+      "bytes": 34636,
+      "original_bundle_sha256": "e8d2d539c302cec0aabaf70ad096f89f5df0327760f6c7196b95d9d558fccf67"
+    },
+    {
+      "path": "HachingJunction/station/web-client/src/types.ts",
+      "sha256": "e0249f9c004d00535a8feafd6566a39b08970e92b50e8a27b49967283a6fa483",
+      "bytes": 9976,
+      "original_bundle_sha256": "f0d588d7b2fe9e57f012ab8e908e3edcd8b32739ec50dae62e3505a49b0e462a"
+    },
+    {
+      "path": "HachingJunction/station/web-client/tests/client.test.ts",
+      "sha256": "71796e609e16d0b2f634b3a1fa6c2b66ed2ba8e2e5f59bebaf3465fc548b2fbe",
+      "bytes": 28101,
+      "original_bundle_sha256": "21ba7b200865749363518a62c3840ad7e1910c471a9dd24739f73578032384a2"
+    },
+    {
+      "path": "HachingJunction/station/web-client/README.md",
+      "sha256": "89395e78296d89db94a08237da71c4f47e2b2f4de91d9ff452eb1888901769b9",
+      "bytes": 10637,
+      "original_bundle_sha256": "b6f124ce29251990e84cd6c8198098b37e90e693a17d213d8210abeefbbc3391"
+    },
+    {
+      "path": "HachingJunction/station/web-client/VERIFICATION.md",
+      "sha256": "f6c4331f4f4275afa2b2fc69a345934263ef7de06b913ad99e07bdfc6d76b71f",
+      "bytes": 11282,
+      "original_bundle_sha256": "fc57b48366e99393865d10fab70f1bc6bc120af5162f6a9d1ec0581723a0cbea"
+    },
+    {
+      "path": "morph-station/package.json",
+      "sha256": "7f96a6ff2f36ab97eb352ff68df0ddf11f4b2a08953ab14a81c7a84b607a8bd5",
+      "bytes": 1223,
+      "original_bundle_sha256": "ea03dae7b4fb6c75dbe68fc03a716af98e0a402e8a3810b9404013d2da9fffed"
+    },
+    {
+      "path": "morph-station/server.ts",
+      "sha256": "e46857fa6192a20795204e984cbb287bd6884cbd6c91c63f496411f8b8f2372c",
+      "bytes": 1955,
+      "original_bundle_sha256": "387df7ae010cb329dca2af59126c780f84c70b362f47acb14700c6587e304624"
+    },
+    {
+      "path": "morph-station/server/stationProxy.ts",
+      "sha256": "57c29a189a08c103599c8de7a8d24d04152d35870ad69f7652e994cb9a4f259a",
+      "bytes": 13233,
+      "original_bundle_sha256": "f5b54ff78ddb831778c495faf9536d2e3203d7dbd169a4cc8c1665fedfa72e03"
+    },
+    {
+      "path": "morph-station/server/stationProxy.test.ts",
+      "sha256": "8fddc5e75794b0ee8712b2920440b60736586e0f6d19b9596c23e8a078686306",
+      "bytes": 13619,
+      "original_bundle_sha256": "db28947e8a4579c49e147595148062c0ccd9d0ac9cd44b9fad0bde55f01ff802"
+    },
+    {
+      "path": "morph-station/src/App.tsx",
+      "sha256": "37b440c6bb2b20368a3246543e61506f94adaba1a0cb98741467b1e853e5b6d8",
+      "bytes": 22215,
+      "original_bundle_sha256": "c14fdb9bdbd7eb931954b282e3b6e104885b17a8b9b37d70d0c5b86e027e7b09"
+    },
+    {
+      "path": "morph-station/src/components/CycleDetailDrawer.tsx",
+      "sha256": "3a1656742079c644f2a2784daf2a7995eac6e5de94aceb0a6747a7a0a86e994d",
+      "bytes": 21398,
+      "original_bundle_sha256": "0999ff7724feccec5811a052489b39a46d27b35f86484e2f6dc31f65144423d2"
+    },
+    {
+      "path": "morph-station/src/components/CycleReviewForm.tsx",
+      "sha256": "647afc57702f50bf5a1487c6dd70ba6be18cbc5bc5e244bfbcf4fcae010898de",
+      "bytes": 12669,
+      "original_bundle_sha256": null
+    },
+    {
+      "path": "morph-station/src/components/QualityHistoryView.tsx",
+      "sha256": "494cc44abef0fd6fa18b496a4d1ca7e8aa520d63a1d4f5343ecf20d4a6ef8432",
+      "bytes": 23797,
+      "original_bundle_sha256": "ed27d08a0515e3cf797d4d28fec8a36c1cca68b6a05ee04f3dc49cfc6ff800d8"
+    },
+    {
+      "path": "morph-station/src/components/ReplayPanel.tsx",
+      "sha256": "e37af9f9f1cae88e157612592482a53075eb50eb0c9530201329ebb57ab85611",
+      "bytes": 2899,
+      "original_bundle_sha256": null
+    },
+    {
+      "path": "morph-station/src/services/stationClient.ts",
+      "sha256": "4cdbfecc99f65e11492f00c83262789611baa4d3d5767fec081b0a32cd16981d",
+      "bytes": 5154,
+      "original_bundle_sha256": "ab5a1326e9fc15c53d5b5a335b1b4e6b50c3b5076fe507a5ad41d8c5da01b902"
+    },
+    {
+      "path": "morph-station/src/services/history.ts",
+      "sha256": "fb8f4ea6b469a6d3849d67734c101719579d85dc1e778400b92b741ec43f907e",
+      "bytes": 2647,
+      "original_bundle_sha256": null
+    },
+    {
+      "path": "morph-station/src/services/history.test.ts",
+      "sha256": "89e774273b7a21edc1b3eb604fbaa18ccfcad44b86daf4f5c78012807d8cf214",
+      "bytes": 4480,
+      "original_bundle_sha256": null
+    },
+    {
+      "path": "morph-station/src/services/pendingReview.ts",
+      "sha256": "13b997257c5daecb3ea98859708918bbb0722d0b42859765b3591c252b234f45",
+      "bytes": 2918,
+      "original_bundle_sha256": null
+    },
+    {
+      "path": "morph-station/src/types/morph.ts",
+      "sha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1",
+      "bytes": 12133,
+      "original_bundle_sha256": "f2817a0da7f5508c3e75cea13fe903e96863b590f3e392e948339ecd1aecc05a"
+    },
+    {
+      "path": "morph-station/README.md",
+      "sha256": "39bf52b561efa4111e16118ceb0cbc1974e3025c9e08e6fd3d800c8e2d9cb662",
+      "bytes": 6662,
+      "original_bundle_sha256": "36ee4d398fb567da21e7335308e9c6202df73b218b5e312998f19a9b0e0f119d"
+    },
+    {
+      "path": "morph-station/IMPLEMENTATION_STATUS.md",
+      "sha256": "af95e693e59b625e724e649bcd01f57b2c80392d22abe94be6aa5efb27782c13",
+      "bytes": 4451,
+      "original_bundle_sha256": "967fb1a82a1e86fe0eaf61192804c5b43c69c02a72796bab857695fe02f3c1ff"
+    },
+    {
+      "path": "verification/intel-m16-ui/README.md",
+      "sha256": "f0461942e481d50f04bb2db488c06431b7c813a6cf0873e565f0880bc87cd697",
+      "bytes": 7365,
+      "original_bundle_sha256": null
+    }
+  ]
+}
