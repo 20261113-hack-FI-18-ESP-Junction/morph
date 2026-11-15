@@ -1,0 +1,229 @@
+{
+  "schemaVersion": 1,
+  "group": "audit-portability",
+  "checkedAt": "2026-11-15T06:40:02.250528+00:00",
+  "status": "reviewed_and_verified_for_publication",
+  "sourceDelivery": {
+    "group": "audit-portability",
+    "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+    "deliveryId": "8bee374a-a12f-5f79-a0a6-3d133c9c56e2",
+    "transferId": "a15d0e5b-05e0-52c0-a2bb-fb6ad4af13d9",
+    "manifestNoteId": "eb91a5bd-7ea9-586c-bb6b-e584882642fe",
+    "bundleSha256": "7cf2284aef275c2a36ee01fb0b58f4a9c7e8e8aa7dfc243607c655144aeeb482",
+    "completionNoteId": "51d1470b-05c1-51e3-9960-f243958aee78",
+    "companionSha256": "3b4928ef8d15cad5b4d510c8fcbfe14baf99db695d3f80c3a24cd11453e5ed71",
+    "companionIsReviewMetadataOnly": true
+  },
+  "previousPackageSeal": {
+    "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
+    "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
+    "sealedAt": "2026-11-15T03:55:06.975648+00:00",
+    "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+    "fileCountExcludingThisManifest": 159,
+    "contentBytes": 2409735
+  },
+  "sourceMapping": [
+    {
+      "path": "source/common/HachingJunction/station/tests/test_export_audit.py",
+      "sourcePath": "HachingJunction/station/tests/test_export_audit.py",
+      "operation": "edit",
+      "baseSha256": "ed0df7caf389801f9a45cb4755cf5df20f184cd11fe30026343dd62fce4db9ce",
+      "bytes": 22104,
+      "sha256": "02802053cb3c9b46f292912ffbbfe972a10380a75fa13131bcce5039b3b95d3b",
+      "receivedExactBytes": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/EXPORT_AUDIT.md",
+      "sourcePath": "HachingJunction/station/EXPORT_AUDIT.md",
+      "operation": "edit",
+      "baseSha256": "792c01d7e9a83a4e1fb8d3ea981af0aeb290fa3f585384318380d9d55b2231ec",
+      "bytes": 10578,
+      "sha256": "9630374d3f5035ea9078a6cf339b2d52f08cdbeaa403cf7c3ad6053a9bf312ff",
+      "receivedExactBytes": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/tests/fixtures/export-audit/README.md",
+      "sourcePath": "HachingJunction/station/tests/fixtures/export-audit/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "bytes": 1761,
+      "sha256": "6c336901b096bb577d0b490e64066a77c524343f9339c5ead0c660162796085d",
+      "receivedExactBytes": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/tests/fixtures/export-audit/MANIFEST.json",
+      "sourcePath": "HachingJunction/station/tests/fixtures/export-audit/MANIFEST.json",
+      "operation": "add",
+      "baseSha256": null,
+      "bytes": 1869,
+      "sha256": "d6933858617ef45f20a637094d91ef9f24048510e9bd6925b4c49325196c501b",
+      "receivedExactBytes": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/tests/fixtures/export-audit/station/verification/sample-export.json",
+      "sourcePath": "HachingJunction/station/tests/fixtures/export-audit/station/verification/sample-export.json",
+      "operation": "add",
+      "baseSha256": null,
+      "bytes": 97061,
+      "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d",
+      "receivedExactBytes": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "sourcePath": "HachingJunction/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "operation": "add",
+      "baseSha256": null,
+      "bytes": 42490,
+      "sha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8",
+      "receivedExactBytes": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "sourcePath": "HachingJunction/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "operation": "add",
+      "baseSha256": null,
+      "bytes": 42490,
+      "sha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175",
+      "receivedExactBytes": true
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "source/common/HachingJunction/station/morph_station/export_audit.py",
+      "declaredInDelivery": true,
+      "gitBlob": "cac242b86765408de82354d67896b043af39dc1a",
+      "bytes": 32263,
+      "sha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/morph_station/models.py",
+      "declaredInDelivery": true,
+      "gitBlob": "4d93dc8aeb939e9f405fea6d91183db665314048",
+      "bytes": 11096,
+      "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/requirements.txt",
+      "declaredInDelivery": true,
+      "gitBlob": "8e48574d23550ec9e4811514c9b50044e75bf59f",
+      "bytes": 238,
+      "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/pytest.ini",
+      "declaredInDelivery": true,
+      "gitBlob": "4584de7e860925957a2daa58cfb4de8acc1e4802",
+      "bytes": 42,
+      "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/morph_station/store.py",
+      "declaredInDelivery": false,
+      "gitBlob": "31121131f54aa7853fc0715d103a1798e4025c94",
+      "bytes": 44486,
+      "sha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": false
+    },
+    {
+      "path": "source/common/HachingJunction/station/morph_station/schema.sql",
+      "declaredInDelivery": false,
+      "gitBlob": "b26818c3a4c404221efcfec9c0ece5a28b037377",
+      "bytes": 1589,
+      "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": true
+    },
+    {
+      "path": "source/common/HachingJunction/station/morph_station/__init__.py",
+      "declaredInDelivery": false,
+      "gitBlob": "fa6cd02cac9af34dfcd5469006ef527339e958a9",
+      "bytes": 114,
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "candidateMatchesGitHead": true,
+      "workingTreeMatchesCandidateAtCheck": true
+    }
+  ],
+  "verification": {
+    "startedAt": "2026-11-15T06:40:01.316956+00:00",
+    "finishedAt": "2026-11-15T06:40:02.239732+00:00",
+    "exitCode": 0,
+    "counts": {
+      "tests": 58,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "fixtureOverrideSet": false,
+    "unrelatedWorkingDirectory": true,
+    "minimalEnvironmentWithoutProviderCredentials": true,
+    "guardReportCount": 6,
+    "blockedOperationAttempts": [],
+    "guardScope": "Reviewed process-local guards; not an OS sandbox.",
+    "packageFilesUnchangedAfterTests": true,
+    "junitSha256": "1b750950bf4722840dd1f7fe86205b799c5d9e0deeed225c4231567aec3c57ba",
+    "logSha256": "b70acca4a91277ceef9010c9c50ed1d229577616ff1050a207aa88bbfc3102e6",
+    "stdout": "..........................................................               [100%]\n58 passed in 0.76s\n",
+    "stderr": "",
+    "passed": true
+  },
+  "reproduction": {
+    "python": "Python 3.12 with station/requirements.txt test dependencies installed",
+    "fixtureRoot": "source/common/HachingJunction/station/tests/fixtures/export-audit",
+    "fixtureEnvironmentOverride": "Leave MORPH_AUDIT_FIXTURE_ROOT unset to exercise the packaged default.",
+    "testCommand": "python -B -m pytest -q -p no:cacheprovider --tb=short <package>/source/common/HachingJunction/station/tests/test_export_audit.py",
+    "offlineGuard": "Use the unchanged tools/sitecustomize.py and tools/offline_guard.py with MORPH_OFFLINE_GUARD=1, a temporary MORPH_OFFLINE_REPORT_DIR, and PYTHONPATH containing tools and station. Run from an unrelated temporary directory with a minimal environment. Test reports and temporary SQLite remain outside the package."
+  },
+  "review": {
+    "behaviorChange": "The test fixture default resolves relative to the test file. The explicit fixture override remains available. All 58 test assertions and export_audit.py are unchanged.",
+    "supportChange": "Five support files package the existing exact simulation exports with their README and manifest; the source runbook documents this default.",
+    "dependencyBasis": "All test dependencies are exact Git HEAD blobs. The uncommitted working-tree store.py and api.py changes and new media/dashboard files are excluded.",
+    "priorProvenance": "Previous origin records for the two updated source paths are retained in SOURCE_ORIGINS.json. Unrelated source and prior evidence are unchanged."
+  },
+  "fixtureProvenance": [
+    {
+      "path": "context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "received": {
+        "bytes": 42490,
+        "sha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175"
+      },
+      "alreadyPublishedPath": "fixtures/audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "alreadyPublishedMatch": true,
+      "sourceMode": "simulation"
+    },
+    {
+      "path": "context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "received": {
+        "bytes": 42490,
+        "sha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8"
+      },
+      "alreadyPublishedPath": "fixtures/audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "alreadyPublishedMatch": true,
+      "sourceMode": "simulation"
+    },
+    {
+      "path": "station/verification/sample-export.json",
+      "received": {
+        "bytes": 97061,
+        "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d"
+      },
+      "alreadyPublishedPath": "fixtures/audit/station/verification/sample-export.json",
+      "alreadyPublishedMatch": true,
+      "sourceMode": "simulation"
+    }
+  ],
+  "limitations": [
+    "This verifies portable offline simulation record and audit tests, not physical execution, provider quality, browser acceptance or deployment.",
+    "The package remains an incomplete Intel source snapshot; unrelated source gaps and acceptance criteria are unchanged.",
+    "Historical Intel commands and external evidence references remain original dated source context.",
+    "Source reconstruction, review, Git publication and runtime deployment are separate lifecycle steps. This report does not assert a commit, push or deployment."
+  ]
+}
