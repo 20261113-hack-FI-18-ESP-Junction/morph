@@ -1,7 +1,7 @@
 """Independent offline export checks against saved acceptance evidence.
 
-Fixtures are read from the canonical workspace or an explicit portable root.
-Original fixtures are never rewritten. These
+Fixtures are read from packaged test copies or an explicit portable root.
+Original acceptance exports are never rewritten. These
 tests establish software record integrity only, not physical execution.
 """
 
@@ -30,7 +30,8 @@ from morph_station.store import StationStore
 
 WORKSPACE = Path(__file__).resolve().parents[2]
 STATION = WORKSPACE / "station"
-FIXTURE_ROOT = Path(os.environ.get("MORPH_AUDIT_FIXTURE_ROOT", str(WORKSPACE))).resolve()
+PACKAGED_FIXTURES = Path(__file__).resolve().parent / "fixtures" / "export-audit"
+FIXTURE_ROOT = Path(os.environ.get("MORPH_AUDIT_FIXTURE_ROOT", str(PACKAGED_FIXTURES))).resolve()
 M16 = FIXTURE_ROOT / "context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98"
 RECOVERED = M16 / "recovered-session-export.json"
 REPLAY = M16 / "browser-replay-export.json"
