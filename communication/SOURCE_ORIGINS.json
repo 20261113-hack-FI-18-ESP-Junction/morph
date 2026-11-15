@@ -1,7 +1,30 @@
 {
   "schemaVersion": 1,
-  "description": "Current Mac source plus reviewed bounded record/analysis relay extension; older Intel context server deliberately not adopted.",
+  "description": "Preserved ca512b1 communication provenance plus exact reviewed Mac handoff-event implementation and portable guide adaptations; concurrent dashboard relay/worker changes excluded.",
   "files": [
+    {
+      "path": "README.md",
+      "bytes": 4045,
+      "sha256": "937834cb87eb64c57f4060c1e6a37ade89e2031336583173d652841cbc697cde",
+      "origin": "mac-handoff-event-publication-guide-20261115",
+      "sourcePath": "communication/README.md@ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+      "sourceSha256": "7fd651cc9919c09abe3c430f08a5f4da28b7ca45de80f2da40021ca47f896d50",
+      "contentChanged": true,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "New English Mac-authored publication guide; no private history copied",
+      "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed"
+    },
+    {
+      "path": "context/EVENT_REVIEW.md",
+      "bytes": 2565,
+      "sha256": "753202553b02d3c93bedb5ae24abc4dcaa632b60eb149ad92d666c4123a44691",
+      "origin": "mac-handoff-event-publication-guide-20261115",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "contentChanged": true,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "New English Mac-authored publication guide; no private history copied"
+    },
     {
       "path": "context/coordination/three-host-20261115/collect_source_response.py",
       "bytes": 10874,
@@ -30,6 +53,18 @@
       "contentChanged": false
     },
     {
+      "path": "context_mcp/HANDOFF_EVENTS.md",
+      "bytes": 21342,
+      "sha256": "65bd5aa83b0807d3201e6740b1ab0bfcc049db74191bdf5490fb3c22af8951f5",
+      "origin": "mac-handoff-event-guide-portable-adaptation",
+      "sourcePath": "context_mcp/HANDOFF_EVENTS.md",
+      "sourceSha256": "909a5852bdb8bf719b86a393ae21bed15b3848855d160436f5563ffefad2b6ff",
+      "contentChanged": true,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay",
+      "adaptation": "Only private canonical-history links replaced with public guide/evidence links or plain canonical path references."
+    },
+    {
       "path": "context_mcp/bootstrap.py",
       "bytes": 1500,
       "sha256": "5320ba57e4594c99945ed7a943ef357a61260ec6c7c0e3966c11e487614894eb",
@@ -55,6 +90,61 @@
       "sourcePath": "context_mcp/connect_intel.py",
       "sourceSha256": "e5340f559c72df300845b2003aa9d1c8ddb57d7d980d5683dadf7de478592333",
       "contentChanged": false
+    },
+    {
+      "path": "context_mcp/handoff_codex_runner.py",
+      "bytes": 24053,
+      "sha256": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/handoff_codex_runner.py",
+      "sourceSha256": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/handoff_events.py",
+      "bytes": 18383,
+      "sha256": "950970a667237d026e9bc4b7baa4ed47ed6b6b46b860a0b44f7808d15308e621",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/handoff_events.py",
+      "sourceSha256": "950970a667237d026e9bc4b7baa4ed47ed6b6b46b860a0b44f7808d15308e621",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/handoff_publish.py",
+      "bytes": 17541,
+      "sha256": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/handoff_publish.py",
+      "sourceSha256": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/handoff_receiver.py",
+      "bytes": 27672,
+      "sha256": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/handoff_receiver.py",
+      "sourceSha256": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/handoff_review_export.py",
+      "bytes": 10522,
+      "sha256": "db2c1ab48c79b99cb5757405dde51e46d3cac1b764b80de058063d3a899d8c37",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/handoff_review_export.py",
+      "sourceSha256": "db2c1ab48c79b99cb5757405dde51e46d3cac1b764b80de058063d3a899d8c37",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
     },
     {
       "path": "context_mcp/prepare_connection.py",
@@ -94,12 +184,24 @@
     },
     {
       "path": "context_mcp/server.py",
-      "bytes": 11242,
-      "sha256": "53860f1cdebb876cfa985e0da5f29516a35e5ce6762b03685a240e429330ff46",
-      "origin": "mac-source-with-record-relay-extension",
+      "bytes": 14635,
+      "sha256": "7711942788119f34a8d6c244f412d2f585f003ce891531bb02f84057cb3f7a17",
+      "origin": "mac-record-relay-with-handoff-event-extension",
       "sourcePath": "context_mcp/server.py",
-      "sourceSha256": "6a83d7155c6128bf7a686164280a766da7dcd9f59f2c8bf0a65404c1f29f70fa",
-      "contentChanged": true
+      "sourceSha256": "7711942788119f34a8d6c244f412d2f585f003ce891531bb02f84057cb3f7a17",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay",
+      "previousPublication": {
+        "commit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+        "path": "context_mcp/server.py",
+        "bytes": 11242,
+        "sha256": "53860f1cdebb876cfa985e0da5f29516a35e5ce6762b03685a240e429330ff46",
+        "origin": "mac-source-with-record-relay-extension",
+        "sourcePath": "context_mcp/server.py",
+        "sourceSha256": "6a83d7155c6128bf7a686164280a766da7dcd9f59f2c8bf0a65404c1f29f70fa",
+        "contentChanged": true
+      }
     },
     {
       "path": "context_mcp/station_relay.py",
@@ -138,6 +240,72 @@
       "contentChanged": false
     },
     {
+      "path": "context_mcp/tests/test_handoff_codex_runner.py",
+      "bytes": 20305,
+      "sha256": "005c307b77d5d348508550260b45a6cdf6987a0be6303fc8ce626ca7a3081563",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/tests/test_handoff_codex_runner.py",
+      "sourceSha256": "005c307b77d5d348508550260b45a6cdf6987a0be6303fc8ce626ca7a3081563",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_events.py",
+      "bytes": 19902,
+      "sha256": "5bbb91a39b303749817833cdb60dd880eaf685c5345d4c38b8e952609df32ccc",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/tests/test_handoff_events.py",
+      "sourceSha256": "5bbb91a39b303749817833cdb60dd880eaf685c5345d4c38b8e952609df32ccc",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_mcp.py",
+      "bytes": 5381,
+      "sha256": "65bee119be03ade42411c2e1fa6b6387991b7dcc9e06207119440d974a8f150e",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/tests/test_handoff_mcp.py",
+      "sourceSha256": "65bee119be03ade42411c2e1fa6b6387991b7dcc9e06207119440d974a8f150e",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_publish.py",
+      "bytes": 14030,
+      "sha256": "79da39adc3ed581ba65b4adb5e44d0bc07ceaec5094b4bf8d6ce03b1dde20c54",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/tests/test_handoff_publish.py",
+      "sourceSha256": "79da39adc3ed581ba65b4adb5e44d0bc07ceaec5094b4bf8d6ce03b1dde20c54",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_receiver.py",
+      "bytes": 21060,
+      "sha256": "54d6003b916a5dea3d9d07794c92b11fea093bf6b0cf04ce4f79e10af7e28eb7",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/tests/test_handoff_receiver.py",
+      "sourceSha256": "54d6003b916a5dea3d9d07794c92b11fea093bf6b0cf04ce4f79e10af7e28eb7",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_review_export.py",
+      "bytes": 13586,
+      "sha256": "9871449dd32284f24773f0a2c199ed77817f566a77ff2d9578f85548bb60f86e",
+      "origin": "mac-handoff-event-implementation-20261115",
+      "sourcePath": "context_mcp/tests/test_handoff_review_export.py",
+      "sourceSha256": "9871449dd32284f24773f0a2c199ed77817f566a77ff2d9578f85548bb60f86e",
+      "contentChanged": false,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "canonical Mac workspace; exact approved event overlay"
+    },
+    {
       "path": "context_mcp/tests/test_station_relay.py",
       "bytes": 14651,
       "sha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
@@ -173,5 +341,7 @@
       "sourceSha256": "968b78d59619c9fdd8736fa141e511655a9dad0a4bd2953d15d8f35bcbbdbe0a",
       "contentChanged": false
     }
-  ]
+  ],
+  "updatedAt": "2026-11-15T05:08:42.425708+00:00",
+  "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed"
 }

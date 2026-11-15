@@ -1,6 +1,8 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-11-15T03:51:28.501728+00:00",
+  "createdAt": "2026-11-15T05:08:42.425708+00:00",
+  "previousManifestCreatedAt": "2026-11-15T03:51:28.501728+00:00",
+  "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
   "files": [
     {
       "path": ".gitignore",
@@ -22,14 +24,14 @@
     },
     {
       "path": "README.md",
-      "bytes": 2303,
-      "sha256": "7fd651cc9919c09abe3c430f08a5f4da28b7ca45de80f2da40021ca47f896d50",
-      "origin": "publication-guide-or-verification"
+      "bytes": 4045,
+      "sha256": "937834cb87eb64c57f4060c1e6a37ade89e2031336583173d652841cbc697cde",
+      "origin": "mac-handoff-event-publication-guide-20261115"
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 7519,
-      "sha256": "71e43cb07eaed307d02317bd9b415fae7a3652ef14be9ee93e2046b122a2494a",
+      "bytes": 15965,
+      "sha256": "ccac4ef862c3d98c11825879b68cc26fac22d516ae361a6c7734476921eafec1",
       "origin": "publication-guide-or-verification"
     },
     {
@@ -43,6 +45,12 @@
       "bytes": 126,
       "sha256": "ae74d9f29d307dcd9786f693d195862cae02d767dbb78416ebb52374b88b6f02",
       "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/EVENT_REVIEW.md",
+      "bytes": 2565,
+      "sha256": "753202553b02d3c93bedb5ae24abc4dcaa632b60eb149ad92d666c4123a44691",
+      "origin": "mac-handoff-event-publication-guide-20261115"
     },
     {
       "path": "context/START_HERE.md",
@@ -81,6 +89,12 @@
       "origin": "mac-current-source"
     },
     {
+      "path": "context_mcp/HANDOFF_EVENTS.md",
+      "bytes": 21342,
+      "sha256": "65bd5aa83b0807d3201e6740b1ab0bfcc049db74191bdf5490fb3c22af8951f5",
+      "origin": "mac-handoff-event-guide-portable-adaptation"
+    },
+    {
       "path": "context_mcp/STATION_RELAY.md",
       "bytes": 6284,
       "sha256": "9aa587a3787b64be6fd219aa4de7801b5d4ab53120dd6141d7f2c2d3f86b0507",
@@ -111,6 +125,36 @@
       "origin": "mac-current-source"
     },
     {
+      "path": "context_mcp/handoff_codex_runner.py",
+      "bytes": 24053,
+      "sha256": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_events.py",
+      "bytes": 18383,
+      "sha256": "950970a667237d026e9bc4b7baa4ed47ed6b6b46b860a0b44f7808d15308e621",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_publish.py",
+      "bytes": 17541,
+      "sha256": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_receiver.py",
+      "bytes": 27672,
+      "sha256": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_review_export.py",
+      "bytes": 10522,
+      "sha256": "db2c1ab48c79b99cb5757405dde51e46d3cac1b764b80de058063d3a899d8c37",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
       "path": "context_mcp/prepare_connection.py",
       "bytes": 4960,
       "sha256": "1a107400a9d1b8824ae8186d3b289e7593646e670f57ec944957d6e3843e81ff",
@@ -136,9 +180,9 @@
     },
     {
       "path": "context_mcp/server.py",
-      "bytes": 11242,
-      "sha256": "53860f1cdebb876cfa985e0da5f29516a35e5ce6762b03685a240e429330ff46",
-      "origin": "mac-source-with-record-relay-extension"
+      "bytes": 14635,
+      "sha256": "7711942788119f34a8d6c244f412d2f585f003ce891531bb02f84057cb3f7a17",
+      "origin": "mac-record-relay-with-handoff-event-extension"
     },
     {
       "path": "context_mcp/station_relay.py",
@@ -163,6 +207,42 @@
       "bytes": 15564,
       "sha256": "655b39874b91a8b9ffb66c9bcf58cbd57c757020e838d75e98f164894280b84e",
       "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_codex_runner.py",
+      "bytes": 20305,
+      "sha256": "005c307b77d5d348508550260b45a6cdf6987a0be6303fc8ce626ca7a3081563",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_events.py",
+      "bytes": 19902,
+      "sha256": "5bbb91a39b303749817833cdb60dd880eaf685c5345d4c38b8e952609df32ccc",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_mcp.py",
+      "bytes": 5381,
+      "sha256": "65bee119be03ade42411c2e1fa6b6387991b7dcc9e06207119440d974a8f150e",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_publish.py",
+      "bytes": 14030,
+      "sha256": "79da39adc3ed581ba65b4adb5e44d0bc07ceaec5094b4bf8d6ce03b1dde20c54",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_receiver.py",
+      "bytes": 21060,
+      "sha256": "54d6003b916a5dea3d9d07794c92b11fea093bf6b0cf04ce4f79e10af7e28eb7",
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_review_export.py",
+      "bytes": 13586,
+      "sha256": "9871449dd32284f24773f0a2c199ed77817f566a77ff2d9578f85548bb60f86e",
+      "origin": "mac-handoff-event-implementation-20261115"
     },
     {
       "path": "context_mcp/tests/test_station_relay.py",
@@ -195,6 +275,66 @@
       "origin": "publication-guide-or-verification"
     },
     {
+      "path": "verification/events-20261115/README.md",
+      "bytes": 2281,
+      "sha256": "eaa023a5bc4d5acf6d779be298a5a30357f033609dbbee00925899c8a1806a16",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/git-base.json",
+      "bytes": 9706,
+      "sha256": "4ec8651ff699783c9c991804344af6838f7d9a19099a245c8ad431176bbd5dd1",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/live-mac-result.json",
+      "origin": "publication-guide-or-verification",
+      "bytes": 5001,
+      "sha256": "a68d467fa509d162619dd49f17ed7ce704d3ad79fe72ebd21fd127ad9f6d6986"
+    },
+    {
+      "path": "verification/events-20261115/offline-result.json",
+      "bytes": 1106,
+      "sha256": "0e6bbc469a643b89077f8706c0336c6c3a1f591204a055b70621136e8b00cfb2",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/overlaid-source.json",
+      "bytes": 4063,
+      "sha256": "eb5c9977d79df3f9f54a566ba631adf09da56e7657cf7215032a44625bc17582",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/publication-diff.json",
+      "bytes": 6172,
+      "sha256": "b53155b470583dcd06b4e4e435315abccaa6ce220df2e8af605701ccb7cae431",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/source-transfer-result.json",
+      "bytes": 318,
+      "sha256": "8d246aac0d01e2aceb8be49c32c5deea5e0e731e1da111441b46bee03121dd34",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/source-transfer.log",
+      "bytes": 1202,
+      "sha256": "c38345399f9be3fc4c6fee89000cc183055bf9528c1af420221a5b1a101c73de",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/unittest-result.json",
+      "bytes": 312,
+      "sha256": "f64d345a6f068f6a5001e7e7883500fe5c8447848e159889c4d0fb80be917eaa",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/unittest.log",
+      "bytes": 50039,
+      "sha256": "a009de5d739de7e32e5c2427e858fc2a77287d0eece54dd164648c78d75285bd",
+      "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
       "path": "verification/offline-01/result.json",
       "bytes": 515,
       "sha256": "80546136813c543a2fc46ddac778a6be2c9fb4d6001d819aa65a575ecdfbf984",
@@ -212,5 +352,6 @@
       "sha256": "02a8363f976f495fd3a809a3eeba19cb15eba3378325ff7f065d0be295e50fda",
       "origin": "publication-guide-or-verification"
     }
-  ]
+  ],
+  "updatedAt": "2026-11-15T05:11:43.487165+00:00"
 }
