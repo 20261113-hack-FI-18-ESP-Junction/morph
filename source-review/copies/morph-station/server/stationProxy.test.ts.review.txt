@@ -1,0 +1,267 @@
+/** Real local HTTP tests with isolated fake upstreams; no hardware or provider calls. */
+import assert from "node:assert/strict";
+import test from "node:test";
+import { createServer, request, type IncomingMessage, type ServerResponse } from "node:http";
+import { once } from "node:events";
+import { mkdtemp, writeFile, chmod, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import path from "node:path";
+import { createLocalRequestGuard, createStationProxy, createStationTokenReader, type StationProxyOptions } from "./stationProxy.ts";
+
+const TOKEN = "test-only-upstream-token-at-least-32-characters";
+type Handler = (req: IncomingMessage, res: ServerResponse) => void;
+async function serve(handler: Handler) {
+  const server = createServer(handler); server.listen(0, "127.0.0.1"); await once(server, "listening");
+  const port = (server.address() as { port: number }).port;
+  return { port, origin: `http://127.0.0.1:${port}`, close: async () => {
+    const closed = new Promise<void>((resolve, reject) => server.close(error => error ? reject(error) : resolve()));
+    server.closeAllConnections(); await closed;
+  } };
+}
+async function bridge(options: Partial<StationProxyOptions> = {}) {
+  const proxy = createStationProxy({ upstreamOrigin: "http://127.0.0.1:8000", getToken: () => TOKEN, ...options });
+  let guard: ReturnType<typeof createLocalRequestGuard>;
+  const server = await serve((req, res) => guard(req, res, () => proxy(req, res, () => res.end("dashboard-ui"))));
+  guard = createLocalRequestGuard(server.port); return server;
+}
+const json = (res: ServerResponse, value: unknown) => { res.setHeader("Content-Type", "application/json"); res.end(JSON.stringify(value)); };
+function raw(origin: string, route: string, headers: Record<string, string>) {
+  return new Promise<{ status: number; body: string }>((resolve, reject) => {
+    const req = request(new URL(route, origin), { headers }, res => {
+      let body = ""; res.setEncoding("utf8"); res.on("data", value => { body += value; });
+      res.on("end", () => resolve({ status: res.statusCode!, body }));
+    }); req.on("error", reject); req.end();
+  });
+}
+const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+test("proxy sends only server bearer credentials to a fixed upstream and preserves the response", async () => {
+  let calls = 0;
+  const upstream = await serve((req, res) => {
+    calls++; assert.equal(req.method, "GET"); assert.equal(req.headers.authorization, `Bearer ${TOKEN}`);
+    assert.equal(req.headers.cookie, undefined); assert.equal(req.headers["x-extra"], undefined);
+    assert.equal(req.url, "/api/v1/cycles?sessionId=demo%3Asession&includeSimulation=true");
+    json(res, { items: [], total: 0, offset: 0, limit: 100 });
+  });
+  const proxy = await bridge({ upstreamOrigin: upstream.origin });
+  try {
+    const response = await fetch(`${proxy.origin}/api/v1/cycles?sessionId=demo%3Asession&includeSimulation=true`, {
+      headers: { Authorization: "[REDACTED]", Cookie: "session=browser", "X-Extra": "not-forwarded" },
+    });
+    assert.equal(response.status, 200); assert.equal(response.headers.get("cache-control"), "no-store");
+    assert.deepEqual(await response.json(), { items: [], total: 0, offset: 0, limit: 100 }); assert.equal(calls, 1);
+  } finally { await proxy.close(); await upstream.close(); }
+});
+
+test("only allowlisted GET routes reach upstream; writes, unknown paths and query injection do not", async () => {
+  let calls = 0;
+  const proxy = await bridge({ fetch: async () => { calls++; return new Response("{}", { headers: { "Content-Type": "application/json" } }); } });
+  try {
+    for (const method of ["POST", "PUT", "DELETE", "PATCH", "OPTIONS"]) {
+      const response = await fetch(`${proxy.origin}/api/v1/commands`, { method });
+      assert.equal(response.status, 405); assert.equal(response.headers.get("allow"), "GET"); await response.text();
+    }
+    for (const route of ["/api/v1/records", "/api/v1/voice/token", "/api/v1/sessions/id/end", "/api/v1/cycles/id%2Fbad",
+      "/api/v1/cycles?url=http://evil.invalid", "/api/v1/cycles?limit=1&limit=2"]) {
+      const response = await fetch(proxy.origin + route); assert.equal(response.status, 404); await response.text();
+    }
+    assert.equal(calls, 0);
+  } finally { await proxy.close(); }
+});
+
+test("Host, Origin and Fetch Metadata guards reject cross-origin access", async () => {
+  let calls = 0;
+  const proxy = await bridge({ fetch: async () => { calls++; return new Response("[]", { headers: { "Content-Type": "application/json" } }); } });
+  try {
+    assert.equal((await raw(proxy.origin, "/api/v1/sessions", { Host: "evil.example" })).status, 403);
+    const deniedHeaders: Record<string, string>[] = [{ Origin: "https://evil.example" }, { Origin: "null" }, { "Sec-Fetch-Site": "cross-site" }, { "Sec-Fetch-Site": "same-site" }];
+    for (const headers of deniedHeaders) {
+      const response = await fetch(`${proxy.origin}/api/v1/sessions`, { headers }); assert.equal(response.status, 403); await response.text();
+    }
+    const valid = await fetch(`${proxy.origin}/api/v1/sessions`, { headers: { Origin: proxy.origin, "Sec-Fetch-Site": "same-origin" } });
+    assert.equal(valid.status, 200); await valid.text(); assert.equal(calls, 1);
+  } finally { await proxy.close(); }
+});
+
+test("missing credentials keep the UI available and return a sanitized503 only for API calls", async () => {
+  const proxy = await bridge({ getToken: async () => { throw new Error(TOKEN); }, fetch: async () => { throw new Error("must not fetch"); } });
+  try {
+    assert.equal(await (await fetch(proxy.origin)).text(), "dashboard-ui");
+    const response = await fetch(`${proxy.origin}/api/v1/sessions`); assert.equal(response.status, 503);
+    assert.equal((await response.text()).includes(TOKEN), false);
+  } finally { await proxy.close(); }
+});
+
+test("upstream errors never echo secrets and redirects never reach the destination", async () => {
+  let calls = 0;
+  const upstream = await serve((req, res) => {
+    calls++;
+    if (req.url?.startsWith("/api/v1/sessions")) { res.writeHead(302, { Location: "/destination" }); res.end(); }
+    else if (req.url === "/api/v1/metrics") { res.statusCode = 401; res.end(TOKEN); }
+    else { json(res, { unexpected: true }); }
+  });
+  const proxy = await bridge({ upstreamOrigin: upstream.origin });
+  try {
+    const redirect = await fetch(`${proxy.origin}/api/v1/sessions`); assert.equal(redirect.status, 502); await redirect.text();
+    const error = await fetch(`${proxy.origin}/api/v1/metrics`); assert.equal(error.status, 401); assert.equal((await error.text()).includes(TOKEN), false);
+    assert.equal(calls, 2);
+  } finally { await proxy.close(); await upstream.close(); }
+});
+
+test("evidence bytes and complete CSV export stream unchanged with safe content types", async () => {
+  const evidence = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a]); const csv = "section,recordType,id,dataJson\r\nrecords,cycle,c1,{}\r\n";
+  const upstream = await serve((req, res) => {
+    if (req.url?.startsWith("/api/v1/evidence/")) { res.setHeader("Content-Type", "image/png"); res.end(evidence); }
+    else { res.setHeader("Content-Type", "text/csv"); res.end(csv); }
+  });
+  const proxy = await bridge({ upstreamOrigin: upstream.origin });
+  try {
+    const image = await fetch(`${proxy.origin}/api/v1/evidence/frame%3A1`); assert.equal(image.headers.get("content-type"), "image/png");
+    assert.deepEqual(Buffer.from(await image.arrayBuffer()), evidence);
+    const exportResponse = await fetch(`${proxy.origin}/api/v1/sessions/demo%3Asession/export?format=csv`);
+    assert.equal(await exportResponse.text(), csv); assert.match(exportResponse.headers.get("content-disposition")!, /morph-session-export\.csv/);
+  } finally { await proxy.close(); await upstream.close(); }
+});
+
+test("SSE is delivered incrementally and browser disconnect aborts the upstream connection", async () => {
+  let closed = false;
+  const upstream = await serve((req, res) => {
+    assert.equal(req.headers["last-event-id"], "5"); assert.equal(req.url, "/api/v1/events?after=5");
+    res.writeHead(200, { "Content-Type": "text/event-stream" }); res.write(": connected\n\n");
+    res.once("close", () => { closed = true; });
+  });
+  const proxy = await bridge({ upstreamOrigin: upstream.origin }); const control = new AbortController();
+  try {
+    const response = await fetch(`${proxy.origin}/api/v1/events?after=5`, { headers: { "Last-Event-ID": "5" }, signal: control.signal });
+    assert.equal(response.headers.get("x-accel-buffering"), "no");
+    const reader = response.body!.getReader(); const first = await reader.read();
+    assert.match(new TextDecoder().decode(first.value), /connected/); control.abort();
+    void reader.cancel().catch(() => {});
+    for (let i = 0; !closed && i < 100; i++) await delay(5);
+    assert.equal(closed, true);
+  } finally { control.abort(); await proxy.close(); await upstream.close(); }
+});
+
+test("ordinary upstream waits are bounded and reported as504", async () => {
+  const upstream = await serve(() => {});
+  const proxy = await bridge({ upstreamOrigin: upstream.origin, requestTimeoutMs: 30 });
+  try { const response = await fetch(`${proxy.origin}/api/v1/metrics`); assert.equal(response.status, 504); await response.text(); }
+  finally { await proxy.close(); await upstream.close(); }
+});
+
+test("token file reader accepts owner-only existing files, rejects public files and honors environment override", async () => {
+  const directory = await mkdtemp(path.join(tmpdir(), "morph-proxy-token-test-")); const file = path.join(directory, "api-token");
+  try {
+    await writeFile(file, TOKEN, { mode: 0o600 });
+    assert.equal(await createStationTokenReader({ tokenFile: file })(), TOKEN);
+    await chmod(file, 0o644); await assert.rejects(createStationTokenReader({ tokenFile: file })());
+    assert.equal(await createStationTokenReader({ tokenFile: file, getEnvironmentToken: () => TOKEN })(), TOKEN);
+    await assert.rejects(createStationTokenReader({ tokenFile: path.join(directory, "missing") })());
+  } finally { await rm(directory, { recursive: true, force: true }); }
+});
+
+test("audited review requires its own explicit JSON intent", async () => {
+  const received: { method?: string; url?: string; body: string; authorization?: string }[] = [];
+  const upstream = await serve(async (req, res) => {
+    let body = ''; for await (const part of req) body += part;
+    received.push({ method: req.method, url: req.url, body, authorization: req.headers.authorization });
+    json(res, { cycle: {}, duplicate: false });
+  });
+  const proxy = await bridge({ upstreamOrigin: upstream.origin });
+  try {
+    const route = `${proxy.origin}/api/v1/cycles/demo%3Aretry/review`;
+    const payload = JSON.stringify({ id: 'review-once', eventId: 'review-event', expectedRevision: 2 });
+    for (const headers of [{}, { 'Content-Type': 'application/json' }, { 'X-Morph-Intent': 'record-review', 'Content-Type': 'text/plain' }] as Record<string,string>[]) {
+      const denied = await fetch(route, { method: 'POST', headers, body: payload });
+      assert.equal(denied.status, 415); await denied.text();
+    }
+    const headers = { 'Content-Type': 'application/json', 'X-Morph-Intent': 'record-review', Authorization: '[REDACTED]' };
+    for (let retry = 0; retry < 2; retry++) {
+      const response = await fetch(route, { method: 'POST', headers, body: payload });
+      assert.equal(response.status, 200); await response.text();
+    }
+    assert.equal(received.length, 2); assert.deepEqual(received[0], received[1]);
+    assert.deepEqual(received[0], { method: 'POST', url: '/api/v1/cycles/demo%3Aretry/review', body: payload, authorization: `Bearer ${TOKEN}` });
+    for (const path of ['/api/v1/records','/api/v1/commands','/api/v1/corrections','/api/v1/cycles/id/review?url=http://evil.invalid','/api/v1/cycles/id%2Fother/review']) {
+      const denied = await fetch(proxy.origin+path, {method:'POST',headers,body:payload});
+      assert.equal(denied.status,405); await denied.text();
+    }
+    assert.equal(received.length,2);
+  } finally { await proxy.close(); await upstream.close(); }
+});
+
+test("review blocks cross-origin, oversized and malformed requests without contacting upstream", async () => {
+  let calls = 0;
+  const proxy = await bridge({fetch: async () => {calls++; return new Response('{}',{headers:{'Content-Type':'application/json'}});}});
+  const headers = {'Content-Type':'application/json','X-Morph-Intent':'record-review'};
+  try {
+    for (const [body, extra, expected] of [
+      ['{}',{Origin:'https://evil.example'},403], ['x'.repeat(65537),{},413], ['[]',{},400], ['{',{},400],
+    ] as [string,Record<string,string>,number][]) {
+      const response = await fetch(`${proxy.origin}/api/v1/cycles/demo/review`,{method:'POST',headers:{...headers,...extra},body});
+      assert.equal(response.status,expected); await response.text();
+    }
+    assert.equal(calls,0);
+  } finally {await proxy.close();}
+});
+
+test("review preserves revision conflict status without reflecting sensitive upstream errors", async () => {
+  const proxy = await bridge({fetch: async () => new Response(TOKEN,{status:409})});
+  try {
+    const response = await fetch(`${proxy.origin}/api/v1/cycles/demo/review`,{method:'POST',headers:{'Content-Type':'application/json','X-Morph-Intent':'record-review'},body:'{}'});
+    assert.equal(response.status,409); assert.equal((await response.text()).includes(TOKEN),false);
+  } finally {await proxy.close();}
+});
+
+test("analysis has exact read routes and preserves asynchronous acceptance without browser credentials", async () => {
+  const calls: { method?: string; url?: string; body: string }[] = [];
+  const upstream = await serve(async (req, res) => {
+    assert.equal(req.headers.authorization, `Bearer ${TOKEN}`);
+    assert.equal(req.headers.cookie, undefined);
+    let body = ""; for await (const part of req) body += part;
+    calls.push({ method: req.method, url: req.url, body });
+    res.statusCode = req.method === "POST" ? 202 : 200;
+    json(res, { reportId: "saved-job", status: "queued" });
+  });
+  const proxy = await bridge({ upstreamOrigin: upstream.origin });
+  try {
+    for (const route of [
+      "/api/v1/analysis/context?kind=session_comparison&sessionIds=baseline&sessionIds=adaptive&sourceMode=simulation&baselineSessionId=baseline&adaptiveSessionId=adaptive&comparisonSpecId=saved-spec",
+      "/api/v1/analysis/reports?sessionId=baseline&cycleId=saved-cycle",
+      "/api/v1/analysis/reports/saved-job",
+    ]) {
+      const response = await fetch(proxy.origin + route);
+      assert.equal(response.status, 200); await response.text();
+    }
+    const body = JSON.stringify({ requestId: "request-once", kind: "cycle_explanation" });
+    const response = await fetch(`${proxy.origin}/api/v1/analysis/reports`, {
+      method: "POST", headers: { "Content-Type": "application/json", "X-Morph-Intent": "evidence-analysis", Authorization: "[REDACTED]", Cookie: "private=browser" }, body,
+    });
+    assert.equal(response.status, 202); assert.equal(response.headers.get("cache-control"), "no-store");
+    assert.equal((await response.json()).reportId, "saved-job");
+    assert.equal(calls.length, 4); assert.deepEqual(calls.at(-1), { method: "POST", url: "/api/v1/analysis/reports", body });
+  } finally { await proxy.close(); await upstream.close(); }
+});
+
+test("analysis rejects wrong intent, foreign origin, extra routes, duplicate query and large or invalid bodies", async () => {
+  let calls = 0;
+  const proxy = await bridge({ fetch: async () => { calls++; return new Response("{}", { headers: { "Content-Type": "application/json" } }); } });
+  const headers = { "Content-Type": "application/json", "X-Morph-Intent": "evidence-analysis" };
+  try {
+    for (const [body, extra, status] of [
+      ["{}", { "X-Morph-Intent": "record-review" }, 415], ["{}", { "X-Morph-Intent": "" }, 415],
+      ["{}", { Origin: "https://outside.invalid" }, 403], ["x".repeat(65537), {}, 413], ["[]", {}, 400], ["{", {}, 400],
+    ] as [string, Record<string, string>, number][]) {
+      const response = await fetch(`${proxy.origin}/api/v1/analysis/reports`, { method: "POST", headers: { ...headers, ...extra }, body });
+      assert.equal(response.status, status); await response.text();
+    }
+    for (const route of ["/api/v1/analysis/context", "/api/v1/analysis/reports/job", "/api/v1/analysis/reports?retry=true", "/api/v1/cycles/cycle/review"]) {
+      const response = await fetch(proxy.origin + route, { method: "POST", headers, body: "{}" });
+      assert.equal(response.status, route.endsWith("/review") ? 415 : 405); await response.text();
+    }
+    for (const route of ["/api/v1/analysis/context?sessionIds=a&sessionIds=b&sessionIds=c", "/api/v1/analysis/context?sourceMode=live&sourceMode=simulation", "/api/v1/analysis/reports?url=https://outside.invalid", "/api/v1/analysis/reports/job%2Fother"]) {
+      const response = await fetch(proxy.origin + route); assert.equal(response.status, 404); await response.text();
+    }
+    assert.equal(calls, 0);
+  } finally { await proxy.close(); }
+});
