@@ -24,14 +24,14 @@
     },
     {
       "path": "README.md",
-      "bytes": 4045,
-      "sha256": "937834cb87eb64c57f4060c1e6a37ade89e2031336583173d652841cbc697cde",
-      "origin": "mac-handoff-event-publication-guide-20261115"
+      "bytes": 4140,
+      "sha256": "cfe10f030e7e926c4d70f2253d951faa2dfecf6c12d9feff9f06ed1cba877a7e",
+      "origin": "mac-adoption-documentation-20261115"
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 15965,
-      "sha256": "ccac4ef862c3d98c11825879b68cc26fac22d516ae361a6c7734476921eafec1",
+      "bytes": 17650,
+      "sha256": "022911bba9028eab3341e8355ce3fe01b26a51fb30cf7502baf8528f2e2535d0",
       "origin": "publication-guide-or-verification"
     },
     {
@@ -54,9 +54,9 @@
     },
     {
       "path": "context/START_HERE.md",
-      "bytes": 649,
-      "sha256": "f3efe8ce9a9ace64fc68e605336a6e8147612b7a0837416497463cf3d95d5da0",
-      "origin": "publication-guide-or-verification"
+      "bytes": 900,
+      "sha256": "691353f49d5e03fd2d15482bd9b847d3f82badbf1321ac5c6a85c41902cbef42",
+      "origin": "mac-adoption-documentation-20261115"
     },
     {
       "path": "context/THREE_HOST_ARCHITECTURE.md",
@@ -275,6 +275,12 @@
       "origin": "publication-guide-or-verification"
     },
     {
+      "path": "verification/events-20261115/INTEL_ADOPTION_STATUS.md",
+      "bytes": 4305,
+      "sha256": "9dbdb958e8a88e8d483b487421294626bcfdbe69bb6b1f22265ce0f79c433f47",
+      "origin": "mac-adoption-documentation-20261115"
+    },
+    {
       "path": "verification/events-20261115/README.md",
       "bytes": 2281,
       "sha256": "eaa023a5bc4d5acf6d779be298a5a30357f033609dbbee00925899c8a1806a16",
@@ -353,5 +359,5 @@
       "origin": "publication-guide-or-verification"
     }
   ],
-  "updatedAt": "2026-11-15T05:11:43.487165+00:00"
+  "updatedAt": "2026-11-15T05:23:33.312506+00:00"
 }

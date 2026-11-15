@@ -4,15 +4,25 @@
   "files": [
     {
       "path": "README.md",
-      "bytes": 4045,
-      "sha256": "937834cb87eb64c57f4060c1e6a37ade89e2031336583173d652841cbc697cde",
-      "origin": "mac-handoff-event-publication-guide-20261115",
-      "sourcePath": "communication/README.md@ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
-      "sourceSha256": "7fd651cc9919c09abe3c430f08a5f4da28b7ca45de80f2da40021ca47f896d50",
+      "bytes": 4140,
+      "sha256": "cfe10f030e7e926c4d70f2253d951faa2dfecf6c12d9feff9f06ed1cba877a7e",
+      "origin": "mac-adoption-documentation-20261115",
+      "sourcePath": "communication/README.md",
       "contentChanged": true,
       "implementationDate": "2026-11-15",
-      "sourceLocation": "New English Mac-authored publication guide; no private history copied",
-      "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed"
+      "sourceLocation": "Owner-authorized dated deployment/coordination documentation",
+      "previousPublication": {
+        "path": "README.md",
+        "bytes": 4045,
+        "sha256": "937834cb87eb64c57f4060c1e6a37ade89e2031336583173d652841cbc697cde",
+        "origin": "mac-handoff-event-publication-guide-20261115",
+        "sourcePath": "communication/README.md@ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+        "sourceSha256": "7fd651cc9919c09abe3c430f08a5f4da28b7ca45de80f2da40021ca47f896d50",
+        "contentChanged": true,
+        "implementationDate": "2026-11-15",
+        "sourceLocation": "New English Mac-authored publication guide; no private history copied",
+        "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed"
+      }
     },
     {
       "path": "context/EVENT_REVIEW.md",
@@ -24,6 +34,23 @@
       "contentChanged": true,
       "implementationDate": "2026-11-15",
       "sourceLocation": "New English Mac-authored publication guide; no private history copied"
+    },
+    {
+      "path": "context/START_HERE.md",
+      "bytes": 900,
+      "sha256": "691353f49d5e03fd2d15482bd9b847d3f82badbf1321ac5c6a85c41902cbef42",
+      "origin": "mac-adoption-documentation-20261115",
+      "sourcePath": "communication/context/START_HERE.md",
+      "contentChanged": true,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "Owner-authorized dated deployment/coordination documentation",
+      "previousPublication": {
+        "baseCommit": "0ca975297c8fa0f7cc949e5f7eb203e9fe6892ea",
+        "path": "context/START_HERE.md",
+        "bytes": 649,
+        "sha256": "f3efe8ce9a9ace64fc68e605336a6e8147612b7a0837416497463cf3d95d5da0",
+        "origin": "publication-guide-or-verification"
+      }
     },
     {
       "path": "context/coordination/three-host-20261115/collect_source_response.py",
@@ -340,8 +367,18 @@
       "sourcePath": "context_mcp/verify_live.py",
       "sourceSha256": "968b78d59619c9fdd8736fa141e511655a9dad0a4bd2953d15d8f35bcbbdbe0a",
       "contentChanged": false
+    },
+    {
+      "path": "verification/events-20261115/INTEL_ADOPTION_STATUS.md",
+      "bytes": 4305,
+      "sha256": "9dbdb958e8a88e8d483b487421294626bcfdbe69bb6b1f22265ce0f79c433f47",
+      "origin": "mac-adoption-documentation-20261115",
+      "sourcePath": "communication/verification/events-20261115/INTEL_ADOPTION_STATUS.md",
+      "contentChanged": true,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "Owner-authorized dated deployment/coordination documentation"
     }
   ],
-  "updatedAt": "2026-11-15T05:08:42.425708+00:00",
+  "updatedAt": "2026-11-15T05:23:33.312506+00:00",
   "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed"
 }
