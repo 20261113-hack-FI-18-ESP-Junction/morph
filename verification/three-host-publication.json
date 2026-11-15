@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-11-15T04:00:52.917042+00:00",
+  "contentCommit": "a4018734f2447bddf663a4d0723b6faba1aa760e",
+  "repository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "baseJoseCommit": "54ef08d77e156cb78e7101d6dd98401c4a8c42c5",
+  "commitsBeforeVerificationRecord": 72,
+  "newCommitsBeforeVerificationRecord": 47,
+  "trackedFilesBeforeVerificationRecord": 436,
+  "packages": [
+    {
+      "path": "intel-runtime",
+      "manifest": "SOURCE_MANIFEST.json",
+      "manifestSha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+      "verifiedFiles": 160
+    },
+    {
+      "path": "communication",
+      "manifest": "SOURCE_MANIFEST.json",
+      "manifestSha256": "ec67821b400fc389f4afa9e3615c40fde0a3aa90a12decf9db3dbcd972a420cd",
+      "verifiedFiles": 36
+    },
+    {
+      "path": "klemen-dashboard",
+      "manifest": "SOURCE_RECONCILIATION.json",
+      "manifestSha256": "6cfd08efceb7bd98c30dc3738eb970391d5137d96e9401e4f5b28999fe8f78dd",
+      "verifiedFiles": 153
+    }
+  ],
+  "preservedJoseSourceFiles": 26,
+  "preservedFocusedIntelSourceFiles": 17,
+  "originalInventory": 240,
+  "exactOriginalFilesReceived": 237,
+  "reviewOnlyTestCopies": 3,
+  "tests": {
+    "dashboardClientAnalytics": 174,
+    "intelMethods": 158,
+    "intelAdditionalSubtests": 5,
+    "communication": 63,
+    "sourceTransferReceiver": 7
+  },
+  "isolatedTlsBridge": "passed; seven exactly-once synthetic station operations, preserved status/body/two-session query; missing-worker failures surfaced",
+  "independentPublicationReview": "passed; manifests, provenance, current guide links and credential scan reviewed",
+  "dependencyOrRuntimeFilesTracked": false,
+  "liveMacMcpRestarted": false,
+  "intelServiceRestarted": false,
+  "providerCallsInThisWork": 0,
+  "robotOperationsInThisWork": 0,
+  "notes": "Test counts identify separate suites and are not a deduplicated physical acceptance score. Three original tests are not counted. This record verifies local source before the authorized GitHub push."
+}
