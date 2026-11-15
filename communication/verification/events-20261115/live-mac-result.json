@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T05:11:43.472836+00:00",
+  "scope": "Existing Mac MCP adoption; actual Intel adoption still pending",
+  "existingEndpointAndIdentityPreserved": true,
+  "privateCodeAndDatabaseBackupChecked": true,
+  "liveToolCount": 17,
+  "serverProcessId": 93262,
+  "receiverProcessId": 96154,
+  "processPersistence": "Foreground managed sessions; restart required after process/app/host shutdown.",
+  "canonicalCommunicationTests": 181,
+  "publishedCommunicationTests": 177,
+  "publishedSourceTransferTests": 7,
+  "testCountNote": "Canonical suite includes four concurrent dashboard allowlist tests excluded from this publication. Suites overlap; counts are not added as a physical score.",
+  "liveSources": {
+    "server.py": "7711942788119f34a8d6c244f412d2f585f003ce891531bb02f84057cb3f7a17",
+    "station_relay.py": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201",
+    "station_worker.py": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+    "handoff_events.py": "950970a667237d026e9bc4b7baa4ed47ed6b6b46b860a0b44f7808d15308e621",
+    "handoff_publish.py": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380",
+    "handoff_receiver.py": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566",
+    "handoff_codex_runner.py": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481",
+    "handoff_review_export.py": "db2c1ab48c79b99cb5757405dde51e46d3cac1b764b80de058063d3a899d8c37"
+  },
+  "relay": {
+    "checkedAt": "2026-11-15T04:56:17.031127+00:00",
+    "class": "live Mac TLS MCP with local synthetic station",
+    "intelHostContacted": false,
+    "providerCalled": false,
+    "physicalTest": false,
+    "checks": [
+      {
+        "name": "missing_auth",
+        "status": 401
+      },
+      {
+        "name": "wrong_auth",
+        "status": 401
+      },
+      {
+        "name": "/api/v1/dashboard",
+        "method": "GET",
+        "status": 200,
+        "requestId": "1591783d-0cf4-4aa1-97a4-37bbc860dfa9",
+        "exactBodyPreserved": true,
+        "requestDeduplicated": true,
+        "responseSha256": "c84be532df793b620cc4121939c01b295a4ec9dbbb72bbbf10978cbbef611883",
+        "singleStationCall": true
+      },
+      {
+        "name": "/api/v1/cycles/synthetic-cycle/review",
+        "method": "POST",
+        "status": 200,
+        "requestId": "2c24a98c-de9b-4ae8-be0c-496cc34336ed",
+        "exactBodyPreserved": true,
+        "requestDeduplicated": true,
+        "responseSha256": "cc53d139e39f48bd3e0b5b03efa4cff1694f6e2812dbf8cd622157c59843591f",
+        "singleStationCall": true
+      },
+      {
+        "name": "/api/v1/analysis/reports",
+        "method": "POST",
+        "status": 202,
+        "requestId": "52a595dd-3cd7-4df4-b29b-9219f6176b68",
+        "exactBodyPreserved": true,
+        "requestDeduplicated": true,
+        "responseSha256": "2ef4c8c3ad7f8fd1895483649ebdace7b141da33d0770d51f69a12a845818049",
+        "singleStationCall": true
+      }
+    ],
+    "passed": true
+  },
+  "event": {
+    "event_id": "37a9ef9d-08fb-50a1-83cc-1111ad06c917",
+    "seq": 1,
+    "note_id": "ea34e583-ad86-4b6f-b245-e62b513f6477",
+    "note_path": "context/notes/ea34e583-ad86-4b6f-b245-e62b513f6477.json",
+    "note_sha256": "f0c3136fd932a9bfaca3a9297f629b91c1df4d2a9f7ad1745301169c7350e269",
+    "note_characters": 1220,
+    "origin": "intel",
+    "target": "mac",
+    "kind": "work",
+    "state": "processed",
+    "attempts": 1,
+    "consumer_id": "receiver-b90b98ed-629b-4490-b680-9a593507c8f4",
+    "claim_id": "0f87ec25-ca07-4da6-a438-44d4781c6ade",
+    "result_sha256": "cb74a9b2065da2846e89263ec6e53dda493dfd751ccd2b44bc7fa4f0ad0b69da",
+    "error_code": "",
+    "created_at": "2026-11-15T05:00:00.517539+00:00",
+    "received_at": "2026-11-15T05:06:40.984852+00:00",
+    "processed_at": "2026-11-15T05:07:28.432613+00:00",
+    "failed_at": null,
+    "retry_at": null,
+    "lease_expires_at": "2026-11-15T05:12:11.002397+00:00",
+    "claimable": false
+  },
+  "eventOriginWasSimulated": true,
+  "successfulRealCodexInvocations": 2,
+  "realReviewCompletedAt": "2026-11-15T05:07:28.413123+00:00",
+  "resultSha256": "cb74a9b2065da2846e89263ec6e53dda493dfd751ccd2b44bc7fa4f0ad0b69da",
+  "sanitizedExportSha256": "1d4dbc69aff0ec9afe548f55aaec6dd18b3f784fd03e53a9b79a2b21b4365785",
+  "resultPreservedAcrossIdlePolls": true,
+  "reviewProposalsRequireNotionReconciliation": true,
+  "existingFiveMinuteReviewPreserved": true,
+  "intelRequestNoteId": "b71f04ec-67da-47c2-9bd8-7d0df7a46ad3",
+  "intelRequestEventId": "fed22d93-d7ad-511a-aeac-4206410d1bd3",
+  "intelRequestSharedReadbackVerified": true,
+  "intelAdoptionVerified": false,
+  "physicalTest": false,
+  "applicationProviderCall": false,
+  "tunnelChanged": false,
+  "reviewCitationLimit": "The original review identifies temporary input paths for its supplied note and Git snapshot. Their durable content remains in the verified input/result; canonical note ID and result hash above are the durable references."
+}

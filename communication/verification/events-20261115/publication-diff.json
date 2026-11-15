@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T05:08:42.425708+00:00",
+  "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+  "repositoryHeadAtCheck": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+  "gitMutationPerformed": false,
+  "changedOrAddedFilesExcludingThisReportAndFinalManifest": [
+    {
+      "path": "README.md",
+      "change": "modified",
+      "sha256": "937834cb87eb64c57f4060c1e6a37ade89e2031336583173d652841cbc697cde"
+    },
+    {
+      "path": "SOURCE_ORIGINS.json",
+      "change": "modified",
+      "sha256": "ccac4ef862c3d98c11825879b68cc26fac22d516ae361a6c7734476921eafec1"
+    },
+    {
+      "path": "context/EVENT_REVIEW.md",
+      "change": "added",
+      "sha256": "753202553b02d3c93bedb5ae24abc4dcaa632b60eb149ad92d666c4123a44691"
+    },
+    {
+      "path": "context_mcp/HANDOFF_EVENTS.md",
+      "change": "added",
+      "sha256": "65bd5aa83b0807d3201e6740b1ab0bfcc049db74191bdf5490fb3c22af8951f5"
+    },
+    {
+      "path": "context_mcp/handoff_codex_runner.py",
+      "change": "added",
+      "sha256": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481"
+    },
+    {
+      "path": "context_mcp/handoff_events.py",
+      "change": "added",
+      "sha256": "950970a667237d026e9bc4b7baa4ed47ed6b6b46b860a0b44f7808d15308e621"
+    },
+    {
+      "path": "context_mcp/handoff_publish.py",
+      "change": "added",
+      "sha256": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380"
+    },
+    {
+      "path": "context_mcp/handoff_receiver.py",
+      "change": "added",
+      "sha256": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566"
+    },
+    {
+      "path": "context_mcp/handoff_review_export.py",
+      "change": "added",
+      "sha256": "db2c1ab48c79b99cb5757405dde51e46d3cac1b764b80de058063d3a899d8c37"
+    },
+    {
+      "path": "context_mcp/server.py",
+      "change": "modified",
+      "sha256": "7711942788119f34a8d6c244f412d2f585f003ce891531bb02f84057cb3f7a17"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_codex_runner.py",
+      "change": "added",
+      "sha256": "005c307b77d5d348508550260b45a6cdf6987a0be6303fc8ce626ca7a3081563"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_events.py",
+      "change": "added",
+      "sha256": "5bbb91a39b303749817833cdb60dd880eaf685c5345d4c38b8e952609df32ccc"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_mcp.py",
+      "change": "added",
+      "sha256": "65bee119be03ade42411c2e1fa6b6387991b7dcc9e06207119440d974a8f150e"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_publish.py",
+      "change": "added",
+      "sha256": "79da39adc3ed581ba65b4adb5e44d0bc07ceaec5094b4bf8d6ce03b1dde20c54"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_receiver.py",
+      "change": "added",
+      "sha256": "54d6003b916a5dea3d9d07794c92b11fea093bf6b0cf04ce4f79e10af7e28eb7"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_review_export.py",
+      "change": "added",
+      "sha256": "9871449dd32284f24773f0a2c199ed77817f566a77ff2d9578f85548bb60f86e"
+    },
+    {
+      "path": "verification/events-20261115/README.md",
+      "change": "added",
+      "sha256": "bb9b72ad10b76320d12597de3a1225bf6be8a3ba0baf8066cec8adde1381d6f7"
+    },
+    {
+      "path": "verification/events-20261115/git-base.json",
+      "change": "added",
+      "sha256": "4ec8651ff699783c9c991804344af6838f7d9a19099a245c8ad431176bbd5dd1"
+    },
+    {
+      "path": "verification/events-20261115/offline-result.json",
+      "change": "added",
+      "sha256": "0e6bbc469a643b89077f8706c0336c6c3a1f591204a055b70621136e8b00cfb2"
+    },
+    {
+      "path": "verification/events-20261115/overlaid-source.json",
+      "change": "added",
+      "sha256": "eb5c9977d79df3f9f54a566ba631adf09da56e7657cf7215032a44625bc17582"
+    },
+    {
+      "path": "verification/events-20261115/source-transfer-result.json",
+      "change": "added",
+      "sha256": "8d246aac0d01e2aceb8be49c32c5deea5e0e731e1da111441b46bee03121dd34"
+    },
+    {
+      "path": "verification/events-20261115/source-transfer.log",
+      "change": "added",
+      "sha256": "c38345399f9be3fc4c6fee89000cc183055bf9528c1af420221a5b1a101c73de"
+    },
+    {
+      "path": "verification/events-20261115/unittest-result.json",
+      "change": "added",
+      "sha256": "f64d345a6f068f6a5001e7e7883500fe5c8447848e159889c4d0fb80be917eaa"
+    },
+    {
+      "path": "verification/events-20261115/unittest.log",
+      "change": "added",
+      "sha256": "a009de5d739de7e32e5c2427e858fc2a77287d0eece54dd164648c78d75285bd"
+    }
+  ],
+  "excludedConcurrentFiles": [
+    {
+      "path": "context_mcp/station_relay.py",
+      "candidateMatchesGitHead": true,
+      "candidateSha256": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
+      "initialWorkingTreeSha256": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201",
+      "workingTreeSha256AtCheck": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201"
+    },
+    {
+      "path": "context_mcp/station_worker.py",
+      "candidateMatchesGitHead": true,
+      "candidateSha256": "f1f93b8f828d06a9e532b9fa3547d29d0e7128b03925ea313ee16a3f749dc999",
+      "initialWorkingTreeSha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+      "workingTreeSha256AtCheck": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2"
+    },
+    {
+      "path": "context_mcp/tests/test_station_relay.py",
+      "candidateMatchesGitHead": true,
+      "candidateSha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
+      "initialWorkingTreeSha256": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5",
+      "workingTreeSha256AtCheck": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5"
+    },
+    {
+      "path": "context_mcp/tests/test_station_worker.py",
+      "candidateMatchesGitHead": true,
+      "candidateSha256": "8d57c7ff84cde00ab7c67a728305af8927be9195e076495514bc27de5872294b",
+      "initialWorkingTreeSha256": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c",
+      "workingTreeSha256AtCheck": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c"
+    }
+  ]
+}

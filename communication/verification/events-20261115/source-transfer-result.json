@@ -1,0 +1,9 @@
+{
+  "command": "python3.12 -B -m unittest discover -s context/coordination/three-host-20261115/tests -p test_*.py -v",
+  "executedWorkingDirectory": "isolated publication candidate",
+  "checkedAt": "2026-11-15T05:07:31.055834+00:00",
+  "exitCode": 0,
+  "tests": 7,
+  "seconds": 0.083,
+  "log": "source-transfer.log"
+}

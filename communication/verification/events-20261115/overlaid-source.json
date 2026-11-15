@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-11-15T05:07:14.067641+00:00",
+  "source": "Reviewed canonical Mac event implementation; explicit approved overlay only",
+  "files": [
+    {
+      "path": "context_mcp/HANDOFF_EVENTS.md",
+      "sourcePath": "context_mcp/HANDOFF_EVENTS.md",
+      "sourceSha256": "909a5852bdb8bf719b86a393ae21bed15b3848855d160436f5563ffefad2b6ff",
+      "bytes": 21194,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_codex_runner.py",
+      "sourcePath": "context_mcp/handoff_codex_runner.py",
+      "sourceSha256": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481",
+      "bytes": 24053,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_events.py",
+      "sourcePath": "context_mcp/handoff_events.py",
+      "sourceSha256": "950970a667237d026e9bc4b7baa4ed47ed6b6b46b860a0b44f7808d15308e621",
+      "bytes": 18383,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_publish.py",
+      "sourcePath": "context_mcp/handoff_publish.py",
+      "sourceSha256": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380",
+      "bytes": 17541,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_receiver.py",
+      "sourcePath": "context_mcp/handoff_receiver.py",
+      "sourceSha256": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566",
+      "bytes": 27672,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/handoff_review_export.py",
+      "sourcePath": "context_mcp/handoff_review_export.py",
+      "sourceSha256": "db2c1ab48c79b99cb5757405dde51e46d3cac1b764b80de058063d3a899d8c37",
+      "bytes": 10522,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/server.py",
+      "sourcePath": "context_mcp/server.py",
+      "sourceSha256": "7711942788119f34a8d6c244f412d2f585f003ce891531bb02f84057cb3f7a17",
+      "bytes": 14635,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_codex_runner.py",
+      "sourcePath": "context_mcp/tests/test_handoff_codex_runner.py",
+      "sourceSha256": "005c307b77d5d348508550260b45a6cdf6987a0be6303fc8ce626ca7a3081563",
+      "bytes": 20305,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_events.py",
+      "sourcePath": "context_mcp/tests/test_handoff_events.py",
+      "sourceSha256": "5bbb91a39b303749817833cdb60dd880eaf685c5345d4c38b8e952609df32ccc",
+      "bytes": 19902,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_mcp.py",
+      "sourcePath": "context_mcp/tests/test_handoff_mcp.py",
+      "sourceSha256": "65bee119be03ade42411c2e1fa6b6387991b7dcc9e06207119440d974a8f150e",
+      "bytes": 5381,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_publish.py",
+      "sourcePath": "context_mcp/tests/test_handoff_publish.py",
+      "sourceSha256": "79da39adc3ed581ba65b4adb5e44d0bc07ceaec5094b4bf8d6ce03b1dde20c54",
+      "bytes": 14030,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_receiver.py",
+      "sourcePath": "context_mcp/tests/test_handoff_receiver.py",
+      "sourceSha256": "54d6003b916a5dea3d9d07794c92b11fea093bf6b0cf04ce4f79e10af7e28eb7",
+      "bytes": 21060,
+      "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_handoff_review_export.py",
+      "sourcePath": "context_mcp/tests/test_handoff_review_export.py",
+      "sourceSha256": "9871449dd32284f24773f0a2c199ed77817f566a77ff2d9578f85548bb60f86e",
+      "bytes": 13586,
+      "origin": "mac-handoff-event-implementation-20261115"
+    }
+  ]
+}

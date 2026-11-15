@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T05:08:42.425708+00:00",
+  "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+  "environment": "Prepared locked MCP environment, Python 3.12; existing runtimes used without installation",
+  "contextRelayWorkerEventTests": 177,
+  "sourceTransferTests": 7,
+  "testsPassed": 184,
+  "failures": 0,
+  "errors": 0,
+  "providerCalls": 0,
+  "hardwareOperations": 0,
+  "realCodexInvocations": 0,
+  "externalNetworkCalls": 0,
+  "testScope": "Temporary stores, fake transports, in-process MCP, and one synthetic Python process-group cancellation test",
+  "candidateDeployment": "Not deployed by candidate creation; actual live evidence pending publication owner review",
+  "canonicalLiveTestCount": "Not asserted by this candidate; canonical live source includes a separate four-test dashboard allowlist extension",
+  "logs": [
+    "unittest.log",
+    "source-transfer.log"
+  ],
+  "localDocumentationLinks": 33,
+  "brokenLocalLinks": 0,
+  "bashExamplesSyntaxChecked": 10,
+  "pythonSyntaxFiles": 28,
+  "packageSealedFiles": 57,
+  "packageProvenanceFiles": 33
+}

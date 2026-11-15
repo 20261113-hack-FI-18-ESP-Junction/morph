@@ -1,0 +1,9 @@
+{
+  "command": ".junction-setup/context-mcp/bin/python -B -m unittest discover -s context_mcp/tests -p test_*.py -v",
+  "executedWorkingDirectory": "isolated publication candidate",
+  "checkedAt": "2026-11-15T05:07:33.542350+00:00",
+  "exitCode": 0,
+  "tests": 177,
+  "seconds": 2.206,
+  "log": "unittest.log"
+}

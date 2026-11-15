@@ -1,0 +1,460 @@
+test_binary_and_oversized_inputs_are_explicit (test_context.ContextBoundaryTests.test_binary_and_oversized_inputs_are_explicit) ... ok
+test_catalog_excludes_private_runtime_and_unapproved_paths (test_context.ContextBoundaryTests.test_catalog_excludes_private_runtime_and_unapproved_paths) ... ok
+test_catalog_pagination_has_no_duplicates (test_context.ContextBoundaryTests.test_catalog_pagination_has_no_duplicates) ... ok
+test_common_key_formats_are_redacted_from_reads_search_and_notes (test_context.ContextBoundaryTests.test_common_key_formats_are_redacted_from_reads_search_and_notes) ... ok
+test_concurrent_retries_produce_one_complete_note (test_context.ContextBoundaryTests.test_concurrent_retries_produce_one_complete_note) ... ok
+test_notes_are_idempotent_and_conflicts_preserve_the_original (test_context.ContextBoundaryTests.test_notes_are_idempotent_and_conflicts_preserve_the_original) ... ok
+test_notes_cannot_follow_directory_or_destination_symlinks (test_context.ContextBoundaryTests.test_notes_cannot_follow_directory_or_destination_symlinks) ... ok
+test_reads_are_fresh_and_character_pages_reconstruct_unicode (test_context.ContextBoundaryTests.test_reads_are_fresh_and_character_pages_reconstruct_unicode) ... ok
+test_search_is_literal_bounded_case_insensitive_and_fresh (test_context.ContextBoundaryTests.test_search_is_literal_bounded_case_insensitive_and_fresh) ... ok
+test_symlinks_are_excluded_and_cannot_be_read (test_context.ContextBoundaryTests.test_symlinks_are_excluded_and_cannot_be_read) ... ok
+test_traversal_absolute_and_noncanonical_paths_fail (test_context.ContextBoundaryTests.test_traversal_absolute_and_noncanonical_paths_fail) ... ok
+test_unquoted_opaque_keys_are_redacted_and_quoted_source_stays_valid (test_context.ContextBoundaryTests.test_unquoted_opaque_keys_are_redacted_and_quoted_source_stays_valid) ... ok
+test_http_auth_host_origin_and_real_rpc (test_context.MCPIntegrationTests.test_http_auth_host_origin_and_real_rpc) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+Invalid Host header: attacker.invalid:8765
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 421 Misdirected Request"
+Terminating session: None
+Invalid Origin header: https://attacker.invalid
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 403 Forbidden"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 413 Content Too Large"
+StreamableHTTP session manager shutting down
+ok
+test_real_stdio_client_can_discover_read_search_and_save (test_context.MCPIntegrationTests.test_real_stdio_client_can_discover_read_search_and_save) ... Tool 'read_context' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/server.py", line 130, in read_context
+    return store.read(path, offset, limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/store.py", line 135, in read
+    text, redacted = self.text(relative)
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/store.py", line 107, in text
+    path = self.path(relative)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/store.py", line 65, in path
+    raise ValueError("Use an exact project-relative path from list_context")
+ValueError: Use an exact project-relative path from list_context
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool read_context
+ok
+test_wifi_cli_refuses_plaintext_before_reading_credentials (test_context.MCPIntegrationTests.test_wifi_cli_refuses_plaintext_before_reading_credentials) ... ok
+test_bounded_pipe_capture_terminates_owned_process_on_excess (test_handoff_codex_runner.RunnerTests.test_bounded_pipe_capture_terminates_owned_process_on_excess) ... ok
+test_canonical_note_hash_mismatch_rejects_before_any_process (test_handoff_codex_runner.RunnerTests.test_canonical_note_hash_mismatch_rejects_before_any_process) ... ok
+test_cli_cancellation_stops_nested_synthetic_processes_and_saves_failure (test_handoff_codex_runner.RunnerTests.test_cli_cancellation_stops_nested_synthetic_processes_and_saves_failure)
+Real Python process groups only: no Codex, provider or network. ... ok
+test_cli_summary_uses_exit_status_and_excludes_review_body (test_handoff_codex_runner.RunnerTests.test_cli_summary_uses_exit_status_and_excludes_review_body) ... ok
+test_concurrent_attempt_does_not_spawn (test_handoff_codex_runner.RunnerTests.test_concurrent_attempt_does_not_spawn) ... ok
+test_different_note_cannot_replace_prior_result (test_handoff_codex_runner.RunnerTests.test_different_note_cannot_replace_prior_result) ... ok
+test_duplicate_json_keys_rejected (test_handoff_codex_runner.RunnerTests.test_duplicate_json_keys_rejected) ... ok
+test_environment_keeps_cli_auth_path_without_provider_or_remote_secrets (test_handoff_codex_runner.RunnerTests.test_environment_keeps_cli_auth_path_without_provider_or_remote_secrets) ... ok
+test_fixed_argv_is_read_only_and_note_instructions_remain_data (test_handoff_codex_runner.RunnerTests.test_fixed_argv_is_read_only_and_note_instructions_remain_data) ... ok
+test_input_symlink_is_not_followed (test_handoff_codex_runner.RunnerTests.test_input_symlink_is_not_followed) ... ok
+test_invalid_id_and_sensitive_note_never_reach_cli (test_handoff_codex_runner.RunnerTests.test_invalid_id_and_sensitive_note_never_reach_cli) ... ok
+test_missing_safe_cli_flag_fails_before_review (test_handoff_codex_runner.RunnerTests.test_missing_safe_cli_flag_fails_before_review) ... ok
+test_no_task_update_means_notion_not_required (test_handoff_codex_runner.RunnerTests.test_no_task_update_means_notion_not_required) ... ok
+test_nonzero_exit_discards_raw_stderr (test_handoff_codex_runner.RunnerTests.test_nonzero_exit_discards_raw_stderr) ... ok
+test_output_schema_extra_field_and_hardware_claim_class_rejected (test_handoff_codex_runner.RunnerTests.test_output_schema_extra_field_and_hardware_claim_class_rejected) ... ok
+test_output_symlink_is_not_followed (test_handoff_codex_runner.RunnerTests.test_output_symlink_is_not_followed) ... ok
+test_oversize_input_never_spawns (test_handoff_codex_runner.RunnerTests.test_oversize_input_never_spawns) ... ok
+test_oversize_output_fails_closed (test_handoff_codex_runner.RunnerTests.test_oversize_output_fails_closed) ... ok
+test_sensitive_final_output_is_not_persisted (test_handoff_codex_runner.RunnerTests.test_sensitive_final_output_is_not_persisted) ... ok
+test_source_hash_and_source_object_are_both_checked (test_handoff_codex_runner.RunnerTests.test_source_hash_and_source_object_are_both_checked) ... ok
+test_success_is_durable_proposal_not_notion_or_cursor_write (test_handoff_codex_runner.RunnerTests.test_success_is_durable_proposal_not_notion_or_cursor_write) ... ok
+test_successful_same_snapshot_is_not_rerun (test_handoff_codex_runner.RunnerTests.test_successful_same_snapshot_is_not_rerun) ... ok
+test_timeout_cleans_group_even_if_leader_already_exited (test_handoff_codex_runner.RunnerTests.test_timeout_cleans_group_even_if_leader_already_exited) ... ok
+test_timeout_terminates_only_owned_process (test_handoff_codex_runner.RunnerTests.test_timeout_terminates_only_owned_process) ... ok
+test_aware_clock_is_supported_and_naive_clock_rejected (test_handoff_events.EventsTests.test_aware_clock_is_supported_and_naive_clock_rejected) ... ok
+test_changed_hash_between_pages_is_rejected (test_handoff_events.EventsTests.test_changed_hash_between_pages_is_rejected) ... ok
+test_durable_publish_sequence_and_identical_retry (test_handoff_events.EventsTests.test_durable_publish_sequence_and_identical_retry) ... ok
+test_expired_lease_reclaim_has_new_claim_and_attempt (test_handoff_events.EventsTests.test_expired_lease_reclaim_has_new_claim_and_attempt) ... ok
+test_failed_completion_idempotence_and_bounded_retry_backoff (test_handoff_events.EventsTests.test_failed_completion_idempotence_and_bounded_retry_backoff) ... ok
+test_failed_retry_cannot_be_overwritten_by_old_ack (test_handoff_events.EventsTests.test_failed_retry_cannot_be_overwritten_by_old_ack) ... ok
+test_full_unicode_note_pagination_and_hash_verified (test_handoff_events.EventsTests.test_full_unicode_note_pagination_and_hash_verified) ... ok
+test_input_bounds_and_safe_error_messages (test_handoff_events.EventsTests.test_input_bounds_and_safe_error_messages) ... ok
+test_legacy_saved_note_does_not_create_event (test_handoff_events.EventsTests.test_legacy_saved_note_does_not_create_event) ... ok
+test_missing_redacted_or_malformed_note_rejected_without_secret_error (test_handoff_events.EventsTests.test_missing_redacted_or_malformed_note_rejected_without_secret_error) ... ok
+test_no_review_receipt_or_structured_ack_loops (test_handoff_events.EventsTests.test_no_review_receipt_or_structured_ack_loops) ... ok
+test_note_identity_status_and_saved_time_are_checked (test_handoff_events.EventsTests.test_note_identity_status_and_saved_time_are_checked) ... ok
+test_note_symlink_rejected (test_handoff_events.EventsTests.test_note_symlink_rejected) ... ok
+test_offline_catchup_retains_older_failure_below_cursor (test_handoff_events.EventsTests.test_offline_catchup_retains_older_failure_below_cursor) ... ok
+test_poll_and_status_do_not_ack_or_mutate_database (test_handoff_events.EventsTests.test_poll_and_status_do_not_ack_or_mutate_database) ... ok
+test_private_storage_modes_and_custom_private_path (test_handoff_events.EventsTests.test_private_storage_modes_and_custom_private_path) ... ok
+test_processed_ack_is_durable_idempotent_after_deadline (test_handoff_events.EventsTests.test_processed_ack_is_durable_idempotent_after_deadline) ... ok
+test_publish_hash_collision_does_not_change_event (test_handoff_events.EventsTests.test_publish_hash_collision_does_not_change_event) ... ok
+test_received_and_processed_times_are_distinct (test_handoff_events.EventsTests.test_received_and_processed_times_are_distinct) ... ok
+test_renew_retains_identity_and_does_not_shorten_lease (test_handoff_events.EventsTests.test_renew_retains_identity_and_does_not_shorten_lease) ... ok
+test_same_event_live_claim_is_idempotent_only_for_owner (test_handoff_events.EventsTests.test_same_event_live_claim_is_idempotent_only_for_owner) ... ok
+test_simultaneous_consumers_get_only_one_target_lease (test_handoff_events.EventsTests.test_simultaneous_consumers_get_only_one_target_lease) ... ok
+test_simultaneous_consumers_on_same_event_have_one_winner (test_handoff_events.EventsTests.test_simultaneous_consumers_on_same_event_have_one_winner) ... ok
+test_simultaneous_publish_creates_one_sequence (test_handoff_events.EventsTests.test_simultaneous_publish_creates_one_sequence) ... ok
+test_sqlite_sidecar_symlinks_and_loosened_permissions_rejected (test_handoff_events.EventsTests.test_sqlite_sidecar_symlinks_and_loosened_permissions_rejected) ... ok
+test_symlinked_database_and_parent_rejected (test_handoff_events.EventsTests.test_symlinked_database_and_parent_rejected) ... ok
+test_targets_have_independent_leases_and_scoping (test_handoff_events.EventsTests.test_targets_have_independent_leases_and_scoping) ... ok
+test_top_level_structured_ack_is_rejected (test_handoff_events.EventsTests.test_top_level_structured_ack_is_rejected) ... ok
+test_wrong_claim_owner_and_claim_uuid_cannot_ack (test_handoff_events.EventsTests.test_wrong_claim_owner_and_claim_uuid_cannot_ack) ... ok
+test_auth_catalog_and_full_durable_lifecycle (test_handoff_mcp.HandoffMCPTests.test_auth_catalog_and_full_durable_lifecycle) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+test_disabled_events_preserve_legacy_catalog_and_saves_do_not_publish (test_handoff_mcp.HandoffMCPTests.test_disabled_events_preserve_legacy_catalog_and_saves_do_not_publish) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+test_idle_receipt_and_wrong_hash_rejected_without_work (test_handoff_mcp.HandoffMCPTests.test_idle_receipt_and_wrong_hash_rejected_without_work) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+Tool 'publish_handoff_event' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/server.py", line 35, in publish_handoff_event
+    return events.publish(note_id, origin, target, note_sha256, kind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/handoff_events.py", line 273, in publish
+    path, characters = self._note(note_id, note_sha256)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/handoff_events.py", line 233, in _note
+    raise ValueError("reconciliation_note_not_work")
+ValueError: reconciliation_note_not_work
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool publish_handoff_event
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+Tool 'publish_handoff_event' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/server.py", line 35, in publish_handoff_event
+    return events.publish(note_id, origin, target, note_sha256, kind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/handoff_events.py", line 273, in publish
+    path, characters = self._note(note_id, note_sha256)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/handoff_events.py", line 231, in _note
+    raise ValueError("invalid_saved_note") from None
+ValueError: invalid_saved_note
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool publish_handoff_event
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+test_changed_payload_receipt_and_direction_are_not_rebound (test_handoff_publish.PublisherTests.test_changed_payload_receipt_and_direction_are_not_rebound) ... ok
+test_completed_receipt_retry_has_no_network_or_duplicate (test_handoff_publish.PublisherTests.test_completed_receipt_retry_has_no_network_or_duplicate) ... ok
+test_corrupt_completed_receipt_does_not_claim_success (test_handoff_publish.PublisherTests.test_corrupt_completed_receipt_does_not_claim_success) ... ok
+test_extra_fields_duplicate_json_and_invalid_status_rejected (test_handoff_publish.PublisherTests.test_extra_fields_duplicate_json_and_invalid_status_rejected) ... ok
+test_hash_change_between_pages_prevents_event (test_handoff_publish.PublisherTests.test_hash_change_between_pages_prevents_event) ... ok
+test_lost_publish_reply_retries_same_event_without_resaving_note (test_handoff_publish.PublisherTests.test_lost_publish_reply_retries_same_event_without_resaving_note) ... ok
+test_lost_save_reply_retains_prepared_identity_and_reuses_uuid (test_handoff_publish.PublisherTests.test_lost_save_reply_retains_prepared_identity_and_reuses_uuid) ... ok
+test_narrative_receipt_word_is_valid_substantive_work (test_handoff_publish.PublisherTests.test_narrative_receipt_word_is_valid_substantive_work) ... ok
+test_page_redaction_and_hash_or_pagination_mismatch_prevent_event (test_handoff_publish.PublisherTests.test_page_redaction_and_hash_or_pagination_mismatch_prevent_event) ... ok
+test_paginated_unicode_note_preserves_full_source_hash (test_handoff_publish.PublisherTests.test_paginated_unicode_note_preserves_full_source_hash) ... ok
+test_payload_change_after_construction_is_rejected (test_handoff_publish.PublisherTests.test_payload_change_after_construction_is_rejected) ... ok
+test_receipt_lock_rejects_parallel_publisher (test_handoff_publish.PublisherTests.test_receipt_lock_rejects_parallel_publisher) ... ok
+test_save_verify_publish_order_and_exact_provenance (test_handoff_publish.PublisherTests.test_save_verify_publish_order_and_exact_provenance) ... ok
+test_saved_note_mismatch_prevents_event (test_handoff_publish.PublisherTests.test_saved_note_mismatch_prevents_event) ... ok
+test_saved_phase_detects_subsequently_changed_note (test_handoff_publish.PublisherTests.test_saved_phase_detects_subsequently_changed_note) ... ok
+test_scheduled_author_and_structured_ack_rejected_before_network (test_handoff_publish.PublisherTests.test_scheduled_author_and_structured_ack_rejected_before_network) ... ok
+test_secret_marker_refused_without_printing_it (test_handoff_publish.PublisherTests.test_secret_marker_refused_without_printing_it) ... ok
+test_transport_restricts_tool_set_and_sanitizes_remote_errors (test_handoff_publish.PublisherTests.test_transport_restricts_tool_set_and_sanitizes_remote_errors) ... ok
+test_unprivate_or_symlink_receipt_rejected (test_handoff_publish.PublisherTests.test_unprivate_or_symlink_receipt_rejected) ... ok
+test_wrong_event_reply_retains_saved_note_for_retry (test_handoff_publish.PublisherTests.test_wrong_event_reply_retains_saved_note_for_retry) ... ok
+test_acknowledged_local_success_is_not_reexecuted_after_remote_regression (test_handoff_receiver.ReceiverTests.test_acknowledged_local_success_is_not_reexecuted_after_remote_regression) ... ok
+test_actual_durable_store_and_receiver_complete_exact_note (test_handoff_receiver.ReceiverTests.test_actual_durable_store_and_receiver_complete_exact_note) ... ok
+test_ambiguous_running_is_blocked_until_explicit_read_only_retry (test_handoff_receiver.ReceiverTests.test_ambiguous_running_is_blocked_until_explicit_read_only_retry) ... ok
+test_completion_with_other_consumer_is_not_accepted (test_handoff_receiver.ReceiverTests.test_completion_with_other_consumer_is_not_accepted) ... ok
+test_corrupted_durable_success_blocks_without_reexecution (test_handoff_receiver.ReceiverTests.test_corrupted_durable_success_blocks_without_reexecution) ... ok
+test_crash_after_result_adopts_durable_output (test_handoff_receiver.ReceiverTests.test_crash_after_result_adopts_durable_output) ... ok
+test_duplicate_json_and_oversized_runner_configuration_rejected (test_handoff_receiver.ReceiverTests.test_duplicate_json_and_oversized_runner_configuration_rejected) ... ok
+test_error_after_valid_output_preserves_success (test_handoff_receiver.ReceiverTests.test_error_after_valid_output_preserves_success) ... ok
+test_event_path_traversal_and_poll_order_rejected (test_handoff_receiver.ReceiverTests.test_event_path_traversal_and_poll_order_rejected) ... ok
+test_exact_unicode_pages_and_untrusted_instruction_text (test_handoff_receiver.ReceiverTests.test_exact_unicode_pages_and_untrusted_instruction_text) ... ok
+test_generic_mcp_wrapper_restricts_tools_and_sanitizes_errors (test_handoff_receiver.ReceiverTests.test_generic_mcp_wrapper_restricts_tools_and_sanitizes_errors) ... ok
+test_lost_success_ack_never_reruns_reviewer (test_handoff_receiver.ReceiverTests.test_lost_success_ack_never_reruns_reviewer) ... ok
+test_nonwork_event_never_reaches_runner (test_handoff_receiver.ReceiverTests.test_nonwork_event_never_reaches_runner) ... ok
+test_offline_catchup_keeps_stable_consumer_and_cursor (test_handoff_receiver.ReceiverTests.test_offline_catchup_keeps_stable_consumer_and_cursor) ... ok
+test_older_backoff_does_not_starve_later_events_and_catches_up (test_handoff_receiver.ReceiverTests.test_older_backoff_does_not_starve_later_events_and_catches_up) ... ok
+test_orphan_input_directory_does_not_block_retry_or_overwrite (test_handoff_receiver.ReceiverTests.test_orphan_input_directory_does_not_block_retry_or_overwrite) ... ok
+test_processed_result_durable_before_ack_and_sequential_cursor (test_handoff_receiver.ReceiverTests.test_processed_result_durable_before_ack_and_sequential_cursor) ... ok
+test_redacted_mutated_and_gapped_note_pages_fail_before_runner (test_handoff_receiver.ReceiverTests.test_redacted_mutated_and_gapped_note_pages_fail_before_runner) ... ok
+test_second_receiver_cannot_run_while_lock_held (test_handoff_receiver.ReceiverTests.test_second_receiver_cannot_run_while_lock_held) ... ok
+test_subprocess_fixed_argv_no_shell_and_bounded_output (test_handoff_receiver.ReceiverTests.test_subprocess_fixed_argv_no_shell_and_bounded_output) ... ok
+test_subprocess_renews_lease_and_terminates_own_group_on_timeout (test_handoff_receiver.ReceiverTests.test_subprocess_renews_lease_and_terminates_own_group_on_timeout) ... ok
+test_success_survives_expired_claim_and_reclaims_without_running (test_handoff_receiver.ReceiverTests.test_success_survives_expired_claim_and_reclaims_without_running) ... ok
+test_symlink_state_and_public_state_permissions_rejected (test_handoff_receiver.ReceiverTests.test_symlink_state_and_public_state_permissions_rejected) ... ok
+test_wrong_result_identity_is_failed_and_not_processed (test_handoff_receiver.ReceiverTests.test_wrong_result_identity_is_failed_and_not_processed) ... ok
+test_bounded_rotating_scan_eventually_visits_all_and_retries (test_handoff_review_export.ReviewExportTests.test_bounded_rotating_scan_eventually_visits_all_and_retries) ... ok
+test_existing_conflict_preserved_then_retry_independent_of_event_cursor (test_handoff_review_export.ReviewExportTests.test_existing_conflict_preserved_then_retry_independent_of_event_cursor) ... ok
+test_existing_file_symlink_preserved (test_handoff_review_export.ReviewExportTests.test_existing_file_symlink_preserved) ... ok
+test_export_cli_flag_rejected_for_intel_before_connecting (test_handoff_review_export.ReviewExportTests.test_export_cli_flag_rejected_for_intel_before_connecting) ... ok
+test_export_symlink_never_writes_outside_fixed_project_path (test_handoff_review_export.ReviewExportTests.test_export_symlink_never_writes_outside_fixed_project_path) ... ok
+test_no_proposal_has_explicit_no_notion_work (test_handoff_review_export.ReviewExportTests.test_no_proposal_has_explicit_no_notion_work) ... ok
+test_nonwork_event_or_event_identity_mismatch_rejected (test_handoff_review_export.ReviewExportTests.test_nonwork_event_or_event_identity_mismatch_rejected) ... ok
+test_offline_receiver_still_exports_durable_success (test_handoff_review_export.ReviewExportTests.test_offline_receiver_still_exports_durable_success) ... ok
+test_pending_ack_export_then_ack_is_identical_and_cursor_unchanged (test_handoff_review_export.ReviewExportTests.test_pending_ack_export_then_ack_is_identical_and_cursor_unchanged) ... ok
+test_raw_or_canonical_snapshot_mutation_rejected (test_handoff_review_export.ReviewExportTests.test_raw_or_canonical_snapshot_mutation_rejected) ... ok
+test_rejects_intel_mismatched_project_or_invalid_scan (test_handoff_review_export.ReviewExportTests.test_rejects_intel_mismatched_project_or_invalid_scan) ... ok
+test_result_hash_or_identity_mismatch_rejected (test_handoff_review_export.ReviewExportTests.test_result_hash_or_identity_mismatch_rejected) ... ok
+test_secret_or_private_reference_never_creates_shared_output (test_handoff_review_export.ReviewExportTests.test_secret_or_private_reference_never_creates_shared_output) ... ok
+test_skips_running_failed_and_server_only_completed_states (test_handoff_review_export.ReviewExportTests.test_skips_running_failed_and_server_only_completed_states) ... ok
+test_bad_parts_timestamps_status_and_headers_are_denied (test_station_relay.RelayBoundaryTests.test_bad_parts_timestamps_status_and_headers_are_denied) ... ok
+test_body_bound_and_read_pagination_validation (test_station_relay.RelayBoundaryTests.test_body_bound_and_read_pagination_validation) ... ok
+test_chunk_order_integrity_pagination_and_restart (test_station_relay.RelayBoundaryTests.test_chunk_order_integrity_pagination_and_restart) ... ok
+test_concurrent_duplicate_enqueue_and_claim_create_one_work_item (test_station_relay.RelayBoundaryTests.test_concurrent_duplicate_enqueue_and_claim_create_one_work_item) ... ok
+test_concurrent_duplicate_submissions_keep_one_ready_response (test_station_relay.RelayBoundaryTests.test_concurrent_duplicate_submissions_keep_one_ready_response) ... ok
+test_control_urls_traversal_and_unbounded_queries_are_rejected (test_station_relay.RelayBoundaryTests.test_control_urls_traversal_and_unbounded_queries_are_rejected) ... ok
+test_enqueue_is_idempotent_and_conflicts_preserve_original (test_station_relay.RelayBoundaryTests.test_enqueue_is_idempotent_and_conflicts_preserve_original) ... ok
+test_events_are_always_bounded_and_get_routes_remain_available (test_station_relay.RelayBoundaryTests.test_events_are_always_bounded_and_get_routes_remain_available) ... ok
+test_expired_reads_never_return_old_response_or_reset_on_duplicate (test_station_relay.RelayBoundaryTests.test_expired_reads_never_return_old_response_or_reset_on_duplicate) ... ok
+test_hash_and_conflicting_part_fail_without_poisoning_original (test_station_relay.RelayBoundaryTests.test_hash_and_conflicting_part_fail_without_poisoning_original) ... ok
+test_pending_queue_is_bounded_and_expiration_releases_capacity (test_station_relay.RelayBoundaryTests.test_pending_queue_is_bounded_and_expiration_releases_capacity) ... ok
+test_station_scoping_and_claim_limit (test_station_relay.RelayBoundaryTests.test_station_scoping_and_claim_limit) ... ok
+test_storage_symlink_is_rejected (test_station_relay.RelayBoundaryTests.test_storage_symlink_is_rejected) ... ok
+test_wrong_worker_claim_and_station_cannot_submit (test_station_relay.RelayBoundaryTests.test_wrong_worker_claim_and_station_cannot_submit) ... ok
+test_opt_in_registration_and_authenticated_real_tool_roundtrip (test_station_relay.RelayMCPTests.test_opt_in_registration_and_authenticated_real_tool_roundtrip) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+Tool 'enqueue_station_read' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/server.py", line 77, in enqueue_station_read
+    return relay.enqueue(station_id, request_id, path, query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/station_relay.py", line 206, in enqueue
+    return self.enqueue_request(station_id, request_id, 'GET', path, query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/station_relay.py", line 211, in enqueue_request
+    path, query, body, intent = request_target(method, path, query, body, intent)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/station_relay.py", line 106, in request_target
+    path, query = read_target(path, query)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/context/verification/mcp-adoption-20261115/publication-candidate/communication/context_mcp/station_relay.py", line 69, in read_target
+    raise ValueError('This path is outside the Station read allowlist')
+ValueError: This path is outside the Station read allowlist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool enqueue_station_read
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+test_existing_initialize_protocol_then_only_queue_tools (test_station_worker.MCPTests.test_existing_initialize_protocol_then_only_queue_tools) ... ok
+test_private_file_permissions_and_no_symlink (test_station_worker.MCPTests.test_private_file_permissions_and_no_symlink) ... ok
+test_rpc_and_provider_error_text_never_escapes (test_station_worker.MCPTests.test_rpc_and_provider_error_text_never_escapes) ... ok
+test_4mb_binary_chunks_zero_based_hash_and_metadata_stable (test_station_worker.QueueWorkerTests.test_4mb_binary_chunks_zero_based_hash_and_metadata_stable) ... ok
+test_contract_roundtrip_with_actual_relay_and_fake_station (test_station_worker.QueueWorkerTests.test_contract_roundtrip_with_actual_relay_and_fake_station) ... ok
+test_empty_body_still_has_one_chunk (test_station_worker.QueueWorkerTests.test_empty_body_still_has_one_chunk) ... ok
+test_expired_claim_never_calls_station_and_tampering_stays_read_only (test_station_worker.QueueWorkerTests.test_expired_claim_never_calls_station_and_tampering_stays_read_only) ... ok
+test_expiry_during_read_never_submits_stale_result (test_station_worker.QueueWorkerTests.test_expiry_during_read_never_submits_stale_result) ... ok
+test_invalid_configuration_exits_without_raw_token_or_network (test_station_worker.QueueWorkerTests.test_invalid_configuration_exits_without_raw_token_or_network) ... ok
+test_lost_submit_reply_retries_identical_chunk_not_station_read (test_station_worker.QueueWorkerTests.test_lost_submit_reply_retries_identical_chunk_not_station_read) ... ok
+test_missing_final_readback_not_claimed_complete (test_station_worker.QueueWorkerTests.test_missing_final_readback_not_claimed_complete) ... ok
+test_worker_identity_stable_across_rounds (test_station_worker.QueueWorkerTests.test_worker_identity_stable_across_rounds) ... ok
+test_body_deadline_does_not_accept_endless_small_chunks (test_station_worker.StationHTTPTests.test_body_deadline_does_not_accept_endless_small_chunks) ... ok
+test_endpoint_configuration_cannot_smuggle_url (test_station_worker.StationHTTPTests.test_endpoint_configuration_cannot_smuggle_url) ... ok
+test_fixed_origin_get_token_header_and_query_encoding (test_station_worker.StationHTTPTests.test_fixed_origin_get_token_header_and_query_encoding) ... ok
+test_forbidden_request_never_contacts_api (test_station_worker.StationHTTPTests.test_forbidden_request_never_contacts_api) ... ok
+test_http_error_status_and_finite_sse_bytes_preserved (test_station_worker.StationHTTPTests.test_http_error_status_and_finite_sse_bytes_preserved) ... ok
+test_redirect_denied_and_credentials_not_forwarded (test_station_worker.StationHTTPTests.test_redirect_denied_and_credentials_not_forwarded) ... ok
+test_size_timeout_and_unsupported_type_errors_sanitized (test_station_worker.StationHTTPTests.test_size_timeout_and_unsupported_type_errors_sanitized) ... ok
+test_actions_encoded_paths_traversal_and_hosts_rejected (test_station_worker.WorkerRouteTests.test_actions_encoded_paths_traversal_and_hosts_rejected) ... ok
+test_allowed_reads_and_scoped_query_preserved (test_station_worker.WorkerRouteTests.test_allowed_reads_and_scoped_query_preserved) ... ok
+test_events_always_finite_and_bounded (test_station_worker.WorkerRouteTests.test_events_always_finite_and_bounded) ... ok
+test_unknown_or_unbounded_query_rejected (test_station_worker.WorkerRouteTests.test_unknown_or_unbounded_query_rejected) ... ok
+test_analysis_requires_explicit_intent_and_stable_application_id (test_station_writes.WriteTransportTests.test_analysis_requires_explicit_intent_and_stable_application_id) ... ok
+test_control_routes_bad_intent_queries_and_non_json_never_enter_queue (test_station_writes.WriteTransportTests.test_control_routes_bad_intent_queries_and_non_json_never_enter_queue) ... ok
+test_duplicate_envelopes_never_replay_and_changed_body_conflicts (test_station_writes.WriteTransportTests.test_duplicate_envelopes_never_replay_and_changed_body_conflicts) ... ok
+test_forged_write_claim_is_denied_by_default_worker (test_station_writes.WriteTransportTests.test_forged_write_claim_is_denied_by_default_worker) ... ok
+test_http_preserves_body_status_errors_and_never_retries_post (test_station_writes.WriteTransportTests.test_http_preserves_body_status_errors_and_never_retries_post) ... ok
+test_legacy_workers_cannot_claim_writes_and_capable_worker_claims_once (test_station_writes.WriteTransportTests.test_legacy_workers_cannot_claim_writes_and_capable_worker_claims_once) ... ok
+test_lost_mcp_reply_resends_response_only_not_post (test_station_writes.WriteTransportTests.test_lost_mcp_reply_resends_response_only_not_post) ... ok
+test_migration_preserves_existing_get_and_new_writes (test_station_writes.WriteTransportTests.test_migration_preserves_existing_get_and_new_writes) ... ok
+test_multi_session_selection_survives_queue_and_http_encoding (test_station_writes.WriteTransportTests.test_multi_session_selection_survives_queue_and_http_encoding) ... ok
+test_new_tools_work_through_authenticated_mcp (test_station_writes.WriteTransportTests.test_new_tools_work_through_authenticated_mcp) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+
+----------------------------------------------------------------------
+Ran 177 tests in 2.206s
+
+OK
