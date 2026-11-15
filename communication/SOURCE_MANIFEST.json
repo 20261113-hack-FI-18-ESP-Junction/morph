@@ -30,8 +30,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 18677,
-      "sha256": "cacbff7bc8467fe92487eba1eb7ed9add73a108c1257fd41a193c5a6c123f4c9",
+      "bytes": 19736,
+      "sha256": "fcf9872a858f7b8b7e2500c8a7126e10686df3556d2aaa559a5a40aeeaa88e5f",
       "origin": "publication-guide-or-verification"
     },
     {
@@ -276,8 +276,8 @@
     },
     {
       "path": "verification/events-20261115/INTEL_ADOPTION_STATUS.md",
-      "bytes": 6026,
-      "sha256": "d87b15e6bc97bd0bf856e488c617aae472ee7836952351a16e40139ba4b044a2",
+      "bytes": 7090,
+      "sha256": "9b830793b6e8d8e8be340bc0e77aa05fa6708250979c85128d48cdde0477f33b",
       "origin": "mac-adoption-documentation-20261115"
     },
     {
@@ -291,6 +291,12 @@
       "bytes": 9706,
       "sha256": "4ec8651ff699783c9c991804344af6838f7d9a19099a245c8ad431176bbd5dd1",
       "origin": "mac-handoff-event-publication-verification-20261115"
+    },
+    {
+      "path": "verification/events-20261115/live-intel-event-result.json",
+      "bytes": 1964,
+      "sha256": "4ca79f130142a668828c78267c668e2222355330915674dad32950c2459bfae5",
+      "origin": "mac-adoption-documentation-20261115"
     },
     {
       "path": "verification/events-20261115/live-intel-result.json",
@@ -365,5 +371,5 @@
       "origin": "publication-guide-or-verification"
     }
   ],
-  "updatedAt": "2026-11-15T05:27:20.091438+00:00"
+  "updatedAt": "2026-11-15T05:31:44.777456+00:00"
 }
