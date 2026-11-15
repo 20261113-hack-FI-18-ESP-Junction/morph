@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-11-15T03:17:23.393461+01:00",
+  "checks": [
+    {
+      "name": "station-client-build",
+      "exitCode": 0,
+      "log": "verification/station-client-build-mcp-final.txt"
+    },
+    {
+      "name": "dashboard-typecheck",
+      "exitCode": 0,
+      "log": "verification/dashboard-typecheck-mcp-final.txt"
+    },
+    {
+      "name": "dashboard-tests",
+      "exitCode": 0,
+      "log": "verification/dashboard-tests-mcp-final.txt"
+    },
+    {
+      "name": "dashboard-build",
+      "exitCode": 0,
+      "log": "verification/dashboard-build-mcp-final.txt"
+    },
+    {
+      "name": "station-client-tests",
+      "exitCode": 0,
+      "log": "verification/station-client-tests-mcp-final.txt"
+    }
+  ],
+  "scope": "Software checks of the packaged MCP dashboard; no physical operation"
+}

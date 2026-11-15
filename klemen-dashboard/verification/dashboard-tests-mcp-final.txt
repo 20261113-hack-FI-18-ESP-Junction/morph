@@ -1,0 +1,38 @@
+
+> morph-station-dashboard@0.0.0 test
+> tsx --test src/services/m06Projection.test.ts server/stationProxy.test.ts server/mcpStationTransport.test.ts
+
+✔ queues fresh UUID reads and reconstructs exact response across base64 chunks (8.68275ms)
+✔ rejects wrong checksums, mixed metadata, offsets and oversized replies (0.569ms)
+✔ polls pending response and fails expired or unavailable workers without cached output (1.441833ms)
+✔ sanitizes tool failures and disallows other origins or write methods before queueing (0.273333ms)
+✔ finite SSE preserves bytes and forces once=true on the Intel request (0.423791ms)
+✔ browser SSE advances Intel cursor and fails on worker loss instead of replaying cached data (253.437667ms)
+✔ aborted pending reads stop polling and return unavailable (1.418417ms)
+✔ decodes validated record identifiers for the relay plain-path contract (0.637917ms)
+✔ overall deadline stops a pending worker even when a tool ignores cancellation (6.369542ms)
+✔ proxy sends only server bearer credentials to a fixed upstream and preserves the response (20.899166ms)
+✔ only allowlisted GET routes reach upstream; writes, unknown paths and query injection do not (8.516125ms)
+✔ Host, Origin and Fetch Metadata guards reject cross-origin access (5.486625ms)
+✔ missing credentials keep the UI available and return a sanitized503 only for API calls (1.8155ms)
+✔ upstream errors never echo secrets and redirects never reach the destination (2.668ms)
+✔ evidence bytes and complete CSV export stream unchanged with safe content types (2.494334ms)
+✔ SSE is delivered incrementally and browser disconnect aborts the upstream connection (7.205666ms)
+✔ ordinary upstream waits are bounded and reported as504 (32.528583ms)
+✔ token file reader accepts owner-only existing files, rejects public files and honors environment override (2.65525ms)
+✔ canonical fractions convert once and retry relations cover the complete persisted session (0.837584ms)
+✔ unimplemented state and telemetry remain unavailable while API data is connected (0.247ms)
+✔ execution request timestamps and statuses do not imply that a command was sent (0.495083ms)
+✔ state version uses the recorded snapshot version and is unavailable without a snapshot (0.208875ms)
+✔ frames and confirmations preserve actual evidence IDs, capture times and confirmation results (0.359709ms)
+✔ empty live startup has no fixture records, goals, counts or side effects (0.112584ms)
+✔ disconnect retains persisted counts marked stale and never implies robot failure (0.105875ms)
+✔ cross-source/session exports are rejected rather than shown in live metrics (0.139209ms)
+ℹ tests 26
+ℹ suites 0
+ℹ pass 26
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 426.292417

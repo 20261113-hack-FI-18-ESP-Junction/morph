@@ -1,0 +1,8 @@
+{
+  "checkedAt": "2026-11-15T02:18:24.315111+00:00",
+  "status": "passed",
+  "scope": "Local packaged production UI with no pairing configured; no MCP, Intel, provider or robot call",
+  "uiHttpStatus": 200,
+  "missingPairingApiStatus": 503,
+  "writeMethodStatus": 405
+}

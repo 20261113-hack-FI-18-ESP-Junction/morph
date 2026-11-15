@@ -1,0 +1,59 @@
+{
+  "recordedAt": "2026-11-15T03:55:39.371497+00:00",
+  "scope": "Build and unit verification recorded for the reconciled publication, with synthetic test inputs only. No Intel deployment, provider or physical acceptance claim.",
+  "checks": [
+    {
+      "name": "dependency-install",
+      "command": "npm ci",
+      "exitCode": 0
+    },
+    {
+      "name": "station-client-build",
+      "command": "npm exec tsc -- -p ../station-client/tsconfig.json",
+      "exitCode": 0
+    },
+    {
+      "name": "dashboard-typecheck",
+      "command": "npm run typecheck",
+      "exitCode": 0
+    },
+    {
+      "name": "dashboard-build",
+      "command": "npm run build",
+      "exitCode": 0,
+      "modules": 38,
+      "javascriptBytesReported": "403.01 kB",
+      "warning": "Existing Vite __dirname config compatibility warning; build passed."
+    },
+    {
+      "name": "dashboard-history-analyst-proxy-mcp",
+      "passed": 69,
+      "evidence": "verification/reconciled-dashboard-tests.xml"
+    },
+    {
+      "name": "station-client-store",
+      "passed": 47,
+      "evidence": "verification/reconciled-client-tests.xml"
+    },
+    {
+      "name": "analytics",
+      "passed": 58,
+      "evidence": "verification/reconciled-analytics-tests.xml"
+    },
+    {
+      "name": "isolated-tls-mcp-worker",
+      "status": "passed",
+      "evidence": "verification/reconciled-mcp-roundtrip.json"
+    },
+    {
+      "name": "portable-markdown-links",
+      "status": "passed",
+      "exclusions": [
+        "Historical public design assets"
+      ]
+    }
+  ],
+  "totalUnitTests": 174,
+  "failures": 0,
+  "skipped": 0
+}

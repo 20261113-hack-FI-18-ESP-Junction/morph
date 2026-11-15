@@ -1,0 +1,34 @@
+
+> morph-station-dashboard@0.0.0 test
+> tsx --test src/services/m06Projection.test.ts server/stationProxy.test.ts
+
+✔ proxy sends only server bearer credentials to a fixed upstream and preserves the response (20.146083ms)
+✔ only allowlisted GET routes reach upstream; writes, unknown paths and query injection do not (9.341125ms)
+✔ Host, Origin and Fetch Metadata guards reject cross-origin access (5.215208ms)
+✔ missing credentials keep the UI available and return a sanitized503 only for API calls (1.735333ms)
+✔ upstream errors never echo secrets and redirects never reach the destination (2.172042ms)
+✔ evidence bytes and complete CSV export stream unchanged with safe content types (2.103708ms)
+✔ SSE is delivered incrementally and browser disconnect aborts the upstream connection (9.224458ms)
+✔ ordinary upstream waits are bounded and reported as504 (32.82725ms)
+✔ token file reader accepts owner-only existing files, rejects public files and honors environment override (1.967875ms)
+✔ canonical fractions convert once and retry relations cover the complete persisted session (0.794875ms)
+✔ unimplemented state and telemetry remain unavailable while API data is connected (0.258916ms)
+✔ execution request timestamps and statuses do not imply that a command was sent (0.449458ms)
+✔ state version uses the recorded snapshot version and is unavailable without a snapshot (0.192334ms)
+✔ frames and confirmations preserve actual evidence IDs, capture times and confirmation results (0.327875ms)
+✔ empty live startup has no fixture records, goals, counts or side effects (0.098625ms)
+✔ disconnect retains persisted counts marked stale and never implies robot failure (0.094833ms)
+✔ cross-source/session exports are rejected rather than shown in live metrics (0.134875ms)
+ℹ tests 17
+ℹ suites 0
+ℹ pass 17
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 189.996292
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

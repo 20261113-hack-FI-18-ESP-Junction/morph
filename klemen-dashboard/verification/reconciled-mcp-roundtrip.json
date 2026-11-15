@@ -1,0 +1,225 @@
+{
+  "checkedAt": "2026-11-15T03:52:02.798885+00:00",
+  "scope": "Isolated Node adapter -> temporary authenticated TLS MCP -> staged worker -> local synthetic API. No Intel, provider, robot or existing MCP access.",
+  "stationId": "local-reconciled-bea910f0-18f1-4e3a-b5ce-6f27cd36fa65",
+  "status": "passed",
+  "node": {
+    "status": {
+      "json": 200,
+      "csv": 200,
+      "sse": 200,
+      "context": 200,
+      "review": 200,
+      "analysis": 202,
+      "conflict": 409,
+      "missingRead": 503,
+      "missingPost": 503
+    },
+    "enqueues": [
+      {
+        "tool": "enqueue_station_read",
+        "method": "GET",
+        "path": "/api/v1/sessions/sim:captured/export",
+        "query": {
+          "format": "json"
+        }
+      },
+      {
+        "tool": "enqueue_station_read",
+        "method": "GET",
+        "path": "/api/v1/sessions/sim:captured/export",
+        "query": {
+          "format": "csv"
+        }
+      },
+      {
+        "tool": "enqueue_station_read",
+        "method": "GET",
+        "path": "/api/v1/events",
+        "query": {
+          "after": "0",
+          "once": "true"
+        }
+      },
+      {
+        "tool": "enqueue_station_read",
+        "method": "GET",
+        "path": "/api/v1/analysis/context",
+        "query": {
+          "kind": "session_comparison",
+          "sessionIds": [
+            "baseline",
+            "adaptive"
+          ],
+          "sourceMode": "simulation",
+          "baselineSessionId": "baseline",
+          "adaptiveSessionId": "adaptive"
+        }
+      },
+      {
+        "tool": "enqueue_station_request",
+        "method": "POST",
+        "path": "/api/v1/cycles/demo:retry/review",
+        "intent": "record-review",
+        "query": {}
+      },
+      {
+        "tool": "enqueue_station_request",
+        "method": "POST",
+        "path": "/api/v1/analysis/reports",
+        "intent": "evidence-analysis",
+        "query": {}
+      },
+      {
+        "tool": "enqueue_station_request",
+        "method": "POST",
+        "path": "/api/v1/analysis/reports",
+        "intent": "evidence-analysis",
+        "query": {}
+      },
+      {
+        "tool": "enqueue_station_read",
+        "method": "GET",
+        "path": "/api/v1/sessions",
+        "query": {}
+      },
+      {
+        "tool": "enqueue_station_request",
+        "method": "POST",
+        "path": "/api/v1/analysis/reports",
+        "intent": "evidence-analysis",
+        "query": {}
+      }
+    ],
+    "readyPages": [
+      {
+        "offset": 0,
+        "next": 60000
+      },
+      {
+        "offset": 60000,
+        "next": 120000
+      },
+      {
+        "offset": 120000,
+        "next": null
+      },
+      {
+        "offset": 0,
+        "next": null
+      },
+      {
+        "offset": 0,
+        "next": null
+      },
+      {
+        "offset": 0,
+        "next": null
+      },
+      {
+        "offset": 0,
+        "next": null
+      },
+      {
+        "offset": 0,
+        "next": null
+      },
+      {
+        "offset": 0,
+        "next": null
+      }
+    ],
+    "jsonBytes": 91040,
+    "jsonSha256": "99be709db5e5ad0d4fb2624eccf8956b46aed67c6a6796edad298e3b9154d545",
+    "csvBody": "section,recordType,id,dataJson\nrecords,session,synthetic,{}\n",
+    "sseBody": "id: 1\nevent: record.created\ndata: {\"sequence\":1}\n\n",
+    "tlsVerificationEnabled": true
+  },
+  "syntheticWorkerRounds": [
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    }
+  ],
+  "localApiRequests": [
+    {
+      "method": "GET",
+      "path": "/api/v1/sessions/sim:captured/export?format=json"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/sessions/sim:captured/export?format=csv"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/events?after=0&limit=100&once=true"
+    },
+    {
+      "method": "GET",
+      "path": "/api/v1/analysis/context?adaptiveSessionId=adaptive&baselineSessionId=baseline&kind=session_comparison&sessionIds=baseline&sessionIds=adaptive&sourceMode=simulation"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/cycles/demo:retry/review",
+      "bodySha256": "be5311b78b944668bff8b49ee96451e5871146549b33f21c30e47591c4faf867"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/analysis/reports",
+      "bodySha256": "9f4d17c52a3bd7483d459088b0530f81497a1ffa2970c150b2353555f95989b5"
+    },
+    {
+      "method": "POST",
+      "path": "/api/v1/analysis/reports",
+      "bodySha256": "c12dd3e383cd4c76bedcaa89d2cad879ad388adf6f12be67edb9f766b51d37f8"
+    }
+  ],
+  "completedAt": "2026-11-15T03:52:05.432263+00:00",
+  "actualIntelAccess": false,
+  "providerCalls": false,
+  "existingMcpModified": false,
+  "sourceSha256": {
+    "server.py": "53860f1cdebb876cfa985e0da5f29516a35e5ce6762b03685a240e429330ff46",
+    "station_relay.py": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
+    "station_worker.py": "f1f93b8f828d06a9e532b9fa3547d29d0e7128b03925ea313ee16a3f749dc999"
+  },
+  "adapterSha256": "50df2a95b0edae59686fb98ec3af08b76b65e0694dde78e910d9621f6718ea97"
+}

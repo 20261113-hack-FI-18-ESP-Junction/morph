@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-15T02:18:52.210910+00:00",
+  "scope": "Node adapter -> existing Mac TLS MCP -> packaged worker -> local synthetic GET API -> MCP chunks -> Node. Not Intel, provider or physical verification.",
+  "stationId": "mac-three-host-test-740508e4-88b3-4113-9e0e-c1f69638ca90",
+  "status": "passed",
+  "node": {
+    "jsonStatus": 200,
+    "jsonBytes": 91040,
+    "jsonSha256": "99be709db5e5ad0d4fb2624eccf8956b46aed67c6a6796edad298e3b9154d545",
+    "csvStatus": 200,
+    "csvBytes": 60,
+    "sseStatus": 200,
+    "sseBytes": 50,
+    "missingWorkerStatus": 503
+  },
+  "syntheticWorkerRounds": [
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    },
+    {
+      "claimed": 1,
+      "completed": 1,
+      "expired": 0,
+      "failed": 0
+    }
+  ],
+  "httpGetPaths": [
+    "/api/v1/sessions/sim:captured/export?format=json",
+    "/api/v1/sessions/sim:captured/export?format=csv",
+    "/api/v1/events?after=0&limit=100&once=true"
+  ],
+  "tlsVerificationEnabled": true,
+  "rawJsonBytes": 91040,
+  "jsonBase64Parts": 3,
+  "sharedServerModified": false,
+  "pairingModified": false,
+  "actualIntelAccess": false
+}
