@@ -1,0 +1,999 @@
+{
+  "cycle": {
+    "commandedDestination": "good_bin",
+    "confirmationId": "demo:retry:attempt:2:confirmation",
+    "endedAt": "2026-11-14T15:00:50Z",
+    "id": "demo:retry",
+    "inspectionId": "demo:retry:inspection:1",
+    "objectId": "demo:object:1",
+    "observedDestination": "good_bin",
+    "outcome": "correct",
+    "referenceLabelId": "demo:retry:reference",
+    "sessionId": "demo:session",
+    "startedAt": "2026-11-14T15:00:30Z",
+    "revision": 2
+  },
+  "attempts": [
+    {
+      "confirmationId": null,
+      "cycleId": "demo:retry",
+      "endedAt": "2026-11-14T15:00:37Z",
+      "errorCode": "simulated_failed_grasp",
+      "id": "demo:retry:attempt:1",
+      "ordinal": 1,
+      "outcome": "failed",
+      "retryOfAttemptId": null,
+      "retryReason": null,
+      "sessionId": "demo:session",
+      "startedAt": "2026-11-14T15:00:34Z",
+      "revision": 2
+    },
+    {
+      "confirmationId": "demo:retry:attempt:2:confirmation",
+      "cycleId": "demo:retry",
+      "endedAt": "2026-11-14T15:00:42Z",
+      "errorCode": null,
+      "id": "demo:retry:attempt:2",
+      "ordinal": 2,
+      "outcome": "successful",
+      "retryOfAttemptId": "demo:retry:attempt:1",
+      "retryReason": "Failed grasp in simulated fixture",
+      "sessionId": "demo:session",
+      "startedAt": "2026-11-14T15:00:39Z",
+      "revision": 2
+    }
+  ],
+  "frames": [
+    {
+      "cameraId": "simulated-camera",
+      "capturedAt": "2026-11-14T15:00:31Z",
+      "cycleId": "demo:retry",
+      "evidenceId": "demo:retry:image",
+      "height": 1,
+      "id": "demo:retry:frame",
+      "objectId": "demo:object:1",
+      "receivedAt": "2026-11-14T15:00:31Z",
+      "sessionId": "demo:session",
+      "width": 1,
+      "revision": 1
+    }
+  ],
+  "inspections": [
+    {
+      "additionalInspectionOfId": null,
+      "classification": "good",
+      "completedAt": "2026-11-14T15:00:32.100000Z",
+      "cycleId": "demo:retry",
+      "frameIds": [
+        "demo:retry:frame"
+      ],
+      "id": "demo:retry:inspection:0",
+      "mapEvidenceId": null,
+      "modelRunId": "demo:retry:model:0",
+      "objectId": "demo:object:1",
+      "requestedAt": "2026-11-14T15:00:32Z",
+      "score": 0.1,
+      "sessionId": "demo:session",
+      "threshold": 0.5,
+      "revision": 1
+    },
+    {
+      "additionalInspectionOfId": "demo:retry:inspection:0",
+      "classification": "good",
+      "completedAt": "2026-11-14T15:00:33.100000Z",
+      "cycleId": "demo:retry",
+      "frameIds": [
+        "demo:retry:frame"
+      ],
+      "id": "demo:retry:inspection:1",
+      "mapEvidenceId": null,
+      "modelRunId": "demo:retry:model:1",
+      "objectId": "demo:object:1",
+      "requestedAt": "2026-11-14T15:00:33Z",
+      "score": 0.1,
+      "sessionId": "demo:session",
+      "threshold": 0.5,
+      "revision": 1
+    }
+  ],
+  "modelRuns": [
+    {
+      "completedAt": "2026-11-14T15:00:32.100000Z",
+      "cycleId": "demo:retry",
+      "device": null,
+      "error": null,
+      "frameIds": [
+        "demo:retry:frame"
+      ],
+      "id": "demo:retry:model:0",
+      "input": {
+        "fixture": "retry"
+      },
+      "latencyMs": 100.0,
+      "modelId": "fixture-only-not-an-actual-detector",
+      "output": {
+        "classification": "good"
+      },
+      "precision": null,
+      "provider": "simulation",
+      "requestedAt": "2026-11-14T15:00:32Z",
+      "sessionId": "demo:session",
+      "revision": 1
+    },
+    {
+      "completedAt": "2026-11-14T15:00:33.100000Z",
+      "cycleId": "demo:retry",
+      "device": null,
+      "error": null,
+      "frameIds": [
+        "demo:retry:frame"
+      ],
+      "id": "demo:retry:model:1",
+      "input": {
+        "fixture": "retry"
+      },
+      "latencyMs": 100.0,
+      "modelId": "fixture-only-not-an-actual-detector",
+      "output": {
+        "classification": "good"
+      },
+      "precision": null,
+      "provider": "simulation",
+      "requestedAt": "2026-11-14T15:00:33Z",
+      "sessionId": "demo:session",
+      "revision": 1
+    }
+  ],
+  "utterances": [],
+  "decisions": [],
+  "executions": [
+    {
+      "acknowledgedAt": "2026-11-14T15:00:34.100000Z",
+      "attemptId": "demo:retry:attempt:1",
+      "cycleId": "demo:retry",
+      "decisionId": null,
+      "error": null,
+      "finishedAt": "2026-11-14T15:00:36Z",
+      "id": "demo:retry:attempt:1:execution",
+      "policyId": "simulation-only-no-robot",
+      "requestedAt": "2026-11-14T15:00:34Z",
+      "sessionId": "demo:session",
+      "status": "finished",
+      "taskId": "fixture_skill",
+      "revision": 1
+    },
+    {
+      "acknowledgedAt": "2026-11-14T15:00:39.100000Z",
+      "attemptId": "demo:retry:attempt:2",
+      "cycleId": "demo:retry",
+      "decisionId": null,
+      "error": null,
+      "finishedAt": "2026-11-14T15:00:41Z",
+      "id": "demo:retry:attempt:2:execution",
+      "policyId": "simulation-only-no-robot",
+      "requestedAt": "2026-11-14T15:00:39Z",
+      "sessionId": "demo:session",
+      "status": "finished",
+      "taskId": "fixture_skill",
+      "revision": 1
+    }
+  ],
+  "referenceLabels": [
+    {
+      "authorId": "simulation-operator",
+      "createdAt": "2026-11-14T15:00:31Z",
+      "cycleId": "demo:retry",
+      "evidenceIds": [
+        "demo:retry:image"
+      ],
+      "id": "demo:retry:reference",
+      "method": "Independent fixture label",
+      "objectId": "demo:object:1",
+      "quality": "good",
+      "sessionId": "demo:session",
+      "revision": 1
+    }
+  ],
+  "confirmations": [
+    {
+      "attemptId": "demo:retry:attempt:2",
+      "authorId": "simulation-operator",
+      "confirmedAt": "2026-11-14T15:00:42Z",
+      "cycleId": "demo:retry",
+      "evidenceIds": [
+        "demo:retry:image"
+      ],
+      "id": "demo:retry:attempt:2:confirmation",
+      "observedDestination": "good_bin",
+      "physicalSuccess": true,
+      "sessionId": "demo:session",
+      "source": "operator",
+      "revision": 1
+    }
+  ],
+  "corrections": [],
+  "evidence": [
+    {
+      "capturedAt": "2026-11-14T15:00:31Z",
+      "cycleId": "demo:retry",
+      "id": "demo:retry:image",
+      "mediaType": "image/png",
+      "sessionId": "demo:session",
+      "sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+      "size": 68,
+      "revision": 1
+    }
+  ],
+  "events": [
+    {
+      "sequence": 13,
+      "eventId": "demo:retry:create",
+      "type": "cycle.created",
+      "recordType": "cycle",
+      "entityId": "demo:retry",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.394621Z",
+      "receivedAt": "2026-11-14T16:27:48.394622Z",
+      "payload": {
+        "commandedDestination": null,
+        "confirmationId": null,
+        "endedAt": null,
+        "id": "demo:retry",
+        "inspectionId": null,
+        "objectId": "demo:object:1",
+        "observedDestination": null,
+        "outcome": "in_progress",
+        "referenceLabelId": null,
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:30Z"
+      }
+    },
+    {
+      "sequence": 14,
+      "eventId": "demo:retry:image:upload",
+      "type": "evidence.created",
+      "recordType": "evidence",
+      "entityId": "demo:retry:image",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T15:00:31+00:00",
+      "receivedAt": "2026-11-14T16:27:48.395341Z",
+      "payload": {
+        "capturedAt": "2026-11-14T15:00:31Z",
+        "cycleId": "demo:retry",
+        "id": "demo:retry:image",
+        "mediaType": "image/png",
+        "sessionId": "demo:session",
+        "sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+        "size": 68
+      }
+    },
+    {
+      "sequence": 15,
+      "eventId": "demo:retry:frame:create",
+      "type": "frame.created",
+      "recordType": "frame",
+      "entityId": "demo:retry:frame",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.396136Z",
+      "receivedAt": "2026-11-14T16:27:48.396137Z",
+      "payload": {
+        "cameraId": "simulated-camera",
+        "capturedAt": "2026-11-14T15:00:31Z",
+        "cycleId": "demo:retry",
+        "evidenceId": "demo:retry:image",
+        "height": 1,
+        "id": "demo:retry:frame",
+        "objectId": "demo:object:1",
+        "receivedAt": "2026-11-14T15:00:31Z",
+        "sessionId": "demo:session",
+        "width": 1
+      }
+    },
+    {
+      "sequence": 16,
+      "eventId": "demo:retry:model:0:create",
+      "type": "model_run.created",
+      "recordType": "model_run",
+      "entityId": "demo:retry:model:0",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.396768Z",
+      "receivedAt": "2026-11-14T16:27:48.396769Z",
+      "payload": {
+        "completedAt": "2026-11-14T15:00:32.100000Z",
+        "cycleId": "demo:retry",
+        "device": null,
+        "error": null,
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:model:0",
+        "input": {
+          "fixture": "retry"
+        },
+        "latencyMs": 100.0,
+        "modelId": "fixture-only-not-an-actual-detector",
+        "output": {
+          "classification": "good"
+        },
+        "precision": null,
+        "provider": "simulation",
+        "requestedAt": "2026-11-14T15:00:32Z",
+        "sessionId": "demo:session"
+      }
+    },
+    {
+      "sequence": 17,
+      "eventId": "demo:retry:inspection:0:create",
+      "type": "inspection.created",
+      "recordType": "inspection",
+      "entityId": "demo:retry:inspection:0",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.397605Z",
+      "receivedAt": "2026-11-14T16:27:48.397607Z",
+      "payload": {
+        "additionalInspectionOfId": null,
+        "classification": "good",
+        "completedAt": "2026-11-14T15:00:32.100000Z",
+        "cycleId": "demo:retry",
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:inspection:0",
+        "mapEvidenceId": null,
+        "modelRunId": "demo:retry:model:0",
+        "objectId": "demo:object:1",
+        "requestedAt": "2026-11-14T15:00:32Z",
+        "score": 0.1,
+        "sessionId": "demo:session",
+        "threshold": 0.5
+      }
+    },
+    {
+      "sequence": 18,
+      "eventId": "demo:retry:model:1:create",
+      "type": "model_run.created",
+      "recordType": "model_run",
+      "entityId": "demo:retry:model:1",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.398371Z",
+      "receivedAt": "2026-11-14T16:27:48.398373Z",
+      "payload": {
+        "completedAt": "2026-11-14T15:00:33.100000Z",
+        "cycleId": "demo:retry",
+        "device": null,
+        "error": null,
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:model:1",
+        "input": {
+          "fixture": "retry"
+        },
+        "latencyMs": 100.0,
+        "modelId": "fixture-only-not-an-actual-detector",
+        "output": {
+          "classification": "good"
+        },
+        "precision": null,
+        "provider": "simulation",
+        "requestedAt": "2026-11-14T15:00:33Z",
+        "sessionId": "demo:session"
+      }
+    },
+    {
+      "sequence": 19,
+      "eventId": "demo:retry:inspection:1:create",
+      "type": "inspection.created",
+      "recordType": "inspection",
+      "entityId": "demo:retry:inspection:1",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.399052Z",
+      "receivedAt": "2026-11-14T16:27:48.399054Z",
+      "payload": {
+        "additionalInspectionOfId": "demo:retry:inspection:0",
+        "classification": "good",
+        "completedAt": "2026-11-14T15:00:33.100000Z",
+        "cycleId": "demo:retry",
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:inspection:1",
+        "mapEvidenceId": null,
+        "modelRunId": "demo:retry:model:1",
+        "objectId": "demo:object:1",
+        "requestedAt": "2026-11-14T15:00:33Z",
+        "score": 0.1,
+        "sessionId": "demo:session",
+        "threshold": 0.5
+      }
+    },
+    {
+      "sequence": 20,
+      "eventId": "demo:retry:reference:create",
+      "type": "reference_label.created",
+      "recordType": "reference_label",
+      "entityId": "demo:retry:reference",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.399707Z",
+      "receivedAt": "2026-11-14T16:27:48.399708Z",
+      "payload": {
+        "authorId": "simulation-operator",
+        "createdAt": "2026-11-14T15:00:31Z",
+        "cycleId": "demo:retry",
+        "evidenceIds": [
+          "demo:retry:image"
+        ],
+        "id": "demo:retry:reference",
+        "method": "Independent fixture label",
+        "objectId": "demo:object:1",
+        "quality": "good",
+        "sessionId": "demo:session"
+      }
+    },
+    {
+      "sequence": 21,
+      "eventId": "demo:retry:attempt:1:create",
+      "type": "attempt.created",
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:1",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.400381Z",
+      "receivedAt": "2026-11-14T16:27:48.400382Z",
+      "payload": {
+        "confirmationId": null,
+        "cycleId": "demo:retry",
+        "endedAt": null,
+        "errorCode": null,
+        "id": "demo:retry:attempt:1",
+        "ordinal": 1,
+        "outcome": "in_progress",
+        "retryOfAttemptId": null,
+        "retryReason": null,
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:34Z"
+      }
+    },
+    {
+      "sequence": 22,
+      "eventId": "demo:retry:attempt:1:execution:create",
+      "type": "execution.created",
+      "recordType": "execution",
+      "entityId": "demo:retry:attempt:1:execution",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.401006Z",
+      "receivedAt": "2026-11-14T16:27:48.401007Z",
+      "payload": {
+        "acknowledgedAt": "2026-11-14T15:00:34.100000Z",
+        "attemptId": "demo:retry:attempt:1",
+        "cycleId": "demo:retry",
+        "decisionId": null,
+        "error": null,
+        "finishedAt": "2026-11-14T15:00:36Z",
+        "id": "demo:retry:attempt:1:execution",
+        "policyId": "simulation-only-no-robot",
+        "requestedAt": "2026-11-14T15:00:34Z",
+        "sessionId": "demo:session",
+        "status": "finished",
+        "taskId": "fixture_skill"
+      }
+    },
+    {
+      "sequence": 23,
+      "eventId": "demo:retry:attempt:1:finish",
+      "type": "attempt.updated",
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:1",
+      "entityRevision": 2,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.401700Z",
+      "receivedAt": "2026-11-14T16:27:48.401702Z",
+      "payload": {
+        "confirmationId": null,
+        "cycleId": "demo:retry",
+        "endedAt": "2026-11-14T15:00:37Z",
+        "errorCode": "simulated_failed_grasp",
+        "id": "demo:retry:attempt:1",
+        "ordinal": 1,
+        "outcome": "failed",
+        "retryOfAttemptId": null,
+        "retryReason": null,
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:34Z"
+      }
+    },
+    {
+      "sequence": 24,
+      "eventId": "demo:retry:attempt:2:create",
+      "type": "attempt.created",
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:2",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.402348Z",
+      "receivedAt": "2026-11-14T16:27:48.402349Z",
+      "payload": {
+        "confirmationId": null,
+        "cycleId": "demo:retry",
+        "endedAt": null,
+        "errorCode": null,
+        "id": "demo:retry:attempt:2",
+        "ordinal": 2,
+        "outcome": "in_progress",
+        "retryOfAttemptId": "demo:retry:attempt:1",
+        "retryReason": "Failed grasp in simulated fixture",
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:39Z"
+      }
+    },
+    {
+      "sequence": 25,
+      "eventId": "demo:retry:attempt:2:execution:create",
+      "type": "execution.created",
+      "recordType": "execution",
+      "entityId": "demo:retry:attempt:2:execution",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.402954Z",
+      "receivedAt": "2026-11-14T16:27:48.402955Z",
+      "payload": {
+        "acknowledgedAt": "2026-11-14T15:00:39.100000Z",
+        "attemptId": "demo:retry:attempt:2",
+        "cycleId": "demo:retry",
+        "decisionId": null,
+        "error": null,
+        "finishedAt": "2026-11-14T15:00:41Z",
+        "id": "demo:retry:attempt:2:execution",
+        "policyId": "simulation-only-no-robot",
+        "requestedAt": "2026-11-14T15:00:39Z",
+        "sessionId": "demo:session",
+        "status": "finished",
+        "taskId": "fixture_skill"
+      }
+    },
+    {
+      "sequence": 26,
+      "eventId": "demo:retry:attempt:2:confirmation:create",
+      "type": "confirmation.created",
+      "recordType": "confirmation",
+      "entityId": "demo:retry:attempt:2:confirmation",
+      "entityRevision": 1,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.403613Z",
+      "receivedAt": "2026-11-14T16:27:48.403614Z",
+      "payload": {
+        "attemptId": "demo:retry:attempt:2",
+        "authorId": "simulation-operator",
+        "confirmedAt": "2026-11-14T15:00:42Z",
+        "cycleId": "demo:retry",
+        "evidenceIds": [
+          "demo:retry:image"
+        ],
+        "id": "demo:retry:attempt:2:confirmation",
+        "observedDestination": "good_bin",
+        "physicalSuccess": true,
+        "sessionId": "demo:session",
+        "source": "operator"
+      }
+    },
+    {
+      "sequence": 27,
+      "eventId": "demo:retry:attempt:2:finish",
+      "type": "attempt.updated",
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:2",
+      "entityRevision": 2,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.404309Z",
+      "receivedAt": "2026-11-14T16:27:48.404310Z",
+      "payload": {
+        "confirmationId": "demo:retry:attempt:2:confirmation",
+        "cycleId": "demo:retry",
+        "endedAt": "2026-11-14T15:00:42Z",
+        "errorCode": null,
+        "id": "demo:retry:attempt:2",
+        "ordinal": 2,
+        "outcome": "successful",
+        "retryOfAttemptId": "demo:retry:attempt:1",
+        "retryReason": "Failed grasp in simulated fixture",
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:39Z"
+      }
+    },
+    {
+      "sequence": 28,
+      "eventId": "demo:retry:finish",
+      "type": "cycle.updated",
+      "recordType": "cycle",
+      "entityId": "demo:retry",
+      "entityRevision": 2,
+      "sessionId": "demo:session",
+      "cycleId": "demo:retry",
+      "sourceMode": "simulation",
+      "occurredAt": "2026-11-14T16:27:48.404947Z",
+      "receivedAt": "2026-11-14T16:27:48.404948Z",
+      "payload": {
+        "commandedDestination": "good_bin",
+        "confirmationId": "demo:retry:attempt:2:confirmation",
+        "endedAt": "2026-11-14T15:00:50Z",
+        "id": "demo:retry",
+        "inspectionId": "demo:retry:inspection:1",
+        "objectId": "demo:object:1",
+        "observedDestination": "good_bin",
+        "outcome": "correct",
+        "referenceLabelId": "demo:retry:reference",
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:30Z"
+      }
+    }
+  ],
+  "revisions": [
+    {
+      "recordType": "cycle",
+      "entityId": "demo:retry",
+      "revision": 1,
+      "eventId": "demo:retry:create",
+      "record": {
+        "commandedDestination": null,
+        "confirmationId": null,
+        "endedAt": null,
+        "id": "demo:retry",
+        "inspectionId": null,
+        "objectId": "demo:object:1",
+        "observedDestination": null,
+        "outcome": "in_progress",
+        "referenceLabelId": null,
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:30Z"
+      }
+    },
+    {
+      "recordType": "evidence",
+      "entityId": "demo:retry:image",
+      "revision": 1,
+      "eventId": "demo:retry:image:upload",
+      "record": {
+        "capturedAt": "2026-11-14T15:00:31Z",
+        "cycleId": "demo:retry",
+        "id": "demo:retry:image",
+        "mediaType": "image/png",
+        "sessionId": "demo:session",
+        "sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+        "size": 68
+      }
+    },
+    {
+      "recordType": "frame",
+      "entityId": "demo:retry:frame",
+      "revision": 1,
+      "eventId": "demo:retry:frame:create",
+      "record": {
+        "cameraId": "simulated-camera",
+        "capturedAt": "2026-11-14T15:00:31Z",
+        "cycleId": "demo:retry",
+        "evidenceId": "demo:retry:image",
+        "height": 1,
+        "id": "demo:retry:frame",
+        "objectId": "demo:object:1",
+        "receivedAt": "2026-11-14T15:00:31Z",
+        "sessionId": "demo:session",
+        "width": 1
+      }
+    },
+    {
+      "recordType": "model_run",
+      "entityId": "demo:retry:model:0",
+      "revision": 1,
+      "eventId": "demo:retry:model:0:create",
+      "record": {
+        "completedAt": "2026-11-14T15:00:32.100000Z",
+        "cycleId": "demo:retry",
+        "device": null,
+        "error": null,
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:model:0",
+        "input": {
+          "fixture": "retry"
+        },
+        "latencyMs": 100.0,
+        "modelId": "fixture-only-not-an-actual-detector",
+        "output": {
+          "classification": "good"
+        },
+        "precision": null,
+        "provider": "simulation",
+        "requestedAt": "2026-11-14T15:00:32Z",
+        "sessionId": "demo:session"
+      }
+    },
+    {
+      "recordType": "inspection",
+      "entityId": "demo:retry:inspection:0",
+      "revision": 1,
+      "eventId": "demo:retry:inspection:0:create",
+      "record": {
+        "additionalInspectionOfId": null,
+        "classification": "good",
+        "completedAt": "2026-11-14T15:00:32.100000Z",
+        "cycleId": "demo:retry",
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:inspection:0",
+        "mapEvidenceId": null,
+        "modelRunId": "demo:retry:model:0",
+        "objectId": "demo:object:1",
+        "requestedAt": "2026-11-14T15:00:32Z",
+        "score": 0.1,
+        "sessionId": "demo:session",
+        "threshold": 0.5
+      }
+    },
+    {
+      "recordType": "model_run",
+      "entityId": "demo:retry:model:1",
+      "revision": 1,
+      "eventId": "demo:retry:model:1:create",
+      "record": {
+        "completedAt": "2026-11-14T15:00:33.100000Z",
+        "cycleId": "demo:retry",
+        "device": null,
+        "error": null,
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:model:1",
+        "input": {
+          "fixture": "retry"
+        },
+        "latencyMs": 100.0,
+        "modelId": "fixture-only-not-an-actual-detector",
+        "output": {
+          "classification": "good"
+        },
+        "precision": null,
+        "provider": "simulation",
+        "requestedAt": "2026-11-14T15:00:33Z",
+        "sessionId": "demo:session"
+      }
+    },
+    {
+      "recordType": "inspection",
+      "entityId": "demo:retry:inspection:1",
+      "revision": 1,
+      "eventId": "demo:retry:inspection:1:create",
+      "record": {
+        "additionalInspectionOfId": "demo:retry:inspection:0",
+        "classification": "good",
+        "completedAt": "2026-11-14T15:00:33.100000Z",
+        "cycleId": "demo:retry",
+        "frameIds": [
+          "demo:retry:frame"
+        ],
+        "id": "demo:retry:inspection:1",
+        "mapEvidenceId": null,
+        "modelRunId": "demo:retry:model:1",
+        "objectId": "demo:object:1",
+        "requestedAt": "2026-11-14T15:00:33Z",
+        "score": 0.1,
+        "sessionId": "demo:session",
+        "threshold": 0.5
+      }
+    },
+    {
+      "recordType": "reference_label",
+      "entityId": "demo:retry:reference",
+      "revision": 1,
+      "eventId": "demo:retry:reference:create",
+      "record": {
+        "authorId": "simulation-operator",
+        "createdAt": "2026-11-14T15:00:31Z",
+        "cycleId": "demo:retry",
+        "evidenceIds": [
+          "demo:retry:image"
+        ],
+        "id": "demo:retry:reference",
+        "method": "Independent fixture label",
+        "objectId": "demo:object:1",
+        "quality": "good",
+        "sessionId": "demo:session"
+      }
+    },
+    {
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:1",
+      "revision": 1,
+      "eventId": "demo:retry:attempt:1:create",
+      "record": {
+        "confirmationId": null,
+        "cycleId": "demo:retry",
+        "endedAt": null,
+        "errorCode": null,
+        "id": "demo:retry:attempt:1",
+        "ordinal": 1,
+        "outcome": "in_progress",
+        "retryOfAttemptId": null,
+        "retryReason": null,
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:34Z"
+      }
+    },
+    {
+      "recordType": "execution",
+      "entityId": "demo:retry:attempt:1:execution",
+      "revision": 1,
+      "eventId": "demo:retry:attempt:1:execution:create",
+      "record": {
+        "acknowledgedAt": "2026-11-14T15:00:34.100000Z",
+        "attemptId": "demo:retry:attempt:1",
+        "cycleId": "demo:retry",
+        "decisionId": null,
+        "error": null,
+        "finishedAt": "2026-11-14T15:00:36Z",
+        "id": "demo:retry:attempt:1:execution",
+        "policyId": "simulation-only-no-robot",
+        "requestedAt": "2026-11-14T15:00:34Z",
+        "sessionId": "demo:session",
+        "status": "finished",
+        "taskId": "fixture_skill"
+      }
+    },
+    {
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:1",
+      "revision": 2,
+      "eventId": "demo:retry:attempt:1:finish",
+      "record": {
+        "confirmationId": null,
+        "cycleId": "demo:retry",
+        "endedAt": "2026-11-14T15:00:37Z",
+        "errorCode": "simulated_failed_grasp",
+        "id": "demo:retry:attempt:1",
+        "ordinal": 1,
+        "outcome": "failed",
+        "retryOfAttemptId": null,
+        "retryReason": null,
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:34Z"
+      }
+    },
+    {
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:2",
+      "revision": 1,
+      "eventId": "demo:retry:attempt:2:create",
+      "record": {
+        "confirmationId": null,
+        "cycleId": "demo:retry",
+        "endedAt": null,
+        "errorCode": null,
+        "id": "demo:retry:attempt:2",
+        "ordinal": 2,
+        "outcome": "in_progress",
+        "retryOfAttemptId": "demo:retry:attempt:1",
+        "retryReason": "Failed grasp in simulated fixture",
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:39Z"
+      }
+    },
+    {
+      "recordType": "execution",
+      "entityId": "demo:retry:attempt:2:execution",
+      "revision": 1,
+      "eventId": "demo:retry:attempt:2:execution:create",
+      "record": {
+        "acknowledgedAt": "2026-11-14T15:00:39.100000Z",
+        "attemptId": "demo:retry:attempt:2",
+        "cycleId": "demo:retry",
+        "decisionId": null,
+        "error": null,
+        "finishedAt": "2026-11-14T15:00:41Z",
+        "id": "demo:retry:attempt:2:execution",
+        "policyId": "simulation-only-no-robot",
+        "requestedAt": "2026-11-14T15:00:39Z",
+        "sessionId": "demo:session",
+        "status": "finished",
+        "taskId": "fixture_skill"
+      }
+    },
+    {
+      "recordType": "confirmation",
+      "entityId": "demo:retry:attempt:2:confirmation",
+      "revision": 1,
+      "eventId": "demo:retry:attempt:2:confirmation:create",
+      "record": {
+        "attemptId": "demo:retry:attempt:2",
+        "authorId": "simulation-operator",
+        "confirmedAt": "2026-11-14T15:00:42Z",
+        "cycleId": "demo:retry",
+        "evidenceIds": [
+          "demo:retry:image"
+        ],
+        "id": "demo:retry:attempt:2:confirmation",
+        "observedDestination": "good_bin",
+        "physicalSuccess": true,
+        "sessionId": "demo:session",
+        "source": "operator"
+      }
+    },
+    {
+      "recordType": "attempt",
+      "entityId": "demo:retry:attempt:2",
+      "revision": 2,
+      "eventId": "demo:retry:attempt:2:finish",
+      "record": {
+        "confirmationId": "demo:retry:attempt:2:confirmation",
+        "cycleId": "demo:retry",
+        "endedAt": "2026-11-14T15:00:42Z",
+        "errorCode": null,
+        "id": "demo:retry:attempt:2",
+        "ordinal": 2,
+        "outcome": "successful",
+        "retryOfAttemptId": "demo:retry:attempt:1",
+        "retryReason": "Failed grasp in simulated fixture",
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:39Z"
+      }
+    },
+    {
+      "recordType": "cycle",
+      "entityId": "demo:retry",
+      "revision": 2,
+      "eventId": "demo:retry:finish",
+      "record": {
+        "commandedDestination": "good_bin",
+        "confirmationId": "demo:retry:attempt:2:confirmation",
+        "endedAt": "2026-11-14T15:00:50Z",
+        "id": "demo:retry",
+        "inspectionId": "demo:retry:inspection:1",
+        "objectId": "demo:object:1",
+        "observedDestination": "good_bin",
+        "outcome": "correct",
+        "referenceLabelId": "demo:retry:reference",
+        "sessionId": "demo:session",
+        "startedAt": "2026-11-14T15:00:30Z"
+      }
+    }
+  ]
+}

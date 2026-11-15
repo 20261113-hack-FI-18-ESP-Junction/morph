@@ -1,0 +1,2 @@
+# Existing project version; the offline CLI imports Pydantic and Python stdlib only.
+pydantic==2.14.3

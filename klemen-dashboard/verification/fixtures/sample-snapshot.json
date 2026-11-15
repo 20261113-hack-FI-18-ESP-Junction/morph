@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-14T16:27:52.857130Z",
+  "lastEventSequence": 50,
+  "session": {
+    "id": "demo:session",
+    "name": "Morph deterministic simulation",
+    "sourceMode": "simulation",
+    "startedAt": "2026-11-14T15:00:00Z",
+    "endedAt": null,
+    "configId": "demo:config",
+    "robotId": null,
+    "modelRuns": [],
+    "revision": 1
+  },
+  "cycle": {
+    "id": "demo:in_progress",
+    "sessionId": "demo:session",
+    "objectId": "demo:object:4",
+    "startedAt": "2026-11-14T15:02:00Z",
+    "endedAt": null,
+    "outcome": "in_progress",
+    "commandedDestination": null,
+    "observedDestination": null,
+    "referenceLabelId": null,
+    "inspectionId": null,
+    "confirmationId": null,
+    "revision": 1
+  },
+  "activeCycleIds": [
+    "demo:in_progress"
+  ],
+  "sourceMode": "simulation",
+  "stateVersion": 50,
+  "goalVersion": null,
+  "goal": null,
+  "availableActions": [],
+  "capabilities": {
+    "robot": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "cameras": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "anomalib": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "nemotron": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "gemini": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "elevenlabs": {
+      "status": "unavailable",
+      "verified": false
+    }
+  },
+  "metrics": {
+    "filters": {
+      "sessionId": "demo:session",
+      "includeSimulation": true,
+      "includedSessionIds": [
+        "demo:session"
+      ]
+    },
+    "cycles": {
+      "correct": 2,
+      "failed": 1,
+      "aborted": 0,
+      "unverified": 1,
+      "in_progress": 1,
+      "total": 5,
+      "finished": 4,
+      "inProgress": 1
+    },
+    "attempts": {
+      "successful": 3,
+      "failed": 1,
+      "aborted": 0,
+      "unverified": 1,
+      "in_progress": 0,
+      "total": 5,
+      "finished": 5,
+      "inProgress": 0
+    },
+    "endToEnd": {
+      "numerator": 2,
+      "denominator": 4,
+      "value": 0.5,
+      "definition": "Confirmed correct cycles / all finished cycles",
+      "filters": {
+        "sessionId": "demo:session",
+        "includeSimulation": true,
+        "includedSessionIds": [
+          "demo:session"
+        ]
+      }
+    },
+    "physicalExecution": {
+      "numerator": 3,
+      "denominator": 5,
+      "value": 0.6,
+      "definition": "Confirmed successful attempts / all finished attempts",
+      "filters": {
+        "sessionId": "demo:session",
+        "includeSimulation": true,
+        "includedSessionIds": [
+          "demo:session"
+        ]
+      }
+    },
+    "firstAttemptSuccesses": 1,
+    "recoveredCycles": 1,
+    "retries": 1,
+    "additionalInspections": 1,
+    "currentStreak": 0,
+    "longestStreak": 2,
+    "detection": {
+      "correct": 3,
+      "checked": 4,
+      "totalPopulation": 5,
+      "unresolved": 0,
+      "confusionMatrix": {
+        "truePositive": 0,
+        "trueNegative": 3,
+        "falsePositive": 1,
+        "falseNegative": 0
+      },
+      "rate": {
+        "numerator": 3,
+        "denominator": 4,
+        "value": 0.75,
+        "definition": "Correct decision inspections / reference-labeled decision inspections",
+        "filters": {
+          "sessionId": "demo:session",
+          "includeSimulation": true,
+          "includedSessionIds": [
+            "demo:session"
+          ]
+        }
+      },
+      "defectEscape": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "definition": "Predicted good / checked defective references",
+        "filters": {
+          "sessionId": "demo:session",
+          "includeSimulation": true,
+          "includedSessionIds": [
+            "demo:session"
+          ]
+        }
+      }
+    },
+    "timings": {
+      "fullCycle": {
+        "sampleCount": 4,
+        "valuesMs": [
+          20000.0,
+          20000.0,
+          20000.0,
+          20000.0
+        ],
+        "method": "Persisted endedAt minus startedAt, including waiting and retries"
+      }
+    }
+  }
+}
