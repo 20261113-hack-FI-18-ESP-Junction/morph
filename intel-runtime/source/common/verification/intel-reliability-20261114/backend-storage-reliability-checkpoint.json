@@ -1,0 +1,72 @@
+{
+  "recordedAt": "2026-11-14T22:18:12.171103+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "d0642a94-aa03-4efd-b1ea-98a2ca3f82a2",
+  "scope": "Analyst storage, lifecycle, request identity, comparison metadata and bounded JSON reliability. Original full tasks and physical acceptance remain open.",
+  "versions": {
+    "prompt": "gemma-evidence-v8",
+    "context": "morph-evidence-v6",
+    "contract": "gemma-brief-v1"
+  },
+  "reproducedBeforeFix": [
+    "Malformed saved report aborts analyst construction and station startup.",
+    "Matching blank configuration values incorrectly certify comparison compatibility.",
+    "Nonmapping specification JSON raises an unhandled exception.",
+    "Ordinary lifecycle history is labelled a correction audit despite no correction records."
+  ],
+  "fixes": [
+    "Canonical API remains available when analyst storage is unavailable; malformed report/index bytes are preserved and healthy reports stay readable.",
+    "Stable optional storage warnings block new submissions until repair/restart; uncertain final writes are explicitly unavailable rather than ready.",
+    "Atomic writes fsync contents and directory; missing-index crash windows retain request identity on restart.",
+    "Shutdown checks closed after dequeue; queued work cannot start a new provider invocation during closure.",
+    "Malformed provider response/error shapes and failed final writes cannot kill the tested worker path.",
+    "Stored JSON has a one-MiB read bound; transport and stored JSON reject duplicate keys, NaN/infinity, overflow and excessive parse nesting.",
+    "Comparison metadata requires nonempty reviewed strings; invalid container shapes fail with controlled status.",
+    "Historical facts identify lifecycle record history; context-version bump retains old immutable reports and makes changed context explicit."
+  ],
+  "verification": {
+    "before": {
+      "tests": 4,
+      "failed": 4,
+      "path": "backend-before.xml"
+    },
+    "focused": {
+      "tests": 78,
+      "failed": 0,
+      "path": "backend-storage-focused.xml"
+    },
+    "full": {
+      "tests": 150,
+      "failed": 0,
+      "warnings": 1,
+      "path": "backend-storage-full.xml"
+    },
+    "warning": "Existing Starlette TestClient httpx deprecation.",
+    "additionalBehaviors": [
+      "Eight simultaneous identical requests create one persisted job and one invocation.",
+      "Canonical correction commits during blocked inference; report remains tied to its captured digest and reads stale.",
+      "Index-write failure creates no cloud call and restart returns the same interrupted report.",
+      "Canonical API health and snapshot remain readable with an unavailable analysis directory."
+    ]
+  },
+  "evidenceHashes": {
+    "backend-before.xml": "f68de2c81070aa674ba9a3711b4053c03a3bdfd2efee86fbcace3a1ba694336b",
+    "backend-storage-focused.xml": "83b90544402aeec7360240b2fed33061b0af38865089481c34f52418a43b9558",
+    "backend-storage-full.xml": "19f3697b72c0c1bb028d877ed955631721d90a51445f1bc12b936672ec67fe39"
+  },
+  "sourceHashes": {
+    "station/morph_station/analysis.py": "5621f3f6d2d89cd6cdab0fc61335ed7da4df51182291cdac87a042edb684039f",
+    "station/morph_station/analysis_context.py": "b6be1ffa4392c2ad2eb5fa8414f5f70b7d14c267e7eac66e632a2ca94ebd6d1a",
+    "station/morph_station/analysis_models.py": "4cc88cc5528d25c86a235129086fc81662b43493f37a2e2284d734bc5828ccf3",
+    "station/morph_station/analysis_provider.py": "0c9fab6e784a912603881201d2f1ab3d28c00abbdad04d2bc0fa6e7fbafa891d",
+    "station/tests/test_analysis.py": "50aec4e612a98187c108f475fbfa95195df4011c5999eea0eec932bc09c062f1",
+    "station/ANALYST.md": "d9b9a475b37f435ac33d051e2c4ef2dd40f6d1d52867791d1f81871c0eb50936"
+  },
+  "reportListWarning": {
+    "code": "analysis_storage_unavailable",
+    "message": "Some saved analysis evidence cannot be read or saved. New analysis is unavailable until storage is repaired and the analysis service is restarted."
+  },
+  "coordination": "Frontend agent implements optional warning visibility and disabled new/retry submissions. Root owns actual service reload, cloud calls and final integration verification.",
+  "pendingSeparateDecision": "Neutral generated headlines and complete recovery metric citation policy proposed to root; not implemented in this checkpoint.",
+  "operations": "No existing api.py/store.py integration edits, actual credentials read, cloud calls, service restart, hardware I/O or canonical database writes by this agent. Tests use isolated stores and fake transport."
+}

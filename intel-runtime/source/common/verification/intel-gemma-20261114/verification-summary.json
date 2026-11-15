@@ -1,0 +1,116 @@
+{
+  "observedAt": "2026-11-14T21:47:33.868864+00:00",
+  "tests": [
+    {
+      "artifact": "HachingJunction/station/verification/gemma-backend-comparison-hardening-v8-20261114.json",
+      "sha256": "eed0b8045d7513b03a22e68b08206122bd277a22230fc4e7de7c7fc942514c5a",
+      "tests": 131,
+      "failures": 0,
+      "warnings": 1,
+      "version": "gemma-evidence-v8"
+    },
+    {
+      "artifact": "frontend-final.xml",
+      "sha256": "030bf1b11d9e95167346f4b3af7d4f9f6cb8f3ec5c947102e7e4123261983141",
+      "tests": 50,
+      "failures": 0
+    },
+    {
+      "artifact": "prototype-final.xml",
+      "sha256": "94697bf7e9e973024037fb33f76333a24b842f6f3e5dc1f4c1bbadb24f3a518d",
+      "tests": 11,
+      "failures": 0
+    }
+  ],
+  "postAccessibilityUiVerification": {
+    "tests": 24,
+    "typecheck": "passed",
+    "evidence": "runs/hosted-03/browser-03/ui-tests.txt"
+  },
+  "typecheck": "passed",
+  "build": "passed to isolated dist; existing live dist preserved",
+  "sourceVersions": {
+    "prompt": "gemma-evidence-v8",
+    "context": "morph-evidence-v5",
+    "contract": "gemma-brief-v1"
+  },
+  "canonicalLedgerUnchanged": true,
+  "canonicalLedgerSha256": "151bc4e567c482a0b66c38466af9cd730a18e3e9ee95979f2222da4768d65490",
+  "canonicalEventCount": 69,
+  "services": [
+    {
+      "service": "Existing Morph UI",
+      "url": "http://127.0.0.1:3001/",
+      "httpStatus": 200
+    },
+    {
+      "service": "Existing Morph API",
+      "url": "http://127.0.0.1:8000/health",
+      "httpStatus": 200
+    },
+    {
+      "service": "Existing native Studio",
+      "url": "http://127.0.0.1:3000/",
+      "httpStatus": 200
+    },
+    {
+      "service": "Existing container Studio",
+      "url": "http://127.0.0.1:7860/",
+      "errorType": "TimeoutError"
+    },
+    {
+      "service": "Owned analyst preview",
+      "url": "http://127.0.0.1:50139/",
+      "httpStatus": 200
+    },
+    {
+      "service": "Owned analyst API",
+      "url": "http://127.0.0.1:52197/health",
+      "httpStatus": 200
+    }
+  ],
+  "ownedPreviewKeptRunning": true,
+  "existingServicesRestartedByThisTask": false,
+  "physicalAcceptance": false,
+  "hardwareUsed": false,
+  "sourceAndDocumentationHashes": {
+    "HachingJunction/station/morph_station/analysis.py": "6b74837fc7c1c3132c9a2b28ee05c2b64d13b6976bdbfafdf0c743f943ac0d9a",
+    "HachingJunction/station/morph_station/analysis_models.py": "ca37be19e892ed776811fb2e971900f11664d4b105c2163fdb709be42fca8956",
+    "HachingJunction/station/morph_station/analysis_context.py": "70cee228151594d07ecc16b381b073f55d45d81a208a498838d6d6cfff8ad6b8",
+    "HachingJunction/station/morph_station/analysis_provider.py": "00e7504e744d7a3a6d7ca21091f2b91b2286619609855bd5f9b0de6b3f153989",
+    "HachingJunction/station/morph_station/api.py": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+    "HachingJunction/station/morph_station/store.py": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "HachingJunction/station/tests/test_analysis.py": "ee8bd16732259251d04db175fa19abc10316aaa2a242dfe078652ad4a94af57e",
+    "HachingJunction/station/tests/fixtures/gemma-v5-semantic-regressions.json": "ca018563e387990520907b74210c5a725a2bfcf5c7ea51d614e91b388b96dc1b",
+    "HachingJunction/station/tests/fixtures/gemma-v6-known-coverage-regression.json": "1c0a7ac8c5e5741a07b132e172ce0e41b8230864dddcbcf85c650e78c2b3c9b4",
+    "HachingJunction/station/ANALYST.md": "2f04176b78a32ca9f9e0015f5f68adfdc96ef91b5ba9d95b57eefc6c57f89fb9",
+    "morph-station/src/analysis/README.md": "b966e3806896c88b1fc0215986553dcda7c0849e84e41c6f5075d00418716853",
+    "morph-station/src/analysis/analysis.test.tsx": "456d3482ec454874334af503bd9532fcc4c1f1caaf1d4a52c3811433af931e4e",
+    "morph-station/src/analysis/types.ts": "e7438d71a338e5a39d0630bb5c95b835316d08f15802d21d0122b62ae3a7696a",
+    "morph-station/src/analysis/EvidenceAnalystPanel.tsx": "692c27357a9c9267f910fc2bbdea0039cf53690f0fdf47a4f5f21cc9651d955e",
+    "morph-station/src/analysis/client.ts": "ca0c5eb0e697020c555622d342247defe4ad1789c30dd7fd1822c2f55b724cdb",
+    "morph-station/src/analysis/controller.ts": "bd10936461ea3dc430cf71286538b2fa68f7e4d3150846ddfe16140f9017b967",
+    "morph-station/src/App.tsx": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+    "morph-station/server/stationProxy.ts": "afe66f0fad9c261eaffda80964ba4b65c076cfe307d120e350886fe01a8ae3af",
+    "morph-station/server/stationProxy.test.ts": "552e8def4cf1f08330a2702d67e1152dd91105a6b3f578f4cbc7da2908ec7d49",
+    "morph-station/package.json": "21090c4e662af1477f74e66f65dce2022aa564c7295ad3f1c7f1de446d151fa8",
+    "verification/intel-gemma-20261114/README.md": "718dbdad64eb8faf56bf79ca53cc012f06dbfa816a0d0e500d0f083598966e4b",
+    "verification/intel-gemma-20261114/DEMO.md": "68cd87858cca5c350129fd0e991a7fc5bbbee9a42b7e41e7fa14e0bb3edf46ac",
+    "verification/intel-gemma-20261114/root-ui-integration.patch": "62e1e0548a9a48ec58b650b10062d804234482d864690a7c7804630cbb65566d"
+  },
+  "canonicalEventMaxSequence": 126,
+  "laterStudioRecheck": {
+    "observedAt": "2026-11-14T21:47:49.943814+00:00",
+    "service": "Existing container Studio",
+    "url": "http://127.0.0.1:7860/",
+    "reason": "One bounded read-only recheck after the final 3-second HTTP timeout; no restart or hardware operation.",
+    "errorType": "TimeoutError",
+    "elapsedMs": 10015.52
+  },
+  "finalizedAt": "2026-11-14T21:49:53.028331+00:00",
+  "finalComparisonBrowser": {
+    "artifact": "runs/hosted-03/browser-g2-v8-2026-11-14T21-45-58-145Z/browser-results.json",
+    "sha256": "0263ca48ceed5ea2d262665334f4007f6e96bafaf474aefd00792fb8a864f429",
+    "status": "passed"
+  }
+}

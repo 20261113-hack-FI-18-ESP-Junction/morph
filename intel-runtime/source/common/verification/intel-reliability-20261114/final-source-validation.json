@@ -1,0 +1,49 @@
+{
+  "observedAt": "2026-11-14T22:29:58.915208+00:00",
+  "promptVersion": "gemma-evidence-v10",
+  "contextVersion": "morph-evidence-v7",
+  "sourceHashes": {
+    "HachingJunction/station/morph_station/analysis_provider.py": "e6df92195e8cf8978a638b5b5e551b39f434bd4e42537f27c4578b8664b21fdb",
+    "HachingJunction/station/morph_station/models.py": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+    "HachingJunction/station/morph_station/analysis_context.py": "252c97af88de0574816a1d46384129005b3027edf69fda9f3930defb401030de",
+    "HachingJunction/station/morph_station/simulation.py": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+    "HachingJunction/station/morph_station/__main__.py": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+    "HachingJunction/station/morph_station/analysis_models.py": "2f15c18b8771e46d43eb33321eeec034970bd34323c3ee61d0f4a89febaeb9fb",
+    "HachingJunction/station/morph_station/store.py": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "HachingJunction/station/morph_station/export_audit.py": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee",
+    "HachingJunction/station/morph_station/client.py": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+    "HachingJunction/station/morph_station/analysis.py": "5621f3f6d2d89cd6cdab0fc61335ed7da4df51182291cdac87a042edb684039f",
+    "HachingJunction/station/morph_station/api.py": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+    "HachingJunction/station/morph_station/__init__.py": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+    "morph-station/src/analysis/validation.ts": "ceb2db15eb1077ccda2a444945d0728e646983ca9ae24443db38449ff8e3d074",
+    "morph-station/src/analysis/README.md": "8cce38e58577a4a71e60af0257068d4f6fb93826f9037e3519f90b83ee1704b4",
+    "morph-station/src/analysis/analysis.test.tsx": "4fd463f2cfe6e263ff5e317353054f53951f3a73ee07acc4a25e06581957fe2c",
+    "morph-station/src/analysis/types.ts": "45e15f8577a70d241d8486c28d5238fb416c5630ff2941c64ed81b6c8246a513",
+    "morph-station/src/analysis/EvidenceAnalystPanel.tsx": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733",
+    "morph-station/src/analysis/drafts.ts": "85ac32b13e49fd731700b1744f8ccf3e6bf06d15a03ee5b3e6537e454b56e1d8",
+    "morph-station/src/analysis/client.ts": "809ce0418f18084d38058603888b596032f023f582ac45b834879c796a27e219",
+    "morph-station/src/analysis/controller.ts": "3653323a061002542bcc08edabc916c519e356b0acc15307f66703709ae59afa",
+    "morph-station/src/App.tsx": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+    "morph-station/server/stationProxy.ts": "afe66f0fad9c261eaffda80964ba4b65c076cfe307d120e350886fe01a8ae3af",
+    "morph-station/package.json": "21090c4e662af1477f74e66f65dce2022aa564c7295ad3f1c7f1de446d151fa8"
+  },
+  "validation": {
+    "backend-v10-focused.xml": {
+      "tests": 100,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "4ad094a322f3b27a964ebd5370c9109ce78a5d951cf801e1d76dac2ee1ad5519"
+    },
+    "backend-v10-full.xml": {
+      "tests": 172,
+      "failures": 0,
+      "errors": 0,
+      "sha256": "4fa8c13de4c9075606745dff33203fba13a6590e1bc5512f1878c74604ce8071"
+    }
+  },
+  "buildAssets": {
+    "dist/assets/index-_21cPxMS.css": "a9c3cfc071dfe786b6e9251250f02ac3a373bf3c5b7d56695fda225e569f40e6",
+    "dist/assets/index-Ckz9lD91.js": "958c4d25e7bf52750c43251368b553d62fbb08c296e78f30ac90788e8615a9c9",
+    "dist/assets/index-B5EKjKo4.js": "323912f43faaa3bb83ce75e3370f944e61425eff88d5313da7766d30b70ed005"
+  }
+}

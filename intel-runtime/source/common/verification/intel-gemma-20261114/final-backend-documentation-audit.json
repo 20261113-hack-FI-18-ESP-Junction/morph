@@ -1,0 +1,73 @@
+{
+  "auditedAt": "2026-11-14T21:51:49.132527+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "f191d039-8f71-48ba-bb6a-91e15bd096c6",
+  "scope": "Final read-only audit of root handoff documents, saved hosted evidence, source hashes and canonical row-count terminology; only this new audit artifact was written.",
+  "result": "Passed after root corrected captured-versus-model-cited field wording and qualified the observed container Studio timeout.",
+  "documentHashes": {
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-gemma-20261114/README.md": "718dbdad64eb8faf56bf79ca53cc012f06dbfa816a0d0e500d0f083598966e4b",
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-gemma-20261114/DEMO.md": "68cd87858cca5c350129fd0e991a7fc5bbbee9a42b7e41e7fa14e0bb3edf46ac",
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-gemma-20261114/verification-summary.json": "c484f5e7a382fa07e62d511622bb9d00c1dc1b765dcf33b8f2e84492a61d3e4a",
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/INTEL_CONTINUATION.md": "20b3e0bbd9826d55f31abcc3be962ff3a67777f24e7ba782eed7c520e5e117f0",
+    "/home/intel/Documents/Junction/PROJECT_STATUS.md": "88541297b2a8b7a474ebc27089c6258b8daa95ae47d578c832ccda9f46284a86"
+  },
+  "sourceManifest": {
+    "matchingEntries": 23,
+    "checkedEntries": 23
+  },
+  "testEvidenceHashes": [
+    {
+      "artifact": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/verification/gemma-backend-comparison-hardening-v8-20261114.json",
+      "matches": true
+    },
+    {
+      "artifact": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-gemma-20261114/frontend-final.xml",
+      "matches": true
+    },
+    {
+      "artifact": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-gemma-20261114/prototype-final.xml",
+      "matches": true
+    }
+  ],
+  "canonicalDatabase": {
+    "eventRows": 69,
+    "maximumEventSequence": 126,
+    "distinction": "Row count and event-sequence watermark are different properties; both agree with the final verification summary.",
+    "access": "SQLite mode=ro"
+  },
+  "citationCoverage": {
+    "v6Recovery": {
+      "capturedFields": 107,
+      "modelSelectedFields": 62
+    },
+    "v7BrowserRecovery": {
+      "capturedFields": 107,
+      "modelSelectedFields": 68
+    },
+    "sixReadyV6Cases": {
+      "capturedFields": 372,
+      "modelSelectedFields": 225
+    },
+    "metricCitationCoverage": "Separate metric-ID coverage and historical supported-claim scores are unchanged."
+  },
+  "versionProvenance": {
+    "finalSource": {
+      "prompt": "gemma-evidence-v8",
+      "context": "morph-evidence-v5",
+      "contract": "gemma-brief-v1"
+    },
+    "savedG1Prompt": "gemma-evidence-v7",
+    "frozenEvaluationPrompt": "gemma-evidence-v6",
+    "savedG2Prompt": "gemma-evidence-v8",
+    "actualInputsAndOutputs": "Each selected report retains exact sanitized provider request/response, model identity, token usage, timings, source digest and captured context."
+  },
+  "browserG2Evidence": {
+    "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-gemma-20261114/runs/hosted-03/browser-g2-v8-2026-11-14T21-45-58-145Z/browser-results.json",
+    "sha256": "0263ca48ceed5ea2d262665334f4007f6e96bafaf474aefd00792fb8a864f429",
+    "status": "passed"
+  },
+  "taskBoundary": "Current documents limit completion to the approved analyst contribution; original M20/M21/M23/M24 dependencies, matched-comparison acceptance and physical requirements remain separate. M16 Done is preserved.",
+  "serviceBoundary": "Parent-observed final HTTP200 results for ports3001/8000/3000/50139/52197 and separate 7860 three-second plus ten-second timeouts are explicitly retained. This audit made no HTTP request and establishes no cause.",
+  "operations": "No source edits, tests, cloud calls, credentials read, service restarts, hardware I/O or canonical writes were performed.",
+  "reporting": "Complete attributed audit handed to designated /root/gemma_shared for verified Mac publication; receipt tracked separately."
+}

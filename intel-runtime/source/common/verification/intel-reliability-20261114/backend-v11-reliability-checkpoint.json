@@ -1,0 +1,48 @@
+{
+  "observedAt": "2026-11-14T22:34:22.616367+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "d0642a94-aa03-4efd-b1ea-98a2ca3f82a2",
+  "promptVersion": "gemma-evidence-v11",
+  "contextVersion": "morph-evidence-v7",
+  "contractVersion": "gemma-brief-v1",
+  "change": "Supply an application-owned bounded response outline, predetermined fact/metric citations and empty hypotheses. Gemma fills only text. Recovery paragraphs separate ratios, counts, late confirmation and audit; unknown comparison has one configuration-gap paragraph. Temperature explicitly zero. Actual returned response is never citation-repaired or rewritten.",
+  "validator": "Unchanged from frozen v10; no rejection rule weakened.",
+  "focusedTests": {
+    "tests": 106,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "fullIntegration": "Root owns the final complete station test run including the separate newly added export audit tests; backend did not duplicate that run.",
+  "limits": [
+    "Outline tests establish citation/schema consistency and boundedness only.",
+    "New hosted requests must verify API temperature support and actual useful generated text.",
+    "Earlier v9/v10 replies, reviews and rejections remain immutable and separate."
+  ],
+  "files": [
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/analysis_models.py",
+      "sha256": "32bfb26335f615bd8fc36bbdfe0f838f3bb13a323c8d5b352fb74a468defc9a2"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/analysis_context.py",
+      "sha256": "252c97af88de0574816a1d46384129005b3027edf69fda9f3930defb401030de"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/analysis_provider.py",
+      "sha256": "208e3017fefca3d75b73ca10133ddc69c89d73f36af4b2679dbf2479f9f9047b"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/tests/test_analysis.py",
+      "sha256": "e35d81c31bff372cc65fa10ab1c900e5174698cd67e025be73d7fa14af39e699"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/ANALYST.md",
+      "sha256": "70bb8396915bbfd033d7ec91c5e8e23816dc7b551cbaa9da9669ea3c0408e14e"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/backend-v11-focused.xml",
+      "sha256": "01d3f434300f0daa0647d929d4177462e397fbd6633253f53f97c6b112c63e52"
+    }
+  ]
+}

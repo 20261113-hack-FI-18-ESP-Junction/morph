@@ -1,0 +1,63 @@
+{
+  "recordedAt": "2026-11-14T22:20:40.321859+00:00",
+  "agent": "/root/gemma_backend",
+  "sessionId": "d0642a94-aa03-4efd-b1ea-98a2ca3f82a2",
+  "scope": "Completed local backend reliability implementation and regression validation. Actual hosted and UI integration checks are owned by the parent and remain separate.",
+  "versions": {
+    "prompt": "gemma-evidence-v9",
+    "context": "morph-evidence-v6",
+    "contract": "gemma-brief-v1"
+  },
+  "storageCheckpoint": {
+    "path": "backend-storage-reliability-checkpoint.json",
+    "sha256": "2133438f7fe85f2efaa67d7ae4f6bcd7b8ebf4ffd807bc2672f836e1d55f6622"
+  },
+  "generationChanges": [
+    "Cycle headline must exactly identify saved source mode without a causal or counter claim: Simulation cycle evidence or Live cycle evidence.",
+    "Every recovered-cycle reply must cite the five canonical metric IDs across its interpretations, retaining the per-interpretation maximum of four.",
+    "Local validation rejects a differing headline or incomplete required citations; the actual hosted reply is retained without repair.",
+    "The successful v8 comparison policy is unchanged."
+  ],
+  "actualFailureRegression": {
+    "sourceReportId": "561fb240-3ca9-434b-bcef-7bd376b1ed49",
+    "fixturePath": "station/tests/fixtures/gemma-v7-recovery-coverage-regression.json",
+    "originalReplyNowRejectedAs": "unsupported_cycle_headline",
+    "controlledHeadlineOnlyMutationNowRejectedAs": "missing_required_metrics",
+    "scope": "The fixture preserves original v7 evidence; the second regression changes only its headline in memory to isolate the original omitted metric. Neither test is a new cloud call."
+  },
+  "tests": {
+    "focused": {
+      "passed": 86,
+      "failed": 0,
+      "path": "backend-v9-focused.xml"
+    },
+    "full": {
+      "passed": 158,
+      "failed": 0,
+      "warnings": 1,
+      "path": "backend-v9-full.xml"
+    },
+    "warning": "Existing Starlette TestClient httpx deprecation."
+  },
+  "evidenceHashes": {
+    "backend-v9-focused.xml": "f49dd07de7c2080b265d9eb5f27855eccf1049f29455416dc12f36544a2a72b6",
+    "backend-v9-full.xml": "86f4383332ea6415b9edd8fdcb9c77e81a96bac99572c7579b5c224d1f28c1c7"
+  },
+  "sourceHashes": {
+    "station/morph_station/analysis.py": "5621f3f6d2d89cd6cdab0fc61335ed7da4df51182291cdac87a042edb684039f",
+    "station/morph_station/analysis_models.py": "4f54c72bbae615e97d323d84db1498f955e26ed0c7eca3f78fc7d603fc5bbac8",
+    "station/morph_station/analysis_context.py": "b6be1ffa4392c2ad2eb5fa8414f5f70b7d14c267e7eac66e632a2ca94ebd6d1a",
+    "station/morph_station/analysis_provider.py": "aa357051e8d9b8f0b493b88bff4718fe5a5894a4802db8461a628127f22d6570",
+    "station/tests/test_analysis.py": "ad737507491d90867bc0b3db5ae16f8cffd380c220d5752cc3d0baf73c13979e",
+    "station/tests/fixtures/gemma-v7-recovery-coverage-regression.json": "2affb6a8b115dd4e54c6af2fcbcee3cab6a8ce2cde9e627f746f555359266476",
+    "station/ANALYST.md": "d237fff2686672d9528c4e52afca1751116b8333c3c31868986cbc13e9dcaf4d"
+  },
+  "limitations": [
+    "Complete citation coverage establishes membership, not semantic entailment of every sentence.",
+    "No general model reliability, operator usability benefit or physical acceptance follows from local tests.",
+    "Historical v6/v7/v8 reports and evaluation scores remain immutable and versioned.",
+    "The current user-facing preview has not been restarted by this agent; source changes require the parent-owned review process to load them."
+  ],
+  "operations": "Owned analyst modules, tests, a preserved actual-response fixture and English analyst documentation only. No api.py/store.py integration edits, secrets, cloud calls, robot I/O or service restarts.",
+  "reporting": "All results sent to designated /root/gemma_shared for one verified Mac checkpoint; delivery receipt tracked separately."
+}

@@ -1,0 +1,65 @@
+{
+  "observedAt": "2026-11-14T22:29:14.641864+00:00",
+  "sessionId": "d0642a94-aa03-4efd-b1ea-98a2ca3f82a2",
+  "agent": "/root/gemma_backend",
+  "promptVersion": "gemma-evidence-v10",
+  "contextVersion": "morph-evidence-v7",
+  "contractVersion": "gemma-brief-v1",
+  "changes": [
+    "Application-selected current outcome witnesses are captured and supplied. Each metric interpretation must carry its dependent current-record facts in that same paragraph.",
+    "Recovery, first-attempt and retry units remain explicit in the prompt; no semantic entailment guarantee is claimed.",
+    "Late-confirmation and actual correction witnesses required in saved-cycle explanations.",
+    "Causal-evidence-unavailable forbids hypotheses; missing evidence remains a limitation.",
+    "Neutral headline allows surrounding whitespace, case variation and one period, preserving actual response text.",
+    "Actual v9 API replies and browser punctuation case preserved as new regression fixtures."
+  ],
+  "validation": "100 focused and 172 full backend tests passed. Existing Starlette/httpx deprecation warning remains. No provider calls were made by the backend agent.",
+  "limitations": [
+    "Passing local tests is not fresh hosted semantic acceptance. Root owns the separate v10 actual calls.",
+    "Current witnesses are bounded explanatory anchors and do not replace canonical full-population arithmetic.",
+    "General prose entailment and numeric words remain semantic review concerns."
+  ],
+  "files": [
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/analysis_models.py",
+      "sha256": "2f15c18b8771e46d43eb33321eeec034970bd34323c3ee61d0f4a89febaeb9fb"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/analysis_context.py",
+      "sha256": "252c97af88de0574816a1d46384129005b3027edf69fda9f3930defb401030de"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/analysis_provider.py",
+      "sha256": "e6df92195e8cf8978a638b5b5e551b39f434bd4e42537f27c4578b8664b21fdb"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/tests/test_analysis.py",
+      "sha256": "092934111df54110b4162672fd759f97a69bc0e3c18405e8fc79631d9f652715"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/tests/fixtures/gemma-v9-citation-regressions.json",
+      "sha256": "99c28d8643a2182a25b4126da9b23f3b0158136c31e979e49be6be657c29bab3"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/ANALYST.md",
+      "sha256": "1765db73e1d2740c17597a120f95ee8b62511076be38be7fb4a989d4ebb120d2"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/backend-v10-focused.xml",
+      "sha256": "4ad094a322f3b27a964ebd5370c9109ce78a5d951cf801e1d76dac2ee1ad5519",
+      "tests": 100,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/backend-v10-full.xml",
+      "sha256": "4fa8c13de4c9075606745dff33203fba13a6590e1bc5512f1878c74604ce8071",
+      "tests": 172,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    }
+  ],
+  "reporting": "Designated shared reporter receives this attributed update; delivery is not inferred from this local file."
+}
