@@ -42,3 +42,7 @@ Verified at **2026-11-15T03:52:18.535344+01:00** (Europe/Ljubljana) in a fresh l
 The relocated Mac suite passed **124 tests**, the separate Intel reference suite passed **56 tests**, and the offline browser harness passed **seven groups**. Launcher syntax and `--help` passed without creating runtime data. Provider credentials were removed for the Python processes. This was a software check with temporary data, not a live provider, Intel service, tunnel or physical test.
 
 Results: [import report](verification/github-import.json), [Mac JUnit](verification/mac-import-tests.xml), [Intel JUnit](verification/intel-import-tests.xml) and [voice harness](verification/voice-import-tests.json). Original evidence remains unchanged. The import report distinguishes these checks from the earlier guarded Intel audit.
+
+## Remaining partition publication
+
+The original Jose and focused Intel checks above retain their scope and dates. The later [three-host handoff](REMAINING_SOURCE_HANDOFF.md) adds separately verified dashboard, Intel runtime and communication packages. Their own reports and manifests identify the exact new source and tests; no new physical or live deployment result is implied.
