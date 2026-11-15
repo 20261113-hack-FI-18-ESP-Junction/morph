@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "description": "Current Mac source plus reviewed bounded record/analysis relay extension; older Intel context server deliberately not adopted.",
+  "files": [
+    {
+      "path": "context/coordination/three-host-20261115/collect_source_response.py",
+      "bytes": 10874,
+      "sha256": "646a3562fa1e32c298bd2ddd44c04b16fec19dd2331d894b501ee767ba35373e",
+      "origin": "mac-current-source",
+      "sourcePath": "context/coordination/three-host-20261115/collect_source_response.py",
+      "sourceSha256": "646a3562fa1e32c298bd2ddd44c04b16fec19dd2331d894b501ee767ba35373e",
+      "contentChanged": false
+    },
+    {
+      "path": "context/coordination/three-host-20261115/source_response.py",
+      "bytes": 17911,
+      "sha256": "f16f13ba75f1fb87b7decc12ee2ec8cc52d15cdc5d25bc8b7f8b3ef862dcac80",
+      "origin": "mac-current-source",
+      "sourcePath": "context/coordination/three-host-20261115/source_response.py",
+      "sourceSha256": "f16f13ba75f1fb87b7decc12ee2ec8cc52d15cdc5d25bc8b7f8b3ef862dcac80",
+      "contentChanged": false
+    },
+    {
+      "path": "context/coordination/three-host-20261115/tests/test_collect_source_response.py",
+      "bytes": 7600,
+      "sha256": "715f43bff7a732adb1268db2167dc5ce12adf2f57b82a4b31cce69e31af8ad8e",
+      "origin": "mac-current-source",
+      "sourcePath": "context/coordination/three-host-20261115/tests/test_collect_source_response.py",
+      "sourceSha256": "715f43bff7a732adb1268db2167dc5ce12adf2f57b82a4b31cce69e31af8ad8e",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/bootstrap.py",
+      "bytes": 1500,
+      "sha256": "5320ba57e4594c99945ed7a943ef357a61260ec6c7c0e3966c11e487614894eb",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/bootstrap.py",
+      "sourceSha256": "5320ba57e4594c99945ed7a943ef357a61260ec6c7c0e3966c11e487614894eb",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/bundle.py",
+      "bytes": 2011,
+      "sha256": "c6d959d0556cef18039a32a3cb84bbd9a48afc26f8b2f84c5abf2ab072481556",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/bundle.py",
+      "sourceSha256": "c6d959d0556cef18039a32a3cb84bbd9a48afc26f8b2f84c5abf2ab072481556",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/connect_intel.py",
+      "bytes": 5363,
+      "sha256": "e5340f559c72df300845b2003aa9d1c8ddb57d7d980d5683dadf7de478592333",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/connect_intel.py",
+      "sourceSha256": "e5340f559c72df300845b2003aa9d1c8ddb57d7d980d5683dadf7de478592333",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/prepare_connection.py",
+      "bytes": 4960,
+      "sha256": "1a107400a9d1b8824ae8186d3b289e7593646e670f57ec944957d6e3843e81ff",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/prepare_connection.py",
+      "sourceSha256": "1a107400a9d1b8824ae8186d3b289e7593646e670f57ec944957d6e3843e81ff",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/requirements.lock",
+      "bytes": 519,
+      "sha256": "5224f8306f97797643a48af8c40d8d038e5b1182924f89f4b3f845bea1aaa596",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/requirements.lock",
+      "sourceSha256": "5224f8306f97797643a48af8c40d8d038e5b1182924f89f4b3f845bea1aaa596",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/requirements.txt",
+      "bytes": 11,
+      "sha256": "b2a3a41cb92969a57ba10746218731ed453fe6528322ddda667df989ac494035",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/requirements.txt",
+      "sourceSha256": "b2a3a41cb92969a57ba10746218731ed453fe6528322ddda667df989ac494035",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/run.sh",
+      "bytes": 383,
+      "sha256": "5b70dc530c00f9c0888b7276570ea733717563c1a1917a649b10974661030cb2",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/run.sh",
+      "sourceSha256": "5b70dc530c00f9c0888b7276570ea733717563c1a1917a649b10974661030cb2",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/server.py",
+      "bytes": 11242,
+      "sha256": "53860f1cdebb876cfa985e0da5f29516a35e5ce6762b03685a240e429330ff46",
+      "origin": "mac-source-with-record-relay-extension",
+      "sourcePath": "context_mcp/server.py",
+      "sourceSha256": "6a83d7155c6128bf7a686164280a766da7dcd9f59f2c8bf0a65404c1f29f70fa",
+      "contentChanged": true
+    },
+    {
+      "path": "context_mcp/station_relay.py",
+      "bytes": 17593,
+      "sha256": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
+      "origin": "mac-source-with-record-relay-extension",
+      "sourcePath": "context_mcp/station_relay.py",
+      "sourceSha256": "ae042ba8abfa2eea0cb870c6005e6ed8bb49f5d1f9b4e7614b191e11fd912dd5",
+      "contentChanged": true
+    },
+    {
+      "path": "context_mcp/station_worker.py",
+      "bytes": 24535,
+      "sha256": "f1f93b8f828d06a9e532b9fa3547d29d0e7128b03925ea313ee16a3f749dc999",
+      "origin": "mac-source-with-record-relay-extension",
+      "sourcePath": "context_mcp/station_worker.py",
+      "sourceSha256": "b294fc9a5435bc718ce4592a5aca4110e6feb6b867339ddc17e860adfcff9604",
+      "contentChanged": true
+    },
+    {
+      "path": "context_mcp/store.py",
+      "bytes": 10706,
+      "sha256": "6fb63ba6e103f3103f4b0aeefcda1cd9236c7926b6caad3998781052304eaac3",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/store.py",
+      "sourceSha256": "6fb63ba6e103f3103f4b0aeefcda1cd9236c7926b6caad3998781052304eaac3",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/tests/test_context.py",
+      "bytes": 15564,
+      "sha256": "655b39874b91a8b9ffb66c9bcf58cbd57c757020e838d75e98f164894280b84e",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/tests/test_context.py",
+      "sourceSha256": "655b39874b91a8b9ffb66c9bcf58cbd57c757020e838d75e98f164894280b84e",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/tests/test_station_relay.py",
+      "bytes": 14651,
+      "sha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/tests/test_station_relay.py",
+      "sourceSha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/tests/test_station_worker.py",
+      "bytes": 18798,
+      "sha256": "8d57c7ff84cde00ab7c67a728305af8927be9195e076495514bc27de5872294b",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/tests/test_station_worker.py",
+      "sourceSha256": "8d57c7ff84cde00ab7c67a728305af8927be9195e076495514bc27de5872294b",
+      "contentChanged": false
+    },
+    {
+      "path": "context_mcp/tests/test_station_writes.py",
+      "bytes": 11535,
+      "sha256": "4a5266e40bea0bac70f097d20b4b26d15f4d7cd5ab33142f18b549998caf93b8",
+      "origin": "new-publication-source",
+      "sourcePath": null,
+      "sourceSha256": null,
+      "contentChanged": true
+    },
+    {
+      "path": "context_mcp/verify_live.py",
+      "bytes": 1718,
+      "sha256": "968b78d59619c9fdd8736fa141e511655a9dad0a4bd2953d15d8f35bcbbdbe0a",
+      "origin": "mac-current-source",
+      "sourcePath": "context_mcp/verify_live.py",
+      "sourceSha256": "968b78d59619c9fdd8736fa141e511655a9dad0a4bd2953d15d8f35bcbbdbe0a",
+      "contentChanged": false
+    }
+  ]
+}

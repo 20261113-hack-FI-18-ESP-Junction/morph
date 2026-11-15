@@ -1,0 +1,15 @@
+{
+  "checkedAt": "2026-11-15T03:51:28.498385+00:00",
+  "environment": "Python 3.12, locked MCP environment",
+  "contextRelayWorkerTests": 63,
+  "sourceReceiverTests": 7,
+  "testsPassed": 70,
+  "failures": 0,
+  "errors": 0,
+  "pythonSyntaxFiles": 16,
+  "sourceTransport": "unchanged sender and collector",
+  "deployment": "staged only; live Mac MCP not restarted",
+  "providerCalls": 0,
+  "hardwareOperations": 0,
+  "testsUse": "Temporary stores and fake Station/provider transports; authenticated in-process MCP"
+}

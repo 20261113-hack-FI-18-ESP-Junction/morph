@@ -1,0 +1,205 @@
+test_binary_and_oversized_inputs_are_explicit (test_context.ContextBoundaryTests.test_binary_and_oversized_inputs_are_explicit) ... ok
+test_catalog_excludes_private_runtime_and_unapproved_paths (test_context.ContextBoundaryTests.test_catalog_excludes_private_runtime_and_unapproved_paths) ... ok
+test_catalog_pagination_has_no_duplicates (test_context.ContextBoundaryTests.test_catalog_pagination_has_no_duplicates) ... ok
+test_common_key_formats_are_redacted_from_reads_search_and_notes (test_context.ContextBoundaryTests.test_common_key_formats_are_redacted_from_reads_search_and_notes) ... ok
+test_concurrent_retries_produce_one_complete_note (test_context.ContextBoundaryTests.test_concurrent_retries_produce_one_complete_note) ... ok
+test_notes_are_idempotent_and_conflicts_preserve_the_original (test_context.ContextBoundaryTests.test_notes_are_idempotent_and_conflicts_preserve_the_original) ... ok
+test_notes_cannot_follow_directory_or_destination_symlinks (test_context.ContextBoundaryTests.test_notes_cannot_follow_directory_or_destination_symlinks) ... ok
+test_reads_are_fresh_and_character_pages_reconstruct_unicode (test_context.ContextBoundaryTests.test_reads_are_fresh_and_character_pages_reconstruct_unicode) ... ok
+test_search_is_literal_bounded_case_insensitive_and_fresh (test_context.ContextBoundaryTests.test_search_is_literal_bounded_case_insensitive_and_fresh) ... ok
+test_symlinks_are_excluded_and_cannot_be_read (test_context.ContextBoundaryTests.test_symlinks_are_excluded_and_cannot_be_read) ... ok
+test_traversal_absolute_and_noncanonical_paths_fail (test_context.ContextBoundaryTests.test_traversal_absolute_and_noncanonical_paths_fail) ... ok
+test_unquoted_opaque_keys_are_redacted_and_quoted_source_stays_valid (test_context.ContextBoundaryTests.test_unquoted_opaque_keys_are_redacted_and_quoted_source_stays_valid) ... ok
+test_http_auth_host_origin_and_real_rpc (test_context.MCPIntegrationTests.test_http_auth_host_origin_and_real_rpc) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+Invalid Host header: attacker.invalid:8765
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 421 Misdirected Request"
+Terminating session: None
+Invalid Origin header: https://attacker.invalid
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 403 Forbidden"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 413 Content Too Large"
+StreamableHTTP session manager shutting down
+ok
+test_real_stdio_client_can_discover_read_search_and_save (test_context.MCPIntegrationTests.test_real_stdio_client_can_discover_read_search_and_save) ... Tool 'read_context' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/server.py", line 86, in read_context
+    return store.read(path, offset, limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/store.py", line 135, in read
+    text, redacted = self.text(relative)
+                     ^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/store.py", line 107, in text
+    path = self.path(relative)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/store.py", line 65, in path
+    raise ValueError("Use an exact project-relative path from list_context")
+ValueError: Use an exact project-relative path from list_context
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool read_context
+ok
+test_wifi_cli_refuses_plaintext_before_reading_credentials (test_context.MCPIntegrationTests.test_wifi_cli_refuses_plaintext_before_reading_credentials) ... ok
+test_bad_parts_timestamps_status_and_headers_are_denied (test_station_relay.RelayBoundaryTests.test_bad_parts_timestamps_status_and_headers_are_denied) ... ok
+test_body_bound_and_read_pagination_validation (test_station_relay.RelayBoundaryTests.test_body_bound_and_read_pagination_validation) ... ok
+test_chunk_order_integrity_pagination_and_restart (test_station_relay.RelayBoundaryTests.test_chunk_order_integrity_pagination_and_restart) ... ok
+test_concurrent_duplicate_enqueue_and_claim_create_one_work_item (test_station_relay.RelayBoundaryTests.test_concurrent_duplicate_enqueue_and_claim_create_one_work_item) ... ok
+test_concurrent_duplicate_submissions_keep_one_ready_response (test_station_relay.RelayBoundaryTests.test_concurrent_duplicate_submissions_keep_one_ready_response) ... ok
+test_control_urls_traversal_and_unbounded_queries_are_rejected (test_station_relay.RelayBoundaryTests.test_control_urls_traversal_and_unbounded_queries_are_rejected) ... ok
+test_enqueue_is_idempotent_and_conflicts_preserve_original (test_station_relay.RelayBoundaryTests.test_enqueue_is_idempotent_and_conflicts_preserve_original) ... ok
+test_events_are_always_bounded_and_get_routes_remain_available (test_station_relay.RelayBoundaryTests.test_events_are_always_bounded_and_get_routes_remain_available) ... ok
+test_expired_reads_never_return_old_response_or_reset_on_duplicate (test_station_relay.RelayBoundaryTests.test_expired_reads_never_return_old_response_or_reset_on_duplicate) ... ok
+test_hash_and_conflicting_part_fail_without_poisoning_original (test_station_relay.RelayBoundaryTests.test_hash_and_conflicting_part_fail_without_poisoning_original) ... ok
+test_pending_queue_is_bounded_and_expiration_releases_capacity (test_station_relay.RelayBoundaryTests.test_pending_queue_is_bounded_and_expiration_releases_capacity) ... ok
+test_station_scoping_and_claim_limit (test_station_relay.RelayBoundaryTests.test_station_scoping_and_claim_limit) ... ok
+test_storage_symlink_is_rejected (test_station_relay.RelayBoundaryTests.test_storage_symlink_is_rejected) ... ok
+test_wrong_worker_claim_and_station_cannot_submit (test_station_relay.RelayBoundaryTests.test_wrong_worker_claim_and_station_cannot_submit) ... ok
+test_opt_in_registration_and_authenticated_real_tool_roundtrip (test_station_relay.RelayMCPTests.test_opt_in_registration_and_authenticated_real_tool_roundtrip) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+Tool 'enqueue_station_read' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/server.py", line 33, in enqueue_station_read
+    return relay.enqueue(station_id, request_id, path, query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/station_relay.py", line 206, in enqueue
+    return self.enqueue_request(station_id, request_id, 'GET', path, query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/station_relay.py", line 211, in enqueue_request
+    path, query, body, intent = request_target(method, path, query, body, intent)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/station_relay.py", line 106, in request_target
+    path, query = read_target(path, query)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/publication/communication/context_mcp/station_relay.py", line 69, in read_target
+    raise ValueError('This path is outside the Station read allowlist')
+ValueError: This path is outside the Station read allowlist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool enqueue_station_read
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+test_existing_initialize_protocol_then_only_queue_tools (test_station_worker.MCPTests.test_existing_initialize_protocol_then_only_queue_tools) ... ok
+test_private_file_permissions_and_no_symlink (test_station_worker.MCPTests.test_private_file_permissions_and_no_symlink) ... ok
+test_rpc_and_provider_error_text_never_escapes (test_station_worker.MCPTests.test_rpc_and_provider_error_text_never_escapes) ... ok
+test_4mb_binary_chunks_zero_based_hash_and_metadata_stable (test_station_worker.QueueWorkerTests.test_4mb_binary_chunks_zero_based_hash_and_metadata_stable) ... ok
+test_contract_roundtrip_with_actual_relay_and_fake_station (test_station_worker.QueueWorkerTests.test_contract_roundtrip_with_actual_relay_and_fake_station) ... ok
+test_empty_body_still_has_one_chunk (test_station_worker.QueueWorkerTests.test_empty_body_still_has_one_chunk) ... ok
+test_expired_claim_never_calls_station_and_tampering_stays_read_only (test_station_worker.QueueWorkerTests.test_expired_claim_never_calls_station_and_tampering_stays_read_only) ... ok
+test_expiry_during_read_never_submits_stale_result (test_station_worker.QueueWorkerTests.test_expiry_during_read_never_submits_stale_result) ... ok
+test_invalid_configuration_exits_without_raw_token_or_network (test_station_worker.QueueWorkerTests.test_invalid_configuration_exits_without_raw_token_or_network) ... ok
+test_lost_submit_reply_retries_identical_chunk_not_station_read (test_station_worker.QueueWorkerTests.test_lost_submit_reply_retries_identical_chunk_not_station_read) ... ok
+test_missing_final_readback_not_claimed_complete (test_station_worker.QueueWorkerTests.test_missing_final_readback_not_claimed_complete) ... ok
+test_worker_identity_stable_across_rounds (test_station_worker.QueueWorkerTests.test_worker_identity_stable_across_rounds) ... ok
+test_body_deadline_does_not_accept_endless_small_chunks (test_station_worker.StationHTTPTests.test_body_deadline_does_not_accept_endless_small_chunks) ... ok
+test_endpoint_configuration_cannot_smuggle_url (test_station_worker.StationHTTPTests.test_endpoint_configuration_cannot_smuggle_url) ... ok
+test_fixed_origin_get_token_header_and_query_encoding (test_station_worker.StationHTTPTests.test_fixed_origin_get_token_header_and_query_encoding) ... ok
+test_forbidden_request_never_contacts_api (test_station_worker.StationHTTPTests.test_forbidden_request_never_contacts_api) ... ok
+test_http_error_status_and_finite_sse_bytes_preserved (test_station_worker.StationHTTPTests.test_http_error_status_and_finite_sse_bytes_preserved) ... ok
+test_redirect_denied_and_credentials_not_forwarded (test_station_worker.StationHTTPTests.test_redirect_denied_and_credentials_not_forwarded) ... ok
+test_size_timeout_and_unsupported_type_errors_sanitized (test_station_worker.StationHTTPTests.test_size_timeout_and_unsupported_type_errors_sanitized) ... ok
+test_actions_encoded_paths_traversal_and_hosts_rejected (test_station_worker.WorkerRouteTests.test_actions_encoded_paths_traversal_and_hosts_rejected) ... ok
+test_allowed_reads_and_scoped_query_preserved (test_station_worker.WorkerRouteTests.test_allowed_reads_and_scoped_query_preserved) ... ok
+test_events_always_finite_and_bounded (test_station_worker.WorkerRouteTests.test_events_always_finite_and_bounded) ... ok
+test_unknown_or_unbounded_query_rejected (test_station_worker.WorkerRouteTests.test_unknown_or_unbounded_query_rejected) ... ok
+test_analysis_requires_explicit_intent_and_stable_application_id (test_station_writes.WriteTransportTests.test_analysis_requires_explicit_intent_and_stable_application_id) ... ok
+test_control_routes_bad_intent_queries_and_non_json_never_enter_queue (test_station_writes.WriteTransportTests.test_control_routes_bad_intent_queries_and_non_json_never_enter_queue) ... ok
+test_duplicate_envelopes_never_replay_and_changed_body_conflicts (test_station_writes.WriteTransportTests.test_duplicate_envelopes_never_replay_and_changed_body_conflicts) ... ok
+test_forged_write_claim_is_denied_by_default_worker (test_station_writes.WriteTransportTests.test_forged_write_claim_is_denied_by_default_worker) ... ok
+test_http_preserves_body_status_errors_and_never_retries_post (test_station_writes.WriteTransportTests.test_http_preserves_body_status_errors_and_never_retries_post) ... ok
+test_legacy_workers_cannot_claim_writes_and_capable_worker_claims_once (test_station_writes.WriteTransportTests.test_legacy_workers_cannot_claim_writes_and_capable_worker_claims_once) ... ok
+test_lost_mcp_reply_resends_response_only_not_post (test_station_writes.WriteTransportTests.test_lost_mcp_reply_resends_response_only_not_post) ... ok
+test_migration_preserves_existing_get_and_new_writes (test_station_writes.WriteTransportTests.test_migration_preserves_existing_get_and_new_writes) ... ok
+test_multi_session_selection_survives_queue_and_http_encoding (test_station_writes.WriteTransportTests.test_multi_session_selection_survives_queue_and_http_encoding) ... ok
+test_new_tools_work_through_authenticated_mcp (test_station_writes.WriteTransportTests.test_new_tools_work_through_authenticated_mcp) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 1.214s
+
+OK

@@ -1,0 +1,12 @@
+test_existing_output_and_symlink_destination_never_overwritten (test_collect_source_response.ReceiverTests.test_existing_output_and_symlink_destination_never_overwritten) ... ok
+test_helper_roundtrip_saved_metadata_and_no_source_execution (test_collect_source_response.ReceiverTests.test_helper_roundtrip_saved_metadata_and_no_source_execution) ... ok
+test_manifest_part_limit_and_note_symlink_rejected (test_collect_source_response.ReceiverTests.test_manifest_part_limit_and_note_symlink_rejected) ... ok
+test_missing_chunk_creates_no_output (test_collect_source_response.ReceiverTests.test_missing_chunk_creates_no_output) ... ok
+test_mutated_chunk_creates_no_output (test_collect_source_response.ReceiverTests.test_mutated_chunk_creates_no_output) ... ok
+test_resigned_traversal_secret_binary_and_duplicates_rejected (test_collect_source_response.ReceiverTests.test_resigned_traversal_secret_binary_and_duplicates_rejected) ... ok
+test_wrong_request_and_non_deterministic_manifest_rejected (test_collect_source_response.ReceiverTests.test_wrong_request_and_non_deterministic_manifest_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.084s
+
+OK

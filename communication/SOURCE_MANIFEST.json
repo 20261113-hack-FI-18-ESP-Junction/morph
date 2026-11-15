@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-11-15T03:51:28.501728+00:00",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 188,
+      "sha256": "0be9f4a6309f3bbfa12a0739c01b9d844b6f3c3365f08de43e31ec62e2d1c99e",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 955,
+      "sha256": "6b4ac2e9ee386f07102a4abd03c8d0035dd81e11e5f25021f3c71b44f1d4b853",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "NOTION_SYNC.md",
+      "bytes": 356,
+      "sha256": "fae280bc9b7a09ab881f0f4fd251ebb79c66d100280f2ef323582d21870357a8",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2303,
+      "sha256": "7fd651cc9919c09abe3c430f08a5f4da28b7ca45de80f2da40021ca47f896d50",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "SOURCE_ORIGINS.json",
+      "bytes": 7519,
+      "sha256": "71e43cb07eaed307d02317bd9b415fae7a3652ef14be9ee93e2046b122a2494a",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/CHAT_CONTEXT.md",
+      "bytes": 745,
+      "sha256": "4171634954632401e4f70c5117ad5a62c221f08ec8ca7cd170282f31c9f71cae",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/CONTEXT_MANIFEST.json",
+      "bytes": 126,
+      "sha256": "ae74d9f29d307dcd9786f693d195862cae02d767dbb78416ebb52374b88b6f02",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/START_HERE.md",
+      "bytes": 649,
+      "sha256": "f3efe8ce9a9ace64fc68e605336a6e8147612b7a0837416497463cf3d95d5da0",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/THREE_HOST_ARCHITECTURE.md",
+      "bytes": 3201,
+      "sha256": "0ea8e856105b103f16de83a55de663ef96f1c6c5daa67de79146774c81f0c2ca",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/coordination/three-host-20261115/README.md",
+      "bytes": 2971,
+      "sha256": "ffa12aa1efd1ae5ee0856a2afd1ad2f6664510356c185e2dcf9d4b742a3f48c2",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context/coordination/three-host-20261115/collect_source_response.py",
+      "bytes": 10874,
+      "sha256": "646a3562fa1e32c298bd2ddd44c04b16fec19dd2331d894b501ee767ba35373e",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context/coordination/three-host-20261115/source_response.py",
+      "bytes": 17911,
+      "sha256": "f16f13ba75f1fb87b7decc12ee2ec8cc52d15cdc5d25bc8b7f8b3ef862dcac80",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context/coordination/three-host-20261115/tests/test_collect_source_response.py",
+      "bytes": 7600,
+      "sha256": "715f43bff7a732adb1268db2167dc5ce12adf2f57b82a4b31cce69e31af8ad8e",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/STATION_RELAY.md",
+      "bytes": 6284,
+      "sha256": "9aa587a3787b64be6fd219aa4de7801b5d4ab53120dd6141d7f2c2d3f86b0507",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context_mcp/VERIFICATION.md",
+      "bytes": 1068,
+      "sha256": "eb25f91b042349bc02cff90e84c1da2a35b109be0ce2a56e9747299ae8bc97ac",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "context_mcp/bootstrap.py",
+      "bytes": 1500,
+      "sha256": "5320ba57e4594c99945ed7a943ef357a61260ec6c7c0e3966c11e487614894eb",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/bundle.py",
+      "bytes": 2011,
+      "sha256": "c6d959d0556cef18039a32a3cb84bbd9a48afc26f8b2f84c5abf2ab072481556",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/connect_intel.py",
+      "bytes": 5363,
+      "sha256": "e5340f559c72df300845b2003aa9d1c8ddb57d7d980d5683dadf7de478592333",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/prepare_connection.py",
+      "bytes": 4960,
+      "sha256": "1a107400a9d1b8824ae8186d3b289e7593646e670f57ec944957d6e3843e81ff",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/requirements.lock",
+      "bytes": 519,
+      "sha256": "5224f8306f97797643a48af8c40d8d038e5b1182924f89f4b3f845bea1aaa596",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/requirements.txt",
+      "bytes": 11,
+      "sha256": "b2a3a41cb92969a57ba10746218731ed453fe6528322ddda667df989ac494035",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/run.sh",
+      "bytes": 383,
+      "sha256": "5b70dc530c00f9c0888b7276570ea733717563c1a1917a649b10974661030cb2",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/server.py",
+      "bytes": 11242,
+      "sha256": "53860f1cdebb876cfa985e0da5f29516a35e5ce6762b03685a240e429330ff46",
+      "origin": "mac-source-with-record-relay-extension"
+    },
+    {
+      "path": "context_mcp/station_relay.py",
+      "bytes": 17593,
+      "sha256": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
+      "origin": "mac-source-with-record-relay-extension"
+    },
+    {
+      "path": "context_mcp/station_worker.py",
+      "bytes": 24535,
+      "sha256": "f1f93b8f828d06a9e532b9fa3547d29d0e7128b03925ea313ee16a3f749dc999",
+      "origin": "mac-source-with-record-relay-extension"
+    },
+    {
+      "path": "context_mcp/store.py",
+      "bytes": 10706,
+      "sha256": "6fb63ba6e103f3103f4b0aeefcda1cd9236c7926b6caad3998781052304eaac3",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/tests/test_context.py",
+      "bytes": 15564,
+      "sha256": "655b39874b91a8b9ffb66c9bcf58cbd57c757020e838d75e98f164894280b84e",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/tests/test_station_relay.py",
+      "bytes": 14651,
+      "sha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/tests/test_station_worker.py",
+      "bytes": 18798,
+      "sha256": "8d57c7ff84cde00ab7c67a728305af8927be9195e076495514bc27de5872294b",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "context_mcp/tests/test_station_writes.py",
+      "bytes": 11535,
+      "sha256": "4a5266e40bea0bac70f097d20b4b26d15f4d7cd5ab33142f18b549998caf93b8",
+      "origin": "new-publication-source"
+    },
+    {
+      "path": "context_mcp/verify_live.py",
+      "bytes": 1718,
+      "sha256": "968b78d59619c9fdd8736fa141e511655a9dad0a4bd2953d15d8f35bcbbdbe0a",
+      "origin": "mac-current-source"
+    },
+    {
+      "path": "tools/verify_package.py",
+      "bytes": 2535,
+      "sha256": "6bb3126de96576a81481d9546e6c1eb4f18198a792c21931f49e42d837983aef",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "verification/offline-01/result.json",
+      "bytes": 515,
+      "sha256": "80546136813c543a2fc46ddac778a6be2c9fb4d6001d819aa65a575ecdfbf984",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "verification/offline-01/source-transfer.log",
+      "bytes": 1202,
+      "sha256": "2025da43eaba283a92729193b35d07998f71b9af7a85007fa03ae9565f1399e6",
+      "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "verification/offline-01/unittest.log",
+      "bytes": 21283,
+      "sha256": "02a8363f976f495fd3a809a3eeba19cb15eba3378325ff7f065d0be295e50fda",
+      "origin": "publication-guide-or-verification"
+    }
+  ]
+}
