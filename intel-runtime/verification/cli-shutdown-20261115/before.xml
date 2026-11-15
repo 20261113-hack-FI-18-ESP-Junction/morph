@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="15.516" timestamp="2026-11-15T08:15:48.309184+01:00" hostname="MacBook-Pro.local"><testcase classname="tests.test_cli_shutdown" name="test_cli_sigterm_bounds_open_sse_and_preserves_records" file="tests/test_cli_shutdown.py" line="30" time="15.368"><failure message="subprocess.TimeoutExpired: Command '['/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/python/bin/python', '-B', '-m', 'morph_station', 'serve', '--host', '127.0.0.1', '--port', '54427']' timed out after 15 seconds">tmp_path = PosixPath('/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-baseline/temporary/test_cli_sigterm_bounds_open_s0')
+record_property = &lt;function record_property.&lt;locals&gt;.append_property at 0x10bb5d120&gt;
+
+    @pytest.mark.skipif(sys.platform == "win32", reason="The CLI shutdown contract uses POSIX SIGTERM.")
+    def test_cli_sigterm_bounds_open_sse_and_preserves_records(tmp_path, record_property):
+        data = tmp_path / "data"
+        data.mkdir(mode=0o700)
+        database = data / "station.sqlite3"
+        store = StationStore(database, data / "evidence")
+        store.upsert(RecordWrite(eventId="shutdown-session-created", recordType="session", record={
+            "id": "shutdown-session", "name": "Isolated shutdown regression", "sourceMode": "simulation",
+            "startedAt": "2026-11-15T00:00:00Z", "configId": "shutdown-test", "robotId": None, "modelRuns": [],
+        }))
+        store.upsert(RecordWrite(eventId="shutdown-cycle-created", recordType="cycle", record={
+            "id": "shutdown-cycle", "sessionId": "shutdown-session", "objectId": "synthetic-object",
+            "startedAt": "2026-11-15T00:00:01Z",
+        }))
+        before = ledger_digest(database)
+        token = secrets.token_urlsafe(48)
+        token_file = data / "api-token"
+        token_file.write_text(token + "\n")
+        token_file.chmod(0o600)
+        with socket.socket() as reservation:
+            reservation.bind(("127.0.0.1", 0))
+            port = reservation.getsockname()[1]
+        station = Path(morph_station.__file__).resolve().parent.parent
+        # An explicit environment prevents provider or real-station configuration
+        # from entering this disposable subprocess.
+        environment = {
+            "PATH": os.defpath, "LANG": "C.UTF-8", "PYTHONPATH": str(station),
+            "PYTHONDONTWRITEBYTECODE": "1", "MORPH_DATA_DIR": str(data),
+            "MORPH_TOKEN_FILE": str(token_file),
+        }
+        stream = None
+        response = None
+        with (tmp_path / "station.log").open("wb") as output:
+            process = subprocess.Popen(
+                [sys.executable, "-B", "-m", "morph_station", "serve", "--host", "127.0.0.1", "--port", str(port)],
+                cwd=tmp_path, env=environment, stdin=subprocess.DEVNULL,
+                stdout=output, stderr=output, start_new_session=True,
+            )
+            try:
+                deadline = time.monotonic() + 10
+                while True:
+                    assert process.poll() is None, "Isolated CLI exited before readiness"
+                    health = http.client.HTTPConnection("127.0.0.1", port, timeout=0.25)
+                    try:
+                        health.request("GET", "/health")
+                        reply = health.getresponse()
+                        assert reply.status == 200
+                        assert json.loads(reply.read())["hardwareIntegrated"] is False
+                        break
+                    except (OSError, http.client.HTTPException):
+                        assert time.monotonic() &lt; deadline, "Isolated CLI readiness timed out"
+                        time.sleep(0.05)
+                    finally:
+                        health.close()
+                stream = http.client.HTTPConnection("127.0.0.1", port, timeout=2)
+                stream.request("GET", "/api/v1/events?after=0", headers={"Authorization": "Bearer " + token})
+                response = stream.getresponse()
+                assert response.status == 200
+                assert response.getheader("Content-Type").startswith("text/event-stream")
+                assert response.readline().startswith(b"id: ")
+                assert not response.isclosed()
+                started = time.monotonic()
+                process.send_signal(signal.SIGTERM)
+                # Keep the SSE response open during the entire wait. Closing it
+                # first would hide the original unbounded graceful-drain defect.
+&gt;               result = process.wait(timeout=15)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^
+
+../baseline/intel-runtime/source/common/HachingJunction/station/tests/test_cli_shutdown.py:96: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:1264: in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = &lt;Popen: returncode: -15 args: ['/Users/klemensemelbauer/Desktop/MyStuff/Proj...&gt;
+timeout = 15
+
+    def _wait(self, timeout):
+        """Internal implementation of wait() on POSIX."""
+        if self.returncode is not None:
+            return self.returncode
+    
+        if timeout is not None:
+            endtime = _time() + timeout
+            # Enter a busy loop if we have a timeout.  This busy loop was
+            # cribbed from Lib/threading.py in Thread.wait() at r71065.
+            delay = 0.0005 # 500 us -&gt; initial delay of 1 ms
+            while True:
+                if self._waitpid_lock.acquire(False):
+                    try:
+                        if self.returncode is not None:
+                            break  # Another thread waited.
+                        (pid, sts) = self._try_wait(os.WNOHANG)
+                        assert pid == self.pid or pid == 0
+                        if pid == self.pid:
+                            self._handle_exitstatus(sts)
+                            break
+                    finally:
+                        self._waitpid_lock.release()
+                remaining = self._remaining_time(endtime)
+                if remaining &lt;= 0:
+&gt;                   raise TimeoutExpired(self.args, timeout)
+E                   subprocess.TimeoutExpired: Command '['/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/python/bin/python', '-B', '-m', 'morph_station', 'serve', '--host', '127.0.0.1', '--port', '54427']' timed out after 15 seconds
+
+/opt/homebrew/Cellar/python@3.12/3.12.13_4/Frameworks/Python.framework/Versions/3.12/lib/python3.12/subprocess.py:2045: TimeoutExpired</failure></testcase></testsuite></testsuites>

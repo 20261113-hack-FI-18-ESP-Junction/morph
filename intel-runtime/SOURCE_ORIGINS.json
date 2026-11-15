@@ -4,7 +4,8 @@
   "reconstructionVerifiedAt": "2026-11-15T03:38:11.054357+00:00",
   "sourceRoots": {
     "common": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
-    "junction": "/home/intel/Documents/Junction"
+    "junction": "/home/intel/Documents/Junction",
+    "shutdown-review-delivery": "Exact paths inside source delivery 60fff35b-12d2-4efd-a97e-e224b8199cb6; original Intel review paths are retained in its result JSON."
   },
   "files": [
     {
@@ -443,16 +444,35 @@
     },
     {
       "path": "source/common/HachingJunction/station/morph_station/__main__.py",
-      "bytes": 4146,
-      "sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "bytes": 4263,
+      "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
       "origin": "intel-current-source",
       "sourceRootAlias": "common",
       "sourcePath": "HachingJunction/station/morph_station/__main__.py",
-      "group": "station-analyst",
-      "acquisition": "reuse",
-      "additionalLocalReuse": false,
-      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
-      "contentChanged": false
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "receivedOriginalSha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
+      "receivedOriginalBytes": 4263,
+      "contentChanged": false,
+      "contentChangedDefinition": "Exact received bytes; baseSha256 identifies the previous package revision.",
+      "previousProvenance": {
+        "path": "source/common/HachingJunction/station/morph_station/__main__.py",
+        "bytes": 4146,
+        "sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+        "origin": "intel-current-source",
+        "sourceRootAlias": "common",
+        "sourcePath": "HachingJunction/station/morph_station/__main__.py",
+        "group": "station-analyst",
+        "acquisition": "reuse",
+        "additionalLocalReuse": false,
+        "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+        "contentChanged": false
+      }
     },
     {
       "path": "source/common/HachingJunction/station/morph_station/analysis.py",
@@ -810,6 +830,25 @@
       "contentChanged": false
     },
     {
+      "path": "source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+      "bytes": 5286,
+      "sha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47",
+      "origin": "intel-current-source",
+      "sourceRootAlias": "common",
+      "sourcePath": "HachingJunction/station/tests/test_cli_shutdown.py",
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": null,
+      "receivedOriginalSha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47",
+      "receivedOriginalBytes": 5286,
+      "contentChanged": false,
+      "contentChangedDefinition": "Exact received bytes; baseSha256 identifies the previous package revision."
+    },
+    {
       "path": "source/common/HachingJunction/station/tests/test_export_audit.py",
       "bytes": 22104,
       "sha256": "02802053cb3c9b46f292912ffbbfe972a10380a75fa13131bcce5039b3b95d3b",
@@ -970,6 +1009,45 @@
       "additionalLocalReuse": false,
       "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
       "contentChanged": false
+    },
+    {
+      "path": "source/common/HachingJunction/station/verification/shutdown-20261115/README.md",
+      "bytes": 4180,
+      "sha256": "deffc7cbb4716d3fa85cbd127fe07a9297f19563054e4631dd71619cdaae71ba",
+      "origin": "intel-source-with-documented-adaptation",
+      "sourceRootAlias": "shutdown-review-delivery",
+      "sourcePath": "shutdown-review/README.md",
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery-with-documented-adaptation",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": null,
+      "receivedOriginalSha256": "8db0e702e2d41c893ba7df3df8387a28bb8b2fa74422e5e30b9069261174cd7f",
+      "receivedOriginalBytes": 3255,
+      "contentChanged": true,
+      "contentChangedDefinition": "Dated attribution and explicit omitted-artifact labels; original measurements retained.",
+      "adaptationEvidencePath": "verification/cli-shutdown-20261115/result.json"
+    },
+    {
+      "path": "source/common/HachingJunction/station/verification/shutdown-20261115/result.json",
+      "bytes": 5803,
+      "sha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855",
+      "origin": "intel-current-source",
+      "sourceRootAlias": "shutdown-review-delivery",
+      "sourcePath": "shutdown-review/result.json",
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": null,
+      "receivedOriginalSha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855",
+      "receivedOriginalBytes": 5803,
+      "contentChanged": false,
+      "contentChangedDefinition": "Exact received bytes; baseSha256 identifies the previous package revision."
     },
     {
       "path": "source/common/INTEL_CONTINUATION.md",
@@ -1386,6 +1464,28 @@
       "additionalLocalReuse": false,
       "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
       "contentChanged": false
+    },
+    {
+      "path": "source/common/verification/intel-reliability-20261114/DEMO.md",
+      "bytes": 4847,
+      "sha256": "90e07c39feb4ef1d01b7d9f64198b988661cdee44a4db27984a40a9d808f1f17",
+      "origin": "intel-source-with-documented-adaptation",
+      "sourceRootAlias": "common",
+      "sourcePath": "verification/intel-reliability-20261114/DEMO.md",
+      "group": "analyst-documents",
+      "acquisition": "verified-source-delivery-with-documented-adaptation",
+      "additionalLocalReuse": false,
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+      "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
+      "manifestNoteId": "c27a2b68-f36a-5992-93ec-937f91e08c33",
+      "bundleSha256": "b3060b0b47db4a13fc5ee5834eb74367abd4e34e07bd9fe127819a730ce758a2",
+      "baseSha256": null,
+      "receivedOriginalSha256": "4368629424211c0228e80156c38f78185ea6777ee23eb27f05a326cdd433658e",
+      "receivedOriginalBytes": 2751,
+      "contentChanged": true,
+      "contentChangedDefinition": "Historical attribution, deployment/source boundary, omitted evidence labels, peer-review/evidence limits and later operating-status context; original measurements, commands and IDs preserved. Current-owner scope attribution and the later reported main-API outage are explicit.",
+      "adaptationEvidencePath": "verification/source-sync-20261115/analyst-documents.json"
     },
     {
       "path": "source/common/verification/intel-reliability-20261114/README.md",
@@ -1824,28 +1924,6 @@
       "additionalLocalReuse": false,
       "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
       "contentChanged": false
-    },
-    {
-      "path": "source/common/verification/intel-reliability-20261114/DEMO.md",
-      "bytes": 4847,
-      "sha256": "90e07c39feb4ef1d01b7d9f64198b988661cdee44a4db27984a40a9d808f1f17",
-      "origin": "intel-source-with-documented-adaptation",
-      "sourceRootAlias": "common",
-      "sourcePath": "verification/intel-reliability-20261114/DEMO.md",
-      "group": "analyst-documents",
-      "acquisition": "verified-source-delivery-with-documented-adaptation",
-      "additionalLocalReuse": false,
-      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
-      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
-      "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
-      "manifestNoteId": "c27a2b68-f36a-5992-93ec-937f91e08c33",
-      "bundleSha256": "b3060b0b47db4a13fc5ee5834eb74367abd4e34e07bd9fe127819a730ce758a2",
-      "baseSha256": null,
-      "receivedOriginalSha256": "4368629424211c0228e80156c38f78185ea6777ee23eb27f05a326cdd433658e",
-      "receivedOriginalBytes": 2751,
-      "contentChanged": true,
-      "contentChangedDefinition": "Historical attribution, deployment/source boundary, omitted evidence labels, peer-review/evidence limits and later operating-status context; original measurements, commands and IDs preserved. Current-owner scope attribution and the later reported main-API outage are explicit.",
-      "adaptationEvidencePath": "verification/source-sync-20261115/analyst-documents.json"
     }
   ],
   "supplementReceiptCheckedAt": "2026-11-15T03:52:30.711459+00:00",
@@ -1896,6 +1974,31 @@
       "adaptedReceivedFiles": 2,
       "newPaths": 1,
       "updatedPaths": 1
+    },
+    {
+      "group": "bounded-station-cli-shutdown",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "manifestNoteId": "26f5de83-62dd-54a8-851c-c0b6f5d83d0a",
+      "bundleSha256": "b7bd37a0c7770c9e3105a5246b90a8a56b9b0330b0e1c810abcbc21c091c3f5a",
+      "companionSha256": "b04c62735a52e645e203444e6f30fa9170cd28a9bf0cca89e7265d38dbd5c7a9",
+      "companionIsReviewMetadataOnly": true,
+      "reviewedAt": "2026-11-15T07:17:33.712630+00:00",
+      "evidencePath": "verification/cli-shutdown-20261115/result.json",
+      "sourcePaths": [
+        "source/common/HachingJunction/station/morph_station/__main__.py",
+        "source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+        "source/common/HachingJunction/station/verification/shutdown-20261115/README.md",
+        "source/common/HachingJunction/station/verification/shutdown-20261115/result.json"
+      ],
+      "receivedSourceFiles": 4,
+      "exactReceivedFiles": 3,
+      "adaptedReceivedFiles": 1,
+      "newPaths": 3,
+      "updatedPaths": 1,
+      "independentCommittedCompatibilityVerified": true
     }
   ]
 }

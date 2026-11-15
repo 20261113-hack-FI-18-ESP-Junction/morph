@@ -56,7 +56,8 @@ def main(argv: list[str] | None = None) -> int:
         elif args.command == "serve":
             import uvicorn
 
-            uvicorn.run(create_app(), host=args.host, port=args.port)
+            # Open event streams must not keep graceful connection draining unbounded.
+            uvicorn.run(create_app(), host=args.host, port=args.port, timeout_graceful_shutdown=10)
         elif args.command == "seed-demo":
             from .simulation import seed_demo
 

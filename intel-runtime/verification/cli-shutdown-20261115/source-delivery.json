@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+  "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+  "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "group": "bounded-station-cli-shutdown",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "taskIds": [
+    "M20",
+    "M21"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+  "observedAt": "2026-11-15T06:47:17.226321+00:00",
+  "implementationAuthor": "/root/adoption_station",
+  "preparedBy": "/root/adoption_codex",
+  "completionReporter": "/root",
+  "sourceRevision": "Active project is not a usable Git repository; exact frozen and current hashes were compared. No clean state or commit is claimed.",
+  "intendedBehavior": "Uvicorn connection/task draining ends after ten seconds even when an authenticated SSE response remains open. Existing analyst lifespan timing remains separate.",
+  "baseline": {
+    "path": "station/morph_station/__main__.py",
+    "sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+    "proof": "Fresh complete shared read_context and hash match against the recorded pre-edit source."
+  },
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "targetMapping": "Proposed Intel source partition; Mac must compare current destination hashes and preserve its active control/provider partition before applying.",
+  "files": [
+    {
+      "path": "HachingJunction/station/morph_station/__main__.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/__main__.py",
+      "operation": "edit",
+      "baseSha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
+      "bytes": 4263,
+      "mode": "0o664",
+      "reason": "Bound event-stream connection draining while preserving the current CLI/environment and canonical records."
+    },
+    {
+      "path": "HachingJunction/station/tests/test_cli_shutdown.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47",
+      "bytes": 5286,
+      "mode": "0o664",
+      "reason": "Bound event-stream connection draining while preserving the current CLI/environment and canonical records."
+    },
+    {
+      "path": "shutdown-review/README.md",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/verification/shutdown-20261115/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "8db0e702e2d41c893ba7df3df8387a28bb8b2fa74422e5e30b9069261174cd7f",
+      "bytes": 3255,
+      "mode": "0o664",
+      "reason": "Exact dated operator explanation and before/after regression results."
+    },
+    {
+      "path": "shutdown-review/result.json",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/verification/shutdown-20261115/result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855",
+      "bytes": 5803,
+      "mode": "0o664",
+      "reason": "Exact dated operator explanation and before/after regression results."
+    }
+  ],
+  "reusedDependencies": [
+    {
+      "path": "HachingJunction/station/morph_station/api.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+      "operation": "edit",
+      "baseSha256": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+      "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+      "bytes": 23313,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/api.py",
+      "sharedReadAt": "2026-11-15T06:29:24.611533+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior.",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/store.py",
+      "targetPath": "klemen-dashboard/analytics/morph_station/store.py",
+      "operation": "edit",
+      "baseSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+      "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+      "bytes": 48605,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/store.py",
+      "sharedReadAt": "2026-11-15T06:29:24.718461+00:00",
+      "sharedReadPages": 2,
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior.",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/tests/test_dashboard.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+      "bytes": 12063,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/tests/test_dashboard.py",
+      "sharedReadAt": "2026-11-15T06:29:24.758020+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior.",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/models.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/models.py",
+      "operation": "edit",
+      "baseSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "bytes": 11096,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/models.py",
+      "sharedReadAt": "2026-11-15T06:29:24.797322+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior.",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/requirements.txt",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/requirements.txt",
+      "operation": "edit",
+      "baseSha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "bytes": 238,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/requirements.txt",
+      "sharedReadAt": "2026-11-15T06:29:24.819409+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior.",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/client.py",
+      "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "bytes": 1645,
+      "disposition": "reuse exact current Mac source",
+      "sharedSourcePath": "station/morph_station/client.py",
+      "sharedReadAt": "2026-11-15T06:30:02.266036+00:00",
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/__init__.py",
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "bytes": 114,
+      "disposition": "reuse exact current Mac source",
+      "sharedSourcePath": "station/morph_station/__init__.py",
+      "sharedReadAt": "2026-11-15T06:30:02.468753+00:00",
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/simulation.py",
+      "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "bytes": 6481,
+      "disposition": "reuse exact current Mac source",
+      "sharedSourcePath": "station/morph_station/simulation.py",
+      "sharedReadAt": "2026-11-15T06:30:03.335877+00:00",
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/schema.sql",
+      "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "bytes": 1589,
+      "targetPath": "klemen-dashboard/analytics/morph_station/schema.sql",
+      "disposition": "reuse exact Mac-confirmed baseline from refreshed commit plan",
+      "baselineProof": "context/verification/remaining-source-20261115/commit-plan.json",
+      "baselineProofSha256": "4b610e88624f8c378815ecbdcbbf56dea815fb40c496f441ea2befa16c38b652",
+      "directSourceRead": "Unsupported or unavailable through read_context; failure retained separately.",
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    },
+    {
+      "path": "HachingJunction/station/pytest.ini",
+      "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "bytes": 42,
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/pytest.ini",
+      "disposition": "reuse exact Mac-confirmed baseline from refreshed commit plan",
+      "baselineProof": "context/verification/remaining-source-20261115/commit-plan.json",
+      "baselineProofSha256": "4b610e88624f8c378815ecbdcbbf56dea815fb40c496f441ea2befa16c38b652",
+      "directSourceRead": "Unsupported or unavailable through read_context; failure retained separately.",
+      "freshIntelHashAt": "2026-11-15T06:47:17.226321+00:00",
+      "priorStrictDelivery": "44693c32-12a5-4426-9603-72d4e55736ab"
+    }
+  ],
+  "deletions": [],
+  "renames": [],
+  "supersedes": null,
+  "documentation": [
+    "shutdown-review/README.md"
+  ],
+  "tests": {
+    "originalPath": "station/tests/test_cli_shutdown.py",
+    "command": [
+      "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "station/tests/test_cli_shutdown.py",
+      "-q",
+      "-o",
+      "junit_family=legacy",
+      "--junitxml=/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/after.xml"
+    ],
+    "before": {
+      "command": [
+        "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "station/tests/test_cli_shutdown.py",
+        "-q",
+        "-o",
+        "junit_family=legacy",
+        "--junitxml=/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/before.xml"
+      ],
+      "counts": {
+        "errors": "0",
+        "failures": "1",
+        "skipped": "0",
+        "tests": "1",
+        "time": "15.445",
+        "timestamp": "2026-11-14T22:42:16.977831-08:00"
+      },
+      "failure": "Real isolated CLI held open SSE and exceeded15-second process wait after SIGTERM; client closure then allowed cleanup.",
+      "sha256": "1f6dbaf2bb6b9fcae537b19ce1f1f1e23aaa05df02464b3fc945dba83664d500"
+    },
+    "after": {
+      "command": [
+        "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "station/tests/test_cli_shutdown.py",
+        "-q",
+        "-o",
+        "junit_family=legacy",
+        "--junitxml=/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/after.xml"
+      ],
+      "counts": {
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "1",
+        "time": "10.544",
+        "timestamp": "2026-11-14T22:42:46.901844-08:00"
+      },
+      "properties": {
+        "canonicalRecordsUnchanged": "True",
+        "processReturnCode": "-15",
+        "sigtermExitSeconds": "10.195"
+      },
+      "result": "Passed with the actual event stream deliberately kept open through process exit; canonical SQLite dump unchanged.",
+      "sha256": "d09e024a47c8d5a7e6a54e512a9e62a02ccbd24eb143ac9298a3a095876c3ac4"
+    },
+    "class": "Previously executed isolated real CLI/HTTP SSE regression with temporary simulation records. No additional run for source transfer."
+  },
+  "unsupportedOptionalArtifacts": [
+    {
+      "path": "before.xml",
+      "sha256": "1f6dbaf2bb6b9fcae537b19ce1f1f1e23aaa05df02464b3fc945dba83664d500",
+      "reason": "Unsupported sender suffix; retained Intel-local diagnostic evidence, not required executable source."
+    },
+    {
+      "path": "after.xml",
+      "sha256": "d09e024a47c8d5a7e6a54e512a9e62a02ccbd24eb143ac9298a3a095876c3ac4",
+      "reason": "Unsupported sender suffix; retained Intel-local diagnostic evidence, not required executable source."
+    },
+    {
+      "path": "main-change.diff",
+      "sha256": "ef341964e59961a507a2aed7a266e7d08e5a98ed516797812013675cfe9fd73e",
+      "reason": "Unsupported sender suffix; retained Intel-local diagnostic evidence, not required executable source."
+    }
+  ],
+  "documentationLimitations": "The exact original README links to retained before.xml, after.xml and main-change.diff. Those optional diagnostic files are not transmitted because their suffixes are unsupported; their hashes and structured measured results are included. The full runnable original test is included.",
+  "exclusions": [
+    "Temporary databases, API token, logs, installed dependencies, real evidence, credentials, provider settings and hardware.",
+    "Concurrent Gemma source, existing dashboard/producer groups, root TODO/status files and runtime recovery scripts."
+  ],
+  "missingSource": [],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "limitations": [
+    "This deadline bounds Uvicorn connection/task drain. The existing later analyst lifespan close retains its separate bounded30-second worker join; it is not changed or tested with an active provider request.",
+    "The disposable subprocess proves the SSE shutdown regression and preservation behavior. It does not establish actual old-host connection cause or successful main-service recovery.",
+    "Root owns recovery execution and current production activation; v2 scripts/reports remain unchanged."
+  ],
+  "sourceTransferOnly": true,
+  "attributedContribution": "adoption_station implemented the single serve-call change and preserved an actual failing/passing CLI regression; adoption_codex reviewed, froze, screened and transferred exact source with baseline and strict shared receipts; root publishes completion and owns production recovery."
+}

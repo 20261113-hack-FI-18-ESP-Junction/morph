@@ -1,0 +1,122 @@
+{
+  "after": {
+    "command": [
+      "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "station/tests/test_cli_shutdown.py",
+      "-q",
+      "-o",
+      "junit_family=legacy",
+      "--junitxml=/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/after.xml"
+    ],
+    "counts": {
+      "errors": "0",
+      "failures": "0",
+      "skipped": "0",
+      "tests": "1",
+      "time": "10.544",
+      "timestamp": "2026-11-14T22:42:46.901844-08:00"
+    },
+    "properties": {
+      "canonicalRecordsUnchanged": "True",
+      "processReturnCode": "-15",
+      "sigtermExitSeconds": "10.195"
+    },
+    "result": "Passed with the actual event stream deliberately kept open through process exit; canonical SQLite dump unchanged.",
+    "sha256": "d09e024a47c8d5a7e6a54e512a9e62a02ccbd24eb143ac9298a3a095876c3ac4"
+  },
+  "agent": "/root/adoption_station",
+  "before": {
+    "command": [
+      "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "station/tests/test_cli_shutdown.py",
+      "-q",
+      "-o",
+      "junit_family=legacy",
+      "--junitxml=/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/before.xml"
+    ],
+    "counts": {
+      "errors": "0",
+      "failures": "1",
+      "skipped": "0",
+      "tests": "1",
+      "time": "15.445",
+      "timestamp": "2026-11-14T22:42:16.977831-08:00"
+    },
+    "failure": "Real isolated CLI held open SSE and exceeded15-second process wait after SIGTERM; client closure then allowed cleanup.",
+    "sha256": "1f6dbaf2bb6b9fcae537b19ce1f1f1e23aaa05df02464b3fc945dba83664d500"
+  },
+  "behavior": "The existing serve branch passes timeout_graceful_shutdown=10 to Uvicorn. Existing CLI options and environment interpretation are unchanged.",
+  "completedAt": "2026-11-15T06:44:04.708817+00:00",
+  "existingPinnedFilesUnchangedExceptMain": true,
+  "files": [
+    {
+      "baseSha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "bytes": 4263,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/source/station/morph_station/__main__.py",
+      "operation": "edit",
+      "path": "station/morph_station/__main__.py",
+      "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298"
+    },
+    {
+      "baseSha256": null,
+      "bytes": 5286,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/source/station/tests/test_cli_shutdown.py",
+      "operation": "add",
+      "path": "station/tests/test_cli_shutdown.py",
+      "sha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47"
+    }
+  ],
+  "limitations": [
+    "This deadline bounds Uvicorn connection/task drain. The existing later analyst lifespan close retains its separate bounded30-second worker join; it is not changed or tested with an active provider request.",
+    "The disposable subprocess proves the SSE shutdown regression and preservation behavior. It does not establish actual old-host connection cause or successful main-service recovery.",
+    "Root owns recovery execution and current production activation; v2 scripts/reports remain unchanged."
+  ],
+  "macDelivery": "Pending root verified reporting and actual source delivery.",
+  "physicalOperations": 0,
+  "preservedPreviouslyPinnedFiles": [
+    "station/morph_station/__init__.py",
+    "station/morph_station/analysis.py",
+    "station/morph_station/analysis_context.py",
+    "station/morph_station/analysis_models.py",
+    "station/morph_station/analysis_provider.py",
+    "station/morph_station/api.py",
+    "station/morph_station/client.py",
+    "station/morph_station/export_audit.py",
+    "station/morph_station/models.py",
+    "station/morph_station/producers.py",
+    "station/morph_station/schema.sql",
+    "station/morph_station/simulation.py",
+    "station/morph_station/store.py",
+    "station/requirements.txt",
+    "station/tests/fixtures/export-audit/MANIFEST.json",
+    "station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+    "station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+    "station/tests/fixtures/export-audit/station/verification/sample-export.json",
+    "station/tests/fixtures/gemma-v11-audit-regressions.json",
+    "station/tests/fixtures/gemma-v5-semantic-regressions.json",
+    "station/tests/fixtures/gemma-v6-known-coverage-regression.json",
+    "station/tests/fixtures/gemma-v7-recovery-coverage-regression.json",
+    "station/tests/fixtures/gemma-v9-citation-regressions.json",
+    "station/tests/smoke_http.py",
+    "station/tests/test_analysis.py",
+    "station/tests/test_api.py",
+    "station/tests/test_dashboard.py",
+    "station/tests/test_export_audit.py",
+    "station/tests/test_producers.py",
+    "station/tests/test_reviews.py",
+    "station/tests/test_store.py"
+  ],
+  "providerCalls": 0,
+  "realServicesTouched": false,
+  "reporter": "/root",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "scope": "Bounded graceful drain for open Station SSE connections in CLI only",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "testIsolation": "Disposable database and two synthetic simulation records; random temporary API token; explicit subprocess environment excludes real-station settings and provider credentials; only owned process signaled; no SIGKILL."
+}

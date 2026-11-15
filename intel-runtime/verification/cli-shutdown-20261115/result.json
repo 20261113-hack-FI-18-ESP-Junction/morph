@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T07:17:33.712630+00:00",
+  "classification": "Mac isolated real CLI/HTTP SSE regression with temporary simulation records",
+  "baselineCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
+  "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+  "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "companionSha256": "b04c62735a52e645e203444e6f30fa9170cd28a9bf0cca89e7265d38dbd5c7a9",
+  "intakeReceiptSha256": "426ccf1f2346bce3294885dac830779ac38ff2e90dc7cfbd956b7e5ea644380d",
+  "receivedBundleSha256": "b7bd37a0c7770c9e3105a5246b90a8a56b9b0330b0e1c810abcbc21c091c3f5a",
+  "versions": {
+    "pytest": "9.2.0",
+    "uvicorn": "0.54.0",
+    "fastapi": "0.162.5",
+    "pydantic": "2.14.3",
+    "httpx": "0.28.1"
+  },
+  "runs": [
+    {
+      "phase": "baseline",
+      "startedAt": "2026-11-15T07:15:48.161746+00:00",
+      "completedAt": "2026-11-15T07:16:03.877508+00:00",
+      "command": [
+        "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/python/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/baseline/intel-runtime/source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "-o",
+        "junit_family=legacy",
+        "--basetemp=/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-baseline/temporary",
+        "--junitxml=/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-baseline/tests.xml"
+      ],
+      "cwd": "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-baseline",
+      "environmentKeys": [
+        "LANG",
+        "PATH",
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONPATH"
+      ],
+      "returnCode": 1,
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "1",
+        "skipped": "0",
+        "tests": "1",
+        "time": "15.516",
+        "timestamp": "2026-11-15T08:15:48.309184+01:00",
+        "hostname": "MacBook-Pro.local"
+      },
+      "properties": {},
+      "sourceUnchanged": true,
+      "xmlPath": "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-baseline/tests.xml",
+      "xmlSha256": "46700bf8f5662355918b8eb6719fd400d1c1e08187f4922c7d0f2e8e30cb73c8",
+      "logPath": "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-baseline/pytest.log",
+      "logSha256": "72ea87f1ffc5392e967e4d9215c443e010d343aad9af1a0d8e68820789fc1092"
+    },
+    {
+      "phase": "fixed",
+      "startedAt": "2026-11-15T07:16:03.930675+00:00",
+      "completedAt": "2026-11-15T07:16:14.697812+00:00",
+      "command": [
+        "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/python/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/fixed/intel-runtime/source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "-o",
+        "junit_family=legacy",
+        "--basetemp=/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-fixed/temporary",
+        "--junitxml=/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-fixed/tests.xml"
+      ],
+      "cwd": "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-fixed",
+      "environmentKeys": [
+        "LANG",
+        "PATH",
+        "PYTEST_DISABLE_PLUGIN_AUTOLOAD",
+        "PYTHONDONTWRITEBYTECODE",
+        "PYTHONPATH"
+      ],
+      "returnCode": 0,
+      "counts": {
+        "name": "pytest",
+        "errors": "0",
+        "failures": "0",
+        "skipped": "0",
+        "tests": "1",
+        "time": "10.604",
+        "timestamp": "2026-11-15T08:16:04.039928+01:00",
+        "hostname": "MacBook-Pro.local"
+      },
+      "properties": {
+        "sigtermExitSeconds": "10.231",
+        "processReturnCode": "-15",
+        "canonicalRecordsUnchanged": "True"
+      },
+      "sourceUnchanged": true,
+      "xmlPath": "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-fixed/tests.xml",
+      "xmlSha256": "1e76ee7fe2a3143cd384f1115bf2eded361b10e2eb3620c86209d3a5879464dd",
+      "logPath": "/private/tmp/morph-cli-shutdown-071042-p1bh1gsm/test-fixed/pytest.log",
+      "logSha256": "a4d5cbc5556bf5f17af2c1d3c3c2d09d5d4fa62f0a688e7aec2439d2e69f52f1"
+    }
+  ],
+  "dependencyComparisons": [
+    {
+      "sourcePath": "HachingJunction/station/morph_station/api.py",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/api.py",
+      "expectedIntelSha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+      "committedSha256": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+      "matches": false
+    },
+    {
+      "sourcePath": "HachingJunction/station/morph_station/store.py",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/store.py",
+      "expectedIntelSha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+      "committedSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+      "matches": false
+    },
+    {
+      "sourcePath": "HachingJunction/station/tests/test_dashboard.py",
+      "candidatePath": "source/common/HachingJunction/station/tests/test_dashboard.py",
+      "expectedIntelSha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+      "committedSha256": null,
+      "matches": false
+    },
+    {
+      "sourcePath": "HachingJunction/station/morph_station/models.py",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/models.py",
+      "expectedIntelSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "committedSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "matches": true
+    },
+    {
+      "sourcePath": "HachingJunction/station/requirements.txt",
+      "candidatePath": "source/common/HachingJunction/station/requirements.txt",
+      "expectedIntelSha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "committedSha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "matches": true
+    },
+    {
+      "sourcePath": "HachingJunction/station/morph_station/client.py",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/client.py",
+      "expectedIntelSha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "committedSha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "matches": true
+    },
+    {
+      "sourcePath": "HachingJunction/station/morph_station/__init__.py",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/__init__.py",
+      "expectedIntelSha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "committedSha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "matches": true
+    },
+    {
+      "sourcePath": "HachingJunction/station/morph_station/simulation.py",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/simulation.py",
+      "expectedIntelSha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "committedSha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "matches": true
+    },
+    {
+      "sourcePath": "HachingJunction/station/morph_station/schema.sql",
+      "candidatePath": "source/common/HachingJunction/station/morph_station/schema.sql",
+      "expectedIntelSha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "committedSha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "matches": true
+    },
+    {
+      "sourcePath": "HachingJunction/station/pytest.ini",
+      "candidatePath": "source/common/HachingJunction/station/pytest.ini",
+      "expectedIntelSha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "committedSha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "matches": true
+    }
+  ],
+  "acceptedScope": "Exact received CLI and original regression; exact Intel result JSON; annotated Intel report; package provenance and separate Mac test evidence.",
+  "reconciliation": "The committed API/store are intentionally retained. The original shutdown regression passes against their existing health/event/record contract; incoming dashboard reuse metadata is outside this independent shutdown scope. No analytics/store target is applied.",
+  "excludedPendingGroups": [
+    "Newer dashboard API/store and tests retain their separate owner and review; current working bytes are not included.",
+    "Pending analyst/backend/UI, producer and continuation groups retain their own source gaps."
+  ],
+  "boundaries": [
+    "Ten seconds bounds Uvicorn connection/task drain only. Existing analyst shutdown may separately join a running worker for up to thirty seconds.",
+    "This test has no provider request and does not prove historical old-host connection identity or Intel production recovery.",
+    "No production service, camera, hardware, model or provider was used.",
+    "Minimal explicit environments, isolated committed source, temporary SQLite/evidence/token directories and loopback-only subprocess; this is reviewed software testing, not an OS security sandbox."
+  ],
+  "documentationAdaptation": {
+    "receivedSha256": "8db0e702e2d41c893ba7df3df8387a28bb8b2fa74422e5e30b9069261174cd7f",
+    "adoptedSha256": "deffc7cbb4716d3fa85cbd127fe07a9297f19563054e4631dd71619cdaae71ba",
+    "changes": "Label omitted Intel XML/diff artifacts, clarify structured result contents, add dated source/test/deployment attribution; preserve original measurements and commands."
+  }
+}

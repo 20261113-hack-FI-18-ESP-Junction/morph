@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
   "package": "intel-runtime",
-  "sealedAt": "2026-11-15T06:54:29.835819+00:00",
+  "sealedAt": "2026-11-15T07:17:33.712630+00:00",
   "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
   "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
-  "contentBytes": 2652462,
-  "fileCountExcludingThisManifest": 167,
+  "contentBytes": 2708838,
+  "fileCountExcludingThisManifest": 174,
   "originCounts": {
     "derived-existing-synthetic-fixture": 1,
-    "intel-current-source": 127,
-    "intel-source-with-documented-adaptation": 2,
+    "intel-current-source": 129,
+    "intel-source-with-documented-adaptation": 3,
     "package-scaffolding": 11,
-    "package-verification": 23,
+    "package-verification": 27,
     "portable-fixture-alias": 3
   },
   "originalFilesModified": true,
@@ -39,8 +39,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13353,
-      "sha256": "38ed570295c631d0a6e1c5a4bf776c180df79ce2f674804e77ab5c9e5a74effa",
+      "bytes": 14998,
+      "sha256": "d5651829a5bf8d76f705f6e1f15746dbafd5dfa57e9f93e446d49dc5cfc49298",
       "origin": "package-scaffolding"
     },
     {
@@ -51,8 +51,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 83622,
-      "sha256": "90b719e766c57bbe33b8e718b3f12aa315a6a0edd9d588c376587ea6fae9165a",
+      "bytes": 89324,
+      "sha256": "71c4fc6d3221ac96253d4dfca90b149a9bb77fe2b1392e26f3a09400bee81296",
       "origin": "package-scaffolding"
     },
     {
@@ -503,16 +503,35 @@
     },
     {
       "path": "source/common/HachingJunction/station/morph_station/__main__.py",
-      "bytes": 4146,
-      "sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "bytes": 4263,
+      "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
       "origin": "intel-current-source",
       "sourceRootAlias": "common",
       "sourcePath": "HachingJunction/station/morph_station/__main__.py",
-      "group": "station-analyst",
-      "acquisition": "reuse",
-      "additionalLocalReuse": false,
-      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
-      "contentChanged": false
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "receivedOriginalSha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
+      "receivedOriginalBytes": 4263,
+      "contentChanged": false,
+      "contentChangedDefinition": "Exact received bytes; baseSha256 identifies the previous package revision.",
+      "previousProvenance": {
+        "path": "source/common/HachingJunction/station/morph_station/__main__.py",
+        "bytes": 4146,
+        "sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+        "origin": "intel-current-source",
+        "sourceRootAlias": "common",
+        "sourcePath": "HachingJunction/station/morph_station/__main__.py",
+        "group": "station-analyst",
+        "acquisition": "reuse",
+        "additionalLocalReuse": false,
+        "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+        "contentChanged": false
+      }
     },
     {
       "path": "source/common/HachingJunction/station/morph_station/analysis.py",
@@ -870,6 +889,25 @@
       "contentChanged": false
     },
     {
+      "path": "source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+      "bytes": 5286,
+      "sha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47",
+      "origin": "intel-current-source",
+      "sourceRootAlias": "common",
+      "sourcePath": "HachingJunction/station/tests/test_cli_shutdown.py",
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": null,
+      "receivedOriginalSha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47",
+      "receivedOriginalBytes": 5286,
+      "contentChanged": false,
+      "contentChangedDefinition": "Exact received bytes; baseSha256 identifies the previous package revision."
+    },
+    {
       "path": "source/common/HachingJunction/station/tests/test_export_audit.py",
       "bytes": 22104,
       "sha256": "02802053cb3c9b46f292912ffbbfe972a10380a75fa13131bcce5039b3b95d3b",
@@ -1030,6 +1068,45 @@
       "additionalLocalReuse": false,
       "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
       "contentChanged": false
+    },
+    {
+      "path": "source/common/HachingJunction/station/verification/shutdown-20261115/README.md",
+      "bytes": 4180,
+      "sha256": "deffc7cbb4716d3fa85cbd127fe07a9297f19563054e4631dd71619cdaae71ba",
+      "origin": "intel-source-with-documented-adaptation",
+      "sourceRootAlias": "shutdown-review-delivery",
+      "sourcePath": "shutdown-review/README.md",
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery-with-documented-adaptation",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": null,
+      "receivedOriginalSha256": "8db0e702e2d41c893ba7df3df8387a28bb8b2fa74422e5e30b9069261174cd7f",
+      "receivedOriginalBytes": 3255,
+      "contentChanged": true,
+      "contentChangedDefinition": "Dated attribution and explicit omitted-artifact labels; original measurements retained.",
+      "adaptationEvidencePath": "verification/cli-shutdown-20261115/result.json"
+    },
+    {
+      "path": "source/common/HachingJunction/station/verification/shutdown-20261115/result.json",
+      "bytes": 5803,
+      "sha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855",
+      "origin": "intel-current-source",
+      "sourceRootAlias": "shutdown-review-delivery",
+      "sourcePath": "shutdown-review/result.json",
+      "group": "bounded-station-cli-shutdown",
+      "acquisition": "verified-source-delivery",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "baseSha256": null,
+      "receivedOriginalSha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855",
+      "receivedOriginalBytes": 5803,
+      "contentChanged": false,
+      "contentChangedDefinition": "Exact received bytes; baseSha256 identifies the previous package revision."
     },
     {
       "path": "source/common/INTEL_CONTINUATION.md",
@@ -1932,6 +2009,30 @@
       "origin": "package-scaffolding"
     },
     {
+      "path": "verification/cli-shutdown-20261115/after.xml",
+      "origin": "package-verification",
+      "bytes": 616,
+      "sha256": "1e76ee7fe2a3143cd384f1115bf2eded361b10e2eb3620c86209d3a5879464dd"
+    },
+    {
+      "path": "verification/cli-shutdown-20261115/before.xml",
+      "origin": "package-verification",
+      "bytes": 6953,
+      "sha256": "46700bf8f5662355918b8eb6719fd400d1c1e08187f4922c7d0f2e8e30cb73c8"
+    },
+    {
+      "path": "verification/cli-shutdown-20261115/result.json",
+      "origin": "package-verification",
+      "bytes": 9892,
+      "sha256": "b0c19254f44cefee11e112dd8b3757b905d4a0b93390ccb2b2d6b276b8f79cd9"
+    },
+    {
+      "path": "verification/cli-shutdown-20261115/source-delivery.json",
+      "origin": "package-verification",
+      "bytes": 16182,
+      "sha256": "b04c62735a52e645e203444e6f30fa9170cd28a9bf0cca89e7265d38dbd5c7a9"
+    },
+    {
       "path": "verification/offline-01/guard-78798.json",
       "bytes": 31,
       "sha256": "a4a2372d99bcba3f163dd1f87ef42ebbd388eee46ac29532af83ac8c5d04a4c2",
@@ -2071,25 +2172,33 @@
     }
   ],
   "previousSeal": {
-    "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
-    "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
-    "sealedAt": "2026-11-15T06:40:02.262971+00:00",
-    "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
-    "fileCountExcludingThisManifest": 165,
-    "contentBytes": 2616880,
+    "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
+    "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
+    "sealedAt": "2026-11-15T06:54:29.835819+00:00",
+    "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
+    "fileCountExcludingThisManifest": 167,
+    "contentBytes": 2652462,
     "previousSeal": {
-      "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
-      "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
-      "sealedAt": "2026-11-15T03:55:06.975648+00:00",
-      "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
-      "fileCountExcludingThisManifest": 159,
-      "contentBytes": 2409735
+      "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
+      "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
+      "sealedAt": "2026-11-15T06:40:02.262971+00:00",
+      "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
+      "fileCountExcludingThisManifest": 165,
+      "contentBytes": 2616880,
+      "previousSeal": {
+        "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
+        "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
+        "sealedAt": "2026-11-15T03:55:06.975648+00:00",
+        "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+        "fileCountExcludingThisManifest": 159,
+        "contentBytes": 2409735
+      }
     }
   },
-  "sourceDeliveryRequestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
-  "sourceDeliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+  "sourceDeliveryRequestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sourceDeliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
   "previousSnapshotUpdated": true,
-  "originalFilesModifiedDefinition": "Two received Intel documentation files are deliberately annotated for portable historical scope; received original hashes and prior package provenance are preserved. No executable source is modified by this documentation update.",
+  "originalFilesModifiedDefinition": "Exact newer received CLI replaces its proven baseline; three historical received documents have separately recorded Mac annotations. Original and earlier hashes remain in provenance.",
   "updatedSourcePaths": [
     "source/common/HachingJunction/station/tests/test_export_audit.py",
     "source/common/HachingJunction/station/EXPORT_AUDIT.md",
@@ -2099,7 +2208,11 @@
     "source/common/HachingJunction/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
     "source/common/HachingJunction/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
     "source/common/verification/intel-reliability-20261114/README.md",
-    "source/common/verification/intel-reliability-20261114/DEMO.md"
+    "source/common/verification/intel-reliability-20261114/DEMO.md",
+    "source/common/HachingJunction/station/morph_station/__main__.py",
+    "source/common/HachingJunction/station/tests/test_cli_shutdown.py",
+    "source/common/HachingJunction/station/verification/shutdown-20261115/README.md",
+    "source/common/HachingJunction/station/verification/shutdown-20261115/result.json"
   ],
-  "sealBasis": "Exact committed 9ed988dd package blobs, with only two annotated analyst documents, one package entry-point annotation, their public review record and updated provenance/seal metadata. Previously published audit-portability bytes remain unchanged."
+  "sealBasis": "Committed daab4b4 package with only the independent shutdown CLI/test/report, original delivery metadata, separate Mac regression evidence and package provenance. Pending dirty dashboard/API/store/media work is excluded."
 }
