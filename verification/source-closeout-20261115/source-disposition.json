@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T09:43:43.439271+00:00",
+  "status": "All 13 strict complete deliveries reconciled and published; nine exact originals remain undelivered.",
+  "verifiedSourceHead": "e606360a12f991abbee951d0078ece9ed4b9ded6",
+  "remoteVerifiedAt": "2026-11-15T09:39:30.926650+00:00",
+  "remoteVerificationMethod": "git ls-remote origin refs/heads/main",
+  "publicationProofSha256": "fe6deba9f973050d078afbd63f89f21dad2f2120387d641a5dfbb6d952b8317f",
+  "completeDeliveries": 13,
+  "receivedFiles": 151,
+  "receivedBytes": 2460082,
+  "package": {
+    "sealedFilesExcludingManifest": 338,
+    "provenanceRows": 299,
+    "intelSourceDeliveryRows": 12,
+    "separateKlemenSourceDeliveryRows": 1,
+    "sourceManifestSha256": "0dd6c1663c212d03ecff7bb66c8cd367f9276bea522721d35f5f01824b160de8",
+    "sourceOriginsSha256": "4fe29125c1af382446a8b225391ee48c59c6bdc57f465e450414f76b0d88a7ba",
+    "verificationScope": "Committed Git bytes only; untracked local runtime output is outside this publication check."
+  },
+  "groups": [
+    {
+      "deliveryId": "2aebe862-3a13-52d9-b1cd-facac6670fc2",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "transferId": "8ccb5434-a3bf-5f5d-acd3-f8b50a1652aa",
+      "completionNoteId": "9ea10ce4-11fd-5573-9c06-ab6337db13b7",
+      "receivedFiles": 6,
+      "receivedBytes": 139454,
+      "receiptSha256": "01d847900fd82070cdc258c277d51e64a25f81ae9da90603cd103a0f38b607bb",
+      "group": "analyst-ui-r2",
+      "disposition": "published_with_reviewed_adaptation",
+      "scope": "Six exact source originals archived; four active dashboard files adapted to preserve current MCP, history and media behavior.",
+      "commits": [
+        "e082b4945a6d9f5395dc1a33fdda850adc617fad",
+        "95330937b20192a4487c20c0d1fdc5bcd0ddefc9"
+      ],
+      "evidencePath": "klemen-dashboard/verification/analyst-ui-r2-20261115/RECONCILIATION.json",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    },
+    {
+      "deliveryId": "8bee374a-a12f-5f79-a0a6-3d133c9c56e2",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "transferId": "a15d0e5b-05e0-52c0-a2bb-fb6ad4af13d9",
+      "completionNoteId": "51d1470b-05c1-51e3-9960-f243958aee78",
+      "receivedFiles": 8,
+      "receivedBytes": 233793,
+      "receiptSha256": "bca7792f87f59e11ac88de965ca19079dff2f234c55891d02de73de02d86223f",
+      "group": "audit-portability",
+      "disposition": "published",
+      "scope": "Previously reviewed source reconciliation retained; original publication and adaptation evidence are unchanged.",
+      "commits": [
+        "e5be6ece059e9f6109c0ea8d7c621c90ec3b3651",
+        "b5c5e92f962ccfb1e9fb7f9429c96699813f2ef2",
+        "9ed988dd763b5724532e97d7808f57a8063e1784"
+      ],
+      "evidencePath": "intel-runtime/verification/source-sync-20261115/audit-portability.json",
+      "reconciledThisCloseout": false,
+      "priorLedgerPreserved": true
+    },
+    {
+      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
+      "completionNoteId": "375c54f4-4565-5249-b444-2461278c81cc",
+      "receivedFiles": 3,
+      "receivedBytes": 21110,
+      "receiptSha256": "c70d2e71c7c431c408a24da164a51dfb74f0da5022b7cba39fb6f47c7c8c7100",
+      "group": "analyst-documents",
+      "disposition": "published",
+      "scope": "Previously reviewed source reconciliation retained; original publication and adaptation evidence are unchanged.",
+      "commits": [
+        "daab4b41420f8d035153e402a8bb7c69e31bddee"
+      ],
+      "evidencePath": "intel-runtime/verification/source-sync-20261115/analyst-documents.json",
+      "reconciledThisCloseout": false,
+      "priorLedgerPreserved": true
+    },
+    {
+      "deliveryId": "1015a558-f417-5353-bb1b-d08011eff819",
+      "requestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+      "transferId": "c0416551-ec50-5936-9930-6f0a6a8851a1",
+      "completionNoteId": "d2bce495-a6a7-506e-b5b7-628a3bc06ea5",
+      "receivedFiles": 4,
+      "receivedBytes": 101354,
+      "receiptSha256": "983f02e8cfc838215ae51a66aff578f237047bd4a59add28adffb99a3550ca97",
+      "group": "intel-source-policy",
+      "disposition": "published_immutable_archive",
+      "scope": "Historical source/companion archive only; original mapping preserved and no active instruction, application or runtime overlay.",
+      "commits": [
+        "305d65d70654880506137e1bf90da2f671ab5588"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-policy-20261115-1015a558/SOURCE_DELIVERY.json",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    },
+    {
+      "deliveryId": "876962a0-251c-5c92-a025-09678f077983",
+      "requestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+      "transferId": "88fc6bc9-3f63-5820-9949-56b5610fae3d",
+      "completionNoteId": "4564569a-d793-570d-8149-766a3916e8fe",
+      "receivedFiles": 3,
+      "receivedBytes": 36637,
+      "receiptSha256": "24ce3c81eeb00a05e3277911ea722ce94a4abee07eb9276d537ac30c2fb9cf55",
+      "group": "active-intel-guides",
+      "disposition": "published_immutable_archive",
+      "scope": "Historical source/companion archive only; original mapping preserved and no active instruction, application or runtime overlay.",
+      "commits": [
+        "32df3a8a4d0e5b4b1afb476e4acda44f415e3c67"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-guides-20261115-876962a0/SOURCE_DELIVERY.json",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    },
+    {
+      "deliveryId": "44693c32-12a5-4426-9603-72d4e55736ab",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "f1e4027a-adcf-48a8-b48e-bca63cba0d90",
+      "completionNoteId": "53d998b4-fd3e-40c1-8b7f-71ce8ecae59d",
+      "receivedFiles": 1,
+      "receivedBytes": 10772,
+      "receiptSha256": "e510c21aa69a260d7d1f457b9d9569539a085f42dcb19d17c409c33f175fbe28",
+      "group": "dashboard-adoption",
+      "disposition": "published_immutable_archive",
+      "scope": "Historical source/companion archive only; original mapping preserved and no active instruction, application or runtime overlay.",
+      "commits": [
+        "2f6567f4ccaf64e49f4e2ef544a662406b8678a6"
+      ],
+      "evidencePath": "intel-runtime/verification/dashboard-mapping-20261115/original/SOURCE_DELIVERY.json",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    },
+    {
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512",
+      "completionNoteId": "ea3c127e-4f0a-454f-aac4-cd2745c79320",
+      "receivedFiles": 5,
+      "receivedBytes": 34789,
+      "receiptSha256": "426ccf1f2346bce3294885dac830779ac38ff2e90dc7cfbd956b7e5ea644380d",
+      "group": "bounded-station-cli-shutdown",
+      "disposition": "published",
+      "scope": "Previously reviewed source reconciliation retained; original publication and adaptation evidence are unchanged.",
+      "commits": [
+        "332df3bf3d194c5afe73dd2e861d31e819f203cd"
+      ],
+      "evidencePath": "intel-runtime/verification/cli-shutdown-20261115/result.json",
+      "reconciledThisCloseout": false,
+      "priorLedgerPreserved": true
+    },
+    {
+      "deliveryId": "77133e66-7c2b-45ce-8ab6-69549d784320",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "7048d910-46ef-487e-b6bc-1e7081eaed6c",
+      "completionNoteId": "dc7b60b4-c0e3-449b-afee-e900915f7891",
+      "receivedFiles": 1,
+      "receivedBytes": 24489,
+      "receiptSha256": "e515919fba917678bf7c75da19ade8167564f69c7206d348e8dc7cb6f8eef503",
+      "group": "dashboard-runtime-mapping-correction",
+      "disposition": "published_immutable_archive",
+      "scope": "Historical source/companion archive only; original mapping preserved and no active instruction, application or runtime overlay.",
+      "commits": [
+        "2f6567f4ccaf64e49f4e2ef544a662406b8678a6"
+      ],
+      "evidencePath": "intel-runtime/verification/dashboard-mapping-20261115/corrected/SOURCE_DELIVERY.json",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    },
+    {
+      "deliveryId": "36126a56-504b-417f-b5d9-b0a376248b59",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "089c2d01-8707-4083-955d-681a126f0143",
+      "completionNoteId": "d7022c99-a783-4acf-b631-44871d25bca6",
+      "receivedFiles": 12,
+      "receivedBytes": 233181,
+      "receiptSha256": "2d4b4963f42928e5be9a7fd6fed8711048b0cf592b3a105d15c3abad8dcdb37d",
+      "group": "intel-dashboard-dated-documents-and-results",
+      "disposition": "published",
+      "scope": "Complete dated documentation and result archive; no application changes, rerun, deployment or physical acceptance. Original case-level XML/logs and historical per-request raw bodies are excluded.",
+      "commits": [
+        "cb753e9c60ad570b500ce933d10b989f6546c54a"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/README.md",
+      "reconciledThisCloseout": false,
+      "priorLedgerPreserved": true
+    },
+    {
+      "deliveryId": "b4525aac-4261-4706-9eec-3316fd6a2d07",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "8e3d98fb-54bf-4585-880b-1cd8eee9f5c9",
+      "completionNoteId": "8a97656d-e92e-4f53-902e-37b6a46443f5",
+      "receivedFiles": 21,
+      "receivedBytes": 270373,
+      "receiptSha256": "bf445140918a0f884f024abad6688973e78e4fe4a8fff680237cf379e2dff66f",
+      "group": "final-intel-runtime-audit-source",
+      "disposition": "published_immutable_archive",
+      "scope": "Complete bounded historical review-source/evidence archive; no application source change, incoming test execution, deployment or physical acceptance.",
+      "commits": [
+        "94eb8b17a911d041d5c17e757433497565168997"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/README.md",
+      "reconciledThisCloseout": false,
+      "priorLedgerPreserved": true
+    },
+    {
+      "deliveryId": "29a6f301-d2dd-4bac-b59b-41269b48eead",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "f363decf-97fe-45e6-9cc9-bc10b021a0cb",
+      "completionNoteId": "6ccc5ea5-3d0c-42d8-a060-04422e4c4f7a",
+      "receivedFiles": 12,
+      "receivedBytes": 309817,
+      "receiptSha256": "13c4a4f39d77a595d7e2ca7f8f5c7bb5d537d0d7f89f3bb9628a8abe527aa47d",
+      "group": "passive-video-intel-review-source-and-evidence",
+      "disposition": "published_immutable_archive",
+      "scope": "Complete bounded historical review-source/evidence archive; no application source change, incoming test execution, deployment or physical acceptance.",
+      "commits": [
+        "2f7efc2a3badecefab278c76a515738ffc2a09e0"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/passive-video-review/README.md",
+      "reconciledThisCloseout": false,
+      "priorLedgerPreserved": true
+    },
+    {
+      "deliveryId": "dd42f038-052e-4f0f-88fd-4b9162a4b894",
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "transferId": "2943f735-dbab-43fe-8298-dc1fd52339c0",
+      "completionNoteId": "9f996c49-6591-47c0-9842-4f498e24b199",
+      "receivedFiles": 32,
+      "receivedBytes": 569794,
+      "receiptSha256": "48e8cc09910ba96036639d44c1b94164e687b2172f0e8429514310c1137df619",
+      "group": "final-coordination-artifacts-for-manual-mac-continuation",
+      "disposition": "published_immutable_archive",
+      "scope": "Complete bounded historical source/report archive; no incoming execution, active application overlay, deployment or physical acceptance.",
+      "commits": [
+        "7521ef32275d8e5f44889ffbf7dc2f58648692eb"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/README.md",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    },
+    {
+      "deliveryId": "c8898652-f488-4bd3-8f9f-8793047edf52",
+      "requestId": "aa097b06-d3e9-4ea3-9964-dfc20c89adcb",
+      "transferId": "ecbcfc1c-3e6e-40fe-8b98-0d3eff7a16c8",
+      "completionNoteId": "cabcb290-299a-4850-931a-f731fecadbda",
+      "receivedFiles": 43,
+      "receivedBytes": 474519,
+      "receiptSha256": "9b3e22414c82f8c55398d87ef4738d59f68a441eef3ec9b1c9b904b0189211b7",
+      "group": "M08 follower capture incident and unconditional replay hold",
+      "disposition": "published_immutable_archive",
+      "scope": "Complete bounded historical source/report archive; no incoming execution, active application overlay, deployment or physical acceptance.",
+      "commits": [
+        "bcc0fcba34b5d41888f8bc6d4b1f077f22435798"
+      ],
+      "evidencePath": "intel-runtime/verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/README.md",
+      "reconciledThisCloseout": true,
+      "priorLedgerPreserved": false
+    }
+  ],
+  "incompleteSource": {
+    "currentOriginals": 6,
+    "historicalOriginals": 3,
+    "receivedRequestedOriginals": 0,
+    "deliveryIds": [
+      "3764e3c7-2536-53c5-b75d-5a2dc1d560c5",
+      "97c7ec3e-dd59-47e6-a450-014bad41151a",
+      "831bcaf3-d30f-45cf-a30e-03b8d810d32b"
+    ],
+    "requestId": "cb294a07-e4bb-4381-89a5-9a29d9ddec36",
+    "latestIntelResponseNoteId": "aee44be4-a19f-41ee-9676-f4b8a5db9f3b",
+    "latestIntelResponseSavedAt": "2026-11-15T09:29:49.574851+00:00",
+    "latestIntelResponseSha256": "aec477233830993437f13e44b256931a74e4cabfe39de3d0169de0f2d78aa7b5",
+    "evidencePath": "verification/source-closeout-20261115/intel-response-20261115T092949Z.json",
+    "freshCatalogEvidencePath": "verification/source-closeout-20261115/latest-source-check-20261115T093702Z.json",
+    "disposition": "Original sender screening is unchanged. Owner authorized closeout with these gaps and a separately reviewed human ZIP followup; no ZIP is recorded as received."
+  },
+  "separateMappingException": {
+    "deliveryId": "25a1bb77-9fae-55ad-8514-86b2a6665476",
+    "transferId": "c21648f9-bade-57bf-a6ec-e186ae7451a7",
+    "groupComplete": false,
+    "disposition": "Both guide revisions are available, but the proposed edit target is absent. No authorized add/remap or strict completion; preserve the exception."
+  },
+  "boundaries": {
+    "immutableIntakeReceiptsChanged": false,
+    "priorSixPublishedLedgersChanged": false,
+    "receivedArchiveCodeExecuted": false,
+    "productionDeploymentPerformed": false,
+    "physicalAcceptanceEstablished": false,
+    "m08State": "Owner STOP and unconditional replay hold remain in force.",
+    "acknowledgment": "Ordinary aggregate reconciliation receipt; no new work event."
+  }
+}

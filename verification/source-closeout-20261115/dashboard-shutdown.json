@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-15T09:48:35.200486+00:00",
+  "scope": "Mac-owned dashboard and disposable demo shutdown; shared MCP still running",
+  "actions": [
+    {
+      "launcherPid": 31455,
+      "action": "Ctrl+C in owned exec session",
+      "exitCode": 0
+    },
+    {
+      "launcherPid": 30389,
+      "action": "Ctrl+C in owned exec session",
+      "exitCode": 1,
+      "message": "Owned process inspection is unavailable.",
+      "disposition": "An independent privileged process/listener check subsequently confirmed all known owned processes stopped; no additional signal was needed."
+    }
+  ],
+  "stoppedKnownProcessIds": [
+    30389,
+    30425,
+    30428,
+    30432,
+    30438,
+    30446,
+    30449,
+    31455,
+    31495,
+    31499,
+    31500
+  ],
+  "allKnownDashboardAndDemoProcessesAbsent": true,
+  "ports3000And3101Closed": true,
+  "knownDemoRuntimeRemoved": true,
+  "mcpStillRunning": true,
+  "mcpPid": 93262,
+  "sourceProofs": [
+    {
+      "path": "context/verification/server-closeout-20261115/shutdown-before-signals.json",
+      "sha256": "eb604bf2c9f4286e8677ddde2926d97c2cd1acaa4bd1bd943f3443945999bd68"
+    },
+    {
+      "path": "context/verification/server-closeout-20261115/shutdown-after-launchers-all-known-pids.json",
+      "sha256": "9c6dac70c8055ac8373910b249c04074e5babacb5461052f9f758f2e0ff133ed"
+    }
+  ],
+  "intelServicesChanged": false
+}

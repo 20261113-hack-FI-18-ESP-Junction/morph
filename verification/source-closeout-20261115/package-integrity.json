@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-11-15T09:41:56.416726+00:00",
+  "gitCommit": "e606360a12f991abbee951d0078ece9ed4b9ded6",
+  "gitArchiveSha256": "bbb28d0974b94abea33849aa784481a08e24ddba52d69c10f5d3ed31254423e5",
+  "cleanPublishedExport": {
+    "passed": true,
+    "sealedFiles": 338,
+    "provenanceFiles": 299,
+    "errors": []
+  },
+  "workingWorkspace": {
+    "passed": false,
+    "sealedFiles": 338,
+    "provenanceFiles": 299,
+    "errors": [
+      "Unlisted package file: media-bridge/verification/offline-01/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-01/tests.log",
+      "Unlisted package file: media-bridge/verification/offline-02/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-02/tests.log",
+      "Unlisted package file: media-bridge/verification/offline-03/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-03/tests.log",
+      "Unlisted package file: media-bridge/verification/offline-04/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-04/tests.log",
+      "Unlisted package file: media-bridge/verification/offline-05/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-05/tests.log",
+      "Unlisted package file: media-bridge/verification/offline-06/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-06/tests.log",
+      "Unlisted package file: media-bridge/verification/offline-07/encoder.log",
+      "Unlisted package file: media-bridge/verification/offline-07/tests.log"
+    ]
+  },
+  "workingWorkspaceDisposition": "The fourteen ignored local media test logs were preserved. They are absent from Git and are not sealed source. No package source, ignore rule, verifier or log was changed.",
+  "execution": "Only the previously reviewed committed Mac package verifier; no archived incoming code or hardware executed."
+}
