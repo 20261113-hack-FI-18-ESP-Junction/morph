@@ -1,0 +1,20 @@
+{
+  "pageErrors": [],
+  "mobileOverflow": false,
+  "stickyStop": true,
+  "navigationWorked": true,
+  "disconnectedControls": true,
+  "disconnectedHeader": "Station Disconnected\nNo session selected",
+  "stableStopRequest": true,
+  "stopDoesNotFinish": true,
+  "cameraWorked": true,
+  "heatmapWorked": true,
+  "retryRows": 2,
+  "traceWorked": true,
+  "fixtureCounts": {
+    "cycles": 12,
+    "finished": 11,
+    "checked": 9
+  },
+  "note": "Presentation fixture only. No hardware, provider or persistent backend test."
+}

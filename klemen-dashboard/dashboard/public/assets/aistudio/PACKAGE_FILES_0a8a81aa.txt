@@ -1,0 +1,78 @@
+Morph dashboard handoff — complete archive inventory
+Prepared November 14, 2026.
+
+Archive: Morph-dashboard-handoff-2026-11-14.zip
+All paths below are relative to the extracted Morph-Handoff/ folder.
+File count: 66 (including this inventory and START_HERE.md).
+Preserve this directory structure when sharing the package.
+
+.junction-setup/smoke/anomalib/20261114T122227Z-8b9a93aa/report.json
+AGENTS.md
+IGNITE_INTEL_PHYSICAL_AI.md
+Intel_Physical AI Hackathon.pdf
+JUNCTION.md
+PHYSICAL_AI_CHALLENGE_COMBINATIONS.md
+PHYSICAL_AI_EXTENSIONS.md
+PHYSICAL_AI_ORCHESTRATION.md
+PHYSICAL_AI_SETUP.md
+PHYSICAL_AI_WORKFLOW.md
+START_HERE.md
+design/morph-handoff/AI_STUDIO_MASTER_PROMPT.txt
+design/morph-handoff/AI_STUDIO_PROMPT.md
+design/morph-handoff/ASSETS.md
+design/morph-handoff/DESIGN_SPEC.md
+design/morph-handoff/HANDOVER_GUIDE.md
+design/morph-handoff/INTEGRATION_CONTRACT.md
+design/morph-handoff/MESSAGE_TO_BUILDER.md
+design/morph-handoff/PACKAGE_FILES.txt
+design/morph-handoff/PROJECT_AUDIT.md
+design/morph-handoff/README.md
+design/morph-handoff/REFERENCES.md
+design/morph-handoff/app.js
+design/morph-handoff/assets/copernicus-scriven.jpg
+design/morph-handoff/assets/cormorant-italic.ttf
+design/morph-handoff/assets/cormorantgaramond-OFL.txt
+design/morph-handoff/assets/inspection-scene.svg
+design/morph-handoff/assets/inter-OFL.txt
+design/morph-handoff/assets/inter.ttf
+design/morph-handoff/assets/morph-mark.svg
+design/morph-handoff/assets/morph-wordmark.png
+design/morph-handoff/assets/orbital.svg
+design/morph-handoff/assets/space-mono.ttf
+design/morph-handoff/assets/spacemono-OFL.txt
+design/morph-handoff/index.html
+design/morph-handoff/references/00-overview.png
+design/morph-handoff/references/01-live-preview.png
+design/morph-handoff/references/01-live.png
+design/morph-handoff/references/02-system.png
+design/morph-handoff/references/03-quality.png
+design/morph-handoff/references/04-cycle-detail.png
+design/morph-handoff/references/05-stop.png
+design/morph-handoff/references/06-design-system-preview.png
+design/morph-handoff/references/06-design-system.png
+design/morph-handoff/references/07-disconnected.png
+design/morph-handoff/references/08-mobile-preview.png
+design/morph-handoff/references/08-mobile.png
+design/morph-handoff/references/09-state-review.png
+design/morph-handoff/references/verification.json
+design/morph-handoff/styles.css
+design/morph-handoff/tools/render-references.cjs
+setup/activate-anomalib.sh
+setup/check-intel.py
+setup/physicalai-intel.in
+setup/physicalai-intel.lock
+setup/physicalai-macos.in
+setup/physicalai-macos.lock
+setup/requirements-anomalib-intel.in
+setup/requirements-anomalib-intel.lock
+setup/requirements-anomalib-macos.in
+setup/requirements-anomalib-macos.lock
+setup/run-studio.sh
+setup/setup-anomalib-macos.sh
+setup/setup-intel.sh
+setup/setup-physicalai-macos.sh
+setup/smoke-anomalib.py
+
+This archive contains source documents, reference assets, selected setup sources
+and one retained synthetic test report. It does not contain installed runtimes,
+credentials, node_modules, general caches, or the historical HEIC source captures.

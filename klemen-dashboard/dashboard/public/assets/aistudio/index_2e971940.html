@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Morph — dashboard design reference</title><link rel="icon" href="assets/morph-mark.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"></head><body>
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="#live"><img src="assets/morph-mark.svg" alt=""><span>MORPH<small>PHYSICAL INTELLIGENCE</small></span></a>
+    <div class="nav-label">WORKSPACE / 01</div>
+    <nav aria-label="Primary"><button data-view="live" class="selected"><span class="nav-number">01</span>Live inspection<span class="nav-dot"></span></button><button data-view="system"><span class="nav-number">02</span>Robot & system</button><button data-view="quality"><span class="nav-number">03</span>Quality & history</button></nav>
+    <div class="sidebar-note"><span class="tiny">THE ART OF ADAPTATION</span><div class="side-orbit"></div><p>Observe.<br>Understand.<br><em>Adapt.</em></p></div>
+    <div class="sidebar-bottom"><span class="badge demo">SIMULATED DATA</span><p>Design reference · v1.0<br>14 November 2026</p><button class="text-link" data-view="design">Design language ↗</button></div>
+  </aside>
+  <div class="workspace">
+    <div class="masthead" aria-label="Decorative Renaissance artwork"><div><span class="tiny">MORPH / JUNCTION 2026</span><p>A new perspective on <em>physical intelligence.</em></p></div><div class="orbital-art"><img src="assets/orbital.svg" alt="" class="orbital"><img src="assets/copernicus-scriven.jpg" alt="Decorative engraving of Copernicus" class="copernicus"></div><span class="art-caption">A COPERNICAN STUDY · ARTWORK</span></div>
+    <header class="control-bar"><div class="session"><span class="status-dot"></span><span>Studio session <b>Demo 01</b></span><span class="divider"></span><span class="mono" id="run-state">Simulation · inspection</span></div><div class="controls"><button id="pause-button" class="button quiet">Ⅱ <span>Pause after cycle</span></button><button id="stop-button" class="button stop">■ &nbsp; Stop process</button></div></header>
+    <main id="content"></main>
+    <footer><span>REFERENCE PROTOTYPE · NO ROBOT CONNECTION</span><span>Displayed times: Europe/Helsinki (UTC+02:00)</span></footer>
+  </div>
+</div>
+<dialog id="stop-modal" aria-labelledby="stop-title"><div class="modal-top"><span class="stop-icon">■</span><button class="close" aria-label="Close stop status" data-close="stop-modal">×</button></div><span class="tiny red">SOFTWARE STOP · SIMULATED</span><h2 id="stop-title">Stop requested.</h2><p>The request has been recorded. Physical halt is not yet verified.</p><div class="stop-status"><div><span>Request sent</span><b class="green">Recorded in demo</b></div><div><span>Controller acknowledgment</span><b>Awaiting response</b></div><div><span>Physical motion stopped</span><b class="amber">Unverified</b></div></div><div class="subtle-callout">For an immediate physical emergency, use the station’s physical stop procedure.</div><p class="small muted">Cycle C-012 remains in progress until an outcome is recorded. Closing this dialog never resumes the run.</p><div class="modal-actions"><button class="button" id="export-incident">Export incident JSON</button><button class="button primary" data-close="stop-modal">Close status</button></div></dialog>
+<dialog id="cycle-modal" class="cycle-dialog" aria-labelledby="cycle-title"></dialog><div id="toast" role="status"></div>
+<script src="app.js"></script></body></html>
