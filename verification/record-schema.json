@@ -1,0 +1,2064 @@
+{
+  "schemaVersion": 1,
+  "records": {
+    "session": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Name",
+          "type": "string"
+        },
+        "sourceMode": {
+          "enum": [
+            "live",
+            "simulation"
+          ],
+          "title": "Sourcemode",
+          "type": "string"
+        },
+        "startedAt": {
+          "format": "date-time",
+          "title": "Startedat",
+          "type": "string"
+        },
+        "endedAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Endedat"
+        },
+        "configId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Configid",
+          "type": "string"
+        },
+        "robotId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Robotid"
+        },
+        "modelRuns": {
+          "items": {
+            "additionalProperties": true,
+            "type": "object"
+          },
+          "maxItems": 50,
+          "title": "Modelruns",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "sourceMode",
+        "startedAt",
+        "configId"
+      ],
+      "title": "Session",
+      "type": "object"
+    },
+    "cycle": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "objectId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Objectid",
+          "type": "string"
+        },
+        "startedAt": {
+          "format": "date-time",
+          "title": "Startedat",
+          "type": "string"
+        },
+        "endedAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Endedat"
+        },
+        "outcome": {
+          "default": "in_progress",
+          "enum": [
+            "in_progress",
+            "correct",
+            "failed",
+            "aborted",
+            "unverified"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "commandedDestination": {
+          "anyOf": [
+            {
+              "enum": [
+                "good_bin",
+                "defective_bin",
+                "other"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Commandeddestination"
+        },
+        "observedDestination": {
+          "anyOf": [
+            {
+              "enum": [
+                "good_bin",
+                "defective_bin",
+                "other"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observeddestination"
+        },
+        "referenceLabelId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Referencelabelid"
+        },
+        "inspectionId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Inspectionid"
+        },
+        "confirmationId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confirmationid"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "objectId",
+        "startedAt"
+      ],
+      "title": "Cycle",
+      "type": "object"
+    },
+    "attempt": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "ordinal": {
+          "minimum": 1,
+          "title": "Ordinal",
+          "type": "integer"
+        },
+        "startedAt": {
+          "format": "date-time",
+          "title": "Startedat",
+          "type": "string"
+        },
+        "endedAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Endedat"
+        },
+        "outcome": {
+          "default": "in_progress",
+          "enum": [
+            "in_progress",
+            "successful",
+            "failed",
+            "aborted",
+            "unverified"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "retryOfAttemptId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retryofattemptid"
+        },
+        "retryReason": {
+          "anyOf": [
+            {
+              "maxLength": 4000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Retryreason"
+        },
+        "errorCode": {
+          "anyOf": [
+            {
+              "maxLength": 4000,
+              "minLength": 1,
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Errorcode"
+        },
+        "confirmationId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confirmationid"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "ordinal",
+        "startedAt"
+      ],
+      "title": "Attempt",
+      "type": "object"
+    },
+    "frame": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "objectId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Objectid",
+          "type": "string"
+        },
+        "cameraId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cameraid",
+          "type": "string"
+        },
+        "capturedAt": {
+          "format": "date-time",
+          "title": "Capturedat",
+          "type": "string"
+        },
+        "receivedAt": {
+          "format": "date-time",
+          "title": "Receivedat",
+          "type": "string"
+        },
+        "width": {
+          "exclusiveMinimum": 0,
+          "title": "Width",
+          "type": "integer"
+        },
+        "height": {
+          "exclusiveMinimum": 0,
+          "title": "Height",
+          "type": "integer"
+        },
+        "evidenceId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Evidenceid",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "objectId",
+        "cameraId",
+        "capturedAt",
+        "receivedAt",
+        "width",
+        "height",
+        "evidenceId"
+      ],
+      "title": "Frame",
+      "type": "object"
+    },
+    "inspection": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "objectId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Objectid",
+          "type": "string"
+        },
+        "frameIds": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Frameids",
+          "type": "array"
+        },
+        "modelRunId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Modelrunid",
+          "type": "string"
+        },
+        "score": {
+          "title": "Score",
+          "type": "number"
+        },
+        "threshold": {
+          "title": "Threshold",
+          "type": "number"
+        },
+        "classification": {
+          "enum": [
+            "good",
+            "defective",
+            "review_required"
+          ],
+          "title": "Classification",
+          "type": "string"
+        },
+        "mapEvidenceId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mapevidenceid"
+        },
+        "additionalInspectionOfId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Additionalinspectionofid"
+        },
+        "requestedAt": {
+          "format": "date-time",
+          "title": "Requestedat",
+          "type": "string"
+        },
+        "completedAt": {
+          "format": "date-time",
+          "title": "Completedat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "objectId",
+        "frameIds",
+        "modelRunId",
+        "score",
+        "threshold",
+        "classification",
+        "requestedAt",
+        "completedAt"
+      ],
+      "title": "Inspection",
+      "type": "object"
+    },
+    "model_run": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cycleid"
+        },
+        "provider": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Provider",
+          "type": "string"
+        },
+        "modelId": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Modelid",
+          "type": "string"
+        },
+        "requestedAt": {
+          "format": "date-time",
+          "title": "Requestedat",
+          "type": "string"
+        },
+        "completedAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Completedat"
+        },
+        "frameIds": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Frameids",
+          "type": "array"
+        },
+        "input": {
+          "additionalProperties": true,
+          "title": "Input",
+          "type": "object"
+        },
+        "output": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Output"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        },
+        "latencyMs": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Latencyms"
+        },
+        "device": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Device"
+        },
+        "precision": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Precision"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "provider",
+        "modelId",
+        "requestedAt"
+      ],
+      "title": "ModelRun",
+      "type": "object"
+    },
+    "utterance": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cycleid"
+        },
+        "text": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "voice",
+            "typed"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "provider": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider"
+        },
+        "modelId": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Modelid"
+        },
+        "startedAt": {
+          "format": "date-time",
+          "title": "Startedat",
+          "type": "string"
+        },
+        "completedAt": {
+          "format": "date-time",
+          "title": "Completedat",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "partial",
+            "finalized",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "language": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Language"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "text",
+        "source",
+        "startedAt",
+        "completedAt",
+        "status"
+      ],
+      "title": "Utterance",
+      "type": "object"
+    },
+    "decision": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cycleid"
+        },
+        "kind": {
+          "enum": [
+            "goal",
+            "task"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "modelRunId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Modelrunid",
+          "type": "string"
+        },
+        "offeredChoices": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Offeredchoices",
+          "type": "array"
+        },
+        "selectedChoice": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Selectedchoice",
+          "type": "string"
+        },
+        "stateVersion": {
+          "minimum": 0,
+          "title": "Stateversion",
+          "type": "integer"
+        },
+        "goalVersion": {
+          "minimum": 0,
+          "title": "Goalversion",
+          "type": "integer"
+        },
+        "frameIds": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Frameids",
+          "type": "array"
+        },
+        "requestedAt": {
+          "format": "date-time",
+          "title": "Requestedat",
+          "type": "string"
+        },
+        "completedAt": {
+          "format": "date-time",
+          "title": "Completedat",
+          "type": "string"
+        },
+        "accepted": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Accepted"
+        },
+        "rejectionReason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Rejectionreason"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "kind",
+        "modelRunId",
+        "offeredChoices",
+        "selectedChoice",
+        "stateVersion",
+        "goalVersion",
+        "requestedAt",
+        "completedAt"
+      ],
+      "title": "Decision",
+      "type": "object"
+    },
+    "execution": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "attemptId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Attemptid",
+          "type": "string"
+        },
+        "taskId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Taskid",
+          "type": "string"
+        },
+        "policyId": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Policyid",
+          "type": "string"
+        },
+        "decisionId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Decisionid"
+        },
+        "status": {
+          "enum": [
+            "requested",
+            "acknowledged",
+            "finished",
+            "failed",
+            "unverified"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "requestedAt": {
+          "format": "date-time",
+          "title": "Requestedat",
+          "type": "string"
+        },
+        "acknowledgedAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Acknowledgedat"
+        },
+        "finishedAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Finishedat"
+        },
+        "error": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Error"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "attemptId",
+        "taskId",
+        "policyId",
+        "status",
+        "requestedAt"
+      ],
+      "title": "Execution",
+      "type": "object"
+    },
+    "reference_label": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "objectId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Objectid",
+          "type": "string"
+        },
+        "quality": {
+          "enum": [
+            "good",
+            "defective"
+          ],
+          "title": "Quality",
+          "type": "string"
+        },
+        "authorId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Authorid",
+          "type": "string"
+        },
+        "method": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Method",
+          "type": "string"
+        },
+        "evidenceIds": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Evidenceids",
+          "type": "array"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "title": "Createdat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "objectId",
+        "quality",
+        "authorId",
+        "method",
+        "createdAt"
+      ],
+      "title": "ReferenceLabel",
+      "type": "object"
+    },
+    "confirmation": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "source": {
+          "enum": [
+            "camera",
+            "sensor",
+            "operator"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "evidenceIds": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Evidenceids",
+          "type": "array"
+        },
+        "authorId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Authorid"
+        },
+        "attemptId": {
+          "anyOf": [
+            {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Attemptid"
+        },
+        "confirmedAt": {
+          "format": "date-time",
+          "title": "Confirmedat",
+          "type": "string"
+        },
+        "physicalSuccess": {
+          "title": "Physicalsuccess",
+          "type": "boolean"
+        },
+        "observedDestination": {
+          "anyOf": [
+            {
+              "enum": [
+                "good_bin",
+                "defective_bin",
+                "other"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Observeddestination"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "source",
+        "confirmedAt",
+        "physicalSuccess"
+      ],
+      "title": "Confirmation",
+      "type": "object"
+    },
+    "evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "mediaType": {
+          "enum": [
+            "image/png",
+            "image/jpeg",
+            "application/json",
+            "text/plain"
+          ],
+          "title": "Mediatype",
+          "type": "string"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "size": {
+          "maximum": 5242880,
+          "minimum": 1,
+          "title": "Size",
+          "type": "integer"
+        },
+        "capturedAt": {
+          "format": "date-time",
+          "title": "Capturedat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "sessionId",
+        "cycleId",
+        "mediaType",
+        "sha256",
+        "size",
+        "capturedAt"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    }
+  },
+  "envelopes": {
+    "RecordWrite": {
+      "additionalProperties": false,
+      "properties": {
+        "eventId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Eventid",
+          "type": "string"
+        },
+        "recordType": {
+          "enum": [
+            "session",
+            "cycle",
+            "attempt",
+            "frame",
+            "inspection",
+            "model_run",
+            "utterance",
+            "decision",
+            "execution",
+            "reference_label",
+            "confirmation"
+          ],
+          "title": "Recordtype",
+          "type": "string"
+        },
+        "record": {
+          "additionalProperties": true,
+          "title": "Record",
+          "type": "object"
+        },
+        "expectedRevision": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expectedrevision"
+        },
+        "occurredAt": {
+          "anyOf": [
+            {
+              "format": "date-time",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Occurredat"
+        }
+      },
+      "required": [
+        "eventId",
+        "recordType",
+        "record"
+      ],
+      "title": "RecordWrite",
+      "type": "object"
+    },
+    "SessionCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "eventId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Eventid",
+          "type": "string"
+        },
+        "session": {
+          "additionalProperties": true,
+          "title": "Session",
+          "type": "object"
+        }
+      },
+      "required": [
+        "eventId",
+        "session"
+      ],
+      "title": "SessionCreate",
+      "type": "object"
+    },
+    "SessionEnd": {
+      "additionalProperties": false,
+      "properties": {
+        "eventId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Eventid",
+          "type": "string"
+        },
+        "endedAt": {
+          "format": "date-time",
+          "title": "Endedat",
+          "type": "string"
+        },
+        "expectedRevision": {
+          "minimum": 1,
+          "title": "Expectedrevision",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "eventId",
+        "endedAt",
+        "expectedRevision"
+      ],
+      "title": "SessionEnd",
+      "type": "object"
+    },
+    "LabelCreate": {
+      "additionalProperties": false,
+      "properties": {
+        "eventId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Eventid",
+          "type": "string"
+        },
+        "record": {
+          "additionalProperties": true,
+          "title": "Record",
+          "type": "object"
+        },
+        "expectedRevision": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Expectedrevision"
+        }
+      },
+      "required": [
+        "eventId",
+        "record"
+      ],
+      "title": "LabelCreate",
+      "type": "object"
+    },
+    "CorrectionRequest": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "eventId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Eventid",
+          "type": "string"
+        },
+        "entityType": {
+          "enum": [
+            "session",
+            "cycle",
+            "attempt",
+            "reference_label"
+          ],
+          "title": "Entitytype",
+          "type": "string"
+        },
+        "entityId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Entityid",
+          "type": "string"
+        },
+        "expectedRevision": {
+          "minimum": 1,
+          "title": "Expectedrevision",
+          "type": "integer"
+        },
+        "field": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Field",
+          "type": "string"
+        },
+        "previousValue": {
+          "title": "Previousvalue"
+        },
+        "newValue": {
+          "title": "Newvalue"
+        },
+        "authorId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Authorid",
+          "type": "string"
+        },
+        "reason": {
+          "maxLength": 4000,
+          "minLength": 1,
+          "title": "Reason",
+          "type": "string"
+        },
+        "createdAt": {
+          "format": "date-time",
+          "title": "Createdat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "eventId",
+        "entityType",
+        "entityId",
+        "expectedRevision",
+        "field",
+        "previousValue",
+        "newValue",
+        "authorId",
+        "reason",
+        "createdAt"
+      ],
+      "title": "CorrectionRequest",
+      "type": "object"
+    },
+    "EvidenceUpload": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Id",
+          "type": "string"
+        },
+        "eventId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Eventid",
+          "type": "string"
+        },
+        "sessionId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Sessionid",
+          "type": "string"
+        },
+        "cycleId": {
+          "maxLength": 120,
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+          "title": "Cycleid",
+          "type": "string"
+        },
+        "mediaType": {
+          "enum": [
+            "image/png",
+            "image/jpeg",
+            "application/json",
+            "text/plain"
+          ],
+          "title": "Mediatype",
+          "type": "string"
+        },
+        "contentBase64": {
+          "maxLength": 7340032,
+          "title": "Contentbase64",
+          "type": "string"
+        },
+        "capturedAt": {
+          "format": "date-time",
+          "title": "Capturedat",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "eventId",
+        "sessionId",
+        "cycleId",
+        "mediaType",
+        "contentBase64",
+        "capturedAt"
+      ],
+      "title": "EvidenceUpload",
+      "type": "object"
+    }
+  },
+  "responses": {
+    "Snapshot": {
+      "$defs": {
+        "CycleView": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "title": "Id",
+              "type": "string"
+            },
+            "sessionId": {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "title": "Sessionid",
+              "type": "string"
+            },
+            "objectId": {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "title": "Objectid",
+              "type": "string"
+            },
+            "startedAt": {
+              "format": "date-time",
+              "title": "Startedat",
+              "type": "string"
+            },
+            "endedAt": {
+              "anyOf": [
+                {
+                  "format": "date-time",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Endedat"
+            },
+            "outcome": {
+              "default": "in_progress",
+              "enum": [
+                "in_progress",
+                "correct",
+                "failed",
+                "aborted",
+                "unverified"
+              ],
+              "title": "Outcome",
+              "type": "string"
+            },
+            "commandedDestination": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "good_bin",
+                    "defective_bin",
+                    "other"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Commandeddestination"
+            },
+            "observedDestination": {
+              "anyOf": [
+                {
+                  "enum": [
+                    "good_bin",
+                    "defective_bin",
+                    "other"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Observeddestination"
+            },
+            "referenceLabelId": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "minLength": 1,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Referencelabelid"
+            },
+            "inspectionId": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "minLength": 1,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Inspectionid"
+            },
+            "confirmationId": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "minLength": 1,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Confirmationid"
+            },
+            "revision": {
+              "minimum": 1,
+              "title": "Revision",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "sessionId",
+            "objectId",
+            "startedAt",
+            "revision"
+          ],
+          "title": "CycleView",
+          "type": "object"
+        },
+        "SessionView": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "title": "Id",
+              "type": "string"
+            },
+            "name": {
+              "maxLength": 4000,
+              "minLength": 1,
+              "title": "Name",
+              "type": "string"
+            },
+            "sourceMode": {
+              "enum": [
+                "live",
+                "simulation"
+              ],
+              "title": "Sourcemode",
+              "type": "string"
+            },
+            "startedAt": {
+              "format": "date-time",
+              "title": "Startedat",
+              "type": "string"
+            },
+            "endedAt": {
+              "anyOf": [
+                {
+                  "format": "date-time",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Endedat"
+            },
+            "configId": {
+              "maxLength": 120,
+              "minLength": 1,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+              "title": "Configid",
+              "type": "string"
+            },
+            "robotId": {
+              "anyOf": [
+                {
+                  "maxLength": 120,
+                  "minLength": 1,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "default": null,
+              "title": "Robotid"
+            },
+            "modelRuns": {
+              "items": {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              "maxItems": 50,
+              "title": "Modelruns",
+              "type": "array"
+            },
+            "revision": {
+              "minimum": 1,
+              "title": "Revision",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "id",
+            "name",
+            "sourceMode",
+            "startedAt",
+            "configId",
+            "revision"
+          ],
+          "title": "SessionView",
+          "type": "object"
+        },
+        "StationCapabilities": {
+          "additionalProperties": false,
+          "properties": {
+            "robot": {
+              "$ref": "#/$defs/UnavailableCapability"
+            },
+            "cameras": {
+              "$ref": "#/$defs/UnavailableCapability"
+            },
+            "anomalib": {
+              "$ref": "#/$defs/UnavailableCapability"
+            },
+            "nemotron": {
+              "$ref": "#/$defs/UnavailableCapability"
+            },
+            "gemini": {
+              "$ref": "#/$defs/UnavailableCapability"
+            },
+            "elevenlabs": {
+              "$ref": "#/$defs/UnavailableCapability"
+            }
+          },
+          "required": [
+            "robot",
+            "cameras",
+            "anomalib",
+            "nemotron",
+            "gemini",
+            "elevenlabs"
+          ],
+          "title": "StationCapabilities",
+          "type": "object"
+        },
+        "UnavailableCapability": {
+          "additionalProperties": false,
+          "description": "M06 does not assert readiness of any physical or provider integration.",
+          "properties": {
+            "status": {
+              "const": "unavailable",
+              "title": "Status",
+              "type": "string"
+            },
+            "verified": {
+              "const": false,
+              "title": "Verified",
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "status",
+            "verified"
+          ],
+          "title": "UnavailableCapability",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false,
+      "properties": {
+        "schemaVersion": {
+          "const": 1,
+          "title": "Schemaversion",
+          "type": "integer"
+        },
+        "generatedAt": {
+          "format": "date-time",
+          "title": "Generatedat",
+          "type": "string"
+        },
+        "lastEventSequence": {
+          "minimum": 0,
+          "title": "Lasteventsequence",
+          "type": "integer"
+        },
+        "session": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SessionView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "cycle": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/CycleView"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "activeCycleIds": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "title": "Activecycleids",
+          "type": "array"
+        },
+        "sourceMode": {
+          "anyOf": [
+            {
+              "enum": [
+                "live",
+                "simulation"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Sourcemode"
+        },
+        "stateVersion": {
+          "minimum": 0,
+          "title": "Stateversion",
+          "type": "integer"
+        },
+        "goalVersion": {
+          "title": "Goalversion",
+          "type": "null"
+        },
+        "goal": {
+          "title": "Goal",
+          "type": "null"
+        },
+        "availableActions": {
+          "items": {
+            "maxLength": 120,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$",
+            "type": "string"
+          },
+          "maxItems": 0,
+          "title": "Availableactions",
+          "type": "array"
+        },
+        "capabilities": {
+          "$ref": "#/$defs/StationCapabilities"
+        },
+        "metrics": {
+          "additionalProperties": true,
+          "title": "Metrics",
+          "type": "object"
+        }
+      },
+      "required": [
+        "schemaVersion",
+        "generatedAt",
+        "lastEventSequence",
+        "session",
+        "cycle",
+        "activeCycleIds",
+        "sourceMode",
+        "stateVersion",
+        "goalVersion",
+        "goal",
+        "availableActions",
+        "capabilities",
+        "metrics"
+      ],
+      "title": "Snapshot",
+      "type": "object"
+    }
+  }
+}

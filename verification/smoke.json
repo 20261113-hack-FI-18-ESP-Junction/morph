@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-15T03:05:57.089546+01:00",
+  "scope": "Relocated simulation package; no network/provider/microphone/robot actions",
+  "checks": {
+    "fresh_sessions_empty": true,
+    "record_schema_available": true,
+    "browser_ui_available": true,
+    "unconfigured_providers": true,
+    "authenticated_snapshot": true,
+    "unauthenticated_snapshot_rejected": true,
+    "no_executions": true,
+    "no_sessions_seeded": true,
+    "no_events_created": true,
+    "all_copied_hashes_match": true,
+    "no_shared_credential_loader": true
+  },
+  "passed": true
+}

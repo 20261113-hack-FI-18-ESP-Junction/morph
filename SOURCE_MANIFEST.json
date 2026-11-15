@@ -1,0 +1,201 @@
+{
+  "formatVersion": 1,
+  "createdAt": "2026-11-15T03:05:10.346011+01:00",
+  "sourceWorkspace": "HachingJunction",
+  "sourceAuthority": "Current Mac source at packaging; newer Intel source still pending reconciliation",
+  "runtimeMode": "simulation",
+  "copiedFiles": [
+    {
+      "source": "station/morph_station/__init__.py",
+      "destination": "station/morph_station/__init__.py",
+      "bytes": 114,
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/__main__.py",
+      "destination": "station/morph_station/__main__.py",
+      "bytes": 4146,
+      "sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/api.py",
+      "destination": "station/morph_station/api.py",
+      "bytes": 19523,
+      "sha256": "a71a798c8ff6ee2e19107224ca72e0ea36b90e742af6da8e052b5a4918f4e261",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/client.py",
+      "destination": "station/morph_station/client.py",
+      "bytes": 1645,
+      "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/control_api.py",
+      "destination": "station/morph_station/control_api.py",
+      "bytes": 10693,
+      "sha256": "5e986f5679a99d86f5c89cd3f748a9c88cb5857ac885ba54983c838a04dbe224",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/dispatcher.py",
+      "destination": "station/morph_station/dispatcher.py",
+      "bytes": 45846,
+      "sha256": "a5507b768e3b3ba03354e4775f6ff8daeb55485ca7689f8ee84d0868c4241ec1",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/export_audit.py",
+      "destination": "station/morph_station/export_audit.py",
+      "bytes": 32263,
+      "sha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/lab.html",
+      "destination": "station/morph_station/lab.html",
+      "bytes": 40858,
+      "sha256": "c5e2df861f99b122215156b06ad9d9c6edc560d89008e1921f73464aad6973a9",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/lab.py",
+      "destination": "station/morph_station/lab.py",
+      "bytes": 1263,
+      "sha256": "2acf993d700599fdd2915bf2302f00b0384d5395b0d7ec18e1ee00d76f73b6a1",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/models.py",
+      "destination": "station/morph_station/models.py",
+      "bytes": 8654,
+      "sha256": "dbc27cf27f086622177cca75aca4db972d488cb0d9849837a6a308a02a724669",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/providers.py",
+      "destination": "station/morph_station/providers.py",
+      "bytes": 32826,
+      "sha256": "3301302b5a5d406edf08d2bc089169b89b3950991866e43d91b8f06b4eeceaa4",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/schema.sql",
+      "destination": "station/morph_station/schema.sql",
+      "bytes": 1425,
+      "sha256": "bb08938ebc14d19b3dc59f4777d20c6139b12575df3be61e17cc2e79f424b108",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/simulation.py",
+      "destination": "station/morph_station/simulation.py",
+      "bytes": 6481,
+      "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/store.py",
+      "destination": "station/morph_station/store.py",
+      "bytes": 36082,
+      "sha256": "728b1cee917815c0deb487cffd8cedf94eb98a292f7fe361d52e119ed73eae16",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/voice.py",
+      "destination": "station/morph_station/voice.py",
+      "bytes": 23613,
+      "sha256": "46bd002c8e791ba3fe4868e3876fee4b7694cec8cc6944b2293242dbdf40104b",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/morph_station/voice_api.py",
+      "destination": "station/morph_station/voice_api.py",
+      "bytes": 6473,
+      "sha256": "5136c3f29907573ce7d71887478a82fdfd9d427a84de759a02a3c944a2f90206",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/requirements.txt",
+      "destination": "station/requirements.txt",
+      "bytes": 238,
+      "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/pytest.ini",
+      "destination": "station/pytest.ini",
+      "bytes": 42,
+      "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "setup/provider-check/fixtures/red-rectangle.png",
+      "destination": "setup/provider-check/fixtures/red-rectangle.png",
+      "bytes": 1459,
+      "sha256": "9d6b56438d34dfd5a84a79768daf5a758f7b457b4b27e0f8a6cf2559fd37bccb",
+      "sourceMode": "synthetic_fixture"
+    },
+    {
+      "source": "station/tests/test_control_api.py",
+      "destination": "station/tests/test_control_api.py",
+      "bytes": 11880,
+      "sha256": "827a6d7e1c2f1b8a17bbe4f9cb5f6e3b18712683994367588e9e83c0ee2112c8",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/tests/test_provider_api.py",
+      "destination": "station/tests/test_provider_api.py",
+      "bytes": 12318,
+      "sha256": "41be612e926e7bee186a6f5794c3ec016b38cd497854aae479a1c4c570944dc6",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/tests/test_providers.py",
+      "destination": "station/tests/test_providers.py",
+      "bytes": 20050,
+      "sha256": "3dac8e5c204d18a53e62fd4f94fea76aab31d9758a031f11d5c3e84843f1ee40",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/tests/test_voice.py",
+      "destination": "station/tests/test_voice.py",
+      "bytes": 11007,
+      "sha256": "aaa6261c662e3505c0d4de4b8dbe4ebe56228c9582c59fab208ab78189aa54f0",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/tests/test_voice_api.py",
+      "destination": "station/tests/test_voice_api.py",
+      "bytes": 6720,
+      "sha256": "a0d9ead8997edb26ece767e52e3e84d827a6f47c0ae929fe9624b2cf9a217e0f",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/tests/test_dispatcher.py",
+      "destination": "station/tests/test_dispatcher.py",
+      "bytes": 32527,
+      "sha256": "23451616496edbc6141600429fd3440e425b847c76a885dbcc922133207c3d6f",
+      "sourceMode": "source_code"
+    },
+    {
+      "source": "station/tests/test_voice_browser.cjs",
+      "destination": "station/tests/test_voice_browser.cjs",
+      "bytes": 11591,
+      "sha256": "a489d6faa0b385027929bb80830f1b842b78a880ff57bf33fac16871471989dc",
+      "sourceMode": "source_code"
+    }
+  ],
+  "excluded": [
+    "credentials",
+    "environment files",
+    "runtime databases",
+    "owner transcripts and audio",
+    "node_modules",
+    "virtual environments",
+    "Intel-only source not received"
+  ],
+  "copyPolicy": "Exact bytes; copied Python source is not refactored in this handoff"
+}
