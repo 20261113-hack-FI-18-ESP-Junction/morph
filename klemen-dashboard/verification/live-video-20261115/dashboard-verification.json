@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-11-15T06:31:40.159422+00:00",
+  "scope": "Mac software; synthetic data only",
+  "commands": {
+    "npm run typecheck": {
+      "exitCode": 0,
+      "log": "typecheck.txt"
+    },
+    "npm test": {
+      "exitCode": 0,
+      "tests": 111,
+      "failures": 0,
+      "log": "dashboard-tests.txt"
+    },
+    "npm run build": {
+      "exitCode": 0,
+      "log": "build.txt"
+    },
+    "npm run demo:check": {
+      "exitCode": 0,
+      "log": "demo-check.txt",
+      "recordsSequence": 67
+    }
+  },
+  "helperSmoke": {
+    "privateConfiguration": true,
+    "rejectsExistingOutput": true,
+    "rejectsLiveSource": true,
+    "servicesStarted": false
+  },
+  "sourceFiles": [
+    {
+      "path": "LIVE_VIDEO.md",
+      "sha256": "4bffe6c220468e9733ea33535f0f4f07dffbabb35fc2127d41032c998a771bd8"
+    },
+    {
+      "path": "LOCAL_DEMO.md",
+      "sha256": "4a5c0836ea37d398f1a9025a986c1cad0e837a0ad16d3470cacc6efcfbf7fb6b"
+    },
+    {
+      "path": "dashboard/package.json",
+      "sha256": "002e3de09e05f52728c407627f547c9b885ef0d5ec31745a79ff9eb1ac7b3065"
+    },
+    {
+      "path": "dashboard/server.ts",
+      "sha256": "5656d22122152e3faa37f9eededb861ac4dd79989607303a5a6ebd5f3c8d512e"
+    },
+    {
+      "path": "dashboard/server/mediaGateway.test.ts",
+      "sha256": "5b769ac080bcd165121f6d29c3277fd619d9a8f0fe107af3ae64054801f535e0"
+    },
+    {
+      "path": "dashboard/server/mediaGateway.ts",
+      "sha256": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef"
+    },
+    {
+      "path": "dashboard/src/components/LiveInspectionView.tsx",
+      "sha256": "1521562dd44c8be853143a5e99fdae1719659121c7f307469e55d4b94ed697c2"
+    },
+    {
+      "path": "dashboard/src/components/LiveVideoPanel.css",
+      "sha256": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940"
+    },
+    {
+      "path": "dashboard/src/components/LiveVideoPanel.tsx",
+      "sha256": "a89fced433bddfd24d69775737fa3b0817931778e68cf73f926f434b6cd69115"
+    },
+    {
+      "path": "dashboard/src/media/client.ts",
+      "sha256": "c4e578eaab14f858fd34bf3c38c2d715d4b5138a01b47ab44679df6428381823"
+    },
+    {
+      "path": "dashboard/src/media/frameObserver.ts",
+      "sha256": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7"
+    },
+    {
+      "path": "dashboard/src/media/media.test.ts",
+      "sha256": "5208a8763018fa8b078af56856a11d26fe7ddcbcf4ed130d0b644011e69879a5"
+    },
+    {
+      "path": "dashboard/src/media/stats.ts",
+      "sha256": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b"
+    },
+    {
+      "path": "dashboard/src/media/types.ts",
+      "sha256": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c"
+    },
+    {
+      "path": "dashboard/tools/demoServer.ts",
+      "sha256": "0bd233afe2b553e6360a911f56d15f56dd50e4164a856b7ca1a8d33e471aa2f2"
+    },
+    {
+      "path": "tools/prepare_demo_media.py",
+      "sha256": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128"
+    },
+    {
+      "path": "tools/run_local_demo.py",
+      "sha256": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc"
+    }
+  ]
+}

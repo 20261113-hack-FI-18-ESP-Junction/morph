@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T07:51:40.652648+00:00",
+  "evidenceClass": "local-unit-tests-and-GET-only-remote-records",
+  "checkerTests": {
+    "passed": 9,
+    "nestedMismatchSubtestsPassed": 11,
+    "junit": "checker-junit.xml"
+  },
+  "readinessRead": {
+    "file": "checker-intel-simulation.json",
+    "ok": true
+  },
+  "lifecycleVerification": "owned-by-parent-task",
+  "sourceHashes": {
+    "tools/run_station.py": "bf8bd95090ea07f8696e520a96435e3e63743ffadf5c52a1ee81aa565d53d777",
+    "tools/check_station.py": "4e8df17c3efd09d05ea590fc086c238ae156a6a01f566d22c8ff54b4c371656d",
+    "tools/tests/test_station_tools.py": "dd7af94ec70f49e6ce4c594c9d11955e9b4e609210a56e5cbc558256c01d4183"
+  },
+  "servicesStartedByThisVerification": false,
+  "physicalAcceptance": "not-verified"
+}

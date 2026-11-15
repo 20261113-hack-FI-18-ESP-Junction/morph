@@ -1,0 +1,9 @@
+{
+  "sourceMode": "simulation",
+  "action": "pause and resume only this task owned synthetic source",
+  "pid": 13940,
+  "pausedAt": "2026-11-15T06:35:19.134031+00:00",
+  "resumedAt": "2026-11-15T06:35:25.139260+00:00",
+  "plannedPauseSeconds": 6,
+  "realCameraOpened": false
+}

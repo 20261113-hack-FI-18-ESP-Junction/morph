@@ -1,0 +1,17 @@
+{
+  "checkedAt": "2026-11-15T04:55:57.094903+00:00",
+  "scope": "Cleanup of the explicitly owned synthetic browser preview; no live services were stopped",
+  "dashboardPort": 3101,
+  "ownedExecSession": 87497,
+  "launcherExitCode": 0,
+  "dashboardPortClosed": true,
+  "ownedTemporaryRuntimeDirectories": 1,
+  "temporaryRuntimeRemoved": true,
+  "databaseAndCredentialDirectoryRemoved": true,
+  "lastReadyAt": "2026-11-15T04:55:17.121808+00:00",
+  "lastSavedCycleId": "local-demo:inspection-example",
+  "lastEventSequence": 67,
+  "drawerSourceHashAtStart": "e06d40be73b76f6341cc7735a7de972bbc57a04cebf1ea9931fea3805c3a3678",
+  "drawerSourceHashAtCleanup": "e06d40be73b76f6341cc7735a7de972bbc57a04cebf1ea9931fea3805c3a3678",
+  "browserVisualVerification": "Performed separately by the parent agent; screenshots are referenced in its evidence report"
+}

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "configured": true,
+  "cameraId": "synthetic-inspection",
+  "label": "Synthetic inspection preview",
+  "streamId": "inspection",
+  "sourceMode": "simulation",
+  "profile": {
+    "width": 640,
+    "height": 480,
+    "fps": 30
+  },
+  "whepPath": "/api/media/v1/whep",
+  "iceServers": [],
+  "producer": {
+    "state": "streaming",
+    "receivedAt": "2026-11-15T06:35:56.565Z",
+    "receiptAgeMs": 13.7,
+    "counters": {
+      "receivedMessages": 10078,
+      "acceptedFrames": 10078,
+      "receivedBytes": 99731884,
+      "replacedFrames": 0,
+      "invalidFrames": 0,
+      "oversizedFrames": 0,
+      "staleFrames": 1,
+      "submittedFrames": 10077,
+      "submittedBytes": 99721874,
+      "publisherStarts": 1,
+      "publisherRestarts": 0,
+      "publisherFailures": 0,
+      "writeTimeouts": 0,
+      "sourceConnections": 1,
+      "sourceReconnects": 0,
+      "sourceFailures": 0,
+      "sourceTimeouts": 0,
+      "discardedOnDisconnect": 0,
+      "encodedFramesReported": 10073,
+      "sourceCadenceSkipped": 179,
+      "publisherCadenceSkipped": 180
+    }
+  },
+  "reason": null,
+  "checkedAt": "2026-11-15T06:35:56.579Z"
+}

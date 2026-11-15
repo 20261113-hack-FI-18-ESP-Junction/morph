@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T08:10:11.399307+00:00",
+  "scope": "Mac dashboard and non-Jose integration; no physical execution",
+  "tests": {
+    "dashboard": 116,
+    "dependencyClosure": {
+      "backend": 19,
+      "relay": 18,
+      "worker": 24,
+      "sharedClient": 53
+    },
+    "launcherAndReadiness": {
+      "distinctTests": 17,
+      "launcherLifecycle": 7,
+      "finalReadiness": 10,
+      "note": "The 16-test run passed before the final missing-field guard; all ten checker tests passed after that guard. The unchanged seven launcher tests remain valid."
+    }
+  },
+  "build": {
+    "production": "passed",
+    "typeScript": "passed",
+    "knownWarning": "Existing Vite native-config compatibility warning"
+  },
+  "actualIntel": {
+    "dashboardPort": 3000,
+    "transport": "mac-mcp",
+    "stationId": "intel-main",
+    "sourceMode": "simulation",
+    "sessions": 1,
+    "cycles": 5,
+    "lastEventSequence": 50,
+    "physicalSessionsObserved": 0,
+    "confirmedCorrectCycles": 2,
+    "finishedCycles": 4,
+    "successfulAttempts": 3,
+    "finishedAttempts": 5,
+    "retryCycles": 1,
+    "source": "station-check-after-replay.json",
+    "cameraMediaConfigured": false,
+    "physicalAcceptance": "unverified"
+  },
+  "browser": {
+    "actualIntelHistory": true,
+    "retryDetails": {
+      "cycleId": "intel-bringup:retry",
+      "failedFirstAttempt": true,
+      "successfulSecondAttempt": true,
+      "frameId": "intel-bringup:retry:frame",
+      "imageIsSynthetic": true
+    },
+    "replay": {
+      "originalEventCount": 50,
+      "visitedSequences": [
+        1,
+        2
+      ],
+      "sessionTotalsUnchanged": true,
+      "postReplayCursor": 50
+    },
+    "savedHistoryJson": "browser-json-export.json",
+    "pendingAnalysisIdentitySurvivedReload": true
+  },
+  "analysisSubmission": {
+    "applicationRequestId": "a3ba92b8-1a25-4a14-8e0e-809c7a7af382",
+    "relayRequestId": "89f450e4-b854-494d-836e-d27bb937e4b2",
+    "state": "expired-unclaimed; authoritative Intel job lookup still pending",
+    "explicitPosts": 1,
+    "retries": 0,
+    "providerCallVerified": false,
+    "operatorState": "Retain the identical request; do not create a replacement before lookup."
+  },
+  "demo": {
+    "dashboardPort": 3101,
+    "smokePort": 3102,
+    "syntheticOnly": true,
+    "nativeBrowserDecodedFps": 30,
+    "configuredWidth": 640,
+    "configuredHeight": 480,
+    "codec": "video/H264",
+    "fullStackCheck": "unified-demo-check.txt",
+    "cleanup": "unified-demo-launch-and-stop.json",
+    "ownedProcessesStopped": 7,
+    "runtimeRemoved": true,
+    "sseShutdown": {
+      "openHttpStatus": 200,
+      "contentType": "text/event-stream",
+      "clientClosedOnShutdown": true,
+      "curlExitCode": 18,
+      "meaning": "The deliberately open chunked response closed during supervisor shutdown."
+    }
+  },
+  "intelPrerequisites": {
+    "handoffId": "bc26bdec-2908-4c8a-bd3d-31e7aa72c871",
+    "reportFinalizedAt": "2026-11-15T07:52:14Z",
+    "targetTestsReportedPassed": 25,
+    "physicalSourceSubscribed": false,
+    "captureOwnerConfirmationRequired": true,
+    "mediaRouteAvailable": false
+  },
+  "limits": [
+    "Jose chat/tunnel work is outside this task.",
+    "One explicit analyst request expired without a worker claim and was not repeated.",
+    "No real camera subscription, model inference, robot motion or optical latency result is established.",
+    "Screenshots contain persisted simulation or generated video.",
+    "Git publication and Notion/MCP receipts are verified separately."
+  ]
+}

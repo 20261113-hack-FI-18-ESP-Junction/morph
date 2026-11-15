@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-11-15T04:55:52.206499+00:00",
+  "scope": "Browser UI review through disposable local simulation backend; no Intel deployment, provider or physical test.",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "documentWidth": 1440
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "documentWidth": 390
+    }
+  ],
+  "checks": {
+    "liveExcludesSimulation": true,
+    "analyzedImageAndFixtureDisclosure": true,
+    "outcomeDenominatorsVisible": true,
+    "twoAttemptsAndRecoveryPreserved": true,
+    "savedHistoryHeaderAndGenerationTime": true,
+    "systemTelemetryUnavailable": true,
+    "replayEventNavigation": true,
+    "replayReviewDisabled": true,
+    "validationAcceptedShownInTrace": true,
+    "missingDurationUnavailable": true,
+    "noHorizontalPageOverflow": true,
+    "finalBrowserWarningsOrErrors": 0,
+    "temporaryViewportOverrideReset": true
+  },
+  "images": [
+    {
+      "path": "live-desktop.jpg",
+      "sha256": "4da07e5cc4cb4685bcf8ebc17dab59c7e592f5f2acd02ff57d723e6fa62ccba8"
+    },
+    {
+      "path": "quality-desktop.jpg",
+      "sha256": "e8212bc4d51897652988f0bb87910fdb2c7712c86eac550630c35123ba199bfe"
+    },
+    {
+      "path": "system-desktop.jpg",
+      "sha256": "c1df8c8eec40682b4f32b685a4bcaaef7ac4ff830308fdae79f6ff43de4b98ec"
+    },
+    {
+      "path": "live-mobile.jpg",
+      "sha256": "8e1bf6cbb22b00d86b8d291ae4c7dc26053cdc9305d6418c51b82025f294912d"
+    },
+    {
+      "path": "quality-mobile.jpg",
+      "sha256": "5e0c4aa343465ed25dfc08350946ff3c75073eb96980dff782127a6857bd4413"
+    },
+    {
+      "path": "cycle-detail-desktop.jpg",
+      "sha256": "126b77c945b94760c2a5f1a3f3de3be17c749dfa639e9c9c14baebf8e6e7528a"
+    }
+  ],
+  "notes": [
+    "No review or provider-generation button was submitted.",
+    "Controlled demo restarts loaded final source because the demo intentionally disables file watching.",
+    "Earlier snapshots retain their actual capture times and simulated fixture runs."
+  ]
+}

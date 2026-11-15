@@ -1,0 +1,44 @@
+{
+  "verifiedAt": "2026-11-15T06:37:18.824577+00:00",
+  "mode": "simulation",
+  "hardwareVerified": false,
+  "captureToDisplayLatencyMeasured": false,
+  "dashboardTests": 111,
+  "bridgeTests": 25,
+  "nativeBrowser": {
+    "profile": {
+      "width": 640,
+      "height": 480
+    },
+    "codec": "video/H264",
+    "start": "2026-11-15T06:31:08.414Z",
+    "end": "2026-11-15T06:33:37.260Z",
+    "intervalSeconds": 148.846,
+    "framesDelta": 4466,
+    "droppedFramesDelta": 0,
+    "averageFramesPerSecond": 30.004
+  },
+  "producerSoak": {
+    "seconds": 125.005,
+    "samples": 125,
+    "allStreaming": true,
+    "submittedFramesDelta": 3745,
+    "publisherFailuresDelta": 0,
+    "publisherRestartsDelta": 0,
+    "sourceConnections": 1
+  },
+  "authentication": {
+    "anonymousStatus": 401,
+    "incorrectCredentialStatus": 401
+  },
+  "replay": {
+    "previewPanels": 0,
+    "replayLabel": true,
+    "videoElements": 0
+  },
+  "mediaDependency": {
+    "version": "MediaMTX1.21.3",
+    "archiveSHA256": "bc1a0762fd18ffb413bcd81dcb9a072ac159fbd1f27e79ac6f14598aaac5ed3f",
+    "binarySHA256": "276ea50c89d8fcdf7fc72e6a6fa7fd530baf9e9a29b314d748e6595ffb00d707"
+  }
+}

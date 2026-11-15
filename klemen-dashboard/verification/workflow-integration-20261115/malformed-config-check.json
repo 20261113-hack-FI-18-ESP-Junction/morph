@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "exitCode": 1,
+  "secretSentinelAbsent": true,
+  "fixedDiagnosticPresent": true,
+  "outputBytes": 887,
+  "noServiceStarted": true
+}

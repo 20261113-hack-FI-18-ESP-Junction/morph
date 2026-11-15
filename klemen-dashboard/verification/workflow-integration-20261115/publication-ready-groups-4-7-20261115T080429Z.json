@@ -1,0 +1,429 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-15T08:04:29.407192+00:00",
+  "baselineHead": "f8759fd7ab5e64ad3f77a27ea1d190cd4b980500",
+  "observedHead": "11ee3d51cade623525c15b9de152b599ada2da33",
+  "sourceReview": "publication-remaining-groups-4-8-20261115T080303Z.json",
+  "scope": "Final exact code arrays for remaining approved source commits. Root performs Git staging/commits and separately freezes docs/evidence.",
+  "groups": [
+    {
+      "id": "04-webrtc-viewer-gateway",
+      "suggestedCommitSubject": "Add isolated WebRTC monitoring with bounded media sessions",
+      "dependsOn": [
+        "03-media-bridge"
+      ],
+      "files": [
+        {
+          "path": "klemen-dashboard/dashboard/server.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 3675,
+          "baseSha256": "319111e4e432c2b7344ab546d858f36c69def92df8907ad581c83d9cc4eb9ffe",
+          "sha256": "24e24f8a30d4f99f397397d01b758fc3e66473f686d66ef322fe317481d624db",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/localRuntime.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1106,
+          "baseSha256": null,
+          "sha256": "512638767225739061af66fa73f4278e3d11022b1c6457eaf80cbee07ae091c8",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/mediaGateway.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20679,
+          "baseSha256": null,
+          "sha256": "5b769ac080bcd165121f6d29c3277fd619d9a8f0fe107af3ae64054801f535e0",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/mediaGateway.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 23559,
+          "baseSha256": null,
+          "sha256": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/LiveVideoPanel.css",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4151,
+          "baseSha256": null,
+          "sha256": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/LiveVideoPanel.tsx",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 9417,
+          "baseSha256": null,
+          "sha256": "b34a0638583b490a4b81b857a7c7be1aa20873c3be154edabcf46c9d034e7535",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/client.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20915,
+          "baseSha256": null,
+          "sha256": "2db486e191c081524f7d08461866ba2b63ce30671f5618e156afb2ac701c3701",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/frameObserver.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2265,
+          "baseSha256": null,
+          "sha256": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/media.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 19703,
+          "baseSha256": null,
+          "sha256": "3b5553283f3599237d08a74e5f759924a6c9539cc09af6786a12f197af03235d",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/stats.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3513,
+          "baseSha256": null,
+          "sha256": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/types.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1612,
+          "baseSha256": null,
+          "sha256": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        }
+      ],
+      "fileCount": 11,
+      "readyForStaging": true
+    },
+    {
+      "id": "05-records-history-selection",
+      "suggestedCommitSubject": "Keep session selection, saved history and exports coherent",
+      "dependsOn": [
+        "01-records-contract"
+      ],
+      "files": [
+        {
+          "path": "klemen-dashboard/dashboard/src/services/m06Projection.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 15624,
+          "baseSha256": "446afde7956e065009b6c2a4416946233ae8ed676f1540280fa623d0ffb8ee95",
+          "sha256": "0f997bdcea88d0d8d49aa129f5c0ed9a60e96f8f2787d8af583ff63f42209e07",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/services/stationClient.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 14976,
+          "baseSha256": null,
+          "sha256": "ddaa59647c557fe6835aa5473fb4c3361e17d695c405a1e9f3c4c3c4bc26a5ea",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/services/stationClient.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 12623,
+          "baseSha256": "4cdbfecc99f65e11492f00c83262789611baa4d3d5767fec081b0a32cd16981d",
+          "sha256": "289a0911f5138c0aaeb9fe6452897a8bd87082fb43a2544bcb36b38648f5c3f7",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/types/morph.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 12702,
+          "baseSha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1",
+          "sha256": "1b21c2df416dea8a24822048dfe5387d715fa2ca4fec9e6012cd5e39fd9d1da8",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        }
+      ],
+      "fileCount": 4,
+      "readyForStaging": true
+    },
+    {
+      "id": "06-evidence-dashboard-ui",
+      "suggestedCommitSubject": "Refine inspection and history views around recorded evidence",
+      "dependsOn": [
+        "04-webrtc-viewer-gateway",
+        "05-records-history-selection"
+      ],
+      "files": [
+        {
+          "path": "klemen-dashboard/dashboard/src/App.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 25648,
+          "baseSha256": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+          "sha256": "35c10dba31a8e22fa06e5ecafa092c81dbb847abeca9cac3932547d3851b11fa",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/analysis/EvidenceAnalystPanel.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 33295,
+          "baseSha256": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733",
+          "sha256": "50b627ae7e3fb06926580f57f24ac89550b1c6f7d67c3bab6ff2093263e0e59c",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/CycleDetailDrawer.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 21852,
+          "baseSha256": "3a1656742079c644f2a2784daf2a7995eac6e5de94aceb0a6747a7a0a86e994d",
+          "sha256": "e06d40be73b76f6341cc7735a7de972bbc57a04cebf1ea9931fea3805c3a3678",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/DashboardPrimitives.tsx",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1896,
+          "baseSha256": null,
+          "sha256": "a7075979f8a223da968f296a97573f3840545bc44ceac53b895695143543a1c2",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 30252,
+          "baseSha256": "a30f407f28f84857e68f76420ebe1423f0a3bdfcbd665b3b953ce1c14d1a9ae6",
+          "sha256": "ca1396a28d0c1d447e10cbab97fe0dc40fbc3c07cea4275b26c78792fee9317f",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/QualityHistoryView.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 24330,
+          "baseSha256": "494cc44abef0fd6fa18b496a4d1ca7e8aa520d63a1d4f5343ecf20d4a6ef8432",
+          "sha256": "4de7a498cb2a1ffea6c723f0100525083e0461af11f7713d4608498d12a60bee",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/RobotSystemView.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 10213,
+          "baseSha256": "3864fb0b41971f6f670a41961bf9c038c309f81ad05230046d6d47b5a43f31a3",
+          "sha256": "fd17fe6fa656fe6985ee9f925701f8d2b4ae4f29cec8971142769b5f36acfd56",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/index.css",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 20169,
+          "baseSha256": "b5733685871b38142e9329d3358ee6358fb4621a3fbf35535eee990d5758a7c8",
+          "sha256": "3aae5fcf76bdc98230ccc2d3376372abf98f70d45cb12829b1165cbedc8e9bfe",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        }
+      ],
+      "fileCount": 8,
+      "readyForStaging": true
+    },
+    {
+      "id": "07-local-launchers",
+      "suggestedCommitSubject": "Add isolated station and synthetic demo launchers with readiness checks",
+      "dependsOn": [
+        "01-records-contract",
+        "03-media-bridge",
+        "04-webrtc-viewer-gateway"
+      ],
+      "files": [
+        {
+          "path": "klemen-dashboard/dashboard/package.json",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 1698,
+          "baseSha256": "30a8904780c075f147d802411ddd6f5e9369ed7bc62cd33ca1df2642c2735144",
+          "sha256": "638b0d096bad38bff7f505e76943edd5b753e89e1746a21dd1c6145a20d24e74",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/tools/checkLocalDemo.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3322,
+          "baseSha256": null,
+          "sha256": "c4457ffd3fd9603ffe44b83457d50bfaf873514f43ce43d88eebcc4bc6b72fb3",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/tools/demoServer.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3081,
+          "baseSha256": null,
+          "sha256": "89ea6fb874a91ae104986a7d45a151d8572f78e1f7d8e9280c7003c6cdf6b456",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/tools/check_station.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 13849,
+          "baseSha256": null,
+          "sha256": "bc79f0c296374914242abe734b2da9661089fa8679f89d9e6d31d46792e3ecfe",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/tools/prepare_demo_media.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3570,
+          "baseSha256": null,
+          "sha256": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/tools/run_local_demo.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 16318,
+          "baseSha256": null,
+          "sha256": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/tools/run_station.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 22177,
+          "baseSha256": null,
+          "sha256": "1543890e633532333f10048b5e91948ac45aa25ac5ea775d7bd3adf03a6e1b8f",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/tools/tests/test_station_tools.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 16491,
+          "baseSha256": null,
+          "sha256": "df34494aab1a4f8df1c1623bc3dffbb2f8995d350e0cc36e01ce9c60b48ed234",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        },
+        {
+          "path": "klemen-dashboard/tools/verify_upgrade.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1056,
+          "baseSha256": null,
+          "sha256": "17f098ebcefe7a3fd1bc8b4e8cc392179dbfc209e4ebe1e73e22a1bee9021d8f",
+          "fileMode": "0o644",
+          "freezeState": "reviewed-candidate"
+        }
+      ],
+      "fileCount": 9,
+      "readyForStaging": true
+    }
+  ],
+  "checks": {
+    "gitDiffCheck": "passed",
+    "newDependencyDeclarationDelta": false,
+    "privateArtifactCandidates": [],
+    "realCredentialPatternMatches": [],
+    "notes": [
+      "Only script commands changed in dashboard/package.json; existing package-lock.json remains applicable.",
+      "Media stays independent from record state and source/session history. Refresh/reconnect never dispatch robot motion.",
+      "Root reports final launcher suite and actual synthetic native-video lifecycle verification; this review performed no service, camera, provider or external network calls.",
+      "New station-tools verification is included in group 08 with final documentation/evidence.",
+      "Final checker now rejects omitted selectedSessionId before indexing it; new regression test is included.",
+      "Root added TCP SO_REUSEADDR and an immediate restart regression; an active occupied listener remains rejected.",
+      "Root reported 16 launcher/checker tests passing before the missing-key regression and is running the final focused readiness suite."
+    ],
+    "reviewedSyntheticCredentialMatches": [
+      {
+        "path": "klemen-dashboard/dashboard/server/mediaGateway.test.ts",
+        "line": 205,
+        "assessment": "Rejected synthetic URL userinfo in a negative configuration test; not a real credential."
+      }
+    ],
+    "committedDependencyFilesCompared": 68,
+    "committedDependencyHashDrift": [],
+    "missingSelectedSessionIdRegression": {
+      "result": {
+        "status": "invalid-contract"
+      },
+      "noNetwork": true,
+      "passed": true
+    }
+  },
+  "sincePriorInventoryChangedPaths": [
+    "klemen-dashboard/tools/check_station.py",
+    "klemen-dashboard/tools/tests/test_station_tools.py"
+  ],
+  "documentationEvidence": {
+    "group": "08-documentation-evidence",
+    "state": "pending-root-freeze",
+    "priorObservedPaths": "publication-remaining-groups-4-8-20261115T080303Z.json",
+    "additionalEvidencePaths": [
+      "klemen-dashboard/verification/station-tools-20261115/checker-intel-simulation.json",
+      "klemen-dashboard/verification/station-tools-20261115/checker-junit.xml",
+      "klemen-dashboard/verification/station-tools-20261115/checker-verification.json"
+    ],
+    "preserveHistoricalManifests": true
+  },
+  "remainingActions": [
+    "Recheck hashes and staged content before each commit.",
+    "Include both exact publication review JSON files and this summary as documentation/evidence; historical pending states are superseded for groups 04\u201307 by this final review.",
+    "Save final launcher/readiness output and freeze final documentation before group 08.",
+    "Verify remote publication separately."
+  ]
+}

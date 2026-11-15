@@ -1,0 +1,251 @@
+Browser tab: 4, Title: "Morph — Physical AI Inspection & Sorting Station", URL: "http://127.0.0.1:3101/".
+1 AXWebArea Morph — Physical AI Inspection & Sorting Station, URL: 127.0.0.1:3101/
+	2 container root
+		3 link Description: Skip to main content, Value: 127.0.0.1:3101/#main-content
+		4 container
+			5 link Description: Morph articulated-M logo MORPH PHYSICAL INTELLIGENCE, Value: 127.0.0.1:3101/#live
+			6 text WORKSPACE / 01
+			7 container Primary
+				8 button Live inspection
+					9 text 01
+					10 text Live inspection
+				11 button Robot and system
+					12 text 02
+					13 text System
+				14 button Quality and history
+					15 text 03
+					16 text History
+			17 text THE ART OF ADAPTATION Observe.
+			18 text Understand.
+			19 text Adapt.
+			20 text READ-ONLY REPLAY · SIMULATION Station evidence workspace
+			21 text Intel records · Mac analytics
+			22 button Design language ↗
+		23 container Decorative Renaissance artwork
+			24 text MORPH / JUNCTION 2026
+			25 container
+				26 text A new perspective on physical intelligence.
+		27 container
+			28 text Replay Frozen snapshot READ-ONLY REPLAY · SIMULATION  ·  SAVED SESSION TOTALS Session
+			29 pop up button (disabled, collapsed, settable) Description: Selected station session, Value: Morph deterministic simulation, Secondary Actions: Expand
+				30 menu
+					229 (disabled) Morph deterministic simulation
+			32 container View mode selector
+				33 checkbox Live, Value: 0
+				34 checkbox Simulation, Value: 0
+				35 checkbox (disabled) Replay, Help: Browse recorded events without executing tasks, Value: 1
+			36 text Monitor only   Controls on Jose’s Mac
+			37 button (disabled) Refresh records, Help: Replay preserves its frozen records
+		38 container main-content
+			230 container Read-only historical replay
+				231 heading Read-only historical replay, Value: 2
+					232 text Read-only historical replay
+				233 container
+					234 text Source:  simulation  · Saved session totals remain fixed. Playback only browses the original events; it does not execute tasks. Snapshot received  15 Nov 2026, 07:27:37  ·  Europe/Ljubljana .
+				235 button (disabled) Previous replay event
+				236 button Play replay
+				237 button Next replay event
+				238 text Event  1  of  67  · Original sequence  1
+				239 slider (settable, integer) Description: Replay event position, Value: 0
+				240 container
+					241 text session.created  ·  local-demo:session  · Revision  1  ·  15 Nov 2026, 07:26:53
+				242 button (collapsed) Original event values, Secondary Actions: Expand
+					243 text Original event values
+			244 text 01 / INSPECTION WORKSPACE
+			245 heading Live inspection., Value: 1
+				246 text Live inspection .
+			247 text Follow the object from observation to a confirmed result.
+			248 button Quality & history
+			249 text Frozen replay
+			250 text Morph deterministic simulation
+			251 text Last received 
+			252 text 15 Nov 2026, 07:27:37
+			253 text  ·
+			254 text Europe/Ljubljana
+			255 container Analyzed snapshot
+				256 heading Analyzed snapshot, Value: 2
+					257 text Analyzed snapshot
+				258 text Saved evidence
+				259 container
+					260 text Waiting for analyzed evidence The inspection image will appear when the station records a frame for this object.
+				261 text Frozen capture · exact analyzed evidence
+				262 container Evidence image layer
+					263 checkbox Image, Value: 1
+					264 checkbox (disabled) Anomaly map, Value: 0
+				265 definition list
+					266 container Frame
+						267 text Frame
+					268 text Not recorded
+					269 container Camera
+						270 text Camera
+					271 text Unavailable
+					272 container Captured
+						273 text Captured
+					274 text Unavailable
+			275 container Current object and outcome
+				276 heading Current object, Value: 2
+					277 text Current object
+				278 text No cycle READY FOR RECORDS
+				279 heading No object recorded yet., Value: 2
+					280 text No object recorded yet.
+				281 text Select a session with recorded cycles to inspect its image, classification and outcome.
+				282 definition list
+					283 container Robot control
+						284 text Robot control
+					285 text Unavailable in this view
+					286 container Source
+						287 text Source
+					288 text Saved replay
+			289 text OBJECT EVIDENCE
+			290 heading What happened, step by step., Value: 2
+				291 text What happened, step by step.
+			292 text Recorded phase:
+			293 text unavailable
+			294 container Recorded inspection, decision, execution and confirmation
+				295 container
+					296 text 01 INSPECTION
+					297 heading No inspection recorded, Value: 3
+						298 text No inspection recorded
+					299 text Inspection model unavailable
+					300 definition list
+						301 container Completed
+							302 text Completed
+						303 text Unavailable
+						304 container Inference
+							305 text Inference
+						306 text Unavailable
+				307 container
+					308 text 02 TASK DECISION
+					309 heading No task decision recorded, Value: 3
+						310 text No task decision recorded
+					311 text Decision model unavailable
+					312 definition list
+						313 container Validation
+							314 text Validation
+						315 text Not recorded
+						316 container Completed
+							317 text Completed
+						318 text Unavailable
+				319 container
+					320 text 03 EXECUTION
+					321 heading No execution recorded, Value: 3
+						322 text No execution recorded
+					323 text Learned policy unavailable
+					324 definition list
+						325 container Acknowledged
+							326 text Acknowledged
+						327 text Unavailable
+						328 container Finished
+							329 text Finished
+						330 text Unavailable
+					331 text Controller completion is recorded separately from physical confirmation.
+				332 container
+					333 text 04 CONFIRMATION
+					334 heading No confirmation recorded, Value: 3
+						335 text No confirmation recorded
+					336 text Requires camera, sensor or operator evidence.
+					337 definition list
+						338 container Observed
+							339 text Observed
+						340 text Not recorded
+						341 container Confirmed at
+							342 text Confirmed at
+						343 text Unavailable
+			344 text SESSION PERFORMANCE
+			345 heading Every attempt counts., Value: 2
+				346 text Every attempt counts.
+			347 text Saved session totals
+			348 container Session reliability metrics
+				349 text Confirmed correct cycles
+				350 container
+					351 text 50.0 %
+				352 text 3 correct / 6 finished cycles
+				353 text Successful physical attempts
+				354 container
+					355 text 57.1 %
+				356 text 4 successful / 7 finished attempts
+				357 text Detection quality
+				358 container
+					359 text 80.0 %
+				360 text 4 correct / 5 checked 6 objects total Median full cycle
+				361 container
+					362 text 20.0 s
+				363 text 6 finished cycles · includes cloud waits
+			364 text Cycle outcomes
+			365 text 3
+			366 text  correct
+			367 text 1
+			368 text  failed
+			369 text 0
+			370 text  aborted
+			371 text 2
+			372 text  unverified
+			373 text 0
+			374 text  in progress
+			375 text Attempt outcomes
+			376 text 4
+			377 text  successful
+			378 text 2
+			379 text  failed
+			380 text 0
+			381 text  aborted
+			382 text 1
+			383 text  unverified
+			384 text 0
+			385 text  in progress
+			386 text Recovery & repetition
+			387 text 1
+			388 text  first attempt
+			389 text 2
+			390 text  recovered
+			391 text 2
+			392 text  retries
+			393 text 1
+			394 text  additional inspections
+			395 text Streak 
+			396 text 1
+			397 text  · best
+			398 text 2
+			399 container
+				400 heading Recorded model observation, Value: 2
+					401 text Recorded model observation
+				402 text Model output No visual model observation recorded for this object. Frame-linked observations will appear here.
+				403 button (collapsed) Inspect model payloads, Secondary Actions: Expand
+			404 container
+				405 heading Timing for this object, Value: 2
+					406 text Timing for this object
+				407 definition list
+					408 container Full cycle
+						409 text Full cycle
+					410 text Unavailable
+					411 container Inspection inference
+						412 text Inspection inference
+					413 text Unavailable
+					414 container Nemotron / Gemini
+						415 text Nemotron / Gemini
+					416 container
+						417 text Unavailable  / Unavailable
+					418 container Motion / verification
+						419 text Motion / verification
+					420 container
+						421 text Unavailable  / Unavailable
+			422 container
+				423 heading Recent recorded activity, Value: 2
+					424 text Recent recorded activity
+				425 button Full history
+				426 text 07:26:53 cycle.updated · local-demo:inspection-example
+				427 button Open cycle local-demo:inspection-example
+				428 text 07:26:53 attempt.updated · local-demo:inspection-example:attempt-2
+				429 button Open cycle local-demo:inspection-example
+				430 text 07:26:53 confirmation.created · local-demo:inspection-example:confirmation
+				431 button Open cycle local-demo:inspection-example
+				432 text 07:26:53 execution.created · local-demo:inspection-example:execution
+				433 button Open cycle local-demo:inspection-example
+			434 text RECORDED OPERATOR INPUT
+			435 text Inspect and sort the synthetic demonstration brick.
+			436 text Active goal:
+			437 text unavailable
+		227 container
+			228 text MONITOR ONLY · INTEL RECORDS · AUDITABLE OUTCOMES Displayed times: Europe/Ljubljana (UTC+01:00)
+
+The focused UI element is 8 button Live inspection

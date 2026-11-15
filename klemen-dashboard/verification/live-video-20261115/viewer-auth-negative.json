@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-15T06:26:07.499976+00:00",
+  "sourceMode": "simulation",
+  "requests": [
+    {
+      "viewer": "anonymous",
+      "httpStatus": 401
+    },
+    {
+      "viewer": "incorrect",
+      "httpStatus": 401
+    }
+  ]
+}

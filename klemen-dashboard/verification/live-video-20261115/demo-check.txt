@@ -1,0 +1,21 @@
+
+> morph-station-dashboard@0.0.0 demo:check
+> tsx tools/checkLocalDemo.ts
+
+{
+  "status": "passed",
+  "sourceMode": "simulation",
+  "checks": [
+    "actual dashboard contract",
+    "complete current evidence",
+    "synthetic image bytes",
+    "fixture observation projected",
+    "live mode excludes simulation",
+    "no export on live refresh",
+    "history export on demand",
+    "frozen replay preserves records and metrics"
+  ],
+  "requests": 13,
+  "exports": 2,
+  "lastEventSequence": 67
+}

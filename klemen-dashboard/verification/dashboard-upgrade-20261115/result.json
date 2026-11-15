@@ -1,0 +1,61 @@
+{
+  "checkedAt": "2026-11-15T04:55:52.206499+00:00",
+  "scope": "Owner-authorized dashboard source upgrade; local software and explicitly simulated browser checks.",
+  "frontend": {
+    "dashboard": {
+      "passed": 76,
+      "failed": 0,
+      "skipped": 0,
+      "junit": "dashboard-tests.xml"
+    },
+    "client": {
+      "passed": 53,
+      "failed": 0,
+      "skipped": 0,
+      "junit": "client-tests.xml"
+    }
+  },
+  "backend": {
+    "passed": 149,
+    "failed": 0,
+    "evidence": "../intel-runtime/source/common/HachingJunction/station/verification/dashboard-read-20261115/verification.json"
+  },
+  "communication": {
+    "passed": 67,
+    "failed": 0,
+    "evidence": "same backend verification report"
+  },
+  "changedLayerTestsPassed": 345,
+  "sharedClientBuild": {
+    "exitCode": 0,
+    "log": "shared-client-build.log"
+  },
+  "dashboardTypecheck": {
+    "exitCode": 0,
+    "log": "typecheck.log"
+  },
+  "productionBuild": {
+    "exitCode": 0,
+    "log": "build.log"
+  },
+  "diffCheck": {
+    "exitCode": 0
+  },
+  "browser": "browser-review.json",
+  "localDemo": "../local-demo-20261115/result.json",
+  "deploymentVerified": false,
+  "physicalVerified": false,
+  "providerCallsMade": false,
+  "limitations": [
+    "Actual Intel API/worker/MCP adoption and roundtrip remain open.",
+    "Live camera, phase, joint/compute/training producers and exact motion/verification timings remain unavailable.",
+    "The existing 4 MiB transport limit applies; large complete histories still need a paging/chunked-export extension."
+  ],
+  "provenance": "Original manifests preserved; separate source-hashes.json records this upgrade.",
+  "sourceFilesVerified": 39,
+  "documentationLinksVerified": 49,
+  "browserPreviewCleanup": "../local-demo-20261115/browser-preview-cleanup.json",
+  "verificationNotes": [
+    "Upgrade inventory helper initially used Path.is_relative_to, unavailable in the system Python3.8; replaced with a compatible parent-path check before final verification."
+  ]
+}

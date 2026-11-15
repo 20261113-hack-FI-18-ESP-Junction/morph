@@ -1,0 +1,1816 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-15T07:48:19.525458+00:00",
+  "repository": "github/morph",
+  "branch": "main",
+  "baselineHead": "cb753e9c60ad570b500ce933d10b989f6546c54a",
+  "reviewState": "partial-freeze; root must finalize pending paths before committing",
+  "sourcePolicy": [
+    "AGENTS.md (workspace)",
+    "context/SOURCE_SYNC.md (workspace)",
+    "AGENTS.md (repository)",
+    "communication/context/SOURCE_SYNC.md",
+    "klemen-dashboard/AGENTS.md"
+  ],
+  "scope": "Existing accepted Mac working-tree implementation only. No incoming Intel source application, commits, pushes or service changes were performed by this review.",
+  "groups": [
+    {
+      "id": "01-records-contract",
+      "suggestedCommitSubject": "Add coherent bounded dashboard reads across the API, relay and client",
+      "dependsOn": [],
+      "purpose": "Versioned compact read, one SQLite snapshot, bounded relay queries, current/focused detail, discovery fallback and local regression evidence.",
+      "files": [
+        {
+          "path": "communication/context_mcp/station_relay.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 18090,
+          "baseSha256": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
+          "sha256": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "communication/context_mcp/station_worker.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 25015,
+          "baseSha256": "f1f93b8f828d06a9e532b9fa3547d29d0e7128b03925ea313ee16a3f749dc999",
+          "sha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "communication/context_mcp/tests/test_station_relay.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 15240,
+          "baseSha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
+          "sha256": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "communication/context_mcp/tests/test_station_worker.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 19452,
+          "baseSha256": "8d57c7ff84cde00ab7c67a728305af8927be9195e076495514bc27de5872294b",
+          "sha256": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/INTEL_DASHBOARD_API.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8392,
+          "baseSha256": null,
+          "sha256": "e896e7dbed64f7552f6349d28843688709ea4c68487ba26196aa138703a1f41a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 23313,
+          "baseSha256": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+          "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/morph_station/store.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 48605,
+          "baseSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+          "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12063,
+          "baseSha256": null,
+          "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/verification/dashboard-read-20261115/backend-tests.xml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 19767,
+          "baseSha256": null,
+          "sha256": "783be353bc8b81cab10f1350029013e774e966998084034f5b2e17a1d8310246",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/verification/dashboard-read-20261115/verification.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2497,
+          "baseSha256": null,
+          "sha256": "7bfb11faad576a687f87c2e672d690a24b6c8421e8c33251dbb27a1d190d3a7f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/stationProxy.mcp.test.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 8763,
+          "baseSha256": "7f161c4c881a3a3ce71c6f3ecde2f21e20cd58927396991f41a41b546100752e",
+          "sha256": "eb1f3c00b2a65721ff9e9da64a69ff6944b2d7d3302eba7deca462163747e708",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/stationProxy.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 14604,
+          "baseSha256": "bb06ee0d874d99256a8bde46d1d5b03608f3a6782df849b8674d1167232abec8",
+          "sha256": "47aba1a3e5a9221309702b67aa9c6dc7fdec67e991628d5be857cb988f1e7074",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/src/client.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 38651,
+          "baseSha256": "e38b852fc62324c58eaf779d1c3640e33b976e424c14e76d4b5227e2aa3de08a",
+          "sha256": "bdc863a4a53ae2a773a1a5e559f03cfcb98339ba4da8719f3e905a41f83261f4",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/src/store.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 16185,
+          "baseSha256": "4c4f195b9ac146265e3ffbdcecf045111e27c78c2ac51dfb34c7f8025b9f531c",
+          "sha256": "654c2e4701e4da9647004647cf6bca89442a8e7e0026ae7d94bbd2806c74da23",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/src/types.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 10617,
+          "baseSha256": "e0249f9c004d00535a8feafd6566a39b08970e92b50e8a27b49967283a6fa483",
+          "sha256": "da84f38942eeb2cbbb00de51950b5725df0c8baafa7682e28fa50a055017928c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/tests/dashboard.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 7409,
+          "baseSha256": null,
+          "sha256": "10be6a916b95aa31da7966dacb038b97d3dfa0d9608b075d4f8883be70b195d8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/tests/store.test.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 12968,
+          "baseSha256": "9b708f31bbda2fdfbac2e9aaa7b54cb94ec8c3dcf24f06da602c78f52e331e2f",
+          "sha256": "2d2eb69f76bb110b3976ac722cf0a36ef4764160ec53ef5df5a60f79f89b3c99",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-backend-dashboard.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 99,
+          "baseSha256": null,
+          "sha256": "db3bae3dd10bb9a07e702b9009aa83e80b1dd6d1bd836972be9372bd1ae0b087",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-backend-dashboard.xml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2594,
+          "baseSha256": null,
+          "sha256": "9073e855a913052451fc01ba1e8881c8295441a7fc5ec81a0665420fdddc819f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-relay.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8593,
+          "baseSha256": null,
+          "sha256": "708cd981e53017a1bfe96db9fa1fdfa78aa688b4511f52d358f31aa93c68024a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4824,
+          "baseSha256": null,
+          "sha256": "4c6d625c2e27a9680eb1ee26cc0ccb6c6af42c0dc0e30c1f65a7eb5fe5aa9f53",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-station-client.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 5105,
+          "baseSha256": null,
+          "sha256": "5e51c127991495643008d5eb96bfcd39e131f2558796e9c2f56622a7c3425eae",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-worker.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3639,
+          "baseSha256": null,
+          "sha256": "0666ce75a829936856c1544944df6cc67b29aac73eb98b731dba3856a4b3927b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        }
+      ],
+      "fileCount": 23,
+      "pendingCount": 0
+    },
+    {
+      "id": "02-shared-chat-style",
+      "suggestedCommitSubject": "Add portable Morph chat styles and licensed assets",
+      "dependsOn": [],
+      "purpose": "Self-contained CSS, fonts, licenses, original branding, static preview and visual verification. The source-reference hashes refer to the reviewed dashboard style snapshot.",
+      "files": [
+        {
+          "path": "shared-ui/README.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6809,
+          "baseSha256": null,
+          "sha256": "525905a909af8af363f71337d5f07e5466abda603c163a137b20768b6078ef73",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/STYLE_MANIFEST.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2538,
+          "baseSha256": null,
+          "sha256": "03191a03ac2ff734c5792d88931757677d0e598c938ffdc684dedeea8d0f35f1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/VERIFICATION.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 977,
+          "baseSha256": null,
+          "sha256": "5037f9868a85eaff7bb11222638e8a36ee24784be164135ad81c216d28f70b48",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/assets/morph-mark.svg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 480,
+          "baseSha256": null,
+          "sha256": "854b67cdcb60ee04af80e4c531d70fdaf5dd314e411452160e6b70fea0f8baf4",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/assets/orbital.svg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 805,
+          "baseSha256": null,
+          "sha256": "7a3f6055540cbf307bb78e580171e84dfc91bef3242c829af1cbf454631a47d5",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/cormorant-italic.ttf",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 715644,
+          "baseSha256": null,
+          "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/cormorantgaramond-OFL.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4387,
+          "baseSha256": null,
+          "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/inter-OFL.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4377,
+          "baseSha256": null,
+          "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/inter.ttf",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 876576,
+          "baseSha256": null,
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/space-mono.ttf",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 99356,
+          "baseSha256": null,
+          "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/spacemono-OFL.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4392,
+          "baseSha256": null,
+          "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/morph-chat.css",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 18402,
+          "baseSha256": null,
+          "sha256": "61bd7e494d66968d5ab9e6c4d3a6d460af8764a3968aa9f0d730726e4f3104c1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/preview-desktop.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 101985,
+          "baseSha256": null,
+          "sha256": "bbc97f35e89a3e2c88a5180bc6ec2835b54873436de991d591fd3130a56bf2ac",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/preview-mobile.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 89605,
+          "baseSha256": null,
+          "sha256": "fd583c40ad37cb56fc4fd0e4b81ba50c105116f85181771a8fadc31c15d0ccbe",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/preview.html",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8121,
+          "baseSha256": null,
+          "sha256": "7533496361c9439ffc84b09ab7abd8134e8c4d7c5e0b1b6a03d7b850f1f3ccf0",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        }
+      ],
+      "fileCount": 15,
+      "pendingCount": 0
+    },
+    {
+      "id": "03-media-bridge",
+      "suggestedCommitSubject": "Add a bounded Studio JPEG to H.264 media bridge",
+      "dependsOn": [],
+      "purpose": "Single source receiver, bounded latest-frame pipeline, private synthetic setup, explicit MediaMTX topology and preserved offline/RTSP verification.",
+      "files": [
+        {
+          "path": "intel-runtime/media-bridge/.gitignore",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 84,
+          "baseSha256": null,
+          "sha256": "316461e660d85aeb8a58758527acdfb9b402ac441b030dfe98a9cab6c60d49de",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/README.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20882,
+          "baseSha256": null,
+          "sha256": "262f984ff3b306e5c7bd01ec046ba00b76f9026f8b72e3986c0bf4dcdf811ec2",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/examples/mediamtx-local.yml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 993,
+          "baseSha256": null,
+          "sha256": "cebfaee2dd9865f89bd5b83fb6b2eabb34d9602b49f7e67959d1679c7aadbbe3",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/examples/studio.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 797,
+          "baseSha256": null,
+          "sha256": "1ddacb0f815eead6358a53f9127844b12cbf6e90d86c149ae164014bd577e17d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/examples/synthetic.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 611,
+          "baseSha256": null,
+          "sha256": "2142f4267688d83439989e07e86a54f604bfa800b7a5e459ee0bd7898078ec6b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 99,
+          "baseSha256": null,
+          "sha256": "73e61505373677432bd4b07e86856eb6bb7ebc95353fef4b851d75d14633b2bc",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6245,
+          "baseSha256": null,
+          "sha256": "6125f687251fb67f147fe3bec3f8e5ec8b855c6198f3e356de0cbd20d8c279c1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/config.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 9232,
+          "baseSha256": null,
+          "sha256": "64da2b5419925014744bd2520cd1327048615cf308ec5f3a856257800e2abbc0",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/frames.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6865,
+          "baseSha256": null,
+          "sha256": "9a9f8ee32ef1b2afcb7946ce858ad8360fb8e328620af9e87bbe1a77ac997c75",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3402,
+          "baseSha256": null,
+          "sha256": "93e0af504ee7f6a37861f9754b60e4da175600f15979425ea5db751a06243c3b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 10003,
+          "baseSha256": null,
+          "sha256": "ba7e0a28f8b557a9bbad332ef25b478bf92ee18758dbe8d11ee76a8660dc12d7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/source.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4115,
+          "baseSha256": null,
+          "sha256": "d07e701db45269ed397e8d37bc73fe51caaa24e075128b8e6e9c0172da102982",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/requirements.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 32,
+          "baseSha256": null,
+          "sha256": "878ac09be077c1635192c226b6de45a3bac015f90e5d4b84b85ee67e4e705a93",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tests/test_bridge.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20810,
+          "baseSha256": null,
+          "sha256": "1a242920d07e845f07fa04f548e5706b8d0eb9a63560fe932799cac3efda6d42",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/prepare_synthetic.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2160,
+          "baseSha256": null,
+          "sha256": "7bc45c5256c20b9c336d15eae3d60bd0c0e2d8802ac50be124820557119e9dd5",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/read_status.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 871,
+          "baseSha256": null,
+          "sha256": "49d3f3b34f6be429ee265501a144641b1a97170aef7124bde5cc888edecad945",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/verify_offline.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6576,
+          "baseSha256": null,
+          "sha256": "33b895e918d42ac92dcf90305f55872b9568c39840fb2573f1871bc5e5d63da3",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/verify_rtsp.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8841,
+          "baseSha256": null,
+          "sha256": "8e01137871b64a6d95a0cedbcc5b230f8cf2b6436a0725fded10277744031a78",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-01/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2450,
+          "baseSha256": null,
+          "sha256": "85df470f3880056b4b14c50601f52b6cd3b537e22be3456950061f888d8ceba9",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-02/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3181,
+          "baseSha256": null,
+          "sha256": "17532361b505cf604e769afa6a4ff16bc6562cdd854ad90dc7f6d72fb7b5452b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-03/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3180,
+          "baseSha256": null,
+          "sha256": "a3309a6d432fb132eb4bde945fe23ba63ae3cb7c9c1840026d85cc2f5d474b23",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-04/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3281,
+          "baseSha256": null,
+          "sha256": "dccc6583e975c1bc52f810580b69e8f74846bbe47f6b73b2271b99e8124efda7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-05/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3372,
+          "baseSha256": null,
+          "sha256": "667dbdbb6d8ba94ff1c2e1a789f86e9fc88cc67c8027669b372a9ea01dd17f1c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-06/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3393,
+          "baseSha256": null,
+          "sha256": "31169ac6bfe5f9ba00d19204ad45dfdf95dd82d24811a43224857dfda871ac9e",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-07/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3390,
+          "baseSha256": null,
+          "sha256": "6c9b4bfed4dc564416f8d597f99683d5bb7377fce58ce70f625bc13c77103603",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 45989,
+          "baseSha256": null,
+          "sha256": "f7a717896552ef44b6c6c070cee67acf60fccbf1a947ac80aca43c612e253aa1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-jitter-after-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12109,
+          "baseSha256": null,
+          "sha256": "c45972be8a102fca96c53923abff668d8b5cc56dbf35810580d88ff9b4d59013",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-jitter-before-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12751,
+          "baseSha256": null,
+          "sha256": "b437d91e7fc45a6e93875b090aa765615d9666502c630ad23d455b6831d3bec8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-jitter-filter-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 10847,
+          "baseSha256": null,
+          "sha256": "7d799a8e4390c362860e1ec9ae2bf00acc0ae90bbc6b5c626796394563376f59",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 178874,
+          "baseSha256": null,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        }
+      ],
+      "fileCount": 30,
+      "pendingCount": 0
+    },
+    {
+      "id": "04-dashboard-workflow",
+      "suggestedCommitSubject": "Integrate record views, independent video and explicit local launchers",
+      "dependsOn": [
+        "01-records-contract",
+        "03-media-bridge"
+      ],
+      "purpose": "Object/evidence UI, saved history and replay, source/session selection, WebRTC receiver/gateway, isolated launchers, runtime metadata, operator guidance and verification.",
+      "files": [
+        {
+          "path": "README.md",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 10509,
+          "baseSha256": "af080db8fc70dbb72e8f0ffc1eadb9831ac6eee9e53637882dd1c412a589b8c1",
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "c5995ecba9271cde4f71113648acb5a72448d53bc01429a953e705f8aa06a001",
+          "pendingReasons": [
+            "Root is still editing the working-system guide/README; await explicit freeze."
+          ]
+        },
+        {
+          "path": "WORKING_SYSTEM.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 7841,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "b30fdc36d69b90b82fe35d11080300fdba51e0f4ec2ebbe3d4a3aa7e2eb4869a",
+          "pendingReasons": [
+            "Root is still editing the working-system guide/README; await explicit freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/DASHBOARD_UPGRADE.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6570,
+          "baseSha256": null,
+          "sha256": "6abdc12863cdb29a4d2c695a0bf83c6acd365dfe4366d06ace9317f555f68401",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/INTEL_REQUIREMENTS.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 21329,
+          "baseSha256": null,
+          "sha256": "edbaa63b597a434af9b140b7327b500356aa9309933e4747703ed0e4ee14b3cc",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/LIVE_VIDEO.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 9949,
+          "baseSha256": null,
+          "sha256": "06460550ba72c1708664d79bb8d69934719c45ffc27f6366ec57ae34d8ead5aa",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/LOCAL_DEMO.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 5235,
+          "baseSha256": null,
+          "sha256": "d1f02f61e470b0d848f0ec9c22c6eb6646df6c01726c1732fa00c02246af7656",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/README.md",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 10973,
+          "baseSha256": "0929941dc3007ebcd700db17a6004710530ac19621d767b1c1733f2f6e713e2a",
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "49b98e12d1a1b3ebe1ab84d2387ec0d88e0364547f69e089e643755b54890775",
+          "pendingReasons": [
+            "Root is still editing the working-system guide/README; await explicit freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/VERIFICATION.md",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 9452,
+          "baseSha256": "f8374fa8ee026071b96b5d678023281283cd30dedac677f188f9cda0bd113f95",
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "8291f588b9e88afaf7df7d888dff576fc8a6fac82da349a00f8a7a30724c41e1",
+          "pendingReasons": [
+            "Root requested final copy changes remain unfrozen until explicit freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/dashboard/IMPLEMENTATION_STATUS.md",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 3561,
+          "baseSha256": "9fd0b8a60e98dabce8e18a88885bd590c874990d6373e6f7b1a0ff333d9b2d38",
+          "sha256": "dd5f6d6207b4bde67591fc46468efb7208ddf3a7c7147822e99d5a0fe1fc33f7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/package.json",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 1698,
+          "baseSha256": "30a8904780c075f147d802411ddd6f5e9369ed7bc62cd33ca1df2642c2735144",
+          "sha256": "638b0d096bad38bff7f505e76943edd5b753e89e1746a21dd1c6145a20d24e74",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 3675,
+          "baseSha256": "319111e4e432c2b7344ab546d858f36c69def92df8907ad581c83d9cc4eb9ffe",
+          "sha256": "24e24f8a30d4f99f397397d01b758fc3e66473f686d66ef322fe317481d624db",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/localRuntime.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1106,
+          "baseSha256": null,
+          "sha256": "512638767225739061af66fa73f4278e3d11022b1c6457eaf80cbee07ae091c8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/mediaGateway.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20679,
+          "baseSha256": null,
+          "sha256": "5b769ac080bcd165121f6d29c3277fd619d9a8f0fe107af3ae64054801f535e0",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/mediaGateway.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 23559,
+          "baseSha256": null,
+          "sha256": "5253c21f02bbae5cfd093558ca56f6bb57af089f4d8e21ae551a876c40d499ef",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/App.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 25648,
+          "baseSha256": "979e839a6931ef1cc1969a6d51cbfb990f79132bec64e702adf42174b386e81f",
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "35c10dba31a8e22fa06e5ecafa092c81dbb847abeca9cac3932547d3851b11fa",
+          "pendingReasons": [
+            "Root requested final copy changes remain unfrozen until explicit freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/analysis/EvidenceAnalystPanel.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 33295,
+          "baseSha256": "221b08feebcb791136d23e31a4999cdf0d1ce4f47aa111a591cb91148fe4f733",
+          "sha256": "50b627ae7e3fb06926580f57f24ac89550b1c6f7d67c3bab6ff2093263e0e59c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/CycleDetailDrawer.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 21852,
+          "baseSha256": "3a1656742079c644f2a2784daf2a7995eac6e5de94aceb0a6747a7a0a86e994d",
+          "sha256": "e06d40be73b76f6341cc7735a7de972bbc57a04cebf1ea9931fea3805c3a3678",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/DashboardPrimitives.tsx",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1896,
+          "baseSha256": null,
+          "sha256": "a7075979f8a223da968f296a97573f3840545bc44ceac53b895695143543a1c2",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 30252,
+          "baseSha256": "a30f407f28f84857e68f76420ebe1423f0a3bdfcbd665b3b953ce1c14d1a9ae6",
+          "sha256": "ca1396a28d0c1d447e10cbab97fe0dc40fbc3c07cea4275b26c78792fee9317f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/LiveVideoPanel.css",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4151,
+          "baseSha256": null,
+          "sha256": "2923191b553fba666e38c6ee0849f90ac80f792fd9338ad5c41bf52e32580940",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/LiveVideoPanel.tsx",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 9417,
+          "baseSha256": null,
+          "sha256": "b34a0638583b490a4b81b857a7c7be1aa20873c3be154edabcf46c9d034e7535",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/QualityHistoryView.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 24330,
+          "baseSha256": "494cc44abef0fd6fa18b496a4d1ca7e8aa520d63a1d4f5343ecf20d4a6ef8432",
+          "sha256": "4de7a498cb2a1ffea6c723f0100525083e0461af11f7713d4608498d12a60bee",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/components/RobotSystemView.tsx",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 10213,
+          "baseSha256": "3864fb0b41971f6f670a41961bf9c038c309f81ad05230046d6d47b5a43f31a3",
+          "sha256": "fd17fe6fa656fe6985ee9f925701f8d2b4ae4f29cec8971142769b5f36acfd56",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/index.css",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 20169,
+          "baseSha256": "b5733685871b38142e9329d3358ee6358fb4621a3fbf35535eee990d5758a7c8",
+          "sha256": "3aae5fcf76bdc98230ccc2d3376372abf98f70d45cb12829b1165cbedc8e9bfe",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/client.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20915,
+          "baseSha256": null,
+          "sha256": "2db486e191c081524f7d08461866ba2b63ce30671f5618e156afb2ac701c3701",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/frameObserver.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2265,
+          "baseSha256": null,
+          "sha256": "8e35a98be48e56631b4fef3b27c8d4082382c3c9158d32098743255c1ac32cf7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/media.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 19703,
+          "baseSha256": null,
+          "sha256": "3b5553283f3599237d08a74e5f759924a6c9539cc09af6786a12f197af03235d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/stats.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3513,
+          "baseSha256": null,
+          "sha256": "1bc5f6d17201c0f6799e681ffdd0d382ffe95cfb74f47b7ef3677aab0aa9e95b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/media/types.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1612,
+          "baseSha256": null,
+          "sha256": "c5e9b1e75f2bfca9ab251fb7124dc60ef3e453c156cb33a338dd608b83b33f5c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/services/m06Projection.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 15624,
+          "baseSha256": "446afde7956e065009b6c2a4416946233ae8ed676f1540280fa623d0ffb8ee95",
+          "sha256": "0f997bdcea88d0d8d49aa129f5c0ed9a60e96f8f2787d8af583ff63f42209e07",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/services/stationClient.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 14976,
+          "baseSha256": null,
+          "sha256": "ddaa59647c557fe6835aa5473fb4c3361e17d695c405a1e9f3c4c3c4bc26a5ea",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/services/stationClient.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 12623,
+          "baseSha256": "4cdbfecc99f65e11492f00c83262789611baa4d3d5767fec081b0a32cd16981d",
+          "sha256": "289a0911f5138c0aaeb9fe6452897a8bd87082fb43a2544bcb36b38648f5c3f7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/src/types/morph.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 12702,
+          "baseSha256": "17f6951bafae19a899be8008d994cbc2e3918806198c58de568cef4af21935d1",
+          "sha256": "1b21c2df416dea8a24822048dfe5387d715fa2ca4fec9e6012cd5e39fd9d1da8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/tools/checkLocalDemo.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3322,
+          "baseSha256": null,
+          "sha256": "c4457ffd3fd9603ffe44b83457d50bfaf873514f43ce43d88eebcc4bc6b72fb3",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/tools/demoServer.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3081,
+          "baseSha256": null,
+          "sha256": "89ea6fb874a91ae104986a7d45a151d8572f78e1f7d8e9280c7003c6cdf6b456",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/tools/check_station.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 10495,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "a3f708cdfc5375cf45d968af6040ae1e73c6fd1cee133315a97137e5f68688c4",
+          "pendingReasons": [
+            "Launcher agent is still changing this source/test; await its explicit freeze and final tests."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/tools/prepare_demo_media.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3570,
+          "baseSha256": null,
+          "sha256": "0a6ba79d20e60a2250c0d823a17a529d6d2d800cb4e9019752141c99367d9128",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/tools/run_local_demo.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 16318,
+          "baseSha256": null,
+          "sha256": "e4a4d24c132d03172bbf491cb36958d92605a825b380ac98aa1a1059e7fe68fc",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/tools/run_station.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 22086,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "bf8bd95090ea07f8696e520a96435e3e63743ffadf5c52a1ee81aa565d53d777",
+          "pendingReasons": [
+            "Launcher agent is still changing this source/test; await its explicit freeze and final tests."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/tools/tests/test_station_tools.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12823,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "d172f6e886b9da70c7e1a76a3f45abdcb72efba1b120e544fa861a938914a276",
+          "pendingReasons": [
+            "Launcher agent is still changing this source/test; await its explicit freeze and final tests."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/tools/verify_upgrade.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1056,
+          "baseSha256": null,
+          "sha256": "17f098ebcefe7a3fd1bc8b4e8cc392179dbfc209e4ebe1e73e22a1bee9021d8f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/browser-review.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1999,
+          "baseSha256": null,
+          "sha256": "30d064e3cbbc4a00650d26ddd20159e69d6a2c8fc3dc8107f8f58360536bf86d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/client-tests.xml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 15297,
+          "baseSha256": null,
+          "sha256": "54549acee2999c6d539d58b575a7d7db66462ab4c0993077ed566cd703b9959f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/cycle-detail-desktop.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 93646,
+          "baseSha256": null,
+          "sha256": "126b77c945b94760c2a5f1a3f3de3be17c749dfa639e9c9c14baebf8e6e7528a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/dashboard-tests.xml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 22643,
+          "baseSha256": null,
+          "sha256": "0e32f44851929bc82e4551ca73496263c8e9633b5d8ea266a6396c57eb26cd92",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/documentation-links.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 89,
+          "baseSha256": null,
+          "sha256": "ed1642814b8d8683f47e7086d0ed06272c43e1a9ab5766b9fffd5d34e6faf51c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/live-desktop.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 85199,
+          "baseSha256": null,
+          "sha256": "4da07e5cc4cb4685bcf8ebc17dab59c7e592f5f2acd02ff57d723e6fa62ccba8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/live-mobile.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 35902,
+          "baseSha256": null,
+          "sha256": "8e1bf6cbb22b00d86b8d291ae4c7dc26053cdc9305d6418c51b82025f294912d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/quality-desktop.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 264787,
+          "baseSha256": null,
+          "sha256": "e8212bc4d51897652988f0bb87910fdb2c7712c86eac550630c35123ba199bfe",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/quality-mobile.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 39426,
+          "baseSha256": null,
+          "sha256": "5e0c4aa343465ed25dfc08350946ff3c75073eb96980dff782127a6857bd4413",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1993,
+          "baseSha256": null,
+          "sha256": "ec91f10b9530fc24e236333e5ab92361b3db155cd18656ed3c98da112ac3f787",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/source-hashes.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 7540,
+          "baseSha256": null,
+          "sha256": "8c385bfb929f325c1e65c4abe8f3fcbe153bdf61b06117b7c061e8b35f43e2c7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/dashboard-upgrade-20261115/system-desktop.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 134726,
+          "baseSha256": null,
+          "sha256": "c1df8c8eec40682b4f32b685a4bcaaef7ac4ff830308fdae79f6ff43de4b98ec",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/README.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 5295,
+          "baseSha256": null,
+          "sha256": "9ecbe89491082d1e259b5e8e659799047ae013c90a7b99eaf562f189667e466b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/RESULT.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1160,
+          "baseSha256": null,
+          "sha256": "71a9de814966b2e091efd2e3214df6eec04e4101993ace659d2a9e26d3273c81",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/build.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 919,
+          "baseSha256": null,
+          "sha256": "cb55ca707da4d2289a2529dcfde488b9ad59ec1d6f505ceddf56fdf7881b8834",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/coarse-clock-producer-final.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1272,
+          "baseSha256": null,
+          "sha256": "cb12f22c465df8a70338af08f3a0a2078c885ca763d75945e4fd83e715b5eb42",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/dashboard-tests.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 11480,
+          "baseSha256": null,
+          "sha256": "56b1d893699570497417271cd5542dcae14956798808a1637bef19b04fbcef9a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/dashboard-verification.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3135,
+          "baseSha256": null,
+          "sha256": "68a2255d634bdb1416d8e2209aa53126deeceeb7a88b1518f071040903b3dbcf",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/dashboard-video.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 58172,
+          "baseSha256": null,
+          "sha256": "bd8f771e70f90584be6860a2df96473d28da5454bd3adbe886d14d15e55faf9e",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/demo-check.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 494,
+          "baseSha256": null,
+          "sha256": "f4c713c77bb6eb8736cd34abea8c2671954c09ca5bb6c84691f6ee998004a145",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-after-pause-ui.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 481,
+          "baseSha256": null,
+          "sha256": "67bac23ead377f5fa4a74bedbdacb144fd1ab843ad8919bf5e58fc0b62eb314e",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-after-pause.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 57148,
+          "baseSha256": null,
+          "sha256": "983ff062f354d45e0830778607653f83c77cd86c766b8ce7c47f1aecabf3c287",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-browser-end.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 914,
+          "baseSha256": null,
+          "sha256": "c3ee512c11b3500025b756ae147bfdf8a4f49e3e908fa1170e6c8fbd3bbed3d0",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-browser-start.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 915,
+          "baseSha256": null,
+          "sha256": "4757211d9adeac1f662897ff36405d4818bea516f7f1579d111c2526caa5b673",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-browser-start.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 702,
+          "baseSha256": null,
+          "sha256": "f04eddadb60b7c012c4081f48c76984b99ab0beaa42b597552554390d55707f1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-browser-ui.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 461,
+          "baseSha256": null,
+          "sha256": "2130159fbfb1a90f9f1882dff4e7af2e90b3a562566e190304ceb341edb98a30",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-pause-resume.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 277,
+          "baseSha256": null,
+          "sha256": "ae7fc82e6fd1a5423eb0a310c9fe1888c1fc96ce11fbe5b583ddbfa196d0e2ee",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-producer-soak.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 110502,
+          "baseSha256": null,
+          "sha256": "f552c8b55604c43db859f3e6d31c8c48f59e995fee24dc1cb8fa286d80e26998",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/final-status-after-pause.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1150,
+          "baseSha256": null,
+          "sha256": "e78616c40f57c7547fab2eaf2221865dd6b4fd262e55f7ba18271ce4aefb22d1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/pre-cadence-browser-sample.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 921,
+          "baseSha256": null,
+          "sha256": "73d7a1a8fa2389305d9203776ddec24e5badd93464745b736a7c0826af032dee",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/pre-cadence-producer-final.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1152,
+          "baseSha256": null,
+          "sha256": "fd6744e497cc9ef5e069bda80983ec3a199009085cf07d6f1afec8fd3167d6b8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/publisher-stopped.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 54993,
+          "baseSha256": null,
+          "sha256": "2e997f31cb60589fe8c41450d5ac101758f6099ffafe22973be232e832f617e3",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/replay-isolation.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 70,
+          "baseSha256": null,
+          "sha256": "16c43eff429ce3c450fa72bf81f97cc47dec18e3aae6be06f82892e0f51d641b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/replay-ui.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 9331,
+          "baseSha256": null,
+          "sha256": "dd0b63655288c95f7884e5d032a8a1772c7a254b61d16855a3e5c032ce5c9881",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/typecheck.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 268,
+          "baseSha256": null,
+          "sha256": "782ca5106e0dcfd4f11315e24908bc788a0edf3f2297936946cf47365281168b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/live-video-20261115/viewer-auth-negative.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 236,
+          "baseSha256": null,
+          "sha256": "5eeaafa22ec76c62ed1186b346f76af5f37f8b066cf7a5313ae1ceba96527a5d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/local-demo-20261115/browser-preview-cleanup.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 849,
+          "baseSha256": null,
+          "sha256": "015303dbf932afb681edb3d4aa3d36887d9a4cb1dab78a2d1e199930623bf8d8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/local-demo-20261115/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2450,
+          "baseSha256": null,
+          "sha256": "5c10b66ee8f8ee498ba2fc73e669a9344602351e2b86c5fd96e50e852536c6ba",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/browser-json-export.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 597,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "2f23decfb5951c55d133e4747680bec5fefd24ffab5aafb395e2aa36bbd3a441",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/build.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 919,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "11c4962ab6a44f89558d49a0ac19cf40250871704955c183810f016e8cd4163b",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dashboard-tests.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 11992,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "f508999f58da52bcd8eb7cf8d039a3cc1cb382a1fe72ffccbaa53e02c2d63676",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/demo-check.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 494,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "f4c713c77bb6eb8736cd34abea8c2671954c09ca5bb6c84691f6ee998004a145",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/final-build.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 710,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "b1a53d97334a96fe19efa0f2a0b3bf77d977e09fc0f3434d673cc935e2d642d8",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/final-typecheck.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 58,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "8427d0b3f2e9dbff207d42dd1a6053506ec47236df1e65cf0f6325dcda4f90c1",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/station-check-simulation.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 1115,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "cd374e383c03663d1f6cf3aa34b28ec5bac130d66b2db640091967aa1e397a9b",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/typecheck.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 58,
+          "baseSha256": null,
+          "sha256": null,
+          "freezeState": "pending",
+          "fileMode": "0o644",
+          "observedSha256": "8427d0b3f2e9dbff207d42dd1a6053506ec47236df1e65cf0f6325dcda4f90c1",
+          "pendingReasons": [
+            "Root-managed integration evidence is still being produced; await final evidence freeze."
+          ]
+        }
+      ],
+      "fileCount": 87,
+      "pendingCount": 16
+    }
+  ],
+  "excludedCurrentDirtyPaths": [],
+  "blockedArtifactPaths": [],
+  "concurrentIncomingDeliveryPathsObservedDirty": [],
+  "explicitExclusionRules": [
+    "Do not stage communication/context or source-delivery ledgers/metadata merely because another heartbeat changes them.",
+    "Do not use git add . or whole repository staging; stage exact reviewed files after a fresh diff/hash comparison.",
+    "Keep private pairing/configuration, tokens, databases, dependency installations, build output, real recordings/captures and runtime logs outside publication.",
+    "Preserve all original source provenance/reconciliation manifests; the new inventory does not rewrite history."
+  ],
+  "dependencyClosure": {
+    "runtimeOrder": [
+      "01-records-contract",
+      "03-media-bridge",
+      "04-dashboard-workflow"
+    ],
+    "sharedStyle": "02-shared-chat-style is independently portable; it is not imported by the dashboard runtime.",
+    "launcherNeeds": "The demo imports the sibling Intel Station API/store from group01 and media-bridge generator/package from group03. Existing prepared runtimes/dependencies are external prerequisites, not source files to copy.",
+    "reusedDependencies": [
+      {
+        "path": "klemen-dashboard/dashboard/package-lock.json",
+        "sha256": "a19f1e02c80c79a307127f9d29f4e635ad6378cd007e308c15d4f8a3903802ba",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "klemen-dashboard/station-client/package.json",
+        "sha256": "49ff28db4e32ae7a76bd833581e9dbc92b7266c26580502f3f2fee5055e83946",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "klemen-dashboard/verification/fixtures/sample-export.json",
+        "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "klemen-dashboard/verification/fixtures/sample-snapshot.json",
+        "sha256": "c4aa57162b2f64d9248b17c6b6107edb6d581451debd6ecd946ab1e79db93929",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "intel-runtime/source/common/HachingJunction/station/requirements.txt",
+        "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "intel-runtime/source/common/HachingJunction/station/morph_station/models.py",
+        "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "communication/context_mcp/requirements.txt",
+        "sha256": "b2a3a41cb92969a57ba10746218731ed453fe6528322ddda667df989ac494035",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "klemen-dashboard/dashboard/server/mcpStationTransport.ts",
+        "sha256": "50df2a95b0edae59686fb98ec3af08b76b65e0694dde78e910d9621f6718ea97",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "klemen-dashboard/SOURCE_PROVENANCE.json",
+        "sha256": "8a9db5da8632fefde8c46ed41ffdb19eb0d6bfb23c46acac36f590eae6496d4c",
+        "status": "existing tracked dependency or preserved provenance"
+      },
+      {
+        "path": "klemen-dashboard/SOURCE_RECONCILIATION.json",
+        "sha256": "6cfd08efceb7bd98c30dc3738eb970391d5137d96e9401e4f5b28999fe8f78dd",
+        "status": "existing tracked dependency or preserved provenance"
+      }
+    ],
+    "missingKnownDependencies": [],
+    "sharedClientBuild": "Rebuild the sibling station-client before building/running the dashboard; generated dist/node_modules stay ignored."
+  },
+  "verification": {
+    "dependencyClosureResult": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-result.json",
+    "passedCounts": {
+      "backendDashboard": 19,
+      "relay": 18,
+      "worker": 24,
+      "stationClient": 53
+    },
+    "testedSourceHashDrift": [],
+    "sharedUiManifestFileDrift": [],
+    "sharedUiSourceReferenceDrift": [],
+    "secretScan": {
+      "filesInspected": 155,
+      "forbiddenArtifacts": [],
+      "realCredentialMatches": 0,
+      "reviewedSyntheticMatches": [
+        {
+          "path": "communication/context_mcp/tests/test_station_worker.py",
+          "line": 24,
+          "pattern": "credential-assignment",
+          "assessment": "Explicit synthetic test credential; reviewed, not a real credential."
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+          "line": 18,
+          "pattern": "credential-assignment",
+          "assessment": "Explicit synthetic test credential; reviewed, not a real credential."
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/mediaGateway.test.ts",
+          "line": 17,
+          "pattern": "credential-assignment",
+          "assessment": "Explicit synthetic test credential; reviewed, not a real credential."
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/mediaGateway.test.ts",
+          "line": 64,
+          "pattern": "credential-assignment",
+          "assessment": "Explicit synthetic test credential; reviewed, not a real credential."
+        }
+      ],
+      "limitation": "Pattern inspection is supplemental review, not a proof that arbitrary text can never contain sensitive data."
+    },
+    "historicalUpgradeVerifier": {
+      "command": "python3 klemen-dashboard/tools/verify_upgrade.py",
+      "exitCode": 1,
+      "checkedFiles": 39,
+      "differences": 15,
+      "meaning": "Expected drift from the earlier frozen upgrade snapshot; not a passing final-system check. Preserve history and label the command accordingly."
+    },
+    "testsScope": "Prepared local runtimes, temporary SQLite, in-process ASGI/MCP and mocked transports. No external network, provider, camera or robot calls."
+  },
+  "remainingActions": [
+    "Wait for launcher-agent and root-document/evidence freeze; add any later new files explicitly.",
+    "Re-read every pending path and replace observed-only hashes with final reviewed hashes.",
+    "Recheck HEAD/status/diffs immediately before exact-path staging; preserve heartbeat and incoming-delivery changes.",
+    "Run/review the final launcher and dashboard checks after the last source changes.",
+    "Root creates the four meaningful commits, verifies their exact content, pushes under standing authorization and verifies remote publication separately.",
+    "Reconcile root final copy changes in dashboard/src/App.tsx and klemen-dashboard/VERIFICATION.md; both are now marked pending."
+  ],
+  "reviewArtifacts": {
+    "suggestedCommit": "04-dashboard-workflow",
+    "markdown": "klemen-dashboard/verification/workflow-integration-20261115/publication-review-20261115T074819Z.md",
+    "inventory": "klemen-dashboard/verification/workflow-integration-20261115/publication-review-20261115T074819Z.json",
+    "note": "These three review outputs are additional exact paths for the final evidence commit. No self-referential inventory hash is embedded; root should hash the frozen review outputs separately.",
+    "markdownSha256": "eb05ffb903ec78ab8db0c17d72092344d3039d1f01db26ce6d027427f50efff1",
+    "readyGroups": "klemen-dashboard/verification/workflow-integration-20261115/publication-ready-groups-1-3-20261115T0751Z.json",
+    "readyGroupsSha256": "6b7a1b1fd1c8cb197524af90e7396d631cde6d43200ee87f1ad1ecf8ad5075bc"
+  }
+}

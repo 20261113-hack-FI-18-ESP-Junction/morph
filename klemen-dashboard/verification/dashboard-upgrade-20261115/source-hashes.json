@@ -1,0 +1,202 @@
+{
+  "checkedAt": "2026-11-15T04:56:35.009950+00:00",
+  "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed",
+  "scope": "Modified/new source for the owner-approved dashboard upgrade plus preserved original source manifests. Verification outputs are stored separately.",
+  "files": [
+    {
+      "path": "communication/context_mcp/station_relay.py",
+      "bytes": 18090,
+      "sha256": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201"
+    },
+    {
+      "path": "communication/context_mcp/station_worker.py",
+      "bytes": 25015,
+      "sha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2"
+    },
+    {
+      "path": "communication/context_mcp/tests/test_station_relay.py",
+      "bytes": 15240,
+      "sha256": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5"
+    },
+    {
+      "path": "communication/context_mcp/tests/test_station_worker.py",
+      "bytes": 19452,
+      "sha256": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c"
+    },
+    {
+      "path": "intel-runtime/source/common/HachingJunction/station/INTEL_DASHBOARD_API.md",
+      "bytes": 8392,
+      "sha256": "e896e7dbed64f7552f6349d28843688709ea4c68487ba26196aa138703a1f41a"
+    },
+    {
+      "path": "intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+      "bytes": 23313,
+      "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a"
+    },
+    {
+      "path": "intel-runtime/source/common/HachingJunction/station/morph_station/store.py",
+      "bytes": 48605,
+      "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939"
+    },
+    {
+      "path": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+      "bytes": 12063,
+      "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd"
+    },
+    {
+      "path": "klemen-dashboard/DASHBOARD_UPGRADE.md",
+      "bytes": 6323,
+      "sha256": "7c3b2251190703e5b14c03a7cf25a19d5cb2ea4e9b182f90f4207e30d2190230"
+    },
+    {
+      "path": "klemen-dashboard/INTEL_REQUIREMENTS.md",
+      "bytes": 19516,
+      "sha256": "eaaea2f1300b9ae11abba59cb4e134518d8c17b200391ddcded6b0140bf905a9"
+    },
+    {
+      "path": "klemen-dashboard/LOCAL_DEMO.md",
+      "bytes": 3529,
+      "sha256": "2870e53b54b0d22caf9685b0a6baacd08458a8df7da0c3348b90b28d0e8b198c"
+    },
+    {
+      "path": "klemen-dashboard/README.md",
+      "bytes": 9886,
+      "sha256": "6a721541e6d92b35171bd9c2dbb0cde29086982d95027fcc325b71ba08e30f03"
+    },
+    {
+      "path": "klemen-dashboard/SOURCE_PROVENANCE.json",
+      "bytes": 38160,
+      "sha256": "8a9db5da8632fefde8c46ed41ffdb19eb0d6bfb23c46acac36f590eae6496d4c"
+    },
+    {
+      "path": "klemen-dashboard/SOURCE_RECONCILIATION.json",
+      "bytes": 122706,
+      "sha256": "6cfd08efceb7bd98c30dc3738eb970391d5137d96e9401e4f5b28999fe8f78dd"
+    },
+    {
+      "path": "klemen-dashboard/VERIFICATION.md",
+      "bytes": 8444,
+      "sha256": "4310918386df2a192b9346ef39f9d1ae253eb3f6dfeebd3317a18efc59ec8bfb"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/IMPLEMENTATION_STATUS.md",
+      "bytes": 3162,
+      "sha256": "2c04b4bc5bbc62cac95e2efab9de1035badd8e05ec4d62a7fbc71c2795a22448"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/package.json",
+      "bytes": 1448,
+      "sha256": "70db0fa8ca025f21685ce425636948f98cdd21b78c831ff4b90d5dec1b17d6e5"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/server/stationProxy.mcp.test.ts",
+      "bytes": 8763,
+      "sha256": "eb1f3c00b2a65721ff9e9da64a69ff6944b2d7d3302eba7deca462163747e708"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/server/stationProxy.ts",
+      "bytes": 14604,
+      "sha256": "47aba1a3e5a9221309702b67aa9c6dc7fdec67e991628d5be857cb988f1e7074"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/App.tsx",
+      "bytes": 25275,
+      "sha256": "7c7eea0a6be3716de8e2bff18237723d82ef7f0ad645e4d84bd4dd0a13a298a1"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/CycleDetailDrawer.tsx",
+      "bytes": 21852,
+      "sha256": "e06d40be73b76f6341cc7735a7de972bbc57a04cebf1ea9931fea3805c3a3678"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/DashboardPrimitives.tsx",
+      "bytes": 1896,
+      "sha256": "a7075979f8a223da968f296a97573f3840545bc44ceac53b895695143543a1c2"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/LiveInspectionView.tsx",
+      "bytes": 29722,
+      "sha256": "0009c3823ec3bded9c48bff40c6eef0c75bf1dfe666c9b48b616d26fb3a7cbdc"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/QualityHistoryView.tsx",
+      "bytes": 23941,
+      "sha256": "5b9bb4ed21af648c3832e3cf92cc995cc675860f7711f0ddeace25e6ed726dc8"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/RobotSystemView.tsx",
+      "bytes": 10213,
+      "sha256": "fd17fe6fa656fe6985ee9f925701f8d2b4ae4f29cec8971142769b5f36acfd56"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/index.css",
+      "bytes": 20169,
+      "sha256": "3aae5fcf76bdc98230ccc2d3376372abf98f70d45cb12829b1165cbedc8e9bfe"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/services/m06Projection.ts",
+      "bytes": 15566,
+      "sha256": "7dae9ce8b4782ccc5d4a3c3bb439d8752afc15b4069d05a1bdc6c56be3920012"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/services/stationClient.test.ts",
+      "bytes": 9237,
+      "sha256": "0fa7a1f91ead8930cfafadb74a6effd06321727a7958cce2bf17af1e4a188c57"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/services/stationClient.ts",
+      "bytes": 12163,
+      "sha256": "c0d6f2fa80ec9fde92ba39c43eedbcbe8e0931b501fda38345d8c85b8491073b"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/types/morph.ts",
+      "bytes": 12594,
+      "sha256": "296d1dbc184c6ede1e92b8c2f34a7400e9f33bb5c61aa9716cb60818f7d87318"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/tools/checkLocalDemo.ts",
+      "bytes": 3322,
+      "sha256": "c4457ffd3fd9603ffe44b83457d50bfaf873514f43ce43d88eebcc4bc6b72fb3"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/tools/demoServer.ts",
+      "bytes": 2077,
+      "sha256": "e7443342b573ffb5d9fff2464e0b00f8bc245e5216c7ecb26ab79c2de5c2fdeb"
+    },
+    {
+      "path": "klemen-dashboard/station-client/src/client.ts",
+      "bytes": 38651,
+      "sha256": "bdc863a4a53ae2a773a1a5e559f03cfcb98339ba4da8719f3e905a41f83261f4"
+    },
+    {
+      "path": "klemen-dashboard/station-client/src/store.ts",
+      "bytes": 16185,
+      "sha256": "654c2e4701e4da9647004647cf6bca89442a8e7e0026ae7d94bbd2806c74da23"
+    },
+    {
+      "path": "klemen-dashboard/station-client/src/types.ts",
+      "bytes": 10617,
+      "sha256": "da84f38942eeb2cbbb00de51950b5725df0c8baafa7682e28fa50a055017928c"
+    },
+    {
+      "path": "klemen-dashboard/station-client/tests/dashboard.test.ts",
+      "bytes": 7409,
+      "sha256": "10be6a916b95aa31da7966dacb038b97d3dfa0d9608b075d4f8883be70b195d8"
+    },
+    {
+      "path": "klemen-dashboard/station-client/tests/store.test.ts",
+      "bytes": 12968,
+      "sha256": "2d2eb69f76bb110b3976ac722cf0a36ef4764160ec53ef5df5a60f79f89b3c99"
+    },
+    {
+      "path": "klemen-dashboard/tools/run_local_demo.py",
+      "bytes": 15813,
+      "sha256": "a2acad74511ae3995d746569a3bd7984e45bd1f8e46bb52dc7b7e92ebf4bade4"
+    },
+    {
+      "path": "klemen-dashboard/tools/verify_upgrade.py",
+      "bytes": 1056,
+      "sha256": "17f098ebcefe7a3fd1bc8b4e8cc392179dbfc209e4ebe1e73e22a1bee9021d8f"
+    }
+  ]
+}

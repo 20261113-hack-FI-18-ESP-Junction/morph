@@ -1,0 +1,16 @@
+{
+  "source": "Native dashboard Export snapshot JSON on http://127.0.0.1:3000/",
+  "configuredTransport": "mac-mcp",
+  "configuredStationId": "intel-main",
+  "sessionId": "intel-bringup:session",
+  "sourceMode": "simulation",
+  "displayedSnapshotTime": "15 Nov 2026, 08:28:17 Europe/Ljubljana",
+  "exportedAt": "2026-11-15T07:28:17.476626Z",
+  "cycles": 5,
+  "lastEventSequence": 50,
+  "bytes": 105302,
+  "sha256": "33a6a336ec3fbe6408d6fef4f4fdca8d3fd0e8dac0e1494ddedd9ee78991387e",
+  "downloadMatchesDisplayedSnapshotTime": true,
+  "rawExportInPublicSource": false,
+  "hardwareEvidence": false
+}

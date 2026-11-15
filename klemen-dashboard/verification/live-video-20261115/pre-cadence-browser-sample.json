@@ -1,0 +1,6 @@
+{
+  "result": {
+    "type": "string",
+    "value": "{\"sampledAt\":\"2026-11-15T06:21:21.567Z\",\"visible\":\"visible\",\"readyState\":4,\"width\":640,\"height\":480,\"totalFrames\":46990,\"droppedFrames\":295,\"currentTime\":1756.587105,\"previewText\":\"Camera previewSimulation videoFrames arrivingSIMULATION VIDEO SOURCEINDEPENDENT MEDIA CONNECTIONSynthetic inspection previewCurrent video is separate from the exact analyzed snapshot below. Preview frames do not confirm a physical outcome.Decoded video27 FPSReceived video bitrate576 kbit/sPacket loss · last interval0 %0 lost / 89 packetsMean jitter-buffer residence122.5 msNetwork round-trip time0 msNegotiated codecvideo/H264Last displayed frame 0 s agoMetrics sample the browser receiver about once per second. Round-trip time and buffer residence are not camera-to-display latency.Configured publisher profile · 640 × 480 · 30 FPSReconnect video\"}"
+  }
+}

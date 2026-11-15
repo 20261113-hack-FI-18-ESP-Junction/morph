@@ -1,0 +1,15 @@
+test_absolute_deadline_interrupts_dripping_headers (test_station_tools.ReadinessTests.test_absolute_deadline_interrupts_dripping_headers) ... ok
+test_four_gets_empty_data_is_independent_from_media (test_station_tools.ReadinessTests.test_four_gets_empty_data_is_independent_from_media) ... ok
+test_invalid_shapes_do_not_leak_or_crash (test_station_tools.ReadinessTests.test_invalid_shapes_do_not_leak_or_crash) ... ok
+test_media_required_is_explicit_and_source_mode_matters (test_station_tools.ReadinessTests.test_media_required_is_explicit_and_source_mode_matters) ... ok
+test_mismatched_snapshot_is_rejected (test_station_tools.ReadinessTests.test_mismatched_snapshot_is_rejected) ... ok
+test_missing_selection_field_is_invalid_instead_of_crashing (test_station_tools.ReadinessTests.test_missing_selection_field_is_invalid_instead_of_crashing) ... ok
+test_no_redirect_following_and_size_bound (test_station_tools.ReadinessTests.test_no_redirect_following_and_size_bound) ... ok
+test_no_selected_session_cannot_hide_a_populated_snapshot (test_station_tools.ReadinessTests.test_no_selected_session_cannot_hide_a_populated_snapshot) ... ok
+test_remote_error_and_ice_credentials_are_not_echoed (test_station_tools.ReadinessTests.test_remote_error_and_ice_credentials_are_not_echoed) ... ok
+test_selected_session_and_source_are_checked_at_each_contract_level (test_station_tools.ReadinessTests.test_selected_session_and_source_are_checked_at_each_contract_level) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.270s
+
+OK

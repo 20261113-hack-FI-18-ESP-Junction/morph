@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T07:51:40.652283+00:00",
+  "dashboardPort": 3000,
+  "requestedSourceMode": "simulation",
+  "ok": true,
+  "runtime": {
+    "status": "ok",
+    "runtimeMode": "station",
+    "recordsTransport": "mac-mcp",
+    "stationId": "intel-main",
+    "controlHost": "jose",
+    "motionRoutes": false,
+    "authorityEvidence": "configured-route-only"
+  },
+  "schema": {
+    "status": "ok",
+    "dashboardRead": "supported"
+  },
+  "records": {
+    "status": "ok",
+    "sourceMode": "simulation",
+    "eligibleData": "present",
+    "sessionCount": 1,
+    "selectedSessionCycleCount": 5,
+    "recentCyclesReturned": 1,
+    "lastEventSequence": 50,
+    "readConsistency": "matching-snapshot-cursor-and-metrics"
+  },
+  "media": {
+    "status": "ok",
+    "configured": false,
+    "sourceMode": "live",
+    "matchesRequestedMode": false,
+    "producerStatus": "unavailable",
+    "browserPlayback": "not-tested",
+    "iceConnectivity": "not-tested",
+    "captureLatency": "not-measured"
+  },
+  "scope": "GET-only-local-dashboard",
+  "physicalAcceptance": "not-verified",
+  "requestsMade": 4
+}

@@ -1,0 +1,726 @@
+{
+  "version": 1,
+  "reviewedAt": "2026-11-15T07:50:27.155511+00:00",
+  "baselineHead": "cb753e9c60ad570b500ce933d10b989f6546c54a",
+  "state": "groups-01-02-03-ready-for-exact-path-staging",
+  "scope": "Read-only source publication review. No deployment or physical verification claim.",
+  "sourceReview": "publication-review-20261115T074819Z.json",
+  "groups": [
+    {
+      "id": "01-records-contract",
+      "suggestedCommitSubject": "Add coherent bounded dashboard reads across the API, relay and client",
+      "dependsOn": [],
+      "purpose": "Versioned compact read, one SQLite snapshot, bounded relay queries, current/focused detail, discovery fallback and local regression evidence.",
+      "files": [
+        {
+          "path": "communication/context_mcp/station_relay.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 18090,
+          "baseSha256": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
+          "sha256": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "communication/context_mcp/station_worker.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 25015,
+          "baseSha256": "f1f93b8f828d06a9e532b9fa3547d29d0e7128b03925ea313ee16a3f749dc999",
+          "sha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "communication/context_mcp/tests/test_station_relay.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 15240,
+          "baseSha256": "89098112b34055e90248723d8214690179c4c75f99f97721939f7f4b308aeab9",
+          "sha256": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "communication/context_mcp/tests/test_station_worker.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 19452,
+          "baseSha256": "8d57c7ff84cde00ab7c67a728305af8927be9195e076495514bc27de5872294b",
+          "sha256": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/INTEL_DASHBOARD_API.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8392,
+          "baseSha256": null,
+          "sha256": "e896e7dbed64f7552f6349d28843688709ea4c68487ba26196aa138703a1f41a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 23313,
+          "baseSha256": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+          "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/morph_station/store.py",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 48605,
+          "baseSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+          "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12063,
+          "baseSha256": null,
+          "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/verification/dashboard-read-20261115/backend-tests.xml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 19767,
+          "baseSha256": null,
+          "sha256": "783be353bc8b81cab10f1350029013e774e966998084034f5b2e17a1d8310246",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/source/common/HachingJunction/station/verification/dashboard-read-20261115/verification.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2497,
+          "baseSha256": null,
+          "sha256": "7bfb11faad576a687f87c2e672d690a24b6c8421e8c33251dbb27a1d190d3a7f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/stationProxy.mcp.test.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 8763,
+          "baseSha256": "7f161c4c881a3a3ce71c6f3ecde2f21e20cd58927396991f41a41b546100752e",
+          "sha256": "eb1f3c00b2a65721ff9e9da64a69ff6944b2d7d3302eba7deca462163747e708",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/dashboard/server/stationProxy.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 14604,
+          "baseSha256": "bb06ee0d874d99256a8bde46d1d5b03608f3a6782df849b8674d1167232abec8",
+          "sha256": "47aba1a3e5a9221309702b67aa9c6dc7fdec67e991628d5be857cb988f1e7074",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/src/client.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 38651,
+          "baseSha256": "e38b852fc62324c58eaf779d1c3640e33b976e424c14e76d4b5227e2aa3de08a",
+          "sha256": "bdc863a4a53ae2a773a1a5e559f03cfcb98339ba4da8719f3e905a41f83261f4",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/src/store.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 16185,
+          "baseSha256": "4c4f195b9ac146265e3ffbdcecf045111e27c78c2ac51dfb34c7f8025b9f531c",
+          "sha256": "654c2e4701e4da9647004647cf6bca89442a8e7e0026ae7d94bbd2806c74da23",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/src/types.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 10617,
+          "baseSha256": "e0249f9c004d00535a8feafd6566a39b08970e92b50e8a27b49967283a6fa483",
+          "sha256": "da84f38942eeb2cbbb00de51950b5725df0c8baafa7682e28fa50a055017928c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/tests/dashboard.test.ts",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 7409,
+          "baseSha256": null,
+          "sha256": "10be6a916b95aa31da7966dacb038b97d3dfa0d9608b075d4f8883be70b195d8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/station-client/tests/store.test.ts",
+          "operation": "edit",
+          "gitStatus": " M",
+          "bytes": 12968,
+          "baseSha256": "9b708f31bbda2fdfbac2e9aaa7b54cb94ec8c3dcf24f06da602c78f52e331e2f",
+          "sha256": "2d2eb69f76bb110b3976ac722cf0a36ef4764160ec53ef5df5a60f79f89b3c99",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-backend-dashboard.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 99,
+          "baseSha256": null,
+          "sha256": "db3bae3dd10bb9a07e702b9009aa83e80b1dd6d1bd836972be9372bd1ae0b087",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-backend-dashboard.xml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2594,
+          "baseSha256": null,
+          "sha256": "9073e855a913052451fc01ba1e8881c8295441a7fc5ec81a0665420fdddc819f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-relay.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8593,
+          "baseSha256": null,
+          "sha256": "708cd981e53017a1bfe96db9fa1fdfa78aa688b4511f52d358f31aa93c68024a",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4824,
+          "baseSha256": null,
+          "sha256": "4c6d625c2e27a9680eb1ee26cc0ccb6c6af42c0dc0e30c1f65a7eb5fe5aa9f53",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-station-client.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 5105,
+          "baseSha256": null,
+          "sha256": "5e51c127991495643008d5eb96bfcd39e131f2558796e9c2f56622a7c3425eae",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-worker.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3639,
+          "baseSha256": null,
+          "sha256": "0666ce75a829936856c1544944df6cc67b29aac73eb98b731dba3856a4b3927b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        }
+      ],
+      "fileCount": 23,
+      "pendingCount": 0
+    },
+    {
+      "id": "02-shared-chat-style",
+      "suggestedCommitSubject": "Add portable Morph chat styles and licensed assets",
+      "dependsOn": [],
+      "purpose": "Self-contained CSS, fonts, licenses, original branding, static preview and visual verification. The source-reference hashes refer to the reviewed dashboard style snapshot.",
+      "files": [
+        {
+          "path": "shared-ui/README.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6809,
+          "baseSha256": null,
+          "sha256": "525905a909af8af363f71337d5f07e5466abda603c163a137b20768b6078ef73",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/STYLE_MANIFEST.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2538,
+          "baseSha256": null,
+          "sha256": "03191a03ac2ff734c5792d88931757677d0e598c938ffdc684dedeea8d0f35f1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/VERIFICATION.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 977,
+          "baseSha256": null,
+          "sha256": "5037f9868a85eaff7bb11222638e8a36ee24784be164135ad81c216d28f70b48",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/assets/morph-mark.svg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 480,
+          "baseSha256": null,
+          "sha256": "854b67cdcb60ee04af80e4c531d70fdaf5dd314e411452160e6b70fea0f8baf4",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/assets/orbital.svg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 805,
+          "baseSha256": null,
+          "sha256": "7a3f6055540cbf307bb78e580171e84dfc91bef3242c829af1cbf454631a47d5",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/cormorant-italic.ttf",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 715644,
+          "baseSha256": null,
+          "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/cormorantgaramond-OFL.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4387,
+          "baseSha256": null,
+          "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/inter-OFL.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4377,
+          "baseSha256": null,
+          "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/inter.ttf",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 876576,
+          "baseSha256": null,
+          "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/space-mono.ttf",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 99356,
+          "baseSha256": null,
+          "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/fonts/spacemono-OFL.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4392,
+          "baseSha256": null,
+          "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/morph-chat.css",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 18402,
+          "baseSha256": null,
+          "sha256": "61bd7e494d66968d5ab9e6c4d3a6d460af8764a3968aa9f0d730726e4f3104c1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/preview-desktop.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 101985,
+          "baseSha256": null,
+          "sha256": "bbc97f35e89a3e2c88a5180bc6ec2835b54873436de991d591fd3130a56bf2ac",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/preview-mobile.jpg",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 89605,
+          "baseSha256": null,
+          "sha256": "fd583c40ad37cb56fc4fd0e4b81ba50c105116f85181771a8fadc31c15d0ccbe",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "shared-ui/preview.html",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8121,
+          "baseSha256": null,
+          "sha256": "7533496361c9439ffc84b09ab7abd8134e8c4d7c5e0b1b6a03d7b850f1f3ccf0",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        }
+      ],
+      "fileCount": 15,
+      "pendingCount": 0
+    },
+    {
+      "id": "03-media-bridge",
+      "suggestedCommitSubject": "Add a bounded Studio JPEG to H.264 media bridge",
+      "dependsOn": [],
+      "purpose": "Single source receiver, bounded latest-frame pipeline, private synthetic setup, explicit MediaMTX topology and preserved offline/RTSP verification.",
+      "files": [
+        {
+          "path": "intel-runtime/media-bridge/.gitignore",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 84,
+          "baseSha256": null,
+          "sha256": "316461e660d85aeb8a58758527acdfb9b402ac441b030dfe98a9cab6c60d49de",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/README.md",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20882,
+          "baseSha256": null,
+          "sha256": "262f984ff3b306e5c7bd01ec046ba00b76f9026f8b72e3986c0bf4dcdf811ec2",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/examples/mediamtx-local.yml",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 993,
+          "baseSha256": null,
+          "sha256": "cebfaee2dd9865f89bd5b83fb6b2eabb34d9602b49f7e67959d1679c7aadbbe3",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/examples/studio.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 797,
+          "baseSha256": null,
+          "sha256": "1ddacb0f815eead6358a53f9127844b12cbf6e90d86c149ae164014bd577e17d",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/examples/synthetic.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 611,
+          "baseSha256": null,
+          "sha256": "2142f4267688d83439989e07e86a54f604bfa800b7a5e459ee0bd7898078ec6b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/__init__.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 99,
+          "baseSha256": null,
+          "sha256": "73e61505373677432bd4b07e86856eb6bb7ebc95353fef4b851d75d14633b2bc",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/__main__.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6245,
+          "baseSha256": null,
+          "sha256": "6125f687251fb67f147fe3bec3f8e5ec8b855c6198f3e356de0cbd20d8c279c1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/config.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 9232,
+          "baseSha256": null,
+          "sha256": "64da2b5419925014744bd2520cd1327048615cf308ec5f3a856257800e2abbc0",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/frames.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6865,
+          "baseSha256": null,
+          "sha256": "9a9f8ee32ef1b2afcb7946ce858ad8360fb8e328620af9e87bbe1a77ac997c75",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/http_status.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3402,
+          "baseSha256": null,
+          "sha256": "93e0af504ee7f6a37861f9754b60e4da175600f15979425ea5db751a06243c3b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/publisher.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 10003,
+          "baseSha256": null,
+          "sha256": "ba7e0a28f8b557a9bbad332ef25b478bf92ee18758dbe8d11ee76a8660dc12d7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/morph_media_bridge/source.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 4115,
+          "baseSha256": null,
+          "sha256": "d07e701db45269ed397e8d37bc73fe51caaa24e075128b8e6e9c0172da102982",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/requirements.txt",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 32,
+          "baseSha256": null,
+          "sha256": "878ac09be077c1635192c226b6de45a3bac015f90e5d4b84b85ee67e4e705a93",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tests/test_bridge.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 20810,
+          "baseSha256": null,
+          "sha256": "1a242920d07e845f07fa04f548e5706b8d0eb9a63560fe932799cac3efda6d42",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/prepare_synthetic.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2160,
+          "baseSha256": null,
+          "sha256": "7bc45c5256c20b9c336d15eae3d60bd0c0e2d8802ac50be124820557119e9dd5",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/read_status.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 871,
+          "baseSha256": null,
+          "sha256": "49d3f3b34f6be429ee265501a144641b1a97170aef7124bde5cc888edecad945",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/verify_offline.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 6576,
+          "baseSha256": null,
+          "sha256": "33b895e918d42ac92dcf90305f55872b9568c39840fb2573f1871bc5e5d63da3",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/tools/verify_rtsp.py",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 8841,
+          "baseSha256": null,
+          "sha256": "8e01137871b64a6d95a0cedbcc5b230f8cf2b6436a0725fded10277744031a78",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-01/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 2450,
+          "baseSha256": null,
+          "sha256": "85df470f3880056b4b14c50601f52b6cd3b537e22be3456950061f888d8ceba9",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-02/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3181,
+          "baseSha256": null,
+          "sha256": "17532361b505cf604e769afa6a4ff16bc6562cdd854ad90dc7f6d72fb7b5452b",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-03/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3180,
+          "baseSha256": null,
+          "sha256": "a3309a6d432fb132eb4bde945fe23ba63ae3cb7c9c1840026d85cc2f5d474b23",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-04/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3281,
+          "baseSha256": null,
+          "sha256": "dccc6583e975c1bc52f810580b69e8f74846bbe47f6b73b2271b99e8124efda7",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-05/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3372,
+          "baseSha256": null,
+          "sha256": "667dbdbb6d8ba94ff1c2e1a789f86e9fc88cc67c8027669b372a9ea01dd17f1c",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-06/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3393,
+          "baseSha256": null,
+          "sha256": "31169ac6bfe5f9ba00d19204ad45dfdf95dd82d24811a43224857dfda871ac9e",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/offline-07/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 3390,
+          "baseSha256": null,
+          "sha256": "6c9b4bfed4dc564416f8d597f99683d5bb7377fce58ce70f625bc13c77103603",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-before-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 45989,
+          "baseSha256": null,
+          "sha256": "f7a717896552ef44b6c6c070cee67acf60fccbf1a947ac80aca43c612e253aa1",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-jitter-after-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12109,
+          "baseSha256": null,
+          "sha256": "c45972be8a102fca96c53923abff668d8b5cc56dbf35810580d88ff9b4d59013",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-jitter-before-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 12751,
+          "baseSha256": null,
+          "sha256": "b437d91e7fc45a6e93875b090aa765615d9666502c630ad23d455b6831d3bec8",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-jitter-filter-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 10847,
+          "baseSha256": null,
+          "sha256": "7d799a8e4390c362860e1ec9ae2bf00acc0ae90bbc6b5c626796394563376f59",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        },
+        {
+          "path": "intel-runtime/media-bridge/verification/rtsp-soak-clock-fix/result.json",
+          "operation": "add",
+          "gitStatus": "??",
+          "bytes": 178874,
+          "baseSha256": null,
+          "sha256": "feed976f3af0fa52c189c05cf48c6493c0c16394fe0c7cd45d56af2319777ed6",
+          "freezeState": "reviewed-candidate",
+          "fileMode": "0o644"
+        }
+      ],
+      "fileCount": 30,
+      "pendingCount": 0
+    }
+  ],
+  "limits": [
+    "Root must recheck current hashes and staged diff before commit.",
+    "Group 04 is pending root/launcher source freeze and final evidence.",
+    "No incoming Intel delivery was applied by this review.",
+    "The review JSON itself belongs to group 04 evidence."
+  ]
+}

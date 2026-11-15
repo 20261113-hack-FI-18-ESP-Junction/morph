@@ -1,0 +1,26 @@
+
+> morph-station-dashboard@0.0.0 demo:check
+> tsx tools/checkLocalDemo.ts 3102
+
+{
+  "status": "passed",
+  "sourceMode": "simulation",
+  "checks": [
+    "actual dashboard contract",
+    "complete current evidence",
+    "synthetic image bytes",
+    "fixture observation projected",
+    "live mode excludes simulation",
+    "no export on live refresh",
+    "history export on demand",
+    "frozen replay preserves records and metrics"
+  ],
+  "requests": 13,
+  "exports": 2,
+  "lastEventSequence": 67
+}
+npm notice
+npm notice New major version of npm available! 11.19.1 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

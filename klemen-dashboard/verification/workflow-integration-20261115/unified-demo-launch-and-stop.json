@@ -1,0 +1,98 @@
+{
+  "version": 1,
+  "mode": "demo",
+  "dashboardPort": 3102,
+  "ready": true,
+  "readiness": {
+    "version": 1,
+    "checkedAt": "2026-11-15T07:55:31.315501+00:00",
+    "dashboardPort": 3102,
+    "requestedSourceMode": "simulation",
+    "ok": true,
+    "runtime": {
+      "status": "ok",
+      "runtimeMode": "demo",
+      "recordsTransport": "local-simulation",
+      "stationId": null,
+      "controlHost": "jose",
+      "motionRoutes": false,
+      "authorityEvidence": "configured-route-only"
+    },
+    "schema": {
+      "status": "ok",
+      "dashboardRead": "supported"
+    },
+    "records": {
+      "status": "ok",
+      "sourceMode": "simulation",
+      "eligibleData": "present",
+      "sessionCount": 1,
+      "selectedSessionCycleCount": 6,
+      "recentCyclesReturned": 1,
+      "lastEventSequence": 67,
+      "readConsistency": "matching-snapshot-cursor-and-metrics"
+    },
+    "media": {
+      "status": "ok",
+      "configured": true,
+      "sourceMode": "simulation",
+      "matchesRequestedMode": true,
+      "producerStatus": "streaming",
+      "browserPlayback": "not-tested",
+      "iceConnectivity": "not-tested",
+      "captureLatency": "not-measured",
+      "counters": {
+        "acceptedFrames": 51,
+        "submittedFrames": 51,
+        "encodedFramesReported": 49,
+        "replacedFrames": 0,
+        "staleFrames": 0,
+        "publisherStarts": 1,
+        "publisherRestarts": 0,
+        "publisherFailures": 0,
+        "writeTimeouts": 0
+      },
+      "producerReceiptAgeMs": 26.5
+    },
+    "scope": "GET-only-local-dashboard",
+    "physicalAcceptance": "not-verified",
+    "requestsMade": 4,
+    "syntheticPublisherProgressObserved": true
+  },
+  "ownedPorts": {
+    "dashboard": 3102,
+    "rtsp": 56948,
+    "whep": 56949,
+    "status": 56950,
+    "api": 56951,
+    "ice": 62568
+  },
+  "cleanup": {
+    "ownedProcessesStopped": true,
+    "children": [
+      {
+        "name": "media-server",
+        "exitCode": -15,
+        "outputBytes": 0
+      },
+      {
+        "name": "synthetic-publisher",
+        "exitCode": 0,
+        "outputBytes": 1123
+      },
+      {
+        "name": "simulation-records",
+        "exitCode": -15,
+        "outputBytes": 0
+      },
+      {
+        "name": "dashboard",
+        "exitCode": 0,
+        "outputBytes": 357
+      }
+    ],
+    "observedOwnedProcessCount": 7
+  },
+  "temporaryRuntimeRemoved": true,
+  "exitCode": 0
+}

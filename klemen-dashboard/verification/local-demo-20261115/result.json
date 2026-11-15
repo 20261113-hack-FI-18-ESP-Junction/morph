@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "sourceMode": "simulation",
+  "checks": [
+    "actual dashboard contract",
+    "complete current evidence",
+    "synthetic image bytes",
+    "fixture observation projected",
+    "live mode excludes simulation",
+    "no export on live refresh",
+    "history export on demand",
+    "frozen replay preserves records and metrics"
+  ],
+  "requests": 13,
+  "exports": 2,
+  "lastEventSequence": 67,
+  "writeGuardStatus": 405,
+  "occupiedPortRejected": true,
+  "immediatePortRestartPassed": true,
+  "dashboardStopped": true,
+  "temporaryRuntimeRemoved": true,
+  "checkedAt": "2026-11-15T04:52:37.323309+00:00",
+  "scope": "Actual modified API, local proxy, application wrapper, synthetic temporary records; no Intel/MCP/provider/hardware integration",
+  "sourceHashes": {
+    "klemen-dashboard/tools/run_local_demo.py": "a2acad74511ae3995d746569a3bd7984e45bd1f8e46bb52dc7b7e92ebf4bade4",
+    "klemen-dashboard/dashboard/tools/demoServer.ts": "e7443342b573ffb5d9fff2464e0b00f8bc245e5216c7ecb26ab79c2de5c2fdeb",
+    "klemen-dashboard/dashboard/tools/checkLocalDemo.ts": "c4457ffd3fd9603ffe44b83457d50bfaf873514f43ce43d88eebcc4bc6b72fb3",
+    "klemen-dashboard/dashboard/src/services/stationClient.ts": "c0d6f2fa80ec9fde92ba39c43eedbcbe8e0931b501fda38345d8c85b8491073b",
+    "klemen-dashboard/dashboard/src/services/m06Projection.ts": "7dae9ce8b4782ccc5d4a3c3bb439d8752afc15b4069d05a1bdc6c56be3920012",
+    "klemen-dashboard/dashboard/server/stationProxy.ts": "47aba1a3e5a9221309702b67aa9c6dc7fdec67e991628d5be857cb988f1e7074",
+    "klemen-dashboard/station-client/src/client.ts": "bdc863a4a53ae2a773a1a5e559f03cfcb98339ba4da8719f3e905a41f83261f4",
+    "klemen-dashboard/station-client/src/store.ts": "654c2e4701e4da9647004647cf6bca89442a8e7e0026ae7d94bbd2806c74da23",
+    "klemen-dashboard/station-client/src/types.ts": "da84f38942eeb2cbbb00de51950b5725df0c8baafa7682e28fa50a055017928c",
+    "klemen-dashboard/station-client/dist/client.js": "085bcb13399cf3d7c0c136bff0df02168362fd4db518feaaf0a2c380f863c722",
+    "klemen-dashboard/station-client/dist/store.js": "79f6a5b21a40ed2adf254f55e7b2875c3b73f609f7b73abd78243e98675c1721",
+    "intel-runtime/source/common/HachingJunction/station/morph_station/api.py": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+    "intel-runtime/source/common/HachingJunction/station/morph_station/store.py": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939"
+  }
+}

@@ -1,0 +1,37 @@
+test_ctrl_c_cleans_nested_new_session_but_preserves_unrelated_process (test_station_tools.LauncherTests.test_ctrl_c_cleans_nested_new_session_but_preserves_unrelated_process) ... ok
+test_environment_drops_inherited_credentials_and_runtime_options (test_station_tools.LauncherTests.test_environment_drops_inherited_credentials_and_runtime_options) ... ok
+test_failed_child_cleans_sibling_without_exposing_output (test_station_tools.LauncherTests.test_failed_child_cleans_sibling_without_exposing_output) ... ok
+test_generated_topology_has_private_credentials_and_dynamic_ports (test_station_tools.LauncherTests.test_generated_topology_has_private_credentials_and_dynamic_ports) ... ok
+test_occupied_port_never_replaces_listener (test_station_tools.LauncherTests.test_occupied_port_never_replaces_listener) ... ok
+test_private_configuration_rejects_public_file_and_symlink (test_station_tools.LauncherTests.test_private_configuration_rejects_public_file_and_symlink) ... ok
+test_absolute_deadline_interrupts_dripping_headers (test_station_tools.ReadinessTests.test_absolute_deadline_interrupts_dripping_headers) ... ok
+test_four_gets_empty_data_is_independent_from_media (test_station_tools.ReadinessTests.test_four_gets_empty_data_is_independent_from_media) ... FAIL
+test_invalid_shapes_do_not_leak_or_crash (test_station_tools.ReadinessTests.test_invalid_shapes_do_not_leak_or_crash) ... ok
+test_media_required_is_explicit_and_source_mode_matters (test_station_tools.ReadinessTests.test_media_required_is_explicit_and_source_mode_matters) ... ERROR
+test_mismatched_snapshot_is_rejected (test_station_tools.ReadinessTests.test_mismatched_snapshot_is_rejected) ... ok
+test_no_redirect_following_and_size_bound (test_station_tools.ReadinessTests.test_no_redirect_following_and_size_bound) ... ok
+test_no_selected_session_cannot_hide_a_populated_snapshot (test_station_tools.ReadinessTests.test_no_selected_session_cannot_hide_a_populated_snapshot) ... ok
+test_remote_error_and_ice_credentials_are_not_echoed (test_station_tools.ReadinessTests.test_remote_error_and_ice_credentials_are_not_echoed) ... ok
+test_selected_session_and_source_are_checked_at_each_contract_level (test_station_tools.ReadinessTests.test_selected_session_and_source_are_checked_at_each_contract_level) ... ok
+
+======================================================================
+ERROR: test_media_required_is_explicit_and_source_mode_matters (test_station_tools.ReadinessTests.test_media_required_is_explicit_and_source_mode_matters)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/klemen-dashboard/tools/tests/test_station_tools.py", line 172, in test_media_required_is_explicit_and_source_mode_matters
+    self.assertEqual(result["media"]["producerReceiptAgeMs"], 2.5)
+                     ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'producerReceiptAgeMs'
+
+======================================================================
+FAIL: test_four_gets_empty_data_is_independent_from_media (test_station_tools.ReadinessTests.test_four_gets_empty_data_is_independent_from_media)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/klemen-dashboard/tools/tests/test_station_tools.py", line 73, in test_four_gets_empty_data_is_independent_from_media
+    self.assertTrue(result["ok"])
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 15 tests in 4.891s
+
+FAILED (failures=1, errors=1)

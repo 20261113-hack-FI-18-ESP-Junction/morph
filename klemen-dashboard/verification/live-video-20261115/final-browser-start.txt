@@ -1,0 +1,16 @@
+Browser tab: 4, Title: "Morph — Physical AI Inspection & Sorting Station", URL: "http://127.0.0.1:3101/".
+The following is a diff from the previous accessibility tree with ~ and + representing changed and added elements, respectively. Removed elements are summarized by ID range.
+Removed element IDs: 446-447
+~			252 text 15 Nov 2026, 07:31:07
+~				443 text Frames arriving
+~					456 text 30 FPS
+~					459 text 916 kbit/s
+~					462 text 0 %
++					549 container
++						550 text 0  lost / 135 packets
+~					465 text 7.4 ms
+~					468 text 0 ms
+~					471 text video/H264
+~				472 text Last displayed frame 0 s ago
+~				476 button Reconnect video
+The focused UI element is 34 checkbox Simulation, Value: 1
