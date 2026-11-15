@@ -1,0 +1,66 @@
+{
+  "checkedAt": "2026-11-15T09:59:02.823662+00:00",
+  "displayTimeZone": "Europe/Ljubljana (UTC+01:00)",
+  "scope": "Owner-authorized Mac project server shutdown with nine source gaps retained for manual ZIP followup",
+  "allKnownProjectProcessesAbsent": true,
+  "checkedKnownProcessIds": [
+    30389,
+    30425,
+    30428,
+    30432,
+    30438,
+    30446,
+    30449,
+    31455,
+    31495,
+    31499,
+    31500,
+    93262
+  ],
+  "closedTcpPorts": [
+    3000,
+    3101,
+    8765
+  ],
+  "tcpConnectionChecksFailedAsExpected": true,
+  "noListeningSocketsFound": true,
+  "knownDemoRuntimeRemoved": true,
+  "mcpSignal": {
+    "signalSentAt": "2026-11-15T09:53:46.355455+00:00",
+    "pid": 93262,
+    "signal": "SIGINT",
+    "expectedIdentityMatched": true,
+    "baselineProcessProofSha256": "eb604bf2c9f4286e8677ddde2926d97c2cd1acaa4bd1bd943f3443945999bd68",
+    "purpose": "Owner-authorized shutdown after final shared handoff readback",
+    "shutdownVerified": false
+  },
+  "lastSharedReceipt": {
+    "noteId": "d49129da-d34a-43b5-8466-c892a0c14a9a",
+    "sha256": "b1f35c4c73c52ce95ccd36bc6f092062cf007d6c0a8b602c44252d631f57bc7c",
+    "allSixFieldsAndFullHashVerified": true,
+    "beforeShutdown": true
+  },
+  "sourceProofs": [
+    {
+      "path": "context/verification/server-closeout-20261115/dashboard-shutdown.json",
+      "sha256": "6f659a13aae461be05a1f40f8d37fa806d7b7a20febd2fba50d9398b7f6869bc"
+    },
+    {
+      "path": "context/verification/server-closeout-20261115/mcp-stop-signal.json",
+      "sha256": "3a27c74e397a60b4567b9de8eebd34b2d6cee258f9c27d3d191b72153ac6c593"
+    },
+    {
+      "path": "context/verification/server-closeout-20261115/mcp-writes-complete.json",
+      "sha256": "a38fcd9be3ddd46a65c7935d3c1d5a4747706a50718e1d3cceefa4b56b8236e7"
+    },
+    {
+      "path": "context/verification/server-closeout-20261115/shutdown-after-mcp-signal.json",
+      "sha256": "8028cee9bf8cb42fbb2fcc9433ce7395c3cba8f87f8bf609b66535f0efbd5337"
+    }
+  ],
+  "intelServicesChanged": false,
+  "credentialsRotatedOrRemoved": false,
+  "automaticIntelReceiverRestarted": false,
+  "macReviewAutomation": "remains paused",
+  "postShutdownMcpPublication": "none; final result saved locally and in Git/Notion"
+}

@@ -2,6 +2,8 @@
 
 This folder records the Mac source reconciliation after the owner requested a final shared-server review, small GitHub commits and shutdown of the Mac project servers. Source publication, target adoption and physical acceptance are separate checkpoints.
 
+**Final server state — November 15, 2026, 10:59:02 Europe/Ljubljana (09:59:02 UTC): all three Mac project servers are stopped.** The [final process and listener check](shutdown-complete.json) found no recorded project process and no listener on ports 3000, 3101 or 8765. The last shared handoff was saved and fully read back before MCP shutdown. Final shutdown evidence is local/Git/Notion evidence; no post-shutdown MCP publication is claimed. Existing private pairing is preserved, and the Mac review automation remains paused.
+
 The [complete delivery reconciliation](source-disposition.json) accounts for all 13 complete groups: 151 received files totaling 2,460,082 bytes. Every group maps to verified published commits and its original receipt. Seven newly reconciled mutable ledgers were updated; all six previously published ledgers and immutable intake records were preserved. The incomplete source and separate station-guide mapping exception remain explicit.
 
 ## Dashboard verification
