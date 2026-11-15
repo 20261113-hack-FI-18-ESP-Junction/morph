@@ -1,0 +1,467 @@
+{
+  "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+  "checkedAt": "2026-11-15T03:52:30.711459+00:00",
+  "reviewCopies": [
+    {
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+      "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+      "kind": "redacted-review-copy",
+      "path": "HachingJunction/station/tests/test_analysis.py",
+      "capturedAt": "2026-11-15T03:49:01.877624+00:00",
+      "originalBytes": 52823,
+      "originalSha256": "e35d81c31bff372cc65fa10ab1c900e5174698cd67e025be73d7fa14af39e699",
+      "redactedBytes": 52807,
+      "redactedWholeTextSha256": "3eb24b1f2881a403ba10e670910d58e1b21bc8a5847e936d1eb80d83bd7bf68a",
+      "partCount": 6,
+      "redactor": {
+        "path": "HachingJunction/context_mcp/store.py",
+        "sha256": "6fb63ba6e103f3103f4b0aeefcda1cd9236c7926b6caad3998781052304eaac3",
+        "call": "context_mcp.store.redact(complete_original_text)",
+        "appliedBeforeChunking": true
+      },
+      "changedLineNumbers": [
+        249,
+        581
+      ],
+      "occurrences": [
+        {
+          "originalLine": 249,
+          "redactedLine": 249,
+          "matchedPatternIndices": [
+            2
+          ],
+          "matchedPatternCategories": [
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "test_g1_authenticated_api_rejects_unknown_fields_and_fetches_only",
+          "reason": "The authorization string is assembled from the same hard-coded synthetic token prefix and repeated-character suffix used to construct the in-process test application. The provider is FakeProvider and storage is temporary."
+        },
+        {
+          "originalLine": 581,
+          "redactedLine": 581,
+          "matchedPatternIndices": [
+            2
+          ],
+          "matchedPatternCategories": [
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "test_canonical_api_still_starts_with_unreadable_analyst_storage",
+          "reason": "The authorization header uses a hard-coded synthetic token prefix plus repeated characters for an in-process TestClient application. The test uses FakeProvider and a deliberately blocked temporary analysis directory."
+        }
+      ],
+      "syntaxObservation": {
+        "performed": true,
+        "method": "ast.parse only; no execution",
+        "parses": true
+      },
+      "exactOriginalSourceReceipt": false,
+      "use": "Review only; not an executable replacement test. Original source and sender checks remain unchanged."
+    },
+    {
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+      "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+      "kind": "redacted-review-copy",
+      "path": "morph-station/server/stationProxy.test.ts",
+      "capturedAt": "2026-11-15T03:49:01.877624+00:00",
+      "originalBytes": 17218,
+      "originalSha256": "552e8def4cf1f08330a2702d67e1152dd91105a6b3f578f4cbc7da2908ec7d49",
+      "redactedBytes": 17151,
+      "redactedWholeTextSha256": "dfa391cf103465081fca3b9d1b9d1938cd7fb6d667b780acc24829a509448a67",
+      "partCount": 2,
+      "redactor": {
+        "path": "HachingJunction/context_mcp/store.py",
+        "sha256": "6fb63ba6e103f3103f4b0aeefcda1cd9236c7926b6caad3998781052304eaac3",
+        "call": "context_mcp.store.redact(complete_original_text)",
+        "appliedBeforeChunking": true
+      },
+      "changedLineNumbers": [
+        49,
+        178,
+        238
+      ],
+      "occurrences": [
+        {
+          "originalLine": 49,
+          "redactedLine": 49,
+          "matchedPatternIndices": [
+            1,
+            2
+          ],
+          "matchedPatternCategories": [
+            "bearer-authorization-value",
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "proxy sends only server bearer credentials to a fixed upstream and preserves the response",
+          "reason": "A browser-supplied dummy authorization value is sent to a locally created test proxy. The test checks that browser credentials are not forwarded to its local mock upstream."
+        },
+        {
+          "originalLine": 178,
+          "redactedLine": 178,
+          "matchedPatternIndices": [
+            1,
+            2
+          ],
+          "matchedPatternCategories": [
+            "bearer-authorization-value",
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "audited review requires its own explicit JSON intent",
+          "reason": "A dummy browser authorization header accompanies an explicitly marked review POST in a local proxy test. The fixture exercises header filtering and idempotent review forwarding, not a real account."
+        },
+        {
+          "originalLine": 238,
+          "redactedLine": 238,
+          "matchedPatternIndices": [
+            2
+          ],
+          "matchedPatternCategories": [
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "analysis has exact read routes and preserves asynchronous acceptance without browser credentials",
+          "reason": "A dummy browser authorization header is included in a local analyst-route forwarding test. Its mock upstream assertions verify only the requested route, method and body."
+        }
+      ],
+      "syntaxObservation": {
+        "performed": false,
+        "reason": "This is a review copy, not an executable or replacement test."
+      },
+      "exactOriginalSourceReceipt": false,
+      "use": "Review only; not an executable replacement test. Original source and sender checks remain unchanged."
+    },
+    {
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+      "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+      "kind": "redacted-review-copy",
+      "path": "HachingJunction/setup/provider-check/test_check.py",
+      "capturedAt": "2026-11-15T03:49:01.877624+00:00",
+      "originalBytes": 11561,
+      "originalSha256": "ef2e01a85bec0f9d4950aabe475a0e6cc4c0dae6746a8b5d8e73cfb6a1c741c5",
+      "redactedBytes": 11513,
+      "redactedWholeTextSha256": "bedb25a3f87644fbc33cdc7b49666c54202f890594c14acd8a28315eab4cd2f5",
+      "partCount": 2,
+      "redactor": {
+        "path": "HachingJunction/context_mcp/store.py",
+        "sha256": "6fb63ba6e103f3103f4b0aeefcda1cd9236c7926b6caad3998781052304eaac3",
+        "call": "context_mcp.store.redact(complete_original_text)",
+        "appliedBeforeChunking": true
+      },
+      "changedLineNumbers": [
+        24,
+        70,
+        79
+      ],
+      "occurrences": [
+        {
+          "originalLine": 24,
+          "redactedLine": 24,
+          "matchedPatternIndices": [
+            2
+          ],
+          "matchedPatternCategories": [
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "test_config_is_literal_and_does_not_execute",
+          "reason": "The credential-shaped configuration assignment is constructed from a synthetic shell-like string containing a temporary marker path. It checks that configuration is parsed literally and does not execute commands. The matched source fragment contains string-concatenation syntax, not a real credential."
+        },
+        {
+          "originalLine": 70,
+          "redactedLine": 70,
+          "matchedPatternIndices": [
+            1,
+            2
+          ],
+          "matchedPatternCategories": [
+            "bearer-authorization-value",
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "test_redaction_covers_echoed_secret_and_token_fields",
+          "reason": "The authorization value is artificial input to the provider utility redaction test, alongside deliberately named synthetic secret and ephemeral-token markers. Assertions require the markers to disappear while numeric token-count metadata survives."
+        },
+        {
+          "originalLine": 79,
+          "redactedLine": 79,
+          "matchedPatternIndices": [
+            1,
+            2
+          ],
+          "matchedPatternCategories": [
+            "bearer-authorization-value",
+            "quoted-credential-assignment"
+          ],
+          "classification": "synthetic-test-data",
+          "testContext": "test_redirects_cannot_forward_credentials",
+          "reason": "The test constructs a request to an example.test endpoint with a dummy authorization value and directly invokes the redirect handler, expecting rejection. No real endpoint or credential is represented."
+        }
+      ],
+      "syntaxObservation": {
+        "performed": true,
+        "method": "ast.parse only; no execution",
+        "parses": false,
+        "line": 24,
+        "reason": "Existing redactor replacement inside a constructed configuration string changes Python quote structure. Exact redactor output is preserved without repair."
+      },
+      "exactOriginalSourceReceipt": false,
+      "use": "Review only; not an executable replacement test. Original source and sender checks remain unchanged."
+    }
+  ],
+  "artifacts": [
+    {
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+      "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+      "kind": "morph-reviewed-small-artifact",
+      "path": "HachingJunction/setup/provider-check/fixtures/red-rectangle.png",
+      "bytes": 159,
+      "sha256": "89160b2fc4c690799dc1bbcf44a8e762c20bc2b232f11d40a719f9b233b780e8",
+      "mediaType": "image/png",
+      "width": 64,
+      "height": 64,
+      "chunks": [
+        {
+          "type": "IHDR",
+          "dataBytes": 13,
+          "crc32": "250be689",
+          "crcValid": true
+        },
+        {
+          "type": "IDAT",
+          "dataBytes": 102,
+          "crc32": "d7d16265",
+          "crcValid": true
+        },
+        {
+          "type": "IEND",
+          "dataBytes": 0,
+          "crc32": "ae426082",
+          "crcValid": true
+        }
+      ],
+      "embeddedMetadata": false,
+      "exactOriginalBytes": true,
+      "authorizationScope": "Only this exact 159-byte synthetic PNG; no source-test or other binary encoding."
+    },
+    {
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+      "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+      "kind": "morph-reviewed-text-artifact",
+      "path": "HachingJunction/station/.gitignore",
+      "bytes": 162,
+      "sha256": "cf40ac800682c8f0336c540d8f864200a6f484a09e68ec4011f7650654a41726",
+      "mediaType": "text/plain",
+      "inspection": "All fourteen lines exactly match filename/directory/glob ignore rules; api-token and .env names are exclusion patterns, not credential values. No assignments or embedded credentials.",
+      "exactOriginalBytes": true,
+      "authorizationScope": "Only this exact 162-byte ignore-rule artifact. No broad hidden-file exception."
+    }
+  ],
+  "notes": [
+    {
+      "path": "context/notes/a7bb691a-d150-49a3-a878-5ca4fbc13120.json",
+      "sha256": "7fd2af8444b5f32c2dc8a8ec7cb1f5ed5fa5a53fa09b6d594fe618dae85ce08c",
+      "savedAt": "2026-11-15T03:47:22.402754+00:00",
+      "kind": "session_start"
+    },
+    {
+      "path": "context/notes/f8b5bc8b-65b0-5306-abe4-32f3a2c0e9c0.json",
+      "sha256": "cfc0179e4c704f4c8a675e50debc510145e0e6e9d5d3fa5230a6cfbe0cc2a7eb",
+      "savedAt": "2026-11-15T03:51:26.192546+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/8b6e27aa-402c-52e3-b668-3311689fc2dd.json",
+      "sha256": "2745887aa75ce8e409518da4e1a749318a6b6f6888f5cf6ed6b54221c53999e3",
+      "savedAt": "2026-11-15T03:51:19.440633+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/d4569216-5d0d-589f-9ea7-1641db906993.json",
+      "sha256": "34329079818bc4a0b75433ce44aaf35c49bf6361c7b68a846954b6506bcef91b",
+      "savedAt": "2026-11-15T03:51:30.733560+00:00",
+      "kind": "morph-synthetic-fixture-reuse-confirmation"
+    },
+    {
+      "path": "context/notes/4e3ddcc9-aa5a-503b-9781-2b565a08031d.json",
+      "sha256": "c71df1b1f6bdef1592ea49e0645bb2528b6e1a75b27b3f8d500d6c2b46f9f1dd",
+      "savedAt": "2026-11-15T03:51:30.112695+00:00",
+      "kind": "morph-reviewed-small-artifact"
+    },
+    {
+      "path": "context/notes/c523d7d4-8283-5623-b01c-4a019acbfb4d.json",
+      "sha256": "b61dfa7ec9569e3c37746a9f5189e2aea32f25c57c1c4e3812667fb8458045ea",
+      "savedAt": "2026-11-15T03:51:29.489471+00:00",
+      "kind": "morph-reviewed-text-artifact"
+    },
+    {
+      "path": "context/notes/a73a7d6c-fe46-592f-bbd0-04fd2ad63e20.json",
+      "sha256": "4e7fc5b78182588dc4a4f4224b188d364f39e0f527324be84a1006820e6f1cc7",
+      "savedAt": "2026-11-15T03:51:23.703646+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/b52304dd-df5c-5ddb-b39a-7729fe56590a.json",
+      "sha256": "573fdf99b2d19084f54817f12008fc287f61781f91b3fc076ffaed451599b8c9",
+      "savedAt": "2026-11-15T03:51:28.462293+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/d12d1b38-1a97-538e-af98-8a01efa73920.json",
+      "sha256": "74f50a6be508bb5d13b23943e01af11a3326236027f30994c17a4f4c1490fbae",
+      "savedAt": "2026-11-15T03:51:20.014525+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/e26c1449-6c91-599a-8126-6234bf055243.json",
+      "sha256": "2fb79c59d4069b3eec6081b689bcdf9dcc4828243e160013d2ededb1501babea",
+      "savedAt": "2026-11-15T03:51:25.350265+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/f164fa53-4343-5313-be70-214a1d0075be.json",
+      "sha256": "c29ed15d16c76947e1d1c8915564a170cc3131170452250f0de78f5f7e36d2db",
+      "savedAt": "2026-11-15T03:51:26.988705+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/5a904a38-fd3e-520e-acbb-b40247db609e.json",
+      "sha256": "e0c9e6ac213c9dab185e9364390cf07d33d700cfd39c63273d2c8af3da14f2d0",
+      "savedAt": "2026-11-15T03:51:29.018227+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/2e7c6640-e4d1-5cfc-b421-e165a2d98658.json",
+      "sha256": "43de3be8ae045c78b31bc867e35efc40d0749999a58f5ca5d321c6452ed2fb63",
+      "savedAt": "2026-11-15T03:51:22.092489+00:00",
+      "kind": "redacted-review-copy"
+    },
+    {
+      "path": "context/notes/e968fd82-b180-5520-b7f3-512ccff7ed70.json",
+      "sha256": "cd451b33635516ae8a09c28422e9d29c6ecf90aab3906d0bae001840a005bb28",
+      "savedAt": "2026-11-15T03:51:24.492742+00:00",
+      "kind": "redacted-review-copy"
+    }
+  ],
+  "syntheticEvidenceConfirmation": {
+    "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+    "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+    "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+    "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+    "kind": "morph-synthetic-fixture-reuse-confirmation",
+    "path": "verification/intel-m16-browser/runs/acceptance-05/data/evidence/e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+    "bytes": 68,
+    "sha256": "e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+    "expectedIdentityMatches": true,
+    "matchesTestConstantByteForByte": true,
+    "constantSourcePath": "HachingJunction/station/tests/test_store.py",
+    "constantSourceSha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3",
+    "constantLine": 20,
+    "constantName": "PNG",
+    "constantExtraction": "AST literal inspection followed by standard-library base64 decoding; no test imports or execution.",
+    "readScope": "Only the explicitly named blob after checking all path components, regular-file type and exact 68-byte length. No other runtime evidence was enumerated or copied.",
+    "transferNeeded": false,
+    "observedAt": "2026-11-15T03:48:06.194996+00:00",
+    "contentTransferred": false,
+    "csvReuse": "Mac reports exact local sample-export.csv reuse; current Intel hash still matches dcb024cb4e95b21600666cdf32cf760b88bc2d65ff0b15b3569d5866328da14f. No CSV transfer."
+  },
+  "networkReadback": {
+    "allExact": true,
+    "notes": [
+      {
+        "path": "context/notes/a7bb691a-d150-49a3-a878-5ca4fbc13120.json",
+        "sha256": "7fd2af8444b5f32c2dc8a8ec7cb1f5ed5fa5a53fa09b6d594fe618dae85ce08c",
+        "readAt": "2026-11-15T03:53:32.992132+00:00"
+      },
+      {
+        "path": "context/notes/f8b5bc8b-65b0-5306-abe4-32f3a2c0e9c0.json",
+        "sha256": "cfc0179e4c704f4c8a675e50debc510145e0e6e9d5d3fa5230a6cfbe0cc2a7eb",
+        "readAt": "2026-11-15T03:53:32.997400+00:00"
+      },
+      {
+        "path": "context/notes/8b6e27aa-402c-52e3-b668-3311689fc2dd.json",
+        "sha256": "2745887aa75ce8e409518da4e1a749318a6b6f6888f5cf6ed6b54221c53999e3",
+        "readAt": "2026-11-15T03:53:33.002764+00:00"
+      },
+      {
+        "path": "context/notes/d4569216-5d0d-589f-9ea7-1641db906993.json",
+        "sha256": "34329079818bc4a0b75433ce44aaf35c49bf6361c7b68a846954b6506bcef91b",
+        "readAt": "2026-11-15T03:53:33.006814+00:00"
+      },
+      {
+        "path": "context/notes/4e3ddcc9-aa5a-503b-9781-2b565a08031d.json",
+        "sha256": "c71df1b1f6bdef1592ea49e0645bb2528b6e1a75b27b3f8d500d6c2b46f9f1dd",
+        "readAt": "2026-11-15T03:53:33.010563+00:00"
+      },
+      {
+        "path": "context/notes/c523d7d4-8283-5623-b01c-4a019acbfb4d.json",
+        "sha256": "b61dfa7ec9569e3c37746a9f5189e2aea32f25c57c1c4e3812667fb8458045ea",
+        "readAt": "2026-11-15T03:53:33.014185+00:00"
+      },
+      {
+        "path": "context/notes/a73a7d6c-fe46-592f-bbd0-04fd2ad63e20.json",
+        "sha256": "4e7fc5b78182588dc4a4f4224b188d364f39e0f527324be84a1006820e6f1cc7",
+        "readAt": "2026-11-15T03:53:33.019150+00:00"
+      },
+      {
+        "path": "context/notes/b52304dd-df5c-5ddb-b39a-7729fe56590a.json",
+        "sha256": "573fdf99b2d19084f54817f12008fc287f61781f91b3fc076ffaed451599b8c9",
+        "readAt": "2026-11-15T03:53:33.023741+00:00"
+      },
+      {
+        "path": "context/notes/d12d1b38-1a97-538e-af98-8a01efa73920.json",
+        "sha256": "74f50a6be508bb5d13b23943e01af11a3326236027f30994c17a4f4c1490fbae",
+        "readAt": "2026-11-15T03:53:33.027853+00:00"
+      },
+      {
+        "path": "context/notes/e26c1449-6c91-599a-8126-6234bf055243.json",
+        "sha256": "2fb79c59d4069b3eec6081b689bcdf9dcc4828243e160013d2ededb1501babea",
+        "readAt": "2026-11-15T03:53:33.032018+00:00"
+      },
+      {
+        "path": "context/notes/f164fa53-4343-5313-be70-214a1d0075be.json",
+        "sha256": "c29ed15d16c76947e1d1c8915564a170cc3131170452250f0de78f5f7e36d2db",
+        "readAt": "2026-11-15T03:53:33.035656+00:00"
+      },
+      {
+        "path": "context/notes/5a904a38-fd3e-520e-acbb-b40247db609e.json",
+        "sha256": "e0c9e6ac213c9dab185e9364390cf07d33d700cfd39c63273d2c8af3da14f2d0",
+        "readAt": "2026-11-15T03:53:33.039211+00:00"
+      },
+      {
+        "path": "context/notes/2e7c6640-e4d1-5cfc-b421-e165a2d98658.json",
+        "sha256": "43de3be8ae045c78b31bc867e35efc40d0749999a58f5ca5d321c6452ed2fb63",
+        "readAt": "2026-11-15T03:53:33.043635+00:00"
+      },
+      {
+        "path": "context/notes/e968fd82-b180-5520-b7f3-512ccff7ed70.json",
+        "sha256": "cd451b33635516ae8a09c28422e9d29c6ecf90aab3906d0bae001840a005bb28",
+        "readAt": "2026-11-15T03:53:33.047985+00:00"
+      },
+      {
+        "path": "context/notes/dd3d31fc-4db1-5e30-a378-f1eb8b5d64f3.json",
+        "sha256": "a10a5acdb2642bf8608727ca180eb5388baea1216062a070535ad9bf6a704ff9",
+        "readAt": "2026-11-15T03:58:07.688403+00:00"
+      }
+    ]
+  },
+  "finalReport": {
+    "path": "context/notes/dd3d31fc-4db1-5e30-a378-f1eb8b5d64f3.json",
+    "sha256": "a10a5acdb2642bf8608727ca180eb5388baea1216062a070535ad9bf6a704ff9",
+    "savedAt": "2026-11-15T03:54:08.305915+00:00",
+    "independentIntelChecksReported": 1155,
+    "preservationEntriesReported": 655
+  }
+}
