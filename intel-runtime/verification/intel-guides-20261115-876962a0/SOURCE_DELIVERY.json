@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "deliveryId": "876962a0-251c-5c92-a025-09678f077983",
+  "requestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+  "group": "active-intel-guides",
+  "sessionId": "d0642a94-aa03-4efd-b1ea-98a2ca3f82a2",
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+  "observedAt": "2026-11-15T06:11:39.413181+00:00",
+  "sourceRevision": "No usable Junction Git repository; exact hashes identify bytes.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "targetPath": "intel-runtime/source/common/AGENTS.md",
+      "operation": "edit",
+      "baseSha256": "4473ea6a86e7805cc844300611011cf04eb18e75db3faf07f39599f8aa506107",
+      "sha256": "4152dfab594274a129847cbaaee777f0cefd5800dfea2e1911849920ce75f457",
+      "bytes": 5141,
+      "mode": "0o664",
+      "beforeEditSha256": "4473ea6a86e7805cc844300611011cf04eb18e75db3faf07f39599f8aa506107",
+      "baseline": {
+        "sha256": "4473ea6a86e7805cc844300611011cf04eb18e75db3faf07f39599f8aa506107",
+        "bytes": 4237,
+        "path": "AGENTS.md",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "28540308-7b05-40a4-9e28-7150e4cb9733",
+        "bundleSha256": "8ba33a096c5311dd09d8e0033a50aa2f75edae6a896894bd3f0fe22c2d54075e",
+        "manifestNotePath": "context/notes/2fb858d4-dea4-5767-be70-f2a41c45cc44.json",
+        "manifestNoteSha256": "0c2b89da03375e04673364fbdcffbdc9182af94a6e4ea982abac1acf1647204d",
+        "confirmedAt": "2026-11-15T03:25:39.404427+00:00"
+      },
+      "reason": "Add the newly required standing full-source return policy to the active sibling-project root guide and continuation instructions; preserve every original byte outside the inserted paragraph."
+    },
+    {
+      "path": "INTEL_CONTINUATION.md",
+      "targetPath": "intel-runtime/source/common/INTEL_CONTINUATION.md",
+      "operation": "edit",
+      "baseSha256": "20b3e0bbd9826d55f31abcc3be962ff3a67777f24e7ba782eed7c520e5e117f0",
+      "sha256": "ac2a1983794209c943647ea7698524a72f14be89b53d5d73384a6ba273a29548",
+      "bytes": 27291,
+      "mode": "0o664",
+      "beforeEditSha256": "20b3e0bbd9826d55f31abcc3be962ff3a67777f24e7ba782eed7c520e5e117f0",
+      "baseline": {
+        "sha256": "20b3e0bbd9826d55f31abcc3be962ff3a67777f24e7ba782eed7c520e5e117f0",
+        "bytes": 26387,
+        "path": "INTEL_CONTINUATION.md",
+        "kind": "confirmed Intel source transfer retained on Mac",
+        "transferId": "28540308-7b05-40a4-9e28-7150e4cb9733",
+        "bundleSha256": "8ba33a096c5311dd09d8e0033a50aa2f75edae6a896894bd3f0fe22c2d54075e",
+        "manifestNotePath": "context/notes/2fb858d4-dea4-5767-be70-f2a41c45cc44.json",
+        "manifestNoteSha256": "0c2b89da03375e04673364fbdcffbdc9182af94a6e4ea982abac1acf1647204d",
+        "confirmedAt": "2026-11-15T03:25:39.404427+00:00"
+      },
+      "reason": "Add the newly required standing full-source return policy to the active sibling-project root guide and continuation instructions; preserve every original byte outside the inserted paragraph."
+    }
+  ],
+  "deletions": [],
+  "renames": [],
+  "reusedDependencies": [
+    {
+      "path": "../../morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "sha256": "81549287801b39fad9312701d2f7cd6acd71f62586000db25910ec805f0fe31e",
+      "receipt": "intel-source-policy completion d2bce495-a6a7-506e-b5b7-628a3bc06ea5, strict readback and event11 confirmed",
+      "disposition": "exact policy already supplied in complete related source group"
+    }
+  ],
+  "requiredCommandsAndResults": [
+    "Both complete guides read before editing; additive insertion preserves prior bytes; relative policy link resolves; no application tests needed for this instruction-only edit."
+  ],
+  "groupComplete": true,
+  "missingSource": [],
+  "limitations": [
+    "Mac must check current destination hashes and preserve newer contributor changes before applying; receipt is not publication.",
+    "Historical dated status paragraphs remain evidence; current Junction status and shared corrections govern.",
+    "No application source, service runtime, credentials or hardware modified."
+  ]
+}
