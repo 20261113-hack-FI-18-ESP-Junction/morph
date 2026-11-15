@@ -2,6 +2,8 @@
 
 Prepared on November 15, 2026 from Git commit `ca512b1a2941f5ea0d8e6a2757b138cc41944fed` plus the approved canonical Mac handoff-event files. This is an isolated publication candidate, not a deployment receipt.
 
+**Later deployment evidence:** the [dated Intel adoption record](INTEL_ADOPTION_STATUS.md) now verifies three actual Station reads and a real Intel-origin handoff processed on Mac. Read it before interpreting the earlier Intel-unverified statements below. Intel's reverse-direction event receiver still requires local Codex authentication. The original test snapshot and its historical scope are preserved here.
+
 The [base inventory](git-base.json) records every file exported with `git show` and the four intentionally excluded concurrent relay/worker changes. The [overlay inventory](overlaid-source.json) records exact canonical input hashes before portable documentation references were adapted. Original relay/source-transfer verification in `../offline-01/` remains unchanged and dated.
 
 Offline verification passed: **177 context/relay/worker/event tests + 7 source-transfer tests = 184 tests**, with no failures or errors. See [the saved result](offline-result.json), [communication log](unittest.log) and [source-transfer log](source-transfer.log). All 33 final local documentation links resolved, 10 Bash examples passed syntax-only checks, and 28 Python files parsed. The final package manifest binds the exact candidate files. The canonical live suite includes separate unpublished dashboard allowlist work; its count must not be substituted for this candidate's tests. The candidate keeps all four affected relay/worker source/test files at the base commit.

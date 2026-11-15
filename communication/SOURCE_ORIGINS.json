@@ -399,6 +399,23 @@
       }
     },
     {
+      "path": "verification/events-20261115/README.md",
+      "bytes": 2694,
+      "sha256": "c12aad7b0f2ee42a088b7fe1b8ae663c84c9831be3822cd575dd5e7866c8e600",
+      "origin": "mac-adoption-documentation-20261115",
+      "sourcePath": "communication/verification/events-20261115/README.md",
+      "contentChanged": true,
+      "implementationDate": "2026-11-15",
+      "sourceLocation": "Owner-authorized dated deployment/coordination documentation",
+      "previousPublication": {
+        "baseCommit": "953233ee98b20d17ad7afecc4b2e0f6564c9b6c5",
+        "path": "verification/events-20261115/README.md",
+        "bytes": 2281,
+        "sha256": "eaa023a5bc4d5acf6d779be298a5a30357f033609dbbee00925899c8a1806a16",
+        "origin": "mac-handoff-event-publication-verification-20261115"
+      }
+    },
+    {
       "path": "verification/events-20261115/live-intel-event-result.json",
       "bytes": 1964,
       "sha256": "4ca79f130142a668828c78267c668e2222355330915674dad32950c2459bfae5",
@@ -419,6 +436,6 @@
       "sourceLocation": "Owner-authorized dated deployment/coordination documentation"
     }
   ],
-  "updatedAt": "2026-11-15T05:31:44.777456+00:00",
+  "updatedAt": "2026-11-15T05:34:17.596581+00:00",
   "baseCommit": "ca512b1a2941f5ea0d8e6a2757b138cc41944fed"
 }

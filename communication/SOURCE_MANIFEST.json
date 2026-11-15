@@ -30,8 +30,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 19736,
-      "sha256": "fcf9872a858f7b8b7e2500c8a7126e10686df3556d2aaa559a5a40aeeaa88e5f",
+      "bytes": 20545,
+      "sha256": "ec777ed9869ce6b5bf37c6f1e24e0114754ea278aa6fb2c32d4912eb4df52288",
       "origin": "publication-guide-or-verification"
     },
     {
@@ -282,9 +282,9 @@
     },
     {
       "path": "verification/events-20261115/README.md",
-      "bytes": 2281,
-      "sha256": "eaa023a5bc4d5acf6d779be298a5a30357f033609dbbee00925899c8a1806a16",
-      "origin": "mac-handoff-event-publication-verification-20261115"
+      "bytes": 2694,
+      "sha256": "c12aad7b0f2ee42a088b7fe1b8ae663c84c9831be3822cd575dd5e7866c8e600",
+      "origin": "mac-adoption-documentation-20261115"
     },
     {
       "path": "verification/events-20261115/git-base.json",
@@ -371,5 +371,5 @@
       "origin": "publication-guide-or-verification"
     }
   ],
-  "updatedAt": "2026-11-15T05:31:44.777456+00:00"
+  "updatedAt": "2026-11-15T05:34:17.596581+00:00"
 }
