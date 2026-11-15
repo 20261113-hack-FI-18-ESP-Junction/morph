@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Morph · Mac integration lab</title>
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#1c2925;background:#f2f4f0}*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:32px 24px 64px}h1{font-size:32px;letter-spacing:-1px;margin:4px 0}h2{font-size:20px;margin:0 0 12px}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#42694f}.notice{background:#e0ecdc;border-left:4px solid #42694f;padding:12px 16px;margin:20px 0}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.card{border:1px solid #d7ded5;border-radius:12px;background:white;padding:22px;margin-top:20px}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}button,select{font:inherit;border:1px solid #98aa9b;border-radius:7px;padding:9px 13px;background:#fff;color:#203c29;cursor:pointer}button.primary{background:#254d34;color:white;border-color:#254d34}button.danger{border-color:#ae695b;color:#823c2d}button:disabled{opacity:.45;cursor:not-allowed}button:focus-visible,select:focus-visible{outline:3px solid #4a88cb;outline-offset:2px}label{display:block;font-size:13px;color:#637169}pre{font:12px/1.45 ui-monospace,monospace;white-space:pre-wrap;overflow-wrap:anywhere;max-height:330px;overflow:auto;margin-bottom:0}dl{display:grid;grid-template-columns:130px 1fr;margin:0}dt{color:#68756d}dd{margin:0;font-weight:600}#feedback{min-height:28px;padding:8px 0;color:#704529}#transcript{min-height:84px;padding:16px;border:1px solid #d8ded7;border-radius:6px;font-size:20px}.muted{font-size:13px;color:#68756d}.recording{background:#8a342e!important;color:white!important}a{color:#275736}#voiceState{font-weight:600} @media(max-width:720px){.grid{grid-template-columns:1fr}main{padding:20px 14px}h1{font-size:27px}.card{padding:18px}}
+.workcell{overflow:hidden;padding:0;background:#163b30;color:#ecf4e9;border:0}.workcell-head{padding:25px 28px 0;display:flex;justify-content:space-between;align-items:flex-start;gap:18px}.workcell h2{font-size:25px;letter-spacing:-.6px;margin:4px 0}.workcell .eyebrow{color:#bbd4bb}.workcell p{margin:7px 0;color:#c3d7c9;font-size:13px}.pill{border:1px solid #74927c;border-radius:99px;padding:5px 11px;font-size:12px;white-space:nowrap}.workcell-stage{padding:4px 16px 0}.workcell svg{display:block;width:100%;height:auto}.workcell svg text{font-family:system-ui,sans-serif;fill:#c1d6c9}.workcell svg .station-panel{fill:#204b3b;stroke:#537561;stroke-width:1.5}.workcell svg .station.active .station-panel{fill:#355e3e;stroke:#d2f18a;stroke-width:3}.workcell svg .station.active .station-title{fill:#e6ffaa}.workcell svg .station-title{font-size:15px;font-weight:600;fill:#edf4e8}.workcell svg .station-note{font-size:11px}.workcell svg .line{stroke:#a3bcac;stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.workcell svg .detail{stroke:#668b74;stroke-width:1.5;fill:none}.workcell-stats{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:1px;background:#42634b;margin-top:5px}.workcell-stat{padding:15px 24px;background:#1b4033}.workcell-stat span{display:block;color:#b1c8b6;font-size:11px;text-transform:uppercase;letter-spacing:1px}.workcell-stat strong{display:block;font-weight:600;font-size:15px;margin-top:5px}.workcell-foot{padding:12px 24px;background:#123329;font-size:12px;color:#b4cbbb}.visual-detail{display:grid;grid-template-columns:280px 1fr;gap:20px;margin-top:20px}.frame-card{margin:0}.frame-preview{height:160px;background:#edf1eb;border:1px solid #d7ded5;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden}.frame-preview img{display:block;width:100%;height:100%;object-fit:contain}.frame-preview img[hidden]{display:none}.frame-preview span{font-size:13px;color:#637169;padding:16px}.frame-card h3,.story h3{font-size:14px;margin:0 0 10px}.frame-meta{font-size:11px;color:#68756d;overflow-wrap:anywhere;margin-top:10px}.story{padding:21px;background:#fff;border:1px solid #d7ded5;border-radius:12px}.story-row{display:grid;grid-template-columns:30px 1fr;gap:12px;padding:12px 0;border-top:1px solid #e5eae2}.story-row:first-of-type{border-top:0;padding-top:2px}.story-number{width:26px;height:26px;border-radius:50%;background:#e7eedf;color:#3d6544;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}.story-label{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:#68756d}.story-value{font-size:15px;font-weight:600;margin:3px 0;overflow-wrap:anywhere}.story-meta{font-size:11px;color:#68756d;overflow-wrap:anywhere}.visual-note{font-size:12px;color:#68756d;margin:12px 0 0}@media(max-width:720px){.workcell-head{padding:20px 18px 0;display:block}.workcell-head .pill{display:inline-block;margin-top:8px}.workcell-stats{grid-template-columns:1fr}.workcell-stat{padding:10px 18px}.workcell-stage{padding:0}.workcell svg{min-width:0}.visual-detail{grid-template-columns:1fr}.frame-preview{height:200px}}
+.workcell.compact .cell-connector{display:none}.workcell.compact svg .station-title{font-size:18px}.workcell.compact svg .station-note{font-size:12px}
+</style></head>
+<body><main>
+<div class="eyebrow">Morph / integration lab</div><h1>Control, observe, speak.</h1>
+<p>Test the next station features on this Mac.</p>
+<div class="notice"><strong>Simulation workspace.</strong> Commands reach a simulated adapter. Provider calls are real when you explicitly request them. This page never connects to a robot.</div>
+<div id="feedback" role="status" aria-live="polite"></div>
+<section class="card workcell" id="simulation-view" aria-labelledby="workcellTitle">
+<div class="workcell-head"><div><div class="eyebrow">Simulation / current object</div><h2 id="workcellTitle">The workcell, at a glance.</h2><p>A schematic of the declared checkpoint. No physics or robot pose is simulated.</p></div><span class="pill" id="visualSource">Loading saved state</span></div>
+<div class="workcell-stage"><svg viewBox="0 0 1020 278" role="img" aria-labelledby="cellTitle cellDescription"><title id="cellTitle">Morph simulation workcell</title><desc id="cellDescription">Pickup, robot, inspection and output bins. The highlighted station represents only the currently declared simulation checkpoint.</desc>
+<path class="cell-connector" d="M119 198H895" stroke="#71967d" stroke-width="1.5" stroke-dasharray="4 7"/><text id="cellFooter" x="508" y="267" text-anchor="middle" font-size="11">DECLARED CHECKPOINT ONLY · PHYSICAL OUTCOME UNVERIFIED</text>
+<g class="station" data-stage="pickup"><rect class="station-panel" x="22" y="35" width="194" height="188" rx="18"/><text class="station-title" x="119" y="65" text-anchor="middle">Pickup</text><path class="detail" d="M58 163l61-31 61 31-61 31z"/><path d="M94 124l28-14 29 14-28 14z" fill="#d29077"/><path d="M94 124v24l29 15v-25z" fill="#ac6a56"/><path d="M123 138v25l28-15v-24z" fill="#bc7b63"/><ellipse cx="116" cy="117" rx="7" ry="3.5" fill="#e4ae93"/><ellipse cx="132" cy="125" rx="7" ry="3.5" fill="#e4ae93"/><text class="station-note" x="119" y="211" text-anchor="middle">Object ready</text></g>
+<g class="station" data-stage="robot"><rect class="station-panel" x="237" y="35" width="230" height="188" rx="18"/><text class="station-title" x="352" y="65" text-anchor="middle">Robot / skill execution</text><path d="M323 181h59v12h-59z" fill="#8ba793"/><path d="M352 180v-30l-31-36 54-24 29 31" stroke="#b9cbbb" stroke-width="12" fill="none" stroke-linejoin="round"/><circle cx="352" cy="151" r="9" fill="#214534" stroke="#d0dfce" stroke-width="3"/><circle cx="321" cy="114" r="9" fill="#214534" stroke="#d0dfce" stroke-width="3"/><circle cx="375" cy="90" r="8" fill="#214534" stroke="#d0dfce" stroke-width="3"/><path class="line" d="M397 122l-1 13 10 5m3-27 11 10-2 11"/><text class="station-note" x="352" y="211" text-anchor="middle">Neutral schematic · no joint data</text></g>
+<g class="station" data-stage="inspection"><rect class="station-panel" x="488" y="35" width="220" height="188" rx="18"/><text class="station-title" x="598" y="65" text-anchor="middle">Inspection</text><rect x="574" y="82" width="48" height="26" rx="6" fill="#829d85"/><circle cx="598" cy="95" r="8" fill="#193b30" stroke="#d2e1c9" stroke-width="2"/><path d="M589 110l-27 58h72l-27-58" fill="#b7db9b" fill-opacity=".1" stroke="#8ba986" stroke-dasharray="4 4"/><path class="line" d="M560 179h76m-62-13h48"/><path class="detail" d="M578 138v-7h10m20 0h10v7m0 10v7h-10m-20 0h-10v-7"/><text class="station-note" x="598" y="211" text-anchor="middle">Saved frame + model observations</text></g>
+<g class="station" data-stage="bins"><rect class="station-panel" x="729" y="35" width="270" height="188" rx="18"/><text class="station-title" x="864" y="65" text-anchor="middle">Placement</text><path d="M758 125h89l-9 56h-72z" fill="#426747" stroke="#91b18a" stroke-width="2"/><path d="M879 125h89l-9 56h-72z" fill="#624e3c" stroke="#bda286" stroke-width="2"/><path d="M791 148l8 8 14-16" class="line"/><path d="M916 142l15 16m0-16-15 16" class="line"/><text x="803" y="115" text-anchor="middle" font-size="12">Good</text><text x="924" y="115" text-anchor="middle" font-size="12">Defective</text><text class="station-note" x="864" y="211" text-anchor="middle">Destination is not inferred from a task choice</text></g>
+</svg></div>
+<div class="workcell-stats"><div class="workcell-stat"><span>Active operator goal</span><strong id="visualGoal">No goal loaded</strong></div><div class="workcell-stat"><span>Declared checkpoint</span><strong id="visualPhase">—</strong></div><div class="workcell-stat"><span>Current execution</span><strong id="visualExecution">—</strong></div></div>
+<div class="workcell-foot" id="visualBoundary">State and goal versions unavailable.</div>
+</section>
+<div class="visual-detail"><figure class="card frame-card"><h3>Original saved frame</h3><div class="frame-preview"><img id="savedFrame" alt="Original saved synthetic checkpoint frame" hidden><span id="frameEmpty">No saved frame loaded.</span></div><figcaption class="frame-meta" id="frameMeta">A saved image is evidence of the simulation input, not of physical motion.</figcaption></figure><section class="story" aria-label="Persisted voice, goal and task history"><h3>From your voice to a saved selection</h3><div class="story-row"><span class="story-number">1</span><div><div class="story-label">Saved operator utterance</div><div class="story-value" id="storyVoice">No finalized utterance loaded.</div><div class="story-meta" id="storyVoiceMeta">—</div></div></div><div class="story-row"><span class="story-number">2</span><div><div class="story-label">Latest goal decision</div><div class="story-value" id="storyGoal">No goal decision loaded.</div><div class="story-meta" id="storyGoalMeta">—</div></div></div><div class="story-row"><span class="story-number">3</span><div><div class="story-label">Last saved task decision</div><div class="story-value" id="storyTask">No task decision loaded.</div><div class="story-meta" id="storyTaskMeta">Selection does not dispatch a task.</div></div></div></section></div>
+<p class="visual-note" id="visualReadStatus">Read-only view of persisted records. Updated when the lab refreshes; no provider requests or commands are started by this view.</p>
+<div class="grid">
+<section class="card"><h2>1. Prepare a cycle</h2><p class="muted">Creates a synthetic image, one open cycle and one attempt. A finished command does not confirm a physical outcome.</p>
+<div class="row"><button id="prepare" class="primary">Create simulation</button><button id="start">Start run</button><select id="checkpointPhase" aria-label="Synthetic checkpoint phase"><option>object_ready</option><option>holding</option><option>inspecting</option><option>inspected</option><option>placed</option></select><button id="checkpoint">Use synthetic checkpoint</button></div>
+<dl style="margin-top:18px"><dt>Mode</dt><dd id="mode">—</dd><dt>Phase</dt><dd id="phase">—</dd><dt>Goal</dt><dd id="goal">—</dd><dt>State / goal</dt><dd id="versions">—</dd></dl>
+<div class="row" style="margin-top:16px"><button id="pause">Pause after cycle</button><button id="resume">Resume</button><button id="stop" class="danger">Software stop</button></div>
+<p class="muted">Software stop here is a simulator command, not a verified emergency stop.</p></section>
+<section class="card"><h2>2. Execute one permitted task</h2><label for="task">Task</label><div class="row"><select id="task"><option>pick</option><option>present_for_inspection</option><option>reinspect_other_view</option><option>place_good</option><option>place_defective</option><option>hold</option></select><button id="dispatch" class="primary">Request task</button><button id="repeat">Repeat same request</button></div>
+<p class="muted">The backend checks phase, preconditions, frame age and versions. Repeating an execution ID must not submit another execution.</p>
+<div class="row"><button id="ack">Acknowledge</button><button id="finish">Controller finished</button><button id="fail">Controller failed</button></div>
+<pre id="execution">No execution yet.</pre></section>
+</div>
+<section class="card"><h2>3. Observe and select</h2><p class="muted">Explicit requests send the synthetic frame to Nemotron, then ask Gemini Decision 1 to select from the permitted menu. Selection does not dispatch a task.</p>
+<div class="row"><button id="observe">Ask Nemotron</button><button id="selectTask">Ask Gemini for next task</button><button id="useSelection">Dispatch accepted selection</button></div><pre id="providerResult">No provider call made.</pre></section>
+<section class="card"><h2>4. Speak an operator command</h2><p>Press <strong>Start microphone</strong>, say a short command, then press <strong>Finish utterance</strong>.</p><p class="muted">Example: “Preden odložiš naslednji kos, naredi še en pregled.” Microphone audio is sent to ElevenLabs while recording. Capture stops after 20 seconds. The saved transcript alone does not execute a task.</p>
+<div class="row"><button id="mic" class="primary">Start microphone</button><button id="release" disabled>Finish utterance</button><span id="voiceState">Checking credential…</span></div>
+<p id="transcript" aria-live="polite">Your complete utterance will appear here.</p><p class="muted" id="voiceDetail">The long-lived provider key stays on the server.</p><button id="voiceExport" disabled>Download transcript evidence</button>
+</section>
+<section class="card"><h2>5. Select and apply a spoken goal</h2><p class="muted">Gemini reads the completed utterance and chooses a supported goal. Applying it changes the goal at a validated task boundary; it does not execute a robot task.</p><p>Supported examples: “Continue normal quality sorting of good and defective pieces” or “Inspect this piece one more time before placing it.” An unclear instruction leaves the current goal unchanged.</p><div class="row"><button id="selectGoal">Ask Gemini for spoken goal</button><button id="applyGoal">Apply accepted goal</button></div><pre id="goalResult">No spoken goal selected.</pre></section>
+<section class="card"><div class="row"><h2 style="flex:1">Persisted journal</h2><button id="refresh">Refresh</button><button id="download">Download journal</button></div><pre id="journal">No records loaded.</pre></section>
+</main>
+<script>
+const token=__LOCAL_API_TOKEN__;
+const $=id=>document.getElementById(id), uid=()=>crypto.randomUUID(), stamp=()=>new Date().toISOString();
+let snapshot=null, fixture=null, lastDispatch=null, execution=null, observation=null, selection=null, capture=null;
+const cpath='/api/v1/control', vpath='/api/v1/lab/voice', ppath='/api/v1/lab/providers';
+async function api(path,body){const r=await fetch(path,{method:body===undefined?'GET':'POST',headers:{Authorization:'Bearer '+token,'Content-Type':'application/json'},body:body===undefined?undefined:JSON.stringify(body)});const v=await r.json();if(!r.ok)throw new Error(typeof v.detail==='string'?v.detail:JSON.stringify(v.detail||v));return v}
+function feedback(s){$('feedback').textContent=s}function show(id,v){$(id).textContent=typeof v==='string'?v:JSON.stringify(v,null,2)}
+function download(name,v){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(v,null,2)],{type:'application/json'}));a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+async function refresh(){const viewId=++visualReadId;try{snapshot=await api(cpath+'/snapshot');const journal=await api(cpath+'/journal');snapshot=journal.state||snapshot;show('mode',snapshot.mode);show('phase',snapshot.phase);show('goal',snapshot.goalId||'—');show('versions',snapshot.stateVersion+' / '+snapshot.goalVersion);show('journal',journal);const providers=await api(ppath);$('mic').disabled=!providers.elevenlabsConfigured||!!(capture&&!capture.final&&!capture.closed);if(!capture)$('voiceState').textContent=providers.elevenlabsConfigured?'Ready for your voice':'ElevenLabs key not configured';if(!fixture&&snapshot.sessionId){const cycles=await api('/api/v1/cycles?sessionId='+encodeURIComponent(snapshot.sessionId)+'&includeSimulation=true');const cycle=cycles.items.find(x=>x.id===snapshot.activeCycleId)||cycles.items[0];if(cycle){const details=await api('/api/v1/cycles/'+encodeURIComponent(cycle.id));fixture={session:snapshot.sessionId,cycle:cycle.id,object:cycle.objectId,attempt:details.attempts?.find(x=>x.outcome==='in_progress')?.id,frame:snapshot.frameIds?.[0]||details.frames?.[0]?.id}}}await refreshVisual(snapshot,journal,viewId)}catch(error){if(viewId===visualReadId){show('visualReadStatus','Refresh unavailable; displayed state and decisions are stale. '+error.message);clearSavedFrame('Refresh unavailable; saved preview hidden.')}throw error}}
+async function control(action){if(!fixture)throw Error('Create a simulation first.');await refresh();const r=await api(cpath+'/commands',{commandId:uid(),action,sessionId:fixture.session,expectedStateVersion:snapshot.stateVersion});await refresh();return r}
+function bind(id,fn){$(id).onclick=async()=>{const b=$(id);b.disabled=true;try{feedback('');await fn()}catch(e){feedback(e.message)}finally{b.disabled=false}}}
+bind('prepare',async()=>{fixture=await api(cpath+'/demo',{requestId:uid()});observation=selection=execution=lastDispatch=null;await refresh();feedback('Synthetic cycle created. Start the run when ready.')});bind('start',()=>control('start'));bind('pause',()=>control('pause_after_cycle'));bind('resume',()=>control('resume'));bind('stop',()=>control('stop'));
+bind('checkpoint',async()=>{if(!fixture)throw Error('Create a simulation first.');await refresh();const phase=$('checkpointPhase').value;const fresh=await api(cpath+'/demo-frame',{requestId:uid(),sessionId:fixture.session,cycleId:fixture.cycle});fixture.frame=fresh.frame;await api(cpath+'/checkpoints',{eventId:uid(),sessionId:fixture.session,cycleId:fixture.cycle,objectId:fixture.object,expectedStateVersion:snapshot.stateVersion,phase,conditions:{workspace_ready:true,object_visible:true,grasp_confirmed:phase!=='object_ready',object_presented:['inspecting','inspected'].includes(phase),object_held:phase!=='object_ready',classification_good:phase==='inspected',classification_defective:false},frameIds:[fixture.frame]});await refresh()});
+async function sendDispatch(body){const r=await api(cpath+'/dispatch',body);execution=r.execution;show('execution',r);await refresh();if(!r.accepted)feedback('Rejected: '+r.reason)}
+bind('dispatch',async()=>{if(!fixture)throw Error('Create a simulation first.');await refresh();lastDispatch={requestId:uid(),executionId:uid(),sessionId:fixture.session,cycleId:fixture.cycle,objectId:fixture.object,attemptId:fixture.attempt,taskId:$('task').value,expectedStateVersion:snapshot.stateVersion,expectedGoalVersion:snapshot.goalVersion,frameIds:[fixture.frame],deadlineAt:new Date(Date.now()+10000).toISOString()};await sendDispatch(lastDispatch)});
+bind('repeat',async()=>{if(!lastDispatch)throw Error('Request a task first.');await sendDispatch(lastDispatch)});
+async function executionUpdate(action,body){if(!execution)throw Error('Request an accepted task first.');const r=await api(cpath+'/executions/'+encodeURIComponent(execution.id)+'/'+action,body||{});execution=r.execution;show('execution',r);await refresh()}
+bind('ack',()=>executionUpdate('acknowledge'));bind('finish',()=>executionUpdate('finish',{success:true}));bind('fail',()=>executionUpdate('finish',{success:false}));
+bind('observe',async()=>{if(!fixture)throw Error('Create a simulation first.');observation=await api(ppath+'/observe',{requestId:uid(),sessionId:fixture.session,cycleId:fixture.cycle,frameId:fixture.frame});show('providerResult',observation);await refresh()});
+bind('selectTask',async()=>{if(!fixture)throw Error('Create a simulation first.');await refresh();selection=await api(ppath+'/select-task',{requestId:uid(),sessionId:fixture.session,expectedStateVersion:snapshot.stateVersion,expectedGoalVersion:snapshot.goalVersion,observationRunIds:observation?[observation.modelRunId]:[]});show('providerResult',selection);await refresh()});
+bind('useSelection',async()=>{if(!selection?.accepted)throw Error('No accepted Gemini selection.');lastDispatch={requestId:uid(),executionId:uid(),sessionId:selection.sessionId,cycleId:selection.cycleId,objectId:selection.objectId,attemptId:selection.attemptId,taskId:selection.selectedChoice,expectedStateVersion:selection.stateVersion,expectedGoalVersion:selection.goalVersion,frameIds:selection.frameIds,deadlineAt:selection.deadlineAt,decisionId:selection.decisionId};await sendDispatch(lastDispatch)});
+let goalSelection=null, goalUtteranceId=null, goalRequest=null;
+bind('selectGoal',async()=>{if(!capture?.final||capture.final.status!=='finalized')throw Error('Record and finish a complete utterance first.');await refresh();goalUtteranceId=capture.id;goalRequest=null;goalSelection=await api(ppath+'/select-goal',{requestId:uid(),sessionId:fixture.session,utteranceId:goalUtteranceId,expectedStateVersion:snapshot.stateVersion,expectedGoalVersion:snapshot.goalVersion});show('goalResult',goalSelection);await refresh();if(!goalSelection.accepted)feedback(goalSelection.selectedChoice==='unsupported'?'Goal unchanged: the command did not clearly select a supported goal. Record a new utterance using one of the examples below.':'Goal unchanged: '+(goalSelection.error||'selection was not accepted')+'.');else feedback('Goal selected. Apply it to activate or queue it at the next validated task boundary.')});
+bind('applyGoal',async()=>{if(!goalSelection?.accepted)throw Error('No accepted spoken goal.');goalRequest=goalRequest||{requestId:uid(),sessionId:goalSelection.sessionId,goalId:goalSelection.selectedChoice,expectedStateVersion:goalSelection.stateVersion,expectedGoalVersion:goalSelection.goalVersion,utteranceId:goalUtteranceId,decisionId:goalSelection.decisionId};const result=await api(cpath+'/goals',goalRequest);show('goalResult',result);await refresh();feedback(result.goalStatus==='queued'?'Goal queued for the next task boundary.':'Goal is active. Use a fresh snapshot for the next task selection.')});
+bind('refresh',refresh);bind('download',async()=>download('morph-simulation-journal.json',await api(cpath+'/journal')));
+let visualReadId=0, savedFrameUrl=null, savedFrameKey=null;
+const visualLabels={sort:'Normal quality sorting',inspect_more:'One additional inspection requested',pick:'Pick up the piece',present_for_inspection:'Present for inspection',reinspect_other_view:'Inspect from another view',place_good:'Place in the good bin',place_defective:'Place in the defective bin',hold:'Hold for review',unsupported:'Unsupported instruction',idle:'No checkpoint',object_ready:'Object ready',holding:'Object held',inspecting:'At inspection',inspected:'Inspection checkpoint',placed:'Placement checkpoint'};
+function visualLabel(value){return visualLabels[value]||value||'None'}
+function latestRecord(items){return [...items].sort((a,b)=>String(b.completedAt||b.requestedAt||b.capturedAt||'').localeCompare(String(a.completedAt||a.requestedAt||a.capturedAt||''))||String(b.id).localeCompare(String(a.id)))[0]||null}
+function visualProjection(state,journal,exported,now=Date.now()){
+  const records=exported?.records||{},inSession=entry=>entry.sessionId===state.sessionId;
+  const decisions=(records.decision||[]).filter(inSession),runs=(records.model_run||[]).filter(inSession);
+  const goal=latestRecord(decisions.filter(entry=>entry.kind==='goal'));
+  const task=latestRecord(decisions.filter(entry=>entry.kind==='task'&&entry.cycleId===state.activeCycleId));
+  const goalRun=runs.find(entry=>entry.id===goal?.modelRunId)||null,taskRun=runs.find(entry=>entry.id===task?.modelRunId)||null;
+  const utterances=(records.utterance||[]).filter(entry=>inSession(entry)&&entry.status==='finalized');
+  const voice=goal?utterances.find(entry=>entry.id===goalRun?.input?.utteranceId)||null:latestRecord(utterances);
+  const executions=(journal.executions||[]).filter(inSession);
+  const taskExecution=task?executions.find(entry=>entry.decisionId===task.id)||null:null;
+  const goalEvent=goal?[...(journal.events||[])].reverse().find(entry=>['goal_committed','goal_queued'].includes(entry.kind)&&entry.payload?.sessionId===state.sessionId&&entry.payload?.decisionId===goal.id)||null:null;
+  const frame=(records.frame||[]).find(entry=>inSession(entry)&&entry.cycleId===state.activeCycleId&&entry.id===state.frameIds?.[0])||null;
+  let taskDeadlineAt=null;try{taskDeadlineAt=JSON.parse(taskRun?.input?.request?.input||'{}').deadlineAt||null}catch{}
+  const taskExpired=taskDeadlineAt?Number.isFinite(Date.parse(taskDeadlineAt))&&now>=Date.parse(taskDeadlineAt):null;
+  return {stage:({object_ready:'pickup',holding:'robot',inspecting:'inspection',inspected:'inspection'})[state.phase]||null,goal,task,goalRun,taskRun,voice,goalEvent,taskExecution,frame,taskDeadlineAt,taskExpired,activeExecution:executions.find(entry=>entry.id===state.activeExecutionId)||null};
+}
+function runDescription(run){return run?[run.provider,run.modelId,Number.isFinite(run.latencyMs)?run.latencyMs.toFixed(3)+' ms':null].filter(Boolean).join(' · '):'Provider details unavailable'}
+function decisionDescription(decision,run){return runDescription(run)+' · '+decision.completedAt+' · state '+decision.stateVersion+' / goal '+decision.goalVersion}
+function clearSavedFrame(message){if(savedFrameUrl)URL.revokeObjectURL(savedFrameUrl);savedFrameUrl=savedFrameKey=null;$('savedFrame').hidden=true;$('savedFrame').removeAttribute('src');$('frameEmpty').hidden=false;show('frameEmpty',message)}
+async function refreshVisual(state,journal,viewId){
+  if(viewId!==visualReadId)return;
+  try{
+    const exported=state.sessionId?await api('/api/v1/sessions/'+encodeURIComponent(state.sessionId)+'/export'):null;
+    if(viewId!==visualReadId)return;
+    const view=visualProjection(state,journal,exported);
+    document.querySelectorAll('[data-stage]').forEach(node=>node.classList.toggle('active',node.dataset.stage===view.stage));
+    show('visualSource','Source: '+(exported?.session?.sourceMode||state.sourceMode||'unavailable'));
+    show('visualGoal',visualLabel(state.goalId));show('visualPhase',visualLabel(state.phase));
+    show('visualExecution',state.activeExecutionId?(view.activeExecution?visualLabel(view.activeExecution.taskId)+' · '+view.activeExecution.status:'Active execution details unavailable'):'No active execution');
+    show('visualBoundary','State '+state.stateVersion+' / goal '+state.goalVersion+' · '+state.mode+' · '+(state.boundaryReady?'At a task boundary':'Task boundary not ready')+(state.queuedGoal?' · Goal change queued':'')+' · Physical outcome unverified');
+    show('storyVoice',view.voice?'“'+view.voice.text+'”':view.goal?'Linked finalized utterance unavailable.':'No finalized utterance saved.');
+    show('storyVoiceMeta',view.voice?(view.voice.source==='voice'?'Voice':'Typed input')+' · '+[view.voice.provider,view.voice.modelId,view.voice.completedAt].filter(Boolean).join(' · ')+(view.goal?' · Linked to the goal decision below':''):'No voice-to-goal link inferred.');
+    show('storyGoal',view.goal?visualLabel(view.goal.selectedChoice)+' · '+(view.goal.accepted?(view.goalEvent?.kind==='goal_committed'?'Applied in journal':view.goalEvent?.kind==='goal_queued'?'Queued in journal':'Selected; not applied in journal'):'Rejected; goal unchanged'):'No goal decision saved.');
+    show('storyGoalMeta',view.goal?decisionDescription(view.goal,view.goalRun):'The active goal is shown above.');
+    show('storyTask',view.task?visualLabel(view.task.selectedChoice)+' · '+(view.task.accepted?(view.taskExecution?'Execution '+view.taskExecution.status:'Saved selection; not dispatched'):'Rejected; no dispatch authority'):'No task decision saved for this cycle.');
+    show('storyTaskMeta',view.task?decisionDescription(view.task,view.taskRun)+(view.taskExpired?' · EXPIRED '+view.taskDeadlineAt+'; cannot dispatch this selection':view.taskDeadlineAt?' · Original deadline '+view.taskDeadlineAt+'; eligibility must be revalidated':' · Original deadline unavailable; no current permission implied')+(view.task.stateVersion!==state.stateVersion||view.task.goalVersion!==state.goalVersion?' · Earlier snapshot; current dispatch eligibility is not implied':'')+' · Physical outcome unverified':'Selection does not dispatch a task.');
+    show('visualReadStatus','Read from persisted records at '+new Date().toISOString()+'. Refresh updates this view; it makes no provider requests or execution commands.');
+    const frame=view.frame;
+    if(!frame){clearSavedFrame('No frame linked to the current checkpoint.');show('frameMeta','No frame is inferred from a different cycle.');return}
+    const ageSeconds=Math.max(0,Math.floor((Date.now()-Date.parse(frame.capturedAt))/1000));
+    const ageLabel=Number.isFinite(ageSeconds)?(ageSeconds<60?ageSeconds+' seconds':Math.floor(ageSeconds/60)+' minutes')+' old at refresh':'age unavailable';
+    show('frameMeta','Recorded synthetic frame · '+ageLabel+' · Saved '+frame.capturedAt+' · '+(frame.width||'?')+' × '+(frame.height||'?')+' · Frame '+frame.id+' · Saved snapshot, not live video.');
+    const key=state.sessionId+':'+frame.evidenceId+':'+frame.revision;
+    if(key===savedFrameKey)return;
+    clearSavedFrame('Loading saved frame…');
+    const response=await fetch('/api/v1/evidence/'+encodeURIComponent(frame.evidenceId),{headers:{Authorization:'Bearer '+token}});
+    if(!response.ok)throw Error('Saved frame could not be loaded ('+response.status+').');
+    const blob=await response.blob();if(viewId!==visualReadId)return;
+    if(!blob.type.startsWith('image/'))throw Error('Saved evidence is not an image.');
+    savedFrameUrl=URL.createObjectURL(blob);savedFrameKey=key;$('savedFrame').src=savedFrameUrl;$('savedFrame').hidden=false;$('frameEmpty').hidden=true;
+  }catch(error){if(viewId!==visualReadId)return;clearSavedFrame('Saved evidence unavailable.');show('visualReadStatus','Read unavailable; displayed text may be stale. '+error.message)}
+}
+function layoutWorkcell(){
+  const cell=$('simulation-view'),compact=cell.clientWidth<700,svg=cell.querySelector('svg');
+  cell.classList.toggle('compact',compact);svg.setAttribute('viewBox',compact?'0 0 560 505':'0 0 1020 278');
+  const offsets={pickup:'translate(16 -10)',robot:'translate(48 -10)',inspection:'translate(-463 215)',bins:'translate(-464 215)'};
+  cell.querySelectorAll('[data-stage]').forEach(node=>{if(compact)node.setAttribute('transform',offsets[node.dataset.stage]);else node.removeAttribute('transform')});
+  $('cellFooter').setAttribute('x',compact?'280':'508');$('cellFooter').setAttribute('y',compact?'485':'267');
+}
+layoutWorkcell();window.addEventListener('resize',layoutWorkcell);
+window.addEventListener('pagehide',()=>{if(savedFrameUrl)URL.revokeObjectURL(savedFrameUrl)});
+function pcm16(samples,inputRate){const ratio=inputRate/16000,n=Math.floor(samples.length/ratio),out=new Int16Array(n);for(let i=0;i<n;i++){const a=Math.floor(i*ratio),b=Math.min(samples.length,Math.floor((i+1)*ratio));let sum=0;for(let j=a;j<b;j++)sum+=samples[j];const x=Math.max(-1,Math.min(1,sum/Math.max(1,b-a)));out[i]=x<0?x*32768:x*32767}return new Uint8Array(out.buffer)}
+function b64(bytes){let s='';for(let i=0;i<bytes.length;i++)s+=String.fromCharCode(bytes[i]);return btoa(s)}
+const voiceConnections=new Set();
+function audioSend(own,bytes,commit=false){
+  if(capture!==own||own.closed||own.final||own.socket?.readyState!==1)return false;
+  if(!own.recording&&!own.released)return false;
+  own.socket.send(JSON.stringify({message_type:'input_audio_chunk',audio_base_64:b64(bytes),sample_rate:16000,commit}));
+  own.sentSamples+=bytes.length/2;return true;
+}
+async function cleanupAudio(own){
+  if(!own)return;
+  clearTimeout(own.timer);own.recording=false;
+  if(capture===own){$('mic').classList.remove('recording');$('release').disabled=true;}
+  if(own.cleanupPromise)return own.cleanupPromise;
+  own.cleanupPromise=(async()=>{
+    if(own.processor){own.processor.onaudioprocess=null;try{own.processor.disconnect()}catch{}}
+    if(own.source){try{own.source.disconnect()}catch{}}
+    own.stream?.getTracks().forEach(track=>track.stop());
+    if(own.context&&own.context.state!=='closed'){try{await own.context.close()}catch{}}
+  })();
+  return own.cleanupPromise;
+}
+async function abortCapture(own,message){
+  if(!own||own.closed||own.final)return;
+  own.closed=true;clearTimeout(own.timeout);clearTimeout(own.closeTimer);
+  await cleanupAudio(own);own.socket?.close();voiceConnections.delete(own);
+  if(capture===own){$('voiceState').textContent='Capture interrupted';feedback(message);refresh().catch(()=>{})}
+}
+async function finishCapture(own){
+  if(!own||capture!==own||own.closed||own.final||own.finishing)return;
+  own.finishing=true;await cleanupAudio(own);
+  if(!own.started||!own.ready){await abortCapture(own,'Speech was not ready before capture ended. No utterance was accepted.');return}
+  if(capture===own)$('voiceState').textContent='Finalizing utterance…';
+  own.timeout=setTimeout(()=>abortCapture(own,'Finalization timed out. No complete utterance was accepted; retry when ready.'),10000);
+  // Drain already received events before the explicit release boundary.
+  own.queue=own.queue.then(async()=>{
+    if(own.closed)return;
+    const released=await api(vpath+'/'+own.id+'/release',{});
+    if(own.closed)return;
+    if(released.status!=='finalizing'){await abortCapture(own,'Utterance was rejected: '+(released.rejectionReason||released.status));return}
+    own.released=true;
+    // Pad short captures to the documented two-second processing minimum.
+    let silenceSamples=Math.max(1600,32000-own.sentSamples);
+    while(silenceSamples>16000){if(!audioSend(own,new Uint8Array(32000)))throw Error('Speech connection closed before commit.');silenceSamples-=16000}
+    if(!audioSend(own,new Uint8Array(silenceSamples*2),true))throw Error('Speech connection closed before commit.');
+    own.commitSent=true;
+  }).catch(error=>abortCapture(own,error.message));
+  await own.queue;
+}
+async function handleMessage(own,event,afterCommit=false){
+  if(own.closed)return;
+  let value;try{value=JSON.parse(event.data)}catch{throw Error('Provider sent non-JSON event.')}
+  const eventId=uid();let index=Number.isInteger(value.segment_index)?value.segment_index:null;
+  if(value.message_type==='committed_transcript'&&!own.final){
+    if(index===null)index=own.segments.length;
+    if(!own.segments.some(segment=>segment.index===index))own.segments.push({text:value.text,index,eventId});
+  }else if(value.message_type==='committed_transcript_with_timestamps'&&index===null){
+    const matches=own.segments.filter(segment=>segment.text?.trim()===value.text?.trim());
+    if(matches.length===1)index=matches[0].index;
+  }
+  const result=await api(vpath+'/'+own.id+'/events',{eventId,event:value,segmentIndex:index});
+  if(own.closed)return;
+  if(result.status==='rejected'&&!own.final){await abortCapture(own,'Utterance was rejected: '+result.rejectionReason);return}
+  // Delayed enrichment stays attached to its original capture, without changing a final transcript.
+  if(own.final)return;
+  if(capture===own)show('transcript',[result.text,result.partialText].filter(Boolean).join(' ')||'Listening…');
+  if(value.message_type==='session_started'){
+    own.ready=true;
+    if(capture===own&&!own.finishing)$('voiceState').textContent='Recording — speak now';
+  }
+  if(value.message_type==='committed_transcript'&&afterCommit&&own.released&&!own.finalizing){
+    own.finalizing=true;
+    const final=await api(vpath+'/'+own.id+'/finalize',{expectedSegmentCount:own.segments.length,terminalCommitEventId:eventId});
+    if(own.closed)return;
+    clearTimeout(own.timeout);own.final=final;
+    own.closeTimer=setTimeout(()=>own.socket?.close(),1200);
+    if(capture===own){
+      $('voiceState').textContent=final.status==='finalized'?'Complete utterance saved':'Utterance rejected';
+      show('transcript',final.text);
+      $('voiceDetail').textContent='Provider: '+final.provider+' · Model: '+final.modelId+' · No goal or robot task dispatched.';
+      $('voiceExport').disabled=false;
+      $('voiceExport').onclick=async()=>{try{download('morph-speech-evidence.json',await api(vpath+'/'+own.id))}catch(error){if(capture===own)feedback(error.message)}};
+      await refresh();
+    }
+  }
+}
+async function startCapture(){
+  if(!fixture)throw Error('Create a simulation session first.');
+  if(capture&&!capture.final&&!capture.closed)throw Error('A capture is already active.');
+  const own={id:uid(),sessionId:fixture.session,cycleId:fixture.cycle,recording:false,released:false,ready:false,started:false,closed:false,segments:[],sentSamples:0,queue:Promise.resolve()};
+  capture=own;voiceConnections.add(own);$('mic').disabled=true;$('voiceExport').disabled=true;
+  $('voiceState').textContent='Waiting for microphone permission…';
+  try{
+    own.stream=await navigator.mediaDevices.getUserMedia({audio:{channelCount:1,echoCancellation:true,noiseSuppression:true}});
+    if(own.closed||capture!==own){own.stream.getTracks().forEach(track=>track.stop());return}
+    own.recording=true;
+    own.timer=setTimeout(()=>finishCapture(own).catch(error=>abortCapture(own,error.message)),19000);
+    $('voiceState').textContent='Connecting to Scribe…';$('mic').classList.add('recording');$('release').disabled=false;
+    const auth=await api(vpath+'/token',{});
+    if(own.closed)return;
+    await api(vpath+'/start',{utteranceId:own.id,sessionId:own.sessionId,cycleId:own.cycleId});own.started=true;
+    if(own.closed)return;
+    const url=new URL(auth.endpoint);Object.entries(auth.params).forEach(([key,value])=>url.searchParams.set(key,value));url.searchParams.set('token',auth.token);
+    const socket=new WebSocket(url);own.socket=socket;
+    socket.onmessage=event=>{
+      const afterCommit=own.commitSent===true;
+      own.queue=own.queue.then(()=>handleMessage(own,event,afterCommit)).catch(error=>abortCapture(own,error.message));
+    };
+    socket.onclose=()=>{
+      cleanupAudio(own);
+      if(own.closed){clearTimeout(own.closeTimer);voiceConnections.delete(own);return}
+      if(own.final){own.closed=true;clearTimeout(own.closeTimer);voiceConnections.delete(own);return}
+      own.closeTimer=setTimeout(()=>abortCapture(own,'Speech connection closed before the complete utterance was saved.'),10000);
+      own.queue=own.queue.then(()=>abortCapture(own,'Speech connection closed before the complete utterance was saved.')).catch(error=>abortCapture(own,error.message));
+    };
+    socket.onerror=()=>abortCapture(own,'Speech connection failed. No command was issued.');
+    const context=new AudioContext();own.context=context;await context.resume();
+    if(own.closed){if(context.state!=='closed')await context.close();return}
+    const source=context.createMediaStreamSource(own.stream),processor=context.createScriptProcessor(4096,1,1);own.source=source;own.processor=processor;
+    processor.onaudioprocess=event=>{if(own.recording&&own.ready&&!own.finishing){try{audioSend(own,pcm16(event.inputBuffer.getChannelData(0),context.sampleRate))}catch(error){abortCapture(own,error.message)}}};
+    source.connect(processor);processor.connect(context.destination);
+  }catch(error){await abortCapture(own,error.message)}
+}
+$('mic').onclick=()=>{feedback('');startCapture().catch(error=>feedback(error.message))};
+$('release').onclick=()=>{const own=capture;finishCapture(own).catch(error=>abortCapture(own,error.message))};
+window.addEventListener('pagehide',()=>{for(const own of voiceConnections){own.closed=true;clearTimeout(own.timeout);clearTimeout(own.closeTimer);cleanupAudio(own);own.socket?.close()}voiceConnections.clear()});
+refresh().catch(e=>feedback(e.message));
+</script></body></html>
