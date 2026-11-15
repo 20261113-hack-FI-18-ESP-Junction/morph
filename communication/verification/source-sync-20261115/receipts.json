@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-11-15T06:30:58.759213+00:00",
+  "documents": [
+    {
+      "path": "context/notes/839b9dbf-9c31-4488-bb73-5c58129724a8.json",
+      "bytes": 4770,
+      "sha256": "b25a3019f7593b682de13861dfdc347216964bc094082f7fb463b4b00a41b9a6",
+      "pages": 1,
+      "exactLocalMatch": true
+    },
+    {
+      "path": "context/coordination/source-sync-20261115/SOURCE_SYNC.md",
+      "bytes": 16283,
+      "sha256": "81549287801b39fad9312701d2f7cd6acd71f62586000db25910ec805f0fe31e",
+      "pages": 1,
+      "exactLocalMatch": true
+    },
+    {
+      "path": "context/SOURCE_SYNC.md",
+      "bytes": 17956,
+      "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "pages": 1,
+      "exactLocalMatch": true
+    }
+  ],
+  "event": {
+    "event_id": "2a62f901-b0ca-5ad8-a6aa-7c387493fc1a",
+    "note_id": "839b9dbf-9c31-4488-bb73-5c58129724a8",
+    "origin": "mac",
+    "target": "intel",
+    "state": "processed",
+    "attempts": 1,
+    "processed_at": "2026-11-15T06:03:57.645210+00:00",
+    "result_sha256": "4152a006dcc9ef528e17671e34c33a551588c4fdaf1b71a456568ceeb2170230"
+  },
+  "intelInstructionReadback": "event_review_processed",
+  "scope": "Actual shared instruction readback and one Intel read-only review before the later reported receiver shutdown; no deployment proof.",
+  "deliveries": [
+    {
+      "deliveryNoteId": "9ea10ce4-11fd-5573-9c06-ab6337db13b7",
+      "deliveryNoteSha256": "d3f3e0121a9267b64ac364484cae547040c05f7c91ac1e0751d95c6ba7e36b97",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "2aebe862-3a13-52d9-b1cd-facac6670fc2",
+      "status": "reconstructed_verified_for_review",
+      "files": 6,
+      "bytes": 139454,
+      "receiptSha256": "01d847900fd82070cdc258c277d51e64a25f81ae9da90603cd103a0f38b607bb",
+      "sourceApplied": false
+    },
+    {
+      "deliveryNoteId": "51d1470b-05c1-51e3-9960-f243958aee78",
+      "deliveryNoteSha256": "c34ce4d03d1783f920c26bfd578d9716d0b68a4dd54b68ab54605853a8650f45",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "8bee374a-a12f-5f79-a0a6-3d133c9c56e2",
+      "status": "reconstructed_verified_for_review",
+      "files": 8,
+      "bytes": 233793,
+      "receiptSha256": "bca7792f87f59e11ac88de965ca19079dff2f234c55891d02de73de02d86223f",
+      "sourceApplied": false
+    },
+    {
+      "deliveryNoteId": "375c54f4-4565-5249-b444-2461278c81cc",
+      "deliveryNoteSha256": "bc376428dc0fe150ad404cfca489bc8602039657bfcff8d3973e102605db48f3",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+      "status": "reconstructed_verified_for_review",
+      "files": 3,
+      "bytes": 21110,
+      "receiptSha256": "c70d2e71c7c431c408a24da164a51dfb74f0da5022b7cba39fb6f47c7c8c7100",
+      "sourceApplied": false
+    },
+    {
+      "deliveryNoteId": "d2bce495-a6a7-506e-b5b7-628a3bc06ea5",
+      "deliveryNoteSha256": "304d9f436cb8c9d664e50df468f2270cc8109c40d0c773f9032a5367c0c375c0",
+      "requestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+      "deliveryId": "1015a558-f417-5353-bb1b-d08011eff819",
+      "status": "reconstructed_verified_for_review",
+      "files": 4,
+      "bytes": 101354,
+      "receiptSha256": "983f02e8cfc838215ae51a66aff578f237047bd4a59add28adffb99a3550ca97",
+      "sourceApplied": false
+    },
+    {
+      "deliveryNoteId": "4564569a-d793-570d-8149-766a3916e8fe",
+      "deliveryNoteSha256": "7f359ce6db5781a2822f35e7c6f9d9c56e2990ef18e9d9b308549a472d018792",
+      "requestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
+      "deliveryId": "876962a0-251c-5c92-a025-09678f077983",
+      "status": "reconstructed_verified_for_review",
+      "files": 3,
+      "bytes": 36637,
+      "receiptSha256": "24ce3c81eeb00a05e3277911ea722ce94a4abee07eb9276d537ac30c2fb9cf55",
+      "sourceApplied": false
+    }
+  ],
+  "reconciliationRequest": {
+    "note_id": "bfa7f50a-c938-4adc-9e67-e418ef673294",
+    "path": "context/notes/bfa7f50a-c938-4adc-9e67-e418ef673294.json",
+    "saved_at": "2026-11-15T06:32:13.192103+00:00",
+    "readback_at": "2026-11-15T07:32:13.196319+01:00",
+    "sha256": "edc99211d3c5b98ac7cba36fdfdab209ab7c48f539e731f678d37b28fc582348",
+    "all_six_fields_match": true,
+    "transport": "authenticated HTTPS MCP save_handoff and read_context",
+    "intel_readback": "not_observed"
+  }
+}

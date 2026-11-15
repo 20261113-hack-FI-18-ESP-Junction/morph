@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-15T06:33:46.630346+00:00",
+  "verificationClass": "software_and_actual_received_source_intake",
+  "source": {
+    "context_mcp/source_intake.py": {
+      "bytes": 26947,
+      "sha256": "1cd37e8c0cc938ef6cf50ffd7a6fc3539743f42335cde76f69b0122154483cf3"
+    },
+    "context_mcp/tests/test_source_intake.py": {
+      "bytes": 24087,
+      "sha256": "8f19e28b31aeef3f6346b2d0fe5d2307442968a493196726552b1c833ec725d1"
+    }
+  },
+  "canonicalSuite": {
+    "tests": 205,
+    "passed": true,
+    "logSha256": "2cfbe6e3fd0019d6b240ba7860c82136d9989d232277b0bbdb858800a0aa8769"
+  },
+  "focusedIntakeTests": 24,
+  "independentReview": {
+    "findings": 2,
+    "closed": 2,
+    "repeatedTamperedReceiptRejected": true,
+    "overlappingNoteRootsPreserved": true
+  },
+  "sourceExecutedByIntake": false,
+  "applicationSourceAppliedByIntake": false,
+  "physicalVerified": false,
+  "firstUnattendedSourcePublicationVerified": false,
+  "automation": {
+    "id": "morph-spremljanje-napredka",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "intervalMinutes": 5,
+    "promptSha256": "d11810ee8801f80fd6ea6348e507ff30cf35f55104085f6fd735ab2bfbbd7d5e",
+    "allFieldsMatch": true
+  },
+  "actualIntake": {
+    "completedEnvelopes": 5,
+    "reconstructedFiles": 24,
+    "reconstructedFileBytes": 532348,
+    "allInspectedManifestGroups": 7,
+    "allInspectedFileEntries": 32,
+    "allInspectedFileBytes": 826972
+  },
+  "colleagueChangesPreserved": true
+}
