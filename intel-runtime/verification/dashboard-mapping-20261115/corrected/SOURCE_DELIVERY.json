@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "deliveryId": "77133e66-7c2b-45ce-8ab6-69549d784320",
+  "transferId": "7048d910-46ef-487e-b6bc-1e7081eaed6c",
+  "completionNoteId": "dc7b60b4-c0e3-449b-afee-e900915f7891",
+  "createdAt": "2026-11-15T07:18:10.609113+00:00",
+  "observedAt": "2026-11-15T07:20:14.358611+00:00",
+  "group": "dashboard-runtime-mapping-correction",
+  "taskIds": [
+    "M20",
+    "M21"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction",
+  "preparedBy": "/root/adoption_codex",
+  "completionReporter": "/root",
+  "intendedBehavior": "Correct only the prior dashboard companion's runtime mapping and dependency closure. No application source change or duplicate source transmission.",
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "sourceRevision": "This active Intel project has no usable Git revision; exact current per-file hashes identify reused source. No clean-tree or Intel commit claim.",
+  "supersedes": {
+    "deliveryId": "44693c32-12a5-4426-9603-72d4e55736ab",
+    "transferId": "f1e4027a-adcf-48a8-b48e-bca63cba0d90",
+    "completionNoteId": "53d998b4-fd3e-40c1-8b7f-71ce8ecae59d",
+    "companionSha256": "3cf836ba5741c45daa5f72243db378391be39d3ef67acc5764459eb7c5256eb9",
+    "scope": "Mapping and unchanged-dependency declarations only. Preserve the original transfer, source hashes, tests and dated adoption evidence. No old note or receipt is replaced."
+  },
+  "respondsTo": {
+    "path": "context/notes/0aca9667-60a6-51a5-a784-e6a5937fc231.json",
+    "sha256": "8662d771989f43e2835ffba8d18ab05492bb833c37eafe7994eff6cb50c6927a"
+  },
+  "baselineManifest": {
+    "path": "context/coordination/dashboard-intel-20261115-d5315791/MANIFEST.json",
+    "sha256": "9f0c55c5511409948dc0ec5e46a0a411403edac4b7612ae17ea6153e29b145fd"
+  },
+  "files": [],
+  "reusedDependencies": [
+    {
+      "path": "HachingJunction/station/morph_station/api.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+      "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+      "bytes": 23313,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+      "sourceRead": {
+        "path": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/api.py",
+        "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+        "bytes": 23313,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:53.723208+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      },
+      "originalChangeBaselineSha256": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/store.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/store.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+      "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+      "bytes": 48605,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/store.py",
+      "sourceRead": {
+        "path": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/store.py",
+        "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+        "bytes": 48605,
+        "pageCount": 2,
+        "readAt": "2026-11-15T07:18:54.238739+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      },
+      "originalChangeBaselineSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c"
+    },
+    {
+      "path": "HachingJunction/station/tests/test_dashboard.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+      "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+      "bytes": 12063,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+      "sourceRead": {
+        "path": "context/coordination/dashboard-intel-20261115-d5315791/source/station/tests/test_dashboard.py",
+        "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+        "bytes": 12063,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:54.535998+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      },
+      "originalChangeBaselineSha256": null
+    },
+    {
+      "path": "HachingJunction/station/morph_station/models.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/models.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "bytes": 11096,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/models.py",
+      "sourceRead": {
+        "path": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/models.py",
+        "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+        "bytes": 11096,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:54.859900+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      },
+      "originalChangeBaselineSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3"
+    },
+    {
+      "path": "HachingJunction/station/requirements.txt",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/requirements.txt",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "bytes": 238,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/requirements.txt",
+      "sourceRead": {
+        "path": "context/coordination/dashboard-intel-20261115-d5315791/source/station/requirements.txt",
+        "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+        "bytes": 238,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:55.017368+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      },
+      "originalChangeBaselineSha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/client.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/client.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "bytes": 1645,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/client.py",
+      "sourceRead": {
+        "path": "station/morph_station/client.py",
+        "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+        "bytes": 1645,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:55.214288+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      }
+    },
+    {
+      "path": "HachingJunction/station/morph_station/__init__.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/__init__.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "bytes": 114,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/__init__.py",
+      "sourceRead": {
+        "path": "station/morph_station/__init__.py",
+        "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+        "bytes": 114,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:55.615373+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      }
+    },
+    {
+      "path": "HachingJunction/station/morph_station/simulation.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/simulation.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "bytes": 6481,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/simulation.py",
+      "sourceRead": {
+        "path": "station/morph_station/simulation.py",
+        "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+        "bytes": 6481,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:55.708182+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      }
+    },
+    {
+      "path": "HachingJunction/station/morph_station/schema.sql",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/schema.sql",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "bytes": 1589,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/schema.sql",
+      "sourceRead": {
+        "disposition": "Exact existing Mac copy confirmed by the freshly fetched Mac review; no direct source-byte read is claimed.",
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "readAt": "2026-11-15T07:18:56.083281+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      }
+    },
+    {
+      "path": "HachingJunction/station/tests/test_store.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/tests/test_store.py",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3",
+      "sha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3",
+      "bytes": 30453,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/tests/test_store.py",
+      "sourceRead": {
+        "path": "context/coordination/dashboard-intel-20261115-d5315791/source/station/tests/test_store.py",
+        "sha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3",
+        "bytes": 30453,
+        "pageCount": 1,
+        "readAt": "2026-11-15T07:18:54.715207+00:00"
+      },
+      "reason": "Previously omitted unchanged test dependency imported by test_dashboard.py; original complete source is reused.",
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      },
+      "originalChangeBaselineSha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3"
+    },
+    {
+      "path": "HachingJunction/station/pytest.ini",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/pytest.ini",
+      "disposition": "reuse unchanged exact existing source; no source bytes retransmitted",
+      "baseSha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "bytes": 42,
+      "mode": "0o664",
+      "freshIntelHashAt": "2026-11-15T07:20:14.358611+00:00",
+      "directRepositoryRead": "Unavailable through the current shared MCP; exact failed path is retained locally.",
+      "repositoryReadPath": "github/morph/intel-runtime/source/common/HachingJunction/station/pytest.ini",
+      "sourceRead": {
+        "disposition": "Exact existing Mac copy confirmed by the freshly fetched Mac review; no direct source-byte read is claimed.",
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "readAt": "2026-11-15T07:18:56.083281+00:00"
+      },
+      "macTargetProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00",
+        "readAt": "2026-11-15T07:18:56.083281+00:00",
+        "targetStateAtThatCheck": "already exact final bytes"
+      }
+    }
+  ],
+  "mappingDecision": "The authenticated runtime API imports its same-package store/models and the store opens colocated schema.sql. Reuse Intel-common siblings. Target mapping remains subject to Mac review of its current repository; do not apply it automatically.",
+  "preservedDistinctCopy": {
+    "targetPath": "klemen-dashboard/analytics/morph_station/store.py",
+    "sha256AtMacReview": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+    "operation": "none",
+    "reason": "Separate analytics ownership; this correction requests no edit or replacement."
+  },
+  "documentation": [
+    {
+      "disposition": "Reuse both intentionally different variants without replacing either.",
+      "sharedPath": "context/coordination/dashboard-intel-20261115-d5315791/docs/INTEL_DASHBOARD_API.md",
+      "sharedSha256": "bb97cd43a8476d7dc67a23e7f690d932d3e31cf7e626a37837f79ca37f44444d",
+      "sharedReadAt": "2026-11-15T07:18:55.114979+00:00",
+      "repositoryPath": "intel-runtime/source/common/HachingJunction/station/INTEL_DASHBOARD_API.md",
+      "repositorySha256": "e896e7dbed64f7552f6349d28843688709ea4c68487ba26196aa138703a1f41a",
+      "repositoryHashProof": {
+        "path": "context/verification/source-sync-heartbeat-20261115-063212/dashboard-reuse-review.json",
+        "sha256": "3821bf8f73f230c8576586de6fd95d2b30d24012e5100200580467ec2edcb378",
+        "observedAt": "2026-11-15T06:41:52.008859+00:00"
+      },
+      "difference": "Shared copy has handoff-relative links and delivery-scope prose; repository copy retains repository-relative links. No documentation replacement is requested."
+    }
+  ],
+  "tests": {
+    "thisGroup": "Eleven fresh Intel file hashes match nine complete shared source-byte reads plus two exact available Mac baseline records; all eleven intended Intel sibling hashes are backed by the dated Mac review. Strict full pagination/hash checks cover the fresh evidence reads.",
+    "priorTests": "Earlier adopted dashboard/store source passed 51 focused tests and 255 backend tests at merge; these overlap. No application tests were rerun for this metadata-only correction.",
+    "evidenceClass": "Source provenance and dependency/mapping reconciliation only; no provider or physical verification."
+  },
+  "missingSource": [],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "unsupportedOrUnavailable": {
+    "directRepositoryPaths": [
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/store.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/models.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/requirements.txt",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/client.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/__init__.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/simulation.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/morph_station/schema.sql",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/tests/test_store.py",
+      "github/morph/intel-runtime/source/common/HachingJunction/station/pytest.ini"
+    ],
+    "status": "All direct repository reads returned the server's generic tool error. Nine exact copies were freshly verified through existing supported source paths; schema/pytest reuse uses dated Mac sibling evidence freshly retrieved.",
+    "unsupportedTransferEssential": "station/pytest.ini is unsupported by the unchanged source sender. Its exact available Mac baseline is reused, not renamed or encoded."
+  },
+  "unchangedExternalWork": {
+    "producerDeliveryId": "831bcaf3-d30f-45cf-a30e-03b8d810d32b",
+    "producerGroupComplete": false,
+    "producerMissingOriginal": "HachingJunction/station/tests/test_producers.py",
+    "producerOriginalSha256": "60d804e02c367a4bd151c2e4c62383328f9f9efcad079595c774b34ac58b81e9",
+    "producerOriginalBytes": 19772,
+    "shutdownDeliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+    "scope": "Original producer rejection remains; no review copy or completion is supplied. Preserve the separate shutdown delivery and all concurrent Intel Gemma code and Mac control/provider source."
+  },
+  "exclusions": [
+    "All existing application source bytes are reused rather than retransmitted.",
+    "Credentials, private pairing, databases, runtime logs, recordings, camera images, provider settings, installed dependencies and model files.",
+    "Root final documents and runtime evidence are a separate forthcoming group; no service or automatic receiver operation is authorized by this companion."
+  ],
+  "deletions": [],
+  "renames": [],
+  "applicationSourceChanged": false,
+  "syncState": "Prepared for ordinary source-note delivery; root alone publishes the complete delivery event. Mac reconstruction/publication/deployment not established by preparation."
+}

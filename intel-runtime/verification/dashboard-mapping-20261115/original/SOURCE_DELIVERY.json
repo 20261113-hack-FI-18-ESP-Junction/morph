@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "taskIds": [
+    "M20",
+    "M21"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+  "observedAt": "2026-11-15T06:32:36.214953+00:00",
+  "preparedBy": "/root/adoption_codex",
+  "completionReporter": "/root",
+  "sourceRevision": {
+    "exitCode": 128,
+    "stdout": "",
+    "stderr": "fatal: not a git repository (or any of the parent directories): .git",
+    "workingTreeDirtyState": "unavailable: no usable Git repository"
+  },
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "targetMapping": "Proposed paths follow the available commit plan; Mac must compare current destinations and approve partition mapping before applying. Never overlay active Mac control/provider code.",
+  "baselineManifest": {
+    "path": "context/coordination/dashboard-intel-20261115-d5315791/MANIFEST.json",
+    "sha256": "9f0c55c5511409948dc0ec5e46a0a411403edac4b7612ae17ea6153e29b145fd"
+  },
+  "baselineReceipt": {
+    "path": "context/coordination/remaining-source-20261115/baseline-intel-received.json",
+    "sha256": "52cd250f38473b96a6a437119eb8adf5e94f58b66a5cf4492401465069dced45"
+  },
+  "deletions": [],
+  "renames": [],
+  "supersedes": null,
+  "evidenceClass": "Source adoption and isolated software simulation; no physical verification.",
+  "exclusions": [
+    "All Gemma-owned source, tests, fixtures and analyst documents; separate v12 delivery retains ownership and its own blockers.",
+    "Credentials, private pairing/auth/config values, databases, runtime logs, recordings, real camera captures, installed dependencies, builds and weights.",
+    "Root-owned TODO/status/source-sync documentation and service transition scripts are separate delivery groups."
+  ],
+  "runtime": "No service, worker, receiver, tunnel, provider or hardware operation occurs in this source delivery.",
+  "externalIntegration": {
+    "name": "existing Gemma analyst",
+    "changedByThisDelivery": false,
+    "latestOwnerNote": "context/notes/c5f5f179-5217-5cdb-96f9-8aef7641ccf0.json",
+    "noteSha256": "43e67768eafa1173de54f39768bdbc287631424d85911284a69f5e66317592d9",
+    "scope": "Preserve existing analysis route registration and current v12 modules. This dashboard contribution does not close the separate rejected original analyst-test transfer."
+  },
+  "deliveryId": "44693c32-12a5-4426-9603-72d4e55736ab",
+  "transferId": "f1e4027a-adcf-48a8-b48e-bca63cba0d90",
+  "completionNoteId": "53d998b4-fd3e-40c1-8b7f-71ce8ecae59d",
+  "group": "dashboard-adoption",
+  "intendedBehavior": "One coherent authenticated dashboard GET with source/session/cycle filtering, unchanged metric semantics, bounded complete evidence and cursor.",
+  "files": [],
+  "reusedChangedFiles": [
+    {
+      "path": "HachingJunction/station/morph_station/api.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/api.py",
+      "operation": "edit",
+      "baseSha256": "fca0a0ecda14f11d29c3e60aba052b2889a32c2f41cfd25dcca43c7d2ffd9500",
+      "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+      "bytes": 23313,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/api.py",
+      "sharedReadAt": "2026-11-15T06:29:24.611533+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior."
+    },
+    {
+      "path": "HachingJunction/station/morph_station/store.py",
+      "targetPath": "klemen-dashboard/analytics/morph_station/store.py",
+      "operation": "edit",
+      "baseSha256": "f0e9f3124cbc60ae0091edee1a2c25aa0e7cb343c9eb27d6a4389b46e8ba240c",
+      "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+      "bytes": 48605,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/store.py",
+      "sharedReadAt": "2026-11-15T06:29:24.718461+00:00",
+      "sharedReadPages": 2,
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior."
+    },
+    {
+      "path": "HachingJunction/station/tests/test_dashboard.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+      "bytes": 12063,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/tests/test_dashboard.py",
+      "sharedReadAt": "2026-11-15T06:29:24.758020+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior."
+    }
+  ],
+  "reusedDependencies": [
+    {
+      "path": "HachingJunction/station/morph_station/models.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/models.py",
+      "operation": "edit",
+      "baseSha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3",
+      "bytes": 11096,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/morph_station/models.py",
+      "sharedReadAt": "2026-11-15T06:29:24.797322+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior."
+    },
+    {
+      "path": "HachingJunction/station/requirements.txt",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/requirements.txt",
+      "operation": "edit",
+      "baseSha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b",
+      "bytes": 238,
+      "mode": "0o664",
+      "disposition": "reuse exact complete Mac candidate; no duplicate source bytes transferred",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/source/station/requirements.txt",
+      "sharedReadAt": "2026-11-15T06:29:24.819409+00:00",
+      "sharedReadPages": 1,
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00",
+      "reason": "Exact source already available on Mac; Intel adopted the scoped dashboard behavior."
+    },
+    {
+      "path": "HachingJunction/station/morph_station/client.py",
+      "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91",
+      "bytes": 1645,
+      "disposition": "reuse exact current Mac source",
+      "sharedSourcePath": "station/morph_station/client.py",
+      "sharedReadAt": "2026-11-15T06:30:02.266036+00:00",
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/__init__.py",
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "bytes": 114,
+      "disposition": "reuse exact current Mac source",
+      "sharedSourcePath": "station/morph_station/__init__.py",
+      "sharedReadAt": "2026-11-15T06:30:02.468753+00:00",
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/simulation.py",
+      "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf",
+      "bytes": 6481,
+      "disposition": "reuse exact current Mac source",
+      "sharedSourcePath": "station/morph_station/simulation.py",
+      "sharedReadAt": "2026-11-15T06:30:03.335877+00:00",
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/schema.sql",
+      "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45",
+      "bytes": 1589,
+      "targetPath": "klemen-dashboard/analytics/morph_station/schema.sql",
+      "disposition": "reuse exact Mac-confirmed baseline from refreshed commit plan",
+      "baselineProof": "context/verification/remaining-source-20261115/commit-plan.json",
+      "baselineProofSha256": "4b610e88624f8c378815ecbdcbbf56dea815fb40c496f441ea2befa16c38b652",
+      "directSourceRead": "Unsupported or unavailable through read_context; failure retained separately.",
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00"
+    },
+    {
+      "path": "HachingJunction/station/pytest.ini",
+      "sha256": "6c6ccf864e8f2d2e0223ee8e39bfde660c12435aa37d81e2b14000a6bee15003",
+      "bytes": 42,
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/pytest.ini",
+      "disposition": "reuse exact Mac-confirmed baseline from refreshed commit plan",
+      "baselineProof": "context/verification/remaining-source-20261115/commit-plan.json",
+      "baselineProofSha256": "4b610e88624f8c378815ecbdcbbf56dea815fb40c496f441ea2befa16c38b652",
+      "directSourceRead": "Unsupported or unavailable through read_context; failure retained separately.",
+      "freshIntelHashAt": "2026-11-15T06:32:36.214953+00:00"
+    }
+  ],
+  "missingSource": [],
+  "documentation": [
+    {
+      "disposition": "reuse exact Mac dashboard contract",
+      "sharedSourcePath": "context/coordination/dashboard-intel-20261115-d5315791/docs/INTEL_DASHBOARD_API.md",
+      "sha256": "bb97cd43a8476d7dc67a23e7f690d932d3e31cf7e626a37837f79ca37f44444d"
+    }
+  ],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "tests": {
+    "source": "station-merge-result.json",
+    "sha256": "8586777d2ba8796d9b18b46ed60a7ea43a4826613b6bc5ad9b5dd7ac6f305a2a",
+    "focused": "51 passed: 19 dashboard and 32 store",
+    "backendAtMerge": "255 passed; focused cases overlap this total",
+    "command": "python -m pytest tests/test_dashboard.py tests/test_store.py -q",
+    "scope": "Previously saved isolated test results; no new test run in this source-transfer task."
+  }
+}

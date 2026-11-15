@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "package": "intel-runtime",
-  "sealedAt": "2026-11-15T09:34:48.737190+00:00",
+  "sealedAt": "2026-11-15T09:37:21.829689+00:00",
   "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
   "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
-  "contentBytes": 5548319,
-  "fileCountExcludingThisManifest": 336,
+  "contentBytes": 5590651,
+  "fileCountExcludingThisManifest": 338,
   "originCounts": {
     "derived-existing-synthetic-fixture": 1,
-    "intel-current-source": 254,
+    "intel-current-source": 256,
     "intel-source-with-documented-adaptation": 5,
     "mac-authored-source": 20,
     "package-scaffolding": 12,
@@ -40,8 +40,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 28897,
-      "sha256": "2f61a276905a32ec7c0d3f6b0d7185b4f632166b74c55de6ef82f40753877025",
+      "bytes": 30166,
+      "sha256": "74b7d45a6b763b61dc2525450f189b88cea788580eac066bdcb3997ad8a7b78e",
       "origin": "package-scaffolding"
     },
     {
@@ -52,8 +52,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 351200,
-      "sha256": "b276453374f34a9d8fcbe17278068974abf133a4d09fccc879c04c229eb4dd0e",
+      "bytes": 357002,
+      "sha256": "4fe29125c1af382446a8b225391ee48c59c6bdc57f465e450414f76b0d88a7ba",
       "origin": "package-scaffolding"
     },
     {
@@ -1143,6 +1143,18 @@
       "origin": "package-verification"
     },
     {
+      "path": "verification/dashboard-mapping-20261115/corrected/SOURCE_DELIVERY.json",
+      "bytes": 24489,
+      "sha256": "b9c99605e9e1bf0541f04f8cbfc3face90760f0751f9fed7db93b7212b8436ab",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/dashboard-mapping-20261115/original/SOURCE_DELIVERY.json",
+      "bytes": 10772,
+      "sha256": "3cf836ba5741c45daa5f72243db378391be39d3ef67acc5764459eb7c5256eb9",
+      "origin": "intel-current-source"
+    },
+    {
       "path": "verification/intel-dashboard-20261115-d5315791/README.md",
       "bytes": 2311,
       "sha256": "14ecc4df49429a7fae6c6f9650c1433e79de2e4519e809c14f3734b88477a9cb",
@@ -2044,88 +2056,96 @@
     }
   ],
   "previousSeal": {
-    "gitCommit": "305d65d70654880506137e1bf90da2f671ab5588",
-    "gitTree": "81be02812752f5803da26a592b20e6153d1b65cb",
-    "sealedAt": "2026-11-15T09:32:57.653612+00:00",
-    "sha256": "6c65f7a84d69502b711554c8417d35000589b4f1bd267ea303c9a1252386ec9b",
-    "fileCountExcludingThisManifest": 333,
-    "contentBytes": 5504924,
+    "gitCommit": "32df3a8a4d0e5b4b1afb476e4acda44f415e3c67",
+    "gitTree": "3bd1f18a7c7fa4cd3eaa9107dc7d6e1ba7273f4c",
+    "sealedAt": "2026-11-15T09:34:48.737190+00:00",
+    "sha256": "25d58da25248691de4377ad2c09a58e6c7dd4914d63d6bba92e1da372e490d7e",
+    "fileCountExcludingThisManifest": 336,
+    "contentBytes": 5548319,
     "previousSeal": {
-      "gitCommit": "6ec4ca5fc6828e0e12c6232bd3017f3af4908458",
-      "gitTree": "56565a6da58dc484d78c9c727634c37643b7edd2",
-      "sealedAt": "2026-11-15T09:28:08.489842+00:00",
-      "sha256": "d5128746551c8c8e23455ad9dd3d55ee82e26c4a14d81466dc42a7996ff17dff",
-      "fileCountExcludingThisManifest": 329,
-      "contentBytes": 5395154,
+      "gitCommit": "305d65d70654880506137e1bf90da2f671ab5588",
+      "gitTree": "81be02812752f5803da26a592b20e6153d1b65cb",
+      "sealedAt": "2026-11-15T09:32:57.653612+00:00",
+      "sha256": "6c65f7a84d69502b711554c8417d35000589b4f1bd267ea303c9a1252386ec9b",
+      "fileCountExcludingThisManifest": 333,
+      "contentBytes": 5504924,
       "previousSeal": {
-        "gitCommit": "7521ef32275d8e5f44889ffbf7dc2f58648692eb",
-        "gitTree": "bd5fa02f1b074cdead951190089df94538bc8362",
-        "sealedAt": "2026-11-15T09:22:36.388180+00:00",
-        "sha256": "c1cd1331cac34adf4e475a2abed64a37cea5f7d590dc0940d2f6402b37aced15",
-        "fileCountExcludingThisManifest": 286,
-        "contentBytes": 4841894,
+        "gitCommit": "6ec4ca5fc6828e0e12c6232bd3017f3af4908458",
+        "gitTree": "56565a6da58dc484d78c9c727634c37643b7edd2",
+        "sealedAt": "2026-11-15T09:28:08.489842+00:00",
+        "sha256": "d5128746551c8c8e23455ad9dd3d55ee82e26c4a14d81466dc42a7996ff17dff",
+        "fileCountExcludingThisManifest": 329,
+        "contentBytes": 5395154,
         "previousSeal": {
-          "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
-          "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
-          "sealedAt": "2026-11-15T08:23:55.436622+00:00",
-          "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
-          "fileCountExcludingThisManifest": 254,
-          "contentBytes": 4203796,
+          "gitCommit": "7521ef32275d8e5f44889ffbf7dc2f58648692eb",
+          "gitTree": "bd5fa02f1b074cdead951190089df94538bc8362",
+          "sealedAt": "2026-11-15T09:22:36.388180+00:00",
+          "sha256": "c1cd1331cac34adf4e475a2abed64a37cea5f7d590dc0940d2f6402b37aced15",
+          "fileCountExcludingThisManifest": 286,
+          "contentBytes": 4841894,
           "previousSeal": {
-            "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
-            "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
-            "sealedAt": "2026-11-15T08:20:09.931452+00:00",
-            "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
-            "fileCountExcludingThisManifest": 242,
-            "contentBytes": 3872471,
+            "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+            "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
+            "sealedAt": "2026-11-15T08:23:55.436622+00:00",
+            "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
+            "fileCountExcludingThisManifest": 254,
+            "contentBytes": 4203796,
             "previousSeal": {
-              "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
-              "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
-              "sealedAt": "2026-11-15T08:18:02.075721+00:00",
-              "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
-              "fileCountExcludingThisManifest": 221,
-              "contentBytes": 3565277,
+              "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
+              "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
+              "sealedAt": "2026-11-15T08:20:09.931452+00:00",
+              "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
+              "fileCountExcludingThisManifest": 242,
+              "contentBytes": 3872471,
               "previousSeal": {
-                "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
-                "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
-                "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
-                "sealedAt": "2026-11-15T07:42:20.384410+00:00",
-                "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
-                "fileCountExcludingThisManifest": 186,
-                "contentBytes": 2963049,
+                "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
+                "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
+                "sealedAt": "2026-11-15T08:18:02.075721+00:00",
+                "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
+                "fileCountExcludingThisManifest": 221,
+                "contentBytes": 3565277,
                 "previousSeal": {
-                  "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
-                  "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
-                  "sealedAt": "2026-11-15T07:17:33.712630+00:00",
-                  "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
-                  "fileCountExcludingThisManifest": 174,
-                  "contentBytes": 2708838,
+                  "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
+                  "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
+                  "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
+                  "sealedAt": "2026-11-15T07:42:20.384410+00:00",
+                  "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
+                  "fileCountExcludingThisManifest": 186,
+                  "contentBytes": 2963049,
                   "previousSeal": {
-                    "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
-                    "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
-                    "sealedAt": "2026-11-15T06:54:29.835819+00:00",
-                    "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
-                    "fileCountExcludingThisManifest": 167,
-                    "contentBytes": 2652462,
+                    "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
+                    "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
+                    "sealedAt": "2026-11-15T07:17:33.712630+00:00",
+                    "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
+                    "fileCountExcludingThisManifest": 174,
+                    "contentBytes": 2708838,
                     "previousSeal": {
-                      "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
-                      "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
-                      "sealedAt": "2026-11-15T06:40:02.262971+00:00",
-                      "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
-                      "fileCountExcludingThisManifest": 165,
-                      "contentBytes": 2616880,
+                      "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
+                      "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
+                      "sealedAt": "2026-11-15T06:54:29.835819+00:00",
+                      "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
+                      "fileCountExcludingThisManifest": 167,
+                      "contentBytes": 2652462,
                       "previousSeal": {
-                        "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
-                        "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
-                        "sealedAt": "2026-11-15T03:55:06.975648+00:00",
-                        "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
-                        "fileCountExcludingThisManifest": 159,
-                        "contentBytes": 2409735
+                        "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
+                        "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
+                        "sealedAt": "2026-11-15T06:40:02.262971+00:00",
+                        "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
+                        "fileCountExcludingThisManifest": 165,
+                        "contentBytes": 2616880,
+                        "previousSeal": {
+                          "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
+                          "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
+                          "sealedAt": "2026-11-15T03:55:06.975648+00:00",
+                          "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+                          "fileCountExcludingThisManifest": 159,
+                          "contentBytes": 2409735
+                        }
                       }
                     }
-                  }
-                },
-                "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+                  },
+                  "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+                }
               }
             }
           }
@@ -2133,8 +2153,8 @@
       }
     }
   },
-  "sourceDeliveryRequestId": "fb63f766-124e-4d58-9fb5-603ce5c9b3c6",
-  "sourceDeliveryId": "876962a0-251c-5c92-a025-09678f077983",
+  "sourceDeliveryRequestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sourceDeliveryId": "77133e66-7c2b-45ce-8ab6-69549d784320",
   "previousSnapshotUpdated": true,
   "originalFilesModifiedDefinition": "Exact newer received CLI replaces its proven baseline; three historical received documents have separately recorded Mac annotations. Original and earlier hashes remain in provenance. Two imported backend files additionally contain documented Mac compact-dashboard development; their original hashes and provenance rows are retained in SOURCE_UPDATES.json and SOURCE_ORIGINS.json.",
   "updatedSourcePaths": [
@@ -2188,8 +2208,10 @@
     "source/common/verification/intel-reliability-20261114/DEMO.md",
     "source/common/verification/intel-reliability-20261114/README.md"
   ],
-  "sealBasis": "Committed 305d65d70654880506137e1bf90da2f671ab5588 plus exact historical guides archive and three package metadata updates; prior source/evidence bytes preserved.",
+  "sealBasis": "Committed 32df3a8a4d0e5b4b1afb476e4acda44f415e3c67 plus exact historical mappings archive and three package metadata updates; prior source/evidence bytes preserved.",
   "archivedSourcePaths": [
+    "verification/dashboard-mapping-20261115/corrected/SOURCE_DELIVERY.json",
+    "verification/dashboard-mapping-20261115/original/SOURCE_DELIVERY.json",
     "verification/intel-dashboard-20261115-d5315791/README.md",
     "verification/intel-dashboard-20261115-d5315791/SOURCE_DELIVERY.json",
     "verification/intel-dashboard-20261115-d5315791/final-coordination-20261115T082805Z/README.md",
@@ -2321,6 +2343,7 @@
   "developmentSourceCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
   "developmentReconciliationPath": "SOURCE_UPDATES.json",
   "sourceDeliveryIds": [
-    "876962a0-251c-5c92-a025-09678f077983"
+    "44693c32-12a5-4426-9603-72d4e55736ab",
+    "77133e66-7c2b-45ce-8ab6-69549d784320"
   ]
 }
