@@ -1,0 +1,308 @@
+{
+  "analystBackup": {
+    "createdAt": "2026-11-15T07:08:31.304379+00:00",
+    "directory": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/analyst-private-backup",
+    "fileCount": 0,
+    "files": [],
+    "mode": "private 0700 directories and 0600 files",
+    "originalsModified": false,
+    "retainedWithoutFurtherWrites": true,
+    "source": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/.data/analysis"
+  },
+  "beforeStopBackup": {
+    "bytes": 225280,
+    "createdAt": "2026-11-15T07:08:31.320027+00:00",
+    "integrityCheck": "ok",
+    "mode": "0600",
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/before-stop-immutable.sqlite3",
+    "retainedWithoutFurtherWrites": true,
+    "sha256": "81ba66e62088305bfa0b2d258b7226ff852a0afbc1fd19e9ad34ea26d17ebb67",
+    "sourceOpenedWith": "mode=ro; query_only=ON"
+  },
+  "canonicalChangedDuringUncleanTermination": false,
+  "canonicalRecordsUnchangedAfterStartup": true,
+  "completedAt": "2026-11-15T07:08:31.802378+00:00",
+  "credentialValueOrHashPersisted": false,
+  "environmentPersisted": false,
+  "environmentPreservedInMemory": true,
+  "evidenceBackup": {
+    "createdAt": "2026-11-15T07:08:31.313565+00:00",
+    "directory": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/evidence-private-backup",
+    "fileCount": 1,
+    "files": [
+      {
+        "bytes": 68,
+        "relativePath": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+        "sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9"
+      }
+    ],
+    "mode": "private 0700 directories and 0600 files",
+    "originalsModified": false,
+    "retainedWithoutFurtherWrites": true,
+    "source": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/.data/evidence"
+  },
+  "evidenceChangedDuringUncleanTermination": false,
+  "evidenceUnchangedAfterStartup": true,
+  "executionAuthority": "Root operator invocation",
+  "finalBeforeStartBackup": {
+    "bytes": 225280,
+    "createdAt": "2026-11-15T07:08:31.369737+00:00",
+    "integrityCheck": "ok",
+    "mode": "0600",
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/final-before-start-immutable.sqlite3",
+    "retainedWithoutFurtherWrites": true,
+    "sha256": "81ba66e62088305bfa0b2d258b7226ff852a0afbc1fd19e9ad34ea26d17ebb67",
+    "sourceOpenedWith": "mode=ro; query_only=ON"
+  },
+  "finalBeforeStartEventSequence": 50,
+  "newService": {
+    "argv": [
+      "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/../../morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "-m",
+      "morph_station",
+      "serve",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8000"
+    ],
+    "cwd": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction",
+    "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+    "pid": 476229,
+    "startTicks": 14924157,
+    "startedAt": "2026-11-15T07:08:30.570000+00:00"
+  },
+  "nextAction": "Root must verify the actual new dashboard and saved image read through the existing Intel worker and shared Mac MCP.",
+  "oldService": {
+    "argv": [
+      "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/../../morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "-m",
+      "morph_station",
+      "serve",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8000"
+    ],
+    "cwd": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction",
+    "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+    "pid": 188282,
+    "startTicks": 10907663,
+    "startedAt": "2026-11-14T19:59:05.630000+00:00"
+  },
+  "originalArgumentsPreserved": true,
+  "physicalVerification": false,
+  "preparedBy": "/root/adoption_receiver_review",
+  "preservedProcessesAfter": {
+    "dashboard": {
+      "cwd": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/morph-station",
+      "executable": "/home/intel/.local/opt/node-v24.22.3-linux-x64/bin/node",
+      "pid": 188283,
+      "startTicks": 10907663,
+      "startedAt": "2026-11-14T19:59:05.630000+00:00"
+    },
+    "fiveMinuteWatcher": {
+      "cwd": "/home/intel/Documents/Junction",
+      "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+      "pid": 279692,
+      "startTicks": 11717397,
+      "startedAt": "2026-11-14T22:14:02.970000+00:00"
+    },
+    "stationWorker": {
+      "cwd": "/home/intel/Documents/Junction/mcp-runtime-20261115T051202Z",
+      "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+      "pid": 417036,
+      "startTicks": 14287604,
+      "startedAt": "2026-11-15T05:22:25.040000+00:00"
+    }
+  },
+  "preservedProcessesBefore": {
+    "dashboard": {
+      "cwd": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/morph-station",
+      "executable": "/home/intel/.local/opt/node-v24.22.3-linux-x64/bin/node",
+      "pid": 188283,
+      "startTicks": 10907663,
+      "startedAt": "2026-11-14T19:59:05.630000+00:00"
+    },
+    "fiveMinuteWatcher": {
+      "cwd": "/home/intel/Documents/Junction",
+      "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+      "pid": 279692,
+      "startTicks": 11717397,
+      "startedAt": "2026-11-14T22:14:02.970000+00:00"
+    },
+    "stationWorker": {
+      "cwd": "/home/intel/Documents/Junction/mcp-runtime-20261115T051202Z",
+      "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+      "pid": 417036,
+      "startTicks": 14287604,
+      "startedAt": "2026-11-15T05:22:25.040000+00:00"
+    }
+  },
+  "priorFailedActivation": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+  "priorFailedRecovery": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/recovery-result.json",
+  "privateLogPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/station-private.log",
+  "providerFlagsChanged": false,
+  "providerRequestsIssuedByTransition": 0,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "requests": [
+    {
+      "bytes": 259,
+      "health": {
+        "dashboardRead": {
+          "defaultCycleLimit": 20,
+          "maxCycleLimit": 100,
+          "maxResponseBytes": 4194303,
+          "path": "/api/v1/dashboard",
+          "sessionLimit": 50,
+          "version": 1
+        },
+        "hardwareIntegrated": false,
+        "providersIntegrated": false,
+        "schemaVersion": 1,
+        "status": "ok"
+      },
+      "json": true,
+      "method": "GET",
+      "path": "/health",
+      "sha256": "43f1b5497d99942149a61be8dcbffcf5ec60fe4798c88a6f987a7e58ece4dca7",
+      "status": 200,
+      "topLevelKeys": [
+        "dashboardRead",
+        "hardwareIntegrated",
+        "providersIntegrated",
+        "schemaVersion",
+        "service",
+        "status"
+      ]
+    },
+    {
+      "analystPresent": true,
+      "bytes": 34307,
+      "dashboardPresent": true,
+      "json": true,
+      "method": "GET",
+      "path": "/openapi.json",
+      "sha256": "f6627c8d78501f3c86a664e20600415c9a1a64338ba20f27b8a3d4965445e8b5",
+      "status": 200,
+      "topLevelKeys": [
+        "components",
+        "info",
+        "openapi",
+        "paths"
+      ],
+      "version": "1.0.0"
+    },
+    {
+      "bytes": 36484,
+      "capabilities": {
+        "dashboardRead": {
+          "defaultCycleLimit": 20,
+          "maxCycleLimit": 100,
+          "maxResponseBytes": 4194303,
+          "path": "/api/v1/dashboard",
+          "sessionLimit": 50,
+          "version": 1
+        }
+      },
+      "json": true,
+      "method": "GET",
+      "path": "/api/v1/schema",
+      "responseSchemas": [
+        "Dashboard",
+        "Snapshot"
+      ],
+      "sha256": "4e935aa8b1bcd78eb9d4daa2153475cdf0a0d430fee8979b45cbb92fbd80280d",
+      "status": 200,
+      "topLevelKeys": [
+        "capabilities",
+        "envelopes",
+        "records",
+        "responses",
+        "schemaVersion"
+      ]
+    },
+    {
+      "bytes": 4129,
+      "cycleCount": 0,
+      "json": true,
+      "lastEventSequence": 50,
+      "method": "GET",
+      "path": "/api/v1/dashboard?sourceMode=live",
+      "selectionPresent": false,
+      "sessionCount": 0,
+      "sha256": "ee3195454984eda0d3ebca8897883db2e8346367ade54d5f6229d0c725e8cae5",
+      "sourceMode": "live",
+      "status": 200,
+      "topLevelKeys": [
+        "cameras",
+        "currentDetail",
+        "dashboardVersion",
+        "detail",
+        "generatedAt",
+        "lastEventSequence",
+        "metrics",
+        "recentCycles",
+        "schemaVersion",
+        "selectedSessionId",
+        "sessions",
+        "snapshot",
+        "sourceMode"
+      ]
+    },
+    {
+      "bytes": 10670,
+      "cycleCount": 5,
+      "json": true,
+      "lastEventSequence": 50,
+      "method": "GET",
+      "path": "/api/v1/dashboard?sourceMode=simulation",
+      "selectionPresent": true,
+      "sessionCount": 1,
+      "sha256": "7bafc3b2b722aee4ae58f48dbf31d817f76f964ce80937777b72674d898c6298",
+      "sourceMode": "simulation",
+      "status": 200,
+      "topLevelKeys": [
+        "cameras",
+        "currentDetail",
+        "dashboardVersion",
+        "detail",
+        "generatedAt",
+        "lastEventSequence",
+        "metrics",
+        "recentCycles",
+        "schemaVersion",
+        "selectedSessionId",
+        "sessions",
+        "snapshot",
+        "sourceMode"
+      ]
+    },
+    {
+      "bytes": 14,
+      "json": true,
+      "method": "GET",
+      "path": "/api/v1/analysis/reports",
+      "sha256": "486a8f07711a55700e1ed31c536217c17f3135cc6340b4830bcb4f87bbc7072a",
+      "status": 200,
+      "topLevelKeys": [
+        "reports"
+      ]
+    }
+  ],
+  "runDirectory": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z",
+  "seedOrRestorePerformed": false,
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "sharedMcpRoundtripVerified": false,
+  "signals": [
+    {
+      "pid": 188282,
+      "sentAt": "2026-11-15T07:08:31.354160+00:00",
+      "signal": "SIGKILL",
+      "startTicks": 10907663
+    }
+  ],
+  "startedAt": "2026-11-15T07:08:31.253190+00:00",
+  "status": "passed",
+  "uncleanTerminationRisk": "SIGKILL immediately terminates the old API without graceful cleanup. Active requests and uncommitted work may be lost; in-progress filesystem writes may be incomplete. Private backups preserve the observed pre-kill state; final committed data is checked without restoring or claiming unfinished work succeeded."
+}

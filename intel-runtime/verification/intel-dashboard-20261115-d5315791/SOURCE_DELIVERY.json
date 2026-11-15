@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "deliveryId": "36126a56-504b-417f-b5d9-b0a376248b59",
+  "transferId": "089c2d01-8707-4083-955d-681a126f0143",
+  "completionNoteId": "d7022c99-a783-4acf-b631-44871d25bca6",
+  "createdAt": "2026-11-15T07:23:01.205740+00:00",
+  "group": "intel-dashboard-dated-documents-and-results",
+  "taskIds": [
+    "M20",
+    "M21"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction",
+  "observedAt": "2026-11-15T07:23:01.297011+00:00",
+  "preparedBy": "/root/adoption_codex",
+  "completionReporter": "/root",
+  "authors": [
+    "/root",
+    "/root/adoption_station",
+    "/root/adoption_receiver_review",
+    "/root/adoption_codex"
+  ],
+  "intendedBehavior": "Deliver exact current Intel documentation and sanitized runtime/test summaries as a new dated review archive, preserving existing application and Mac task guides.",
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "targetRoot": "intel-runtime/verification/intel-dashboard-20261115-d5315791",
+  "sourceRevision": "Exact frozen per-file hashes identify this snapshot; no Intel Git revision or clean working tree is claimed.",
+  "baseline": "New archival targets are proposed additions with null baseline. Mac must inspect existing destinations and preserve conflicts; these are not edits to its shared guides.",
+  "files": [
+    {
+      "path": "Junction/TODO.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/TODO.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "fb1cee5b2aca12691bc67b3a610938b8e020d923c7f0ce19216a3578cdc546fc",
+      "bytes": 39067,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/TODO.md",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/PROJECT_STATUS.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/PROJECT_STATUS.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "ca22f208655b5889c9ef1427c92c45ea446f0c728b089601bb8df5b3218b14e8",
+      "bytes": 61489,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/PROJECT_STATUS.md",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/morph-intel-transfer/morph-context/NOTION_SYNC.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/morph-intel-transfer/morph-context/NOTION_SYNC.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "daf16fcd6e4baa4bf6074d7624fb8bb69e2806e8ff26deb40e33f119aa0b64b4",
+      "bytes": 46964,
+      "mode": "0o644",
+      "sourceOrigin": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/NOTION_SYNC.md",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/INTEGRATION_REPORT.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/INTEGRATION_REPORT.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "b198430860568c3106bbf5727f0ee88a3d6c61896be597cf3b66af025b306116",
+      "bytes": 20377,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/INTEGRATION_REPORT.md",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/RUNTIME_VERIFICATION.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/RUNTIME_VERIFICATION.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "7b1b88b2c023b439ecef19de5ba9b196972fa5706ce997e879d85e8ef9f69d00",
+      "bytes": 8351,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/RUNTIME_VERIFICATION.md",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/recovery-result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/recovery-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "f8c57a404a09a55b4a116832583028411f6c211afadc9a0725059100d882e904",
+      "bytes": 11787,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/recovery-result.json",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-verification-20261115T070901Z-8bce8491/result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-verification-20261115T070901Z-8bce8491/result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "5dcff5ed0e1f56615da7f3d41afa8cc009906cab48df6f4b6bdf02b4d024ab4e",
+      "bytes": 16733,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-verification-20261115T070901Z-8bce8491/result.json",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "1ae3c68a805d06cde2d3e3ca5ffe3bd3a3664e83f2bcb4fba9ecb372ed655e1f",
+      "bytes": 9601,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/result.json",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/README.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "8af00727d0be16f515f0cca8be831a54dcdb3d4ffab3ad0355551d92be2fae49",
+      "bytes": 2483,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/README.md",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/runtime-restored-readback.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/runtime-restored-readback.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "f1f309b8e4f652f7ac69610f7126e4bdbe791d03eda712f6119dcb08dcbddb7a",
+      "bytes": 1319,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/runtime-restored-readback.json",
+      "reason": "Exact dated Intel documentation/result snapshot in a new review archive; never overlay the Mac's working guides or application."
+    },
+    {
+      "path": "README.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "14ecc4df49429a7fae6c6f9650c1433e79de2e4519e809c14f3734b88477a9cb",
+      "bytes": 2311,
+      "mode": "0o600",
+      "reason": "Explain exact snapshot mapping, dated state, exclusions and review-only scope."
+    }
+  ],
+  "reusedDependencies": [
+    {
+      "path": "morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "sharedPath": "context/SOURCE_SYNC.md",
+      "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "bytes": 17956,
+      "disposition": "Exact fresh shared policy matches current reconciled Intel policy; no duplicate bytes transferred."
+    }
+  ],
+  "documentation": [
+    "README.md",
+    "Junction/TODO.md",
+    "Junction/PROJECT_STATUS.md"
+  ],
+  "tests": {
+    "execution": "No test or runtime action is performed by this source transfer.",
+    "savedSuite": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 309
+    },
+    "savedSuiteSha256": "1ae3c68a805d06cde2d3e3ca5ffe3bd3a3664e83f2bcb4fba9ecb372ed655e1f",
+    "relay": "Nine actual bounded GET requests, eight logical checks, simulation evidence; independent Klemen UI acceptance not tested by this harness.",
+    "recovery": "Root-approved process recovery retained canonical data and evidence. It used one unclean SIGKILL after failed graceful attempts; no interrupted-request success is implied.",
+    "transferChecks": "Unchanged sender screening, exact frozen/current hashes, JSON parsing, preserved test source hash invariance and per-case saved relay status; strict shared readbacks follow send."
+  },
+  "historicalScope": "Original pending/source-state prose is preserved. Subsequent mapping completion, task/UI results and delivery index are separate immutable handoffs.",
+  "mappingCorrection": {
+    "deliveryId": "77133e66-7c2b-45ce-8ab6-69549d784320",
+    "transferId": "7048d910-46ef-487e-b6bc-1e7081eaed6c",
+    "completionNoteId": "dc7b60b4-c0e3-449b-afee-e900915f7891",
+    "completionSha256": "f0d4418e3dd4432e933c95cfc9065bbbd007f27ec744fc361fc18438d89eb2ce"
+  },
+  "exclusions": [
+    "No application source, credentials, pairing material, private database/backup bytes, process environment, runtime logs, recordings, real images, weights or installed dependencies.",
+    "station-tests.xml is unsupported by the unchanged sender; station-tests.log is an excluded runtime/test log. Their original hashes and summary are retained in the exact result/README.",
+    "Other historically linked reports and per-request body artifacts are not claimed present in this ten-original snapshot. No link or hash establishes receipt of excluded bytes.",
+    "Runtime guard/support/test/harness source will use a separate review-only group. It must not be executed on Mac.",
+    "Original producer test rejection remains unresolved; this document-group completion does not close application source reproduction or physical acceptance."
+  ],
+  "notion": {
+    "M20": "In progress",
+    "M21": "In progress",
+    "runtimeAnnotationIds": [
+      "e89ceeb8-66a3-45cc-9efe-2c4f949d1fd1",
+      "26a7a590-2eb0-48ce-a853-dc10a0cceb63"
+    ],
+    "statusAtSnapshot": "New runtime annotations pending exact Notion readbacks; earlier c913/0db corrections verified. Preserve original criteria/dependencies."
+  },
+  "missingSource": [],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "supersedes": null,
+  "deletions": [],
+  "renames": [],
+  "applicationSourceChanged": false,
+  "physicalVerification": false,
+  "receiver": "Owner-revoked automatic Intel receiver remains stopped; no login or receiver event is authorized."
+}

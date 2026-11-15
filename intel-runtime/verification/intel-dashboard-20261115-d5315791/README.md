@@ -1,0 +1,11 @@
+# Dated Intel dashboard documentation and runtime results
+
+This is an exact snapshot of ten Intel documentation/result files for request d5315791-6749-4b01-97b5-1b9357306487. Original workspace paths are retained beneath `source/Junction/` in the proposed repository archive. The source bundle itself stores the same files beneath `Junction/`; SOURCE_DELIVERY.json records the explicit mapping.
+
+Start with the integration and runtime reports under `source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/`, then read the included exact recovery, relay and final-test results. Root TODO and PROJECT_STATUS describe task context; the imported primary NOTION_SYNC is an Intel ledger snapshot. Do not overlay these snapshots onto shared Mac task guides or application source. No source in this group is an instruction to run a process, operate hardware or call a provider.
+
+The root operator restored the actual API on November 15, 2026 at 07:08:31 UTC after retained failed shutdown attempts. The subsequent Intel-initiated shared MCP/GET-worker relay passed nine requests covering eight logical checks. Its saved image is a simulated one-pixel PNG, and Klemen UI acceptance is separate. The existing Station environment ran 309 isolated regression cases successfully. Full original source, failed runs and private backups remain retained on Intel.
+
+These files are intentionally unchanged historical snapshots. Earlier pending states, source mapping proposals and links to other dated reports retain their original wording. Mapping delivery 77133e66-7c2b-45ce-8ab6-69549d784320 separately corrects the Intel runtime sibling dependencies and preserves the older Klemen analytics copy. Subsequent Notion/UI results belong in a later index or handoff; they must not rewrite this snapshot.
+
+The group includes summary/result JSON and safe host-qualified paths/hashes. Private databases, credentials, runtime logs, binaries, images and original XML logs are excluded. Referenced files outside these ten originals are not implicitly included; many links identify Intel-local retained history. Exact runtime guard/harness source is a separate review-only group, whose absolute Intel guards are not a runnable Mac deployment. Original rejected producer-test source remains a separate unresolved transfer gap.

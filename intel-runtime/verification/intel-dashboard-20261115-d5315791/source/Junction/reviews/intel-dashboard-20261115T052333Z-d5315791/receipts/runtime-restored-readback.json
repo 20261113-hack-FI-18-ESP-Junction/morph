@@ -1,0 +1,35 @@
+{
+  "note_id": "eb59a294-b174-466d-bdff-2b704ec14c43",
+  "shared_path": "context/notes/eb59a294-b174-466d-bdff-2b704ec14c43.json",
+  "saved_at": "2026-11-15T07:15:59.624627+00:00",
+  "read_context_sha256": "71d49ac5e842ca2f3968f412a06ecea6495540855a7131064172c200848cebdf",
+  "six_payload_fields_match": true,
+  "event": {
+    "event": {
+      "event_id": "3ba364e3-d572-5b30-b541-e90380554729",
+      "seq": 16,
+      "note_id": "eb59a294-b174-466d-bdff-2b704ec14c43",
+      "note_path": "context/notes/eb59a294-b174-466d-bdff-2b704ec14c43.json",
+      "note_sha256": "71d49ac5e842ca2f3968f412a06ecea6495540855a7131064172c200848cebdf",
+      "note_characters": 7000,
+      "origin": "intel",
+      "target": "mac",
+      "kind": "work",
+      "state": "claimed",
+      "attempts": 1,
+      "consumer_id": "receiver-b90b98ed-629b-4490-b680-9a593507c8f4",
+      "claim_id": "12de9f03-482e-4913-b653-0c684f35784a",
+      "result_sha256": null,
+      "error_code": "",
+      "created_at": "2026-11-15T07:15:59.678407+00:00",
+      "received_at": "2026-11-15T07:16:00.217704+00:00",
+      "processed_at": null,
+      "failed_at": null,
+      "retry_at": null,
+      "lease_expires_at": "2026-11-15T07:21:30.240490+00:00",
+      "claimable": false
+    }
+  },
+  "shared_server": "morph-context",
+  "tls_verification": true
+}

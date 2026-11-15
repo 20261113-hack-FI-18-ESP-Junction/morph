@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "author": "/root/adoption_codex",
+  "executedBy": "/root",
+  "startedAt": "2026-11-15T07:09:01.195357+00:00",
+  "initiator": "Intel active agent through existing shared Mac MCP",
+  "cases": [
+    {
+      "label": "01-schema",
+      "requestId": "ac104e46-76aa-454c-9486-46ace2723be2",
+      "path": "/api/v1/schema",
+      "query": {},
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:01.447399+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "ac104e46-76aa-454c-9486-46ace2723be2",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:31.415087+00:00",
+        "captured_at": "2026-11-15T07:09:01.679942+00:00",
+        "completed_at": "2026-11-15T07:09:01.698728+00:00",
+        "content_type": "application/json",
+        "response_sha256": "4e935aa8b1bcd78eb9d4daa2153475cdf0a0d430fee8979b45cbb92fbd80280d",
+        "status_code": 200
+      },
+      "bytes": 36484,
+      "responseSha256": "4e935aa8b1bcd78eb9d4daa2153475cdf0a0d430fee8979b45cbb92fbd80280d",
+      "responsePages": 1,
+      "polls": 2,
+      "receivedAt": "2026-11-15T07:09:02.001011+00:00",
+      "elapsedMonotonicSeconds": 0.5527205709950067,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "application/json",
+        "cacheControl": null,
+        "bytes": 36484,
+        "sha256": "4e935aa8b1bcd78eb9d4daa2153475cdf0a0d430fee8979b45cbb92fbd80280d",
+        "elapsedMonotonicSeconds": 0.02733951799746137,
+        "receivedAt": "2026-11-15T07:09:02.028487+00:00"
+      }
+    },
+    {
+      "label": "02-dashboard-live",
+      "requestId": "09450d05-a059-49d9-887e-da1a3ed9cbbc",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "live"
+      },
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:02.037043+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "09450d05-a059-49d9-887e-da1a3ed9cbbc",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:32.079927+00:00",
+        "captured_at": "2026-11-15T07:09:03.924513+00:00",
+        "completed_at": "2026-11-15T07:09:03.908858+00:00",
+        "content_type": "application/json",
+        "response_sha256": "1204c38d7d1e6c0fe4ef0de4faf923e92e51485ec29ca337d8501e16b290829c",
+        "status_code": 200
+      },
+      "bytes": 4129,
+      "responseSha256": "1204c38d7d1e6c0fe4ef0de4faf923e92e51485ec29ca337d8501e16b290829c",
+      "responsePages": 1,
+      "polls": 3,
+      "receivedAt": "2026-11-15T07:09:04.086650+00:00",
+      "elapsedMonotonicSeconds": 2.0488524370011874,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "application/json",
+        "cacheControl": "private, no-store",
+        "bytes": 4129,
+        "sha256": "8604558b76536610872d58edcebf4f62e08c304f0dd14327fa24e34428ceaa7b",
+        "elapsedMonotonicSeconds": 0.005009353990317322,
+        "receivedAt": "2026-11-15T07:09:04.091863+00:00"
+      }
+    },
+    {
+      "label": "03-dashboard-simulation",
+      "requestId": "b4cf6c07-6287-4061-be3b-52751023cbe6",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "simulation"
+      },
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:04.095076+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "b4cf6c07-6287-4061-be3b-52751023cbe6",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:34.175433+00:00",
+        "captured_at": "2026-11-15T07:09:06.414672+00:00",
+        "completed_at": "2026-11-15T07:09:06.396273+00:00",
+        "content_type": "application/json",
+        "response_sha256": "012e781f5d147c5c0a98473d216a7f3e4221febcb0588f7c22250678dabfa233",
+        "status_code": 200
+      },
+      "bytes": 10670,
+      "responseSha256": "012e781f5d147c5c0a98473d216a7f3e4221febcb0588f7c22250678dabfa233",
+      "responsePages": 1,
+      "polls": 6,
+      "receivedAt": "2026-11-15T07:09:06.720079+00:00",
+      "elapsedMonotonicSeconds": 2.6242841589992167,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "application/json",
+        "cacheControl": "private, no-store",
+        "bytes": 10670,
+        "sha256": "8f4ee654e891b870dba560c0fde7f4951249b07fa7c3da455666e5f86311f31e",
+        "elapsedMonotonicSeconds": 0.006942642008652911,
+        "receivedAt": "2026-11-15T07:09:06.727226+00:00"
+      }
+    },
+    {
+      "label": "04-selected-cycle-00",
+      "requestId": "73a3353e-9924-4aa1-a17e-5ffd1e440b42",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "simulation",
+        "sessionId": "intel-bringup:session",
+        "cycleId": "intel-bringup:in_progress"
+      },
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:06.732483+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "73a3353e-9924-4aa1-a17e-5ffd1e440b42",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:37.282359+00:00",
+        "captured_at": "2026-11-15T07:09:08.639961+00:00",
+        "completed_at": "2026-11-15T07:09:09.279522+00:00",
+        "content_type": "application/json",
+        "response_sha256": "7f7bfc7b22fa7ba6edef7a2099153cdbdef16617b6ea2f78b0e427bee6f78666",
+        "status_code": 200
+      },
+      "bytes": 10670,
+      "responseSha256": "7f7bfc7b22fa7ba6edef7a2099153cdbdef16617b6ea2f78b0e427bee6f78666",
+      "responsePages": 1,
+      "polls": 4,
+      "receivedAt": "2026-11-15T07:09:09.761309+00:00",
+      "elapsedMonotonicSeconds": 3.0280013570009032,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "application/json",
+        "cacheControl": "private, no-store",
+        "bytes": 10670,
+        "sha256": "90df4e6c15922d89bedacedfddd56b8231ced20385841c1f3103c7ef16125829",
+        "elapsedMonotonicSeconds": 0.006898512001498602,
+        "receivedAt": "2026-11-15T07:09:09.768429+00:00"
+      }
+    },
+    {
+      "label": "04-selected-cycle-01",
+      "requestId": "905617a4-422b-4d39-a34e-961b8e15bb8a",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "simulation",
+        "sessionId": "intel-bringup:session",
+        "cycleId": "intel-bringup:unverified"
+      },
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:09.773684+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "905617a4-422b-4d39-a34e-961b8e15bb8a",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:39.789675+00:00",
+        "captured_at": "2026-11-15T07:09:11.612768+00:00",
+        "completed_at": "2026-11-15T07:09:11.585420+00:00",
+        "content_type": "application/json",
+        "response_sha256": "617c1bd1bf3353e68eb1498caf2636360892fd4ab3222c76bcd71126f79a6e4e",
+        "status_code": 200
+      },
+      "bytes": 24434,
+      "responseSha256": "617c1bd1bf3353e68eb1498caf2636360892fd4ab3222c76bcd71126f79a6e4e",
+      "responsePages": 1,
+      "polls": 4,
+      "receivedAt": "2026-11-15T07:09:11.725937+00:00",
+      "elapsedMonotonicSeconds": 1.9514699680003105,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "application/json",
+        "cacheControl": "private, no-store",
+        "bytes": 24434,
+        "sha256": "4082f11fbf0bfb39ac3d3fc979e0c572604998b94ece3aa4d297d7901d0ea0e0",
+        "elapsedMonotonicSeconds": 0.008234880995587446,
+        "receivedAt": "2026-11-15T07:09:11.734375+00:00"
+      }
+    },
+    {
+      "label": "05-missing-session",
+      "requestId": "bc657fc0-4246-464f-98a1-223d5be68f52",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "simulation",
+        "sessionId": "missing-69cedcbe-444e-40a3-a160-8ff8bc975c6b"
+      },
+      "expectedStatus": 404,
+      "requestedAt": "2026-11-15T07:09:11.740993+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "bc657fc0-4246-464f-98a1-223d5be68f52",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:41.724359+00:00",
+        "captured_at": "2026-11-15T07:09:13.765981+00:00",
+        "completed_at": "2026-11-15T07:09:13.748287+00:00",
+        "content_type": "application/json",
+        "response_sha256": "9cacfd4e290c06186ec60db4cfdafa33bc32abac703258f674eff230163a8190",
+        "status_code": 404
+      },
+      "bytes": 83,
+      "responseSha256": "9cacfd4e290c06186ec60db4cfdafa33bc32abac703258f674eff230163a8190",
+      "responsePages": 1,
+      "polls": 7,
+      "receivedAt": "2026-11-15T07:09:14.236398+00:00",
+      "elapsedMonotonicSeconds": 2.4944500209967373,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 404,
+        "contentType": "application/json",
+        "cacheControl": null,
+        "bytes": 83,
+        "sha256": "9cacfd4e290c06186ec60db4cfdafa33bc32abac703258f674eff230163a8190",
+        "elapsedMonotonicSeconds": 0.004206726996926591,
+        "receivedAt": "2026-11-15T07:09:14.240794+00:00"
+      }
+    },
+    {
+      "label": "06-source-conflict",
+      "requestId": "11a4b20c-837d-4a8e-bbe8-ec8f63f1c4bf",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "live",
+        "sessionId": "intel-bringup:session"
+      },
+      "expectedStatus": 409,
+      "requestedAt": "2026-11-15T07:09:14.243410+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "11a4b20c-837d-4a8e-bbe8-ec8f63f1c4bf",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:44.225406+00:00",
+        "captured_at": "2026-11-15T07:09:16.163166+00:00",
+        "completed_at": "2026-11-15T07:09:16.474876+00:00",
+        "content_type": "application/json",
+        "response_sha256": "5a616ee301e41f51d3d17772f42ad7738e4eafc1b1799a095578dc106f8d3d70",
+        "status_code": 409
+      },
+      "bytes": 55,
+      "responseSha256": "5a616ee301e41f51d3d17772f42ad7738e4eafc1b1799a095578dc106f8d3d70",
+      "responsePages": 1,
+      "polls": 6,
+      "receivedAt": "2026-11-15T07:09:16.849019+00:00",
+      "elapsedMonotonicSeconds": 2.604912668990437,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 409,
+        "contentType": "application/json",
+        "cacheControl": null,
+        "bytes": 55,
+        "sha256": "5a616ee301e41f51d3d17772f42ad7738e4eafc1b1799a095578dc106f8d3d70",
+        "elapsedMonotonicSeconds": 0.004659968995838426,
+        "receivedAt": "2026-11-15T07:09:16.853880+00:00"
+      }
+    },
+    {
+      "label": "07-saved-analyzed-image",
+      "requestId": "f1d4588d-10ca-4eb8-a9dc-b2badcb9af2c",
+      "path": "/api/v1/evidence/intel-bringup:unverified:image",
+      "query": {},
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:16.856982+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "f1d4588d-10ca-4eb8-a9dc-b2badcb9af2c",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:46.864173+00:00",
+        "captured_at": "2026-11-15T07:09:18.914091+00:00",
+        "completed_at": "2026-11-15T07:09:18.915184+00:00",
+        "content_type": "image/png",
+        "response_sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+        "status_code": 200
+      },
+      "bytes": 68,
+      "responseSha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+      "responsePages": 1,
+      "polls": 5,
+      "receivedAt": "2026-11-15T07:09:19.044785+00:00",
+      "elapsedMonotonicSeconds": 2.187056220995146,
+      "directComparison": "exact bytes",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "image/png",
+        "cacheControl": "private, no-store",
+        "bytes": 68,
+        "sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+        "elapsedMonotonicSeconds": 0.005110853002406657,
+        "receivedAt": "2026-11-15T07:09:19.050031+00:00"
+      }
+    },
+    {
+      "label": "08-repeat-selected-cycle",
+      "requestId": "806de9db-631a-4fa3-9d33-d92533626a61",
+      "path": "/api/v1/dashboard",
+      "query": {
+        "sourceMode": "simulation",
+        "sessionId": "intel-bringup:session",
+        "cycleId": "intel-bringup:unverified"
+      },
+      "expectedStatus": 200,
+      "requestedAt": "2026-11-15T07:09:19.055388+00:00",
+      "status": "passed",
+      "relayMetadata": {
+        "request_id": "806de9db-631a-4fa3-9d33-d92533626a61",
+        "state": "ready",
+        "expires_at": "2026-11-15T07:09:49.362125+00:00",
+        "captured_at": "2026-11-15T07:09:21.717108+00:00",
+        "completed_at": "2026-11-15T07:09:21.722537+00:00",
+        "content_type": "application/json",
+        "response_sha256": "d053eb455c2a203cceb93548d3919cf1e678c732eedacf8b1402303997eae8a5",
+        "status_code": 200
+      },
+      "bytes": 24434,
+      "responseSha256": "d053eb455c2a203cceb93548d3919cf1e678c732eedacf8b1402303997eae8a5",
+      "responsePages": 1,
+      "polls": 3,
+      "receivedAt": "2026-11-15T07:09:22.667912+00:00",
+      "elapsedMonotonicSeconds": 3.611461912994855,
+      "directComparison": "JSON equality excluding only dashboard generation timestamps",
+      "directMetadata": {
+        "httpStatus": 200,
+        "contentType": "application/json",
+        "cacheControl": "private, no-store",
+        "bytes": 24434,
+        "sha256": "5f669ffdc0b21662042a8be805ece705a58b73bdd1ed4884c6bf0dbcb9cffe18",
+        "elapsedMonotonicSeconds": 0.0070568449882557616,
+        "receivedAt": "2026-11-15T07:09:22.675161+00:00"
+      }
+    }
+  ],
+  "stationOrigin": "http://127.0.0.1:8000",
+  "stationId": "intel-main",
+  "tokenSourcePath": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/.data/api-token",
+  "applicationWrites": false,
+  "providerCalls": false,
+  "hardwareCalls": false,
+  "workerReconfigured": false,
+  "klemenUiAcceptance": "not tested by this harness",
+  "clockNote": "Elapsed durations use Intel monotonic time. Server expiry/completion and station capture wall clocks are retained separately and are not subtracted to infer latency.",
+  "sharedServer": "morph-context",
+  "imageCycleDiscovery": {
+    "source": "current detail and bounded first recent-cycle page from actual aggregate",
+    "candidateCycleIds": [
+      "intel-bringup:in_progress",
+      "intel-bringup:unverified",
+      "intel-bringup:wrong_bin",
+      "intel-bringup:retry",
+      "intel-bringup:good"
+    ],
+    "hasMore": false,
+    "attemptedCycleIds": [
+      "intel-bringup:in_progress",
+      "intel-bringup:unverified"
+    ],
+    "selectedCycleId": "intel-bringup:unverified"
+  },
+  "savedAnalyzedImage": {
+    "frame": {
+      "cameraId": "simulated-camera",
+      "capturedAt": "2026-11-14T15:01:31Z",
+      "cycleId": "intel-bringup:unverified",
+      "evidenceId": "intel-bringup:unverified:image",
+      "height": 1,
+      "id": "intel-bringup:unverified:frame",
+      "objectId": "intel-bringup:object:3",
+      "receivedAt": "2026-11-14T15:01:31Z",
+      "sessionId": "intel-bringup:session",
+      "width": 1,
+      "revision": 1
+    },
+    "evidence": {
+      "capturedAt": "2026-11-14T15:01:31Z",
+      "cycleId": "intel-bringup:unverified",
+      "id": "intel-bringup:unverified:image",
+      "mediaType": "image/png",
+      "sessionId": "intel-bringup:session",
+      "sha256": "3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+      "size": 68,
+      "revision": 1
+    },
+    "localPath": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/.data/evidence/3afd67627c9ad149a848aed228fe2884d4a696d74f5beb27d1e4d57ef1767fa9",
+    "relayDirectLocalBytesEqual": true,
+    "sourceMode": "simulation"
+  },
+  "status": "passed",
+  "discoveredSessionId": "intel-bringup:session",
+  "discoveredCycleId": "intel-bringup:unverified",
+  "unchangedEventCursor": 50,
+  "sourceMode": "simulation",
+  "physicalVerification": false,
+  "requiredLogicalChecksPassed": 8,
+  "requestedCasesPassed": 9,
+  "completedAt": "2026-11-15T07:09:22.681986+00:00"
+}
