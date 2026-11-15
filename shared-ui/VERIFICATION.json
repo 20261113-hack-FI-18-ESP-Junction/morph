@@ -1,0 +1,33 @@
+{
+  "checkedAt": "2026-11-15T05:08:31.594288+00:00",
+  "css": {
+    "bytes": 18402,
+    "parser": "installed lightningcss",
+    "warnings": 0
+  },
+  "browser": {
+    "desktop": [
+      1440,
+      1000
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "horizontalOverflow": false,
+    "allImagesLoaded": true,
+    "fontRequests": "all three HTTP200",
+    "warningsOrErrors": 0,
+    "keyboardFocus": "textarea Tab moves to Send",
+    "nativeDisclosure": "opened and closed successfully"
+  },
+  "previewOnly": true,
+  "appBehaviorChanged": false,
+  "sourceManifestsChanged": false,
+  "ownedPreviewServerStopped": true,
+  "notes": [
+    "Native accessibility described the details summary as a button; Playwright text selector was used successfully.",
+    "FontFaceSet iteration is not provided in the browser read-only evaluator; actual font HTTP200 responses were checked.",
+    "Added an existing SVG favicon after the browser requested the absent default favicon."
+  ]
+}

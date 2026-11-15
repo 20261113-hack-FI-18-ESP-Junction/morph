@@ -1,0 +1,82 @@
+{
+  "version": "1.0",
+  "preparedAt": "2026-11-15T05:08:31.594288+00:00",
+  "purpose": "Portable chat style for Jose; shared Morph dashboard identity.",
+  "sourceReferences": [
+    {
+      "path": "klemen-dashboard/dashboard/src/index.css",
+      "sha256": "3aae5fcf76bdc98230ccc2d3376372abf98f70d45cb12829b1165cbedc8e9bfe"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/src/components/DesignLanguageView.tsx",
+      "sha256": "78f03c6e9f7bfdda38b844f645189b1b4ac3506ec8ff045bd2b2c3ac0235281d"
+    }
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6809,
+      "sha256": "525905a909af8af363f71337d5f07e5466abda603c163a137b20768b6078ef73"
+    },
+    {
+      "path": "assets/morph-mark.svg",
+      "bytes": 480,
+      "sha256": "854b67cdcb60ee04af80e4c531d70fdaf5dd314e411452160e6b70fea0f8baf4"
+    },
+    {
+      "path": "assets/orbital.svg",
+      "bytes": 805,
+      "sha256": "7a3f6055540cbf307bb78e580171e84dfc91bef3242c829af1cbf454631a47d5"
+    },
+    {
+      "path": "fonts/cormorant-italic.ttf",
+      "bytes": 715644,
+      "sha256": "0f48ea6abb2084537854f7174c470991a463b13036309e3b50a81511611c530d"
+    },
+    {
+      "path": "fonts/cormorantgaramond-OFL.txt",
+      "bytes": 4387,
+      "sha256": "60700d351cac4650c51f3f9db318d2a420f8b45052dba2715eb5fec41f0f6956"
+    },
+    {
+      "path": "fonts/inter-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "fonts/inter.ttf",
+      "bytes": 876576,
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "path": "fonts/space-mono.ttf",
+      "bytes": 99356,
+      "sha256": "95837e182baeeada83368f7748db28357f0a1b75c6b84ff7065b5edf933c8e18"
+    },
+    {
+      "path": "fonts/spacemono-OFL.txt",
+      "bytes": 4392,
+      "sha256": "8e4ee42b2553e1e01504e61cb0d46d148cd8c9e5eacaa3622a7df2d4f2955b9f"
+    },
+    {
+      "path": "morph-chat.css",
+      "bytes": 18402,
+      "sha256": "61bd7e494d66968d5ab9e6c4d3a6d460af8764a3968aa9f0d730726e4f3104c1"
+    },
+    {
+      "path": "preview-desktop.jpg",
+      "bytes": 101985,
+      "sha256": "bbc97f35e89a3e2c88a5180bc6ec2835b54873436de991d591fd3130a56bf2ac"
+    },
+    {
+      "path": "preview-mobile.jpg",
+      "bytes": 89605,
+      "sha256": "fd583c40ad37cb56fc4fd0e4b81ba50c105116f85181771a8fadc31c15d0ccbe"
+    },
+    {
+      "path": "preview.html",
+      "bytes": 8121,
+      "sha256": "7533496361c9439ffc84b09ab7abd8134e8c4d7c5e0b1b6a03d7b850f1f3ccf0"
+    }
+  ]
+}

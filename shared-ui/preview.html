@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Morph — shared chat style reference</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/morph-mark.svg">
+  <link rel="stylesheet" href="./morph-chat.css">
+</head>
+<body class="morph-theme">
+  <a class="morph-skip-link" href="#conversation">Skip to conversation</a>
+  <div class="morph-shell">
+    <aside class="morph-sidebar" aria-label="Workspace navigation">
+      <a class="morph-brand" href="#conversation">
+        <img src="./assets/morph-mark.svg" alt="">
+        <span><strong class="morph-brand-name">MORPH</strong><span class="morph-brand-caption">PHYSICAL INTELLIGENCE</span></span>
+      </a>
+      <nav class="morph-nav" aria-label="Style reference">
+        <a class="morph-nav-link" href="#conversation" aria-current="page"><span class="morph-nav-number">01</span> Conversation</a>
+        <a class="morph-nav-link" href="#context"><span class="morph-nav-number">02</span> Context</a>
+        <a class="morph-nav-link" href="#components"><span class="morph-nav-number">03</span> Components</a>
+      </nav>
+      <div class="morph-sidebar-footer">
+        <span class="morph-eyebrow">The art of adaptation</span>
+        <p class="morph-sidebar-motto">Observe.<br>Understand.<br><span class="morph-accent">Adapt.</span></p>
+        <span class="morph-status morph-status--bronze">STYLE REFERENCE / 01</span>
+      </div>
+    </aside>
+    <main class="morph-main">
+      <header class="morph-masthead">
+        <img class="morph-orbit" src="./assets/orbital.svg" alt="" aria-hidden="true">
+        <span class="morph-eyebrow">Morph / Junction 2026</span>
+        <p class="morph-masthead-copy">A new perspective on <span class="morph-accent">physical intelligence.</span></p>
+      </header>
+      <div class="morph-topbar">
+        <div class="morph-row"><span class="morph-status"><span class="morph-status-dot" aria-hidden="true"></span>Station not connected</span><span class="morph-muted">Jose's operator workspace</span></div>
+        <span class="morph-status morph-status--bronze">DESIGN PREVIEW</span>
+      </div>
+      <div class="morph-chat-layout">
+        <section class="morph-conversation" id="conversation" aria-labelledby="chat-title">
+          <header>
+            <span class="morph-eyebrow">01 / Operator conversation</span>
+            <h1 class="morph-title" id="chat-title">Your next instruction<em>.</em></h1>
+            <p class="morph-subtitle">A shared language for the operator and the machine.</p>
+          </header>
+          <div class="morph-thread" aria-label="Illustrative conversation">
+            <div class="morph-message morph-message--system">STYLE EXAMPLE · No messages or robot commands are sent.</div>
+            <article class="morph-message morph-message--operator" aria-label="Example operator message">
+              <div class="morph-message-content">
+                <div class="morph-message-meta"><span class="morph-message-author">You</span><span>Example instruction</span></div>
+                <div class="morph-message-body"><p>Inspect the next brick and route it to the correct bin.</p></div>
+              </div>
+            </article>
+            <article class="morph-message" aria-label="Example assistant response">
+              <div class="morph-avatar" aria-hidden="true"><img src="./assets/morph-mark.svg" alt=""></div>
+              <div class="morph-message-content">
+                <div class="morph-message-meta"><span class="morph-message-author">Morph</span><span>Example response</span></div>
+                <div class="morph-message-body">
+                  <p>This is how a proposed action appears in the conversation. A connected session will show the selected task, its evidence and its execution status.</p>
+                  <div class="morph-evidence">
+                    <div class="morph-row"><strong>Inspect the next brick</strong><span class="morph-status morph-status--bronze">Proposed</span></div>
+                    <small>Style sample · no execution requested</small>
+                  </div>
+                  <p class="morph-muted">Connect a station before sending an operational instruction.</p>
+                  <details class="morph-details"><summary>How evidence appears</summary><p>Keep the actual task, model and frame identifiers here. A proposal, an acknowledgment and a confirmed physical result have separate statuses.</p></details>
+                </div>
+                <div class="morph-message-actions"><button class="morph-button morph-button--ghost" type="button" disabled>View linked evidence ↗</button></div>
+              </div>
+            </article>
+          </div>
+          <div class="morph-composer">
+            <label class="morph-sr-only" for="message">Message to Morph</label>
+            <textarea class="morph-textarea" id="message" placeholder="Describe the next task..." aria-describedby="composer-note"></textarea>
+            <div class="morph-composer-toolbar">
+              <div class="morph-row"><button class="morph-button morph-button--ghost" type="button" disabled>＋ Attach</button><button class="morph-button morph-button--ghost" type="button" disabled>Voice unavailable</button></div>
+              <button class="morph-button morph-button--primary" type="button" title="Style example only; no message is sent">Send message ↗</button>
+            </div>
+            <p class="morph-composer-hint" id="composer-note">Static design reference. The composer has no submission behavior.</p>
+          </div>
+        </section>
+        <aside class="morph-context" id="context" aria-label="Context and component examples">
+          <section class="morph-panel">
+            <header class="morph-panel-heading"><h2 class="morph-panel-title">Station context</h2><span class="morph-status">Unavailable</span></header>
+            <div class="morph-panel-body">
+              <dl class="morph-definition-list"><dt>Session</dt><dd>Not selected</dd><dt>Current object</dt><dd>Unavailable</dd><dt>Active task</dt><dd>Not recorded</dd><dt>Last update</dt><dd>Unavailable</dd></dl>
+              <p class="morph-muted">Real state comes from the connected station. Missing data stays visible.</p>
+            </div>
+          </section>
+          <section class="morph-panel" id="components">
+            <header class="morph-panel-heading"><h2 class="morph-panel-title">Shared status language</h2></header>
+            <div class="morph-panel-body">
+              <p class="morph-subtitle">Component samples, not live outcomes.</p>
+              <div class="morph-row"><span class="morph-status morph-status--bronze">Proposed</span><span class="morph-status morph-status--warning">Awaiting confirmation</span><span class="morph-status morph-status--success">Confirmed</span><span class="morph-status morph-status--error">Failed</span><span class="morph-status">Unavailable</span></div>
+              <details class="morph-details"><summary>Style rules</summary><p>Inter for messages. Space Mono for evidence. Bronze for the primary action. Keep decorative typography in the masthead.</p></details>
+            </div>
+          </section>
+          <section class="morph-panel">
+            <header class="morph-panel-heading"><h2 class="morph-panel-title">Reusable controls</h2></header>
+            <div class="morph-panel-body">
+              <div class="morph-row"><button class="morph-button morph-button--outline" type="button">Review proposal</button><button class="morph-button" type="button" disabled>Unavailable</button></div>
+              <label class="morph-field"><span class="morph-label">Example session selector</span><select class="morph-select"><option>No session selected</option></select></label>
+            </div>
+          </section>
+        </aside>
+      </div>
+      <footer class="morph-footer"><span>MORPH · CHAT STYLE REFERENCE</span><span>Shared visual identity · November 15, 2026</span></footer>
+    </main>
+  </div>
+</body>
+</html>

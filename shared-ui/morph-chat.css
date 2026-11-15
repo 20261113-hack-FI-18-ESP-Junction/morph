@@ -1,0 +1,270 @@
+/*
+ * Morph shared interface style · v1.0 · 2026-11-15
+ * Extracted from Klemen's dashboard; chat layouts added for Jose's interface.
+ * Plain CSS, no framework or JavaScript required. Wrap the app in .morph-theme.
+ * Keep fonts/ beside this file for exact typography; system fallbacks are included.
+ * All component selectors are scoped. Status styles do not imply actual state.
+ */
+
+@font-face {
+  font-family: "Morph Inter";
+  src: url("./fonts/inter.ttf") format("truetype");
+  font-weight: 100 900;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Morph Space Mono";
+  src: url("./fonts/space-mono.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Morph Cormorant";
+  src: url("./fonts/cormorant-italic.ttf") format("truetype");
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Shared palette and typography match the dashboard exactly. */
+.morph-theme {
+  --morph-bg: #080808;
+  --morph-sidebar: #0b0b0a;
+  --morph-panel: #101010;
+  --morph-raised: #171715;
+  --morph-border: #252421;
+  --morph-panel-border: #2f2d27;
+  --morph-text: #f2eee6;
+  --morph-muted: #a7a39a;
+  --morph-bronze: #c7a477;
+  --morph-success: #91b99c;
+  --morph-warning: #d6b775;
+  --morph-error: #e36363;
+  --morph-danger: #b72f35;
+  --morph-font-body: "Morph Inter", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --morph-font-mono: "Morph Space Mono", "Space Mono", ui-monospace, monospace;
+  --morph-font-accent: "Morph Cormorant", "Cormorant Garamond", Georgia, serif;
+  --morph-space-1: 4px;
+  --morph-space-2: 8px;
+  --morph-space-3: 12px;
+  --morph-space-4: 16px;
+  --morph-space-5: 20px;
+  --morph-space-6: 24px;
+  --morph-space-8: 32px;
+  --morph-radius-small: 4px;
+  --morph-radius-control: 5px;
+  --morph-radius-panel: 9px;
+  --morph-sidebar-width: 212px;
+  --morph-context-width: 280px;
+  --morph-motion: 160ms ease;
+  color-scheme: dark;
+  margin: 0;
+  color: var(--morph-text);
+  background: var(--morph-bg);
+  font-family: var(--morph-font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.morph-theme,
+.morph-theme *,
+.morph-theme *::before,
+.morph-theme *::after { box-sizing: border-box; }
+.morph-theme :where(button, input, textarea, select) { font: inherit; }
+.morph-theme :where(button, a, input, textarea, select, summary):focus-visible {
+  outline: 2px solid var(--morph-bronze);
+  outline-offset: 3px;
+}
+.morph-theme :where(h1, h2, h3, p) { margin: 0; }
+.morph-theme :where(img, svg) { max-width: 100%; }
+.morph-theme a { color: var(--morph-bronze); text-underline-offset: 4px; }
+.morph-theme ::selection { color: var(--morph-text); background: #51422e; }
+.morph-theme .morph-sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0;
+}
+.morph-theme .morph-skip-link {
+  position: fixed; z-index: 20; top: -100px; left: 16px;
+  padding: 12px 16px; color: var(--morph-bg); background: var(--morph-text);
+}
+.morph-theme .morph-skip-link:focus { top: 16px; }
+.morph-theme .morph-mono { font-family: var(--morph-font-mono); font-variant-numeric: tabular-nums; }
+.morph-theme .morph-muted { color: var(--morph-muted); }
+.morph-theme .morph-accent { font-family: var(--morph-font-accent); font-style: italic; }
+.morph-theme .morph-eyebrow {
+  color: var(--morph-bronze); font-family: var(--morph-font-mono);
+  font-size: 10px; font-weight: 400; letter-spacing: .12em; text-transform: uppercase;
+}
+.morph-theme .morph-title {
+  margin: 8px 0 10px; font-size: clamp(30px, 3vw, 42px);
+  font-weight: 450; line-height: 1.1; letter-spacing: -.055em;
+}
+.morph-theme .morph-title em { color: var(--morph-bronze); font-style: normal; }
+.morph-theme .morph-subtitle { color: var(--morph-muted); font-size: 13px; }
+
+/* Optional application shell. Components also work inside an existing layout. */
+.morph-theme .morph-shell {
+  display: grid; grid-template-columns: var(--morph-sidebar-width) minmax(0, 1fr);
+  min-height: 100vh; min-height: 100dvh;
+}
+.morph-theme .morph-sidebar {
+  display: flex; flex-direction: column; gap: 32px; min-width: 0;
+  padding: 30px 20px 20px; border-right: 1px solid var(--morph-border);
+  background: var(--morph-sidebar);
+}
+.morph-theme .morph-brand { display: flex; align-items: center; gap: 10px; color: var(--morph-text); text-decoration: none; }
+.morph-theme .morph-brand img { width: 30px; height: 38px; object-fit: contain; }
+.morph-theme .morph-brand-name { display: block; font-size: 25px; font-weight: 600; letter-spacing: .17em; }
+.morph-theme .morph-brand-caption { display: block; margin-top: 3px; font-size: 7px; letter-spacing: .19em; color: var(--morph-muted); }
+.morph-theme .morph-nav { display: grid; gap: 6px; margin-top: 32px; }
+.morph-theme .morph-nav-link {
+  display: flex; align-items: center; gap: 12px; min-height: 44px; width: 100%;
+  padding: 10px; border: 1px solid transparent; border-radius: var(--morph-radius-control);
+  color: var(--morph-muted); background: transparent; font-size: 12px; text-align: left; text-decoration: none; cursor: pointer;
+}
+.morph-theme .morph-nav-link:hover { color: var(--morph-text); background: var(--morph-raised); }
+.morph-theme .morph-nav-link[aria-current="page"] { border-color: #3f382d; color: var(--morph-text); background: #1a1916; }
+.morph-theme .morph-nav-number { color: var(--morph-bronze); font: 10px var(--morph-font-mono); }
+.morph-theme .morph-sidebar-footer { margin-top: auto; padding-top: 48px; color: var(--morph-muted); font-size: 11px; }
+.morph-theme .morph-sidebar-motto { margin: 16px 0 24px; font-size: 23px; font-weight: 350; letter-spacing: -.04em; line-height: 1.4; }
+.morph-theme .morph-main { min-width: 0; display: flex; flex-direction: column; }
+.morph-theme .morph-masthead { position: relative; overflow: hidden; padding: 18px 32px 14px; border-bottom: 1px solid var(--morph-border); }
+.morph-theme .morph-masthead-copy { position: relative; z-index: 1; font-size: 18px; letter-spacing: -.02em; }
+.morph-theme .morph-masthead .morph-eyebrow { display: block; margin-bottom: 8px; font-size: 9px; }
+.morph-theme .morph-orbit { position: absolute; right: 20px; top: -100px; width: 400px; opacity: .2; pointer-events: none; }
+.morph-theme .morph-topbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 12px 32px; border-bottom: 1px solid var(--morph-border); }
+.morph-theme .morph-row { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; min-width: 0; }
+.morph-theme .morph-chat-layout { flex: 1; display: grid; grid-template-columns: minmax(0, 1fr) var(--morph-context-width); gap: 28px; padding: 28px 32px 24px; }
+.morph-theme .morph-conversation { display: flex; flex-direction: column; gap: 24px; min-width: 0; }
+.morph-theme .morph-context { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.morph-theme .morph-footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; border-top: 1px solid var(--morph-border); padding: 16px 32px; color: var(--morph-muted); font: 9px var(--morph-font-mono); }
+
+/* Shared controls. Native disabled/aria-pressed states remain application-owned. */
+.morph-theme .morph-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  min-height: 40px; padding: 9px 13px; border: 1px solid #39352e;
+  border-radius: var(--morph-radius-control); background: #151411; color: #d6c6ad;
+  font-size: 12px; font-weight: 400; line-height: 1.4; text-decoration: none; cursor: pointer;
+  transition: background var(--morph-motion), border-color var(--morph-motion), color var(--morph-motion);
+}
+.morph-theme .morph-button:hover { background: #211d17; border-color: #6c5940; }
+.morph-theme .morph-button--primary { color: #17130d; background: var(--morph-bronze); border-color: var(--morph-bronze); font-weight: 600; }
+.morph-theme .morph-button--primary:hover { background: #d5b68e; border-color: #d5b68e; }
+.morph-theme .morph-button--outline { background: #201b14; border-color: #564630; color: #dcc19b; }
+.morph-theme .morph-button--ghost { background: transparent; border-color: transparent; color: var(--morph-muted); }
+.morph-theme .morph-button--danger { color: #f2eee6; background: var(--morph-danger); border-color: var(--morph-danger); }
+.morph-theme .morph-button--danger:hover { background: #a0262c; border-color: #a0262c; }
+.morph-theme .morph-button--icon { width: 40px; padding: 9px; flex-shrink: 0; }
+.morph-theme .morph-button svg { width: 16px; height: 16px; stroke-width: 1.5; flex-shrink: 0; }
+.morph-theme .morph-button:disabled,
+.morph-theme .morph-button[aria-disabled="true"] { opacity: .45; cursor: not-allowed; }
+.morph-theme .morph-chip {
+  display: inline-flex; align-items: center; gap: 6px; padding: 7px 10px;
+  border: 1px solid #39352e; border-radius: var(--morph-radius-control);
+  background: #151411; color: var(--morph-muted); font-size: 11px; text-decoration: none;
+}
+.morph-theme button.morph-chip { min-height: 40px; cursor: pointer; }
+.morph-theme .morph-chip:hover { color: var(--morph-text); border-color: #6c5940; }
+.morph-theme .morph-chip[aria-pressed="true"] { background: #211b14; color: #d8b68a; border-color: #51422e; }
+.morph-theme .morph-field { display: grid; gap: 8px; min-width: 0; }
+.morph-theme .morph-label { font-size: 11px; color: var(--morph-muted); }
+.morph-theme .morph-input,
+.morph-theme .morph-textarea,
+.morph-theme .morph-select {
+  width: 100%; min-width: 0; min-height: 40px; padding: 10px 12px;
+  border: 1px solid #3d3a32; border-radius: var(--morph-radius-control);
+  background: var(--morph-raised); color: var(--morph-text); font-size: 14px;
+}
+.morph-theme .morph-textarea { resize: vertical; min-height: 96px; line-height: 1.6; }
+.morph-theme :where(.morph-input, .morph-textarea)::placeholder { color: var(--morph-muted); opacity: .8; }
+.morph-theme :where(.morph-input, .morph-textarea, .morph-select)[aria-invalid="true"] { border-color: var(--morph-error); }
+.morph-theme .morph-field-error { font-size: 12px; color: #ed9692; }
+
+/* Status color is redundant with visible text, never the sole state indicator. */
+.morph-theme .morph-status {
+  --morph-status-bg: #1a1a17; --morph-status-border: #36352f; --morph-status-text: #b5b2a8;
+  display: inline-flex; align-items: center; gap: 6px; width: fit-content;
+  padding: 4px 7px; border: 1px solid var(--morph-status-border); border-radius: var(--morph-radius-small);
+  background: var(--morph-status-bg); color: var(--morph-status-text);
+  font: 10px/1.4 var(--morph-font-mono); overflow-wrap: anywhere;
+}
+.morph-theme .morph-status--success { --morph-status-bg: #152019; --morph-status-border: #324b3a; --morph-status-text: #9bbc9f; }
+.morph-theme .morph-status--warning { --morph-status-bg: #211d14; --morph-status-border: #574831; --morph-status-text: #dbc087; }
+.morph-theme .morph-status--error { --morph-status-bg: #281817; --morph-status-border: #633838; --morph-status-text: #ed9692; }
+.morph-theme .morph-status--bronze { --morph-status-bg: #211b14; --morph-status-border: #51422e; --morph-status-text: #d8b68a; }
+.morph-theme .morph-status-dot { width: 5px; height: 5px; flex: 0 0 5px; border-radius: 50%; background: currentColor; }
+.morph-theme .morph-notice { padding: 12px 14px; border: 1px solid #574831; border-radius: var(--morph-radius-control); background: #17150f; color: #dbc087; font-size: 12px; }
+
+/* Chat roles have distinct surfaces while sharing the dashboard's geometry. */
+.morph-theme .morph-thread { display: flex; flex-direction: column; gap: 24px; padding: 4px 0; min-width: 0; }
+.morph-theme .morph-message { display: grid; grid-template-columns: 32px minmax(0, 1fr); gap: 12px; max-width: 760px; }
+.morph-theme .morph-avatar { display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #51422e; border-radius: 6px; background: #19160f; color: var(--morph-bronze); font: 12px var(--morph-font-mono); }
+.morph-theme .morph-avatar img { width: 19px; height: 22px; }
+.morph-theme .morph-message-content { min-width: 0; }
+.morph-theme .morph-message-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; margin: 2px 0 9px; color: var(--morph-muted); font: 10px/1.5 var(--morph-font-mono); }
+.morph-theme .morph-message-author { color: var(--morph-text); }
+.morph-theme .morph-message-body { padding: 16px 18px; border: 1px solid var(--morph-panel-border); border-radius: var(--morph-radius-panel); background: var(--morph-panel); line-height: 1.7; overflow-wrap: anywhere; }
+.morph-theme .morph-message-body > * + * { margin-top: 12px; }
+.morph-theme .morph-message-body :where(ul, ol) { padding-left: 20px; }
+.morph-theme .morph-message--operator { align-self: flex-end; width: min(90%, 680px); grid-template-columns: minmax(0, 1fr); }
+.morph-theme .morph-message--operator .morph-message-meta { justify-content: flex-end; }
+.morph-theme .morph-message--operator .morph-message-body { background: #1b1813; border-color: #443929; }
+.morph-theme .morph-message--system { grid-template-columns: minmax(0, 1fr); align-self: center; text-align: center; color: var(--morph-muted); font: 10px/1.6 var(--morph-font-mono); }
+.morph-theme .morph-message-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.morph-theme .morph-message-actions .morph-button { min-height: 36px; font-size: 11px; }
+.morph-theme .morph-message-body pre { max-width: 100%; margin-bottom: 0; padding: 12px; overflow: auto; border: 1px solid var(--morph-border); border-radius: 5px; background: var(--morph-bg); }
+.morph-theme .morph-message-body code { font: 11px/1.7 var(--morph-font-mono); }
+.morph-theme .morph-message-body :not(pre) > code { padding: 2px 4px; border-radius: 3px; background: var(--morph-raised); color: #d8b68a; }
+.morph-theme .morph-message-body blockquote { margin-left: 0; padding-left: 14px; border-left: 2px solid var(--morph-bronze); color: var(--morph-muted); }
+.morph-theme .morph-composer { margin-top: auto; padding: 14px; border: 1px solid #51422e; border-radius: var(--morph-radius-panel); background: #101110; }
+.morph-theme .morph-composer:focus-within { border-color: var(--morph-bronze); }
+.morph-theme .morph-composer .morph-textarea { min-height: 76px; padding: 8px 2px 12px; border: 0; border-radius: 0; background: transparent; resize: vertical; }
+.morph-theme .morph-composer .morph-textarea:focus-visible { outline-offset: 3px; }
+.morph-theme .morph-composer-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--morph-border); }
+.morph-theme .morph-composer-hint { color: var(--morph-muted); font-size: 10px; }
+.morph-theme .morph-typing { display: inline-flex; align-items: center; gap: 5px; min-height: 20px; }
+.morph-theme .morph-typing i { width: 4px; height: 4px; border-radius: 50%; background: var(--morph-bronze); animation: morph-chat-pulse 1.4s ease-in-out infinite; }
+.morph-theme .morph-typing i:nth-child(2) { animation-delay: .15s; }
+.morph-theme .morph-typing i:nth-child(3) { animation-delay: .3s; }
+@keyframes morph-chat-pulse { 0%, 75%, 100% { opacity: .35; } 35% { opacity: 1; } }
+
+/* Reusable evidence/context surfaces, without invented operational readings. */
+.morph-theme .morph-panel { min-width: 0; overflow: hidden; border: 1px solid var(--morph-panel-border); border-radius: var(--morph-radius-panel); background: #101110; }
+.morph-theme .morph-panel-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; min-height: 54px; padding: 15px 18px; border-bottom: 1px solid #292823; }
+.morph-theme .morph-panel-title { font-size: 13px; font-weight: 500; }
+.morph-theme .morph-panel-body { padding: 16px 18px; }
+.morph-theme .morph-panel-body > * + * { margin-top: 14px; }
+.morph-theme .morph-definition-list { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; margin: 0; font-size: 11px; }
+.morph-theme .morph-definition-list dt { color: var(--morph-muted); }
+.morph-theme .morph-definition-list dd { margin: 0; text-align: right; overflow-wrap: anywhere; }
+.morph-theme .morph-evidence { display: block; padding: 13px 14px; border: 1px solid #3a352c; border-radius: 6px; background: #171611; color: var(--morph-text); text-decoration: none; }
+.morph-theme .morph-evidence small { display: block; margin-top: 6px; color: var(--morph-muted); font: 10px/1.6 var(--morph-font-mono); overflow-wrap: anywhere; }
+.morph-theme .morph-details { border-top: 1px solid var(--morph-border); padding-top: 12px; color: var(--morph-muted); font-size: 12px; }
+.morph-theme .morph-details summary { cursor: pointer; padding: 4px 0; }
+.morph-theme .morph-details[open] summary { margin-bottom: 10px; color: var(--morph-text); }
+
+@media (max-width: 1100px) {
+  .morph-theme .morph-chat-layout { grid-template-columns: minmax(0, 1fr); }
+  .morph-theme .morph-context { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .morph-theme .morph-shell { grid-template-columns: minmax(0, 1fr); }
+  .morph-theme .morph-sidebar { padding: 18px 20px 12px; gap: 14px; border-right: 0; border-bottom: 1px solid var(--morph-border); }
+  .morph-theme .morph-nav { display: flex; flex-wrap: wrap; gap: 4px; margin: 0; }
+  .morph-theme .morph-nav-link { width: auto; flex: 1; justify-content: center; }
+  .morph-theme .morph-sidebar-footer { display: none; }
+  .morph-theme :where(.morph-masthead, .morph-topbar, .morph-footer) { padding-left: 20px; padding-right: 20px; }
+  .morph-theme .morph-chat-layout { padding: 24px 20px; }
+  .morph-theme .morph-context { display: flex; }
+  .morph-theme .morph-message { gap: 9px; }
+  .morph-theme .morph-message--operator { width: 94%; }
+  .morph-theme .morph-message-body { padding: 14px; }
+  .morph-theme :where(.morph-button, button.morph-chip) { min-height: 44px; }
+  .morph-theme .morph-button--icon { width: 44px; }
+  .morph-theme :where(.morph-input, .morph-textarea, .morph-select) { font-size: 16px; }
+  .morph-theme .morph-composer-hint { flex-basis: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .morph-theme *, .morph-theme *::before, .morph-theme *::after {
+    animation: none !important; transition: none !important; scroll-behavior: auto !important;
+  }
+}
