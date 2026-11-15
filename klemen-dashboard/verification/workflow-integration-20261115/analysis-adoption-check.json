@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T08:18:54.520320+00:00",
+  "applicationRequestId": "a3ba92b8-1a25-4a14-8e0e-809c7a7af382",
+  "relayRequestId": "89f450e4-b854-494d-836e-d27bb937e4b2",
+  "intelHostReport": {
+    "handoffId": "921c66b9-b650-43b8-aedc-60a4dad32168",
+    "savedAt": "2026-11-15T08:07:32.867504+00:00",
+    "fullNoteSha256": "69957a520d0fc84287a714f2c6a64020d6719373e4fec4f844e2f602716316a3",
+    "macReadbackAt": "2026-11-15T08:13:10.450389+00:00",
+    "fullNoteHashVerified": true,
+    "observedAt": "2026-11-15T08:05:19.285622+00:00",
+    "savedAnalysisRequest": "absent",
+    "savedReports": 0,
+    "orphanMatches": 0,
+    "workerRecordWritesAllowed": false,
+    "workerPid": 417036,
+    "workerStartTicks": 14287604,
+    "apiPid": 476229,
+    "apiStartTicks": 14924157,
+    "sourceAndEvidencePinsMatched": 8,
+    "inspectorSha256": "53102fe6cd4e287c12173bf262fd6e6935704567e839415e8e3db981ca444ab3",
+    "inspectionResultSha256": "1d35f9a42291ff5a553e311a38ca66f06bafbaac90720042915773aab003c9ab",
+    "evidenceBoundary": "Intel-host inspection reported in an independently hash-verified shared handoff; Mac did not inspect the Intel filesystem directly."
+  },
+  "macRelayQueue": {
+    "checkedAt": "2026-11-15T08:14:58.486451+00:00",
+    "stationId": "intel-main",
+    "scope": "Complete current nonexpired queued/claimed POST metadata at one SQLite read snapshot; no LIMIT",
+    "source": "Existing Mac Station relay SQLite opened mode=ro; one read transaction",
+    "filter": "station_id=intel-main AND method=POST AND state IN (queued,claimed) AND expires>checkedAt",
+    "count": 0,
+    "queuedCount": 0,
+    "claimedCount": 0,
+    "requests": [],
+    "omitted": "Request/response bodies, credentials and token values were not selected or logged.",
+    "mutations": false,
+    "limitations": [
+      "Point-in-time observation only; does not prevent subsequent arrivals or authorize writer enablement.",
+      "No queue freeze, claims, deletion, service restart, flag change or POST performed.",
+      "Intel still requires direct-owner resolution and coordinated maintenance/rollback before any worker change."
+    ]
+  },
+  "actionsTaken": {
+    "newPosts": 0,
+    "requestRetries": 0,
+    "workerRestarts": 0,
+    "flagChanges": 0,
+    "providerCalls": 0,
+    "queueMutations": 0
+  },
+  "remainingGate": [
+    "The Intel owner requires direct-owner resolution of the existing GET-only boundary before writer enablement.",
+    "Complete fresh pending-POST inventory and coordinated prevention of unrelated arrivals are required at maintenance time; the recorded empty queue is only a dated observation.",
+    "Prepare a rollback and restart plan for the actual current API and worker; the older launch script pins a retired API process.",
+    "The opt-in flag permits both analyst and audited record-review POSTs, not only this application request.",
+    "Retain the same application request identity; do not retry until the coordinated decision and worker adoption are complete."
+  ],
+  "limits": [
+    "No useful product explanation, provider invocation, service adoption or physical acceptance is established."
+  ]
+}

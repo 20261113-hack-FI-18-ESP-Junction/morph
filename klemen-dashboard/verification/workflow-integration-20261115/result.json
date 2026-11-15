@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "checkedAt": "2026-11-15T08:10:11.399307+00:00",
+  "checkedAt": "2026-11-15T08:18:54.520320+00:00",
   "scope": "Mac dashboard and non-Jose integration; no physical execution",
   "tests": {
     "dashboard": 116,
@@ -64,11 +64,16 @@
   "analysisSubmission": {
     "applicationRequestId": "a3ba92b8-1a25-4a14-8e0e-809c7a7af382",
     "relayRequestId": "89f450e4-b854-494d-836e-d27bb937e4b2",
-    "state": "expired-unclaimed; authoritative Intel job lookup still pending",
+    "state": "expired-unclaimed; Intel host reports saved request absent and worker GET-only",
     "explicitPosts": 1,
     "retries": 0,
     "providerCallVerified": false,
-    "operatorState": "Retain the identical request; do not create a replacement before lookup."
+    "operatorState": "Retain the identical request. Direct-owner boundary resolution, coordinated maintenance and current-process rollback are required before write enablement or retry.",
+    "authoritativeLookupReportedAt": "2026-11-15T08:05:19.285622+00:00",
+    "workerRecordWritesAllowed": false,
+    "pendingPostQueueObservedAt": "2026-11-15T08:14:58.486451+00:00",
+    "pendingPostQueueCount": 0,
+    "adoptionEvidence": "analysis-adoption-check.json"
   },
   "demo": {
     "dashboardPort": 3101,
