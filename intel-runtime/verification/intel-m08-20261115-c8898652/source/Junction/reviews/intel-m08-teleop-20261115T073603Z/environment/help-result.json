@@ -1,0 +1,37 @@
+{
+  "agent": "/root/dashboard",
+  "startedAt": "2026-11-15T07:40:43.860181+00:00",
+  "completedAt": "2026-11-15T07:40:48.187057+00:00",
+  "argv": [
+    "/home/intel/project-morph/morph-robot/morph-robot-lerobot/.venv/bin/lerobot-teleoperate",
+    "--robot.type=so101_follower",
+    "--teleop.type=so101_leader",
+    "--help"
+  ],
+  "returncode": 0,
+  "timedOut": false,
+  "workingDirectoryClass": "private temporary directory outside project",
+  "existingEnvironment": "/home/intel/project-morph/morph-robot/morph-robot-lerobot/.venv",
+  "changedInstalledEnvironment": false,
+  "requestedHardwareAction": false,
+  "registeredTypesSelected": [
+    "so101_follower",
+    "so101_leader"
+  ],
+  "environmentNames": [
+    "HF_DATASETS_OFFLINE",
+    "HF_HUB_DISABLE_TELEMETRY",
+    "HF_HUB_OFFLINE",
+    "HOME",
+    "LANG",
+    "MPLCONFIGDIR",
+    "NO_COLOR",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "XDG_CACHE_HOME"
+  ],
+  "stdoutBytes": 5210,
+  "stdoutSha256": "44ff2dc28a47f631558903791a93d73703a213a44c81ca0abbe7c9faf28a6def",
+  "stderrBytes": 0,
+  "stderrSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

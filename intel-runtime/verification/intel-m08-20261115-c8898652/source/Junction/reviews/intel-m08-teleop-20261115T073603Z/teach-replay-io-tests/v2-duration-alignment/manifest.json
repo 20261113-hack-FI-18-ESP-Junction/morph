@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "agent": "/root/reconcile",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2141,
+      "sha256": "4a4dee7067255c238662bdd957453621caf9458cb4d3e0ecee3e1862ca863f39"
+    },
+    {
+      "path": "review-results.json",
+      "bytes": 6209,
+      "sha256": "6918e29e15ba3865b5f02c4e6301dcc8f3b13a35557276fac88f27e56b83c40a"
+    },
+    {
+      "path": "unittest-summary.txt",
+      "bytes": 309,
+      "sha256": "e1f1b29e0a2ee30dae013ee7760773a28d5d48d5c27c6f3555057f8410197271"
+    }
+  ],
+  "source_sha256": {
+    "scripts/so101_three_point.py": "bcccb146de50255cdd5cb7a7a3cb424869910fed538356dc3652a015852302dc",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "db799b23f0463dd71c70ce3095909d146863d9def16975c5ad0627ee9828e4c5",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  }
+}

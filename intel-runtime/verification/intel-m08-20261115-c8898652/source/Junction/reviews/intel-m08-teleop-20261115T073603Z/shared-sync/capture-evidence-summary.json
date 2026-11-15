@@ -1,0 +1,49 @@
+{
+  "observedAt": "2026-11-15T08:04:27.090404+00:00",
+  "agent": "/root/shared_sync",
+  "classification": "read-only independent audit of saved root hardware records; no hardware opened by this audit",
+  "operatorAndHardwareOwner": "/root",
+  "firstAttempt": {
+    "artifact": {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-001.jsonl",
+      "bytes": 3776,
+      "sha256": "a30a470a7e80c495717f7db55b1ff73caca45e2ace1108366d0f22bc8d096430",
+      "transport": "Intel-local only; raw operator/hardware data excluded from source transfer"
+    },
+    "outcome": "aborted before motor writes for position outside saved calibration margin",
+    "pointsSaved": 0
+  },
+  "secondAttempt": {
+    "artifact": {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-002.jsonl",
+      "bytes": 14233,
+      "sha256": "3c89a38254d9b1f92062a10a2fb5c31b7b2f32e02fbf10b8890cc5ba3eff87d4",
+      "transport": "Intel-local only; raw operator/hardware data excluded from source transfer"
+    },
+    "startedAt": "2026-11-15T07:57:35.881790+00:00",
+    "capturedSamples": 3,
+    "captureTimes": [
+      "2026-11-15T07:58:29.820409+00:00",
+      "2026-11-15T07:59:23.471817+00:00",
+      "2026-11-15T08:00:43.153675+00:00"
+    ],
+    "pointsFile": {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/three-points-001.json",
+      "bytes": 1105,
+      "sha256": "4966e65cc3d512090acd2bb84256c58d357b33489283a29072237e4a7956fe45",
+      "transport": "Intel-local only; raw operator/hardware data excluded from source transfer"
+    },
+    "calibrationSha256": "7fc283b68be9c0e7117b140ed532f6ef865c4cf6cef89182a3e3a972772ef968",
+    "noLoggedGoalOrTorqueEnableOne": true,
+    "initialTorqueOffWritesLogged": 6,
+    "cleanupAllSixTorqueOffVerified": true,
+    "cleanupErrors": [],
+    "finishedAt": "2026-11-15T08:00:43.195618+00:00",
+    "commandOutcome": "aborted",
+    "reason": "The complete three-point file was saved, then the default 15-second-per-segment offline planner rejected its speed bound; the command closed with outcome aborted."
+  },
+  "physicalReplayPerformed": false,
+  "plannedRouteAcceptedByOriginalDuration": false,
+  "currentSourceScope": "Root is reviewing a duration-only extension and passive alignment; later outcome belongs to a separate dated observation",
+  "rawPoseValuesTransferred": false
+}

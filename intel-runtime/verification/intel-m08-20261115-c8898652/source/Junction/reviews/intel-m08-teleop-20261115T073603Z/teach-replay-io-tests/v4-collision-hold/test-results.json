@@ -1,0 +1,46 @@
+{
+  "agent": "/root/reconcile",
+  "session_id": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "started_at": "2026-11-15T08:12:31.679114+00:00",
+  "finished_at": "2026-11-15T08:12:32.128025+00:00",
+  "command": [
+    "/home/intel/.local/bin/python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_so101_three_point*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "passed": 65,
+  "new_current_hold_tests": 5,
+  "historical_injected_bus_regressions": 42,
+  "pure_planner_tests": 18,
+  "source_sha256_before": {
+    "scripts/so101_three_point.py": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "source_sha256_after": {
+    "scripts/so101_three_point.py": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "sources_unchanged_during_test": true,
+  "hardware_access": false,
+  "real_ports_opened": [],
+  "current_replay_state": "Unconditionally blocked by production code at both main and direct replay entry points; no CLI bypass.",
+  "test_scope_separation": "ReplayHoldTests exercise the actual unpatched gate. HistoricalFollowerIOTests explicitly mock the gate only in the injected fake-bus class to retain control/cleanup regression coverage; those passing tests do not indicate currently enabled replay.",
+  "physical_observation": "Owner-reported collision is recorded separately in physical-results/replay-evidence-summary.json. No new physical operation or safety clearance was performed.",
+  "limitations": [
+    "Unpatched gate tests use spies and nonexistent paths to prove no calibration, journal, timer, serial resolution or bus/follower access.",
+    "Historical fake control tests do not prove collision clearance or safe physical replay.",
+    "Power-off confirmation and physical damage assessment remain outside this software test scope."
+  ],
+  "owner_direction": "The owner explicitly stopped further experiments. This work closes existing incident and hold evidence only; no readiness request, retry or hardware operation is pending."
+}

@@ -1,0 +1,45 @@
+{
+  "agent": "/root/reconcile",
+  "session_id": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "scope": "Fake-bus follower three-point CLI I/O and fault tests",
+  "started_at": "2026-11-15T07:54:03.933816+00:00",
+  "finished_at": "2026-11-15T07:54:04.094423+00:00",
+  "command": [
+    "/home/intel/.local/bin/python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_so101_three_point_io.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "source_sha256_before": {
+    "scripts/so101_three_point.py": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "81cac70b25ce1b996e9dc0d91308c040a79d1addf5fdd2903ae73d05e3729983",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "source_sha256_after": {
+    "scripts/so101_three_point.py": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "81cac70b25ce1b996e9dc0d91308c040a79d1addf5fdd2903ae73d05e3729983",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "sources_unchanged_during_tests": true,
+  "test_method_count": 29,
+  "hardware_access": false,
+  "ports_opened": [],
+  "bus": "injected in-memory FakeBus",
+  "calibration": "temporary synthetic six-joint calibration only",
+  "limitations": [
+    "No physical calibration, collision clearance, real motor response, firmware timing, signal interruption, or operating-system exclusive-serial claim was exercised.",
+    "This verifies software branches with a fake bus; it does not authorize or certify a physical run."
+  ],
+  "output_sha256": {
+    "unittest.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "unittest.stderr.txt": "935f8387a2885f28bef1f8abc37e2fde6397d6d64408c625b8431be1ce834486"
+  }
+}

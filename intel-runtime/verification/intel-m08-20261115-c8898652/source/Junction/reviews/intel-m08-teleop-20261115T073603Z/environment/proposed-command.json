@@ -1,0 +1,35 @@
+{
+  "preparedAt": "2026-11-15T07:43:21.179581+00:00",
+  "agent": "/root/dashboard",
+  "authorizedForExecution": false,
+  "executed": false,
+  "selectedInstalledLeRobotVersion": "0.7.0",
+  "argv": [
+    "/home/intel/project-morph/morph-robot/morph-robot-lerobot/.venv/bin/lerobot-teleoperate",
+    "--robot.type=so101_follower",
+    "--robot.port=/dev/serial/by-id/usb-1a86_USB_Single_Serial_5AE6075066-if00",
+    "--robot.id=2a1b5cc1-8e89-457e-8828-4d6d065f4ca6",
+    "--robot.calibration_dir=/home/intel/project-morph/morph-robot/morph-robot-lerobot/.runtime/lerobot/calibration/robots/so_follower",
+    "--robot.use_degrees=false",
+    "--teleop.type=so101_leader",
+    "--teleop.port=/dev/serial/by-id/usb-1a86_USB_Single_Serial_5B91027633-if00",
+    "--teleop.id=13b35ac4-c088-4441-bfc9-c53987742388",
+    "--teleop.calibration_dir=/home/intel/project-morph/morph-robot/morph-robot-lerobot/.runtime/lerobot/calibration/teleoperators/so_leader",
+    "--teleop.use_degrees=false",
+    "--teleop_time_s=30"
+  ],
+  "workingDirectory": "Any directory; executable and calibration paths are absolute",
+  "activationRequired": false,
+  "durationScope": "30 seconds of the teleoperation loop after connection/calibration; no hard operation timeout",
+  "defaultsPreserved": {
+    "fps": 60,
+    "max_relative_target": null,
+    "cameras": {},
+    "display_data": false,
+    "disable_torque_on_disconnect": true
+  },
+  "ownerConfirmedLeaderSerial": "5B91027633",
+  "followerSerial": "5AE6075066",
+  "allOptionNamesInObservedHelp": true,
+  "operatorReadinessAndMovementApproval": "Pending root and operator"
+}

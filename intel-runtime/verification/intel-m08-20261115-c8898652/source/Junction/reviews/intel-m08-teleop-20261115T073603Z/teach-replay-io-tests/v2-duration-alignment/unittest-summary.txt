@@ -1,0 +1,6 @@
+Observed command: python3.12 -m unittest discover -s tests -p test_so101_three_point*.py -v
+Observed exit code: 0
+Ran 55 tests in 0.140s
+OK
+
+This summary transcribes the completed tool result. The full per-test output is retained in the tool transcript; the passing suite was not rerun merely to save output.

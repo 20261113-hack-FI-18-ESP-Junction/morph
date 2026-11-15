@@ -1,0 +1,11 @@
+# Supervised repeat review
+
+Agent `/root/reconcile` added five repeat tests and updated the duration-alarm assertion in the owned I/O test file. **All 60 tests passed at 2026-11-15T08:05:20Z: 18 planner tests and 42 I/O tests, in 0.349 seconds.** Exact source hashes before and after execution match. The complete output is retained in [unittest.stderr.txt](unittest.stderr.txt), with command, time and hashes in [test-results.json](test-results.json).
+
+The repeated route from point 3 was verified as `3→2→1→2→3→2→1→2→3→2→1→2→3`. At 24 seconds per segment, it has 2,881 frames and a 288-second route. Every segment boundary reaches the exact original waypoint. Adjacent frame times increase by 0.1 seconds, each command step remains at most eight raw counts, and the 80-count/second bound is retained. The repeated path retraces the same segments without introducing a direct closing shortcut. The caller's original points remain unchanged.
+
+Additional checks cover both permitted starting points, one through three rounds, invalid repetition/start values, and a reversed one-way route when repetition is absent. A complete injected-bus replay starts and ends at point 3, logs 289 nominal seconds including the nearby approach, installs a 448.5-second alarm, ends with verified fake torque-off, and preserves operator observation as pending. The ordinary 48-second route now has an 88.5-second alarm under the same duration-based formula.
+
+No blocking finding remains from this bounded source and fake-bus review. This agent edited only its I/O tests and this evidence directory. The runtime CLI belongs to `/root`; the pure planner belongs to `/root/dashboard`. Earlier capture/version evidence remains unchanged.
+
+No real hardware was opened or commanded by this agent. Synthetic calibration and mocked bus, input, time, signals and exclusive opening were used. These results do not establish real collision clearance, firmware timing, motor response or successful physical playback. Root owns the separately authorized physical operation and its observation record. The complete attributed contribution was sent to `/root` and designated reporter `/root/shared_sync`; remote delivery requires the reporter's confirmed write/read-back receipt.

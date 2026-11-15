@@ -1,0 +1,38 @@
+{
+  "agent": "/root/reconcile",
+  "session_id": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "started_at": "2026-11-15T08:05:20.002271+00:00",
+  "finished_at": "2026-11-15T08:05:20.425027+00:00",
+  "command": [
+    "/home/intel/.local/bin/python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_so101_three_point*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "passed": 60,
+  "source_sha256_before": {
+    "scripts/so101_three_point.py": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "4acdb220ecc1793ee27734d635d21df4b02361f721a349c955a4957fe73c6ee7",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "source_sha256_after": {
+    "scripts/so101_three_point.py": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "4acdb220ecc1793ee27734d635d21df4b02361f721a349c955a4957fe73c6ee7",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "sources_unchanged_during_test": true,
+  "hardware_access": false,
+  "real_ports_opened": [],
+  "limitations": [
+    "Synthetic calibration and injected fake bus; operating-system ownership and signals mocked.",
+    "No physical path clearance, real motor response or successful physical playback is established."
+  ]
+}

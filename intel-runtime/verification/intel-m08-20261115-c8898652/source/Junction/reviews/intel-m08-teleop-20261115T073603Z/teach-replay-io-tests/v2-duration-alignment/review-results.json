@@ -1,0 +1,116 @@
+{
+  "schemaVersion": 1,
+  "agent": "/root/reconcile",
+  "session_id": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "recorded_at": "2026-11-15T08:03:31.256654+00:00",
+  "command": [
+    "python3.12",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_so101_three_point*.py",
+    "-v"
+  ],
+  "result": {
+    "exit_code": 0,
+    "passed": 55,
+    "failed": 0,
+    "elapsed_test_seconds": 0.14,
+    "planner_tests": 18,
+    "io_tests": 37
+  },
+  "test_names": {
+    "tests/test_so101_three_point_io.py": [
+      "test_teach_saves_three_actual_poses_without_any_goal_or_enable",
+      "test_teach_interrupt_retains_no_complete_capture_and_cleans_every_joint",
+      "test_calibration_change_between_teaching_points_rejects_next_point_and_save",
+      "test_calibration_change_after_last_capture_rejects_complete_save",
+      "test_plan_never_resolves_or_constructs_a_bus",
+      "test_24_second_segments_preserve_points_and_existing_speed_and_step_limits",
+      "test_excessive_speed_is_rejected_without_clamping_even_with_longer_segments",
+      "test_invalid_segment_durations_reject_before_calibration_or_bus",
+      "test_alignment_near_first_point_never_writes_any_register",
+      "test_alignment_torque_on_rejects_without_releasing_or_writing",
+      "test_distant_alignment_waits_for_operator_and_only_observes_manual_change",
+      "test_operator_can_stop_distant_alignment_without_motor_writes",
+      "test_longer_replay_reports_actual_plan_duration_and_bounded_deadline",
+      "test_missing_operator_confirmation_rejects_before_bus_or_journal",
+      "test_identity_hash_and_units_mismatch_reject_before_bus",
+      "test_boolean_schema_version_is_not_version_one",
+      "test_duplicate_json_keys_are_rejected",
+      "test_nonfinite_json_is_rejected",
+      "test_distant_start_rejects_before_any_register_write",
+      "test_replay_does_not_release_an_already_powered_arm",
+      "test_configuration_mismatch_is_never_repaired",
+      "test_status_alarm_rejects_even_when_read_itself_succeeds",
+      "test_stale_telemetry_rejects_before_writes",
+      "test_open_failure_after_acquisition_still_closes_without_writes",
+      "test_changed_calibration_before_replay_is_rejected_without_writes",
+      "test_partial_ram_setup_lost_ack_cleans_all_and_restores_only_saved_ram",
+      "test_lost_ack_after_goal_energizes_then_all_joint_cleanup_runs",
+      "test_cleanup_attempts_all_off_writes_before_reads_and_never_restores_a_goal",
+      "test_cleanup_read_failure_continues_other_joints_skips_ram_restore_and_closes",
+      "test_cleanup_detects_torque_changed_during_ram_restore_and_releases_again",
+      "test_cleanup_off_write_failure_does_not_skip_other_motors",
+      "test_close_failure_is_not_success",
+      "test_allowlist_rejects_eeprom_positive_torque_and_unbound_stale_goal",
+      "test_step_or_calibrated_margin_violation_rejects_before_writes",
+      "test_calibration_change_after_hold_prevents_route_commands_and_cleans",
+      "test_completed_fake_route_restores_ram_only_after_off_and_never_old_goals",
+      "test_approach_starts_from_each_actual_hold_goal_after_small_passive_drift"
+    ],
+    "tests/test_so101_three_point_core.py": [
+      "test_valid_calibration_is_copied",
+      "test_joint_set_must_be_exact",
+      "test_missing_fields_wrong_ids_and_boolean_values_rejected",
+      "test_calibration_raw_ranges_rejected",
+      "test_margin_boundaries_are_inclusive",
+      "test_invalid_raw_values_and_joint_sets_rejected",
+      "test_invalid_or_impossible_margin_rejected",
+      "test_exact_endpoints_copies_and_stationary_pose",
+      "test_monotonic_no_overshoot_in_both_directions",
+      "test_invalid_progress_rejected",
+      "test_malformed_endpoint_rejected",
+      "test_default_plan_has_exact_endpoints_and_no_extra_return",
+      "test_speed_bound_and_actual_step_bounds",
+      "test_wrist_long_path_and_wrap_shortcut_rejected",
+      "test_rounded_commands_must_satisfy_step_even_when_speed_passes",
+      "test_invalid_parameters_and_excessive_allocation_rejected",
+      "test_requires_three_complete_calibrated_poses",
+      "test_total_duration_overflow_rejected_even_with_small_frame_count"
+    ]
+  },
+  "source_sha256_recorded_after_run": {
+    "scripts/so101_three_point.py": "bcccb146de50255cdd5cb7a7a3cb424869910fed538356dc3652a015852302dc",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "db799b23f0463dd71c70ce3095909d146863d9def16975c5ad0627ee9828e4c5",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "changed_source_owned_by_agent": [
+    "tests/test_so101_three_point_io.py"
+  ],
+  "hardware_access": false,
+  "physical_execution": false,
+  "new_assertions": [
+    "24-second segments preserve exact waypoints, produce 48 seconds and 481 frames, and retain 80 counts/s and 8-count limits.",
+    "A 932-count shoulder change peaks at 72.8125 counts/s over 24 seconds; the same change is rejected at 15 seconds.",
+    "A 1200-count shoulder change is still rejected at 24 seconds without changing points or clamping speed.",
+    "NaN, infinities and durations outside 15 to 60 seconds reject before calibration reads or bus creation.",
+    "Alignment succeeds near point one without any motor register write.",
+    "Alignment rejects existing enabled torque without releasing or modifying it.",
+    "Distant alignment waits for manual repositioning and can be stopped, with no motor register writes.",
+    "Fake replay with 24-second segments records a 49-second nominal approach-plus-route and sets an 87-second alarm."
+  ],
+  "limitations": [
+    "Injected in-memory bus, synthetic temporary calibration, mocked time/input/signals/exclusive-open.",
+    "No assertion of real physical response, collision clearance, calibration acceptance, or successful physical replay.",
+    "Source hashes were recorded after the observed test run; this report does not claim a measured before/after hash comparison."
+  ],
+  "reporting": {
+    "designated_reporter": "/root/shared_sync",
+    "delivery": "pending verified write/read-back"
+  }
+}

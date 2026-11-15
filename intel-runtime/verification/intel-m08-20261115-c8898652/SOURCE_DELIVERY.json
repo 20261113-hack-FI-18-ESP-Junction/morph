@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "kind": "morph-source-delivery-provenance",
+  "deliveryId": "c8898652-f488-4bd3-8f9f-8793047edf52",
+  "requestId": "aa097b06-d3e9-4ea3-9964-dfc20c89adcb",
+  "group": "M08 follower capture incident and unconditional replay hold",
+  "taskIds": [
+    "M08"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction",
+  "snapshotRoot": "/home/intel/Documents/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/source-snapshot",
+  "observedAt": "2026-11-15T08:16:46.928463+00:00",
+  "sessionId": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "supersedesDeliveryId": null,
+  "sourceScopeCorrectionNoteId": "1838fab2-1a31-45d2-96ac-2ab5c0e5bde1",
+  "incidentCorrectionNoteId": "ec21a94c-793b-4b59-bbbf-102af8d624bc",
+  "ownerState": "Physical experiments explicitly stopped; finish only this existing incident/hold/source handoff",
+  "intendedBehavior": "Replay fails before data, journal, timer or serial/follower access and at the direct entry; no CLI override. Preserve prior failed hardware evidence and completed offline tests.",
+  "repositoryObservation": {
+    "observedAt": "2026-11-15T08:00:08.215536+00:00",
+    "command": [
+      "git",
+      "rev-parse",
+      "--is-inside-work-tree"
+    ],
+    "cwd": "/home/intel/Documents/Junction",
+    "exitCode": 128,
+    "result": "not a git repository; no commit or clean-state claim"
+  },
+  "baseline": {
+    "macConfirmedBaseline": null,
+    "macBaselineState": "Unknown for proposed intel-runtime destinations; must be reconciled before any affected application",
+    "localBaselineSource": "reviews/intel-m08-teleop-20261115T073603Z/baseline-manifest.json",
+    "localBaselineSha256": "6422765db0388dfd8bcf617b2e747d9c0d519fa7bf7fbd4f8f12092c47a51476",
+    "mapping": "Proposed intel-runtime/<Junction-relative path>; Mac owner approves against current repository. Current project/global Mac guides must not be overwritten.",
+    "catalogObservation": "Bounded shared catalog of github/morph/intel-runtime/ returned no entries; this does not prove destination absence.",
+    "missingPathsMeanDeletion": false
+  },
+  "changes": [
+    {
+      "path": "AGENTS.md",
+      "targetPath": "intel-runtime/AGENTS.md",
+      "operation": "edit",
+      "baseSha256": "768362c1ba7e9c0826f7d95970d19ec2feda597db9f6dc723642155451950549",
+      "baseAuthority": "Intel pre-session snapshot; current Mac baseline unknown",
+      "sha256": "3a42e6bd13042c581b2b7fd65cc2979202fa23c2bc5b77e79573234385435b60",
+      "bytes": 20935,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "PROJECT_STATUS.md",
+      "targetPath": "intel-runtime/PROJECT_STATUS.md",
+      "operation": "edit",
+      "baseSha256": "3fb0cff0086e6d45fd33395f2c5a5cb3b003d040801222d52d2638c9db066cf1",
+      "baseAuthority": "Intel pre-session snapshot; current Mac baseline unknown",
+      "sha256": "69b2837f3c338df437f3657065542c8bac134f0d206bc5012da0f082bdab934c",
+      "bytes": 68005,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "ROBOT_GAMEPLAN.md",
+      "targetPath": "intel-runtime/ROBOT_GAMEPLAN.md",
+      "operation": "edit",
+      "baseSha256": "b4f621acfed2992a3420312c8961cb68fb7cc0f86e009632b0782d93d0edd821",
+      "baseAuthority": "Intel pre-session snapshot; current Mac baseline unknown",
+      "sha256": "ed3ff07e2b2a4add2ff9f2b36ad9ae057b1c58ac518dc9fde0e17776d5cea9bd",
+      "bytes": 42103,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "morph-intel-transfer/morph-context/AGENTS.md",
+      "targetPath": "intel-runtime/morph-intel-transfer/morph-context/AGENTS.md",
+      "operation": "edit",
+      "baseSha256": "131dc97f5035390b5309bf7186862b869f23091ce76f9fb8497c71620cfa4848",
+      "baseAuthority": "Intel pre-session snapshot; current Mac baseline unknown",
+      "sha256": "043dc39ae7c53141b32bb18be06ca44472451809d125da6cabbe2bf2661176e4",
+      "bytes": 21707,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "morph-intel-transfer/morph-context/context/INTEL_CODEX.md",
+      "targetPath": "intel-runtime/morph-intel-transfer/morph-context/context/INTEL_CODEX.md",
+      "operation": "edit",
+      "baseSha256": "f899a6f4c0322eec2317c959063af6ef657db6ff851ba687bc9cd58830f64f53",
+      "baseAuthority": "Intel pre-session snapshot; current Mac baseline unknown",
+      "sha256": "9e0f7d8276454d8c81be714d0acca421abb9e90b9c74a9c91d5ae15bfe04979d",
+      "bytes": 16131,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "595b9c43420640b15ec3465de240e25b6d83eaac4be8ac020b65dbb63ff9b3ec",
+      "bytes": 19751,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/calibration/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/calibration/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "d527c45f9a877596d85dbcf5c5bbee76928e0b8a609686e9a6ebcdaceb740e6f",
+      "bytes": 4608,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/environment/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "a90a0f3ceb9af09296e58724eae75ef2ccbf466a26d7e11d02d985eb15ab0f2f",
+      "bytes": 9320,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/collect_metadata.py",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/environment/collect_metadata.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "6d0e26e1d593be137c82b5fb89f2142e39c357e5d0510dcb558ac471de6fa2e7",
+      "bytes": 4584,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/help-result.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/environment/help-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "332bfa6a0b44a89da0448f67928b72da52e8f2710fd85fcfef31cc65b282fe01",
+      "bytes": 1139,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/proposed-command.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/environment/proposed-command.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "6c71b3eda6f09280b5cd87a0d79de526fbb6a0a1561d75f2093fbed30672a7db",
+      "bytes": 1602,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/teleoperate-help.stdout.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/environment/teleoperate-help.stdout.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "44ff2dc28a47f631558903791a93d73703a213a44c81ca0abbe7c9faf28a6def",
+      "bytes": 5210,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point.py",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+      "bytes": 25466,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point_core.py",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point_core.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "bytes": 7072,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/executed-source/so101_three_point.py",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/executed-source/so101_three_point.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+      "bytes": 21936,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01",
+      "bytes": 2729,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/shared-sync/DELIVERY_REPORT.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/DELIVERY_REPORT.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "04c8c9f8455439f304b0f1cb7e61657dc3cb82f7e3fc026c348939f6f24d4b36",
+      "bytes": 18928,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/shared-sync/capture-evidence-summary.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/capture-evidence-summary.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "eb4d16d94b6d807ff2790aad9b78c397bf6bb362e49cb2af1403444131da4a50",
+      "bytes": 2333,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "f71e987f4a5c0eb7b5e59980e45b381d27d2e262e3dcec231d76b353c35093a7",
+      "bytes": 3517,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/manifest.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/manifest.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "3899aa0ccb6df3815dd9ee514578a020a1f4a249151933127b682d2da27b8bc3",
+      "bytes": 1649,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/test-results.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/test-results.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "911290298f261e4fab5e16395ae781e8632488c1f3ec16391500cb61a522473a",
+      "bytes": 2132,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stderr.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stderr.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "935f8387a2885f28bef1f8abc37e2fde6397d6d64408c625b8431be1ce834486",
+      "bytes": 5066,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stdout.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stdout.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "4a4dee7067255c238662bdd957453621caf9458cb4d3e0ecee3e1862ca863f39",
+      "bytes": 2141,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/manifest.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/manifest.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "3ac8fd4596bb2f4f4d13600d047e1fbc22ce9171887de0d00329b99d6ce95a26",
+      "bytes": 984,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/review-results.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/review-results.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "6918e29e15ba3865b5f02c4e6301dcc8f3b13a35557276fac88f27e56b83c40a",
+      "bytes": 6209,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/unittest-summary.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/unittest-summary.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "e1f1b29e0a2ee30dae013ee7760773a28d5d48d5c27c6f3555057f8410197271",
+      "bytes": 309,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "b3e2cb3d35da9c11d4bc4f3cf723b236207a12d730cf668b223d9c56807878d7",
+      "bytes": 2271,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/manifest.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/manifest.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "e1c3201ee0b3182933709bd340f9b2eb8573a732c1aec9c11d877338245f5760",
+      "bytes": 1343,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/test-results.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/test-results.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "bd66d1a39a7161adb04e443c0f11728d915907d2537f8cbb1bce087dac7f1b43",
+      "bytes": 1661,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stderr.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stderr.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "38507e7e1b2700e5b3894b51b7cd4d249405a21bd50de4dd13c48069bec02d7d",
+      "bytes": 10085,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stdout.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stdout.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "24fb73374012909beffdba740e7bfaa2c3f545f2ce088974fb3a7a53c9c5d484",
+      "bytes": 2969,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/manifest.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/manifest.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "f78214ff2eadae706812fe2df2ec63a16ecdb2290f79fe0414ee8e470237a0f7",
+      "bytes": 1396,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf",
+      "bytes": 2696,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stderr.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stderr.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "baa7734ead56d6a93553a5b3b2552cf47672972467d7b1124d2d42686cb3e4a4",
+      "bytes": 11380,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stdout.txt",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stdout.txt",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-source-audit/README.md",
+      "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-source-audit/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "b720119b901175e5afd9080da6ca5d0876626c76c7b1c5f8a7baafa475f07265",
+      "bytes": 4288,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "scripts/so101_three_point.py",
+      "targetPath": "intel-runtime/scripts/so101_three_point.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+      "bytes": 26301,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "scripts/so101_three_point_core.py",
+      "targetPath": "intel-runtime/scripts/so101_three_point_core.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "bytes": 7072,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "tests/test_so101_three_point_core.py",
+      "targetPath": "intel-runtime/tests/test_so101_three_point_core.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72",
+      "bytes": 9310,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    },
+    {
+      "path": "tests/test_so101_three_point_io.py",
+      "targetPath": "intel-runtime/tests/test_so101_three_point_io.py",
+      "operation": "add",
+      "baseSha256": null,
+      "baseAuthority": "New Intel session file; proposed Mac destination must be checked",
+      "sha256": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+      "bytes": 36562,
+      "fileMode": "100644",
+      "reason": "Current source, tests, preserved executed source, incident report or affected English guidance for the same authorized M08 session",
+      "macApplicationRequiresBaselineReview": true
+    }
+  ],
+  "selfProvenance": {
+    "path": "SOURCE_DELIVERY.json",
+    "targetPath": "intel-runtime/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/SOURCE_DELIVERY.json",
+    "operation": "add",
+    "baseSha256": null,
+    "ownHash": "Covered by the immutable transfer bundle; deliberately no self-referential hash"
+  },
+  "closure": {
+    "sourceCompleteForOfflineReview": true,
+    "missingChangedSource": [],
+    "applicationDependenciesIncluded": [
+      "scripts/so101_three_point_core.py",
+      "scripts/so101_three_point.py",
+      "tests/test_so101_three_point_core.py",
+      "tests/test_so101_three_point_io.py"
+    ],
+    "externalDependencies": [
+      {
+        "name": "Python standard library",
+        "versionObserved": "3.12.16",
+        "purpose": "Offline tests and helpers; installed dependency excluded from source transfer"
+      },
+      {
+        "name": "LeRobot",
+        "versionObserved": "0.7.0",
+        "purpose": "Existing physical API, not installed or executed by source receiver; hardware operations stopped"
+      }
+    ],
+    "noDependencyInstallOrLockChange": true,
+    "hardwareReproductionNotAuthorized": true,
+    "hardwarePrerequisitesRemainLocal": [
+      "Existing follower identity/configuration and unchanged calibration SHA 7fc283b68be9c0e7117b140ed532f6ef865c4cf6cef89182a3e3a972772ef968",
+      "Physical support/power state and table-clearance assessment are not established by these source files"
+    ],
+    "finalTests": {
+      "command": [
+        "python3.12",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_so101_three_point*.py",
+        "-v"
+      ],
+      "passed": 65,
+      "recordedAt": "2026-11-15T08:12:32Z",
+      "seconds": 0.373,
+      "classification": "5 real unpatched refusal checks; 42 historical fake-bus cases with isolated gate mock; 18 pure planner cases; no hardware",
+      "resultsPath": "reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "resultsSha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf"
+    },
+    "documentation": "Full incident-aware README, current affected guides and attributed DELIVERY_REPORT.md included",
+    "excluded": [
+      {
+        "path": "robot-connections.json",
+        "bytes": 7928,
+        "sha256": "ecb969f91121e4e5b59fbe3b37b1c080928e2bd735c6f463edd523fe11cf857c",
+        "reason": "Machine connection metadata excluded by reviewed sender policy",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/three-points-001.json",
+        "bytes": 1105,
+        "sha256": "4966e65cc3d512090acd2bb84256c58d357b33489283a29072237e4a7956fe45",
+        "reason": "Raw operator-captured poses",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-001.jsonl",
+        "bytes": 3776,
+        "sha256": "a30a470a7e80c495717f7db55b1ff73caca45e2ace1108366d0f22bc8d096430",
+        "reason": "Raw hardware journal",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/teach-002.jsonl",
+        "bytes": 14233,
+        "sha256": "3c89a38254d9b1f92062a10a2fb5c31b7b2f32e02fbf10b8890cc5ba3eff87d4",
+        "reason": "Raw hardware journal",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/replay-001.jsonl",
+        "bytes": 148792,
+        "sha256": "cde6841eed9b69d90e4a1a56c4a5bd11755fb8f2943db77aee8c89c612330cbd",
+        "reason": "Raw hardware journal",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/plan-repeat-001.json",
+        "bytes": 681214,
+        "sha256": "5c88dca6307949f2782fcd6583f08191e524ab7f2690642f094e057ad281047e",
+        "reason": "Actual-pose runtime plan",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/physical-results/replay-evidence-summary.json",
+        "bytes": 21273,
+        "sha256": "65e62bfa2fb1127edbcb9ed7b1f1d8baa68605600630ef164ef826adbab93e90",
+        "reason": "Full derived audit embeds raw pose/goal/telemetry records",
+        "disposition": "Intel-local; never inferred as deletion"
+      },
+      {
+        "path": "reviews/intel-m08-teleop-20261115T073603Z/environment/installed-environments.json",
+        "bytes": 11361,
+        "sha256": "e8020aa52ef7f0fa5d0f1b29d3e2e2a40c698025af45e1e6ba8ac3b4ddcc2af2",
+        "reason": "Metadata includes actual runtime robot configuration fields",
+        "disposition": "Intel-local; never inferred as deletion"
+      }
+    ],
+    "otherExclusions": [
+      "Raw calibration/Studio exports and runtime configuration",
+      "Private pairing/account/authentication files",
+      "Installed dependencies, caches, recordings and builds",
+      "Transport outboxes, synchronization ledgers and receipts generated by this reporting workflow; exact delivery receipts are separate"
+    ],
+    "historicalExecutedSource": "executed-source files are preserved audit evidence, never an authorized replay bypass"
+  },
+  "attribution": {
+    "/root": "Adapter/integration, actual authorized hardware attempts, incident/owner stop, unconditional hold and current root guidance",
+    "/root/dashboard": "Pure core and 18 tests, environment/help audit, final incident-aware README",
+    "/root/reconcile": "I/O/hold tests, calibration/source reviews and independent saved-replay audit",
+    "/root/shared_sync": "Shared protocol/source/Notion verification, sanitized reporting, immutable source delivery and receipts"
+  },
+  "notionUpdate": {
+    "updateId": "f5574cb3-abee-45c8-9002-77cb1b6f93af",
+    "taskId": "M08",
+    "pageId": "418d87e34458814b8320e6f7c3b21493",
+    "pageUrl": "https://app.notion.com/p/418d87e34458814b8320e6f7c3b21493",
+    "intendedStatus": "In progress",
+    "observedAt": "2026-11-15T08:16:46.928463+00:00",
+    "content": "M08 update f5574cb3-abee-45c8-9002-77cb1b6f93af — November 15, 2026 UTC. Keep the existing task In progress with all three acceptance criteria and the M07 dependency open. The owner changed the workflow to follower-only three-point capture/replay, then explicitly stopped experiments after reporting that the robot collided with the table. No further physical action, readiness request, retry or guard relaxation is pending or authorized.\n\nPreserve the first teach refusal before writes and the second attempt's three saved manual poses. The original 15-second-segment planner rejected its speed bound after saving the poses. A separately authorized three-round replay used 24-second segments and the unchanged original poses/limits. It issued real goals but aborted at 08:07:42.608878Z on gripper voltage 11.4 V below the retained 11.5 V guard. The saved command prefix reaches only 6.9 seconds of the first route segment: zero segments and zero rounds complete. Cleanup reports all six motors torque off with no errors and a closed port. The operator-reported table collision is separate evidence; its timing and causal relation to voltage are unknown. Putting the arm back is not proof of motor-power isolation or a damage inspection.\n\nCurrent code unconditionally refuses replay before data, journal, timer, serial or follower access and at the direct replay entry, with no CLI bypass. Final CLI SHA 0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa. Final 65 offline tests passed at 08:12:32Z: five real unpatched hold checks, 42 historical fake-bus tests with an isolated gate mock, and 18 planner tests. These are software evidence, not physical clearance or successful replay. Preserve the exact executed incident source 1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6 and all hardware records.\n\nAttribution: /root implemented/integrated the adapter, owned operator authorization and actual hardware attempts, recorded the incident/stop and implemented the hold; /root/dashboard authored the pure core/18 tests, inspected the existing environment/help and finalized the incident-aware README; /root/reconcile authored I/O/hold tests and independently audited calibration, source and saved replay; /root/shared_sync verified shared instructions, exact note/source receipts and the prior Notion readback, and prepared the coherent source delivery. Source delivery c8898652-f488-4bd3-8f9f-8793047edf52, transfer ecbcfc1c-3e6e-40fe-8b98-0d3eff7a16c8, completion note cabcb290-299a-4850-931a-f731fecadbda. Reconstruction/review/publication and this Notion update need separate confirmation; paused recurring Mac review must not be restarted. Preserve the two already confirmed older update IDs and all dated corrections.",
+    "evidence": [
+      "context/notes/ec21a94c-793b-4b59-bbbf-102af8d624bc.json",
+      "context/notes/dd2f6cdf-9bde-4467-b526-c9b583996e0b.json",
+      "context/notes/cabcb290-299a-4850-931a-f731fecadbda.json",
+      "reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json"
+    ],
+    "state": "pending_manual_Mac_reconciliation",
+    "lastConfirmedPriorReadback": "2026-11-15T07:57:48.121Z",
+    "priorConfirmedUpdateIds": [
+      "e52db211-47bd-4425-8f3c-9913f712a45a",
+      "e3757555-c96a-46bc-98c5-9386aff50b56"
+    ],
+    "reasonPending": "No direct Notion connector in Intel lane; recurring Mac reviews paused by owner. This new update is requested for manual continuation."
+  },
+  "sourceLifecycle": {
+    "frozen": true,
+    "received": false,
+    "reconstructed": false,
+    "reviewed": false,
+    "reconciled": false,
+    "committed": false,
+    "published": false,
+    "note": "Later receipts establish each state independently. The owner paused recurring Mac review; manual continuation is needed."
+  }
+}

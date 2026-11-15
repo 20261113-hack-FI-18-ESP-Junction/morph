@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "package": "intel-runtime",
-  "sealedAt": "2026-11-15T09:22:36.388180+00:00",
+  "sealedAt": "2026-11-15T09:28:08.489842+00:00",
   "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
   "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
-  "contentBytes": 4841894,
-  "fileCountExcludingThisManifest": 286,
+  "contentBytes": 5395154,
+  "fileCountExcludingThisManifest": 329,
   "originCounts": {
     "derived-existing-synthetic-fixture": 1,
-    "intel-current-source": 204,
+    "intel-current-source": 247,
     "intel-source-with-documented-adaptation": 5,
     "mac-authored-source": 20,
     "package-scaffolding": 12,
@@ -40,8 +40,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 24217,
-      "sha256": "146f16398e9f4d1125e251f9ad2551c12b6f7654557d8e8274ee38572563dc2d",
+      "bytes": 26917,
+      "sha256": "3a951ca25d702562952a35734d57996eb12a2ad67512c0e6ba98487371a75606",
       "origin": "package-scaffolding"
     },
     {
@@ -52,8 +52,8 @@
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 261965,
-      "sha256": "e6200e0b26f2081106727a62ebd1bd06b15ea48f2bef3b96ab67fadc5645df2f",
+      "bytes": 338006,
+      "sha256": "2dc8284fc3aa57980919c269fa485456d3e72f569a8130e2ee63a647bb00dd66",
       "origin": "package-scaffolding"
     },
     {
@@ -1605,6 +1605,264 @@
       "origin": "intel-current-source"
     },
     {
+      "path": "verification/intel-m08-20261115-c8898652/SOURCE_DELIVERY.json",
+      "bytes": 41619,
+      "sha256": "47660a3086d12264b8cd4734110df1797c77d1e5b28f12e399412380d5205cdf",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/AGENTS.md",
+      "bytes": 20935,
+      "sha256": "3a42e6bd13042c581b2b7fd65cc2979202fa23c2bc5b77e79573234385435b60",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/PROJECT_STATUS.md",
+      "bytes": 68005,
+      "sha256": "69b2837f3c338df437f3657065542c8bac134f0d206bc5012da0f082bdab934c",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/ROBOT_GAMEPLAN.md",
+      "bytes": 42103,
+      "sha256": "ed3ff07e2b2a4add2ff9f2b36ad9ae057b1c58ac518dc9fde0e17776d5cea9bd",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/morph-intel-transfer/morph-context/AGENTS.md",
+      "bytes": 21707,
+      "sha256": "043dc39ae7c53141b32bb18be06ca44472451809d125da6cabbe2bf2661176e4",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/morph-intel-transfer/morph-context/context/INTEL_CODEX.md",
+      "bytes": 16131,
+      "sha256": "9e0f7d8276454d8c81be714d0acca421abb9e90b9c74a9c91d5ae15bfe04979d",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/README.md",
+      "bytes": 19751,
+      "sha256": "595b9c43420640b15ec3465de240e25b6d83eaac4be8ac020b65dbb63ff9b3ec",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/calibration/README.md",
+      "bytes": 4608,
+      "sha256": "d527c45f9a877596d85dbcf5c5bbee76928e0b8a609686e9a6ebcdaceb740e6f",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/README.md",
+      "bytes": 9320,
+      "sha256": "a90a0f3ceb9af09296e58724eae75ef2ccbf466a26d7e11d02d985eb15ab0f2f",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/collect_metadata.py",
+      "bytes": 4584,
+      "sha256": "6d0e26e1d593be137c82b5fb89f2142e39c357e5d0510dcb558ac471de6fa2e7",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/help-result.json",
+      "bytes": 1139,
+      "sha256": "332bfa6a0b44a89da0448f67928b72da52e8f2710fd85fcfef31cc65b282fe01",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/proposed-command.json",
+      "bytes": 1602,
+      "sha256": "6c71b3eda6f09280b5cd87a0d79de526fbb6a0a1561d75f2093fbed30672a7db",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/teleoperate-help.stdout.txt",
+      "bytes": 5210,
+      "sha256": "44ff2dc28a47f631558903791a93d73703a213a44c81ca0abbe7c9faf28a6def",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point.py",
+      "bytes": 25466,
+      "sha256": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point_core.py",
+      "bytes": 7072,
+      "sha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/executed-source/so101_three_point.py",
+      "bytes": 21936,
+      "sha256": "464a743981eb3ab6101bed93b254df4ea10c8a8bcf17e5709fe90a15d255a2e3",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+      "bytes": 2729,
+      "sha256": "f28936aa654aebd10712a950032d7e3ca49be7505eb3c7b8948baa4b62300c01",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/DELIVERY_REPORT.md",
+      "bytes": 18928,
+      "sha256": "04c8c9f8455439f304b0f1cb7e61657dc3cb82f7e3fc026c348939f6f24d4b36",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/capture-evidence-summary.json",
+      "bytes": 2333,
+      "sha256": "eb4d16d94b6d807ff2790aad9b78c397bf6bb362e49cb2af1403444131da4a50",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/README.md",
+      "bytes": 3517,
+      "sha256": "f71e987f4a5c0eb7b5e59980e45b381d27d2e262e3dcec231d76b353c35093a7",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/manifest.json",
+      "bytes": 1649,
+      "sha256": "3899aa0ccb6df3815dd9ee514578a020a1f4a249151933127b682d2da27b8bc3",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/test-results.json",
+      "bytes": 2132,
+      "sha256": "911290298f261e4fab5e16395ae781e8632488c1f3ec16391500cb61a522473a",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stderr.txt",
+      "bytes": 5066,
+      "sha256": "935f8387a2885f28bef1f8abc37e2fde6397d6d64408c625b8431be1ce834486",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/README.md",
+      "bytes": 2141,
+      "sha256": "4a4dee7067255c238662bdd957453621caf9458cb4d3e0ecee3e1862ca863f39",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/manifest.json",
+      "bytes": 984,
+      "sha256": "3ac8fd4596bb2f4f4d13600d047e1fbc22ce9171887de0d00329b99d6ce95a26",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/review-results.json",
+      "bytes": 6209,
+      "sha256": "6918e29e15ba3865b5f02c4e6301dcc8f3b13a35557276fac88f27e56b83c40a",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/unittest-summary.txt",
+      "bytes": 309,
+      "sha256": "e1f1b29e0a2ee30dae013ee7760773a28d5d48d5c27c6f3555057f8410197271",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/README.md",
+      "bytes": 2271,
+      "sha256": "b3e2cb3d35da9c11d4bc4f3cf723b236207a12d730cf668b223d9c56807878d7",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/manifest.json",
+      "bytes": 1343,
+      "sha256": "e1c3201ee0b3182933709bd340f9b2eb8573a732c1aec9c11d877338245f5760",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/test-results.json",
+      "bytes": 1661,
+      "sha256": "bd66d1a39a7161adb04e443c0f11728d915907d2537f8cbb1bce087dac7f1b43",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stderr.txt",
+      "bytes": 10085,
+      "sha256": "38507e7e1b2700e5b3894b51b7cd4d249405a21bd50de4dd13c48069bec02d7d",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/README.md",
+      "bytes": 2969,
+      "sha256": "24fb73374012909beffdba740e7bfaa2c3f545f2ce088974fb3a7a53c9c5d484",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/manifest.json",
+      "bytes": 1396,
+      "sha256": "f78214ff2eadae706812fe2df2ec63a16ecdb2290f79fe0414ee8e470237a0f7",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+      "bytes": 2696,
+      "sha256": "244a7915ba228acb0af6fe719ce89f4cb0626448cb1e109f6d99111e5e91f0bf",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stderr.txt",
+      "bytes": 11380,
+      "sha256": "baa7734ead56d6a93553a5b3b2552cf47672972467d7b1124d2d42686cb3e4a4",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-source-audit/README.md",
+      "bytes": 4288,
+      "sha256": "b720119b901175e5afd9080da6ca5d0876626c76c7b1c5f8a7baafa475f07265",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/scripts/so101_three_point.py",
+      "bytes": 26301,
+      "sha256": "0da4ee3f411c74d6c5ecc5a18df15a6dba41e2ec5dd5f3906adede0e86a35baa",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/scripts/so101_three_point_core.py",
+      "bytes": 7072,
+      "sha256": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_core.py",
+      "bytes": 9310,
+      "sha256": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72",
+      "origin": "intel-current-source"
+    },
+    {
+      "path": "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_io.py",
+      "bytes": 36562,
+      "sha256": "c090b68630e0f36021a2e361a6449c724b2d4458d52e9b72ee72b48e9fbb9ee9",
+      "origin": "intel-current-source"
+    },
+    {
       "path": "verification/offline-01/guard-78798.json",
       "bytes": 31,
       "sha256": "a4a2372d99bcba3f163dd1f87ef42ebbd388eee46ac29532af83ac8c5d04a4c2",
@@ -1744,73 +2002,81 @@
     }
   ],
   "previousSeal": {
-    "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
-    "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
-    "sealedAt": "2026-11-15T08:23:55.436622+00:00",
-    "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
-    "fileCountExcludingThisManifest": 254,
-    "contentBytes": 4203796,
+    "gitCommit": "7521ef32275d8e5f44889ffbf7dc2f58648692eb",
+    "gitTree": "bd5fa02f1b074cdead951190089df94538bc8362",
+    "sealedAt": "2026-11-15T09:22:36.388180+00:00",
+    "sha256": "c1cd1331cac34adf4e475a2abed64a37cea5f7d590dc0940d2f6402b37aced15",
+    "fileCountExcludingThisManifest": 286,
+    "contentBytes": 4841894,
     "previousSeal": {
-      "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
-      "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
-      "sealedAt": "2026-11-15T08:20:09.931452+00:00",
-      "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
-      "fileCountExcludingThisManifest": 242,
-      "contentBytes": 3872471,
+      "gitCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+      "gitTree": "16242efe4fdc8bdab46c8083be8de0ccc38cb945",
+      "sealedAt": "2026-11-15T08:23:55.436622+00:00",
+      "sha256": "4d26bc8e6652e1047f6dd51e92ab961cfe1beb4bc4030507c3a4ee9de51d3ced",
+      "fileCountExcludingThisManifest": 254,
+      "contentBytes": 4203796,
       "previousSeal": {
-        "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
-        "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
-        "sealedAt": "2026-11-15T08:18:02.075721+00:00",
-        "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
-        "fileCountExcludingThisManifest": 221,
-        "contentBytes": 3565277,
+        "gitCommit": "94eb8b17a911d041d5c17e757433497565168997",
+        "gitTree": "a192d6b02cb88e0fc60e2fde4fd48e1c5eb0db54",
+        "sealedAt": "2026-11-15T08:20:09.931452+00:00",
+        "sha256": "0ca57049c7a1440fa76300e9afe6a0e78e083dcb4b3963e5872124d568d8535c",
+        "fileCountExcludingThisManifest": 242,
+        "contentBytes": 3872471,
         "previousSeal": {
-          "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
-          "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
-          "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
-          "sealedAt": "2026-11-15T07:42:20.384410+00:00",
-          "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
-          "fileCountExcludingThisManifest": 186,
-          "contentBytes": 2963049,
+          "gitCommit": "8fcde6ce8f280142ea7846dad65029f474a90c55",
+          "gitTree": "cb54fd12b45cd6b6187a5c24722de47b165ac1af",
+          "sealedAt": "2026-11-15T08:18:02.075721+00:00",
+          "sha256": "66e5895f7855c28e87ae5617f786876fc01d2d03c5e018e9f23eb92e99a5206c",
+          "fileCountExcludingThisManifest": 221,
+          "contentBytes": 3565277,
           "previousSeal": {
-            "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
-            "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
-            "sealedAt": "2026-11-15T07:17:33.712630+00:00",
-            "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
-            "fileCountExcludingThisManifest": 174,
-            "contentBytes": 2708838,
+            "gitCommit": "cb753e9c60ad570b500ce933d10b989f6546c54a",
+            "observedInCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
+            "gitTree": "c8b60deaf037875334da29616f861900dbfa2134",
+            "sealedAt": "2026-11-15T07:42:20.384410+00:00",
+            "sha256": "22a5c6978d0f83436899a1cc74eabbb6a5d1f2ccdcd071a25b74f3812738dafb",
+            "fileCountExcludingThisManifest": 186,
+            "contentBytes": 2963049,
             "previousSeal": {
-              "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
-              "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
-              "sealedAt": "2026-11-15T06:54:29.835819+00:00",
-              "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
-              "fileCountExcludingThisManifest": 167,
-              "contentBytes": 2652462,
+              "gitCommit": "332df3bf3d194c5afe73dd2e861d31e819f203cd",
+              "gitTree": "0a1aee98035752255ceadd06202a104c390877e8",
+              "sealedAt": "2026-11-15T07:17:33.712630+00:00",
+              "sha256": "a81e57cc4cbab84d19b787502aeb450e5f9e618d0c1308317509c3488e6c1eda",
+              "fileCountExcludingThisManifest": 174,
+              "contentBytes": 2708838,
               "previousSeal": {
-                "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
-                "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
-                "sealedAt": "2026-11-15T06:40:02.262971+00:00",
-                "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
-                "fileCountExcludingThisManifest": 165,
-                "contentBytes": 2616880,
+                "gitCommit": "daab4b41420f8d035153e402a8bb7c69e31bddee",
+                "gitTree": "858b25e144d1baa8926d06187c9516379baf989c",
+                "sealedAt": "2026-11-15T06:54:29.835819+00:00",
+                "sha256": "39a46e6e75b0c2001440846127cb6780e80bbe1903d3ea9f8e3d5dda332191f2",
+                "fileCountExcludingThisManifest": 167,
+                "contentBytes": 2652462,
                 "previousSeal": {
-                  "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
-                  "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
-                  "sealedAt": "2026-11-15T03:55:06.975648+00:00",
-                  "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
-                  "fileCountExcludingThisManifest": 159,
-                  "contentBytes": 2409735
+                  "gitCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
+                  "gitTree": "b2988b5e6e5e3dd87fe3348fe8ee2c8dbc6ab2b3",
+                  "sealedAt": "2026-11-15T06:40:02.262971+00:00",
+                  "sha256": "74b32161fe9c6764eb3c4fe047f5832fb1cd8cef014042348a523da20865f5a6",
+                  "fileCountExcludingThisManifest": 165,
+                  "contentBytes": 2616880,
+                  "previousSeal": {
+                    "gitCommit": "e34c2bf2fe8e217a7a1da14bae79bfa3a639b0fd",
+                    "gitTree": "e0bf57b455f64188f5eda907083ff5e3d9602b8f",
+                    "sealedAt": "2026-11-15T03:55:06.975648+00:00",
+                    "sha256": "656528d98d3755b134831773c9fbbf57c61eb57f32054549d2add66ebec1c742",
+                    "fileCountExcludingThisManifest": 159,
+                    "contentBytes": 2409735
+                  }
                 }
               }
-            }
-          },
-          "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+            },
+            "preservedFullManifestPath": "SOURCE_UPDATES.json#previousSourceManifest"
+          }
         }
       }
     }
   },
-  "sourceDeliveryRequestId": "d5315791-6749-4b01-97b5-1b9357306487",
-  "sourceDeliveryId": "dd42f038-052e-4f0f-88fd-4b9162a4b894",
+  "sourceDeliveryRequestId": "aa097b06-d3e9-4ea3-9964-dfc20c89adcb",
+  "sourceDeliveryId": "c8898652-f488-4bd3-8f9f-8793047edf52",
   "previousSnapshotUpdated": true,
   "originalFilesModifiedDefinition": "Exact newer received CLI replaces its proven baseline; three historical received documents have separately recorded Mac annotations. Original and earlier hashes remain in provenance. Two imported backend files additionally contain documented Mac compact-dashboard development; their original hashes and provenance rows are retained in SOURCE_UPDATES.json and SOURCE_ORIGINS.json.",
   "updatedSourcePaths": [
@@ -1864,7 +2130,7 @@
     "source/common/verification/intel-reliability-20261114/DEMO.md",
     "source/common/verification/intel-reliability-20261114/README.md"
   ],
-  "sealBasis": "Committed 2f7efc2a3badecefab278c76a515738ffc2a09e0 plus exact coordination archive and three package metadata updates; all prior source/evidence bytes preserved.",
+  "sealBasis": "Committed 7521ef32275d8e5f44889ffbf7dc2f58648692eb plus exact m08 archive and three package metadata updates; all prior source/evidence bytes preserved.",
   "archivedSourcePaths": [
     "verification/intel-dashboard-20261115-d5315791/README.md",
     "verification/intel-dashboard-20261115-d5315791/SOURCE_DELIVERY.json",
@@ -1942,7 +2208,50 @@
     "verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/final-integrated-20261115T065834Z/result.json",
     "verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/receipts/runtime-restored-readback.json",
     "verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-verification-20261115T070901Z-8bce8491/result.json",
-    "verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/recovery-result.json"
+    "verification/intel-dashboard-20261115-d5315791/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-recovery-20261115T070831253122Z/recovery-result.json",
+    "verification/intel-m08-20261115-c8898652/SOURCE_DELIVERY.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/AGENTS.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/PROJECT_STATUS.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/ROBOT_GAMEPLAN.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/morph-intel-transfer/morph-context/AGENTS.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/morph-intel-transfer/morph-context/context/INTEL_CODEX.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/calibration/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/collect_metadata.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/help-result.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/proposed-command.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/environment/teleoperate-help.stdout.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/executed-source/replay-001/so101_three_point_core.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/executed-source/so101_three_point.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/physical-results/incident-record.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/DELIVERY_REPORT.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/shared-sync/capture-evidence-summary.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/manifest.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/test-results.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stderr.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/unittest.stdout.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/manifest.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/review-results.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v2-duration-alignment/unittest-summary.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/manifest.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/test-results.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stderr.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v3-supervised-repeat/unittest.stdout.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/manifest.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/test-results.json",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stderr.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-io-tests/v4-collision-hold/unittest.stdout.txt",
+    "verification/intel-m08-20261115-c8898652/source/Junction/reviews/intel-m08-teleop-20261115T073603Z/teach-replay-source-audit/README.md",
+    "verification/intel-m08-20261115-c8898652/source/Junction/scripts/so101_three_point.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/scripts/so101_three_point_core.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_core.py",
+    "verification/intel-m08-20261115-c8898652/source/Junction/tests/test_so101_three_point_io.py"
   ],
   "developmentSourceCommit": "61d05e51191c796e9d9fc20382e0c1688ecb38bb",
   "developmentReconciliationPath": "SOURCE_UPDATES.json"

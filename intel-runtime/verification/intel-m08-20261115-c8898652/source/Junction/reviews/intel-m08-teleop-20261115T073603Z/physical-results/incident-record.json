@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-15T08:13:41.068930+00:00",
+  "task": "M08",
+  "session_id": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "request_note_id": "aa097b06-d3e9-4ea3-9964-dfc20c89adcb",
+  "state": "physical_experiments_stopped_by_owner",
+  "follower_usb_serial": "5AE6075066",
+  "operator_observations": [
+    "The robot collided with the table.",
+    "The owner put the arm back.",
+    "The owner explicitly stopped the experiments."
+  ],
+  "operator_report_timestamp_precision": "Conversation order retained; exact physical collision time is unknown.",
+  "physical_power_disconnection_confirmed": false,
+  "damage_inspection_confirmed": false,
+  "commanded_replay": {
+    "started_at": "2026-11-15T08:07:32.680380+00:00",
+    "aborted_at": "2026-11-15T08:07:42.608878+00:00",
+    "planned_rounds": 3,
+    "completed_segments": 0,
+    "completed_rounds": 0,
+    "last_route_offset_s": 6.9,
+    "exit_code": 1
+  },
+  "software_stop": {
+    "reason": "Gripper reported 11.4 V below the retained 11.5 V software guard.",
+    "all_status_registers_zero": true,
+    "collision_voltage_causal_relation": "unknown"
+  },
+  "cleanup": {
+    "at": "2026-11-15T08:07:42.657339+00:00",
+    "all_six_torque_off_verified": true,
+    "port_closed": true,
+    "reported_errors": []
+  },
+  "current_hold": {
+    "active": true,
+    "enforced_in": "scripts/so101_three_point.py",
+    "behavior": "Unconditional replay refusal before data or serial access, also checked at the direct replay entry. No CLI override.",
+    "physical_resume_authorized": false
+  },
+  "limitations": [
+    "Joint position and speed limits did not establish table clearance.",
+    "The failed attempt does not verify physical replay, collision avoidance or emergency-stop acceptance.",
+    "Any future hardware resumption requires a separate owner instruction and a newly reviewed physical setup and path."
+  ],
+  "evidence_sha256": {
+    "three-points-001.json": "4966e65cc3d512090acd2bb84256c58d357b33489283a29072237e4a7956fe45",
+    "teach-001.jsonl": "a30a470a7e80c495717f7db55b1ff73caca45e2ace1108366d0f22bc8d096430",
+    "teach-002.jsonl": "3c89a38254d9b1f92062a10a2fb5c31b7b2f32e02fbf10b8890cc5ba3eff87d4",
+    "plan-repeat-001.json": "5c88dca6307949f2782fcd6583f08191e524ab7f2690642f094e057ad281047e",
+    "replay-001.jsonl": "cde6841eed9b69d90e4a1a56c4a5bd11755fb8f2943db77aee8c89c612330cbd",
+    "executed-source/replay-001/so101_three_point.py": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+    "physical-results/replay-evidence-summary.json": "65e62bfa2fb1127edbcb9ed7b1f1d8baa68605600630ef164ef826adbab93e90"
+  },
+  "calibration_sha256": "7fc283b68be9c0e7117b140ed532f6ef865c4cf6cef89182a3e3a972772ef968"
+}

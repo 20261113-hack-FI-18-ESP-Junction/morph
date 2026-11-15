@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "agent": "/root/reconcile",
+  "session_id": "966c1caf-f8f1-4221-87e7-85c67748c871",
+  "recorded_at": "2026-11-15T08:05:45.121340+00:00",
+  "test_result": "60 passed, 0 failed",
+  "source_sha256": {
+    "scripts/so101_three_point.py": "1fd43e2395c0f8ce74877d01110545d6add2d82ea4c09d2d42478593c6e122b6",
+    "scripts/so101_three_point_core.py": "78a2fde8cbe67a0cb17bf692b72b5bf8c8e5cfed44f8314a3dd9f8b16e71fe62",
+    "tests/test_so101_three_point_io.py": "4acdb220ecc1793ee27734d635d21df4b02361f721a349c955a4957fe73c6ee7",
+    "tests/test_so101_three_point_core.py": "417aeff7a976a662655b00d87b88eba0e30527ca044eb047398a510d42ac4b72"
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2271,
+      "sha256": "b3e2cb3d35da9c11d4bc4f3cf723b236207a12d730cf668b223d9c56807878d7"
+    },
+    {
+      "path": "test-results.json",
+      "bytes": 1661,
+      "sha256": "bd66d1a39a7161adb04e443c0f11728d915907d2537f8cbb1bce087dac7f1b43"
+    },
+    {
+      "path": "unittest.stderr.txt",
+      "bytes": 10085,
+      "sha256": "38507e7e1b2700e5b3894b51b7cd4d249405a21bd50de4dd13c48069bec02d7d"
+    },
+    {
+      "path": "unittest.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "remote_delivery": "pending designated reporter receipt"
+}
