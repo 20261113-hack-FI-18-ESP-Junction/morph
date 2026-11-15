@@ -1,0 +1,7 @@
+# Existing prepared runtime, verified November 14, 2026. No robotics packages here.
+fastapi==0.162.5
+pydantic==2.14.3
+uvicorn==0.54.0
+# Used by the integration tests; not required by the token-file CLI client.
+httpx==0.28.1
+pytest==9.2.0
