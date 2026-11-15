@@ -1,276 +1,263 @@
 import React from "react";
+import { Activity, Cpu, Database, Radio, ShieldCheck } from "lucide-react";
 import { formatTimestamp, DISPLAY_TIME_ZONE } from "./EvidenceImage.tsx";
-import type { StationSnapshot } from "../types/morph.ts";
+import { DataPair, StatusPill, readableLabel } from "./DashboardPrimitives.tsx";
+import type { StationSnapshot, TelemetryValue } from "../types/morph.ts";
 
 interface RobotSystemViewProps {
   snapshot: StationSnapshot;
 }
+const measurement = (value: TelemetryValue) =>
+  value.value === null
+    ? "Unavailable"
+    : `${value.value.toLocaleString(undefined, { maximumFractionDigits: 2 })} ${value.unit}`;
 
-export const RobotSystemView: React.FC<RobotSystemViewProps> = ({ snapshot }) => {
+export const RobotSystemView: React.FC<RobotSystemViewProps> = ({
+  snapshot,
+}) => {
+  const isReplay = snapshot.viewMode === "replay";
+  const connected =
+    snapshot.dataConnection === "connected" && !snapshot.dataStale;
+  const joints = snapshot.joints.filter((joint) => !joint.isPlaceholderName);
+  const hardware = [
+    { label: "CPU load", record: snapshot.hardwareSummary.cpuLoad },
+    { label: "Memory", record: snapshot.hardwareSummary.memory },
+    { label: "Control rate", record: snapshot.hardwareSummary.controlRate },
+  ];
   return (
     <div>
-      {/* Page Heading */}
-      <div className="mb-6 flex flex-wrap items-end justify-between gap-5">
+      <div className="view-heading">
         <div>
-          <span className="font-mono-tech text-[10px] tracking-[0.1em] text-[#C7A477]">
-            02 / MORPH CONTROL ROOM
-          </span>
-          <h1 className="my-2 text-[30px] font-[450] leading-[1.15] tracking-[-0.055em] text-[#F2EEE6]">
-            Robot &amp; system
+          <span className="eyebrow">02 / SYSTEM OBSERVABILITY</span>
+          <h1>
+            Robot &amp; system<span className="heading-period">.</span>
           </h1>
-          <p className="m-0 text-[12px] text-[#A7A39A]">
-            Keep connection state separate from physical confirmation.
-          </p>
+          <p>Connection health, recorded identities and measured telemetry.</p>
         </div>
-        <span className="font-mono-tech inline-block rounded-[3px] border border-[#484137] bg-[#211c15] px-2 py-1 text-[9px] tracking-[0.05em] text-[#C7A477]">
-          {snapshot.viewMode === "live"
-            ? "LIVE RECORDS"
-            : snapshot.viewMode === "replay"
-            ? "REPLAY"
-            : "PERSISTED SIMULATION"}
-        </span>
+        <StatusPill
+          tone={isReplay ? "bronze" : connected ? "good" : "warn"}
+          dot
+        >
+          {isReplay
+            ? "Saved replay"
+            : connected
+              ? "Records connected"
+              : "Records not current"}
+        </StatusPill>
       </div>
 
-      <div role="status" className="mb-5 rounded-[5px] border border-[#403c32] bg-[#15140f] px-4 py-3 text-[11px] text-[#A7A39A]">
-        Records API: {snapshot.dataConnection} · {snapshot.dataStale ? "Saved values may be stale" : "Records current"}.
-        <span className="mt-1 block">Last refresh: {formatTimestamp(snapshot.receivedAt)} · {DISPLAY_TIME_ZONE}. Physical connection: unavailable.</span>
-      </div>
-
-      {/* Main Two-Column System Grid */}
-      <div className="grid grid-cols-1 gap-5 lg:grid-cols-[1.12fr_1fr]">
-        {/* Left: Integration Status */}
-        <section className="overflow-hidden rounded-[8px] border border-[#252421] bg-[#101010]">
-          <div className="flex items-center justify-between border-b border-[#252421] px-5 py-4">
-            <h2 className="m-0 text-[13px] font-medium tracking-[-0.015em] text-[#F2EEE6]">
-              Integration status
-            </h2>
-            <span className="font-mono-tech inline-block rounded-[3px] border border-[#33332f] bg-[#1c1c1a] px-2 py-1 text-[9px] tracking-[0.05em] text-[#b8b4ab]">
-              ACCESS UNVERIFIED
-            </span>
-          </div>
-
-          <div className="p-5">
-            <p className="mb-4 rounded-[4px] border border-[#332c22] bg-[#151410] px-3.5 py-2.5 text-[11px] text-[#A7A39A]">
-              These are the selected components. Live account access and physical execution
-              have not been verified.
+      <div className="system-grid">
+        <div className="system-stack">
+          <section className="dashboard-panel">
+            <div className="panel-heading">
+              <div className="panel-title">
+                <Database size={16} />
+                <h2>Records connection</h2>
+              </div>
+              <StatusPill>
+                {isReplay
+                  ? "Frozen snapshot"
+                  : readableLabel(snapshot.dataConnection, "Unavailable")}
+              </StatusPill>
+            </div>
+            <dl className="connection-facts">
+              <DataPair label="Data source">
+                {snapshot.sourceMode === "simulation"
+                  ? "Persisted simulation"
+                  : "Intel station records"}
+              </DataPair>
+              <DataPair label="Session">
+                {snapshot.activeSession?.name ?? "No session received"}
+              </DataPair>
+              <DataPair label="Last received">
+                {formatTimestamp(snapshot.receivedAt)} · {DISPLAY_TIME_ZONE}
+              </DataPair>
+              <DataPair label="Event connection">
+                {isReplay
+                  ? "Paused during replay"
+                  : readableLabel(snapshot.eventConnection, "Unavailable")}
+              </DataPair>
+              <DataPair label="Record sequence" mono>
+                {snapshot.receivedAt
+                  ? snapshot.lastEventSequence
+                  : "Unavailable"}
+              </DataPair>
+              <DataPair label="Record scope">
+                {isReplay
+                  ? "Saved replay"
+                  : snapshot.recordScope === "session"
+                    ? "Saved complete session"
+                    : "Current object and recent cycles"}
+              </DataPair>
+            </dl>
+            <p className="system-note">
+              Connection health describes the records feed. Robot connection and
+              physical outcome confirmation are tracked separately.
             </p>
+          </section>
 
-            <div>
-              {snapshot.components.map((comp, idx) => (
-                <div
-                  key={comp.id}
-                  className={`flex items-center justify-between gap-5 py-4 ${
-                    idx < snapshot.components.length - 1
-                      ? "border-b border-[#252421]"
-                      : "pb-0"
-                  } ${idx === 0 ? "pt-0" : ""}`}
-                >
+          <section className="dashboard-panel">
+            <div className="panel-heading">
+              <div className="panel-title">
+                <Radio size={16} />
+                <h2>Component availability</h2>
+              </div>
+              <StatusPill>Capability status</StatusPill>
+            </div>
+            <div className="component-list">
+              {snapshot.components.map((component) => (
+                <div className="component-row" key={component.id}>
                   <div>
-                    <div className="flex flex-wrap items-center gap-2">
-                      <b className="text-[12px] font-medium text-[#F2EEE6]">{comp.name}</b>
-                      <span className="font-mono-tech text-[9px] text-[#8c887e]">
-                        [{comp.capabilityStatus.toUpperCase()} ·{" "}
-                        {comp.deploymentLocation === "local_station"
-                          ? "LOCAL STATION"
-                          : "CLOUD API"}
-                        ]
-                      </span>
-                    </div>
-                    <p className="mt-1 mb-0 text-[10px] text-[#A7A39A]">
-                      {comp.roleDescription}
-                    </p>
-                    <p className="font-mono-tech mt-0.5 mb-0 text-[9px] text-[#78746a]">
-                      Identity: {comp.configuredIdentity}
-                    </p>
-                    {comp.latestError && (
-                      <p className="mt-1 mb-0 text-[10px] text-[#D6B775]">
-                        Note: {comp.latestError}
-                      </p>
+                    <strong>{component.name}</strong>
+                    <p>{component.roleDescription}</p>
+                    <small>{component.configuredIdentity}</small>
+                    {component.latestError && (
+                      <p className="text-bad">{component.latestError}</p>
                     )}
                   </div>
-                  <span className="font-mono-tech shrink-0 rounded-[3px] border border-[#33332f] bg-[#1c1c1a] px-2 py-1 text-[8px] tracking-[0.05em] text-[#b8b4ab]">
-                    {comp.statusBadgeText}
-                  </span>
+                  <StatusPill
+                    tone={
+                      component.capabilityStatus === "verified"
+                        ? "good"
+                        : component.connectionState === "error"
+                          ? "bad"
+                          : "neutral"
+                    }
+                  >
+                    {readableLabel(component.capabilityStatus)}
+                  </StatusPill>
                 </div>
               ))}
             </div>
-          </div>
-        </section>
+            <p className="system-note">
+              Stored model runs document individual requests. They do not
+              establish current provider access or a working physical
+              integration.
+            </p>
+          </section>
+        </div>
 
-        {/* Right: Arm Telemetry & Hardware Summary */}
-        <div>
-          <section className="overflow-hidden rounded-[8px] border border-[#252421] bg-[#101010]">
-            <div className="flex items-center justify-between border-b border-[#252421] px-5 py-4">
-              <h2 className="m-0 text-[13px] font-medium tracking-[-0.015em] text-[#F2EEE6]">
-                Arm telemetry
-              </h2>
-              <span className="font-mono-tech text-[9px] text-[#A7A39A]">
-                NO LIVE CONNECTION
-              </span>
+        <div className="system-stack">
+          <section className="dashboard-panel">
+            <div className="panel-heading">
+              <div className="panel-title">
+                <ShieldCheck size={16} />
+                <h2>Recorded station identity</h2>
+              </div>
             </div>
-
-            <div className="p-5">
-              <p className="mb-4 rounded-[4px] border border-[#332c22] bg-[#151410] px-3.5 py-2.5 text-[11px] text-[#A7A39A]">
-                Joint values appear only after the controller supplies names, units and
-                measured values.
-              </p>
-
-              <table className="w-full border-collapse text-[11px]">
-                <thead>
-                  <tr>
-                    <th className="border-b border-[#252421] px-3 py-2.5 text-left text-[9px] font-normal text-[#A7A39A]">
-                      Joint
-                    </th>
-                    <th className="border-b border-[#252421] px-3 py-2.5 text-left text-[9px] font-normal text-[#A7A39A]">
-                      Measured
-                    </th>
-                    <th className="border-b border-[#252421] px-3 py-2.5 text-left text-[9px] font-normal text-[#A7A39A]">
-                      Requested
-                    </th>
-                    <th className="border-b border-[#252421] px-3 py-2.5 text-left text-[9px] font-normal text-[#A7A39A]">
-                      Deviation
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {snapshot.joints.length === 0 && <tr><td colSpan={4} className="px-3 py-6 text-center text-[#A7A39A]">Unavailable — no measured joint telemetry supplied.</td></tr>}
-                  {snapshot.joints.map((j, idx) => (
-                    <tr key={j.jointName}>
-                      <td
-                        className={`px-3 py-3 text-[#F2EEE6] ${
-                          idx < snapshot.joints.length - 1
-                            ? "border-b border-[#252421]"
-                            : ""
-                        }`}
-                      >
-                        {j.jointName}
-                        {j.isPlaceholderName ? "*" : ""}
-                      </td>
-                      <td
-                        className={`px-3 py-3 text-[#A7A39A] ${
-                          idx < snapshot.joints.length - 1
-                            ? "border-b border-[#252421]"
-                            : ""
-                        }`}
-                      >
-                        {j.measured.value === null
-                          ? "Unavailable"
-                          : `${j.measured.value} ${j.measured.unit}`}
-                      </td>
-                      <td
-                        className={`px-3 py-3 text-[#A7A39A] ${
-                          idx < snapshot.joints.length - 1
-                            ? "border-b border-[#252421]"
-                            : ""
-                        }`}
-                      >
-                        {j.commanded.value === null
-                          ? "Unavailable"
-                          : `${j.commanded.value} ${j.commanded.unit}`}
-                      </td>
-                      <td
-                        className={`px-3 py-3 text-[#A7A39A] ${
-                          idx < snapshot.joints.length - 1
-                            ? "border-b border-[#252421]"
-                            : ""
-                        }`}
-                      >
-                        {j.deviation.value === null ? "—" : `${j.deviation.value}`}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-
-              <p className="mt-3 mb-0 text-[11px] text-[#A7A39A]">
-                {snapshot.joints.some((joint) => joint.isPlaceholderName) ? "*Display placeholders; no measured controller schema available." : "Names and values are shown only when supplied by the controller."}
-              </p>
-            </div>
+            <dl className="connection-facts">
+              <DataPair label="Robot ID" mono>
+                {snapshot.activeSession?.robotId ?? "Not recorded"}
+              </DataPair>
+              <DataPair label="Configuration" mono>
+                {snapshot.activeSession?.configId ?? "Not recorded"}
+              </DataPair>
+              <DataPair label="Session started">
+                {formatTimestamp(snapshot.activeSession?.startedAt)}
+              </DataPair>
+              <DataPair label="Session ended">
+                {snapshot.activeSession
+                  ? snapshot.activeSession.endedAt
+                    ? formatTimestamp(snapshot.activeSession.endedAt)
+                    : "Open session"
+                  : "Not recorded"}
+              </DataPair>
+              <DataPair label="Physical connection">
+                {snapshot.stationConnected
+                  ? "Reported connected"
+                  : "Unavailable"}
+              </DataPair>
+              <DataPair label="Robot control">
+                {snapshot.canControl ? "Available" : "Unavailable in this view"}
+              </DataPair>
+              <DataPair label="Active goal">
+                {snapshot.goalState.activeGoal
+                  ? snapshot.goalState.activeGoalLabel
+                  : "Unavailable"}
+              </DataPair>
+            </dl>
           </section>
 
-          {/* Hardware Summary */}
-          <div className="mt-5 grid grid-cols-3 gap-5">
-            <div className="border-t border-[#252421] pt-4">
-              <label className="text-[10px] text-[#A7A39A]">CPU load</label>
-              <strong className="font-mono-tech my-1 block text-[22px] font-normal text-[#F2EEE6]">
-                —
-              </strong>
-              <p className="m-0 text-[10px] text-[#A7A39A]">Unavailable</p>
+          <section className="dashboard-panel">
+            <div className="panel-heading">
+              <div className="panel-title">
+                <Activity size={16} />
+                <h2>Arm telemetry</h2>
+              </div>
+              <StatusPill>
+                {joints.some((joint) => joint.measured.value !== null)
+                  ? "Measured values"
+                  : "Unavailable"}
+              </StatusPill>
             </div>
-            <div className="border-t border-[#252421] pt-4">
-              <label className="text-[10px] text-[#A7A39A]">Memory</label>
-              <strong className="font-mono-tech my-1 block text-[22px] font-normal text-[#F2EEE6]">
-                —
-              </strong>
-              <p className="m-0 text-[10px] text-[#A7A39A]">Unavailable</p>
-            </div>
-            <div className="border-t border-[#252421] pt-4">
-              <label className="text-[10px] text-[#A7A39A]">Control rate</label>
-              <strong className="font-mono-tech my-1 block text-[22px] font-normal text-[#F2EEE6]">
-                —
-              </strong>
-              <p className="m-0 text-[10px] text-[#A7A39A]">Unavailable</p>
-            </div>
-          </div>
+            {joints.length ? (
+              <div className="telemetry-table-wrap">
+                <table className="telemetry-table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Joint</th>
+                      <th scope="col">Measured</th>
+                      <th scope="col">Requested</th>
+                      <th scope="col">Deviation</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {joints.map((joint) => (
+                      <tr key={joint.jointName}>
+                        <td>{joint.jointName}</td>
+                        <td>
+                          {measurement(joint.measured)}
+                          {joint.measured.state === "stale" && " · stale"}
+                        </td>
+                        <td>{measurement(joint.commanded)}</td>
+                        <td>{measurement(joint.deviation)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              <div className="telemetry-empty">
+                <h3>No measured joint data.</h3>
+                <p>
+                  Joint names, positions and requested values will appear when a
+                  controller supplies measurements with units and timestamps.
+                </p>
+              </div>
+            )}
+          </section>
 
-          <div className="mt-5 rounded-[5px] border border-[#403c32] bg-[#15140f] px-4 py-3.5 text-[11px] text-[#A7A39A]">
-            Motor temperature, current, force and GPU/NPU utilization remain unavailable
-            until measured by a supported source.
-          </div>
+          <section className="dashboard-panel">
+            <div className="panel-heading">
+              <div className="panel-title">
+                <Cpu size={16} />
+                <h2>Compute &amp; timing telemetry</h2>
+              </div>
+            </div>
+            <div className="hardware-values">
+              {hardware.map((item) => (
+                <div key={item.label}>
+                  <span className="field-label">{item.label}</span>
+                  <strong>
+                    {item.record.value === null
+                      ? "—"
+                      : measurement(item.record)}
+                  </strong>
+                  <small>
+                    {item.record.value === null
+                      ? "Unavailable"
+                      : `${readableLabel(item.record.state)} · ${formatTimestamp(item.record.measuredAt, false)}`}
+                  </small>
+                </div>
+              ))}
+            </div>
+            <p className="system-note">
+              Motor temperature, current, force and GPU/NPU utilization are
+              unavailable until a supported source supplies measurements.
+            </p>
+          </section>
         </div>
       </div>
-
-      {/* Execution Boundary Panel */}
-      <section className="mt-5 overflow-hidden rounded-[8px] border border-[#252421] bg-[#101010]">
-        <div className="flex items-center justify-between border-b border-[#252421] px-5 py-4">
-          <h2 className="m-0 text-[13px] font-medium tracking-[-0.015em] text-[#F2EEE6]">
-            Planned execution boundary
-          </h2>
-          <span className="font-mono-tech text-[9px] text-[#A7A39A]">
-            DISPATCH UNAVAILABLE · RECORD EVENT SEQUENCE {snapshot.lastEventSequence}
-          </span>
-        </div>
-
-        <div className="p-5">
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-            <div className="border-b border-[#252421] pb-3 md:border-r md:border-b-0 md:pr-4 md:pb-0">
-              <label className="font-mono-tech text-[9px] text-[#C7A477]">
-                01 / VALIDATE
-              </label>
-              <p className="my-1.5 text-[11px] text-[#d4d0c7]">
-                Goal + state version · frame freshness
-              </p>
-              <small className="block text-[10px] text-[#A7A39A]">
-                Deadline · permitted task · preconditions
-              </small>
-            </div>
-
-            <div className="border-b border-[#252421] pb-3 md:border-r md:border-b-0 md:pr-4 md:pb-0">
-              <label className="font-mono-tech text-[9px] text-[#C7A477]">
-                02 / DISPATCH
-              </label>
-              <p className="my-1.5 text-[11px] text-[#d4d0c7]">
-                One unique execution ID
-              </p>
-              <small className="block text-[10px] text-[#A7A39A]">
-                Supported learned skill on the Intel station
-              </small>
-            </div>
-
-            <div>
-              <label className="font-mono-tech text-[9px] text-[#C7A477]">
-                03 / VERIFY
-              </label>
-              <p className="my-1.5 text-[11px] text-[#d4d0c7]">
-                Sent → acknowledged → finished → verified
-              </p>
-              <small className="block text-[10px] text-[#A7A39A]">
-                Confirmation source required for physical success
-              </small>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

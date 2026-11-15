@@ -95,30 +95,31 @@ export const QualityHistoryView: React.FC<QualityHistoryViewProps> = ({
             {snapshot.viewMode === "replay"
               ? "READ-ONLY REPLAY"
               : snapshot.viewMode === "live"
-              ? "LIVE RECORDS"
+              ? "SAVED LIVE RECORDS"
               : "PERSISTED SIMULATION"}
           </span>
           <button
             type="button"
             disabled={!snapshot.activeSession || snapshot.dataConnection !== "connected" || snapshot.viewMode === "replay"}
-            title={snapshot.viewMode === "replay" ? "Use JSON to export the frozen replay" : undefined}
+            title={snapshot.viewMode === "replay" ? "Use JSON to export the frozen replay" : "Fetches the latest complete session from the server; it may be newer than this saved snapshot"}
             onClick={onExportCsv}
             className="min-h-[32px] rounded-[5px] border border-[#3e3b34] px-3 py-1.5 text-[11px] text-[#F2EEE6] hover:bg-[#22201b]"
           >
-            Export CSV
+            Export latest CSV
           </button>
           <button
             type="button"
-            disabled={!snapshot.activeSession || snapshot.dataConnection !== "connected"}
+            disabled={!snapshot.activeSession || (snapshot.recordScope !== "session" && snapshot.viewMode !== "replay" && snapshot.dataConnection !== "connected")}
+            title="Exports the displayed saved session snapshot, including its complete records and metrics"
             onClick={onExportJson}
             className="min-h-[32px] rounded-[5px] border border-[#3e3b34] px-3 py-1.5 text-[11px] text-[#F2EEE6] hover:bg-[#22201b]"
           >
-            JSON ↗
+            Export snapshot JSON
           </button>
         </div>
       </div>
 
-      <p role="status" className="mb-5 text-[11px] text-[#A7A39A]">{snapshot.viewMode === "replay" ? "Frozen historical records · Saved session totals" : `Records API: ${snapshot.dataConnection} · ${snapshot.dataStale ? "Saved results may be stale" : "Records current"}`}. Source: {snapshot.sourceMode}. Times: {DISPLAY_TIME_ZONE}.</p>
+      <p role="status" className="mb-5 text-[11px] text-[#A7A39A]">{snapshot.viewMode === "replay" ? "Frozen historical records · Saved session totals" : `Saved session snapshot · ${formatTimestamp(snapshot.historyLoadedAt ?? snapshot.receivedAt)} · ${snapshot.historyUpdateAvailable ? "New records available" : "Snapshot totals"}`}. Source: {snapshot.sourceMode}. Times: {DISPLAY_TIME_ZONE}.</p>
 
       {/* 4 Quality Metrics */}
       <div className="mb-6 grid grid-cols-2 border-y border-[#252421] py-5 lg:grid-cols-4">
@@ -420,8 +421,8 @@ export const QualityHistoryView: React.FC<QualityHistoryViewProps> = ({
                             : ""
                         }`}
                       >
-                        {c.attemptIds.length}
-                        {recovered ? " · recovered" : c.attemptIds.length > 1 ? " · retry" : ""}
+                        {c.detailsLoaded === false ? "Not loaded" : c.attemptIds.length}
+                        {c.detailsLoaded === false ? "" : recovered ? " · recovered" : c.attemptIds.length > 1 ? " · retry" : ""}
                       </td>
                       <td
                         className={`font-mono-tech hidden px-3 py-3 text-[10px] sm:table-cell ${
@@ -476,7 +477,7 @@ export const QualityHistoryView: React.FC<QualityHistoryViewProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-3 border-t border-[#252421] px-5 py-3 text-[10px] text-[#A7A39A]">
           <span>
             Showing {visibleCycles.length} of {filteredCycles.length} matching records · All{" "}
-            {snapshot.cycles.length} included in JSON/CSV export · Times in {DISPLAY_TIME_ZONE}
+            {snapshot.cycles.length} records in snapshot JSON · {snapshot.viewMode === "replay" ? "CSV unavailable in replay" : "CSV fetches latest server records"} · Times in {DISPLAY_TIME_ZONE}
           </span>
           <div className="flex items-center gap-3">
             <button type="button" aria-label="Previous history page" disabled={pagination.page === 0} onClick={()=>setPage(pagination.page-1)} className="text-[#C7A477] disabled:opacity-40">Previous</button>

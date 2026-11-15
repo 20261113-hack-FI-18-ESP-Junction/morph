@@ -158,7 +158,7 @@ export const CycleDetailDrawer: React.FC<CycleDetailDrawerProps> = ({
     title: `${observation.modelId} · ${observation.status}`, detail: observation.observations.join(" ") || "No visual observation output recorded." });
   for (const decision of decisions) trace.push({ id: decision.id, time: decision.completedAt ?? decision.requestedAt,
     title: `${decision.modelId} → ${decision.selectedChoice ?? "No selection recorded"}`,
-    detail: `State v${decision.stateVersion} / goal v${decision.goalVersion}. Validation: ${decision.validatorReason ?? "Unavailable"}` });
+    detail: `State v${decision.stateVersion} / goal v${decision.goalVersion}. Validation: ${decision.validatorAccepted === true ? "accepted" : decision.validatorAccepted === false ? "rejected" : "not recorded"}${decision.validatorReason ? ` · ${decision.validatorReason}` : ""}` });
   for (const execution of skillExecutions) {
     if (execution.requestedAt) trace.push({ id: `${execution.id}:requested`, time: execution.requestedAt,
       title: `Execution requested · ${execution.taskId}`, detail: `Execution ${execution.id}; policy ${execution.policyId}. A request alone does not confirm a command was sent.` });
@@ -245,6 +245,7 @@ export const CycleDetailDrawer: React.FC<CycleDetailDrawerProps> = ({
 
         {/* Body */}
         <div className="px-7 py-6">
+          {cycle.detailsLoaded === false ? <p role="status" className="rounded border border-[#514633] bg-[#211d16] p-4 text-[12px] leading-relaxed text-[#cbb695]">Cycle summary received. Full evidence details have not been received yet; attempt and inspection counts are unavailable.</p> : <>
           {/* 6 Key Facts */}
           <div className="mb-6 grid grid-cols-2 gap-4 sm:grid-cols-3">
             <div>
@@ -396,7 +397,7 @@ export const CycleDetailDrawer: React.FC<CycleDetailDrawerProps> = ({
               <span className="font-mono-tech text-[#F2EEE6]">
                 {cycle.timingBreakdown.verificationMs !== null
                   ? `${cycle.timingBreakdown.verificationMs} ms`
-                  : "Unverified"}
+                  : "Unavailable"}
               </span>
             </div>
           </div>
@@ -429,6 +430,7 @@ export const CycleDetailDrawer: React.FC<CycleDetailDrawerProps> = ({
                 available={reviewAvailable} onSubmit={onSubmitReview} onRefresh={onRefresh}/>}
 
           </div>
+          </>}
         </div>
       </div>
     </div>

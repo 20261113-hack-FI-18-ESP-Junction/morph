@@ -292,7 +292,10 @@ function AnalystSelectionPanel({ snapshot, onOpenSource, api }: EvidenceAnalystP
         <button type="button" className={buttonClass} disabled={!selection?.connected || visible.phase === "submitting"} onClick={() => { void controller.refresh(); }}>Refresh saved facts and reports</button>
         {visible.uncertainRequest && !busy && snapshot.viewMode !== "replay" && <button type="button" className={buttonClass} onClick={() => controller.abandonUnconfirmed()}>Discard unconfirmed request</button>}
       </div>
-      {visible.uncertainRequest && !busy && snapshot.viewMode !== "replay" && <p className="mt-2 text-[11px] text-[#A7A39A]">This request is retained in this browser session for an idempotent retry. Discarding it releases the selection for a new request; any job already accepted by the server remains in saved history.</p>}
+      {visible.uncertainRequest && !busy && snapshot.viewMode !== "replay" && <div className="mt-2 text-[11px] text-[#A7A39A]">
+        <p>This request is retained in this browser session for an idempotent retry. Discarding it releases the selection for a new request; any job already accepted by the server remains in saved history.</p>
+        <p className="mt-1 break-all">Request ID: <code>{visible.uncertainRequest.requestId}</code></p>
+      </div>}
       {visible.context && !hasEligibleRecords(visible.context) && <p role="status" className="mt-2 text-[12px] text-[#A7A39A]">No data yet: no finished cycles or attempts are eligible for analysis.</p>}
       {!selection?.connected && <p role="status" className="mt-2 text-[12px] text-[#D6B775]">Records are disconnected or stale. Saved evidence may be shown; new analysis is unavailable.</p>}
       {visible.phase === "loading" && <p role="status" className="mt-2 text-[12px] text-[#A7A39A]">Loading saved facts and reports…</p>}

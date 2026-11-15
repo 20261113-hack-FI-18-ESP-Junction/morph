@@ -8,6 +8,7 @@ import { RobotSystemView } from "./components/RobotSystemView.tsx";
 import { stationClient } from "./services/stationClient.ts";
 import { EvidenceAnalystPanel } from "./analysis/EvidenceAnalystPanel.tsx";
 import type { ViewMode } from "./types/morph.ts";
+import { formatTimestamp, DISPLAY_TIME_ZONE } from "./components/EvidenceImage.tsx";
 
 type NavDestination = "live" | "system" | "quality" | "design";
 
@@ -16,6 +17,8 @@ export default function App() {
   const snapshot = useSyncExternalStore(stationClient.subscribe, stationClient.getState);
   const [selectedCycleId, setSelectedCycleId] = useState<string | null>(null);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+  const [refreshPending, setRefreshPending] = useState(false);
+  const [catalogPending, setCatalogPending] = useState(false);
   const showToast = (message: string) => setToastMessage(message);
   useEffect(() => {
     if (!toastMessage) return;
@@ -24,12 +27,35 @@ export default function App() {
   }, [toastMessage]);
   useEffect(() => { void stationClient.start(); return () => stationClient.stop(); }, []);
   useEffect(() => { setSelectedCycleId(null); }, [snapshot.activeSession?.id, snapshot.viewMode]);
+  useEffect(() => { void stationClient.setHistoryVisible(navView === "quality"); }, [navView]);
+  const openCycle = (cycleId: string) => {
+    setSelectedCycleId(cycleId);
+    if (snapshot.viewMode !== "replay") void stationClient.selectCycle(cycleId);
+  };
+  const closeCycle = () => {
+    setSelectedCycleId(null);
+    if (snapshot.viewMode !== "replay") void stationClient.selectCycle();
+  };
   const handleModeSwitch = async (mode: ViewMode, sessionId?: string) => {
     if (mode === "replay") { try { await stationClient.startReplay(); setNavView("quality"); } catch { showToast("Load a current persisted session before replaying."); } return; }
     setSelectedCycleId(null);
     await stationClient.selectMode(mode, sessionId);
   };
   const unsupported = async () => { showToast("This operation is unavailable until its station integration is verified."); };
+  const refreshRecords = async () => {
+    if (refreshPending) return;
+    setRefreshPending(true);
+    try { await stationClient.refresh(); }
+    catch { showToast("Records could not be refreshed. Check the station connection and retry."); }
+    finally { setRefreshPending(false); }
+  };
+  const loadOlderSessions = async () => {
+    if (catalogPending) return;
+    setCatalogPending(true);
+    try { await stationClient.loadOlderSessions(); }
+    catch { showToast("Older sessions could not be loaded. Check the station connection and retry."); }
+    finally { setCatalogPending(false); }
+  };
   const downloadFile = (filename: string, content: string, mimeType: string) => {
     const url = URL.createObjectURL(new Blob([content], { type: mimeType }));
     const a = document.createElement("a"); a.href = url; a.download = filename; a.click();
@@ -39,16 +65,18 @@ export default function App() {
     if (!snapshot.activeSession) return;
     try {
       const csv = await stationClient.exportCsv(snapshot.activeSession.id);
-      downloadFile(`morph-${snapshot.activeSession.id.replace(/[^a-zA-Z0-9_-]/g, "-")}-records.csv`, csv, "text/csv");
-      showToast("Exported persisted session records as CSV.");
+      downloadFile(`morph-${snapshot.activeSession.id.replace(/[^a-zA-Z0-9_-]/g, "-")}-latest-records.csv`, csv, "text/csv");
+      showToast("Exported the latest server records as CSV; these may be newer than the displayed snapshot.");
     } catch { showToast("Export unavailable. Check the station connection and retry."); }
   };
   const handleExportJson = async () => {
     if (!snapshot.activeSession) return;
     try {
       const json = await stationClient.exportJson(snapshot.activeSession.id);
-      downloadFile(`morph-${snapshot.activeSession.id.replace(/[^a-zA-Z0-9_-]/g, "-")}-trace.json`, json, "application/json");
-      showToast("Exported the complete persisted session trace.");
+      downloadFile(`morph-${snapshot.activeSession.id.replace(/[^a-zA-Z0-9_-]/g, "-")}-snapshot.json`, json, "application/json");
+      showToast(snapshot.recordScope === "session" || snapshot.viewMode === "replay"
+        ? "Exported the displayed saved session snapshot as JSON."
+        : "Exported the latest persisted session trace as JSON.");
     } catch { showToast("Export unavailable. Check the station connection and retry."); }
   };
   const isDisconnected = snapshot.dataConnection !== "connected";
@@ -60,7 +88,7 @@ export default function App() {
     <div className="flex min-h-screen flex-col bg-[#080808] text-[#F2EEE6] sm:flex-row">
       <a href="#main-content" className="skip-link">Skip to main content</a>
       {/* Sidebar (212px on Desktop, compact icon/number rail at 600-900px, top bar on <600px) */}
-      <aside className="flex shrink-0 flex-row items-center justify-between border-b border-[#252421] bg-[#0b0b0a] px-4.5 py-4 sm:w-[70px] sm:flex-col sm:items-stretch sm:justify-start sm:border-r sm:border-b-0 sm:px-2.5 sm:py-6 lg:w-[212px] lg:px-5 lg:pt-[30px] lg:pb-5">
+      <aside className="flex shrink-0 flex-row flex-wrap items-center justify-between gap-y-4 border-b border-[#252421] bg-[#0b0b0a] px-4.5 py-4 sm:w-[70px] sm:flex-col sm:items-stretch sm:justify-start sm:border-r sm:border-b-0 sm:px-2.5 sm:py-6 lg:w-[212px] lg:px-5 lg:pt-[30px] lg:pb-5">
         <a
           href="#live"
           onClick={(e) => {
@@ -88,7 +116,7 @@ export default function App() {
 
         <nav
           aria-label="Primary"
-          className="flex flex-row gap-1 sm:mt-10 sm:flex-col sm:gap-2 lg:mt-0"
+          className="flex w-full flex-row justify-between gap-1 sm:mt-10 sm:w-auto sm:flex-col sm:gap-2 lg:mt-0"
         >
           <button
             type="button"
@@ -103,7 +131,7 @@ export default function App() {
             <span className="font-mono-tech text-[11px] text-[#C7A477] lg:text-[10px]">
               01
             </span>
-            <span className="hidden lg:inline">Live inspection</span>
+            <span className="sm:hidden lg:inline">Live inspection</span>
             <span
               className={`ml-auto hidden h-1 w-1 rounded-full bg-[#C7A477] lg:inline-block ${
                 navView === "live" ? "visible" : "invisible"
@@ -124,7 +152,7 @@ export default function App() {
             <span className="font-mono-tech text-[11px] text-[#C7A477] lg:text-[10px]">
               02
             </span>
-            <span className="hidden lg:inline">Robot &amp; system</span>
+            <span className="sm:hidden lg:inline">System</span>
             <span
               className={`ml-auto hidden h-1 w-1 rounded-full bg-[#C7A477] lg:inline-block ${
                 navView === "system" ? "visible" : "invisible"
@@ -145,7 +173,7 @@ export default function App() {
             <span className="font-mono-tech text-[11px] text-[#C7A477] lg:text-[10px]">
               03
             </span>
-            <span className="hidden lg:inline">Quality &amp; history</span>
+            <span className="sm:hidden lg:inline">History</span>
             <span
               className={`ml-auto hidden h-1 w-1 rounded-full bg-[#C7A477] lg:inline-block ${
                 navView === "quality" ? "visible" : "invisible"
@@ -183,9 +211,9 @@ export default function App() {
             {sourceLabel}
           </span>
           <p className="mt-2 text-[10px] leading-[1.9] text-[#858177]">
-            Morph Station · v1.0
+            Station evidence workspace
             <br />
-            14 November 2026
+            Intel records · Mac analytics
           </p>
           <div className="mt-1 flex flex-col items-start gap-1.5">
             <button
@@ -204,7 +232,7 @@ export default function App() {
         {/* 84px Ornamental Masthead at Absolute Top */}
         <div
           aria-label="Decorative Renaissance artwork"
-          className="relative h-[74px] overflow-hidden border-b border-[#252421] px-5 py-3.5 sm:h-[84px] sm:px-8 sm:py-[18px]"
+          className="relative h-[64px] overflow-hidden border-b border-[#252421] px-5 py-3.5 sm:h-[70px] sm:px-8 sm:py-[13px]"
         >
           <div>
             <span className="font-mono-tech text-[8px] tracking-[0.1em] text-[#C7A477] sm:text-[10px]">
@@ -236,7 +264,7 @@ export default function App() {
         </div>
 
         {/* 76px Sticky Operational Control Bar */}
-        <header className="sticky top-0 z-20 flex min-h-[76px] flex-wrap items-center justify-between gap-4 border-b border-[#252421] bg-[#080808] px-5 py-3 sm:px-8 sm:py-0">
+        <header className="sticky top-0 z-20 flex min-h-[76px] flex-wrap items-center justify-between gap-3 border-b border-[#252421] bg-[#080808] px-5 py-3 sm:px-8 sm:py-0">
           <div className="flex flex-wrap items-center gap-3 text-[12px] text-[#A7A39A]">
             <span
               className={`inline-block h-1.5 w-1.5 shrink-0 rounded-full ${
@@ -248,17 +276,24 @@ export default function App() {
               }`}
             />
             <span>{isReplay ? "Replay" : "Records API"} <b className="ml-1.5 font-medium text-[#F2EEE6]">{isReplay ? "Frozen snapshot" : snapshot.dataConnection}</b></span>
-            <span className="font-mono-tech text-[10px] text-[#A7A39A]">{sourceLabel} · {isReplay ? "SAVED SESSION TOTALS" : snapshot.dataStale ? "STALE / NOT CURRENT" : "CURRENT RECORDS"}</span>
+            <span className="font-mono-tech text-[10px] text-[#A7A39A]">{sourceLabel} · {isReplay ? "SAVED SESSION TOTALS" : snapshot.recordScope === "session" ? "SAVED SESSION SNAPSHOT" : snapshot.dataStale ? "STALE / NOT CURRENT" : snapshot.selectedSessionId ? "SELECTED SESSION RECORDS" : "FOLLOWING LATEST SESSION"}</span>
             <label className="flex items-center gap-2 text-[11px]">
               Session
-              <select aria-label="Selected station session" value={snapshot.activeSession?.id ?? ""}
+              <select aria-label="Selected station session" value={snapshot.selectedSessionId ?? ""}
                 disabled={snapshot.sessions.length === 0 || isReplay}
-                onChange={event => void handleModeSwitch(snapshot.viewMode, event.target.value)}
+                onChange={event => void handleModeSwitch(snapshot.viewMode, event.target.value || undefined)}
                 className="max-w-[230px] rounded border border-[#3e3b34] bg-[#101010] px-2 py-1.5 text-[#F2EEE6] disabled:opacity-50">
-                {snapshot.sessions.length === 0 && <option value="">No sessions for this source</option>}
+                <option value="">{snapshot.sessions.length === 0 ? "Follow latest · no sessions for this source" : "Follow latest session"}</option>
                 {snapshot.sessions.map(session => <option key={session.id} value={session.id}>{session.name}</option>)}
               </select>
             </label>
+            {snapshot.sessionCatalogHasMore && <button
+              type="button"
+              className="text-action disabled:cursor-not-allowed disabled:opacity-45"
+              disabled={catalogPending || isReplay}
+              aria-busy={catalogPending}
+              onClick={() => void loadOlderSessions()}
+            >{catalogPending ? "Loading sessions…" : "Load older sessions"}</button>}
 
             {/* Persistent Mode Switcher: Live | Simulation | Replay */}
             <span className="hidden h-[18px] border-r border-[#33312b] md:inline-block" />
@@ -305,41 +340,30 @@ export default function App() {
             </div>
           </div>
 
-          <div className="flex w-full items-center justify-between gap-3 sm:w-auto sm:justify-end">
+          <div className="flex w-full flex-wrap items-center justify-between gap-3 sm:w-auto sm:justify-end">
+            <span className="text-[10px] text-[#a59b89]">Robot monitor only <span aria-hidden="true">·</span> Control host: Jose’s Mac</span>
             <button
               type="button"
-              disabled={!snapshot.canControl || snapshot.dataStale || isReplay}
-              onClick={unsupported}
-              className="min-h-[38px] rounded-[5px] border border-transparent px-3 py-2 text-[12px] text-[#A7A39A] hover:bg-[#22201b] hover:text-[#F2EEE6] disabled:cursor-not-allowed disabled:opacity-45"
+              disabled={refreshPending || isReplay}
+              aria-busy={refreshPending}
+              onClick={() => void refreshRecords()}
+              className="quiet-button disabled:cursor-not-allowed disabled:opacity-45"
+              title={isReplay ? "Replay preserves its frozen records" : "Refresh the station records shown in this view"}
             >
-              {snapshot.pauseState.requested || snapshot.stopRecord ? (
-                <span>▶ Resume</span>
-              ) : (
-                <span>Ⅱ Pause after cycle</span>
-              )}
-            </button>
-
-            <button
-              type="button"
-              disabled={!snapshot.canControl || snapshot.dataStale || isReplay}
-              onClick={unsupported}
-              title="Software stop unavailable: no verified robot control adapter"
-              className="min-h-[44px] min-w-[154px] rounded-[5px] border border-[#d14349] bg-[#B72F35] px-4 py-2.5 text-[13px] font-semibold tracking-[0.02em] text-white hover:bg-[#c9383e] disabled:cursor-not-allowed disabled:opacity-45 sm:min-h-[48px] sm:min-w-[174px]"
-            >
-              ■ &nbsp; Software stop
+              <span aria-hidden="true">↻</span> {refreshPending ? "Refreshing…" : "Refresh records"}
             </button>
           </div>
         </header>
 
-        {(snapshot.dataStale || isDisconnected) && (
+        {!isReplay && (snapshot.dataStale || isDisconnected) && (
           <div role="status" aria-live="polite" className="flex flex-wrap items-center justify-between gap-3 border-b border-[#514633] bg-[#211d16] px-5 py-3 text-[11px] text-[#D6B775] sm:px-8">
             <span>{snapshot.activeFaultBanner ?? "Waiting for station records. No live data has been received."}</span>
-            <button type="button" onClick={() => void stationClient.selectMode(snapshot.viewMode === "simulation" ? "simulation" : "live", snapshot.activeSession?.id)} className="rounded border border-[#6c5840] px-3 py-1.5 text-[#F2EEE6]">Reconnect records</button>
+            <button type="button" onClick={() => void stationClient.reconnect()} className="rounded border border-[#6c5840] px-3 py-1.5 text-[#F2EEE6]">Reconnect records</button>
           </div>
         )}
         {/* Main Content Viewport (32px desktop padding) */}
-        <main id="main-content" tabIndex={-1} className="w-full max-w-[1660px] flex-1 px-4.5 py-6 sm:px-8 sm:pt-7 sm:pb-8">
-          {isReplay && <ReplayPanel snapshot={snapshot} onSeek={index=>stationClient.seekReplay(index)} onOpenCycle={setSelectedCycleId}/>}
+        <main id="main-content" tabIndex={-1} className="mx-auto w-full max-w-[1660px] flex-1 px-4.5 py-6 sm:px-7 sm:pt-7 sm:pb-8 xl:px-9">
+          {isReplay && <ReplayPanel snapshot={snapshot} onSeek={index=>stationClient.seekReplay(index)} onOpenCycle={openCycle}/>}
           {navView === "live" && (
             <LiveInspectionView
               snapshot={snapshot}
@@ -347,7 +371,7 @@ export default function App() {
               onSelectPreset={() => void unsupported()}
               onOpenSimulation={() => handleModeSwitch("simulation")}
               onShowDisconnected={() => handleModeSwitch("live")}
-              onOpenCycleTrace={(cycleId) => setSelectedCycleId(cycleId)}
+              onOpenCycleTrace={openCycle}
               onNavigateQuality={() => setNavView("quality")}
               onStartCycle={unsupported}
               onAdvanceCycle={unsupported}
@@ -363,19 +387,29 @@ export default function App() {
 
           {navView === "quality" && (
             <>
+            {!isReplay && snapshot.canonicalSource && snapshot.recordScope !== "session" && <div className="view-heading"><div><span className="eyebrow">03 / QUALITY &amp; RELIABILITY</span><h1>Quality &amp; history<span className="heading-period">.</span></h1><p>Evidence that stays with the object.</p></div></div>}
+            {!isReplay && <div className="history-scope-banner" role="status">
+              <div>
+                <strong className="font-medium">{snapshot.historyStatus === "loading" ? "Loading saved session history…" : snapshot.recordScope === "session" ? "Saved session snapshot" : "Session history unavailable"}</strong>
+                <p>{snapshot.historyError ?? (snapshot.recordScope === "session" ? `${formatTimestamp(snapshot.historyLoadedAt)} · ${DISPLAY_TIME_ZONE}${snapshot.historyUpdateAvailable ? " · New records are available" : " · Filters and totals refer to this saved snapshot"}` : "Complete history is loaded when you open this view. Recent live records remain separate.")}</p>
+              </div>
+              <button type="button" className="quiet-button" disabled={refreshPending || snapshot.historyStatus === "loading" || !snapshot.activeSession} onClick={() => void refreshRecords()}>{snapshot.historyStatus === "loading" ? "Loading…" : "Refresh history"}</button>
+            </div>}
+            {(isReplay || snapshot.recordScope === "session" || !snapshot.canonicalSource) && <>
             <QualityHistoryView
               snapshot={snapshot}
-              onOpenCycleTrace={(cycleId) => setSelectedCycleId(cycleId)}
+              onOpenCycleTrace={openCycle}
               onExportCsv={handleExportCsv}
               onExportJson={handleExportJson}
             />
             <EvidenceAnalystPanel snapshot={snapshot} onOpenSource={(source) => {
               if (source.sessionId === snapshot.activeSession?.id && source.cycleId && snapshot.cycles.some(cycle => cycle.id === source.cycleId)) {
-                setSelectedCycleId(source.cycleId);
+                openCycle(source.cycleId);
               } else {
                 showToast("The cited revision is preserved in the evidence snapshot. Select its source session to open the current cycle trace.");
               }
             }} />
+            </>}
             </>
           )}
 
@@ -389,7 +423,7 @@ export default function App() {
         {/* Footer */}
         <footer className="font-mono-tech flex flex-col justify-between gap-2 border-t border-[#252421] px-5 py-3.5 text-[8px] text-[#868278] sm:flex-row sm:items-center sm:px-8">
           <span>
-            RECORDS API · ROBOT CONTROL UNAVAILABLE · RECORDS BEFORE COUNTERS
+            MONITOR ONLY · INTEL RECORDS · AUDITABLE OUTCOMES
           </span>
           <div className="flex flex-wrap items-center gap-4">
             <span>Displayed times: Europe/Ljubljana (UTC+01:00)</span>
@@ -458,7 +492,7 @@ export default function App() {
               )
             : []
         }
-        onClose={() => setSelectedCycleId(null)}
+        onClose={closeCycle}
         reviewAvailable={!isReplay && !isDisconnected && !snapshot.dataStale}
         onSubmitReview={(cycleId, request) => stationClient.reviewCycle(cycleId, request)}
         onRefresh={() => stationClient.refreshReview(selectedCycle!.id)}
