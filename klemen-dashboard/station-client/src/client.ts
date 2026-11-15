@@ -1,7 +1,7 @@
 /** Persisted-record transport with explicit audited review submission. Successful HTTP access does not verify hardware or providers. */
 import type {
   CameraResponse, CycleDetail, CycleFilters, CyclePage, CycleReviewRequest, CycleReviewResult, EventOptions, Metrics, MetricsOptions,
-  RecordType, Session, SessionExport, Snapshot, StationClientOptions, StationEvent,
+  RecordType, Session, SessionExport, Snapshot, StationClientOptions, StationEvent, DashboardRead, DashboardReadOptions,
 } from "./types.ts";
 
 export class StationHttpError extends Error {
@@ -227,6 +227,39 @@ const cyclePage: Check = (v, p) => {
   if (page.limit > 1000 || page.items.length > page.limit || page.items.length > Math.max(0, page.total - page.offset)) invalid(p);
 };
 const cameras = shape({ status: oneOf("unavailable"), cameras: emptyArray, reason: text });
+const dashboardRead: Check = (v, p) => {
+  shape({ schemaVersion: oneOf(1), dashboardVersion: oneOf(1), generatedAt: time,
+    lastEventSequence: count, sourceMode: mode, selectedSessionId: nullable(id),
+    sessions: shape({ items: array(record('session')), total: count, limit: positive, hasMore: bool }),
+    snapshot, metrics, recentCycles: cyclePage, cameras,
+    currentDetail: nullable(cycleDetail), detail: nullable(cycleDetail) })(v, p);
+  const data = v as DashboardRead;
+  const sameCycle = (a: CycleDetail['cycle'], b: CycleDetail['cycle']) =>
+    ['id', 'revision', ...Object.keys(recordFields.cycle)].every(key =>
+      JSON.stringify((a as unknown as ObjectValue)[key]) === JSON.stringify((b as unknown as ObjectValue)[key]));
+  bool(data.recentCycles.hasMore, `${p}.recentCycles.hasMore`);
+  const selected = data.selectedSessionId;
+  if (data.sessions.limit > 50 || data.sessions.items.length > data.sessions.limit ||
+      data.sessions.items.length > data.sessions.total ||
+      data.sessions.hasMore !== (data.sessions.total > data.sessions.items.length) ||
+      new Set(data.sessions.items.map(s => s.id)).size !== data.sessions.items.length ||
+      data.sessions.items.some(s => s.sourceMode !== data.sourceMode) ||
+      data.snapshot.generatedAt !== data.generatedAt || data.snapshot.lastEventSequence !== data.lastEventSequence ||
+      (data.snapshot.session?.id ?? null) !== selected ||
+      (data.snapshot.session && data.snapshot.sourceMode !== data.sourceMode) ||
+      data.metrics.filters.sessionId !== selected ||
+      data.metrics.filters.includeSimulation !== (data.sourceMode === 'simulation') ||
+      data.metrics.filters.includedSessionIds.some(s => s !== selected) ||
+      JSON.stringify(data.metrics) !== JSON.stringify(data.snapshot.metrics) ||
+      data.recentCycles.offset !== 0 || data.recentCycles.limit > 100 ||
+      data.recentCycles.hasMore !== (data.recentCycles.total > data.recentCycles.items.length) ||
+      data.recentCycles.items.some(c => c.sessionId !== selected) ||
+      (data.currentDetail?.cycle.id ?? null) !== (data.snapshot.cycle?.id ?? null) ||
+      (data.currentDetail && data.snapshot.cycle && !sameCycle(data.currentDetail.cycle, data.snapshot.cycle)) ||
+      [data.currentDetail, data.detail].some(d => d && (d.cycle.sessionId !== selected ||
+        d.events.some(event => event.sequence > data.lastEventSequence) ||
+        data.recentCycles.items.some(c => c.id === d.cycle.id && !sameCycle(c, d.cycle))))) invalid(p);
+};
 const sessionExport: Check = (v, p) => {
   shape({ schemaVersion: oneOf(1), exportedAt: time, session: record("session"), events: array(stationEvent),
     revisions: array(revision), metrics })(v, p);
@@ -462,6 +495,26 @@ export class StationClient {
     if (sessionId !== undefined) argumentId(sessionId);
     const result = await this.json<Snapshot>(this.url("/station/snapshot", { sessionId }), snapshot, signal);
     if (sessionId !== undefined && result.session?.id !== sessionId) invalid("response.session.id");
+    return result;
+  }
+  async supportsDashboard(signal?: AbortSignal): Promise<boolean> {
+    const schema = await this.json<Record<string, unknown>>(this.url('/schema'), object, signal);
+    const capabilities = schema.capabilities;
+    if (!capabilities || typeof capabilities !== 'object') return false;
+    const advertised = (capabilities as Record<string, unknown>).dashboardRead;
+    return !!advertised && typeof advertised === 'object' &&
+      (advertised as Record<string, unknown>).version === 1 &&
+      (advertised as Record<string, unknown>).path === '/api/v1/dashboard';
+  }
+  async getDashboard(options: DashboardReadOptions, signal?: AbortSignal): Promise<DashboardRead> {
+    if (!['live', 'simulation'].includes(options.sourceMode)) throw new TypeError('Choose live or simulation.');
+    if (options.sessionId !== undefined) argumentId(options.sessionId);
+    if (options.cycleId !== undefined) argumentId(options.cycleId);
+    argumentCount(options.limit ?? 20, 1, 100);
+    const result = await this.json<DashboardRead>(this.url('/dashboard', { ...options, limit: options.limit ?? 20 }), dashboardRead, signal, 4 * 1024 * 1024);
+    if (result.sourceMode !== options.sourceMode || result.recentCycles.limit !== (options.limit ?? 20) ||
+        (options.sessionId !== undefined && result.selectedSessionId !== options.sessionId) ||
+        (options.cycleId !== undefined && result.detail?.cycle.id !== options.cycleId)) invalid('response.selection');
     return result;
   }
   listSessions(signal?: AbortSignal): Promise<Session[]> {

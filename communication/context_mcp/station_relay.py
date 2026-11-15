@@ -48,6 +48,7 @@ def read_target(path: str, query: dict) -> tuple[str, dict]:
         raise ValueError('Only explicit Station GET paths are permitted')
     fixed = {
         '/api/v1/schema': set(), '/api/v1/station/snapshot': {'sessionId'},
+        '/api/v1/dashboard': {'sessionId', 'cycleId', 'sourceMode', 'limit'},
         '/api/v1/sessions': set(), '/api/v1/metrics': {'includeSimulation'},
         '/api/v1/cameras': set(), '/api/v1/events': {'after', 'once', 'limit'},
         '/api/v1/analysis/context': {'kind', 'sessionIds', 'cycleId', 'sourceMode',
@@ -89,6 +90,13 @@ def read_target(path: str, query: dict) -> tuple[str, dict]:
             raise ValueError('Invalid query limit')
     if 'format' in clean and clean['format'] not in {'json', 'csv'}:
         raise ValueError('Only JSON and CSV exports are permitted')
+    if path == '/api/v1/dashboard':
+        for key in {'sessionId', 'cycleId'} & clean.keys():
+            identifier(clean[key])
+        if 'sourceMode' in clean and clean['sourceMode'] not in {'live', 'simulation'}:
+            raise ValueError('Dashboard sourceMode must be live or simulation')
+        if int(clean.get('limit', '20')) > 100:
+            raise ValueError('Dashboard cycle limit cannot exceed 100')
     if path == '/api/v1/events':
         clean['once'] = 'true'
         clean['limit'] = str(min(int(clean.get('limit', '100')), 500))

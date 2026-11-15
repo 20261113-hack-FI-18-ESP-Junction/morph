@@ -39,6 +39,25 @@ function fake() {
 }
 const options = { pollIntervalMs: 600_000, staleAfterMs: 600_000, reconnectDelayMs: 600_000 };
 
+test('compact preference falls back to legacy reads when the old schema advertises no dashboard capability', async () => {
+  const f = fake(); let discovered = 0;
+  const { StationClient } = await import('../src/client.ts');
+  const discovery = new StationClient({ baseUrl: 'http://127.0.0.1:1234', getToken: () => 'legacy-discovery-test-only-token-1234',
+    fetch: async (input) => {
+      assert.equal(new URL(String(input)).pathname, '/api/v1/schema'); discovered++;
+      return new Response(JSON.stringify({ schemaVersion: 1, recordTypes: {} }), { headers: { 'Content-Type': 'application/json' } });
+    } });
+  f.supportsDashboard = (signal: AbortSignal) => discovery.supportsDashboard(signal);
+  f.getDashboard = async () => { throw new Error('Unadvertised dashboard route must not be called'); };
+  f.exportSession = async () => { throw new Error('Legacy fallback must not fetch full history'); };
+  const store = new DashboardStore(f, { ...options, preferDashboard: true });
+  try {
+    await store.start({ sourceMode: 'simulation' }); await store.refresh();
+    assert.equal(discovered, 1); assert.equal(store.getState().connection, 'connected');
+    assert.equal(store.getState().metrics?.endToEnd.denominator, 4); assert.equal(store.getState().sessionExport, null);
+  } finally { store.stop(); }
+});
+
 test('construct/subscribe do no I/O; live default does not expose the server-selected simulation', async () => {
   const f = fake(); const store = new DashboardStore(f, options); const unsubscribe = store.subscribe(() => {});
   assert.equal(f.calls.length, 0);

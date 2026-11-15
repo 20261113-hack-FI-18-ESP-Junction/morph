@@ -1,0 +1,29 @@
+test_existing_initialize_protocol_then_only_queue_tools (test_station_worker.MCPTests.test_existing_initialize_protocol_then_only_queue_tools) ... ok
+test_private_file_permissions_and_no_symlink (test_station_worker.MCPTests.test_private_file_permissions_and_no_symlink) ... ok
+test_rpc_and_provider_error_text_never_escapes (test_station_worker.MCPTests.test_rpc_and_provider_error_text_never_escapes) ... ok
+test_4mb_binary_chunks_zero_based_hash_and_metadata_stable (test_station_worker.QueueWorkerTests.test_4mb_binary_chunks_zero_based_hash_and_metadata_stable) ... ok
+test_contract_roundtrip_with_actual_relay_and_fake_station (test_station_worker.QueueWorkerTests.test_contract_roundtrip_with_actual_relay_and_fake_station) ... ok
+test_empty_body_still_has_one_chunk (test_station_worker.QueueWorkerTests.test_empty_body_still_has_one_chunk) ... ok
+test_expired_claim_never_calls_station_and_tampering_stays_read_only (test_station_worker.QueueWorkerTests.test_expired_claim_never_calls_station_and_tampering_stays_read_only) ... ok
+test_expiry_during_read_never_submits_stale_result (test_station_worker.QueueWorkerTests.test_expiry_during_read_never_submits_stale_result) ... ok
+test_invalid_configuration_exits_without_raw_token_or_network (test_station_worker.QueueWorkerTests.test_invalid_configuration_exits_without_raw_token_or_network) ... ok
+test_lost_submit_reply_retries_identical_chunk_not_station_read (test_station_worker.QueueWorkerTests.test_lost_submit_reply_retries_identical_chunk_not_station_read) ... ok
+test_missing_final_readback_not_claimed_complete (test_station_worker.QueueWorkerTests.test_missing_final_readback_not_claimed_complete) ... ok
+test_worker_identity_stable_across_rounds (test_station_worker.QueueWorkerTests.test_worker_identity_stable_across_rounds) ... ok
+test_body_deadline_does_not_accept_endless_small_chunks (test_station_worker.StationHTTPTests.test_body_deadline_does_not_accept_endless_small_chunks) ... ok
+test_endpoint_configuration_cannot_smuggle_url (test_station_worker.StationHTTPTests.test_endpoint_configuration_cannot_smuggle_url) ... ok
+test_fixed_origin_get_token_header_and_query_encoding (test_station_worker.StationHTTPTests.test_fixed_origin_get_token_header_and_query_encoding) ... ok
+test_forbidden_request_never_contacts_api (test_station_worker.StationHTTPTests.test_forbidden_request_never_contacts_api) ... ok
+test_http_error_status_and_finite_sse_bytes_preserved (test_station_worker.StationHTTPTests.test_http_error_status_and_finite_sse_bytes_preserved) ... ok
+test_redirect_denied_and_credentials_not_forwarded (test_station_worker.StationHTTPTests.test_redirect_denied_and_credentials_not_forwarded) ... ok
+test_size_timeout_and_unsupported_type_errors_sanitized (test_station_worker.StationHTTPTests.test_size_timeout_and_unsupported_type_errors_sanitized) ... ok
+test_actions_encoded_paths_traversal_and_hosts_rejected (test_station_worker.WorkerRouteTests.test_actions_encoded_paths_traversal_and_hosts_rejected) ... ok
+test_allowed_reads_and_scoped_query_preserved (test_station_worker.WorkerRouteTests.test_allowed_reads_and_scoped_query_preserved) ... ok
+test_dashboard_read_query_is_bounded_and_explicit (test_station_worker.WorkerRouteTests.test_dashboard_read_query_is_bounded_and_explicit) ... ok
+test_events_always_finite_and_bounded (test_station_worker.WorkerRouteTests.test_events_always_finite_and_bounded) ... ok
+test_unknown_or_unbounded_query_rejected (test_station_worker.WorkerRouteTests.test_unknown_or_unbounded_query_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.155s
+
+OK

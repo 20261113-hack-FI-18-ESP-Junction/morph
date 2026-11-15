@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-15T07:34:45.215434+00:00",
+  "scope": "Reviewed existing compact API/relay/shared-client dependency closure; isolated local software tests only.",
+  "tests": [
+    {
+      "suite": "backend-dashboard",
+      "cwd": "intel-runtime/source/common/HachingJunction/station",
+      "command": [
+        "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/python/bin/python",
+        "-m",
+        "pytest",
+        "tests/test_dashboard.py",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/klemen-dashboard/verification/workflow-integration-20261115/dependency-closure-20261115T073444Z-backend-dashboard.xml"
+      ],
+      "startedAt": "2026-11-15T07:34:44.120168+00:00",
+      "durationSeconds": 1.095,
+      "exitCode": 0,
+      "tests": 19,
+      "log": "dependency-closure-20261115T073444Z-backend-dashboard.txt"
+    },
+    {
+      "suite": "relay",
+      "cwd": "communication/context_mcp",
+      "command": [
+        "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_station_relay.py",
+        "-v"
+      ],
+      "startedAt": "2026-11-15T07:34:44.120275+00:00",
+      "durationSeconds": 0.889,
+      "exitCode": 0,
+      "tests": 18,
+      "log": "dependency-closure-20261115T073444Z-relay.txt"
+    },
+    {
+      "suite": "worker",
+      "cwd": "communication/context_mcp",
+      "command": [
+        "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_station_worker.py",
+        "-v"
+      ],
+      "startedAt": "2026-11-15T07:34:44.124591+00:00",
+      "durationSeconds": 0.262,
+      "exitCode": 0,
+      "tests": 24,
+      "log": "dependency-closure-20261115T073444Z-worker.txt"
+    },
+    {
+      "suite": "station-client",
+      "cwd": "klemen-dashboard/station-client",
+      "command": [
+        "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/node/bin/node",
+        "--test",
+        "tests/client.test.ts",
+        "tests/store.test.ts",
+        "tests/dashboard.test.ts"
+      ],
+      "startedAt": "2026-11-15T07:34:44.124779+00:00",
+      "durationSeconds": 0.23,
+      "exitCode": 0,
+      "tests": 53,
+      "log": "dependency-closure-20261115T073444Z-station-client.txt"
+    }
+  ],
+  "allPassed": true,
+  "limits": [
+    "No provider, external network, Intel worker/service, camera or robot calls.",
+    "Backend uses temporary SQLite and in-process ASGI; relay/worker use temporary state and fake/in-process transports; shared client uses mocked fetch.",
+    "No new incoming source was applied; no source/fixture edits, commits or service changes."
+  ],
+  "sourceSha256": {
+    "intel-runtime/source/common/HachingJunction/station/morph_station/api.py": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+    "intel-runtime/source/common/HachingJunction/station/morph_station/store.py": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+    "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+    "communication/context_mcp/station_relay.py": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201",
+    "communication/context_mcp/station_worker.py": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+    "communication/context_mcp/tests/test_station_relay.py": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5",
+    "communication/context_mcp/tests/test_station_worker.py": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c",
+    "klemen-dashboard/station-client/src/client.ts": "bdc863a4a53ae2a773a1a5e559f03cfcb98339ba4da8719f3e905a41f83261f4",
+    "klemen-dashboard/station-client/src/store.ts": "654c2e4701e4da9647004647cf6bca89442a8e7e0026ae7d94bbd2806c74da23",
+    "klemen-dashboard/station-client/src/types.ts": "da84f38942eeb2cbbb00de51950b5725df0c8baafa7682e28fa50a055017928c",
+    "klemen-dashboard/station-client/tests/client.test.ts": "11b52d774f9d70cb0578b42cdb4d7d1f1ee36cdb92a6c91e47d9ed1f0483b347",
+    "klemen-dashboard/station-client/tests/store.test.ts": "2d2eb69f76bb110b3976ac722cf0a36ef4764160ec53ef5df5a60f79f89b3c99",
+    "klemen-dashboard/station-client/tests/dashboard.test.ts": "10be6a916b95aa31da7966dacb038b97d3dfa0d9608b075d4f8883be70b195d8"
+  }
+}

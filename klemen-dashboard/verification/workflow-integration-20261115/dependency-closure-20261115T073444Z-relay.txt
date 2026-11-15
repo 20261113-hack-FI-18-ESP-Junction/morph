@@ -1,0 +1,90 @@
+test_bad_parts_timestamps_status_and_headers_are_denied (test_station_relay.RelayBoundaryTests.test_bad_parts_timestamps_status_and_headers_are_denied) ... ok
+test_body_bound_and_read_pagination_validation (test_station_relay.RelayBoundaryTests.test_body_bound_and_read_pagination_validation) ... ok
+test_chunk_order_integrity_pagination_and_restart (test_station_relay.RelayBoundaryTests.test_chunk_order_integrity_pagination_and_restart) ... ok
+test_concurrent_duplicate_enqueue_and_claim_create_one_work_item (test_station_relay.RelayBoundaryTests.test_concurrent_duplicate_enqueue_and_claim_create_one_work_item) ... ok
+test_concurrent_duplicate_submissions_keep_one_ready_response (test_station_relay.RelayBoundaryTests.test_concurrent_duplicate_submissions_keep_one_ready_response) ... ok
+test_control_urls_traversal_and_unbounded_queries_are_rejected (test_station_relay.RelayBoundaryTests.test_control_urls_traversal_and_unbounded_queries_are_rejected) ... ok
+test_dashboard_read_query_is_bounded_and_explicit (test_station_relay.RelayBoundaryTests.test_dashboard_read_query_is_bounded_and_explicit) ... ok
+test_enqueue_is_idempotent_and_conflicts_preserve_original (test_station_relay.RelayBoundaryTests.test_enqueue_is_idempotent_and_conflicts_preserve_original) ... ok
+test_events_are_always_bounded_and_get_routes_remain_available (test_station_relay.RelayBoundaryTests.test_events_are_always_bounded_and_get_routes_remain_available) ... ok
+test_expired_reads_never_return_old_response_or_reset_on_duplicate (test_station_relay.RelayBoundaryTests.test_expired_reads_never_return_old_response_or_reset_on_duplicate) ... ok
+test_hash_and_conflicting_part_fail_without_poisoning_original (test_station_relay.RelayBoundaryTests.test_hash_and_conflicting_part_fail_without_poisoning_original) ... ok
+test_pending_queue_is_bounded_and_expiration_releases_capacity (test_station_relay.RelayBoundaryTests.test_pending_queue_is_bounded_and_expiration_releases_capacity) ... ok
+test_station_scoping_and_claim_limit (test_station_relay.RelayBoundaryTests.test_station_scoping_and_claim_limit) ... ok
+test_storage_symlink_is_rejected (test_station_relay.RelayBoundaryTests.test_storage_symlink_is_rejected) ... ok
+test_wrong_worker_claim_and_station_cannot_submit (test_station_relay.RelayBoundaryTests.test_wrong_worker_claim_and_station_cannot_submit) ... ok
+test_dashboard_read_query_is_bounded_and_explicit (test_station_relay.RelayFixture.test_dashboard_read_query_is_bounded_and_explicit) ... ok
+test_dashboard_read_query_is_bounded_and_explicit (test_station_relay.RelayMCPTests.test_dashboard_read_query_is_bounded_and_explicit) ... ok
+test_opt_in_registration_and_authenticated_real_tool_roundtrip (test_station_relay.RelayMCPTests.test_opt_in_registration_and_authenticated_real_tool_roundtrip) ... StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+StreamableHTTP session manager started
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 401 Unauthorized"
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+Tool 'enqueue_station_read' raised an unexpected exception
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 179, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/utilities/func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2779, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 1124, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/communication/context_mcp/server.py", line 77, in enqueue_station_read
+    return relay.enqueue(station_id, request_id, path, query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/communication/context_mcp/station_relay.py", line 214, in enqueue
+    return self.enqueue_request(station_id, request_id, 'GET', path, query)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/communication/context_mcp/station_relay.py", line 219, in enqueue_request
+    path, query, body, intent = request_target(method, path, query, body, intent)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/communication/context_mcp/station_relay.py", line 114, in request_target
+    path, query = read_target(path, query)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/github/morph/communication/context_mcp/station_relay.py", line 70, in read_target
+    raise ValueError('This path is outside the Station read allowlist')
+ValueError: This path is outside the Station read allowlist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 442, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/server.py", line 548, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/.junction-setup/context-mcp/lib/python3.12/site-packages/mcp/server/mcpserver/tools/base.py", line 213, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool enqueue_station_read
+HTTP Request: POST http://127.0.0.1:8765/mcp "HTTP/1.1 200 OK"
+Terminating session: None
+StreamableHTTP session manager shutting down
+ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.383s
+
+OK

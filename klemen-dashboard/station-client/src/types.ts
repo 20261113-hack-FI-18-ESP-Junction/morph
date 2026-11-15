@@ -135,6 +135,15 @@ export interface CycleFilters {
 }
 export interface CyclePage { items: Cycle[]; total: number; offset: number; limit: number }
 export interface CameraResponse { status: "unavailable"; cameras: []; reason: string }
+/** One transaction on Intel; images and complete session exports are separate reads. */
+export interface DashboardRead {
+  schemaVersion: 1; dashboardVersion: 1; generatedAt: ISOTime; lastEventSequence: number;
+  sourceMode: SourceMode; selectedSessionId: ID | null;
+  sessions: { items: Session[]; total: number; limit: number; hasMore: boolean };
+  snapshot: Snapshot; metrics: Metrics; recentCycles: CyclePage & { hasMore: boolean };
+  cameras: CameraResponse; currentDetail: CycleDetail | null; detail: CycleDetail | null;
+}
+export interface DashboardReadOptions { sessionId?: ID; sourceMode: SourceMode; limit?: number; cycleId?: ID }
 export interface SessionExport {
   schemaVersion: 1; exportedAt: ISOTime; session: Session;
   records: { [K in Exclude<RecordType, "session">]: RecordMap[K][] };

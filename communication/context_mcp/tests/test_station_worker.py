@@ -85,6 +85,15 @@ class FakeStation:
 
 
 class WorkerRouteTests(unittest.TestCase):
+    def test_dashboard_read_query_is_bounded_and_explicit(self):
+        query = {"sessionId": "session-1", "cycleId": "cycle-1", "sourceMode": "simulation", "limit": 100}
+        self.assertEqual(worker.validated_read("/api/v1/dashboard", query),
+                         ("/api/v1/dashboard", {**query, "limit": "100"}))
+        for invalid in ({"limit": 101}, {"limit": 0}, {"sourceMode": "all"},
+                        {"sessionId": ".."}, {"cycleId": "../other"}, {"includeSimulation": True}):
+            with self.subTest(query=invalid), self.assertRaises(worker.WorkerError):
+                worker.validated_read("/api/v1/dashboard", invalid)
+
     def test_allowed_reads_and_scoped_query_preserved(self):
         paths = {"/api/v1/schema": {}, "/api/v1/station/snapshot": {"sessionId": "s1"},
             "/api/v1/sessions": {}, "/api/v1/metrics": {"includeSimulation": False},

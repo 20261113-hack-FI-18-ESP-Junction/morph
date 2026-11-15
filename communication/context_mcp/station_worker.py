@@ -40,6 +40,7 @@ CYCLE_QUERY = frozenset({"sessionId", "objectId", "outcome", "sourceMode", "incl
 STATIC_QUERY = {
     "/api/v1/schema": frozenset(),
     "/api/v1/station/snapshot": frozenset({"sessionId"}),
+    "/api/v1/dashboard": frozenset({"sessionId", "cycleId", "sourceMode", "limit"}),
     "/api/v1/sessions": frozenset(),
     "/api/v1/metrics": frozenset({"includeSimulation"}),
     "/api/v1/cycles": CYCLE_QUERY,
@@ -159,6 +160,13 @@ def validated_read(path: Any, query: Any) -> tuple[str, dict]:
         if key == "format" and value not in {"json", "csv"}:
             raise WorkerError("invalid_query_value")
         normalized[key] = value
+    if path == "/api/v1/dashboard":
+        for key in {"sessionId", "cycleId"} & normalized.keys():
+            safe_id(normalized[key])
+        if "sourceMode" in normalized and normalized["sourceMode"] not in {"live", "simulation"}:
+            raise WorkerError("invalid_query_value")
+        if int(normalized.get("limit", "20")) > 100:
+            raise WorkerError("invalid_query_value")
     if path == "/api/v1/events":
         normalized["once"] = "true"
         normalized["limit"] = str(min(int(normalized.get("limit", "100")), 500))

@@ -14,6 +14,7 @@ export interface DashboardState {
   receivedAt: string | null;
   lastEventSequence: number;
   sessions: Session[];
+  sessionCatalog?: { total: number; hasMore: boolean };
   session: Session | null;
   snapshot: Snapshot | null;
   metrics: Metrics | null;
@@ -25,13 +26,14 @@ export interface DashboardState {
   sessionExport: SessionExport | null;
 }
 type ReadClient = Pick<StationClient, 'getSnapshot' | 'listSessions' | 'getMetrics' | 'listCycles' | 'getCycle' | 'getCameras' | 'events'>
-  & Partial<Pick<StationClient, 'exportSession'>>;
+  & Partial<Pick<StationClient, 'exportSession' | 'getDashboard' | 'supportsDashboard'>>;
 export interface StoreOptions {
   pollIntervalMs?: number;
   staleAfterMs?: number;
   reconnectDelayMs?: number;
   now?: () => number;
   loadSessionExport?: boolean;
+  preferDashboard?: boolean;
 }
 
 function freeze<T>(value: T): T {
@@ -69,11 +71,12 @@ export class DashboardStore {
   private focusedCycleId: string | undefined;
   private refreshPromise: Promise<void> | null = null;
   private dirty = false;
+  private compactSupported: boolean | null = null;
 
   constructor(client: ReadClient, options: StoreOptions = {}) {
     this.client = client;
     this.options = { pollIntervalMs: 15_000, staleAfterMs: 30_000, reconnectDelayMs: 1_000,
-      now: Date.now, loadSessionExport: false, ...options };
+      now: Date.now, loadSessionExport: false, preferDashboard: false, ...options };
     if (typeof this.options.loadSessionExport !== 'boolean' ||
       (this.options.loadSessionExport && typeof client.exportSession !== 'function')) {
       throw new TypeError('Full session loading requires an export-capable station client');
@@ -113,6 +116,7 @@ export class DashboardStore {
     if (!['live', 'simulation'].includes(selection.sourceMode)) throw new RangeError('Choose live or simulation');
     this.cancel();
     this.focusedCycleId = undefined;
+    this.compactSupported = null;
     this.cursor = 0;
     this.controller = new AbortController();
     this.state = freeze(empty(selection));
@@ -179,6 +183,39 @@ export class DashboardStore {
   private async load(generation: number, signal: AbortSignal): Promise<void> {
     const selection = { ...this.state.selection };
     let focus = this.focusedCycleId;
+    if (this.options.preferDashboard && !this.options.loadSessionExport && this.client.getDashboard && this.client.supportsDashboard) {
+      if (this.compactSupported === null) {
+        const supported = await this.client.supportsDashboard(signal);
+        if (!this.active(generation)) return;
+        this.compactSupported = supported;
+      }
+      if (!this.active(generation)) return;
+      if (this.compactSupported) {
+        let data;
+        try { data = await this.client.getDashboard({ ...selection, cycleId: focus, limit: 20 }, signal); }
+        catch (error) {
+          // Auto-follow may have advanced while an older cycle drawer was open.
+          // Only discard that focus after a coherent read proves the session changed.
+          if (!(error instanceof StationHttpError) || error.status !== 409 || !focus || selection.sessionId) throw error;
+          data = await this.client.getDashboard({ ...selection, limit: 20 }, signal);
+          if (!this.active(generation)) return;
+          if (data.snapshot.session?.id === this.state.session?.id) throw error;
+          this.focusedCycleId = undefined; focus = undefined;
+        }
+        if (!this.active(generation)) return;
+        if (focus !== this.focusedCycleId) { this.dirty = true; return; }
+        this.cursor = data.lastEventSequence;
+        const sessions = [...data.sessions.items];
+        if (data.snapshot.session && !sessions.some(s => s.id === data.snapshot.session!.id)) sessions.push(data.snapshot.session);
+        this.publish({ connection: 'connected', stale: false, error: null,
+          receivedAt: new Date(this.options.now()).toISOString(), lastEventSequence: this.cursor,
+          sessions, sessionCatalog: { total: data.sessions.total, hasMore: data.sessions.hasMore },
+          session: data.snapshot.session, snapshot: data.snapshot, metrics: data.metrics,
+          cycles: data.recentCycles, cameras: data.cameras, currentDetail: data.currentDetail,
+          detail: data.detail, sessionExport: null });
+        return;
+      }
+    }
     // Endpoint reads are separate transactions. Bracket them with the global event
     // watermark and retry, publishing no mixture of old metrics and new records.
     for (let attempt = 0; attempt < 3; attempt++) {
@@ -222,7 +259,7 @@ export class DashboardStore {
       this.cursor = after.lastEventSequence;
       this.publish({ connection: 'connected', stale: false, error: null,
         receivedAt: new Date(this.options.now()).toISOString(), lastEventSequence: this.cursor,
-        sessions, session: snapshot?.session ?? null, snapshot, metrics, cycles, cameras,
+        sessions, sessionCatalog: { total: sessions.length, hasMore: false }, session: snapshot?.session ?? null, snapshot, metrics, cycles, cameras,
         currentDetail, detail: detail ?? currentDetail, sessionExport });
       return;
     }

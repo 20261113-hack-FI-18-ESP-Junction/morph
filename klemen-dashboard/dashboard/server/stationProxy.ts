@@ -65,6 +65,7 @@ function routeFor(raw: string, write = false): Route | null {
     return { path: `/api/v1/cycles/${encodeURIComponent(id)}/review`, query: url.searchParams, kind, intent: "record-review" };
   }
   if (path === "/api/v1/station/snapshot") allowed = ["sessionId"];
+  else if (path === "/api/v1/dashboard") allowed = ["sessionId", "sourceMode", "limit", "cycleId"];
   else if (path === "/api/v1/metrics") allowed = ["includeSimulation"];
   else if (["/api/v1/sessions", "/api/v1/schema", "/api/v1/cameras"].includes(path)) allowed = [];
   else if (path === "/api/v1/cycles") allowed = ["sessionId", "objectId", "outcome", "sourceMode", "includeSimulation", "hasRetry", "errorCode", "modelId", "referenceStatus", "startedAfter", "startedBefore", "offset", "limit"];

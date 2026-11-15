@@ -27,7 +27,10 @@ from starlette.concurrency import run_in_threadpool
 from starlette.types import ASGIApp, Receive, Scope, Send
 
 from .models import MODELS, ID, CorrectionRequest, Cycle, CycleReview, EvidenceUpload, RecordWrite, Session, Time
-from .store import StationStore, StoreError
+from .store import (
+    DASHBOARD_MAX_RESPONSE_BYTES, DASHBOARD_SESSION_LIMIT, DASHBOARD_VERSION,
+    StationStore, StoreError,
+)
 from .analysis import register_analysis_routes
 
 MAX_JSON_BYTES = 1024 * 1024
@@ -175,6 +178,46 @@ class Snapshot(BaseModel):
     metrics: dict[str, Any]
 
 
+class DashboardSessions(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    items: list[SessionView] = Field(max_length=DASHBOARD_SESSION_LIMIT)
+    limit: Literal[50]
+    total: int = Field(ge=0)
+    hasMore: bool
+
+
+class DashboardCycles(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    items: list[CycleView] = Field(max_length=100)
+    limit: int = Field(ge=1, le=100)
+    offset: Literal[0]
+    total: int = Field(ge=0)
+    hasMore: bool
+
+
+class Dashboard(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+    schemaVersion: Literal[1]
+    dashboardVersion: Literal[1]
+    generatedAt: Time
+    lastEventSequence: int = Field(ge=0)
+    sourceMode: Literal["live", "simulation"]
+    selectedSessionId: ID | None
+    sessions: DashboardSessions
+    snapshot: Snapshot
+    metrics: dict[str, Any]
+    recentCycles: DashboardCycles
+    cameras: dict[str, Any]
+    currentDetail: dict[str, Any] | None
+    detail: dict[str, Any] | None
+
+
+def dashboard_capability() -> dict:
+    return {"version": DASHBOARD_VERSION, "path": "/api/v1/dashboard",
+            "maxResponseBytes": DASHBOARD_MAX_RESPONSE_BYTES,
+            "sessionLimit": DASHBOARD_SESSION_LIMIT, "defaultCycleLimit": 20, "maxCycleLimit": 100}
+
+
 def _cors_origins() -> list[str]:
     origins = [entry.strip() for entry in os.environ.get("MORPH_CORS_ORIGINS", "").split(",") if entry.strip()]
     for origin in origins:
@@ -220,7 +263,8 @@ def create_app(db_path: str | Path | None = None, token: str | None = None,
     @app.get("/health")
     def health() -> dict:
         return {"status": "ok", "service": "morph-station", "schemaVersion": 1,
-                "hardwareIntegrated": False, "providersIntegrated": False}
+                "hardwareIntegrated": False, "providersIntegrated": False,
+                "dashboardRead": dashboard_capability()}
 
     @app.get("/api/v1/schema")
     def schema() -> dict:
@@ -228,7 +272,30 @@ def create_app(db_path: str | Path | None = None, token: str | None = None,
         return {"schemaVersion": 1,
                 "records": {kind: model.model_json_schema() for kind, model in MODELS.items()},
                 "envelopes": {model.__name__: model.model_json_schema() for model in envelopes},
-                "responses": {"Snapshot": Snapshot.model_json_schema()}}
+                "responses": {"Snapshot": Snapshot.model_json_schema(), "Dashboard": Dashboard.model_json_schema()},
+                "capabilities": {"dashboardRead": dashboard_capability()}}
+
+    @app.get("/api/v1/dashboard", response_model=Dashboard)
+    def dashboard(request: Request, sessionId: str | None = Query(None, min_length=1, max_length=120,
+                                                                  pattern=r"^[A-Za-z0-9][A-Za-z0-9_.:-]*$"),
+                  cycleId: str | None = Query(None, min_length=1, max_length=120,
+                                             pattern=r"^[A-Za-z0-9][A-Za-z0-9_.:-]*$"),
+                  sourceMode: Literal["live", "simulation"] = "live",
+                  limit: int = Query(20, ge=1, le=100)) -> Response:
+        keys = list(request.query_params.keys())
+        if set(keys) - {"sessionId", "cycleId", "sourceMode", "limit"} or any(
+                len(request.query_params.getlist(key)) != 1 for key in keys):
+            raise HTTPException(422, "Dashboard accepts sessionId, cycleId, sourceMode and limit once each")
+        result = Dashboard.model_validate(store.dashboard(session_id=sessionId, source_mode=sourceMode,
+                                                         limit=limit, cycle_id=cycleId))
+        body = json.dumps(result.model_dump(mode="json"), ensure_ascii=False,
+                          allow_nan=False, separators=(",", ":")).encode("utf-8")
+        if len(body) > DASHBOARD_MAX_RESPONSE_BYTES:
+            return JSONResponse({"code": "dashboard_response_too_large",
+                                 "detail": "Dashboard response exceeds the bounded read limit; current evidence and exact metrics were not truncated.",
+                                 "maxResponseBytes": DASHBOARD_MAX_RESPONSE_BYTES}, status_code=413,
+                                headers={"Cache-Control": "private, no-store"})
+        return Response(body, media_type="application/json", headers={"Cache-Control": "private, no-store"})
 
     @app.get("/api/v1/station/snapshot", response_model=Snapshot)
     def snapshot(sessionId: str | None = None) -> dict:

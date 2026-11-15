@@ -52,6 +52,21 @@ test('comparison reads preserve both sessionIds through proxy and MCP', async ()
     assert.equal(q.requests[0].body, undefined); assert.equal(q.requests[0].intent, undefined);
   } finally { await server.close(); }
 });
+test('compact dashboard read preserves its scope and rejects extra, duplicate and write inputs', async () => {
+  const q = queue(); const server = await bridge(q.call);
+  try {
+    const response = await fetch(`${server.origin}/api/v1/dashboard?sessionId=session%3A1&cycleId=cycle%3A2&sourceMode=simulation&limit=20`);
+    assert.equal(response.status, 200); await response.text();
+    assert.equal(q.requests.length, 1); assert.equal(q.requests[0].tool, 'enqueue_station_read');
+    assert.deepEqual(q.requests[0].query, { sessionId: 'session:1', cycleId: 'cycle:2', sourceMode: 'simulation', limit: '20' });
+    for (const route of ['/api/v1/dashboard?limit=10&limit=20', '/api/v1/dashboard?sourceMode=live&url=http://foreign.invalid']) {
+      const denied = await fetch(server.origin + route); assert.equal(denied.status, 404); await denied.text();
+    }
+    const deniedWrite = await fetch(`${server.origin}/api/v1/dashboard`, post('{}', 'record-review'));
+    assert.equal(deniedWrite.status, 405); await deniedWrite.text();
+    assert.equal(q.requests.length, 1);
+  } finally { await server.close(); }
+});
 
 test('explicit review and analyst submission preserve body, intent, IDs and HTTP status', async () => {
   for (const [route, body, intent, status] of [

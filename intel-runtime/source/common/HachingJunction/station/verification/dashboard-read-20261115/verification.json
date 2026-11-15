@@ -1,0 +1,42 @@
+{
+  "checkedAt": "2026-11-15T04:45:50.719246+00:00",
+  "agent": "/root/intel_data",
+  "scope": "Mac software-only source implementation and temporary-record tests",
+  "backend": {
+    "passed": 149,
+    "failed": 0,
+    "newDashboardCases": 19,
+    "junit": "backend-tests.xml",
+    "fixtureRoot": "intel-runtime/fixtures/audit",
+    "command": "MORPH_AUDIT_FIXTURE_ROOT=<absolute Intel package>/fixtures/audit python -m pytest tests/test_dashboard.py tests/test_api.py tests/test_store.py tests/test_reviews.py tests/test_export_audit.py -q",
+    "additionalRegression": "Fractional timestamps sort by chronology, including microseconds, instead of the trailing Z character."
+  },
+  "communication": {
+    "passed": 67,
+    "failed": 0,
+    "command": "python -m unittest discover -s context_mcp/tests",
+    "notes": "Run from communication with the existing context-mcp environment. Uses in-process TestClient and fake station/network fixtures; no live MCP restart."
+  },
+  "initialBackendRun": {
+    "passed": 118,
+    "failed": 30,
+    "reason": "Historical export fixtures were not found because MORPH_AUDIT_FIXTURE_ROOT was omitted. Rerun using the existing package fixtures passed all 148 cases."
+  },
+  "documentation": {
+    "localLinksChecked": 5,
+    "allResolved": true
+  },
+  "deploymentVerified": false,
+  "physicalVerified": false,
+  "providerCallsMade": false,
+  "sourceHashes": {
+    "intel-runtime/source/common/HachingJunction/station/morph_station/api.py": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a",
+    "intel-runtime/source/common/HachingJunction/station/morph_station/store.py": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939",
+    "intel-runtime/source/common/HachingJunction/station/tests/test_dashboard.py": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd",
+    "intel-runtime/source/common/HachingJunction/station/INTEL_DASHBOARD_API.md": "e896e7dbed64f7552f6349d28843688709ea4c68487ba26196aa138703a1f41a",
+    "communication/context_mcp/station_relay.py": "11b90cb97871dc7253cbf6550b93d4497503ac8b8ede94773552f155069c9201",
+    "communication/context_mcp/station_worker.py": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+    "communication/context_mcp/tests/test_station_relay.py": "bf127937f5138002b20a78db8ee139543c1b6bb281839527cdb4eca2811be6f5",
+    "communication/context_mcp/tests/test_station_worker.py": "f2e215e1ff3220616e435cf1b00f5ec3227ba66f8d9e3443a7c4e04b68f8ed8c"
+  }
+}

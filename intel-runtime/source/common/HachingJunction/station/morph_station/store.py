@@ -16,6 +16,9 @@ from pydantic import ValidationError
 from .models import MODELS, CorrectionRequest, CycleReview, EvidenceUpload, RecordWrite
 
 SCHEMA_VERSION = 1
+DASHBOARD_VERSION = 1
+DASHBOARD_SESSION_LIMIT = 50
+DASHBOARD_MAX_RESPONSE_BYTES = 4 * 1024 * 1024 - 1
 ALL_KINDS = set(MODELS) | {"correction"}
 MUTABLE = {
     "session": {"name", "endedAt"},
@@ -657,27 +660,86 @@ class StationStore:
             selected = self._get(db, "session", session_id) if session_id else (
                 max(sessions, key=lambda s: (s["startedAt"], s["id"])) if sessions else None)
             cycles = self._list(db, "cycle", selected["id"]) if selected else []
-            active = [c for c in cycles if c["outcome"] == "in_progress"]
-            current = max(active or cycles, key=lambda c: (c["startedAt"], c["id"])) if cycles else None
-            seq = db.execute("SELECT COALESCE(MAX(sequence),0) FROM events").fetchone()[0]
-            capabilities = {name: {"status": "unavailable", "verified": False}
-                            for name in ("robot", "cameras", "anomalib", "nemotron", "gemini", "elevenlabs")}
-            return {"schemaVersion": SCHEMA_VERSION, "generatedAt": now(), "lastEventSequence": seq,
-                    "session": selected, "cycle": current, "activeCycleIds": [c["id"] for c in active],
-                    "sourceMode": selected["sourceMode"] if selected else None, "stateVersion": seq,
-                    "goalVersion": None, "goal": None, "availableActions": [],
-                    "capabilities": capabilities,
-                    "metrics": self._metrics(db, selected["id"], include_simulation=True) if selected else
-                               self._metrics(db, None, include_simulation=False)}
+            metrics = self._metrics(db, selected["id"], include_simulation=True) if selected else \
+                self._metrics(db, None, include_simulation=False)
+            return self._snapshot(db, selected, cycles, metrics)
+
+    def _snapshot(self, db, selected, cycles, metrics):
+        active = [c for c in cycles if c["outcome"] == "in_progress"]
+        current = max(active or cycles, key=lambda c: (datetime.fromisoformat(c["startedAt"]), c["id"])) if cycles else None
+        seq = db.execute("SELECT COALESCE(MAX(sequence),0) FROM events").fetchone()[0]
+        capabilities = {name: {"status": "unavailable", "verified": False}
+                        for name in ("robot", "cameras", "anomalib", "nemotron", "gemini", "elevenlabs")}
+        return {"schemaVersion": SCHEMA_VERSION, "generatedAt": now(), "lastEventSequence": seq,
+                "session": selected, "cycle": current, "activeCycleIds": [c["id"] for c in active],
+                "sourceMode": selected["sourceMode"] if selected else None, "stateVersion": seq,
+                "goalVersion": None, "goal": None, "availableActions": [],
+                "capabilities": capabilities, "metrics": metrics}
+
+    def dashboard(self, session_id=None, source_mode="live", limit=20, cycle_id=None):
+        """Read one coherent view even while unrelated sessions continue writing.
+
+        Sessions and recent cycles are explicit bounded pages. The current cycle's
+        evidence, revisions and exact metrics are complete; the HTTP boundary
+        rejects a response that cannot fit the relay instead of truncating them.
+        """
+        if source_mode not in {"live", "simulation"}:
+            raise StoreError(422, "sourceMode must be live or simulation")
+        if type(limit) is not int or not 1 <= limit <= 100:
+            raise StoreError(422, "Dashboard cycle limit must be between 1 and 100")
+        with self._connection() as db:
+            # This first SELECT establishes the WAL read snapshot for every
+            # subsequent section, including the event sequence and metrics.
+            total_sessions = db.execute(
+                "SELECT COUNT(*) FROM records WHERE kind='session' AND json_extract(payload,'$.sourceMode')=?",
+                (source_mode,),
+            ).fetchone()[0]
+            session_rows = db.execute(
+                "SELECT * FROM records WHERE kind='session' AND json_extract(payload,'$.sourceMode')=? "
+                "ORDER BY rtrim(json_extract(payload,'$.startedAt'),'Z') DESC,id DESC LIMIT ?",
+                (source_mode, DASHBOARD_SESSION_LIMIT),
+            ).fetchall()
+            sessions = [self._row_record(row) for row in session_rows]
+            selected = self._get(db, "session", session_id) if session_id is not None else (sessions[0] if sessions else None)
+            if selected is not None and selected["sourceMode"] != source_mode:
+                raise StoreError(409, "Selected session does not match sourceMode")
+            cycles = self._list(db, "cycle", selected["id"]) if selected else []
+            metrics = self._metrics(db, selected["id"] if selected else None,
+                                    include_simulation=source_mode == "simulation", source_mode=source_mode)
+            snapshot = self._snapshot(db, selected, cycles, metrics)
+            recent = sorted(cycles, key=lambda c: (datetime.fromisoformat(c["startedAt"]), c["id"]), reverse=True)[:limit]
+            current_detail = self._cycle_detail(db, snapshot["cycle"]["id"]) if snapshot["cycle"] else None
+            detail = current_detail
+            if cycle_id is not None:
+                focused = self._get(db, "cycle", cycle_id)
+                if selected is None or focused["sessionId"] != selected["id"]:
+                    raise StoreError(409, "Selected cycle does not belong to the selected session")
+                if current_detail is None or current_detail["cycle"]["id"] != cycle_id:
+                    detail = self._cycle_detail(db, cycle_id)
+            return {
+                "schemaVersion": SCHEMA_VERSION, "dashboardVersion": DASHBOARD_VERSION,
+                "generatedAt": snapshot["generatedAt"], "lastEventSequence": snapshot["lastEventSequence"],
+                "sourceMode": source_mode, "selectedSessionId": selected["id"] if selected else None,
+                "sessions": {"items": sessions, "limit": DASHBOARD_SESSION_LIMIT,
+                             "total": total_sessions, "hasMore": total_sessions > len(sessions)},
+                "snapshot": snapshot, "metrics": metrics,
+                "recentCycles": {"items": recent, "limit": limit, "offset": 0,
+                                 "total": len(cycles), "hasMore": len(cycles) > len(recent)},
+                "cameras": {"status": "unavailable", "cameras": [],
+                            "reason": "Camera integration is not implemented in M06."},
+                "currentDetail": current_detail, "detail": detail,
+            }
 
     def metrics(self, session_id=None, include_simulation=False):
         with self._connection() as db:
             return self._metrics(db, session_id, include_simulation)
 
-    def _metrics(self, db, session_id=None, include_simulation=False, cycle_ids=None):
+    def _metrics(self, db, session_id=None, include_simulation=False, cycle_ids=None, source_mode=None):
         if session_id:
             self._get(db, "session", session_id)
         sessions = self._list(db, "session", session_id)
+        if source_mode is not None:
+            sessions = [s for s in sessions if s["sourceMode"] == source_mode]
         if not include_simulation:
             sessions = [s for s in sessions if s["sourceMode"] == "live"]
         eligible = {s["id"] for s in sessions}

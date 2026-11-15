@@ -21,6 +21,14 @@ from starlette.testclient import TestClient
 
 
 class RelayFixture(unittest.TestCase):
+    def test_dashboard_read_query_is_bounded_and_explicit(self):
+        query = {"sessionId": "session-1", "cycleId": "cycle-1", "sourceMode": "simulation", "limit": "100"}
+        self.assertEqual(read_target("/api/v1/dashboard", query), ("/api/v1/dashboard", query))
+        for invalid in ({"limit": "101"}, {"limit": "0"}, {"sourceMode": "all"},
+                        {"sessionId": ".."}, {"cycleId": "../other"}, {"includeSimulation": "true"}):
+            with self.subTest(query=invalid), self.assertRaises(ValueError):
+                read_target("/api/v1/dashboard", invalid)
+
     def setUp(self):
         self.temporary = tempfile.TemporaryDirectory(prefix="morph-relay-test-")
         self.addCleanup(self.temporary.cleanup)
