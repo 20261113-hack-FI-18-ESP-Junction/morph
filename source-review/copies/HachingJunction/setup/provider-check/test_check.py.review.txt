@@ -1,0 +1,189 @@
+"""Offline checks for credential confidentiality and truthful result validation."""
+import io
+import argparse
+import json
+import os
+from pathlib import Path
+import stat
+import tempfile
+import unittest
+from unittest.mock import patch
+import urllib.error
+import urllib.request
+
+import check
+
+
+class ProviderChecks(unittest.TestCase):
+    def test_config_is_literal_and_does_not_execute(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / ".env.providers"
+            # Intel synthetic fixture: keep the marker inside the temporary directory.
+            marker = Path(directory) / "should-not-exist"
+            literal = f"literal-$(touch {marker})"
+            path.write_text("GEMINI_API_KEY="[REDACTED]"\n")
+            path.chmod(0o600)
+            self.assertEqual(check.load_config(path)["GEMINI_API_KEY"], literal)
+            self.assertFalse(marker.exists())
+
+    def test_symlink_and_public_file_refused(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "secret"
+            path.write_text("GEMINI_API_KEY=placeholder\n")
+            path.chmod(0o644)
+            with self.assertRaises(ValueError):
+                check.load_config(path)
+            link = Path(directory) / "link"
+            link.symlink_to(path)
+            with self.assertRaises(ValueError):
+                check.load_config(link)
+
+    def test_configure_preserves_others_and_hides_values(self):
+        with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, {}, clear=True):
+            path = Path(directory) / ".env.providers"
+            path.write_text("# Existing unrelated configuration\nOTHER_SETTING=keep\nGEMINI_API_KEY=existing-secret\n")
+            path.chmod(0o600)
+            output = io.StringIO()
+            with patch("sys.stdin.isatty", return_value=True), patch("check.getpass.getpass", return_value="new-secret-123"), patch("sys.stdout", output):
+                check.configure(["gemini", "nemotron"], path)
+            result = check.load_config(path)
+            self.assertEqual(result["GEMINI_API_KEY"], "existing-secret")
+            self.assertEqual(result["NVIDIA_API_KEY"], "new-secret-123")
+            self.assertEqual(result["OTHER_SETTING"], "keep")
+            self.assertEqual(stat.S_IMODE(path.stat().st_mode), 0o600)
+            self.assertNotIn("existing-secret", output.getvalue())
+            self.assertNotIn("new-secret-123", output.getvalue())
+
+    def test_empty_input_does_not_create_file(self):
+        with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, {}, clear=True):
+            path = Path(directory) / ".env.providers"
+            with patch("sys.stdin.isatty", return_value=True), patch("check.getpass.getpass", return_value=""), patch("sys.stdout", io.StringIO()):
+                check.configure(["gemini"], path)
+            self.assertFalse(path.exists())
+
+    def test_noninteractive_secret_input_refused(self):
+        with patch("sys.stdin.isatty", return_value=False):
+            with self.assertRaises(ValueError):
+                check.configure(["gemini"])
+
+    def test_redaction_covers_echoed_secret_and_token_fields(self):
+        value = {"error": "credential abcSECRETxyz rejected", "Authorization": "[REDACTED]", "nested": [{"token": "ephemeral"}], "total_output_tokens": 0}
+        safe = check.redact(value, ["abcSECRETxyz"])
+        text = json.dumps(safe)
+        self.assertNotIn("abcSECRETxyz", text)
+        self.assertNotIn("ephemeral", text)
+        self.assertNotIn("unrelated", text)
+        self.assertEqual(safe["total_output_tokens"], 0)
+
+    def test_redirects_cannot_forward_credentials(self):
+        req = urllib.request.Request("https://api.example.test/v1", headers={"Authorization": "[REDACTED]"})
+        with self.assertRaises(urllib.error.HTTPError):
+            check.NoRedirect().redirect_request(req, None, 302, "Found", {}, "https://other.example.test")
+
+    def test_http_error_does_not_count_as_success(self):
+        for service in check.KEYS:
+            self.assertFalse(check.validate(service, {"http_status": 401, "response": {}})[0])
+
+    def test_decisions_requires_real_fixed_choice_and_zero_output_tokens(self):
+        body = {"answers": {"goal": {"choice": "pause", "probabilities": {"pause": 0.98, "continue": 0.01, "hold": 0.01}}}, "usage": {"total_output_tokens": 0}}
+        self.assertTrue(check.validate("decisions", {"http_status": 200, "response": body})[0])
+        body["usage"]["total_output_tokens"] = 4
+        self.assertFalse(check.validate("decisions", {"http_status": 200, "response": body})[0])
+        body["usage"]["total_output_tokens"] = 0
+        body["answers"]["goal"]["probabilities"]["hold"] = float("nan")
+        self.assertFalse(check.validate("decisions", {"http_status": 200, "response": body})[0])
+
+    def test_wrong_nemotron_model_does_not_pass(self):
+        body = {"model": "different-model", "choices": [{"message": {"content": "A red block."}}]}
+        self.assertFalse(check.validate("nemotron", {"http_status": 200, "response": body})[0])
+        body["model"] = check.MODELS["nemotron"]
+        self.assertTrue(check.validate("nemotron", {"http_status": 200, "response": body})[0])
+
+    def test_jev_uses_separate_auth_host_and_state_field(self):
+        url, method, headers, body, evidence = check.build_request("jev", "not-a-real-key")
+        self.assertEqual(url, "https://api.typesafe.ai/v1/systemone")
+        self.assertIn("state", body)
+        self.assertNotIn("input", body)
+        self.assertNotIn("not-a-real-key", json.dumps(evidence))
+
+    def test_google_text_uses_current_interactions_contract(self):
+        url, method, headers, body, evidence = check.build_request("gemini", "not-a-real-key", gemini_model="gemini-3.5-flash-lite")
+        self.assertEqual(url, "https://generativelanguage.googleapis.com/v1beta/interactions")
+        self.assertEqual(headers["Api-Revision"], "2026-05-20")
+        self.assertNotIn("not-a-real-key", json.dumps(evidence))
+        good = {"steps": [{"type": "model_output", "content": [{"type": "text", "text": "READY"}]}]}
+        self.assertTrue(check.validate("gemini", {"http_status": 200, "response": good})[0])
+        bad = {"steps": [{"type": "model_thought", "content": [{"type": "text", "text": "READY"}]}]}
+        self.assertFalse(check.validate("gemini", {"http_status": 200, "response": bad})[0])
+
+    def test_jev_rejects_wrong_pinned_model(self):
+        body = {"model": "different-model", "answers": {"goal": {"choice": "pause", "probabilities": {"pause": 0.98, "continue": 0.01, "hold": 0.01}}}}
+        self.assertFalse(check.validate("jev", {"http_status": 200, "response": body})[0])
+        body["model"] = "jev-1.14.0"
+        self.assertTrue(check.validate("jev", {"http_status": 200, "response": body})[0])
+
+    def test_verda_uses_only_supplied_endpoint_and_separate_key(self):
+        with tempfile.TemporaryDirectory() as directory:
+            image = Path(directory) / "fixture.png"
+            image.write_bytes(b"\x89PNG\r\n\x1a\nfixture")
+            url, method, headers, body, evidence = check.build_request("verda", "fake-verda-secret", image_path=image)
+            self.assertEqual(url, "https://containers.datacrunch.io/nemotron-3-5-super-vl-b300/v1/chat/completions")
+            self.assertEqual(check.KEYS["verda"], ("VERDA_INFERENCE_KEY",))
+            self.assertEqual(body["model"], "nemotron-3.5-super-vl")
+            self.assertEqual([p["type"] for p in body["messages"][0]["content"]], ["text", "image_url"])
+            self.assertNotIn("reasoning_effort", body)
+            self.assertNotIn("fake-verda-secret", json.dumps(evidence))
+            self.assertNotIn("base64", json.dumps(evidence))
+
+    def test_verda_preserves_deployment_alias_and_requires_final_output(self):
+        body = {"model": "sponsor-deployment-model-identifier", "choices": [{"message": {"content": "A red block.", "reasoning_content": "Observed the image."}}]}
+        self.assertTrue(check.validate("verda", {"http_status": 200, "response": body})[0])
+        body["choices"][0]["message"]["content"] = None
+        valid, explanation = check.validate("verda", {"http_status": 200, "response": body})
+        self.assertFalse(valid)
+        self.assertIn("reasoning only", explanation)
+
+    def test_transport_timeout_records_limit(self):
+        with patch("check.urllib.request.build_opener") as opener:
+            opener.return_value.open.side_effect = urllib.error.URLError(TimeoutError("operation timed out"))
+            result = check.request("https://example.test", "POST", {}, {}, 12)
+        self.assertEqual(result["error_category"], "timeout")
+        self.assertEqual(result["timeout_seconds"], 12)
+        self.assertIsNone(result["http_status"])
+
+    def test_verda_error_report_redacts_echoed_key(self):
+        with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, {}, clear=True):
+            image = Path(directory) / "fixture.png"
+            image.write_bytes(b"\x89PNG\r\n\x1a\nfixture")
+            args = argparse.Namespace(command="live", services=["verda"], image=str(image), image_kind="synthetic_fixture", gemini_model=None, timeout=15)
+            response = {"http_status": 401, "latency_ms": 10.5, "timeout_seconds": 15, "error_category": "http_error", "response": {"error": "fake-secret-xyz is invalid", "token": "ephemeral-sensitive"}}
+            with patch("check.load_config", return_value={"VERDA_INFERENCE_KEY": "fake-secret-xyz"}), patch("check.request", return_value=response), patch("check.OUTPUT", Path(directory)), patch("sys.stdout", io.StringIO()):
+                self.assertEqual(check.check(args), 2)
+            report_path = next(Path(directory).glob("*.json"))
+            text = report_path.read_text()
+            self.assertNotIn("fake-secret-xyz", text)
+            self.assertNotIn("ephemeral-sensitive", text)
+            record = json.loads(text)["services"][0]
+            self.assertEqual(record["status"], "failed")
+            self.assertEqual(record["timeout_seconds"], 15)
+
+    def test_gemma_uses_google_key_and_independent_model_contract(self):
+        url, method, headers, body, evidence = check.build_request("gemma", "fake-google-secret")
+        self.assertEqual(check.KEYS["gemma"], check.KEYS["gemini"])
+        self.assertEqual(url, "https://generativelanguage.googleapis.com/v1beta/models/gemma-4-26b-a4b-it:generateContent")
+        self.assertEqual(headers["x-goog-api-key"], "fake-google-secret")
+        self.assertEqual(body["generationConfig"], {"maxOutputTokens": 32, "thinkingConfig": {"thinkingLevel": "minimal"}})
+        self.assertNotIn("fake-google-secret", json.dumps(evidence))
+        self.assertEqual(check.MODELS["decisions"], "gemini-decision-1")
+        good = {"modelVersion": "gemma-4-26b-a4b-it", "candidates": [{"content": {"parts": [{"text": "READY"}]}}]}
+        self.assertTrue(check.validate("gemma", {"http_status": 200, "response": good})[0])
+        good["modelVersion"] = "some-other-model"
+        self.assertFalse(check.validate("gemma", {"http_status": 200, "response": good})[0])
+        del good["modelVersion"]
+        self.assertTrue(check.validate("gemma", {"http_status": 200, "response": good})[0])
+        good["candidates"][0]["content"]["parts"][0]["thought"] = True
+        self.assertFalse(check.validate("gemma", {"http_status": 200, "response": good})[0])
+
+
+if __name__ == "__main__":
+    unittest.main()
