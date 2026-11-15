@@ -1,0 +1,27 @@
+{
+  "copiedAt": "2026-11-15T05:45:14.143907+00:00",
+  "sourceArchive": "Morph-Mac-Offline-Evidence-20261114-01a1dbfa.zip",
+  "sourceArchiveSha256": "09fcdd95aa561e798b59e7cc4e36e528773a2920c3d22c1ace9f64a95f4e85e3",
+  "sourceManifestSha256": "b6b27722937a0d2c8cef9cb621874fd010f633f55f1cee0844bb9d8a36c1fc08",
+  "purpose": "Exact historical simulation acceptance exports used only as self-contained offline test inputs. No record or exportedAt value was changed.",
+  "files": [
+    {
+      "path": "context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "sha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175",
+      "bytes": 42490,
+      "source": "/home/intel/Documents/Junction/reviews/mac-offline-evidence-20261114T222550Z-8941c757/extracted/Morph-Mac-Offline-Evidence-20261114-01a1dbfa/fixtures/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json"
+    },
+    {
+      "path": "context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "sha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8",
+      "bytes": 42490,
+      "source": "/home/intel/Documents/Junction/reviews/mac-offline-evidence-20261114T222550Z-8941c757/extracted/Morph-Mac-Offline-Evidence-20261114-01a1dbfa/fixtures/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json"
+    },
+    {
+      "path": "station/verification/sample-export.json",
+      "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d",
+      "bytes": 97061,
+      "source": "/home/intel/Documents/Junction/reviews/mac-offline-evidence-20261114T222550Z-8941c757/extracted/Morph-Mac-Offline-Evidence-20261114-01a1dbfa/fixtures/station/verification/sample-export.json"
+    }
+  ]
+}
