@@ -1,6 +1,10 @@
 # Klemen Mac — dashboard and analytics
 
+Start with [Run and finish the Morph system](../WORKING_SYSTEM.md) for the one-command records/video demo, repeatable MCP dashboard launcher, GET-only connection check and current Intel integration boundary.
+
 This package combines the current Intel M16 history/review/replay and Gemma analyst frontend with the existing Mac MCP connection. The source was reconciled on November 15, 2026 in this new publication directory. The earlier handoff and pre-change archive remain separate. [SOURCE_RECONCILIATION.json](SOURCE_RECONCILIATION.json) records received/reused source and package adaptations; [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json) retains the original Mac package history.
+
+The subsequent owner-approved [dashboard upgrade](DASHBOARD_UPGRADE.md) adds a coherent compact live read, on-demand saved history and a redesigned object/evidence workspace. The original source manifests remain the frozen reconciliation baseline; [the upgrade source inventory](verification/dashboard-upgrade-20261115/source-hashes.json) records later changes. [Intel requirements](INTEL_REQUIREMENTS.md) specifies the code to adopt, the real record producers still needed and cross-host acceptance checks. Use the isolated [local demo](LOCAL_DEMO.md) to preview the UI without Intel, providers or a robot.
 
 The runnable UI includes Live inspection, Robot & system, Quality & history, audited operator reviews, frozen record replay, saved Gemma reports and explicit report requests. It also includes the shared records client and an offline export analyzer. These source features do not establish a current Intel deployment, live connectivity, provider availability or a working physical robot. [VERIFICATION.md](VERIFICATION.md) records the checks actually performed on this package.
 
@@ -44,9 +48,13 @@ npm run build
 npm start
 ```
 
-An unavailable/stale state is expected when the pairing, matching relay, worker or selected Intel service is unavailable. The dated Intel runtime report found main port 8000 lacked analyst routes while isolated port 52197 had them. Verify the intended Intel service separately; source receipt does not establish that either running process loaded these files.
+An unavailable/stale state is expected when the pairing, matching relay, worker or selected Intel service is unavailable. On November 15, 2026 at 07:22–07:29 UTC, authenticated Mac MCP reads verified the restored main Intel API's compact dashboard, history, evidence image and analyst-context routes. It returned one simulation session and no live session. An explicit analyst submission later expired unclaimed in the relay; write-worker adoption and a completed product analysis remain separate acceptance checks. Earlier reports about missing main-port analyst routes are historical.
 
 ## MCP request behavior
+
+The client discovers `capabilities.dashboardRead` on `/api/v1/schema`. When available, one `GET /api/v1/dashboard` returns the selected session, authoritative metrics, recent cycles, current/focused detail and an event cursor from one database read transaction. Polling is configured for 2 seconds with a 10-second stale threshold; actual delivery depends on the worker/network. The live path never downloads the complete session export. The older API fallback retains coherent multi-read loading without exports.
+
+Quality & history loads one complete saved session on demand. Its records, metrics and generation timestamp stay together, with an explicit refresh when newer data exists. Replay is an explicitly loaded frozen export. The newest 50 sessions appear initially; **Load older sessions** fetches the full catalog only on demand. Complete history/catalog/evidence reads still obey the existing response-size bounds.
 
 GET requests use `enqueue_station_read`; responses are read in base64 pages through `read_station_response`. Each request has a fresh relay UUID. The adapter checks offsets, immutable response metadata, byte bounds and the complete SHA-256 before forwarding the response. Repeated `sessionIds` values remain ordered for two-session comparisons.
 
@@ -82,10 +90,10 @@ Use a new output directory each time. The supplied fixture is labeled simulation
 
 ## Check this package
 
-Verify the source inventory without installing dependencies:
+The frozen upgrade inventory describes its original checkpoint. Later accepted UI, video and launcher edits intentionally differ, so this command is a historical comparison and is expected to report mismatches:
 
 ```bash
-python3 tools/verify_package.py
+python3 tools/verify_upgrade.py
 ```
 
 From `dashboard/`, after dependency installation and the shared-client build:
@@ -94,7 +102,7 @@ From `dashboard/`, after dependency installation and the shared-client build:
 npm run typecheck
 npm test
 npm run build
-node --test ../station-client/tests/client.test.ts ../station-client/tests/store.test.ts
+node --test ../station-client/tests/client.test.ts ../station-client/tests/store.test.ts ../station-client/tests/dashboard.test.ts
 ```
 
 From the package root:
@@ -106,4 +114,10 @@ PYTHONPATH=analytics analytics/.venv/bin/python -m pytest analytics/tests -q
 
 The current Intel proxy test file was rejected by the source sender and is not included. `stationProxy.mac-baseline.test.ts` is explicitly the older Mac regression set; `stationProxy.mcp.test.ts` adds local coverage for the new transport boundary. These do not constitute a reconstructed complete Intel test suite. The Intel backend analyst test file is also unavailable; frontend/controller checks are a separate scope. The exact current synthetic CSV dependency is included.
 
+`tools/verify_package.py` likewise compares the original reconciliation snapshot. Preserve both historical manifests. Use the current [integration evidence](verification/workflow-integration-20261115/) and [working-system guide](../WORKING_SYSTEM.md) for the later test results, source review and runtime checks.
+
 Model keys and the live Gemma service remain on the service host. The retained design assets and `src/domain/` prototype files are historical source material; active UI records use the shared station client. Do not replace absent telemetry with prototype values or describe simulated outcomes as physical verification.
+
+## Independent camera preview
+
+[Live video setup and contract](LIVE_VIDEO.md) documents the native H.264/WebRTC panel, separate fixed media gateway, simulation setup, source/replay isolation and remaining Intel acceptance. The tested source adapter is in [Intel media bridge](../intel-runtime/media-bridge/README.md). The original package manifest remains the original publication snapshot.

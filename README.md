@@ -2,6 +2,8 @@
 
 Morph combines an operator interface, model-assisted task selection and recorded quality evidence for a physical robot workflow. This repository contains the three agreed host partitions and their shared communication code. Jose's existing runnable control lab remains at the root; the other packages have their own setup and verification guides.
 
+For the combined dashboard/video demonstration, actual Intel records connection and remaining non-Jose integration work, start with [Run and finish the Morph system](WORKING_SYSTEM.md). The runnable local demonstration and the actual station connection are explicit separate modes.
+
 | Owner | Start here | Included behavior |
 | --- | --- | --- |
 | Jose Mac | Root instructions below | Operator/control simulation lab, Nemotron and Gemini adapters, optional voice |
