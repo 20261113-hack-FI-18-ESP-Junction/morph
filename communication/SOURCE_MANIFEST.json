@@ -12,9 +12,9 @@
     },
     {
       "path": "AGENTS.md",
-      "bytes": 955,
-      "sha256": "6b4ac2e9ee386f07102a4abd03c8d0035dd81e11e5f25021f3c71b44f1d4b853",
-      "origin": "publication-guide-or-verification"
+      "bytes": 2112,
+      "sha256": "82afa0eb2335b87485e292947cb55c04a6edd25ef6c77fad2e84e3211b061261",
+      "origin": "mac-source-sync-20261115"
     },
     {
       "path": "NOTION_SYNC.md",
@@ -24,14 +24,14 @@
     },
     {
       "path": "README.md",
-      "bytes": 4140,
-      "sha256": "cfe10f030e7e926c4d70f2253d951faa2dfecf6c12d9feff9f06ed1cba877a7e",
-      "origin": "mac-adoption-documentation-20261115"
+      "bytes": 5420,
+      "sha256": "fb9e6915956b1bd44e65338d9eef2cb01b5e1f6e6057358fcb0799548e5c33ee",
+      "origin": "mac-source-sync-20261115"
     },
     {
       "path": "SOURCE_ORIGINS.json",
-      "bytes": 20545,
-      "sha256": "ec777ed9869ce6b5bf37c6f1e24e0114754ea278aa6fb2c32d4912eb4df52288",
+      "bytes": 26552,
+      "sha256": "ff9cefd61cd50f07cb4b38ae946086c2b8fa94dcdb08f19540eecc30d077c0eb",
       "origin": "publication-guide-or-verification"
     },
     {
@@ -48,15 +48,21 @@
     },
     {
       "path": "context/EVENT_REVIEW.md",
-      "bytes": 2565,
-      "sha256": "753202553b02d3c93bedb5ae24abc4dcaa632b60eb149ad92d666c4123a44691",
-      "origin": "mac-handoff-event-publication-guide-20261115"
+      "bytes": 4345,
+      "sha256": "9bdf1b7ca31cafbc45feb644a76aa9347458908cee37fb4e05e3f0b1abd7f845",
+      "origin": "mac-source-sync-20261115"
+    },
+    {
+      "path": "context/SOURCE_SYNC.md",
+      "bytes": 18266,
+      "sha256": "d35e06423c08bac1ceafbaf94f9477d1738bb8cf08504d9929f4ceb59db48187",
+      "origin": "mac-source-sync-20261115"
     },
     {
       "path": "context/START_HERE.md",
-      "bytes": 900,
-      "sha256": "691353f49d5e03fd2d15482bd9b847d3f82badbf1321ac5c6a85c41902cbef42",
-      "origin": "mac-adoption-documentation-20261115"
+      "bytes": 1580,
+      "sha256": "29a1f9b783eeeb779aab2ee9228f43b873b0f54207eb10903cd70f0eabef935d",
+      "origin": "mac-source-sync-20261115"
     },
     {
       "path": "context/THREE_HOST_ARCHITECTURE.md",
@@ -90,9 +96,9 @@
     },
     {
       "path": "context_mcp/HANDOFF_EVENTS.md",
-      "bytes": 21342,
-      "sha256": "65bd5aa83b0807d3201e6740b1ab0bfcc049db74191bdf5490fb3c22af8951f5",
-      "origin": "mac-handoff-event-guide-portable-adaptation"
+      "bytes": 21991,
+      "sha256": "50506bd43b245ee302a6327f9724cc3579fa5824bdf698b3bc1a2681b7985d25",
+      "origin": "mac-source-sync-20261115"
     },
     {
       "path": "context_mcp/STATION_RELAY.md",
@@ -185,6 +191,12 @@
       "origin": "mac-record-relay-with-handoff-event-extension"
     },
     {
+      "path": "context_mcp/source_intake.py",
+      "bytes": 26947,
+      "sha256": "1cd37e8c0cc938ef6cf50ffd7a6fc3539743f42335cde76f69b0122154483cf3",
+      "origin": "mac-source-sync-20261115"
+    },
+    {
       "path": "context_mcp/station_relay.py",
       "bytes": 17593,
       "sha256": "16ea76bee5315d3e3f32a0ff8ee4fddf40941b798910550d21567bd7d5c8670e",
@@ -243,6 +255,12 @@
       "bytes": 13586,
       "sha256": "9871449dd32284f24773f0a2c199ed77817f566a77ff2d9578f85548bb60f86e",
       "origin": "mac-handoff-event-implementation-20261115"
+    },
+    {
+      "path": "context_mcp/tests/test_source_intake.py",
+      "bytes": 24087,
+      "sha256": "8f19e28b31aeef3f6346b2d0fe5d2307442968a493196726552b1c833ec725d1",
+      "origin": "mac-source-sync-20261115"
     },
     {
       "path": "context_mcp/tests/test_station_relay.py",
@@ -369,7 +387,25 @@
       "bytes": 21283,
       "sha256": "02a8363f976f495fd3a809a3eeba19cb15eba3378325ff7f065d0be295e50fda",
       "origin": "publication-guide-or-verification"
+    },
+    {
+      "path": "verification/source-sync-20261115/VERIFICATION.md",
+      "bytes": 4356,
+      "sha256": "1e4da5394ca44d3d20a9e00f63da212f9b9ad303e2260c4283f4c6284b96145f",
+      "origin": "mac-source-sync-20261115"
+    },
+    {
+      "path": "verification/source-sync-20261115/receipts.json",
+      "bytes": 4370,
+      "sha256": "9be2276601a1fbf29eeb7b04b180ae856158247fe2f16c9777fe8380833b6fbb",
+      "origin": "mac-source-sync-20261115"
+    },
+    {
+      "path": "verification/source-sync-20261115/verification.json",
+      "bytes": 1464,
+      "sha256": "5511539d50756e45f181746ff5bf0fef2176088758fe560381bfd2dfa576e409",
+      "origin": "mac-source-sync-20261115"
     }
   ],
-  "updatedAt": "2026-11-15T05:34:17.596581+00:00"
+  "updatedAt": "2026-11-15T06:33:46.630346+00:00"
 }
