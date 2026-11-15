@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-11-15T03:41:20.484532+01:00",
+  "scope": "Jose-first takeover",
+  "status": "reviewed source ready for transfer",
+  "local_source_ready": true,
+  "current_intel_source_received": true,
+  "current_intel_source_scope": "17 exact API/records/import-closure/test files frozen 2026-11-15T02:29:40.570489+00:00; not the complete Intel project",
+  "current_intel_mission_inventory_received": true,
+  "current_intel_mission_api_implemented": false,
+  "request_id": "00e34e99-cfc8-47bf-ab5d-1d029242f841",
+  "transfer_id": "8dfe841b-f157-469d-84fe-7586cdcd583f",
+  "bundle_sha256": "f79c9426e361721aa63aa61038a93cbe1799d63e4a93501858a68112ea553e1b",
+  "verification": {
+    "mac_lab_python_passed": 124,
+    "voice_js_groups_passed": 7,
+    "mac_smoke_passed": 11,
+    "incoming_intel_tests_passed": 56,
+    "incoming_network_attempts": 0,
+    "incoming_provider_attempts": 0
+  },
+  "archive_inventory": "PACKAGE_CONTENTS.json is added inside the sealed ZIP; its external report records archive SHA-256 and byte verification",
+  "remaining": [
+    "Implement and agree the Intel mission API/skill interface with Intel",
+    "Build production operator chat and mission client on Jose",
+    "Use the other team's NVIDIA tunnel when supplied",
+    "Choose voice provider; ElevenLabs remains optional",
+    "Verify actual providers, target deployment and physical outcomes separately"
+  ],
+  "transport": "Jose-Intel NVIDIA tunnel supplied by the other team; Klemen-Intel existing MCP"
+}
