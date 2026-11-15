@@ -1,7 +1,7 @@
 {
   "checked_at": "2026-11-15T03:41:20.484532+01:00",
   "scope": "Jose control partition in the Morph Git repository",
-  "status": "reviewed source imported locally; GitHub publication not yet verified",
+  "status": "published to GitHub; ready for Jose development",
   "local_source_ready": true,
   "current_intel_source_received": true,
   "current_intel_source_scope": "17 exact API/records/import-closure/test files frozen 2026-11-15T02:29:40.570489+00:00; not the complete Intel project",
@@ -33,8 +33,14 @@
     "remote": "git@github.com:20261113-hack-FI-18-ESP-Junction/morph.git",
     "clone_https": "https://github.com/20261113-hack-FI-18-ESP-Junction/morph.git",
     "partition": "Jose control, chat and voice; separate Intel records reference",
-    "publication_status": "authenticated as klemensemelbauer with push permission; first push verification pending",
+    "publication_status": "published and verified on GitHub",
     "origin_workspace_path": "handoff/three-host-20261115/jose-control/",
-    "sibling_packages_included": false
+    "sibling_packages_included": false,
+    "published_branch": "main",
+    "initial_publication_verified_at": "2026-11-15T03:54:27.355654+01:00",
+    "initial_published_revision": "dc7254da9132c086095220f441e74f2ef3a84fad",
+    "initial_commit_count": 24,
+    "github_author": "klemensemelbauer",
+    "verification_note": "The initial 24-commit publication was verified before this status-only follow-up commit. Source and test evidence remain unchanged."
   }
 }
