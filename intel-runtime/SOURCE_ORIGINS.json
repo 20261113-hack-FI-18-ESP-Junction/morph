@@ -1389,16 +1389,38 @@
     },
     {
       "path": "source/common/verification/intel-reliability-20261114/README.md",
-      "bytes": 6073,
-      "sha256": "4b79c1f5bf29908e4b4d4214f723a9beef04c3714232d0e8193f3fb70980e1fb",
-      "origin": "intel-current-source",
+      "bytes": 21280,
+      "sha256": "9ba0fc8cf2cde1591a7953e12184140378eb13036a2e89a5446487541cb967b0",
+      "origin": "intel-source-with-documented-adaptation",
       "sourceRootAlias": "common",
       "sourcePath": "verification/intel-reliability-20261114/README.md",
-      "group": "reproduction",
-      "acquisition": "transfer",
+      "group": "analyst-documents",
+      "acquisition": "verified-source-delivery-with-documented-adaptation",
       "additionalLocalReuse": false,
-      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
-      "contentChanged": false
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+      "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
+      "manifestNoteId": "c27a2b68-f36a-5992-93ec-937f91e08c33",
+      "bundleSha256": "b3060b0b47db4a13fc5ee5834eb74367abd4e34e07bd9fe127819a730ce758a2",
+      "baseSha256": "4b79c1f5bf29908e4b4d4214f723a9beef04c3714232d0e8193f3fb70980e1fb",
+      "receivedOriginalSha256": "3b51151883c980845c3f71b8949552fc4164e910a88c5bfa7e86614f4acb536c",
+      "receivedOriginalBytes": 13529,
+      "contentChanged": true,
+      "contentChangedDefinition": "Historical attribution, deployment/source boundary, omitted evidence labels, peer-review/evidence limits and later operating-status context; original measurements, commands and IDs preserved. Current-owner scope attribution and the later reported main-API outage are explicit.",
+      "adaptationEvidencePath": "verification/source-sync-20261115/analyst-documents.json",
+      "previousProvenance": {
+        "path": "source/common/verification/intel-reliability-20261114/README.md",
+        "bytes": 6073,
+        "sha256": "4b79c1f5bf29908e4b4d4214f723a9beef04c3714232d0e8193f3fb70980e1fb",
+        "origin": "intel-current-source",
+        "sourceRootAlias": "common",
+        "sourcePath": "verification/intel-reliability-20261114/README.md",
+        "group": "reproduction",
+        "acquisition": "transfer",
+        "additionalLocalReuse": false,
+        "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+        "contentChanged": false
+      }
     },
     {
       "path": "source/common/verification/intel-reliability-20261114/analyst-browser-regression.mjs",
@@ -1802,6 +1824,28 @@
       "additionalLocalReuse": false,
       "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
       "contentChanged": false
+    },
+    {
+      "path": "source/common/verification/intel-reliability-20261114/DEMO.md",
+      "bytes": 4847,
+      "sha256": "90e07c39feb4ef1d01b7d9f64198b988661cdee44a4db27984a40a9d808f1f17",
+      "origin": "intel-source-with-documented-adaptation",
+      "sourceRootAlias": "common",
+      "sourcePath": "verification/intel-reliability-20261114/DEMO.md",
+      "group": "analyst-documents",
+      "acquisition": "verified-source-delivery-with-documented-adaptation",
+      "additionalLocalReuse": false,
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+      "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
+      "manifestNoteId": "c27a2b68-f36a-5992-93ec-937f91e08c33",
+      "bundleSha256": "b3060b0b47db4a13fc5ee5834eb74367abd4e34e07bd9fe127819a730ce758a2",
+      "baseSha256": null,
+      "receivedOriginalSha256": "4368629424211c0228e80156c38f78185ea6777ee23eb27f05a326cdd433658e",
+      "receivedOriginalBytes": 2751,
+      "contentChanged": true,
+      "contentChangedDefinition": "Historical attribution, deployment/source boundary, omitted evidence labels, peer-review/evidence limits and later operating-status context; original measurements, commands and IDs preserved. Current-owner scope attribution and the later reported main-API outage are explicit.",
+      "adaptationEvidencePath": "verification/source-sync-20261115/analyst-documents.json"
     }
   ],
   "supplementReceiptCheckedAt": "2026-11-15T03:52:30.711459+00:00",
@@ -1830,6 +1874,28 @@
       "exactReceivedFiles": 7,
       "newPaths": 5,
       "updatedPaths": 2
+    },
+    {
+      "group": "analyst-documents",
+      "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+      "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+      "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
+      "manifestNoteId": "c27a2b68-f36a-5992-93ec-937f91e08c33",
+      "bundleSha256": "b3060b0b47db4a13fc5ee5834eb74367abd4e34e07bd9fe127819a730ce758a2",
+      "completionNoteId": "375c54f4-4565-5249-b444-2461278c81cc",
+      "companionSha256": "1d56e46aa4fba08f0791ca015d0d5e774bf0ac1efda317f7b9a98d7cb96e1488",
+      "companionIsReviewMetadataOnly": true,
+      "reviewedAt": "2026-11-15T06:53:49.079197+00:00",
+      "evidencePath": "verification/source-sync-20261115/analyst-documents.json",
+      "sourcePaths": [
+        "source/common/verification/intel-reliability-20261114/README.md",
+        "source/common/verification/intel-reliability-20261114/DEMO.md"
+      ],
+      "receivedSourceFiles": 2,
+      "exactReceivedFiles": 0,
+      "adaptedReceivedFiles": 2,
+      "newPaths": 1,
+      "updatedPaths": 1
     }
   ]
 }

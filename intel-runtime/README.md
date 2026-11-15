@@ -86,3 +86,9 @@ The current source includes analyst report POST and review POST behavior. The ac
 At the separate observation time `2026-11-15T02:25:35+00:00`, the main service on port 8000 lacked analyst routes while the isolated service on 52197 exposed them. Importing this newer source does not update either running service, and their current deployment was not rechecked here.
 
 Remaining acceptance work includes obtaining the missing original tests, configuring and verifying the Intel runtime, deploying and checking the explicit dashboard review/analysis contract end to end, implementing and validating mission/skill execution, and recording actual physical and model evidence. Saved historical reports describe their own runs; no new hardware, model, training, or deployment success is claimed by this handoff.
+
+## Analyst documentation update — November 15, 2026
+
+The [dated Intel analyst report](source/common/verification/intel-reliability-20261114/README.md) and [saved-report walkthrough](source/common/verification/intel-reliability-20261114/DEMO.md) now preserve the producing team's v12 results with explicit Intel-host scope, omitted evidence references and later receiver-stop context. These are annotated historical documents. Their original received hashes, previous package baseline, adopted hashes and exact adaptation scope are recorded in [the documentation review record](verification/source-sync-20261115/analyst-documents.json).
+
+This documentation update does not adopt the pending v12 backend/UI, transfer saved runtime databases, start a service or authorize a new provider call. The original inventory counts and offline verification above describe their dated source snapshots and runs; the current file inventory is the package manifest. The separate audit-portability update and its evidence remain intact. Original source hashes are retained even where document wording has been deliberately annotated.

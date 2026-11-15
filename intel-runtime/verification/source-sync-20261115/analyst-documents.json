@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "group": "analyst-documents",
+  "reviewedAt": "2026-11-15T06:53:49.079197+00:00",
+  "baselineCommit": "9ed988dd763b5724532e97d7808f57a8063e1784",
+  "scope": "Documentation-only adaptation prepared in an isolated copy of committed intel-runtime. No pending v12 application code, runtime database, service operation, provider request or physical acceptance is included.",
+  "sourceDelivery": {
+    "group": "analyst-documents",
+    "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+    "deliveryId": "790c37d0-b5f7-5be9-89bb-3767977c97d7",
+    "transferId": "71c0feb1-1d08-563f-a389-34c6bdd6e4d0",
+    "manifestNoteId": "c27a2b68-f36a-5992-93ec-937f91e08c33",
+    "bundleSha256": "b3060b0b47db4a13fc5ee5834eb74367abd4e34e07bd9fe127819a730ce758a2",
+    "completionNoteId": "375c54f4-4565-5249-b444-2461278c81cc",
+    "companionSha256": "1d56e46aa4fba08f0791ca015d0d5e774bf0ac1efda317f7b9a98d7cb96e1488",
+    "companionIsReviewMetadataOnly": true
+  },
+  "files": [
+    {
+      "path": "source/common/verification/intel-reliability-20261114/README.md",
+      "operation": "edit",
+      "sourcePath": "verification/intel-reliability-20261114/README.md",
+      "baseSha256": "4b79c1f5bf29908e4b4d4214f723a9beef04c3714232d0e8193f3fb70980e1fb",
+      "receivedBytes": 13529,
+      "receivedSha256": "3b51151883c980845c3f71b8949552fc4164e910a88c5bfa7e86614f4acb536c",
+      "adoptedBytes": 21280,
+      "adoptedSha256": "9ba0fc8cf2cde1591a7953e12184140378eb13036a2e89a5446487541cb967b0",
+      "contentChanged": true,
+      "contentChangeScope": "Historical attribution, deployment/source boundary, omitted evidence labels, peer-review/evidence limits and later operating-status context; original measurements, commands and IDs preserved. Current-owner scope attribution and the later reported main-API outage are explicit."
+    },
+    {
+      "path": "source/common/verification/intel-reliability-20261114/DEMO.md",
+      "operation": "add",
+      "sourcePath": "verification/intel-reliability-20261114/DEMO.md",
+      "baseSha256": null,
+      "receivedBytes": 2751,
+      "receivedSha256": "4368629424211c0228e80156c38f78185ea6777ee23eb27f05a326cdd433658e",
+      "adoptedBytes": 4847,
+      "adoptedSha256": "90e07c39feb4ef1d01b7d9f64198b988661cdee44a4db27984a40a9d808f1f17",
+      "contentChanged": true,
+      "contentChangeScope": "Historical attribution, deployment/source boundary, omitted evidence labels, peer-review/evidence limits and later operating-status context; original measurements, commands and IDs preserved. Current-owner scope attribution and the later reported main-API outage are explicit."
+    }
+  ],
+  "adaptations": [
+    {
+      "id": "A1",
+      "purpose": "Date and attribute Intel historical scope and distinguish reported preview from current repository implementation."
+    },
+    {
+      "id": "A2",
+      "purpose": "Convert all 15 omitted README evidence links to exact inline-code Intel-local references; retain working DEMO links."
+    },
+    {
+      "id": "A3",
+      "purpose": "Separate Intel execution/peer scoring claims from exact transferred Mac evidence subset and preserve all measurements."
+    },
+    {
+      "id": "A4",
+      "purpose": "Record later owner-reported receiver stop/logout, date producing-session roles, and separate Generate from saved-report inspection."
+    },
+    {
+      "id": "A5",
+      "purpose": "Keep Studio pause event/observation times and explicit note/source transport lifecycle distinct."
+    },
+    {
+      "id": "A6",
+      "purpose": "Attribute the producing report ElevenLabs wording and cite the recorded November 15 owner direction; current explicit owner instructions govern scope."
+    },
+    {
+      "id": "A7",
+      "purpose": "Add the later attributed main-API outage report with separate observation, SIGTERM and host-check times; recovery remains preparation and no fresh host result is claimed."
+    }
+  ],
+  "omittedIntelLocalReferences": [
+    {
+      "label": "Reported Intel deployment",
+      "original_path": "runs/deployed-03/services.json"
+    },
+    {
+      "label": "promotion evidence",
+      "original_path": "runs/deployed-03/promotion.json"
+    },
+    {
+      "label": "the exact evidence",
+      "original_path": "studio-availability.json"
+    },
+    {
+      "label": "Resume health check",
+      "original_path": "resume-health.json"
+    },
+    {
+      "label": "Watcher evidence",
+      "original_path": "watcher/verification.json"
+    },
+    {
+      "label": "Exact command, counts and hashes",
+      "original_path": "backend-integrated-final-v12.json"
+    },
+    {
+      "label": "the portability checkpoint",
+      "original_path": "audit-fixture-portability-20261115/CHECKPOINT.json"
+    },
+    {
+      "label": "nine Chromium fault/reconnect/navigation checks",
+      "original_path": "analyst-regression-2026-11-15T06-03-52-585Z/browser-results.json"
+    },
+    {
+      "label": "review-01",
+      "original_path": "runs/review-01/semantic-review-v9.md"
+    },
+    {
+      "label": "historical v11 four-case hosted review",
+      "original_path": "runs/review-03/semantic-review-v11.md"
+    },
+    {
+      "label": "historical v11 browser request",
+      "original_path": "deployed-browser-inference-2026-11-15T05-46-18-937Z/browser-results.json"
+    },
+    {
+      "label": "Strict independent review",
+      "original_path": "deployed-browser-inference-2026-11-15T05-46-18-937Z/independent-semantic-review-final.json"
+    },
+    {
+      "label": "Fresh validation of the unchanged original response",
+      "original_path": "audit-language-v12-20261115/root-original-report-revalidation.json"
+    },
+    {
+      "label": "backend checkpoint",
+      "original_path": "audit-language-v12-20261115/CHECKPOINT.json"
+    },
+    {
+      "label": "Intel UI peer review",
+      "original_path": "runs/review-04/semantic-review-v12.md"
+    }
+  ],
+  "preservationChecks": {
+    "README.md": {
+      "all_preserved": true,
+      "counts": {
+        "inline_code_or_identifier_spans": 22,
+        "urls": 1,
+        "uuids": 3,
+        "numeric_literals": 88
+      },
+      "missing": {
+        "inline_code_or_identifier_spans": [],
+        "urls": [],
+        "uuids": [],
+        "numeric_literals": []
+      }
+    },
+    "DEMO.md": {
+      "all_preserved": true,
+      "counts": {
+        "inline_code_or_identifier_spans": 11,
+        "urls": 1,
+        "uuids": 4,
+        "numeric_literals": 8
+      },
+      "missing": {
+        "inline_code_or_identifier_spans": [],
+        "urls": [],
+        "uuids": [],
+        "numeric_literals": []
+      }
+    }
+  },
+  "documentLinks": {
+    "passed": true,
+    "checks": [
+      {
+        "file": "source/common/verification/intel-reliability-20261114/README.md",
+        "line": 85,
+        "target": "../../../../AGENTS.md",
+        "exists": true,
+        "anchorExists": true,
+        "passed": true
+      },
+      {
+        "file": "source/common/verification/intel-reliability-20261114/DEMO.md",
+        "line": 3,
+        "target": "README.md#portable-publication-scope",
+        "exists": true,
+        "anchorExists": true,
+        "passed": true
+      },
+      {
+        "file": "source/common/verification/intel-reliability-20261114/DEMO.md",
+        "line": 17,
+        "target": "README.md",
+        "exists": true,
+        "anchorExists": true,
+        "passed": true
+      },
+      {
+        "file": "source/common/verification/intel-reliability-20261114/DEMO.md",
+        "line": 27,
+        "target": "README.md#later-operating-status-reports",
+        "exists": true,
+        "anchorExists": true,
+        "passed": true
+      }
+    ],
+    "externalNetworkChecked": false
+  },
+  "evidenceAttribution": {
+    "producerRunClaims": "308 station / 64 frontend / 9 browser checks; original run logs remain Intel-local.",
+    "producerPeerClaims": "G1 10/10 and G2 4/4 model propositions; 117 captured fields; selected simulation cases only.",
+    "availableMacReview": "Exact reply subsets with 66 cited fields; 64 matched original M16 records, 2 other-session fields corroborated by prior report data. 51 uncited fields and full scoring/full-report artifacts are absent.",
+    "actualResponseNoteIds": [
+      "b2492405-46b8-5a91-ab0b-bd41d4784daa",
+      "9d74cb13-9bfa-54c8-8907-166d35ede934"
+    ],
+    "finalIntelNoteId": "c5f5f179-5217-5cdb-96f9-8aef7641ccf0",
+    "laterOperatingStatusNoteId": "be57f4f6-4f20-479e-bcb6-2164b85bae1b",
+    "originalSimulationExportSha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8",
+    "latestOperatingStatus": {
+      "noteId": "334eb852-954d-49e6-a7c7-90e250b27c85",
+      "canonicalNoteSha256": "01d419c6e7b1eda813e0407bd3fb3424785a376a25f7389de9fea4866f38692e",
+      "observedAt": "2026-11-15T06:45:47.972916+00:00",
+      "savedAt": "2026-11-15T06:45:49.547539+00:00",
+      "reportedSigtermAt": "2026-11-15T06:36:26.816413+00:00",
+      "reportedHostCheckAt": "2026-11-15T06:39:33+00:00",
+      "reportedMainApi": "No port 8000 listener or health; old process remained; controlled recovery preparation only.",
+      "independentHostVerification": false
+    }
+  },
+  "packageValidationScope": "The package validator only reads sealed bytes and provenance. Final validation is recorded separately by the publication workflow to avoid a self-referential evidence hash.",
+  "publicationBoundary": "This record documents source review and adaptation. A commit, verified remote publication and any service deployment are distinct later states.",
+  "ownerDirectionReferences": [
+    {
+      "source": "canonical workspace AGENTS.md",
+      "section": "Owner architecture update — November 15, 2026",
+      "bytes": 23380,
+      "sha256": "721f1a2e56b4fe6a89e3fd0bf1bb23f520ecaeaefb53f3935f05516e05cd7037"
+    },
+    {
+      "source": "canonical workspace context/THREE_HOST_ARCHITECTURE.md",
+      "bytes": 7609,
+      "sha256": "ced825ce848ec6a8f3e707072b19d40a707fe2a809113843ffe16a8135fb4b4a"
+    },
+    {
+      "source": "intel-runtime/AGENTS.md",
+      "recordedDirection": "November 15, 2026",
+      "bytes": 1833,
+      "sha256": "e778db04735f075f2108da569ccc7c80ef865d884e7f3b5330af525beefcf3a1"
+    }
+  ],
+  "ownerDirectionRule": "The producing report is historical attribution. Current explicit owner instructions govern requirements; no provider substitution is selected by this document."
+}
