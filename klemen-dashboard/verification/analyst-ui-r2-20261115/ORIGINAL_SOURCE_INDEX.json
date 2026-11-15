@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-15T09:21:16.796072+00:00",
+  "baselineCommit": "2f7efc2a3badecefab278c76a515738ffc2a09e0",
+  "deliveryId": "2aebe862-3a13-52d9-b1cd-facac6670fc2",
+  "requestId": "028a574e-76f4-4874-928f-b7f20bb02aa9",
+  "transferId": "8ccb5434-a3bf-5f5d-acd3-f8b50a1652aa",
+  "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+  "originalSourceFiles": 6,
+  "originalSourceBytes": 139454,
+  "sourceExecuted": false,
+  "files": [
+    {
+      "path": "original-source/SOURCE_DELIVERY.json",
+      "sourcePath": "SOURCE_DELIVERY.json",
+      "bytes": 25811,
+      "sha256": "bedd3a67a01106dc66edac2d19b4e06f796d1db4528a770a108d1971aa7c6c6e"
+    },
+    {
+      "path": "original-source/morph-station/src/analysis/EvidenceAnalystPanel.tsx",
+      "sourcePath": "morph-station/src/analysis/EvidenceAnalystPanel.tsx",
+      "bytes": 36010,
+      "sha256": "dfb39466e8346e960216e960584ee51fb23485946b262aa0fd8e44cae502dc43"
+    },
+    {
+      "path": "original-source/morph-station/src/analysis/README.md",
+      "sourcePath": "morph-station/src/analysis/README.md",
+      "bytes": 9551,
+      "sha256": "e0b41229cd16615f098811cd74975899688fa50ffbc6c917a251c5ce3d10fb6a"
+    },
+    {
+      "path": "original-source/morph-station/src/analysis/analysis.test.tsx",
+      "sourcePath": "morph-station/src/analysis/analysis.test.tsx",
+      "bytes": 40509,
+      "sha256": "c7190f029b7c418426e134605c04fb882dd117871aceb42b66029eb3777d7c1b"
+    },
+    {
+      "path": "original-source/morph-station/src/analysis/audit.ts",
+      "sourcePath": "morph-station/src/analysis/audit.ts",
+      "bytes": 3185,
+      "sha256": "e7dbbb73aef8bc3aa3736e303b7868c9f6a4924bd2415ff4f203a039c67f5e83"
+    },
+    {
+      "path": "original-source/verification/intel-reliability-20261114/analyst-browser-regression.mjs",
+      "sourcePath": "verification/intel-reliability-20261114/analyst-browser-regression.mjs",
+      "bytes": 24388,
+      "sha256": "110f0537a3a5b44218107411ebc79ebac145b510a886ba6c6e6f67119d2567b4"
+    },
+    {
+      "path": "TRANSFER_MANIFEST.json",
+      "sourcePath": ".junction-setup/source-sync/incoming/2aebe862-3a13-52d9-b1cd-facac6670fc2/attempts/f0efb673-ab5a-45cb-a27d-ab48b903933d/transfers/8ccb5434-a3bf-5f5d-acd3-f8b50a1652aa/manifest.json",
+      "bytes": 450,
+      "sha256": "c391472a520cdc66c29067db1323e1af16a4aaeecb21c87a92248685d06d73f8"
+    },
+    {
+      "path": "TRANSFER_REPORT.json",
+      "sourcePath": ".junction-setup/source-sync/incoming/2aebe862-3a13-52d9-b1cd-facac6670fc2/attempts/f0efb673-ab5a-45cb-a27d-ab48b903933d/transfers/8ccb5434-a3bf-5f5d-acd3-f8b50a1652aa/report.json",
+      "bytes": 1308,
+      "sha256": "f7eda3ae3bd1a560b3ca6db77e5583e8d6ecc2b4589a3ff4bc7eefec14fed3af"
+    },
+    {
+      "path": "INTAKE_RECEIPT.json",
+      "sourcePath": ".junction-setup/source-sync/incoming/2aebe862-3a13-52d9-b1cd-facac6670fc2/receipt.json",
+      "bytes": 1271,
+      "sha256": "01d847900fd82070cdc258c277d51e64a25f81ae9da90603cd103a0f38b607bb"
+    }
+  ],
+  "limitations": [
+    "Exact historical source and immutable receipt only; no deployment or physical acceptance.",
+    "SOURCE_DELIVERY targetPath proposals were not applied wholesale.",
+    "Historical browser harness requires excluded installed tools and runtime artifacts and has not been run here.",
+    "Active adaptation and its checks are separately recorded; original manifests remain unchanged."
+  ]
+}
