@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-15T02:35:47.871883+00:00",
+  "pytestExitCode": 0,
+  "providerAttempts": 0,
+  "outboundSocketAttempts": 0,
+  "stubStatuses": {
+    "/api/v1/commands": 503,
+    "/api/v1/voice/token": 503,
+    "/api/v1/voice/utterances": 503
+  },
+  "source": "/Users/klemensemelbauer/Desktop/MyStuff/Projects/Junction_Finska/HachingJunction/handoff/three-host-20261115/incoming/intel-jose-8dfe841b/source",
+  "scope": "Imported source in isolated temporary data, with network/provider execution blocked. Not Intel runtime or physical verification."
+}

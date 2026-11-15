@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-15T02:35:47.864902Z",
+  "lastEventSequence": 0,
+  "session": null,
+  "cycle": null,
+  "activeCycleIds": [],
+  "sourceMode": null,
+  "stateVersion": 0,
+  "goalVersion": null,
+  "goal": null,
+  "availableActions": [],
+  "capabilities": {
+    "robot": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "cameras": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "anomalib": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "nemotron": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "gemini": {
+      "status": "unavailable",
+      "verified": false
+    },
+    "elevenlabs": {
+      "status": "unavailable",
+      "verified": false
+    }
+  },
+  "metrics": {
+    "filters": {
+      "sessionId": null,
+      "includeSimulation": false,
+      "includedSessionIds": []
+    },
+    "cycles": {
+      "correct": 0,
+      "failed": 0,
+      "aborted": 0,
+      "unverified": 0,
+      "in_progress": 0,
+      "total": 0,
+      "finished": 0,
+      "inProgress": 0
+    },
+    "attempts": {
+      "successful": 0,
+      "failed": 0,
+      "aborted": 0,
+      "unverified": 0,
+      "in_progress": 0,
+      "total": 0,
+      "finished": 0,
+      "inProgress": 0
+    },
+    "endToEnd": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "definition": "Confirmed correct cycles / all finished cycles",
+      "filters": {
+        "sessionId": null,
+        "includeSimulation": false,
+        "includedSessionIds": []
+      }
+    },
+    "physicalExecution": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null,
+      "definition": "Confirmed successful attempts / all finished attempts",
+      "filters": {
+        "sessionId": null,
+        "includeSimulation": false,
+        "includedSessionIds": []
+      }
+    },
+    "firstAttemptSuccesses": 0,
+    "recoveredCycles": 0,
+    "retries": 0,
+    "additionalInspections": 0,
+    "currentStreak": 0,
+    "longestStreak": 0,
+    "detection": {
+      "correct": 0,
+      "checked": 0,
+      "totalPopulation": 0,
+      "unresolved": 0,
+      "confusionMatrix": {
+        "truePositive": 0,
+        "trueNegative": 0,
+        "falsePositive": 0,
+        "falseNegative": 0
+      },
+      "rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "definition": "Correct decision inspections / reference-labeled decision inspections",
+        "filters": {
+          "sessionId": null,
+          "includeSimulation": false,
+          "includedSessionIds": []
+        }
+      },
+      "defectEscape": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null,
+        "definition": "Predicted good / checked defective references",
+        "filters": {
+          "sessionId": null,
+          "includeSimulation": false,
+          "includedSessionIds": []
+        }
+      }
+    },
+    "timings": {
+      "fullCycle": {
+        "sampleCount": 0,
+        "valuesMs": [],
+        "method": "Persisted endedAt minus startedAt, including waiting and retries"
+      }
+    }
+  }
+}
