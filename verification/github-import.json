@@ -1,0 +1,33 @@
+{
+  "verifiedAt": "2026-11-15T03:52:18.535344+01:00",
+  "repository": "https://github.com/20261113-hack-FI-18-ESP-Junction/morph",
+  "checkedRevision": "0bea54dfdd4b7abe708f1caea62b30016be71896",
+  "sourceRevisionAtTestStart": "066c03060e5457d2f5aede22cdb6b90f747d876f",
+  "scope": "Local relocated Git checkout; subsequent changes are repository documentation only",
+  "macLab": {
+    "tests": 124,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "intelReference": {
+    "tests": 56,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "voiceBrowserGroupsPassed": 7,
+  "launcherSyntaxPassed": true,
+  "launcherHelpPassed": true,
+  "runtimeDirectoryCreated": false,
+  "originalManifestEntriesMatched": 43,
+  "providerCredentialsRemovedForPythonRuns": true,
+  "physicalVerification": false,
+  "liveProviderVerification": false,
+  "notes": [
+    "Original source and historical evidence were preserved.",
+    "The voice harness writes its JSON output; the new result was saved separately and the original recorded output restored.",
+    "The earlier incoming Intel audit used network/provider guards; these new runs used the already reviewed isolated suites with provider credentials removed.",
+    "These commits record the current repository import; earlier implementation and test dates remain in the source manifests."
+  ]
+}

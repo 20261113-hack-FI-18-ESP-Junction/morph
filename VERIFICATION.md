@@ -34,3 +34,11 @@ All 21 transfer chunks reconstructed **17 current Intel files / 230,799 source b
 The subsequent [independent audit](intel-contract/verification/REVIEW.md), checked **03:35:47.871883 CET**, verified all 22 relative imports and passed **56 store/review tests** with provider credentials removed and outbound socket/provider guards. Both attempt counts remained zero. It confirmed three command/voice HTTP 503 stubs, null goal state, empty action list and zero sessions/events in temporary data. Generated [OpenAPI](intel-contract/verification/current-source-openapi.json) and [record schema](intel-contract/verification/current-source-record-schema.json) describe these received source bytes on Mac; they are not live Intel service captures.
 
 Intel's delivery note `1717cf39-0221-4966-aafe-e5b2b963ceaf` separately reports 72 tests on its target, including 16 API tests that were not transferred. The locally verified count for the incoming source remains 56. The excluded API fixture and pytest configuration do not break the received runtime import closure. Live target deployment, mission dispatch and physical acceptance remain unverified by these software checks.
+
+## Git repository import verification
+
+Verified at **2026-11-15T03:52:18.535344+01:00** (Europe/Ljubljana) in a fresh local checkout of the Morph repository. All 26 Mac source entries and 17 Intel source entries still match their original manifests. The application code is unchanged from the imported handoff.
+
+The relocated Mac suite passed **124 tests**, the separate Intel reference suite passed **56 tests**, and the offline browser harness passed **seven groups**. Launcher syntax and `--help` passed without creating runtime data. Provider credentials were removed for the Python processes. This was a software check with temporary data, not a live provider, Intel service, tunnel or physical test.
+
+Results: [import report](verification/github-import.json), [Mac JUnit](verification/mac-import-tests.xml), [Intel JUnit](verification/intel-import-tests.xml) and [voice harness](verification/voice-import-tests.json). Original evidence remains unchanged. The import report distinguishes these checks from the earlier guarded Intel audit.
