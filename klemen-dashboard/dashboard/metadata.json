@@ -1,0 +1,6 @@
+{
+  "name": "Morph",
+  "description": "Voice-directed Physical AI quality-inspection and sorting station dashboard for an SO-101 robot handling Duplo bricks.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

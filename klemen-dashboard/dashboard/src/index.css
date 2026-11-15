@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face { font-family: "Inter"; src: url("/assets/fonts/inter.ttf") format("truetype"); font-display: swap; font-weight: 100 900; }
+@font-face { font-family: "Space Mono"; src: url("/assets/fonts/space-mono.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "Cormorant Garamond"; src: url("/assets/fonts/cormorant-italic.ttf") format("truetype"); font-display: swap; font-style: italic; }
+
+.skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 100; padding: .7rem 1rem; background: #F2EEE6; color: #080808; border-radius: 4px; }
+.skip-link:focus { top: 1rem; }
+
+:root {
+  --bg: #080808;
+  --panel: #101010;
+  --raised: #171715;
+  --border: #252421;
+  --text: #F2EEE6;
+  --muted: #A7A39A;
+  --bronze: #C7A477;
+  --green: #91B99C;
+  --amber: #D6B775;
+  --red: #E36363;
+  --stop: #B72F35;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: "Space Mono", monospace;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.font-mono-tech {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+  font-style: italic;
+}
+
+.orbital-motion {
+  transform: rotate(-4deg);
+}
+
+.copernicus-engraving {
+  filter: grayscale(1) sepia(0.55) contrast(1.05);
+  opacity: 0.16;
+  border-radius: 9999px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+
+button:focus-visible,
+a:focus-visible,
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--bronze);
+  outline-offset: 2px;
+}
+
