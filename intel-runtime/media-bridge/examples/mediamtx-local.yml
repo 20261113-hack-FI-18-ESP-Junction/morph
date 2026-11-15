@@ -1,0 +1,43 @@
+# Template only. Generate private credentials with tools/prepare_synthetic.py.
+# All listeners are local. No browser-reachable network address is assumed.
+logLevel: warn
+logDestinations: [stdout]
+authMethod: internal
+authInternalUsers:
+  - user: any
+    pass: ""
+    ips: [127.0.0.1, "::1"]
+    permissions:
+      - action: publish
+        path: inspection
+  - user: morph-viewer
+    pass: REPLACE_WITH_PRIVATE_GENERATED_PASSWORD
+    ips: []
+    permissions:
+      - action: read
+        path: inspection
+api: false
+metrics: false
+pprof: false
+playback: false
+rtmp: false
+hls: false
+srt: false
+moq: false
+rtsp: true
+rtspAddress: 127.0.0.1:8554
+rtspTransports: [tcp]
+webrtc: true
+webrtcAddress: 127.0.0.1:8889
+webrtcEncryption: false
+webrtcAllowOrigins: []
+webrtcLocalUDPAddress: 127.0.0.1:8189
+webrtcLocalTCPAddress: ""
+webrtcIPsFromInterfaces: false
+webrtcAdditionalHosts: [127.0.0.1]
+webrtcICEServers2: []
+pathDefaults:
+  source: publisher
+  overridePublisher: false
+paths:
+  inspection: {}

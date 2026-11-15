@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-15T06:30:36.366545+00:00",
+  "sourceMode": "simulation",
+  "python": "3.12.13",
+  "dependencies": {
+    "websockets": "17.4",
+    "Pillow": "13.0.0"
+  },
+  "tests": {
+    "run": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "softwareEncoder": {
+    "attempted": true,
+    "encoder": "libx264",
+    "ffmpegExit": 0,
+    "ffprobeExit": 0,
+    "stream": {
+      "codec_name": "h264",
+      "profile": "Constrained Baseline",
+      "width": 640,
+      "height": 480,
+      "has_b_frames": 0,
+      "nb_read_frames": "8"
+    },
+    "verified": false,
+    "wallClockFilterPts": true,
+    "timestampTimeBase": "1/90000",
+    "validationContainer": "nut",
+    "decodedPtsSeconds": [
+      0.0,
+      0.065744,
+      0.1303,
+      0.399756,
+      0.466711,
+      0.532533,
+      0.600244,
+      0.600656
+    ],
+    "decodedPtsDeltasSeconds": [
+      0.066,
+      0.065,
+      0.269,
+      0.067,
+      0.066,
+      0.068,
+      0.0
+    ],
+    "deliberateInputPauseSeconds": 0.2,
+    "timelineGapPreserved": false,
+    "inputReceiptTimesRelativeSeconds": [
+      0.0,
+      0.071,
+      0.138,
+      0.203,
+      0.472,
+      0.539,
+      0.605,
+      0.672
+    ],
+    "configuredBitrateKbps": 1500,
+    "outputBytes": 29496,
+    "sha256": "22625b1c71e50a61517f51c743efbbd2cc6630ac32f326cbce769170ec855f81",
+    "temporaryOutputRemoved": true
+  },
+  "realCameraOpened": false,
+  "physicalVerification": false,
+  "mediaMtxIntegrationTested": false,
+  "networkScope": "loopback fixture WebSocket and status HTTP tests only",
+  "sourceHashes": {
+    ".gitignore": "316461e660d85aeb8a58758527acdfb9b402ac441b030dfe98a9cab6c60d49de",
+    "README.md": "5ac38305d5dbf158c9a79e4d065fe953852b0d1b0b00791d2a68a06fc377eaa3",
+    "examples/mediamtx-local.yml": "cebfaee2dd9865f89bd5b83fb6b2eabb34d9602b49f7e67959d1679c7aadbbe3",
+    "examples/studio.json": "1ddacb0f815eead6358a53f9127844b12cbf6e90d86c149ae164014bd577e17d",
+    "examples/synthetic.json": "2142f4267688d83439989e07e86a54f604bfa800b7a5e459ee0bd7898078ec6b",
+    "morph_media_bridge/__init__.py": "73e61505373677432bd4b07e86856eb6bb7ebc95353fef4b851d75d14633b2bc",
+    "morph_media_bridge/__main__.py": "6125f687251fb67f147fe3bec3f8e5ec8b855c6198f3e356de0cbd20d8c279c1",
+    "morph_media_bridge/config.py": "64da2b5419925014744bd2520cd1327048615cf308ec5f3a856257800e2abbc0",
+    "morph_media_bridge/frames.py": "9a9f8ee32ef1b2afcb7946ce858ad8360fb8e328620af9e87bbe1a77ac997c75",
+    "morph_media_bridge/http_status.py": "93e0af504ee7f6a37861f9754b60e4da175600f15979425ea5db751a06243c3b",
+    "morph_media_bridge/publisher.py": "ba7e0a28f8b557a9bbad332ef25b478bf92ee18758dbe8d11ee76a8660dc12d7",
+    "morph_media_bridge/source.py": "d07e701db45269ed397e8d37bc73fe51caaa24e075128b8e6e9c0172da102982",
+    "requirements.txt": "878ac09be077c1635192c226b6de45a3bac015f90e5d4b84b85ee67e4e705a93",
+    "tests/test_bridge.py": "1a242920d07e845f07fa04f548e5706b8d0eb9a63560fe932799cac3efda6d42",
+    "tools/prepare_synthetic.py": "7bc45c5256c20b9c336d15eae3d60bd0c0e2d8802ac50be124820557119e9dd5",
+    "tools/read_status.py": "49d3f3b34f6be429ee265501a144641b1a97170aef7124bde5cc888edecad945",
+    "tools/verify_offline.py": "538a522131724545aeb3b4e592ca1011e5f9ca9cb6c6407ae8f5bfd7111adbdb",
+    "tools/verify_rtsp.py": "8e01137871b64a6d95a0cedbcc5b230f8cf2b6436a0725fded10277744031a78"
+  }
+}

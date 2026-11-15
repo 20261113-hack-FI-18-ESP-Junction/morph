@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "cameraId": "inspection-camera-explicit-id",
+  "streamId": "inspection",
+  "sourceMode": "live",
+  "inputMode": "studio",
+  "profile": {"width": 640, "height": 480, "fps": 15},
+  "studio": {
+    "baseUrl": "ws://127.0.0.1:3000",
+    "camera": {
+      "name": "REPLACE_WITH_EXISTING_STUDIO_CAMERA_NAME",
+      "hardware_name": "REPLACE_WITH_EXISTING_STUDIO_HARDWARE_NAME",
+      "driver": "REPLACE_WITH_EXISTING_STUDIO_DRIVER",
+      "fingerprint": {},
+      "payload": {"width": 640, "height": 480, "fps": 30}
+    }
+  },
+  "publisher": {"ffmpeg": "ffmpeg", "rtspUrl": "rtsp://127.0.0.1:8554/inspection", "encoder": "libx264", "bitrateKbps": 1500},
+  "status": {"host": "127.0.0.1", "port": 8790, "tokenFile": "../.runtime/status.token"},
+  "runtimeDir": "../.runtime/bridge"
+}

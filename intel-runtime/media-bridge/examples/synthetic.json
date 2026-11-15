@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "cameraId": "synthetic-inspection",
+  "streamId": "inspection",
+  "sourceMode": "simulation",
+  "inputMode": "synthetic",
+  "profile": {"width": 640, "height": 480, "fps": 15},
+  "publisher": {"ffmpeg": "ffmpeg", "rtspUrl": "rtsp://127.0.0.1:8554/inspection", "encoder": "libx264", "bitrateKbps": 1500},
+  "status": {"host": "127.0.0.1", "port": 8790, "tokenFile": "../.runtime/status.token"},
+  "runtimeDir": "../.runtime/bridge",
+  "limits": {"maxJpegBytes": 2097152, "maxReceiptAgeMs": 300, "writeTimeoutMs": 250, "sourceTimeoutMs": 3000, "reconnectMinMs": 250, "reconnectMaxMs": 5000}
+}

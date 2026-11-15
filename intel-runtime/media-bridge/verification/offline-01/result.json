@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-15T05:50:12.765807+00:00",
+  "sourceMode": "simulation",
+  "python": "3.12.13",
+  "dependencies": {
+    "websockets": "17.4",
+    "Pillow": "13.0.0"
+  },
+  "tests": {
+    "run": 19,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "softwareEncoder": {
+    "attempted": true,
+    "encoder": "libx264",
+    "ffmpegExit": 0,
+    "ffprobeExit": 0,
+    "stream": {
+      "codec_name": "h264",
+      "profile": "Constrained Baseline",
+      "width": 640,
+      "height": 480,
+      "has_b_frames": 0,
+      "nb_read_frames": "8"
+    },
+    "verified": true,
+    "outputBytes": 21088,
+    "sha256": "663a2c37d7c1bf9fd376eafc23427833320f05bc0eb202908d6e825b5cefebb3",
+    "temporaryOutputRemoved": true
+  },
+  "realCameraOpened": false,
+  "physicalVerification": false,
+  "mediaMtxIntegrationTested": false,
+  "networkScope": "loopback fixture WebSocket and status HTTP tests only",
+  "sourceHashes": {
+    ".gitignore": "316461e660d85aeb8a58758527acdfb9b402ac441b030dfe98a9cab6c60d49de",
+    "examples/mediamtx-local.yml": "1ae9c44c612d67cfcb4ac4d89a7bd65d5049266bd1786753c05450796ff514e2",
+    "examples/studio.json": "61a8dfe0d15239552523a8417ec672ac2812840a3ca0297fb93699eecfa51a7c",
+    "examples/synthetic.json": "fdd25a3d5f52702a190487978ad512257cb3b5f22431f37764844027225ffa4e",
+    "morph_media_bridge/__init__.py": "73e61505373677432bd4b07e86856eb6bb7ebc95353fef4b851d75d14633b2bc",
+    "morph_media_bridge/__main__.py": "6125f687251fb67f147fe3bec3f8e5ec8b855c6198f3e356de0cbd20d8c279c1",
+    "morph_media_bridge/config.py": "70575889e1e3a9fea49918bd9c67ab6ccc81aa6c18a46c39ac55192c6b8f6b3f",
+    "morph_media_bridge/frames.py": "614d2b0ccb783936708d82a5c20bf51696e40511c0eb0b5a5d1441552547ff9d",
+    "morph_media_bridge/http_status.py": "93e0af504ee7f6a37861f9754b60e4da175600f15979425ea5db751a06243c3b",
+    "morph_media_bridge/publisher.py": "e9242d4cd123cd2dd4c6fd5d8d45e420818761a3642249229b231e37affaba0d",
+    "morph_media_bridge/source.py": "57a6e7fd4f473e5921d1a0e04685454d04277b1edaa858d24c5135c3e8001404",
+    "requirements.txt": "878ac09be077c1635192c226b6de45a3bac015f90e5d4b84b85ee67e4e705a93",
+    "tests/test_bridge.py": "61ec802ad45db09dd99a478672605c8200f7b930e7de319753556911738321d7",
+    "tools/prepare_synthetic.py": "7bc45c5256c20b9c336d15eae3d60bd0c0e2d8802ac50be124820557119e9dd5",
+    "tools/verify_offline.py": "7bd7e74e7823c02f6dfed651cbdb62ae9fcb60c9b9cf14b3deaa8903b4883fa4"
+  }
+}
