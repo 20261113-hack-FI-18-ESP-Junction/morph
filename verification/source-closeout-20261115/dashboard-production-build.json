@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-11-15T09:29:28.783588+00:00",
+  "scope": "Production build of frozen dashboard source; no service or browser action",
+  "command": "Prepared node node_modules/vite/bin/vite.js build",
+  "workingDirectory": "github/morph/klemen-dashboard/dashboard",
+  "exitCode": 0,
+  "viteVersion": "8.3.8",
+  "modulesTransformed": 1690,
+  "reportedBuildMs": 229,
+  "observedGitHead": "7521ef32275d8e5f44889ffbf7dc2f58648692eb",
+  "frozenPublicationPlanSha256": "664b130d56f67c4a5312fbb18c257cd57bf49ff3af58734ec9e1d6052045e6b4",
+  "frozenFilesRechecked": 19,
+  "frozenFileHashMismatches": [],
+  "log": {
+    "path": "context/verification/server-closeout-20261115/dashboard-production-build.txt",
+    "bytes": 657,
+    "sha256": "4a434e432ae1529ae031ede3777c16a10ac21fb71559fde43a1fd79e3dd40c76"
+  },
+  "buildOutputs": [
+    {
+      "path": "klemen-dashboard/dashboard/dist/assets/aistudio/app_75c07165.js",
+      "bytes": 26787,
+      "sha256": "75c07165064d9a36cba9e509488c9f2afa902a1b1f7844f91428e384a5177082"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/dist/assets/aistudio/styles_181bfa69.css",
+      "bytes": 24089,
+      "sha256": "181bfa691b1822471ea515c2d599bcbcfb37af621d531c1543be0979ab293895"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/dist/assets/index-CTv1_ugZ.js",
+      "bytes": 438865,
+      "sha256": "64c5b6f24f2835eeb7ce2f9e3acbfd10a727ac2c76bc078bb4373471ffc6ac3f"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/dist/assets/index-UJ7ppCwI.css",
+      "bytes": 48234,
+      "sha256": "4f3b0f94f8f92a933b12a5a0e26a41a22c27aa958f798a3922d0f33262f28097"
+    },
+    {
+      "path": "klemen-dashboard/dashboard/dist/index.html",
+      "bytes": 1177,
+      "sha256": "7e07f512bc9615bcabd7d77f4e480c093ca303561b7cf585a7b8bfaaee21c0a9"
+    }
+  ],
+  "warning": "Existing vite.config.ts uses __dirname, unsupported by a future planned native config loader default. Current production build succeeded.",
+  "sourceEdited": false,
+  "serviceChanges": false,
+  "signalsSent": false,
+  "limitations": [
+    "Compiled bundle only; no deployment, browser, provider or physical validation.",
+    "Build output is generated and ignored; frozen source, plan and committed evidence remain unchanged."
+  ]
+}
