@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "requestIds": [
+    "d5315791-6749-4b01-97b5-1b9357306487",
+    "b71f04ec-67da-47c2-9bd8-7d0df7a46ad3"
+  ],
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "agent": "/root/adoption_station",
+  "reporter": "/root",
+  "observedAt": "2026-11-15T07:22:10.809408+00:00",
+  "scope": "Documentation-only source-policy reconciliation and narrow incoming review acknowledgments. No network calls, service, provider or hardware operations.",
+  "changes": [
+    {
+      "path": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "beforeSha256": "81549287801b39fad9312701d2f7cd6acd71f62586000db25910ec805f0fe31e",
+      "afterSha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "decision": "Merged exactly twelve added lines; no removed or modified existing lines; final bytes equal verified shared policy.",
+      "insertedLines": 12
+    },
+    {
+      "path": "/home/intel/Documents/Junction/mac-sync/reviewed.json",
+      "beforeSha256": "54d605e43a764b16f5241fb54fbf538881e83e884190f0b5a0a7f0d399a33ceb",
+      "afterSha256": "88175c295957fa4e8dbc6fcba84beb88f7da675e8b5a55acfedb6baa60a191cb",
+      "decision": "Added seventeen specific reviewed paths and updated only the SOURCE_SYNC policy hash. Preserved every other existing entry.",
+      "beforeEntries": 64,
+      "afterEntries": 81,
+      "addedEntries": 17,
+      "updatedEntries": 1
+    }
+  ],
+  "reviewedPaths": [
+    {
+      "path": "context/SOURCE_SYNC.md",
+      "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "bytes": 17956,
+      "characters": 17944,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-delivery-20261115T062819Z/incoming/context/SOURCE_SYNC.md",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/source-delivery-20261115T062819Z/incoming/context/SOURCE_SYNC.md.read-receipt.json",
+      "readReceiptSha256": "6744b306566d0515ec99e802ad76adb96524ce607bfd2482e59c791d62c610a8",
+      "pageCount": 1,
+      "disposition": "Applied only the twelve-line bounded-intake documentation addition; exact final bytes match the already available shared policy. Reconstruction remains separate from acceptance, Git publication and deployment.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T06:28:20.139661+00:00"
+    },
+    {
+      "path": "context/notes/b71f04ec-67da-47c2-9bd8-7d0df7a46ad3.json",
+      "sha256": "c61bdc83f24e05e68b2045a481f8bb1cf8f7d240dfb3e362d352afe785f3eecf",
+      "bytes": 3863,
+      "characters": 3863,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/incoming/context/notes/b71f04ec-67da-47c2-9bd8-7d0df7a46ad3.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/incoming/context/notes/b71f04ec-67da-47c2-9bd8-7d0df7a46ad3.json.read-receipt.json",
+      "readReceiptSha256": "291943181c95c59720d59e2b706a397195b221b4374a541907077fc64e0621a7",
+      "pageCount": 1,
+      "disposition": "Initial adoption scope reviewed and completed only as supported by dated evidence. Receiver-start/sign-in direction is superseded by the owner revocation at 06:18 UTC; preserve GET-only worker and passive watcher.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:12:02.476873+00:00"
+    },
+    {
+      "path": "context/coordination/mcp-adoption-20261115/INTEL_ADOPTION.md",
+      "sha256": "89aabd5913e0959ba2a6e7d209142806b0e282535d1b57e9aa11cfc313a594c4",
+      "bytes": 11551,
+      "characters": 11551,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/incoming/context/coordination/mcp-adoption-20261115/INTEL_ADOPTION.md",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/incoming/context/coordination/mcp-adoption-20261115/INTEL_ADOPTION.md.read-receipt.json",
+      "readReceiptSha256": "7e9a8b0c6ad5d53401041956f3a8ebba5f9df17cd55283f18acd512edf17edfd",
+      "pageCount": 1,
+      "disposition": "Frozen adoption guide retained as dated instructions. Existing worker adopted; receiver instructions are superseded by owner revocation. No bootstrap repetition or service action.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:12:22.659924+00:00"
+    },
+    {
+      "path": "context/coordination/mcp-adoption-20261115/runtime-manifest.json",
+      "sha256": "72b57bdf385dfba792168a0102c128fbce5580a15c0a11d252235c5e16dbc34e",
+      "bytes": 2202,
+      "characters": 2202,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/incoming/context/coordination/mcp-adoption-20261115/runtime-manifest.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/incoming/context/coordination/mcp-adoption-20261115/runtime-manifest.json.read-receipt.json",
+      "readReceiptSha256": "4dbba5162115d738b19aaf4cb27fc4de9103df3456fbfcfeb350ada7e817b20f",
+      "pageCount": 1,
+      "disposition": "Five frozen runtime identities reviewed, including four Intel clients and optional Mac-only exporter. Manifest acknowledgment is not a new runtime deployment or receiver authorization.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:12:22.660159+00:00"
+    },
+    {
+      "path": "context/notes/d5315791-6749-4b01-97b5-1b9357306487.json",
+      "sha256": "cf4c445de7b6e29d4193fbaac96b55b24431720dcee0280d7b5686fe127196de",
+      "bytes": 4329,
+      "characters": 4321,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/notes/d5315791-6749-4b01-97b5-1b9357306487.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/notes/d5315791-6749-4b01-97b5-1b9357306487.json.read-receipt.json",
+      "readReceiptSha256": "43e39ea141687871039526269703bf5039ef3499db0b7776da03308e2c912628",
+      "pageCount": 1,
+      "disposition": "Dashboard implementation and additive producer scope reconciled against actual source/test results and root-owned activation. Physical/provider acceptance and original task criteria remain open.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:24:38.965025+00:00"
+    },
+    {
+      "path": "context/coordination/dashboard-intel-20261115-d5315791/START_HERE.md",
+      "sha256": "a1eabac71b151e99669d56f7ab09cd5c99ad20de381af3c88cf835b066848cc9",
+      "bytes": 10054,
+      "characters": 10048,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/coordination/dashboard-intel-20261115-d5315791/START_HERE.md",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/coordination/dashboard-intel-20261115-d5315791/START_HERE.md.read-receipt.json",
+      "readReceiptSha256": "a8227fe134c93e959c06a8c6fc78d8f59f1c2ad91937d3985d6f8994159e972d",
+      "pageCount": 1,
+      "disposition": "Additive API/store and current dependencies retained; no whole-tree overlay. Original 255-test merge checkpoint and final 309-test isolated suite remain dated separately. Root owns actual runtime and relay receipts.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:24:39.018828+00:00"
+    },
+    {
+      "path": "context/coordination/dashboard-intel-20261115-d5315791/MANIFEST.json",
+      "sha256": "9f0c55c5511409948dc0ec5e46a0a411403edac4b7612ae17ea6153e29b145fd",
+      "bytes": 10930,
+      "characters": 10930,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/coordination/dashboard-intel-20261115-d5315791/MANIFEST.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/coordination/dashboard-intel-20261115-d5315791/MANIFEST.json.read-receipt.json",
+      "readReceiptSha256": "e318aed6d8431e7e73c39ef6f434efc765f12246b9f353517fc1f183bf8815a3",
+      "pageCount": 1,
+      "disposition": "Manifest and its 18-file roles reviewed against already verified package; newer Gemma v12/context v7 retained. Manifest review does not claim all reference files were copied into active source.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:24:39.061093+00:00"
+    },
+    {
+      "path": "context/coordination/dashboard-intel-20261115-d5315791/docs/INTEL_DASHBOARD_API.md",
+      "sha256": "bb97cd43a8476d7dc67a23e7f690d932d3e31cf7e626a37837f79ca37f44444d",
+      "bytes": 8697,
+      "characters": 8697,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/coordination/dashboard-intel-20261115-d5315791/docs/INTEL_DASHBOARD_API.md",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/incoming/context/coordination/dashboard-intel-20261115-d5315791/docs/INTEL_DASHBOARD_API.md.read-receipt.json",
+      "readReceiptSha256": "604a75924769db10505fe118de15b751487d947152f03df9bb96be180de2781e",
+      "pageCount": 1,
+      "disposition": "Single-transaction authenticated aggregate, strict source filters, exact metrics and bounded response match the implemented/tested contract. Historical deployment statements are superseded only by root-owned later receipts.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:25:03.461006+00:00"
+    },
+    {
+      "path": "context/verification/mcp-adoption-20261115/intel-final-actions.md",
+      "sha256": "8cb15265f6d9bef95a03fb3c814a1ac73df46d1b86a90d2da3db0b367f21b595",
+      "bytes": 7418,
+      "characters": 7412,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/video-planning-review-74c763ed/context/verification/mcp-adoption-20261115/intel-final-actions.md",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/video-planning-review-74c763ed/context/verification/mcp-adoption-20261115/intel-final-actions.md.read-20261115T054254844826Z.json",
+      "readReceiptSha256": "ec21aaf2f274cc965160fa7d7fb7614032dd1b62bc261cf3ae969374ceb2687c",
+      "pageCount": 1,
+      "disposition": "Dated 05:32:48 continuation preserved. Receiver-start directions are superseded by 06:18 owner revocation; subsequent watcher successes and root-reported 07:08:31 recovery plus 07:09:22 relay checks supersede old unavailable-state observations. Live producers/physical acceptance remain open.",
+      "reviewedBy": [
+        "/root/adoption_station"
+      ],
+      "savedReadAt": "2026-11-15T05:42:54.844789+00:00"
+    },
+    {
+      "path": "context/notes/53d998b4-fd3e-40c1-8b7f-71ce8ecae59d.json",
+      "sha256": "93156df8f521985d1298e3d206c1c9a86787eb2026ae606186fce49c90e6ff43",
+      "bytes": 1786,
+      "characters": 1786,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/53d998b4-fd3e-40c1-8b7f-71ce8ecae59d.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/53d998b4-fd3e-40c1-8b7f-71ce8ecae59d.json.read-receipt.json",
+      "readReceiptSha256": "ffd2255a86ee1bfd0a7704b592833d327682c67006c4b6e8dc12c3051e8a3e27",
+      "pageCount": 1,
+      "disposition": "Exact dashboard delivery completion retained; Mac receipt is distinct from source mapping reconciliation, publication and deployment. A mapping correction is handled by the assigned source agent.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:27.830677+00:00"
+    },
+    {
+      "path": "context/notes/0aca9667-60a6-51a5-a784-e6a5937fc231.json",
+      "sha256": "8662d771989f43e2835ffba8d18ab05492bb833c37eafe7994eff6cb50c6927a",
+      "bytes": 3257,
+      "characters": 3257,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/0aca9667-60a6-51a5-a784-e6a5937fc231.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/0aca9667-60a6-51a5-a784-e6a5937fc231.json.read-receipt.json",
+      "readReceiptSha256": "3dd181e02d4b7611c649575e9aa77a23489c34e96c5db0d56461bd2f55c239db",
+      "pageCount": 1,
+      "disposition": "Original producer test remains screened and absent from the eligible transfer. No redaction, encoding, renaming or screening bypass. Distinct runtime/common store mapping retained; assigned source agent owns immutable mapping correction.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:27.922988+00:00"
+    },
+    {
+      "path": "context/notes/d7e7aa66-1470-4587-a2f9-5a37dadc7da6.json",
+      "sha256": "623b8c971f2d6edfecefd2ad964793118554fc0c6f7e0c845b41133892ea9c97",
+      "bytes": 6806,
+      "characters": 6806,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/d7e7aa66-1470-4587-a2f9-5a37dadc7da6.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/d7e7aa66-1470-4587-a2f9-5a37dadc7da6.json.read-receipt.json",
+      "readReceiptSha256": "2f6c83c048a1d04adbf2402518bfc6cb7e3a4072159b95428834ffd4c0a30a88",
+      "pageCount": 1,
+      "disposition": "Passive video package availability and synthetic Mac results reviewed. Only note and README acknowledged here; not all sixty source files reviewed/adopted. Jose-coordinated adoption, physical media tests and measured optical latency remain pending.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:28.001164+00:00"
+    },
+    {
+      "path": "context/notes/7b583884-f07f-4179-8f22-829921792f3a.json",
+      "sha256": "99242c59e867402e10649e00c72472c2a6362387942920f6daf105d4b04afd0f",
+      "bytes": 4490,
+      "characters": 4490,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/7b583884-f07f-4179-8f22-829921792f3a.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/7b583884-f07f-4179-8f22-829921792f3a.json.read-receipt.json",
+      "readReceiptSha256": "e896b6c915af56e59a265441ce060195f57b8d6526f841698aa1d459f18050c2",
+      "pageCount": 1,
+      "disposition": "Dated Mac source-policy/audit publication claims retained with evidence attribution. No independent GitHub query by this agent; other application source acceptance and deployment remain separate.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:28.043104+00:00"
+    },
+    {
+      "path": "context/notes/f5d02b2e-975b-42e7-8ccb-1f784fb474f5.json",
+      "sha256": "478b49decd95e14eea512acb21da7f2b63f82d93b72b2cd9750587f9db12a7ac",
+      "bytes": 5689,
+      "characters": 5689,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/f5d02b2e-975b-42e7-8ccb-1f784fb474f5.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/f5d02b2e-975b-42e7-8ccb-1f784fb474f5.json.read-receipt.json",
+      "readReceiptSha256": "ff1a1b40d67afa6babd80a7ec890229c8aea762d2a93398c8f6a0b3ebcb45a5e",
+      "pageCount": 1,
+      "disposition": "Synthetic video and saved Mac Notion scope reconciled; M20 remains In progress. No Intel camera/encoder deployment or physical acceptance is inferred; automatic Intel receiver stays revoked.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:28.192413+00:00"
+    },
+    {
+      "path": "context/notes/334eb852-954d-49e6-a7c7-90e250b27c85.json",
+      "sha256": "01d419c6e7b1eda813e0407bd3fb3424785a376a25f7389de9fea4866f38692e",
+      "bytes": 4368,
+      "characters": 4368,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/334eb852-954d-49e6-a7c7-90e250b27c85.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/334eb852-954d-49e6-a7c7-90e250b27c85.json.read-receipt.json",
+      "readReceiptSha256": "4ccda3fc534e7ce90f074339daf4f3434dc9cf967361747a77811b0ce04376ae",
+      "pageCount": 1,
+      "disposition": "Original SIGTERM timeout and isolated shutdown reproduction retained. This dated blocked state is superseded by root-owned later recovery/relay results, without deleting failure evidence.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:28.921705+00:00"
+    },
+    {
+      "path": "context/notes/ea3c127e-4f0a-454f-aac4-cd2745c79320.json",
+      "sha256": "6d29a22b7467dd6fa2f478219d60b84a60a16ae0042be737da4a9d08abeb9b9a",
+      "bytes": 1855,
+      "characters": 1855,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/ea3c127e-4f0a-454f-aac4-cd2745c79320.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/ea3c127e-4f0a-454f-aac4-cd2745c79320.json.read-receipt.json",
+      "readReceiptSha256": "1ea5981365199893e22705f34fb2d5474360350741462854c1187d4682eb5b5f",
+      "pageCount": 1,
+      "disposition": "Exact shutdown source completion exists and was read back. Do not request or publish a duplicate completion; Mac acceptance/publication are separately tracked.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:29.838737+00:00"
+    },
+    {
+      "path": "context/notes/42b2e9d1-6049-5aba-bc31-d1ec2d5f4978.json",
+      "sha256": "037f68a7e347190defc0763a34ca42f39c19303955ee194ed6cea2c37fa4aef9",
+      "bytes": 13390,
+      "characters": 13386,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/42b2e9d1-6049-5aba-bc31-d1ec2d5f4978.json",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/notes/42b2e9d1-6049-5aba-bc31-d1ec2d5f4978.json.read-receipt.json",
+      "readReceiptSha256": "ab3c572631494cd4bd6a8a4fbcaff540954f3a3799770b389b4892113054f034",
+      "pageCount": 1,
+      "disposition": "Latest complete Mac scheduled receipt reviewed. Its late-completion addendum supersedes frozen-catalog absence. Later root-owned recovery/relay evidence supersedes reported pending runtime recovery; original producer source gap remains open.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:09:29.911647+00:00"
+    },
+    {
+      "path": "context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/README.md",
+      "sha256": "b42883a6fa825f44b967e761a2401985ceee9380e41d62b3fdccb2980b3f3263",
+      "bytes": 4602,
+      "characters": 4601,
+      "localPath": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/README.md",
+      "readReceipt": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/incoming/context/coordination/live-video-20261115-d7e7aa66-1470-4587-a2f9-5a37dadc7da6/README.md.read-receipt.json",
+      "readReceiptSha256": "d4aba170b6a69d152423a3749c4a6ea3301f5679b8d02e1a7c320b39d0e39aa1",
+      "pageCount": 1,
+      "disposition": "Read complete passive handoff. Only proposed new Intel bridge partition is eligible for later coordinated review; no media deployment or capture authorized by this acknowledgment. Staged hidden-file mapping is not permission to bypass the unchanged outbound source scanner.",
+      "reviewedBy": [
+        "/root/adoption_station",
+        "/root/adoption_codex"
+      ],
+      "savedReadAt": "2026-11-15T07:14:07.555622+00:00"
+    }
+  ],
+  "excludedFromAcknowledgment": [
+    "The remaining pending catalog and all unreviewed notes/source chunks.",
+    "NOTION_SYNC.md and context/PROJECT_PROGRESS.md whole histories: only latest relevant sections were reviewed by the source agent.",
+    "context/INTEL_CODEX.md and context/START_HERE.md current shared copies: useful separately reviewed guidance, but this narrow ledger update does not claim local full-document reconciliation.",
+    "The whole sixty-file video source package and its runtime adoption."
+  ],
+  "verification": {
+    "allCandidateFilesMatchReadReceiptSha256": true,
+    "contiguousPageMetadataVerified": true,
+    "unredacted": true,
+    "utf8ByteAndCharacterCountsVerified": true,
+    "sourceSingleInsertionVerified": true,
+    "allOtherLedgerEntriesPreserved": true,
+    "backupsPreserved": true,
+    "sameFilesystemAtomicReplace": true,
+    "immediatePrewriteByteAndInodeGuards": true,
+    "newSoftwareTestsRun": false,
+    "sourceIntakeHelperLocallyPresent": false,
+    "sourceIntakeExecution": "Not executed or installed; new command documents the canonical Mac intake workflow."
+  },
+  "evidenceReferences": {
+    "sharedReviewLedger": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/read-verification.json",
+      "sha256": "dafa3114ce7870f0d8e623c15ec59e7ec5958b8a33374b65e036a09c0197a799"
+    },
+    "sharedReviewReport": {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shared-review-20261115T070919Z/REVIEW.md",
+      "sha256": "92c99b5cbf5c6484a403ba865cd1ff16f1c7f1274da4968fa087df0d3ec01a1c"
+    }
+  },
+  "synchronization": {
+    "macDelivery": "pending root publication of this attributed contribution",
+    "notion": "No Notion operations by this agent; root separately accounts for current verified task status."
+  }
+}

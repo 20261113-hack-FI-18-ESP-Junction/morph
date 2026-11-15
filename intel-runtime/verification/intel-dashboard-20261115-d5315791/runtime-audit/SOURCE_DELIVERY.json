@@ -1,0 +1,794 @@
+{
+  "schemaVersion": 1,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "deliveryId": "b4525aac-4261-4706-9eec-3316fd6a2d07",
+  "transferId": "8e3d98fb-54bf-4585-880b-1cd8eee9f5c9",
+  "completionNoteId": "8a97656d-e92e-4f53-902e-37b6a46443f5",
+  "createdAt": "2026-11-15T07:26:32.632934+00:00",
+  "group": "final-intel-runtime-audit-source",
+  "taskIds": [
+    "M20",
+    "M21"
+  ],
+  "sourceHost": "intel",
+  "sourceRoot": "/home/intel/Documents/Junction",
+  "targetRoot": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit",
+  "observedAt": "2026-11-15T07:26:32.697474+00:00",
+  "preparedBy": "/root/adoption_codex",
+  "completionReporter": "/root",
+  "implementationAuthors": [
+    "/root/adoption_receiver_review",
+    "/root/adoption_station",
+    "/root/adoption_codex"
+  ],
+  "targetRepository": "20261113-hack-FI-18-ESP-Junction/morph",
+  "intendedBehavior": "Provide exact final runtime guard/harness/test source and policy-reconciliation provenance for review, without authorizing any execution or modifying an active application.",
+  "reviewOnly": true,
+  "executionAuthorized": false,
+  "standaloneRunnableOnMac": false,
+  "sourceRevision": "Exact per-file hashes identify these original Intel files; no clean Git state or Intel commit is claimed.",
+  "baseline": "Proposed new archival targets use null baseline; Mac must inspect and preserve any conflicting destination. Absolute host guards remain unchanged.",
+  "files": [
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recover_reviewed_station.py",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recover_reviewed_station.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "dde510fb629ca050c4443a7e27eda5cbfab9c69c1dd9327427b97be585beb072",
+      "bytes": 20739,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recover_reviewed_station.py",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "8787c662f65587c52ee1fcc668ccc74b7b5bfb26f01d0b788edca7e5e80f9005",
+      "bytes": 22642,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/test_recovery_preparation.py",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/test_recovery_preparation.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "6f6455afabcd0936be38ec19a95a19d8a5ffcd26d3298b4b5d034502967e371d",
+      "bytes": 12998,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/test_recovery_preparation.py",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-source-baseline.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-source-baseline.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "2539160b6d175b29c08d02c912e5cc9615747bd3be96bec7b8f408b9f1456b15",
+      "bytes": 16578,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-source-baseline.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "6633abf728abb592284c45b4d47e030be0c9305de0874b98e1b4f3afa88c1635",
+      "bytes": 16522,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-result.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/peer-review-station.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/peer-review-station.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "e40195129d347e974ad534372a785bba668c888b16d4140cf563f370cda27fb2",
+      "bytes": 4139,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/peer-review-station.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/README.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "34e678b80fba52610deeecae985e006b99996ef3e266a527aa0a97a19cfa5746",
+      "bytes": 4488,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/README.md",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/verify_live_dashboard_relay.py",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/verify_live_dashboard_relay.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "f56024291b6f63c902092db6f3168020b2525fcf08b2b9c445e22df2fd04bb78",
+      "bytes": 22302,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/verify_live_dashboard_relay.py",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/check_relay_harness_offline.py",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/check_relay_harness_offline.py",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "182799f78912e848b1e6cdf3cd2940fd5b2d8870ef5a2717aa6f6c9792b92d79",
+      "bytes": 8982,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/check_relay_harness_offline.py",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-harness-offline-checks-final.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-harness-offline-checks-final.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "0dc05ddaa18723108833a17708a7f9cd1c880fd4631af43779054e8272e80f8c",
+      "bytes": 1475,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/relay-harness-offline-checks-final.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-preflight-result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-preflight-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "8bf315699146ff0af2cf9f368cb2c1da2733f516f143c6871088601e5767d6d2",
+      "bytes": 13567,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-preflight-result.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "b932305ad9f79bcec2f562e3bbb6b524321e6fa812d2e58a150140814f2d7eb1",
+      "bytes": 3273,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/recovery-result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/recovery-result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "81c52d35518014a4df46e71249257ec2874fbcd13969edcd4abc9208e1c97fd1",
+      "bytes": 3710,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/recovery-result.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/station-worker-launch.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/station-worker-launch.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "7a5d14a38edac739627b9ea37522d95545893dd4f86e5e8732f12b0ccdc3cc77",
+      "bytes": 2299,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/station-worker-launch.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/README.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "8987bb7c5edf7401800c5a4d68ded09ceeada4381c1eeb84aa193696e2280728",
+      "bytes": 9652,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/README.md",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/result.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/result.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "98bdbb64fb037814a7b6b8fa9d4ad176670f1212535bcd41cdbd15d5fd2ca50e",
+      "bytes": 23441,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/result.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/SOURCE_SYNC.before.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/SOURCE_SYNC.before.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "81549287801b39fad9312701d2f7cd6acd71f62586000db25910ec805f0fe31e",
+      "bytes": 16283,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/SOURCE_SYNC.before.md",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/reviewed.before.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/reviewed.before.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "54d605e43a764b16f5241fb54fbf538881e83e884190f0b5a0a7f0d399a33ceb",
+      "bytes": 8138,
+      "mode": "0o600",
+      "sourceOrigin": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/reviewed.before.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "Junction/mac-sync/reviewed.json",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/source/Junction/mac-sync/reviewed.json",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "88175c295957fa4e8dbc6fcba84beb88f7da675e8b5a55acfedb6baa60a191cb",
+      "bytes": 10440,
+      "mode": "0o664",
+      "sourceOrigin": "/home/intel/Documents/Junction/mac-sync/reviewed.json",
+      "reason": "Exact historical Intel guard/test/provenance source in a new read-only review archive; no application or runtime installation."
+    },
+    {
+      "path": "README.md",
+      "targetPath": "intel-runtime/verification/intel-dashboard-20261115-d5315791/runtime-audit/README.md",
+      "operation": "add",
+      "baseSha256": null,
+      "sha256": "3a32b0d75732e5e3efa61da7a04fa345ebdcee8f13ece5e4e8365e25a699148a",
+      "bytes": 2616,
+      "mode": "0o600",
+      "reason": "State source-review-only scope, original path mapping and intentionally unavailable host prerequisites."
+    }
+  ],
+  "reusedDependencies": [
+    {
+      "path": "morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/context/verification/intel-continuation/sync_shared_context.py",
+      "targetPath": "intel-runtime/source/junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/context/verification/intel-continuation/sync_shared_context.py",
+      "sha256": "78ef0ed4e9a49cdebafcd5a2c61968f65bb5edb213f0f0b3655ea3a5fc30d4e4",
+      "bytes": 8685,
+      "disposition": "Reuse unchanged exact original already published by Mac; no duplicate source bytes.",
+      "freshIntelHashAt": "2026-11-15T07:29:34.413486+00:00",
+      "proof": {
+        "path": "context/verification/remaining-source-20261115/commit-plan.json",
+        "sha256": "4b610e88624f8c378815ecbdcbbf56dea815fb40c496f441ea2befa16c38b652",
+        "readAt": "2026-11-15T07:27:27.805478+00:00"
+      }
+    },
+    {
+      "path": "scripts/watch_mac_context.py",
+      "targetPath": "intel-runtime/source/junction/scripts/watch_mac_context.py",
+      "sha256": "901491c5fd6a522c73591990bd4f7ee0d5c91f287d861c3b052cc2c4b1fb4dbd",
+      "bytes": 19829,
+      "disposition": "Reuse unchanged exact original already published by Mac; no duplicate source bytes.",
+      "freshIntelHashAt": "2026-11-15T07:29:34.413539+00:00",
+      "proof": {
+        "path": "context/verification/remaining-source-20261115/commit-plan.json",
+        "sha256": "4b610e88624f8c378815ecbdcbbf56dea815fb40c496f441ea2befa16c38b652",
+        "readAt": "2026-11-15T07:27:27.805478+00:00"
+      }
+    },
+    {
+      "path": "mcp-runtime-20261115T051202Z/station_worker.py",
+      "sharedSourcePath": "context/coordination/mcp-adoption-20261115/runtime/station_worker.py",
+      "sha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+      "bytes": 25015,
+      "disposition": "Unchanged frozen source retained; not reinstalled or executed.",
+      "contextOnly": false,
+      "receiverRevocation": "No receiver/runner login or restart is authorized.",
+      "proof": {
+        "path": "context/coordination/mcp-adoption-20261115/runtime-manifest.json",
+        "sha256": "72b57bdf385dfba792168a0102c128fbce5580a15c0a11d252235c5e16dbc34e",
+        "readAt": "2026-11-15T07:27:27.832395+00:00"
+      }
+    },
+    {
+      "path": "mcp-runtime-20261115T051202Z/handoff_receiver.py",
+      "sharedSourcePath": "context/coordination/mcp-adoption-20261115/runtime/handoff_receiver.py",
+      "sha256": "58656f0755e7bb27640545ae700d5eee85fd1e2742bbcda59c0d06eb685a1566",
+      "bytes": 27672,
+      "disposition": "Unchanged frozen source retained; not reinstalled or executed.",
+      "contextOnly": true,
+      "receiverRevocation": "No receiver/runner login or restart is authorized.",
+      "proof": {
+        "path": "context/coordination/mcp-adoption-20261115/runtime-manifest.json",
+        "sha256": "72b57bdf385dfba792168a0102c128fbce5580a15c0a11d252235c5e16dbc34e",
+        "readAt": "2026-11-15T07:27:27.832395+00:00"
+      }
+    },
+    {
+      "path": "mcp-runtime-20261115T051202Z/handoff_codex_runner.py",
+      "sharedSourcePath": "context/coordination/mcp-adoption-20261115/runtime/handoff_codex_runner.py",
+      "sha256": "49e8b40543ef8e6a6554346c27448d24e30d6ded4f954f17ce5530af9d323481",
+      "bytes": 24053,
+      "disposition": "Unchanged frozen source retained; not reinstalled or executed.",
+      "contextOnly": true,
+      "receiverRevocation": "No receiver/runner login or restart is authorized.",
+      "proof": {
+        "path": "context/coordination/mcp-adoption-20261115/runtime-manifest.json",
+        "sha256": "72b57bdf385dfba792168a0102c128fbce5580a15c0a11d252235c5e16dbc34e",
+        "readAt": "2026-11-15T07:27:27.832395+00:00"
+      }
+    },
+    {
+      "path": "mcp-runtime-20261115T051202Z/handoff_publish.py",
+      "sharedSourcePath": "context/coordination/mcp-adoption-20261115/runtime/handoff_publish.py",
+      "sha256": "cedf81d8fd08a924a4f5cfabbd64a500c18e0e4bcd12f78dbd5b0ae210be5380",
+      "bytes": 17541,
+      "disposition": "Unchanged frozen source retained; not reinstalled or executed.",
+      "contextOnly": true,
+      "receiverRevocation": "No receiver/runner login or restart is authorized.",
+      "proof": {
+        "path": "context/coordination/mcp-adoption-20261115/runtime-manifest.json",
+        "sha256": "72b57bdf385dfba792168a0102c128fbce5580a15c0a11d252235c5e16dbc34e",
+        "readAt": "2026-11-15T07:27:27.832395+00:00"
+      }
+    },
+    {
+      "path": "morph-intel-transfer/morph-context/context/SOURCE_SYNC.md",
+      "sharedSourcePath": "context/SOURCE_SYNC.md",
+      "sha256": "ae55731897b11eeca0779f49f1ae744668c1508864b4db2d99cf33833c1d7776",
+      "bytes": 17956,
+      "disposition": "Exact current shared policy reused after the twelve-line local insertion; no duplicate source transmission."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/result.json",
+      "sha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855",
+      "bytes": 5803,
+      "disposition": "Reuse exact result already strictly delivered in complete shutdown group.",
+      "deliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "transferId": "d0a0455b-e700-44a6-9bd7-881f07b9f512"
+    },
+    {
+      "path": "HachingJunction/station/morph_station/__main__.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/__main__.py",
+      "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
+      "bytes": 4263,
+      "priorCompleteDeliveryId": "60fff35b-12d2-4efd-a97e-e224b8199cb6",
+      "disposition": "Exact previously confirmed source reused for the frozen metadata pin; no duplicate bytes or active edit."
+    },
+    {
+      "path": "HachingJunction/station/morph_station/__init__.py",
+      "targetPath": "intel-runtime/source/common/HachingJunction/station/morph_station/__init__.py",
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399",
+      "bytes": 114,
+      "priorCompleteDeliveryId": "77133e66-7c2b-45ce-8ab6-69549d784320",
+      "disposition": "Exact previously confirmed source reused for the frozen metadata pin; no duplicate bytes or active edit."
+    }
+  ],
+  "applicationGuardInputs": {
+    "sourcePinCount": 33,
+    "metadataPinCount": 9,
+    "sourcePins": [
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/__init__.py",
+        "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/__main__.py",
+        "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/analysis.py",
+        "sha256": "5621f3f6d2d89cd6cdab0fc61335ed7da4df51182291cdac87a042edb684039f"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/analysis_context.py",
+        "sha256": "252c97af88de0574816a1d46384129005b3027edf69fda9f3930defb401030de"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/analysis_models.py",
+        "sha256": "ffc49b64165072a052b74abc35c2166cb69d1443cefd07fe54bb9640d8c12917"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/analysis_provider.py",
+        "sha256": "1fa8de0146bdf7d85a8c5260e343f21b9542b0e372dd987e0709c9a78938198d"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/api.py",
+        "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/client.py",
+        "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/export_audit.py",
+        "sha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/models.py",
+        "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/producers.py",
+        "sha256": "de9dcdb39c539e2f9ec298b29d72c85cc26580bda4be811aba3984ccdb2a94ec"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/schema.sql",
+        "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/simulation.py",
+        "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/morph_station/store.py",
+        "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/requirements.txt",
+        "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/export-audit/MANIFEST.json",
+        "sha256": "d6933858617ef45f20a637094d91ef9f24048510e9bd6925b4c49325196c501b"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+        "sha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+        "sha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/export-audit/station/verification/sample-export.json",
+        "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/gemma-v11-audit-regressions.json",
+        "sha256": "ed74d1d62360c2712630fcbdba9d09b3d51395150e9ea3ed790560e3f7fdb348"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/gemma-v5-semantic-regressions.json",
+        "sha256": "ca018563e387990520907b74210c5a725a2bfcf5c7ea51d614e91b388b96dc1b"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/gemma-v6-known-coverage-regression.json",
+        "sha256": "1c0a7ac8c5e5741a07b132e172ce0e41b8230864dddcbcf85c650e78c2b3c9b4"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/gemma-v7-recovery-coverage-regression.json",
+        "sha256": "2affb6a8b115dd4e54c6af2fcbcee3cab6a8ce2cde9e627f746f555359266476"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/fixtures/gemma-v9-citation-regressions.json",
+        "sha256": "99c28d8643a2182a25b4126da9b23f3b0158136c31e979e49be6be657c29bab3"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/smoke_http.py",
+        "sha256": "7fae3dd3c9790207681d16cd727c4148516f73cb4518da01fe2e01463106b6e8"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_analysis.py",
+        "sha256": "3bb5a23a91f8a89a00f220c126f18396fd100278b380adab6cd490ddd333d671"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_api.py",
+        "sha256": "962630d378160dc17f0711f456ccf31213cc424395195dfc942e8008496af467"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_dashboard.py",
+        "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_export_audit.py",
+        "sha256": "02802053cb3c9b46f292912ffbbfe972a10380a75fa13131bcce5039b3b95d3b"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_producers.py",
+        "sha256": "60d804e02c367a4bd151c2e4c62383328f9f9efcad079595c774b34ac58b81e9"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_reviews.py",
+        "sha256": "5ebd0d8059f4eb7973782026c0fe53aa5b7f4b03155881242db66b125d46446a"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_store.py",
+        "sha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3"
+      },
+      {
+        "currentAndFrozenMatch": true,
+        "path": "station/tests/test_cli_shutdown.py",
+        "sha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47"
+      }
+    ],
+    "metadataPins": [
+      {
+        "bytes": 22642,
+        "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py",
+        "sha256": "8787c662f65587c52ee1fcc668ccc74b7b5bfb26f01d0b788edca7e5e80f9005"
+      },
+      {
+        "bytes": 16578,
+        "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-source-baseline.json",
+        "sha256": "2539160b6d175b29c08d02c912e5cc9615747bd3be96bec7b8f408b9f1456b15"
+      },
+      {
+        "bytes": 13567,
+        "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-preflight-result.json",
+        "sha256": "8bf315699146ff0af2cf9f368cb2c1da2733f516f143c6871088601e5767d6d2"
+      },
+      {
+        "bytes": 2299,
+        "path": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/station-worker-launch.json",
+        "sha256": "7a5d14a38edac739627b9ea37522d95545893dd4f86e5e8732f12b0ccdc3cc77"
+      },
+      {
+        "bytes": 4263,
+        "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/__main__.py",
+        "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298"
+      },
+      {
+        "bytes": 3710,
+        "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/recovery-result.json",
+        "sha256": "81c52d35518014a4df46e71249257ec2874fbcd13969edcd4abc9208e1c97fd1"
+      },
+      {
+        "bytes": 3273,
+        "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+        "sha256": "b932305ad9f79bcec2f562e3bbb6b524321e6fa812d2e58a150140814f2d7eb1"
+      },
+      {
+        "bytes": 5803,
+        "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/result.json",
+        "sha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855"
+      },
+      {
+        "bytes": 114,
+        "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/morph_station/__init__.py",
+        "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399"
+      }
+    ],
+    "scope": "Exact historical guard evidence, not a declaration that all application sources are included or all original tests have reached Mac. Full active app/private host state is intentionally not reconstructed."
+  },
+  "tests": {
+    "savedGuardCases": {
+      "actualPriorReceiptsLoaded": true,
+      "command": [
+        "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "test_recovery_preparation.py",
+        "--junitxml=recovery-preparation-tests.xml"
+      ],
+      "counts": {
+        "errors": 0,
+        "failures": 0,
+        "skipped": 0,
+        "tests": 27
+      },
+      "cwd": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z",
+      "exitCode": 0,
+      "scope": "Isolated preparation guards and temporary private copies; no host service signal/start/stop.",
+      "timestamp": "2026-11-14T22:59:38.319670-08:00"
+    },
+    "savedHarnessCases": {
+      "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+      "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+      "author": "/root/adoption_codex",
+      "reporter": "/root",
+      "checkedAt": "2026-11-15T05:44:25.404293+00:00",
+      "scriptSha256": "f56024291b6f63c902092db6f3168020b2525fcf08b2b9c445e22df2fd04bb78",
+      "testSourceSha256": "182799f78912e848b1e6cdf3cd2940fd5b2d8870ef5a2717aa6f6c9792b92d79",
+      "command": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python -B reviews/intel-dashboard-20261115T052333Z-d5315791/check_relay_harness_offline.py",
+      "exitCode": 0,
+      "testsPassed": 9,
+      "testsFailed": 0,
+      "testsSkipped": 0,
+      "unittestElapsedSeconds": 0.007,
+      "cases": [
+        "Reject bad response hash and save failure",
+        "Reject changed pagination metadata and save failure",
+        "Validate bounded deduplicated cycle IDs and reject cross-session IDs",
+        "Reject expired response and save failure",
+        "Ignore only two generation timestamp fields",
+        "Require inspection-to-frame-to-evidence image linkage",
+        "Reconstruct complete three-page base64 response",
+        "Discover an older image-bearing cycle after image-less current cycle using fake aggregate and fake API only",
+        "Allow exactly the scoped GET routes and reject unsupported routes/queries"
+      ],
+      "realMcpOrApiCalls": 0,
+      "canonicalRecordsChanged": false,
+      "temporaryFakeFilesOnly": true,
+      "failureEvidencePreservedWithinTemporaryRuns": true
+    },
+    "thisTransfer": {
+      "pythonFilesParsedWithoutImport": [
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recover_reviewed_station.py",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/test_recovery_preparation.py",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/verify_live_dashboard_relay.py",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/check_relay_harness_offline.py"
+      ],
+      "jsonFilesParsed": [
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-source-baseline.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-result.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/peer-review-station.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/relay-harness-offline-checks-final.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-preflight-result.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/recovery-result.json",
+        "reviews/intel-adoption-20261115T051202Z-b71f04ec/station-worker-launch.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/result.json",
+        "reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/reviewed.before.json",
+        "mac-sync/reviewed.json"
+      ],
+      "sourceBytesChanged": false,
+      "senderChecksUnchanged": true,
+      "runtimeCalls": 0,
+      "providerCalls": 0,
+      "hardwareCalls": 0,
+      "policyInsertionLines": 12,
+      "reviewedEntriesBefore": 64,
+      "reviewedEntriesAfter": 81,
+      "reviewedAdditions": 17,
+      "reviewedExistingChanges": [
+        "context/SOURCE_SYNC.md"
+      ]
+    }
+  },
+  "documentation": [
+    "README.md"
+  ],
+  "excludedOriginalArtifacts": [
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/activate_reviewed_station.py",
+      "bytes": 13936,
+      "sha256": "b2abbea86381851c76665eb197e5451004859e33667fd0c3b89b34c62f625d1f",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/station_transition_support.py",
+      "bytes": 14502,
+      "sha256": "a42342e6bd843a59dcdf088d5b67e49fba935a98e09202d0fa12ee8fe38ff5ca",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/preflight_station_transition.py",
+      "bytes": 8900,
+      "sha256": "791c5043a0b8b97f29ffc9537ff37b394864d64c26e4e4d28dafa33e1d248f7b",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/activate_reviewed_station.py",
+      "bytes": 15930,
+      "sha256": "c37fab909da96435e6b8a1ba03cd5259b1873ffbe237cb7e3cb1d6b4b6dac147",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/preflight_station_transition.py",
+      "bytes": 9309,
+      "sha256": "088a078ffca2b5cec4d32caf5da98df7a37c920d6c4a3469a8236059dcb6b33f",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station_transition_support.py",
+      "bytes": 14484,
+      "sha256": "4c7e1f0cb249f02a248fade435601adedbc347c2ab81aa1e50f178c231e80e3a",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/test_station_transition_preparation.py",
+      "bytes": 5667,
+      "sha256": "81c8d0303ab5003049d1b75ec6c768b4c17fdd040276be75eaa2c3048b0d6151",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/recover_reviewed_station.py",
+      "bytes": 18493,
+      "sha256": "4d6c570c92a721ca320e5d28b7238699ea3e1e2e122501fd26e92aff3e90d5b7",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station_transition_support.py",
+      "bytes": 20071,
+      "sha256": "cdbfa0181703d97b502546a8f9df23525daf98a69ede9961c03cff7236e6eeda",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/test_recovery_preparation.py",
+      "bytes": 9208,
+      "sha256": "a9865ab856da3367069a99dbc5c141c29b3cf9a5424fa115dd98253310cf8a56",
+      "reason": "Superseded historical preparation script; preserved Intel-local, not part of the final v4 archive."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recover_reviewed_station.py.diff",
+      "bytes": 14173,
+      "sha256": "dafe6a6805dc357b711e726528145031a2a1d07a39ca777bf4f1335c65c29ced",
+      "reason": "Unsupported sender suffix or excluded test/runtime log. Original source and structured test/result data are included without renaming or encoding this artifact."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-tests.log",
+      "bytes": 471,
+      "sha256": "cf32044b30d707b1e0fd8b1a999800b68ba0a0afa7fe41997d57d1c05bf48ce9",
+      "reason": "Unsupported sender suffix or excluded test/runtime log. Original source and structured test/result data are included without renaming or encoding this artifact."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-tests.xml",
+      "bytes": 3974,
+      "sha256": "9aeccc8f3544f1ed1b0da576b7409835af452679b085e4d9db14d6a80d9b2fff",
+      "reason": "Unsupported sender suffix or excluded test/runtime log. Original source and structured test/result data are included without renaming or encoding this artifact."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py.diff",
+      "bytes": 2842,
+      "sha256": "0e7703389dc2e978e7cdcdc81f759301ccdc0497a1191d4399eb2ad1e9a8ca27",
+      "reason": "Unsupported sender suffix or excluded test/runtime log. Original source and structured test/result data are included without renaming or encoding this artifact."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/SOURCE_SYNC.diff",
+      "bytes": 2244,
+      "sha256": "c02cc87d57bde642fd67815136081f513d4cc653092372aaf036aaea7eb3165a",
+      "reason": "Unsupported sender suffix or excluded test/runtime log. Original source and structured test/result data are included without renaming or encoding this artifact."
+    },
+    {
+      "path": "reviews/intel-dashboard-20261115T052333Z-d5315791/policy-reconciliation-20261115T072210Z/reviewed.diff",
+      "bytes": 3365,
+      "sha256": "47560fc07f2babcf9ebdee88a5809e78f7076e766743810a19ebad7bfe9d00e6",
+      "reason": "Unsupported sender suffix or excluded test/runtime log. Original source and structured test/result data are included without renaming or encoding this artifact."
+    }
+  ],
+  "exclusions": [
+    "No private database/backup bytes, credentials or credential hashes, pairing material, process environment, runtime logs, binary image data, recordings, models or dependencies.",
+    "Superseded script and optional XML/diff/log hashes describe retained originals; their bytes are not delivered.",
+    "Current application source and rejected original producer/analyst tests retain separate source ownership and unresolved transfer state.",
+    "No automatic receiver, service, tunnel, provider, camera or robot operation is authorized. No source guard may be relaxed to make this archive runnable elsewhere."
+  ],
+  "missingSource": [],
+  "groupComplete": true,
+  "completionEventEligible": true,
+  "scopeOfCompleteness": "The bounded final runtime-audit source and original focused tests requested for review are included/referenced. Completeness does not mean standalone host execution or full application source reproduction.",
+  "supersedes": null,
+  "deletions": [],
+  "renames": [],
+  "applicationSourceChanged": false,
+  "physicalVerification": false,
+  "notion": "No Notion update is issued by this source transfer; original acceptance remains separate."
+}

@@ -1,0 +1,13 @@
+# Historical Intel runtime audit source
+
+This archive supplies exact final Intel recovery guards, support, preparation tests, relay verification harness/offline tests, retained failure receipts and scoped policy-review provenance. It is source for review, not a deployment or executable Mac package. Do not run copied recovery or relay commands, adjust their guards to another host, sign in, restart a receiver, or operate a service from this archive.
+
+All original absolute Intel paths, PID/start-time pins, private-state prerequisites, explicit execution flags and checks remain unchanged. The historical old API PID has already been terminated by the root operator. Missing private host state is intentional, and the archive is not standalone runnable. Mac review should examine code and saved evidence without executing it. The actual successful recovery/relay and 309-case results are in the separate dated-document delivery 36126a56-504b-417f-b5d9-b0a376248b59.
+
+Original Junction-relative paths remain beneath `source/Junction/` at the proposed repository target. The transfer bundle stores them beneath `Junction/`; SOURCE_DELIVERY.json contains the exact mapping. No snapshot is an overlay for shared Mac guides, application source, receiver state or the current incoming-review ledger.
+
+The source group includes the original v4 test and original relay test, the pinned v2/v3 failure receipts, current v4 baseline and independent peer/preparation results. Saved results describe 27 isolated guard tests and nine offline harness tests. This transfer performs no runtime test. The policy documents and before/after ledger snapshot preserve one twelve-line insertion, seventeen new reviewed paths and one updated policy hash; they do not acknowledge the full shared catalog.
+
+Private databases/backups, live credential values, runtime logs, binary evidence and process environment are excluded. Original XML/diff/log files and superseded v1-v3 scripts remain Intel-local with exact exclusion hashes. Existing client, watcher, worker and reporting code is reused through confirmed source/hash references. The owner-revoked receiver and runner are context only, with no restart authority. Application source pins describe inspected inputs; this archive does not close the separate rejected producer/analyst original-test gaps or reproduce the full application on Mac.
+
+The original historical README/result text is unmodified. Dated pending states do not override later root runtime receipts, and source receipt does not establish Mac adoption/publication, new Notion updates, Klemen UI or physical acceptance.

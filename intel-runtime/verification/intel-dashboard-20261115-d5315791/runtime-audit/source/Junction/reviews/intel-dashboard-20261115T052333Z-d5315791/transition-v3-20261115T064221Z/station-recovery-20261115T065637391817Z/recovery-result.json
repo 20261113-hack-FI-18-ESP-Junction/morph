@@ -1,0 +1,78 @@
+{
+  "activeHttpCancellationRisk": "This second SIGINT sets Uvicorn force_exit, interrupts active HTTP work and skips normal lifespan shutdown. Final committed state is retained; unfinished requests are not claimed successful.",
+  "beforeStopBackup": {
+    "bytes": 225280,
+    "createdAt": "2026-11-15T06:56:37.404812+00:00",
+    "integrityCheck": "ok",
+    "mode": "0600",
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z/before-stop-immutable.sqlite3",
+    "retainedWithoutFurtherWrites": true,
+    "sha256": "81ba66e62088305bfa0b2d258b7226ff852a0afbc1fd19e9ad34ea26d17ebb67",
+    "sourceOpenedWith": "mode=ro; query_only=ON"
+  },
+  "completedAt": "2026-11-15T06:56:47.453888+00:00",
+  "credentialValueOrHashPersisted": false,
+  "environmentPersisted": false,
+  "errorCode": "second_signal_exit_timeout_no_force_kill",
+  "executionAuthority": "Root operator invocation",
+  "oldService": {
+    "argv": [
+      "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/../../morph-intel-transfer/morph-context/.junction-setup/python/bin/python",
+      "-m",
+      "morph_station",
+      "serve",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "8000"
+    ],
+    "cwd": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction",
+    "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+    "pid": 188282,
+    "startTicks": 10907663,
+    "startedAt": "2026-11-14T19:59:05.630000+00:00"
+  },
+  "preparedBy": "/root/adoption_receiver_review",
+  "preservedProcessesBefore": {
+    "dashboard": {
+      "cwd": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/morph-station",
+      "executable": "/home/intel/.local/opt/node-v24.22.3-linux-x64/bin/node",
+      "pid": 188283,
+      "startTicks": 10907663,
+      "startedAt": "2026-11-14T19:59:05.630000+00:00"
+    },
+    "fiveMinuteWatcher": {
+      "cwd": "/home/intel/Documents/Junction",
+      "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+      "pid": 279692,
+      "startTicks": 11717397,
+      "startedAt": "2026-11-14T22:14:02.970000+00:00"
+    },
+    "stationWorker": {
+      "cwd": "/home/intel/Documents/Junction/mcp-runtime-20261115T051202Z",
+      "executable": "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+      "pid": 417036,
+      "startTicks": 14287604,
+      "startedAt": "2026-11-15T05:22:25.040000+00:00"
+    }
+  },
+  "priorFailedActivation": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v2-20261115T062955Z/station-activation-20261115T063626791124Z/activation-result.json",
+  "providerFlagsChanged": false,
+  "recoveryPolicy": "No force-kill, restore or automatic rollback. Preserve the current processes and private evidence for root review.",
+  "replacementReturnCode": null,
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "requests": [],
+  "runDirectory": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-recovery-20261115T065637391817Z",
+  "seedOrRestorePerformed": false,
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "signals": [
+    {
+      "pid": 188282,
+      "sentAt": "2026-11-15T06:56:37.436609+00:00",
+      "signal": "SIGINT",
+      "startTicks": 10907663
+    }
+  ],
+  "startedAt": "2026-11-15T06:56:37.391891+00:00",
+  "status": "failed"
+}

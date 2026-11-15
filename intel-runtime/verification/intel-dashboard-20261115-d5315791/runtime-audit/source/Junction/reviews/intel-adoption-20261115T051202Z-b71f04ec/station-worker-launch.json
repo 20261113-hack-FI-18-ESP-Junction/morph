@@ -1,0 +1,65 @@
+{
+  "requestId": "b71f04ec-67da-47c2-9bd8-7d0df7a46ad3",
+  "sessionId": "2eb9a80e-dab9-4966-8820-cb398427f51d",
+  "launcherAuthor": "/root/adoption_codex",
+  "executedBy": "/root",
+  "launchRequestedAt": "2026-11-15T05:22:25.850088+00:00",
+  "observedAt": "2026-11-15T05:22:27.851880+00:00",
+  "pid": 417036,
+  "startTicks": 14287604,
+  "startedAt": "2026-11-15T05:22:25.040000+00:00",
+  "returncode": null,
+  "aliveAfterTwoSeconds": true,
+  "argv": [
+    "/home/intel/.local/share/uv/python/cpython-3.12.16-linux-x86_64-gnu/bin/python3.12",
+    "/home/intel/Documents/Junction/mcp-runtime-20261115T051202Z/station_worker.py",
+    "--pairing-folder",
+    "/home/intel/Documents/Junction/morph-intel-transfer/morph-intel-pairing",
+    "--station-url",
+    "http://127.0.0.1:8000",
+    "--token-file",
+    "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/.data/api-token",
+    "--station-id",
+    "intel-main",
+    "--limit",
+    "1",
+    "--serve",
+    "--poll-seconds",
+    "2"
+  ],
+  "workingDirectory": "/home/intel/Documents/Junction/mcp-runtime-20261115T051202Z",
+  "runtimeSha256": "bfadd54fb186dffa4bbf0f21a95c0d815bb187833a57a3e382a7b6efc72c0bc2",
+  "stationOrigin": "http://127.0.0.1:8000",
+  "stationId": "intel-main",
+  "getOnly": true,
+  "recordWritesAllowed": false,
+  "tokenSourcePath": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/HachingJunction/station/.data/api-token",
+  "environmentNames": [
+    "HOME",
+    "LANG",
+    "LC_ALL",
+    "LOGNAME",
+    "NO_COLOR",
+    "PATH",
+    "PYTHONDONTWRITEBYTECODE",
+    "PYTHONUNBUFFERED",
+    "SHELL",
+    "USER"
+  ],
+  "servicePid": 188282,
+  "serviceStartTicks": 10907663,
+  "preservedProcesses": {
+    "dashboard": {
+      "pid": 188283,
+      "startTicks": 10907663
+    },
+    "fiveMinuteWatcher": {
+      "pid": 279692,
+      "startTicks": 11717397
+    }
+  },
+  "privateLogPath": "/home/intel/Documents/Junction/reviews/intel-adoption-20261115T051202Z-b71f04ec/station-worker.log",
+  "processesStopped": [],
+  "endToEndStationReadVerified": false,
+  "limitation": "Process launch and liveness do not establish a completed Mac-to-Intel response or any physical/provider acceptance."
+}

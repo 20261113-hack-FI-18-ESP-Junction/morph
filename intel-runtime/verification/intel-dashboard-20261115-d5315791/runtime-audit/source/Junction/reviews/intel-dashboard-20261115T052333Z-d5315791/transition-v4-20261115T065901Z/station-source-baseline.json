@@ -1,0 +1,263 @@
+{
+  "agent": "/root/adoption_receiver_review",
+  "changesSincePreviousPins": [
+    {
+      "baselineSha256": "32bfb26335f615bd8fc36bbdfe0f838f3bb13a323c8d5b352fb74a468defc9a2",
+      "baselineSource": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/audit-language-v12-20261115/before/morph_station/analysis_models.py",
+      "decision": "Preserve reviewed newer Intel source unchanged",
+      "path": "station/morph_station/analysis_models.py",
+      "sha256": "ffc49b64165072a052b74abc35c2166cb69d1443cefd07fe54bb9640d8c12917"
+    },
+    {
+      "baselineSha256": "208e3017fefca3d75b73ca10133ddc69c89d73f36af4b2679dbf2479f9f9047b",
+      "baselineSource": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/audit-language-v12-20261115/before/morph_station/analysis_provider.py",
+      "decision": "Preserve reviewed newer Intel source unchanged",
+      "path": "station/morph_station/analysis_provider.py",
+      "sha256": "1fa8de0146bdf7d85a8c5260e343f21b9542b0e372dd987e0709c9a78938198d"
+    },
+    {
+      "baselineSha256": "e35d81c31bff372cc65fa10ab1c900e5174698cd67e025be73d7fa14af39e699",
+      "baselineSource": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/audit-language-v12-20261115/before/tests/test_analysis.py",
+      "decision": "Preserve reviewed newer Intel source unchanged",
+      "path": "station/tests/test_analysis.py",
+      "sha256": "3bb5a23a91f8a89a00f220c126f18396fd100278b380adab6cd490ddd333d671"
+    },
+    {
+      "baselineSha256": "ed0df7caf389801f9a45cb4755cf5df20f184cd11fe30026343dd62fce4db9ce",
+      "baselineSource": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/audit-fixture-portability-20261115/before/test_export_audit.py",
+      "decision": "Preserve reviewed newer Intel source unchanged",
+      "path": "station/tests/test_export_audit.py",
+      "sha256": "02802053cb3c9b46f292912ffbbfe972a10380a75fa13131bcce5039b3b95d3b"
+    }
+  ],
+  "observedAt": "2026-11-15T06:59:01.183800+00:00",
+  "preservedFiles": [
+    {
+      "bytes": 114,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/__init__.py",
+      "path": "station/morph_station/__init__.py",
+      "sha256": "84252541a785fd57f879d4878d54bd8af19b803849d1ad438b60ed1738235399"
+    },
+    {
+      "bytes": 4263,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/__main__.py",
+      "path": "station/morph_station/__main__.py",
+      "previousV2Sha256": "6fa9fec57125b6002e55641966c991a11f514db0ef7e8448ebe2c99d3d6f71ef",
+      "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298"
+    },
+    {
+      "bytes": 21179,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/analysis.py",
+      "path": "station/morph_station/analysis.py",
+      "sha256": "5621f3f6d2d89cd6cdab0fc61335ed7da4df51182291cdac87a042edb684039f"
+    },
+    {
+      "bytes": 26188,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/analysis_context.py",
+      "path": "station/morph_station/analysis_context.py",
+      "sha256": "252c97af88de0574816a1d46384129005b3027edf69fda9f3930defb401030de"
+    },
+    {
+      "bytes": 3130,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/analysis_models.py",
+      "path": "station/morph_station/analysis_models.py",
+      "sha256": "ffc49b64165072a052b74abc35c2166cb69d1443cefd07fe54bb9640d8c12917"
+    },
+    {
+      "bytes": 34639,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/analysis_provider.py",
+      "path": "station/morph_station/analysis_provider.py",
+      "sha256": "1fa8de0146bdf7d85a8c5260e343f21b9542b0e372dd987e0709c9a78938198d"
+    },
+    {
+      "bytes": 23313,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/api.py",
+      "path": "station/morph_station/api.py",
+      "sha256": "3ab02fc234add63fc1150db6c107324dafe68266cfdaad453c554e7753e7845a"
+    },
+    {
+      "bytes": 1645,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/client.py",
+      "path": "station/morph_station/client.py",
+      "sha256": "19f090c9598c1c91ea02813cc301e3c2857b799f938ca97ed41a7f5975314e91"
+    },
+    {
+      "bytes": 32263,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/export_audit.py",
+      "path": "station/morph_station/export_audit.py",
+      "sha256": "499a01adacbc9e436030d2f9d6205536fbdba32a63f2ef288570dd8667e45cee"
+    },
+    {
+      "bytes": 11096,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/models.py",
+      "path": "station/morph_station/models.py",
+      "sha256": "19a63e3603a2045763aec4dfc5b4afe408cc9117b8dc1554e759411ad15ac7a3"
+    },
+    {
+      "bytes": 19409,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/producers.py",
+      "path": "station/morph_station/producers.py",
+      "sha256": "de9dcdb39c539e2f9ec298b29d72c85cc26580bda4be811aba3984ccdb2a94ec"
+    },
+    {
+      "bytes": 1589,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/schema.sql",
+      "path": "station/morph_station/schema.sql",
+      "sha256": "ac53e1043d59879a2b65dd1092523d181165719fba51ff2141bbd516d4772c45"
+    },
+    {
+      "bytes": 6481,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/simulation.py",
+      "path": "station/morph_station/simulation.py",
+      "sha256": "67282e62ad0bcad4611e14fc7189081bdb428399c10891f8a4b3c2318003c2cf"
+    },
+    {
+      "bytes": 48605,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/morph_station/store.py",
+      "path": "station/morph_station/store.py",
+      "sha256": "d099d4b67269df66be6b09a24941ac71044f3de20e6d151dcded2f3e3bc59939"
+    },
+    {
+      "bytes": 238,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/requirements.txt",
+      "path": "station/requirements.txt",
+      "sha256": "0a491f0674b2dd255f09385a5f36386212e26621770092b4c1ebaaf2edfca00b"
+    },
+    {
+      "bytes": 1869,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/export-audit/MANIFEST.json",
+      "path": "station/tests/fixtures/export-audit/MANIFEST.json",
+      "sha256": "d6933858617ef45f20a637094d91ef9f24048510e9bd6925b4c49325196c501b"
+    },
+    {
+      "bytes": 42490,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "path": "station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/browser-replay-export.json",
+      "sha256": "c2f524137d2ede92aa9a6451103b9133260e61b455ed8f207fd1827a3edb4175"
+    },
+    {
+      "bytes": 42490,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "path": "station/tests/fixtures/export-audit/context/verification/m16-closure-1cf186e8-ce90-4cbb-a953-6611e0bdcb98/recovered-session-export.json",
+      "sha256": "b9b1ebb96928b1d2442491f6d08f7f5b36669de130d57d3b81d7f7e78971d0d8"
+    },
+    {
+      "bytes": 97061,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/export-audit/station/verification/sample-export.json",
+      "path": "station/tests/fixtures/export-audit/station/verification/sample-export.json",
+      "sha256": "a05702877fe967562fd1439d836fdae9aec95610c6ba031c6919af1174b8067d"
+    },
+    {
+      "bytes": 162010,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/gemma-v11-audit-regressions.json",
+      "path": "station/tests/fixtures/gemma-v11-audit-regressions.json",
+      "sha256": "ed74d1d62360c2712630fcbdba9d09b3d51395150e9ea3ed790560e3f7fdb348"
+    },
+    {
+      "bytes": 388646,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/gemma-v5-semantic-regressions.json",
+      "path": "station/tests/fixtures/gemma-v5-semantic-regressions.json",
+      "sha256": "ca018563e387990520907b74210c5a725a2bfcf5c7ea51d614e91b388b96dc1b"
+    },
+    {
+      "bytes": 40764,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/gemma-v6-known-coverage-regression.json",
+      "path": "station/tests/fixtures/gemma-v6-known-coverage-regression.json",
+      "sha256": "1c0a7ac8c5e5741a07b132e172ce0e41b8230864dddcbcf85c650e78c2b3c9b4"
+    },
+    {
+      "bytes": 72322,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/gemma-v7-recovery-coverage-regression.json",
+      "path": "station/tests/fixtures/gemma-v7-recovery-coverage-regression.json",
+      "sha256": "2affb6a8b115dd4e54c6af2fcbcee3cab6a8ce2cde9e627f746f555359266476"
+    },
+    {
+      "bytes": 245533,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/fixtures/gemma-v9-citation-regressions.json",
+      "path": "station/tests/fixtures/gemma-v9-citation-regressions.json",
+      "sha256": "99c28d8643a2182a25b4126da9b23f3b0158136c31e979e49be6be657c29bab3"
+    },
+    {
+      "bytes": 7259,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/smoke_http.py",
+      "path": "station/tests/smoke_http.py",
+      "sha256": "7fae3dd3c9790207681d16cd727c4148516f73cb4518da01fe2e01463106b6e8"
+    },
+    {
+      "bytes": 59218,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_analysis.py",
+      "path": "station/tests/test_analysis.py",
+      "sha256": "3bb5a23a91f8a89a00f220c126f18396fd100278b380adab6cd490ddd333d671"
+    },
+    {
+      "bytes": 15099,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_api.py",
+      "path": "station/tests/test_api.py",
+      "sha256": "962630d378160dc17f0711f456ccf31213cc424395195dfc942e8008496af467"
+    },
+    {
+      "bytes": 12063,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_dashboard.py",
+      "path": "station/tests/test_dashboard.py",
+      "sha256": "574cb9b804f2e007c0fd01093f25c1d4d1b9b8b474dc0de6bec1ece50175dddd"
+    },
+    {
+      "bytes": 22104,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_export_audit.py",
+      "path": "station/tests/test_export_audit.py",
+      "sha256": "02802053cb3c9b46f292912ffbbfe972a10380a75fa13131bcce5039b3b95d3b"
+    },
+    {
+      "bytes": 19772,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_producers.py",
+      "path": "station/tests/test_producers.py",
+      "sha256": "60d804e02c367a4bd151c2e4c62383328f9f9efcad079595c774b34ac58b81e9"
+    },
+    {
+      "bytes": 11658,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_reviews.py",
+      "path": "station/tests/test_reviews.py",
+      "sha256": "5ebd0d8059f4eb7973782026c0fe53aa5b7f4b03155881242db66b125d46446a"
+    },
+    {
+      "bytes": 30453,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_store.py",
+      "path": "station/tests/test_store.py",
+      "sha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3"
+    },
+    {
+      "bytes": 5286,
+      "frozenCopy": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/reviewed-current-source/station/tests/test_cli_shutdown.py",
+      "path": "station/tests/test_cli_shutdown.py",
+      "sha256": "633b1fb34721f00f3d9bccb149702bfd4da71d59a439a5b88645a435f8893e47"
+    }
+  ],
+  "previousBaseline": {
+    "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v3-20261115T064221Z/station-source-baseline.json",
+    "sha256": "1aa3490e0da17115b101ca629b8ab636891e715302a04b7ea1bb434afc3c979e"
+  },
+  "priorTests": {
+    "allRecordedCurrentHashesMatch": true,
+    "counts": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 308
+    },
+    "path": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z/verification/intel-reliability-20261114/backend-integrated-final-v12.json",
+    "sha256": "b81ce86e0d6aa27bbf35c87780cdfc1e87e88a0b5a695448b28fb0f2dbf232cd"
+  },
+  "purpose": "Recovery v4 preserves the exact 33 v3 source/test/fixture pins; no application change.",
+  "recoveryChange": {
+    "behavior": "timeout_graceful_shutdown=10; no argv or environment change",
+    "path": "station/morph_station/__main__.py",
+    "sha256": "a01ca16760d38fa1fa1b1bb9f7e67b33eea6290ec799c8149b54551aaa5a7298",
+    "testResult": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/shutdown-fix-20261115T064128Z/result.json",
+    "testResultSha256": "cdd483244f61f665fd0b0d0a95ae0f701ddbd7757507ceffda6bca4a27e7c855"
+  },
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "versions": {
+    "context": "morph-evidence-v7",
+    "prompt": "gemma-evidence-v12"
+  }
+}

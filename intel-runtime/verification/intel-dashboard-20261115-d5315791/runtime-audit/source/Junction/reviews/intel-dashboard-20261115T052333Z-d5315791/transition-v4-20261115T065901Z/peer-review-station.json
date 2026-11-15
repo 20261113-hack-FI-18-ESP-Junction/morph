@@ -1,0 +1,70 @@
+{
+  "author": "/root/adoption_receiver_review",
+  "executionPerformed": false,
+  "files": [
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recover_reviewed_station.py",
+      "sha256": "dde510fb629ca050c4443a7e27eda5cbfab9c69c1dd9327427b97be585beb072"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station_transition_support.py",
+      "sha256": "8787c662f65587c52ee1fcc668ccc74b7b5bfb26f01d0b788edca7e5e80f9005"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/station-source-baseline.json",
+      "sha256": "2539160b6d175b29c08d02c912e5cc9615747bd3be96bec7b8f408b9f1456b15"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/test_recovery_preparation.py",
+      "sha256": "6f6455afabcd0936be38ec19a95a19d8a5ffcd26d3298b4b5d034502967e371d"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-tests.xml",
+      "sha256": "9aeccc8f3544f1ed1b0da576b7409835af452679b085e4d9db14d6a80d9b2fff"
+    },
+    {
+      "path": "/home/intel/Documents/Junction/reviews/intel-dashboard-20261115T052333Z-d5315791/transition-v4-20261115T065901Z/recovery-preparation-result.json",
+      "sha256": "6633abf728abb592284c45b4d47e030be0c9305de0874b98e1b4f3afa88c1635"
+    }
+  ],
+  "filesModifiedByReviewer": [],
+  "hostCallsPerformed": false,
+  "limits": [
+    "Host guard satisfaction and actual recovery outcome are not established by prepare-only review.",
+    "The SSE explanation remains a source-supported hypothesis for the historical old process.",
+    "SIGKILL cannot preserve uncommitted work; the script retains observed backups and checks final committed data without claiming unfinished work succeeded.",
+    "309 integrated software tests and27 saved preparation tests are independent of actual recovery."
+  ],
+  "macDelivery": "Pending root verified save/readback with attribution; execution approval and source publication remain separate.",
+  "reporter": "/root",
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "result": "No blocking implementation finding in the frozen prepare-only v4 review. Actual SIGKILL execution is a separate root-owned explicit approval action.",
+  "reviewedAt": "2026-11-15T07:02:09.871626+00:00",
+  "reviewedScope": [
+    "Complete v4-versus-reviewed-v3 script/support differences and corrected receipt checks against actual retained v2/v3 failures",
+    "Explicit --recover-reviewed-main-with-sigkill gate; exact failed SIGTERM/SIGINT request/session/process histories; no earlier replacement",
+    "Same shared lock and exact old process/source/token/data guards; no listener; full original environment retained only in memory",
+    "Fresh consistent private database and byte-exact evidence/analyst backups, verified against unchanged pre-kill state",
+    "One stable-pidfd SIGKILL, explicit unclean-cleanup/data-loss risk and bounded10second exit wait; no further signals",
+    "Final committed-state ledger/evidence and integrity-checked backup before replacement; no restore or automatic rollback",
+    "Current33 source pins preserve Gemma and tested CLI change; same argv/cwd/env, required GETs, analyst ownership, canonical/evidence/companion verification",
+    "No robot/provider/tunnel/receiver operations; root sole runtime operator"
+  ],
+  "reviewer": "/root/adoption_station",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "verification": {
+    "actualPriorReceiptsPass": true,
+    "allCurrentHashesMatch": true,
+    "metadataPins": 9,
+    "savedTestsReviewed": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 27
+    },
+    "signal": "pidfd-bound SIGKILL for old188282/startTicks10907663 only",
+    "signalCallSites": 1,
+    "sourcePins": 33,
+    "testsRerunByReviewer": false
+  }
+}

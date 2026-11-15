@@ -1,0 +1,30 @@
+{
+  "requestId": "d5315791-6749-4b01-97b5-1b9357306487",
+  "sessionId": "d0dc73a7-df82-48e6-a8c1-8a4c23c144e6",
+  "author": "/root/adoption_codex",
+  "reporter": "/root",
+  "checkedAt": "2026-11-15T05:44:25.404293+00:00",
+  "scriptSha256": "f56024291b6f63c902092db6f3168020b2525fcf08b2b9c445e22df2fd04bb78",
+  "testSourceSha256": "182799f78912e848b1e6cdf3cd2940fd5b2d8870ef5a2717aa6f6c9792b92d79",
+  "command": "/home/intel/Documents/Junction/morph-intel-transfer/morph-context/.junction-setup/python/bin/python -B reviews/intel-dashboard-20261115T052333Z-d5315791/check_relay_harness_offline.py",
+  "exitCode": 0,
+  "testsPassed": 9,
+  "testsFailed": 0,
+  "testsSkipped": 0,
+  "unittestElapsedSeconds": 0.007,
+  "cases": [
+    "Reject bad response hash and save failure",
+    "Reject changed pagination metadata and save failure",
+    "Validate bounded deduplicated cycle IDs and reject cross-session IDs",
+    "Reject expired response and save failure",
+    "Ignore only two generation timestamp fields",
+    "Require inspection-to-frame-to-evidence image linkage",
+    "Reconstruct complete three-page base64 response",
+    "Discover an older image-bearing cycle after image-less current cycle using fake aggregate and fake API only",
+    "Allow exactly the scoped GET routes and reject unsupported routes/queries"
+  ],
+  "realMcpOrApiCalls": 0,
+  "canonicalRecordsChanged": false,
+  "temporaryFakeFilesOnly": true,
+  "failureEvidencePreservedWithinTemporaryRuns": true
+}
