@@ -1,5 +1,5 @@
 /** Pure UI projection of persisted M06 data. No fixtures, local outcomes or write path. */
-import type { DashboardState, Metrics, Ratio, SessionExport, StationEvent, ModelRun } from '@morph/station-client';
+import type { DashboardState, Metrics, Ratio, SessionExport, StationEvent, ModelRun, CycleDetail } from '@morph/station-client';
 import type {
   ComponentStatusRecord, Cycle, DecisionRecord, MetricRatio, Session, SessionMetrics,
   SkillExecution, StationSnapshot, TelemetryValue, VoiceUtterance,
@@ -78,7 +78,7 @@ function components(): ComponentStatusRecord[] {
     ['anomalib', 'Anomalib / OpenVINO', 'Frame-linked defect measurements', 'local_station'],
     ['nemotron', 'NVIDIA Nemotron 3.5 Super VL', 'Required visual observation integration', 'cloud_api'],
     ['gemini', 'Gemini Decision 1', 'Required fixed-choice task selection', 'cloud_api'],
-    ['elevenlabs', 'ElevenLabs Scribe v3 Live', 'Required spoken operator input', 'cloud_api'],
+    ['elevenlabs', 'Voice input / optional ElevenLabs', 'Operator speech on Jose’s Mac; provider undecided', 'cloud_api'],
   ].map(([id, name, roleDescription, deploymentLocation]) => ({
     id, name, roleDescription, deploymentLocation: deploymentLocation as 'local_station' | 'cloud_api',
     configuredIdentity: 'Not verified by this station API', capabilityStatus: 'unavailable',
@@ -104,7 +104,18 @@ export function projectM06State(state: DashboardState, now = Date.now()): Statio
   if (data && (data.session.id !== state.session?.id || data.session.sourceMode !== state.selection.sourceMode)) {
     throw new Error('Cannot project a session export from another source or session.');
   }
-  const records = data?.records;
+  const details = [state.currentDetail, state.detail].filter((detail): detail is CycleDetail =>
+    detail !== null && detail.cycle.sessionId === state.session?.id);
+  const unique = <T extends { id: string }>(values: T[]): T[] => [...new Map(values.map(value => [value.id, value])).values()];
+  const records: SessionExport['records'] = data?.records ?? {
+    cycle: unique([...(state.cycles?.items ?? []), ...(state.snapshot?.cycle ? [state.snapshot.cycle] : []), ...details.map(d => d.cycle)]),
+    attempt: unique(details.flatMap(d => d.attempts)), frame: unique(details.flatMap(d => d.frames)),
+    inspection: unique(details.flatMap(d => d.inspections)), model_run: unique(details.flatMap(d => d.modelRuns)),
+    decision: unique(details.flatMap(d => d.decisions)), execution: unique(details.flatMap(d => d.executions)),
+    confirmation: unique(details.flatMap(d => d.confirmations)), evidence: unique(details.flatMap(d => d.evidence)),
+    utterance: unique(details.flatMap(d => d.utterances)), reference_label: unique(details.flatMap(d => d.referenceLabels)),
+    correction: unique(details.flatMap(d => d.corrections)),
+  };
   const rawCycles = records?.cycle ?? [];
   const attempts = records?.attempt ?? [];
   const inspections = records?.inspection ?? [];
@@ -118,7 +129,7 @@ export function projectM06State(state: DashboardState, now = Date.now()): Statio
     const cycleRuns = modelRuns.filter(run => run.cycleId === cycle.id);
     const inspection = inspections.find(i => i.id === cycle.inspectionId);
     const ms = duration(cycle.startedAt, cycle.endedAt);
-    return { ...cycle, activePhase: null, faultedPhase: null, phaseElapsedSec: null,
+    return { ...cycle, detailsLoaded: !!data || details.some(d => d.cycle.id === cycle.id), activePhase: null, faultedPhase: null, phaseElapsedSec: null,
       attemptIds: attempts.filter(a => a.cycleId === cycle.id).sort((a,b) => a.ordinal - b.ordinal).map(a => a.id),
       inspectionIds: inspections.filter(i => i.cycleId === cycle.id).map(i => i.id),
       decisionIds: decisions.filter(d => d.cycleId === cycle.id).map(d => d.id),
@@ -162,7 +173,14 @@ export function projectM06State(state: DashboardState, now = Date.now()): Statio
   }));
   return {
     canonicalSource: true, viewMode: state.selection.sourceMode, sourceMode: state.selection.sourceMode,
+    selectedSessionId: state.selection.sessionId ?? null,
     dataConnection: state.connection, dataStale: state.stale, receivedAt: state.receivedAt,
+    generatedAt: state.snapshot?.generatedAt ?? null, eventConnection: state.stream,
+    recordScope: data ? 'session' : 'recent', recentCycleTotal: state.cycles?.total ?? data?.records.cycle.length ?? 0,
+    sessionCatalogHasMore: state.sessionCatalog?.hasMore ?? false,
+    sessionCatalogTotal: state.sessionCatalog?.total ?? state.sessions.length,
+    historyStatus: data ? 'ready' : 'idle', historyLoadedAt: data?.exportedAt ?? null,
+    historyUpdateAvailable: false, historyError: null,
     canControl: false, stationConnected: false,
     activeSession: state.session ? projectSession(state.session) : null,
     sessions: state.sessions.map(projectSession), stateVersion: state.snapshot?.stateVersion ?? null,
@@ -194,7 +212,8 @@ export function projectM06State(state: DashboardState, now = Date.now()): Statio
       rawArtifact: JSON.stringify({ input: run.input, output: run.output, error: run.error }), parseError: null,
     })),
     decisions: projectedDecisions, skillExecutions: projectedExecutions, utterances, modelRuns,
-    recentEvents: [...(data?.events ?? [])].reverse().map(event => ({ ...event, schemaVersion: 1,
+    recentEvents: [...(data?.events ?? [...new Map(details.flatMap(d => d.events).map(e => [e.sequence, e])).values()])]
+      .sort((a, b) => b.sequence - a.sequence).map(event => ({ ...event, schemaVersion: 1,
       attemptId: 'attemptId' in event.payload && typeof event.payload.attemptId === 'string' ? event.payload.attemptId : null,
       summary: `${event.type} · ${event.entityId}`, statusTone: eventTone(event), payload: { ...event.payload } })),
     lastEventSequence: state.lastEventSequence, components: components(),

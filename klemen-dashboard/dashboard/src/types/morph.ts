@@ -153,6 +153,8 @@ export interface SkillExecution {
 }
 
 export interface Cycle {
+  /** False for recent summary rows until their related records are fetched. */
+  detailsLoaded?: boolean;
   id: ID;
   sessionId: ID;
   objectId: ID;
@@ -421,6 +423,18 @@ export type SimulationPresetId =
   | "empty_session";
 
 export interface StationSnapshot {
+  /** Null follows the latest session; an ID pins the selected session. */
+  selectedSessionId?: ID | null;
+  generatedAt?: string | null;
+  eventConnection?: string;
+  recordScope?: 'recent' | 'session';
+  recentCycleTotal?: number;
+  sessionCatalogHasMore?: boolean;
+  sessionCatalogTotal?: number;
+  historyStatus?: 'idle' | 'loading' | 'ready' | 'error';
+  historyLoadedAt?: string | null;
+  historyUpdateAvailable?: boolean;
+  historyError?: string | null;
   replay?: { cursor: number; count: number; event: StationEventEnvelope | null; savedAt: ISOTime | null };
   /** Present on the canonical adapter; isolated legacy fixtures omit these fields. */
   canonicalSource?: true;
