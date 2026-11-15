@@ -4,6 +4,12 @@ This package preserves the Intel station backend, setup definitions, diagnostic 
 
 The owner architecture assigns physical AI and authoritative execution records to Intel, control and chat to Jose, and dashboard and analytics to Klemen. Klemen–Intel communication uses the existing Mac MCP server. Jose–Intel communication uses the NVIDIA tunnel owned by the other team. Current communication code is supplied separately; this package does not replace the Mac server with an older Intel copy. Voice will likely run on Jose's computer; the owner has not finalized ElevenLabs.
 
+## Current package development record — November 15, 2026
+
+The committed Mac dashboard/media work adds the bounded dashboard read contract and a separate [Studio JPEG to H.264 bridge](media-bridge/README.md). Two received backend files, `morph_station/api.py` and `morph_station/store.py`, have documented Mac changes; 34 additional source, contract, test and verification files were committed with that work. [SOURCE_UPDATES.json](SOURCE_UPDATES.json) records every original/imported hash, current hash, reason and source commit, and retains the complete previous package seal. [SOURCE_ORIGINS.json](SOURCE_ORIGINS.json) preserves each changed original provenance row and distinguishes Mac additions from Intel receipts.
+
+The current package seal covers these already committed bytes. Repository-root, dashboard, nested-source and frozen delivery manifests remain their original historical records. This metadata reconciliation runs no application or incoming tests and adds no deployment, provider, camera or physical acceptance. The initial inventory counts and dated reports below retain their original scope.
+
 ## Source layout and provenance
 
 | Package path | Purpose and original root |
@@ -21,7 +27,7 @@ The owner architecture assigns physical AI and authoritative execution records t
 
 `common` maps to the original Intel root `/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z`; `junction` maps to `/home/intel/Documents/Junction`. Relative source paths and original bytes are preserved. No live Intel working tree was overwritten.
 
-The package contains 123 original source/document/evidence files, three exact fixture aliases, and one separately derived synthetic image. [SOURCE_ORIGINS.json](SOURCE_ORIGINS.json) records every source path, acquisition type, byte count, and SHA-256. Reused Mac bytes were accepted only when they matched the current Intel inventory hash. The complete package inventory is [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json); it excludes only its own self-reference and ignored runtime output.
+The initial reconstruction contained 123 original source/document/evidence files, three exact fixture aliases, and one separately derived synthetic image. [SOURCE_ORIGINS.json](SOURCE_ORIGINS.json) records every source path, acquisition type, byte count, and SHA-256. Reused Mac bytes were accepted only when they matched the current Intel inventory hash. The complete package inventory is [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json); it excludes only its own self-reference and ignored runtime output.
 
 The source request is `90672035-350b-43ad-88d6-025885cfbd65`. The Intel inventory was captured at `2026-11-15T03:22:50.592056Z`, the completion report was saved at `2026-11-15T03:28:11.681650Z`, and reconstruction was verified at `2026-11-15T03:38:11.054357+00:00`. Source references in the shared context ledger are inventory index `7352a432-face-43d0-bb1e-45bb82ed82fb`, completion `2e753690-9953-4eaa-9bd0-6f9897c1db44`, and constraints `5a8dc4dd-ad58-4ee0-9693-9a7e9641baeb`. A reviewed supplement, `a8046978-b5fa-4e1b-9363-d18ee24c5a45`, was verified at `2026-11-15T03:52:30.711459+00:00` and supplied the exact station ignore file and provider PNG. These raise the wider received inventory coverage to 237 of 240 files.
 
