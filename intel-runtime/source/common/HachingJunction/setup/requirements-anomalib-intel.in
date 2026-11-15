@@ -1,0 +1,12 @@
+# Anomalib lib/v2.7.0 uv.lock baseline, inspected 2026-11-14.
+# CPU PyTorch is for training/debugging; OpenVINO selects CPU/GPU/NPU separately.
+# Resolve/install with uv --torch-backend cpu.
+anomalib[openvino]==2.7.0
+torch==2.14.0
+torchvision==0.29.0
+openvino==2026.3.1
+nncf==3.3.0
+onnx==1.22.0
+onnxscript==0.7.2
+lightning==2.6.6
+timm==1.0.29
