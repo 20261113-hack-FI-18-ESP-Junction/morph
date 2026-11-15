@@ -2,7 +2,7 @@
 
 This package contains the current Mac context MCP, its station relay, Intel's standard-library worker, and the reviewed source-transfer helpers. It connects Klemen's dashboard to Intel's authoritative records using the existing MCP pairing.
 
-The earlier November 15, 2026 publication added bounded record review and saved-evidence analysis requests to the existing read transport. Its original staged verification remains unchanged in `verification/offline-01/`. This candidate adds explicit handoff events and isolated read-only Codex review. Publication itself does not restart or update either host; current deployment evidence is recorded separately in [event verification](verification/events-20261115/README.md).
+The earlier November 15, 2026 publication added bounded record review and saved-evidence analysis requests to the existing read transport. Its original staged verification remains unchanged in `verification/offline-01/`. This publication adds explicit handoff events and isolated read-only Codex review. Publication itself does not restart or update either host; current deployment evidence is recorded separately in [event verification](verification/events-20261115/README.md) and the [dated Intel adoption status](verification/events-20261115/INTEL_ADOPTION_STATUS.md).
 
 | Component | Runs on | Purpose |
 | --- | --- | --- |
