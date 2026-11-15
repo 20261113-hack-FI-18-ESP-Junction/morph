@@ -1,0 +1,109 @@
+{
+  "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+  "sourceSnapshotComplete": false,
+  "missingInventoryFiles": [
+    {
+      "group": "dashboard",
+      "rootAlias": "common",
+      "path": "morph-station/server/stationProxy.test.ts",
+      "bytes": 17218,
+      "sha256": "552e8def4cf1f08330a2702d67e1152dd91105a6b3f578f4cbc7da2908ec7d49",
+      "disposition": "rejected",
+      "baselineMatches": [],
+      "sender": "rejected",
+      "reason": "Potential secret or binary content rejected in morph-station/server/stationProxy.test.ts; review locally and select a clean source path"
+    },
+    {
+      "group": "intel-setup",
+      "rootAlias": "common",
+      "path": "HachingJunction/setup/provider-check/test_check.py",
+      "bytes": 11561,
+      "sha256": "ef2e01a85bec0f9d4950aabe475a0e6cc4c0dae6746a8b5d8e73cfb6a1c741c5",
+      "disposition": "rejected",
+      "baselineMatches": [],
+      "sender": "rejected",
+      "reason": "Potential secret or binary content rejected in HachingJunction/setup/provider-check/test_check.py; review locally and select a clean source path"
+    },
+    {
+      "group": "station-analyst",
+      "rootAlias": "common",
+      "path": "HachingJunction/station/tests/test_analysis.py",
+      "bytes": 52823,
+      "sha256": "e35d81c31bff372cc65fa10ab1c900e5174698cd67e025be73d7fa14af39e699",
+      "disposition": "rejected",
+      "baselineMatches": [],
+      "sender": "rejected",
+      "reason": "Missing from supplied baseline or different current source bytes; unchanged sender: Potential secret or binary content rejected in HachingJunction/station/tests/test_analysis.py; review locally and select a clean source path"
+    }
+  ],
+  "additionalDependencies": [
+    {
+      "path": "verification/intel-m16-browser/runs/acceptance-05/data/evidence/e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+      "state": "Locally derived synthetic fixture retained; Intel reports a bounded current file comparison matching the same bytes and source constant. No blob transfer.",
+      "derivedSyntheticFixturePath": "fixtures/evidence/e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+      "derivedSyntheticFixtureBytes": 68,
+      "derivedSyntheticFixtureSha256": "e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+      "reportedIntelConfirmation": {
+        "noteId": "d4569216-5d0d-589f-9ea7-1641db906993",
+        "observedAt": "2026-11-15T03:48:06.194996+00:00",
+        "matchesTestConstantByteForByte": true,
+        "bytes": 68,
+        "sha256": "e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+        "contentTransferred": false
+      }
+    }
+  ],
+  "scopeExclusions": [
+    "React dashboard and shared TypeScript client belong to the Klemen partition.",
+    "Older Intel context_mcp server is excluded; current shared Mac communication package remains authoritative.",
+    "Private configuration, credentials, datasets, weights, runtime databases and hardware captures are excluded."
+  ],
+  "knownAbsentImplementation": [
+    "Integrated mission lifecycle API",
+    "Dispatcher and learned-skill registry",
+    "Studio execution adapter",
+    "Physical training/execution implementation"
+  ],
+  "deploymentObservation": {
+    "observedAt": "2026-11-15T02:25:35+00:00",
+    "main8000AnalystRoutes": false,
+    "isolated52197AnalystRoutes": true,
+    "currentDeploymentRechecked": false
+  },
+  "resolvedInventoryFiles": [
+    {
+      "group": "intel-setup",
+      "rootAlias": "common",
+      "path": "HachingJunction/setup/provider-check/fixtures/red-rectangle.png",
+      "bytes": 159,
+      "sha256": "89160b2fc4c690799dc1bbcf44a8e762c20bc2b232f11d40a719f9b233b780e8",
+      "disposition": "unsupported",
+      "baselineMatches": [],
+      "sender": "unsupported",
+      "reason": "Unsupported source file: HachingJunction/setup/provider-check/fixtures/red-rectangle.png",
+      "resolution": "Exact original bytes adopted from reviewed supplement",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45"
+    },
+    {
+      "group": "station-analyst",
+      "rootAlias": "common",
+      "path": "HachingJunction/station/.gitignore",
+      "bytes": 162,
+      "sha256": "cf40ac800682c8f0336c540d8f864200a6f484a09e68ec4011f7650654a41726",
+      "disposition": "unsupported",
+      "baselineMatches": [],
+      "sender": "unsupported",
+      "reason": "Missing from supplied baseline or different current source bytes; unchanged sender: Private/runtime include rejected: HachingJunction/station/.gitignore",
+      "resolution": "Exact original bytes adopted from reviewed supplement",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45"
+    }
+  ],
+  "redactedReviewCopies": {
+    "count": 3,
+    "exactOriginalSource": false,
+    "executableReplacement": false,
+    "includedInThisPackage": false,
+    "location": "Separate parent-owned source-review material",
+    "sourceTestsRemainMissing": true
+  }
+}

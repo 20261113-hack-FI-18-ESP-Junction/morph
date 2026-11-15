@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-11-15T03:54:34.790979+00:00",
+  "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+  "exactFiles": [
+    {
+      "path": "source/common/HachingJunction/setup/provider-check/fixtures/red-rectangle.png",
+      "bytes": 159,
+      "sha256": "89160b2fc4c690799dc1bbcf44a8e762c20bc2b232f11d40a719f9b233b780e8",
+      "origin": "intel-current-source",
+      "sourceRootAlias": "common",
+      "sourcePath": "HachingJunction/setup/provider-check/fixtures/red-rectangle.png",
+      "group": "intel-setup",
+      "acquisition": "reviewed-exact-supplement",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "receiptCheckedAt": "2026-11-15T03:52:30.711459+00:00",
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "contentChanged": false
+    },
+    {
+      "path": "source/common/HachingJunction/station/.gitignore",
+      "bytes": 162,
+      "sha256": "cf40ac800682c8f0336c540d8f864200a6f484a09e68ec4011f7650654a41726",
+      "origin": "intel-current-source",
+      "sourceRootAlias": "common",
+      "sourcePath": "HachingJunction/station/.gitignore",
+      "group": "station-analyst",
+      "acquisition": "reviewed-exact-supplement",
+      "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+      "receiptCheckedAt": "2026-11-15T03:52:30.711459+00:00",
+      "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+      "contentChanged": false
+    }
+  ],
+  "pngValidation": {
+    "signature": true,
+    "chunkCrcs": true,
+    "chunks": [
+      "IHDR",
+      "IDAT",
+      "IEND"
+    ],
+    "width": 64,
+    "height": 64,
+    "embeddedMetadata": false
+  },
+  "syntheticEvidenceConfirmation": {
+    "noteId": "d4569216-5d0d-589f-9ea7-1641db906993",
+    "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+    "supplementRequestId": "a8046978-b5fa-4e1b-9363-d18ee24c5a45",
+    "sessionId": "98c89d04-e9c6-40be-94ce-49ab7cb5db02",
+    "sourceRoot": "/home/intel/Documents/Junction/morph-intel-continuation-20261114T193410Z/Morph-Intel-Handoff-20261114T191514Z",
+    "kind": "morph-synthetic-fixture-reuse-confirmation",
+    "path": "verification/intel-m16-browser/runs/acceptance-05/data/evidence/e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+    "bytes": 68,
+    "sha256": "e35a9b35f300af2d9334aedac4dbb6a4c746345c5c05b25fc4ab7447977baa82",
+    "expectedIdentityMatches": true,
+    "matchesTestConstantByteForByte": true,
+    "constantSourcePath": "HachingJunction/station/tests/test_store.py",
+    "constantSourceSha256": "5639bed5712bf6a74bf3ec22276a52aedc9e9ff6152c27af18f2a97a8b4219c3",
+    "constantLine": 20,
+    "constantName": "PNG",
+    "constantExtraction": "AST literal inspection followed by standard-library base64 decoding; no test imports or execution.",
+    "readScope": "Only the explicitly named blob after checking all path components, regular-file type and exact 68-byte length. No other runtime evidence was enumerated or copied.",
+    "transferNeeded": false,
+    "observedAt": "2026-11-15T03:48:06.194996+00:00",
+    "contentTransferred": false,
+    "csvReuse": "Mac reports exact local sample-export.csv reuse; current Intel hash still matches dcb024cb4e95b21600666cdf32cf760b88bc2d65ff0b15b3569d5866328da14f. No CSV transfer."
+  },
+  "all127ProvenanceHashesMatch": true,
+  "applicationCodeChanged": false,
+  "testsRerun": false,
+  "reason": "Only exact ignore rules and a synthetic PNG were added; existing tested source remains unchanged. All source and fixture hashes were rechecked.",
+  "redactedTestsExecuted": false
+}

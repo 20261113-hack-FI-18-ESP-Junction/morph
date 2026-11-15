@@ -1,0 +1,49 @@
+{
+  "startedAt": "2026-11-15T03:45:59.913975+00:00",
+  "finishedAt": "2026-11-15T03:46:02.648469+00:00",
+  "python": "3.12.13",
+  "platform": "darwin",
+  "requestId": "90672035-350b-43ad-88d6-025885cfbd65",
+  "testExitCode": 0,
+  "counts": {
+    "tests": 163,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "collectedTests": 158,
+  "additionalSubtestCases": 5,
+  "pythonSourcesParsed": 42,
+  "shellScriptsSyntaxChecked": 9,
+  "importedFilesHashCheckedBeforeAndAfter": 125,
+  "importedFilesChanged": [],
+  "reviewedExportCliChildProcesses": 5,
+  "blockedOperationAttempts": [],
+  "unexpectedDefaultDataCreated": false,
+  "portableLauncher": {
+    "helpExitCode": 0,
+    "helpCreatedData": false,
+    "initExitCode": 0,
+    "initializedRecords": 0,
+    "initializedEvents": 0,
+    "privateTokenMode": "0o600",
+    "scratchRuntimeDeletedAfterCheck": true,
+    "passed": true
+  },
+  "guardedLauncherChildProcesses": 2,
+  "testFiles": [
+    "source/common/HachingJunction/station/tests/test_store.py",
+    "source/common/HachingJunction/station/tests/test_reviews.py",
+    "source/common/HachingJunction/station/tests/test_api.py",
+    "source/common/HachingJunction/station/tests/test_export_audit.py",
+    "source/junction/tests/test_motor_discovery.py",
+    "source/junction/tests/test_mac_context_watch.py"
+  ],
+  "scope": "Offline records/export tests and fake-device/watch tests. No live provider, robot, camera, training, tunnel, service, or watcher launched.",
+  "limits": [
+    "Process-local guards are audit controls, not an OS sandbox.",
+    "Original Intel analyst and provider-check test files remain unreceived; this is not the full Intel test suite.",
+    "Historical reports under source/ are preserved claims, not new execution evidence."
+  ],
+  "passed": true
+}
