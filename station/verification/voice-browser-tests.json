@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-15T02:05:19.296Z",
+  "runnerCommand": ".junction-setup/node/bin/node station/tests/test_voice_browser.cjs",
+  "testSource": "station/tests/test_voice_browser.cjs",
+  "implementationSource": "station/morph_station/lab.html",
+  "implementationSha256": "c5e2df861f99b122215156b06ad9d9c6edc560d89008e1921f73464aad6973a9",
+  "voiceBlockSha256": "3f4a2a2c1e7e2e964460ea90d04a85a8543ba5f98baea8380f0468672da59387",
+  "runtime": {
+    "node": "v24.22.3",
+    "platform": "darwin",
+    "architecture": "arm64"
+  },
+  "scope": "offline_browser_logic",
+  "limitation": "Fake media, WebSocket, timers, and API responses; no real browser, microphone, provider, or physical robot verification.",
+  "providerCalls": 0,
+  "microphoneAccessed": false,
+  "physicalActionSent": false,
+  "inlineJavaScriptSyntaxPassed": true,
+  "passed": true,
+  "passedGroups": 7,
+  "totalGroups": 7,
+  "groups": [
+    {
+      "name": "stale_audio_cleanup_send_error_isolation",
+      "passed": true
+    },
+    {
+      "name": "late_enrichment_preserves_original_capture",
+      "passed": true
+    },
+    {
+      "name": "release_commit_boundary_and_single_finalization",
+      "passed": true
+    },
+    {
+      "name": "release_idempotency_bounded_silence_stale_timeout",
+      "passed": true
+    },
+    {
+      "name": "late_finalize_response_cannot_revive_timeout",
+      "passed": true
+    },
+    {
+      "name": "pending_permission_lock_and_pagehide_cleanup",
+      "passed": true
+    },
+    {
+      "name": "stale_socket_handlers_cannot_stop_next_capture",
+      "passed": true
+    }
+  ]
+}
